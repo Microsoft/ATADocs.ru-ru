@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\Understand\what-is-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/68f2d58f81852c02b7ade83b621cfad43e0a2d47/ATADocs/Understand/what-is-ata.md) | HandedOffSuccess | [Details](#3c913705d26aa8f882b9aa3860a08c692d86751f182)
+ [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/6e2493f4a3bd81da63e2501f92e79a6f3048f912/ATADocs/index.html) | HandedOffSuccess | [Details](#51d96acce3a73d392785abf8f347b32d5217088f122)
 
 ## Item Details
-##### <a name='3c913705d26aa8f882b9aa3860a08c692d86751f182'></a> Source: [ATADocs\Understand\what-is-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/68f2d58f81852c02b7ade83b621cfad43e0a2d47/ATADocs/Understand/what-is-ata.md)
+##### <a name='51d96acce3a73d392785abf8f347b32d5217088f122'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/6e2493f4a3bd81da63e2501f92e79a6f3048f912/ATADocs/index.html)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/aa2844681d9920137545b871a23f5bbdc9945642/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.ru-ru.xlf)
-* Handoff Datetime: 2016-03-17 21:25:44
+* Handoff File: [51d96acce3a73d392785abf8f347b32d5217088f.html](https://github.com/Microsoft/EM.handoff/blob/56f54aba7d70a616f4fe4c1e5e8c0cd2f15fcaf9/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/51d96acce3a73d392785abf8f347b32d5217088f.html)
+* Handoff Datetime: 2016-03-17 22:24:32
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
