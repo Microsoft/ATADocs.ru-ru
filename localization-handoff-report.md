@@ -1,65 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 4
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\DeployUse\install-ata-step2.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step2.md) | HandedOffSuccess | [Details](#3ddbf8a1b6181c1c1b97e6faf9ee815d7edced2712)
- [ATADocs\DeployUse\install-ata-step4.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step4.md) | HandedOffSuccess | [Details](#6170140efb5bff068840f72838a8b248f8e42ae114)
- [ATADocs\DeployUse\install-ata-step6.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step6.md) | HandedOffSuccess | [Details](#417943115718148fea9f61b06b7962c9a355dce016)
- [ATADocs\DeployUse\modifying-ata-config-centerip.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/modifying-ata-config-centerip.md) | HandedOffSuccess | [Details](#f02c908e012c294973ef05971b13d3fec189e30848)
 
 ## Item Details
-##### <a name='3ddbf8a1b6181c1c1b97e6faf9ee815d7edced2712'></a> Source: [ATADocs\DeployUse\install-ata-step2.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step2.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/08b1bfd05d1f440bae041960d7e187ae05a76d95/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 23:27:22
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='6170140efb5bff068840f72838a8b248f8e42ae114'></a> Source: [ATADocs\DeployUse\install-ata-step4.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step4.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/08b1bfd05d1f440bae041960d7e187ae05a76d95/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 23:27:22
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='417943115718148fea9f61b06b7962c9a355dce016'></a> Source: [ATADocs\DeployUse\install-ata-step6.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step6.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/08b1bfd05d1f440bae041960d7e187ae05a76d95/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 23:27:22
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='f02c908e012c294973ef05971b13d3fec189e30848'></a> Source: [ATADocs\DeployUse\modifying-ata-config-centerip.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/modifying-ata-config-centerip.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/08b1bfd05d1f440bae041960d7e187ae05a76d95/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.ru-ru.xlf)
-* Handoff Datetime: 2016-03-31 23:27:22
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
