@@ -11598,9 +11598,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\modifying-ata-config-centercert.47a5010003ff67ec899123c54e6c8b85b9066f2c.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "6357e343bf916c7dd0a9498b67b8c70e7bb19f85": {
@@ -11859,9 +11859,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\ata-database-management.a56f4c673b1abb517456517d2a5886e745fd1a90.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "7b317005194bacc60988cb8ad68cc832a130cf88": {
@@ -11888,9 +11888,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "94997b240a8e00b59b2f0b747189dff96ec39621": {
@@ -11917,9 +11917,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\ata-update-1.5-migration-guide.e0fbd2179284e3c16bb215102232ed2289163376.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "3d395216582d6bf7965e35fe593dd38b4aef886f": {
@@ -11946,9 +11946,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata.ebb339fe6f06fe279a930dbf42e95a14d812c2f3.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "adc83fb994ee2150a8eab572c3864521a4045340": {
@@ -11975,9 +11975,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-preinstall.954ec393e3d46f6fd35bf7246bb874652bb703e9.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "1996f4de44bf3c8c22ccedd55f985216ff4ac7cf": {
@@ -12004,9 +12004,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "e73df2fb3fe55031bde1f7d86e5bd28efae9882f": {
@@ -12033,9 +12033,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "dd3c62c78bdc56f5c6dffd51b0bf186e96b62005": {
@@ -12062,9 +12062,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step3.82c3e0752e5bb0305f5acc701171b2086e5820d9.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "209cf292964d5df261861875d11e910dcf1c11dc": {
@@ -12091,9 +12091,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "69f16bf34b17e9141be9249886f9cbe6074e5ba5": {
@@ -12149,9 +12149,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "51fc50e84f9de7b22ce989141103fa42aa9889e8": {
@@ -12178,9 +12178,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\manage-telemetry-settings.8695a3cab69c52f730f24c0a5aa69539621393a8.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "8fb4616734aa62dbd8ca43beda7908fe279d0a34": {
@@ -12207,9 +12207,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "7ecd71b5d08ce33aaa04414c4df55251ee539a21": {
@@ -12236,9 +12236,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "b9e2ce9b9c5af49f56a411972af447a9bdf5fec1": {
@@ -12265,9 +12265,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\modifying-ata-config-dcpassword.71593ec491df4d6ace15d09e924eb8cbd0ca77a8.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "3bfe36dbd6840747a622f5eb11a1f6341afff38a": {
@@ -12294,9 +12294,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\modifying-ata-config-iiscert.d586053e78c311e016ef2b6cd8440e3e6387fabc.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     },
     "6fb1d0bf74f64a43492f44cf243e705511864cd6": {
@@ -13048,9 +13048,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.ru-ru.xlf",
+      "ArchiveFileCommit": "81c602c43803ba22770378c865d5003de8d85513",
+      "ArchiveFileDateTime": "2016-04-15T07:52:04.9446767Z",
       "ArchiveException": null
     }
   }
