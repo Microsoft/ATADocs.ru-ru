@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/087be480d5b7bf68a0a33fa023577e60e9f70bb8/ATADocs/index.md) | HandedOffSuccess | [Details](#d2eb72ecbe1aa703799f3c4226862307440b72bc135)
 
 ## Item Details
-##### <a name='d2eb72ecbe1aa703799f3c4226862307440b72bc135'></a> Source: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/087be480d5b7bf68a0a33fa023577e60e9f70bb8/ATADocs/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/82f762caa28bfd5c8a0aade8b73eb6cd6fbd34b2/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf)
-* Handoff Datetime: 2016-04-19 17:48:32
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
