@@ -1,24 +1,20 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 6
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#985645722601e5a17fd83ab5d927cf635bc8b14856)
- [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/index.md) | HandedOffSuccess | [Details](#0a70ce6862fbcbfe93a42a3e01030365c1c87e48136)
- [ATADocs\PlanDesign\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/PlanDesign/TOC.md) | HandedOffSuccess | [Details](#3109455306baf9dd66748c4514e0c2a563390667163)
- [ATADocs\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/TOC.md) | HandedOffSuccess | [Details](#b8107f9b48698e0a3f84a07234840d060afaccd0165)
- [ATADocs\Troubleshoot\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/Troubleshoot/TOC.md) | HandedOffSuccess | [Details](#d526e119b70ca1bfcb3d1cacd541aae4ed4c23b1173)
- [ATADocs\Understand\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/Understand/TOC.md) | HandedOffSuccess | [Details](#c5ae8d04088ce3a5b2640c1865a7f99d10a6d6cd197)
+ [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md) | HandedOffSuccess | [Details](#6003fcc8e48d206960bd8b6e3489e36bb68c25d8167)
+ [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | HandedOffSuccess | [Details](#32694dac750b87a5a07b3a04a51c11054c50917f174)
 
 ## Item Details
-##### <a name='985645722601e5a17fd83ab5d927cf635bc8b14856'></a> Source: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/DeployUse/TOC.md)
+##### <a name='6003fcc8e48d206960bd8b6e3489e36bb68c25d8167'></a> Source: [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
+* Handoff File: [ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/be896a97d1f3a00daf0a58a2eae941f601ae701f/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.ru-ru.xlf)
+* Handoff Datetime: 2016-04-28 21:47:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -26,59 +22,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0a70ce6862fbcbfe93a42a3e01030365c1c87e48136'></a> Source: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/index.md)
+##### <a name='32694dac750b87a5a07b3a04a51c11054c50917f174'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='3109455306baf9dd66748c4514e0c2a563390667163'></a> Source: [ATADocs\PlanDesign\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/PlanDesign/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.f85b55eb3e40dff28191e34a95d45cd87b0e99f7.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.f85b55eb3e40dff28191e34a95d45cd87b0e99f7.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='b8107f9b48698e0a3f84a07234840d060afaccd0165'></a> Source: [ATADocs\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.7ddc5acfa39575166941fca3973fc59ee376add6.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.7ddc5acfa39575166941fca3973fc59ee376add6.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='d526e119b70ca1bfcb3d1cacd541aae4ed4c23b1173'></a> Source: [ATADocs\Troubleshoot\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/Troubleshoot/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='c5ae8d04088ce3a5b2640c1865a7f99d10a6d6cd197'></a> Source: [ATADocs\Understand\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/0a4fb988d8fbcc1c83185b57d692f67500c3477f/ATADocs/Understand/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.602662a4c6e9c6b6819467b610eac5b1ea8b47e7.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/2e1d3040b9904c530a226a30c60d1be777ff203d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.602662a4c6e9c6b6819467b610eac5b1ea8b47e7.ru-ru.xlf)
-* Handoff Datetime: 2016-04-27 20:49:23
+* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/be896a97d1f3a00daf0a58a2eae941f601ae701f/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.ru-ru.xlf)
+* Handoff Datetime: 2016-04-28 21:47:14
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
