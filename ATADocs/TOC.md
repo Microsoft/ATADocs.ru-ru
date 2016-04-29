@@ -1,4 +1,9 @@
-# [Understand and Explore](/understand-explore/what-is-ata)
-# [Plan and Design](/plan-design/ata-capacity-planning)
-# [Deploy and Use](/deploy-use/install-ata)
-# [Troubleshoot](/troubleshoot/troubleshooting-ata-using-logs)
+# [Изучение вопроса](/understand/what-is-ata.md)
+# [План и проект](/plandesign/ata-capacity-planning.md)
+# [Развертывание и использование](/deployuse/install-ata.md)
+# [Устранение неполадок](/troubleshoot/troubleshooting-ata-using-logs.md)
+
+
+<!--HONumber=Mar16_HO3-->
+
+

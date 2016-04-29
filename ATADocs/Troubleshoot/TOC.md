@@ -1,8 +1,14 @@
-# [Understand and Explore](/advanced-threat-analytics/understand-explore/what-is-ata)
-# [Plan and Design](/advanced-threat-analytics/plan-design/ata-capacity-planning)
-# [Deploy and Use](/advanced-threat-analytics/deploy-use/install-ata)
-# [Troubleshoot](troubleshooting-ata-using-logs.md)
-## [Troubleshoot using the logs](troubleshooting-ata-using-logs.md)
-## [Troubleshooting using the performance counters](troubleshooting-ata-using-perf-counters.md)
-## [Troubleshooting using the database](troubleshooting-ata-using-ata-database.md)
-## [Frequently asked questions](ata-technical-faq.md)
+# [Изучение вопроса](/advanced-threat-analytics/understand/what-is-ata)
+# [План и проект](/advanced-threat-analytics/plandesign/ata-capacity-planning)
+# [Развертывание и использование](/advanced-threat-analytics/deployuse/install-ata)
+# [Устранение неполадок](troubleshooting-ata-using-logs.md)
+## [Устранение неполадок с помощью журналов](troubleshooting-ata-using-logs.md)
+## [Устранение неполадок с помощью счетчиков производительности](troubleshooting-ata-using-perf-counters.md)
+## [Устранение неполадок с помощью базы данных](troubleshooting-ata-using-ata-database.md)
+## [Устранение неполадок с оповещениями системы мониторинга ATA](troubleshooting-ata-monitoring-alerts.md)
+## [Часто задаваемые вопросы](ata-technical-faq.md)
+
+
+<!--HONumber=Mar16_HO4-->
+
+

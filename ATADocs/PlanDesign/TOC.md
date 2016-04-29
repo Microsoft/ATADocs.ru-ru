@@ -1,9 +1,14 @@
-# [Understand and Explore](/advanced-threat-analytics/understand-explore/what-is-ata)
-# [Plan and Design](ata-capacity-planning.md)
-## [Plan your ATA capacity](ata-capacity-planning.md)
-## [ATA Prerequisites](ata-prerequisites.md)
-## [Configure port mirroring](configure-port-mirroring.md)
-## [Validate port mirroring](validate-port-mirroring.md)
-## [Configure event collection](configure-event-collection.md)
-# [Deploy and Use](/advanced-threat-analytics/deploy-use/install-ata)
-# [Troubleshoot](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
+# [Изучение вопроса](/advanced-threat-analytics/understand/what-is-ata)
+# [План и проект](ata-capacity-planning.md)
+## [Планирование производительности ATA](ata-capacity-planning.md)
+## [Предварительные требования для ATA](ata-prerequisites.md)
+## [Настройка зеркального отображения портов](configure-port-mirroring.md)
+## [Проверка зеркального отображения портов](validate-port-mirroring.md)
+## [Настройка сбора данных о событиях](configure-event-collection.md)
+# [Развертывание и использование](/advanced-threat-analytics/deployuse/install-ata)
+# [Устранение неполадок](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
+
+
+<!--HONumber=Mar16_HO4-->
+
+
