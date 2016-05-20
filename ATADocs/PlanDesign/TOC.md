@@ -1,14 +1,12 @@
-# [Изучение вопроса](/advanced-threat-analytics/understand/what-is-ata)
+# [Изучение вопроса](/advanced-threat-analytics/understand-explore/what-is-ata)
 # [План и проект](ata-capacity-planning.md)
+## [Архитектура ATA](ata-architecture.md)
 ## [Планирование производительности ATA](ata-capacity-planning.md)
 ## [Предварительные требования для ATA](ata-prerequisites.md)
-## [Настройка зеркального отображения портов](configure-port-mirroring.md)
-## [Проверка зеркального отображения портов](validate-port-mirroring.md)
-## [Настройка сбора данных о событиях](configure-event-collection.md)
-# [Развертывание и использование](/advanced-threat-analytics/deployuse/install-ata)
+# [Развертывание и использование](/advanced-threat-analytics/deploy-use/install-ata)
 # [Устранение неполадок](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=Mar16_HO4-->
+<!--HONumber=May16_HO1-->
 
 

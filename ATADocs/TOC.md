@@ -1,9 +1,9 @@
-# [Изучение вопроса](/understand/what-is-ata.md)
-# [План и проект](/plandesign/ata-capacity-planning.md)
-# [Развертывание и использование](/deployuse/install-ata.md)
-# [Устранение неполадок](/troubleshoot/troubleshooting-ata-using-logs.md)
+# [Изучение вопроса](/understand-explore/what-is-ata)
+# [План и проект](/plan-design/ata-architecture)
+# [Развертывание и использование](/deploy-use/preinstall-ata)
+# [Устранение неполадок](/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=Mar16_HO3-->
+<!--HONumber=May16_HO1-->
 
 
