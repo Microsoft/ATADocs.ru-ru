@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "066bef2bcf2658b5be8e64c5ecd0ed406be4adbf",
+  "LastProcessedCommit": "ce02b7f6d36035af66b8fe3380dc61dd1ec1caac",
   "LastTranslatedCommit": "7df930a6f79a58d7dbf9e86ff2cb3e887eb2c9bb",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -20263,6 +20263,36 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\template.5bdcb9582e246047532a26eee5064c933576bdd2.ru-ru.xlf",
       "HandoffFileCommit": "517502f5a4ab8a63f386a0e49b06e52cc26fefdc",
       "HandoffDateTime": "2016-05-20T00:10:32.5265304Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2": {
+      "FileHash": "c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2",
+      "SourceFileCommit": "ce02b7f6d36035af66b8fe3380dc61dd1ec1caac",
+      "SourceFilePath": "ATADocs\\template.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\template.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\template.5bdcb9582e246047532a26eee5064c933576bdd2.ru-ru.xlf",
+      "HandoffFileCommit": "26f087955b22aca7bfc41f3fc97718a7b4c51d95",
+      "HandoffDateTime": "2016-05-20T00:25:01.4943179Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
