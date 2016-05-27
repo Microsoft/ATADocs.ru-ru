@@ -1,58 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\DeployUse\install-ata-step1.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/install-ata-step1.md) | OutofSyncHandedBackSuccess | [Details](#2d7eb7882ee12c5500dccd2bc0f34df21f15079312)
- [ATADocs\DeployUse\preinstall-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/preinstall-ata.md) | HandedOffSuccess | [Details](#e19e295302c19b372fd7e53e63c9651afa379f9f119)
- [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#76dd524dd48e6d79029e308c6c77440b0e4e0b27122)
 
 ## Item Details
-##### <a name='2d7eb7882ee12c5500dccd2bc0f34df21f15079312'></a> Source: [ATADocs\DeployUse\install-ata-step1.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/install-ata-step1.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/205a5d5fb2b1d73968bc80fec6b5020fa653238d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.ru-ru.xlf)
-* Handoff Datetime: 2016-05-26 19:00:51
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\install-ata-step1.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/7df930a6f79a58d7dbf9e86ff2cb3e887eb2c9bb/ATADocs/DeployUse/install-ata-step1.md)
-* Current Handback File: [install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/1fd11fd3d046748affe518ee63cecb73d7c9d978/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.ru-ru.xlf)
-* Current Handback Datetime: 2016-04-29 15:29:40
-* [Back to Top](#report-top)
-
-##### <a name='e19e295302c19b372fd7e53e63c9651afa379f9f119'></a> Source: [ATADocs\DeployUse\preinstall-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/preinstall-ata.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/205a5d5fb2b1d73968bc80fec6b5020fa653238d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.ru-ru.xlf)
-* Handoff Datetime: 2016-05-26 19:00:51
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='76dd524dd48e6d79029e308c6c77440b0e4e0b27122'></a> Source: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/TOC.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/205a5d5fb2b1d73968bc80fec6b5020fa653238d/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf)
-* Handoff Datetime: 2016-05-26 19:00:51
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/7df930a6f79a58d7dbf9e86ff2cb3e887eb2c9bb/ATADocs/DeployUse/TOC.md)
-* Current Handback File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/1fd11fd3d046748affe518ee63cecb73d7c9d978/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.ru-ru.xlf)
-* Current Handback Datetime: 2016-04-29 15:29:40
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
