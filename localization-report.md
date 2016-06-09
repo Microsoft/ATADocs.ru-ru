@@ -2109,8 +2109,8 @@
 * Handoff File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/f389c291c631f7f72bad1f310b00a544d4315648/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf)
 * Handoff Datetime: 2016-06-07 23:09:00
 * Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/f3ed2e9e86ea26dc559b84b1624da2fbcf1734d5/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/archive/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf)
+* Archive Datetime: 2016-06-09 00:57:23
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/7df930a6f79a58d7dbf9e86ff2cb3e887eb2c9bb/ATADocs/DeployUse/setting-ata-alerts.md)
