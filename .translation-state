@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "d18867c1864e16088ee1167bb588e8d4abc7f1bb",
-  "LastTranslatedCommit": "3a3a2ca429d7f0e1965a2344c0ffe7e0db28cf44",
+  "LastTranslatedCommit": "260bf29c50a27697c29f9a16df26defa37c620c4",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
       "FileHash": "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6",
@@ -23244,14 +23244,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "260bf29c50a27697c29f9a16df26defa37c620c4",
+      "TargetFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\ATADocs-pr.ru-ru\\master\\setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf",
+      "HandbackFileCommit": "90ec63a9efaac8b57bf2d3018e71eb799c98f7a1",
+      "HandbackDateTime": "2016-06-15T14:10:42.460278Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-15T14:10:42.460278Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.ru-ru\\master\\archive\\setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.ru-ru.xlf",
       "ArchiveFileCommit": "f3ed2e9e86ea26dc559b84b1624da2fbcf1734d5",
       "ArchiveFileDateTime": "2016-06-09T00:57:23.527633Z",
