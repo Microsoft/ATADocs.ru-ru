@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 14
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 27
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 25
 [ In Sync Handback Files ](#insync-handback-success-list)| 9
-[ Ignored Files ](#ignored-list)| 240
+[ Ignored Files ](#ignored-list)| 242
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -302,8 +302,6 @@
  [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/df98a12a558a1247a5f4c4c9950ade55aad69f7b/ATADocs/DeployUse/TOC.md) | OutofSyncHandedBackSuccess | [Details](#7007fdee78565b7e29f15b05d430887c5d9bd268122)
  [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/f2c8aeb67a0fa6034513d1c5d35c7acec4e8dbf1/ATADocs/DeployUse/working-with-detection-settings.md) | OutofSyncHandedBackSuccess | [Details](#e4816f70b26843d4ee3c15d9aefb7e64139ab5d5125)
  [ATADocs\DeployUse\working-with-suspicious-activities.md](https://github.com/Microsoft/ATADocs-pr/blob/f2c8aeb67a0fa6034513d1c5d35c7acec4e8dbf1/ATADocs/DeployUse/working-with-suspicious-activities.md) | OutofSyncHandedBackSuccess | [Details](#90386f9abae36811a6543e9ef4bd1b17bfaece79126)
- [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/ed75e37dc9b6c6b923817a7b4a91d81a2bfbe537/ATADocs/PlanDesign/ata-capacity-planning.md) | OutofSyncHandedBackSuccess | [Details](#3a8ddc5cb97572ad8cba43bbd1475c71bb0350cc224)
- [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/74dc8e71008e6908afbbd5b5bb896dbc4ca0e2f4/ATADocs/PlanDesign/ata-prerequisites.md) | OutofSyncHandedBackSuccess | [Details](#1c639d731d29bd16864f40d34934fcd066bdcfdf225)
  [ATADocs\Troubleshoot\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/5407cb4b98860b41b2c6f062cf47504f6d001b23/ATADocs/Troubleshoot/TOC.md) | OutofSyncHandedBackSuccess | [Details](#ff9ed644ccbfd378d191f8374cd45d30a943db4f417)
  [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/283d8383a6e7674e3a9fba06f3a8f73dcb038ea2/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | OutofSyncHandedBackSuccess | [Details](#446b4afd45192336b2bd595e3f7e3474cc172af3419)
  [ATADocs\Troubleshoot\troubleshooting-ata-using-logs.md](https://github.com/Microsoft/ATADocs-pr/blob/283d8383a6e7674e3a9fba06f3a8f73dcb038ea2/ATADocs/Troubleshoot/troubleshooting-ata-using-logs.md) | OutofSyncHandedBackSuccess | [Details](#925694878154d5fb218f1db6fef8949a3bb7e154420)
@@ -426,6 +424,8 @@
  [ATADocs\Image\migrationerror.png](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/Image/migrationerror.png) | Ignored | [Details](#5c586ba530364a62580805245cb6b719c06723e7212)
  [ATADocs\Image\netinstallerror.png](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/Image/netinstallerror.png) | Ignored | [Details](#9efd658a928afd065c61fc98bf52795c9b7594c6213)
  [ATADocs\md.style](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda222)
+ [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/ata-capacity-planning.md) | Ignored | [Details](#663c023e895dea81a0079d6bb445a1a87cb0917b224)
+ [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/ata-prerequisites.md) | Ignored | [Details](#072eba12d14940aaa01824a8ec3899e721484f49225)
  [ATADocs\PlanDesign\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/docfx.json) | Ignored | [Details](#2049435c40c899c1644707ffc5dd335179b48c37226)
  [ATADocs\PlanDesign\md.style](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda227)
  [ATADocs\PlanDesign\media\ATA_center_outdated.png](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/media/ATA_center_outdated.png) | Ignored | [Details](#5b8683e048642aee11b3fa468d06f05bccabac2c295)
@@ -3408,34 +3408,28 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3a8ddc5cb97572ad8cba43bbd1475c71bb0350cc224'></a> Source: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/ed75e37dc9b6c6b923817a7b4a91d81a2bfbe537/ATADocs/PlanDesign/ata-capacity-planning.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='663c023e895dea81a0079d6bb445a1a87cb0917b224'></a> Source: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/ata-capacity-planning.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/813b38a503936c7a577c118b564eb17cd450a05a/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.ru-ru.xlf)
-* Handoff Datetime: 2016-06-20 04:53:34
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/7df930a6f79a58d7dbf9e86ff2cb3e887eb2c9bb/ATADocs/PlanDesign/ata-capacity-planning.md)
-* Current Handback File: [ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/1fd11fd3d046748affe518ee63cecb73d7c9d978/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.ru-ru.xlf)
-* Current Handback Datetime: 2016-04-29 15:29:40
 * [Back to Top](#report-top)
 
-##### <a name='1c639d731d29bd16864f40d34934fcd066bdcfdf225'></a> Source: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/74dc8e71008e6908afbbd5b5bb896dbc4ca0e2f4/ATADocs/PlanDesign/ata-prerequisites.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='072eba12d14940aaa01824a8ec3899e721484f49225'></a> Source: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/ata-prerequisites.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/813b38a503936c7a577c118b564eb17cd450a05a/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.ru-ru.xlf)
-* Handoff Datetime: 2016-06-20 04:53:34
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/3a3a2ca429d7f0e1965a2344c0ffe7e0db28cf44/ATADocs/PlanDesign/ata-prerequisites.md)
-* Current Handback File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/4d1b9efd92dc82143e87cb0c4ed6bfb7018e689c/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.ru-ru.xlf)
-* Current Handback Datetime: 2016-06-07 23:26:00
 * [Back to Top](#report-top)
 
 ##### <a name='2049435c40c899c1644707ffc5dd335179b48c37226'></a> Source: [ATADocs\PlanDesign\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/4f2cdf452f6027c1354fb4442099cced817d0a11/ATADocs/PlanDesign/docfx.json)
