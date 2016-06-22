@@ -83,6 +83,9 @@
   "aebde4e6cecab8aad3d7c827dd8724b2bfd59343": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "663c023e895dea81a0079d6bb445a1a87cb0917b": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "3a8ddc5cb97572ad8cba43bbd1475c71bb0350cc": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -109,6 +112,9 @@
   ],
   "ca2e679ed498245f66995b90846eeb5094e08b13": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "072eba12d14940aaa01824a8ec3899e721484f49": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "1c639d731d29bd16864f40d34934fcd066bdcfdf": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
