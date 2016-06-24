@@ -2,8 +2,8 @@
 asset_id: c4a97980-6e19-4d10-bf69-f0b338266efa
 layout: HubPage
 
-title: "Документация по Advanced Threat Analytics"
-description: "Техническая документация по Microsoft Intune: управление мобильными устройствами и приложениями"
+title: Документация по Advanced Threat Analytics
+description: Техническая документация по Microsoft Intune: управление мобильными устройствами и приложениями
 keywords: Advanced Threat Analytics Documentation, ATA documentation
 author: msstevenpo
 manager: stevenpo
@@ -21,12 +21,12 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
     <section id="hero-content">
       <h1>Документация по Microsoft Advanced Threat Analytics</h1>
       <h2>Узнайте, как развертывать решение Microsoft Advanced Threat Analytics (ATA), которое представляет собой локальный продукт, помогающий специалистам по информационной безопасности защищать предприятия от сложных целенаправленных атак, а также как им управлять.</h2>
-      <h3>Вы еще не использовали ATA? <a href="https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/" target="_blank">Посетите страницу продукта &rarr;</a></h3>
+      <h3>Вы еще не использовали ATA? <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">Посетите страницу продукта &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
       <p>Готовы приступить к работе?</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">Попробовать сейчас</a></li>
+        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">Попробовать сейчас</a></li>
       </ol>
     </aside>
     <section id="featured" class="container">
@@ -191,6 +191,6 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
