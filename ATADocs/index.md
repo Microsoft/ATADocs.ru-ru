@@ -2,8 +2,8 @@
 asset_id: c4a97980-6e19-4d10-bf69-f0b338266efa
 layout: HubPage
 
-title: Документация по Advanced Threat Analytics
-description: Техническая документация по Microsoft Intune: управление мобильными устройствами и приложениями
+title: "Документация по Advanced Threat Analytics"
+description: "Техническая документация по Microsoft Intune: управление мобильными устройствами и приложениями"
 keywords: Advanced Threat Analytics Documentation, ATA documentation
 author: msstevenpo
 manager: stevenpo
