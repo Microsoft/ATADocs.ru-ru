@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md) | OutofSyncHandedBackSuccess | [Details](#bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423)
 
 ## Item Details
-##### <a name='bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145423'></a> Source: [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/8d1dedaf86031e8585cca23241aead58f7f3db4e/ATADocs/Understand/ata-technical-faq.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/68d0021acc9f8ba976f5cd1fa2fbd587e964b449/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.ru-ru.xlf)
-* Handoff Datetime: 2016-06-27 16:02:45
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\Understand\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/cf155f4828b90ab7e814702979db6adbbdf032d8/ATADocs/Understand/ata-technical-faq.md)
-* Current Handback File: [ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/31ec58fa6877650cfcfa35f3721b7ebe53330a0a/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.ru-ru.xlf)
-* Current Handback Datetime: 2016-06-30 00:51:24
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
