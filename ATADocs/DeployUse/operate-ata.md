@@ -12,8 +12,9 @@ ms.technology: security
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.sourcegitcommit: 5407cb4b98860b41b2c6f062cf47504f6d001b23
-ms.openlocfilehash: b30041b411c633308d20b5c833ca17c91deb9a01
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 44c755364a08b2aab9739b5a219e01f21d441b07
 
 
 ---
@@ -40,13 +41,13 @@ ms.openlocfilehash: b30041b411c633308d20b5c833ca17c91deb9a01
 
 ## См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 
