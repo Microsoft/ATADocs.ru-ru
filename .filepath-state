@@ -20,9 +20,6 @@
   "7007fdee78565b7e29f15b05d430887c5d9bd268": [
     "ATADocs\\DeployUse\\TOC.md"
   ],
-  "76dd524dd48e6d79029e308c6c77440b0e4e0b27": [
-    "ATADocs\\DeployUse\\TOC.md"
-  ],
   "1214560096227e00af36ff7cb1a0a95988a2ad40": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
@@ -53,58 +50,10 @@
   "21d87591c9c791aa431c273479921e1c11825e09": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
-  "83927d92d278b1b4115fa7ea1d258a3616984fa9": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "7e5f00eef0db1c2c523ca05917143a3e69bb8801": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "44f504bcbc233f21b2ae88ce962d24bbe6231e41": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "206948e3313e48a2638f796b2f6e03a5fed2fed0": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "b3d0a3ef1430d41ddf31ffe1627ccd2bc10dc94e": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "555ffec601c8d740420ab13430b5279e8f00f7ee": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "9bd0e575875f736ddf7cdf13761d231563d9a8eb": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "6b55c206bff4eaf0a315de5882003851c9d38753": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
-  "e07df8a167da55d54e13a2874a1f375908f2bb43": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
-  ],
   "6a9c12c520e1a6051395d39739ef64d78310e920": [
     "ATADocs\\Understand\\TOC.md"
   ],
   "4831e7a773b69a87bbcd505a8116230f14611250": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "fb845fb41dfbec50711fefa64b6a561433040d0b": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "c9c3245a44bb092647c5e318bbc17a726b802d16": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "1bacbc427cbfb56b2ce4c8fab72cab1a8191d5a6": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "7dd696a90fa05b1a5673837fc2a66b9135948551": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "3fe0be899081bc0208bf2d6641ac3f9f6c9e06b9": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "ec243f4dea2d4acba463694ebe28713255139fa3": [
-    "ATADocs\\Understand\\what-is-ata.md"
-  ],
-  "3081c028c13803227b42e3d55fe038b4dc301eef": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
   "3840a5f7abdd496ad245a3f1c2589ad1855fddb5": [
@@ -155,28 +104,16 @@
   "66194d89c3e937923e576004a3ab4b7177f179c4": [
     "ATADocs\\DeployUse\\setting-syslog-email-server-settings.md"
   ],
-  "69407ab44e09c309fd19cac34ca0c89f942c8095": [
-    "ATADocs\\DeployUse\\setting-syslog-email-server-settings.md"
-  ],
   "c72bca3cb1eef1f3fb59f666c6143cf5c095bde9": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
   "351541d28e0f30a33d76990f2ac00a4d506f5450": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
-  "f02309a66663311922454af40a68b9a9200b64d3": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
-  ],
   "bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145": [
     "ATADocs\\Understand\\ata-technical-faq.md"
   ],
   "7f9ca7dcb227f5dde1225c55150fd1c737722ce1": [
-    "ATADocs\\DeployUse\\working-with-ata-console.md"
-  ],
-  "ce3f8bd462a560c505b5430ff730782e1f016974": [
-    "ATADocs\\DeployUse\\working-with-ata-console.md"
-  ],
-  "e187b7fea77773134ce0d3f7948ff082e0e40d16": [
     "ATADocs\\DeployUse\\working-with-ata-console.md"
   ],
   "17f30cbe478a868f3b6887bf48d8084934624191": [
@@ -194,18 +131,6 @@
   "e1ce20c48323e1fca04211c2691f6dfb6fa57fe5": [
     "ATADocs\\DeployUse\\validate-port-mirroring.md"
   ],
-  "0367d160ee3ec384aade0dea1eb28cd1b4ac8b8c": [
-    "ATADocs\\DeployUse\\validate-port-mirroring.md"
-  ],
-  "4ecf76afdbcc60b0e8f92a0ff04573d7b178bc82": [
-    "ATADocs\\DeployUse\\validate-port-mirroring.md"
-  ],
-  "965032eec59f602c3d012eb596d1ebfdca309433": [
-    "ATADocs\\DeployUse\\validate-port-mirroring.md"
-  ],
-  "7d1198f5e2d17fc7cfaeab4c4d1878c951b82acb": [
-    "ATADocs\\DeployUse\\validate-port-mirroring.md"
-  ],
   "2d753060f30cbcc7d16959355b86d64fdaa2ecd8": [
     "ATADocs\\PlanDesign\\ata-architecture.md"
   ],
@@ -221,19 +146,7 @@
   "3f7e2b32c43966cbb1adab1f88dd0e197313de65": [
     "ATADocs\\Understand\\whats-new-version-1.4.md"
   ],
-  "66e9322774d10d0c41cc7bccda0f4b32bce4fe71": [
-    "ATADocs\\Understand\\whats-new-version-1.4.md"
-  ],
-  "84da34ea982844245086173d85f4a52e814b3c52": [
-    "ATADocs\\Understand\\whats-new-version-1.4.md"
-  ],
   "5836792bcfadb2585d05d4a195979bd6003c84cf": [
-    "ATADocs\\Understand\\whats-new-version-1.5.md"
-  ],
-  "c2a4a52abfdc6a7cb88f4aff57821feeb9b85c4a": [
-    "ATADocs\\Understand\\whats-new-version-1.5.md"
-  ],
-  "bc5426c7bd21585bb4bd6be921353ce20fa0551b": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"
   ],
   "eee114a62e1854b5821c0ca4a6f276e9dcd121c8": [
