@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr/blob/e0745079465aecefd26571eea894d19b82cbc216/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md) | InSyncHandedBackSuccess | [Details](#c72bca3cb1eef1f3fb59f666c6143cf5c095bde9416)
 
 ## Item Details
-##### <a name='c72bca3cb1eef1f3fb59f666c6143cf5c095bde9416'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr/blob/e0745079465aecefd26571eea894d19b82cbc216/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/e5ba9ce4cfa69b6cefee1117f6f8e72c64ee2cf5/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md)
-* Handoff File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/1f7923d4d8213b7c5338bdc7d8e07f72796b3c45/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf)
-* Handoff Datetime: 2016-07-06 00:55:40
-* Handoff Reason: Include
-* Archive File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf](https://github.com/Microsoft/EM.handoff/blob/53604f7f015da0193e1b4ca017dca6006be31bb5/ol-handoff/Microsoft/ATADocs-pr.ru-ru/master/archive/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf)
-* Archive Datetime: 2016-07-09 01:17:56
-* Handback File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/b197ba2f9a53f5fd494e277d966a8453e81d5767/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.ru-ru.xlf)
-* Handback Datetime: 2016-07-11 11:52:52
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
