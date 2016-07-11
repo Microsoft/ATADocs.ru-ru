@@ -13,8 +13,8 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 351541d28e0f30a33d76990f2ac00a4d506f5450
+ms.sourcegitcommit: e0745079465aecefd26571eea894d19b82cbc216
+ms.openlocfilehash: c72bca3cb1eef1f3fb59f666c6143cf5c095bde9
 
 
 ---
@@ -53,11 +53,11 @@ ms.openlocfilehash: 351541d28e0f30a33d76990f2ac00a4d506f5450
 - [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
-- [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#ATA_event_WEF)
+- [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
