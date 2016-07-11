@@ -12,8 +12,9 @@ ms.technology: security
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.sourcegitcommit: 283d8383a6e7674e3a9fba06f3a8f73dcb038ea2
-ms.openlocfilehash: a5efa3f2b838af537126945aaf71ae522ce8a8d2
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: a5efa3f2b838af537126945aaf71ae522ce8a8d2
 
 
 ## Как предоставляются лицензии на ATA?
-Сведения о лицензировании см. в разделе [Как приобрести Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/Purchasing.aspx).
+Сведения о лицензировании см. в разделе [Как приобрести Advanced Threat Analytics](https://www.microsoft.com/server-cloud/products/advanced-threat-analytics/Purchasing.aspx).
 
 
 ## Что делать, если шлюз ATA не запускается?
@@ -47,7 +48,7 @@ ms.openlocfilehash: a5efa3f2b838af537126945aaf71ae522ce8a8d2
 ATA поддерживает механизм защиты Kerberos (также известный как безопасное туннелирование для гибкой аутентификации (FAST)). Однако в случае его активации ATA не сможет обнаруживать атаки Over-pass-the-hash.
 ## Как узнать число требуемых шлюзов ATA?
 
-Во-первых, рекомендуется использовать упрощенные шлюзы ATA на каждом контроллере домена, где их можно разместить. Дополнительные сведения см. в разделе [ATA Lightweight Gateway Sizing](/advanced-threat-analytics/plan-design/ata-capacity-planning#ATA-Lightweight-Gateway-Sizing) (Размеры упрощенного шлюза ATA). 
+Во-первых, рекомендуется использовать упрощенные шлюзы ATA на каждом контроллере домена, где их можно разместить. Дополнительные сведения см. в статье [Размеры упрощенного шлюза ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing). 
 
 Если упрощенные шлюзы ATA могут охватить все контроллеры домена, нет необходимости использовать обычные шлюзы ATA.
 
@@ -94,7 +95,7 @@ ATA поддерживает механизм защиты Kerberos (также 
 ATA поддерживает двунаправленную интеграцию с системами SIEM:
 
 1. В ATA можно настроить отправку оповещений системного журнала при обнаружении подозрительной активности на любой сервер системы SIEM, который поддерживает формат CEF.
-2. В ATA можно настроить получение сообщений системного журнала о каждом событии Windows с идентификатором 4776 из [этих систем SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#SIEM-support).
+2. В ATA можно настроить получение сообщений системного журнала о каждом событии Windows с идентификатором 4776 из [этих систем SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support).
 
 ## Возможно ли с помощью ATA отслеживать контроллеры домена, содержащиеся в решении IaaS?
 
@@ -136,11 +137,11 @@ Microsoft Advanced Threat Analytics — это локальный продукт
 - [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#Configuring-Windows-Event-Forwarding)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

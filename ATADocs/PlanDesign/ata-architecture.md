@@ -12,8 +12,9 @@ ms.technology: security
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.sourcegitcommit: 224f3c29c4a3e0ff62b9b3f42837c648dc838e3c
-ms.openlocfilehash: b7f4b07796ee90d45b40bc00b749b56c5f11c83b
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 2d753060f30cbcc7d16959355b86d64fdaa2ecd8
 
 
 ---
@@ -89,7 +90,7 @@ ATA отслеживает сетевой трафик контроллера д
 
 -   Один центр ATA может отслеживать лишь один лес Active Directory. При наличии нескольких лесов Active Directory для каждого из них требуется по крайней мере один центр ATA.
 
--    При очень крупных развертываниях Active Directory одного центра ATA может быть недостаточно для обработки всего трафика из контроллеров домена. В этом случае потребуется несколько центров ATA. Число центров ATA зависит от [планирования производительности решения](ata-capacity-planning.md)..
+-    При очень крупных развертываниях Active Directory одного центра ATA может быть недостаточно для обработки всего трафика из контроллеров домена. В этом случае потребуется несколько центров ATA. Число центров ATA зависит от [планирования производительности решения](ata-capacity-planning.md).
 
 ## Шлюз ATA и упрощенный шлюз ATA
 
@@ -166,20 +167,20 @@ ATA отслеживает сетевой трафик контроллера д
 ### События
 Для повышения эффективности обнаружения атак Pass-the-Hash, атак методом подбора и атак с использованием honeytoken решению ATA требуется доступ к событию 4776 из журнала событий Windows. Обеспечить передачу сведений об этом событии на шлюз ATA можно двумя способами — путем настройки прослушивания событий SIEM в шлюзе ATA или пересылки событий Windows.
 
--   Настройка прослушивания событий SIEM в шлюзе ATA <br>Настройте пересылку определенных событий Windows из системы SIEM в ATA. ATA поддерживает несколько поставщиков SIEM. Дополнительные сведения см. в статье [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)..
+-   Настройка прослушивания событий SIEM в шлюзе ATA <br>Настройте пересылку определенных событий Windows из системы SIEM в ATA. ATA поддерживает несколько поставщиков SIEM. Дополнительные сведения см. в статье [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection).
 
--   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку сведений о событиях Windows 4776 из контроллеров домена на шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Дополнительные сведения о пересылке событий Windows в ATA см. в разделе [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)..
+-   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку сведений о событиях Windows 4776 из контроллеров домена на шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Дополнительные сведения о пересылке событий Windows в ATA см. в разделе [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding).
 
 ## См. также
 - [Предварительные требования для ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
