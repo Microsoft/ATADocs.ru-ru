@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Устранение неполадок журнала ошибок ATA | Microsoft Advanced Threat Analytics
-description: В этой статье описываются способы устранения распространенных ошибок в ATA 
-keywords:
+title: "Устранение неполадок журнала ошибок ATA | Microsoft Advanced Threat Analytics"
+description: "В этой статье описываются способы устранения распространенных ошибок в ATA"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 351541d28e0f30a33d76990f2ac00a4d506f5450
+
 
 ---
 
@@ -50,7 +44,7 @@ ms.suite: ems
 ## Ошибки развертывания
 |Ошибка|Описание|Разрешение|
 |-------------|----------|---------|
-|Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/en-us/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/en-us/kb/2919355).|
+|Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 
 ![Изображение ошибки установки .NET для ATA](media/netinstallerror.png)
 
@@ -60,9 +54,10 @@ ms.suite: ems
 - [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#ATA_event_WEF)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
