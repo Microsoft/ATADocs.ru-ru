@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "9846208c1b977695ea4e4b0c4011013e577a33cc",
-  "LastTranslatedCommit": "116631be0e8956bfa8a734c5ca612fce0c28d2e9",
+  "LastTranslatedCommit": "20c7894945b9277421d7cfce7da07148feecaa73",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
       "FileHash": "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6",
@@ -24311,7 +24311,7 @@
       "TargetFilePath": "ATADocs\\index.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\ATADocs-pr.ru-ru\\master\\index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf",
       "HandbackFileCommit": "c2f13b40b5f168b6f403425a975323e228e485ee",
-      "HandbackDateTime": "2016-07-15T17:54:43.8915608Z",
+      "HandbackDateTime": "2016-07-15T18:25:20.8995266Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\ae6fe6\\ol-handback\\Microsoft\\ATADocs-pr.ru-ru\\master\\index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf failed.",
@@ -24321,7 +24321,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
         "extended_information": null
       },
-      "HandbackFailureTimes": 1,
+      "HandbackFailureTimes": 2,
       "UpdatedDateTime": "2016-06-25T05:45:33.424249Z",
       "ArchiveFilePath": null,
       "ArchiveFileCommit": null,
