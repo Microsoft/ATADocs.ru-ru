@@ -3394,7 +3394,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr.ru-ru/blob/7ccbb0d9690113797624dd233e24791ff5fb133b/ATADocs/index.md)
 * Current Handback File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf](https://github.com/Microsoft/EM.handback/blob/c2f13b40b5f168b6f403425a975323e228e485ee/ol-handback/Microsoft/ATADocs-pr.ru-ru/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.ru-ru.xlf)
-* Current Handback Datetime: 2016-07-15 18:27:55
+* Current Handback Datetime: 2016-07-15 18:54:26
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda221'></a> Source: [ATADocs\md.style](https://github.com/Microsoft/ATADocs-pr/blob/9846208c1b977695ea4e4b0c4011013e577a33cc/ATADocs/md.style)
