@@ -4,6 +4,6 @@
 # [Устранение неполадок](/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

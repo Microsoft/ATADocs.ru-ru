@@ -19,7 +19,7 @@
 #### [Изменение сертификата центра ATA](modifying-ata-config-centercert.md)
 #### [Изменение IP-адреса консоли ATA](modifying-ata-config-consoleip.md)
 #### [Изменение сертификата IIS](modifying-ata-config-iiscert.md)
-#### [Изменение пароля для контроллера домена](modifying-ata-config-dcpassword.md)
+#### [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
 ### [Работа с консолью ATA](working-with-ata-console.md)
 ### [Настройка оповещений ATA](setting-ata-alerts.md)
 ### [Настройка параметров почтового сервера и сервера системного журнала](setting-syslog-email-server-settings.md)
@@ -31,6 +31,6 @@
 # [Устранение неполадок](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

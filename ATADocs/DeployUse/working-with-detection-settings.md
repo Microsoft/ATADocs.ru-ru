@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Работа с параметрами обнаружения ATA | Microsoft Advanced Threat Analytics
-description: В этом документе объясняется, как настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети.
-keywords:
+title: "Работа с параметрами обнаружения ATA | Microsoft Advanced Threat Analytics"
+description: "В этом документе объясняется, как настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 3840a5f7abdd496ad245a3f1c2589ad1855fddb5
+
 
 ---
 
@@ -44,9 +38,10 @@ ms.suite: ems
 ## См. также
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Изменение конфигурации ATA](modifying-ata-configuration.md)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
