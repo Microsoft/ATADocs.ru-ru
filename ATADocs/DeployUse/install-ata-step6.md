@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Установка ATA | Microsoft Advanced Threat Analytics
-description: На заключительном этапе установки ATA нужно настроить подсети с краткосрочным использованием IP-адресов и пользователя Honeytoken.
-keywords:
+title: "Установка ATA | Microsoft ATA"
+description: "На заключительном этапе установки ATA нужно настроить подсети с краткосрочным использованием IP-адресов и пользователя Honeytoken."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 461b59e0f03bd6ba6d982767fa78bb415d2c16e0
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 3.  В качестве SID учетной записи Honeytoken укажите SID учетной записи пользователя, у которой не будет сетевой активности. Затем щелкните значок плюса. Например, введите `S-1-5-21-72081277-1610778489-2625714895-10511`.
 
     > [!NOTE]
-    > Чтобы найти SID пользователя, выполните командлет Windows PowerShell `Get-ADUser UserName`.
+    > Чтобы найти идентификатор безопасности пользователя, найдите пользователя в консоли ATA и выберите вкладку**Сведения об учетной записи**. 
 
 4.  Настройте исключения. Некоторые IP-адреса можно исключить из проверки на предмет определенных подозрительных действий. Дополнительные сведения см. в статье [Работа с параметрами обнаружения ATA](working-with-detection-settings.md).
 
@@ -54,7 +48,7 @@ ms.suite: ems
 
 Просмотрите временную шкалу атак, чтобы увидеть обнаруженные подозрительные действия, найти пользователей или компьютеры и изучить их профили.
 
-Помните, что для создания поведенческих профилей решению ATA требуется как минимум три недели. В течение первых трех недель вы не будете видеть никаких подозрительных действий.
+В ATA сразу же начнется проверка на наличие подозрительных действий. Некоторые действия, например подозрительные действия, связанные с поведением, будут недоступны, пока ATA не создаст профили поведения (минимум три недели).
 
 
 >[!div class="step-by-step"]
@@ -63,11 +57,13 @@ ms.suite: ems
 
 ## См. также
 
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [Настройка сбора данных о событиях](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jul16_HO3-->
 
 

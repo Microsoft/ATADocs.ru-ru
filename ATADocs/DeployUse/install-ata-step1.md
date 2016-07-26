@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Установка ATA. Шаг 1 | Microsoft Advanced Threat Analytics
-description: На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер.
-keywords:
+title: "Установка ATA. Шаг 1 | Microsoft ATA"
+description: "На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c512fd20f913c53ac936f7de288eb024d91cf9f1
+ms.openlocfilehash: 756c01d4fc4fbe7950cbbfc66fd65cf32b3bc44a
+
 
 ---
 
@@ -33,14 +27,15 @@ ms.suite: ems
 
 В ходе установки предоставляются указания по выполнению новой установки ATA 1.6. Дополнительные сведения об обновлении имеющегося развертывания ATA из более ранней версии см. в [руководстве по миграции на ATA версии 1.6](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide).
 
-> [!IMPORTANT] Прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюзов ATA. Иначе это обновление будет установлено вместе с ATA, из-за чего во время установки потребуется перезагрузка.
+> [!IMPORTANT] 
+> Прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюзов ATA. Иначе это обновление будет установлено вместе с ATA, из-за чего во время установки потребуется перезагрузка.
 
 ## Шаг 1. Скачивание и установка центра ATA
 Проверив соответствие сервера требованиям, можно приступить к установке центра ATA.
 
 На сервере шлюза ATA сделайте следующее:
 
-1.  Скачайте ATA на веб-сайте [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), из [центра оценки TechNet](http://www.microsoft.com/en-us/evalcenter/) или на сайте [MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads).
+1.  Скачайте ATA на веб-сайте [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), из [центра оценки TechNet](http://www.microsoft.com/evalcenter/) или на сайте [MSDN](https://msdn.microsoft.com/subscriptions/downloads).
 
 2.  Войдите на компьютер, на котором вы устанавливаете центр ATA, как участник локальной группы администраторов.
 
@@ -94,17 +89,19 @@ ms.suite: ems
 
 
 
->[!div class="step-by-step"] [ « Предустановка ](preinstall-ata.md)
-[ Шаг 2 » ](install-ata-step2.md)
+>[!div class="step-by-step"]
+[« Перед установкой](preinstall-ata.md)
+[Шаг 2 »](install-ata-step2.md)
 
 ## См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 
