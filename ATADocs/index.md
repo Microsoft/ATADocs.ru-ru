@@ -1,10 +1,9 @@
 ---
 asset_id: c4a97980-6e19-4d10-bf69-f0b338266efa
 layout: HubPage
-
 title: "Документация по Advanced Threat Analytics"
-description: "Техническая документация по Microsoft Intune: управление мобильными устройствами и приложениями"
-keywords: Advanced Threat Analytics Documentation, ATA documentation
+description: "Техническая документация по Advanced Threat Analytics, службе безопасности корпорации Майкрософт."
+keywords: "Документация по Advanced Threat Analytics, документация по ATA"
 author: msstevenpo
 manager: stevenpo
 ms.date: 04/28/2016
@@ -14,6 +13,10 @@ ms.service: advanced-threat-analytics
 ms.technology: security
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
+translationtype: Human Translation
+ms.sourcegitcommit: b74b0ee3c9a7b1e60064705998fb8e3ebe2f5c8e
+ms.openlocfilehash: ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad
+
 
 ---
 # Документация по Microsoft Advanced Threat Analytics
@@ -105,7 +108,7 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
                 </li>
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-prerequisites">
-                    <h3>Предварительные требования для ATA<h3>
+                    <h3>Предварительные требования для ATA</h3>
                     <p>Продумайте требования для успешного развертывания ATA в среде.</p>
                   </a>
                 </li>
@@ -191,6 +194,7 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 </article>
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 
