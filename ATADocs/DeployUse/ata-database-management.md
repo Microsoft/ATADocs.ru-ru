@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Управление базой данных ATA | Microsoft Advanced Threat Analytics
-description: Процедуры перемещения, резервного копирования и восстановления базы данных ATA.
-keywords:
+title: "Управление базой данных ATA | Microsoft ATA"
+description: "Процедуры перемещения, резервного копирования и восстановления базы данных ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 115ec28877665c79e5cbcd557528da156c8d7149
+ms.openlocfilehash: fd00623f9be396b3a2c384cce436996b5093cc3f
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 
 3.  Откройте файл конфигурации Mongo: C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg (расположение по умолчанию).
 
-    Найдите параметр `storage: dbPath`.
+    Поиск параметра `storage: dbPath`
 
 4.  Переместите папку, указанную в параметре `dbPath`, в новое расположение.
 
@@ -56,16 +50,22 @@ ms.suite: ems
 
     По умолчанию файл mongo.exe хранится в расположении C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin.
 
-8.  Выполните команду `db.SystemProfiles.update( {_t: "CenterSystemProfile"} , {$set:{"Configuration.CenterDatabaseClientConfiguration.DataPath" : "<New DB Location>"}}) Instead of <New DB Location>`, где &lt;New DB Location&gt; — это новый путь к папке.
+8.  Выполните следующую команду. `db.SystemProfiles.update( {_t: "CenterSystemProfile"} , {$set:{"Configuration.CenterDatabaseClientConfiguration.DataPath" : "<New DB Location>"}})`
+
+   Вместо <New DB Location>, где `&lt;New DB Location&gt;` — это новый путь к папке.
+
+9.  Обновите путь к папке HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath.
 
 9. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
 ## См. также
-- [Архитектура ATA](/advanced-threat-analytics/understand/ata-architecture)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plandesign/ata-prerequisites)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Архитектура ATA](/advanced-threat-analytics/plan-design/ata-architecture)
+- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+
+<!--HONumber=Jul16_HO3-->
 
 

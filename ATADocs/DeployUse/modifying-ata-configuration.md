@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Изменение конфигурации ATA | Microsoft Advanced Threat Analytics
-description: Несколько вариантов изменения конфигурации ATA.
-keywords:
+title: "Изменение конфигурации ATA | Microsoft ATA"
+description: "Несколько вариантов изменения конфигурации ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: f28ced1f56dbc6b1266f1179a143e183532c6b17
+
 
 ---
 
@@ -37,16 +31,15 @@ ms.suite: ems
 
 -   [Как изменить сертификат IIS.](modifying-ata-config-iiscert.md)
 
--   [Как изменить пароль для подключения к домену.](modifying-ata-config-dcpassword.md)
-
--   [Как изменить имя сетевого адаптера для записи.](modifying-ata-config-nicname.md)
+-   [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
 
 ## См. также
-- [Работа с консолью ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Работа с консолью ATA](working-with-ata-console.md)
 - [Установка ATA](install-ata.md)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

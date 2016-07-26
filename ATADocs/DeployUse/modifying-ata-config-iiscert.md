@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Изменение конфигурации ATA. Сертификат IIS | Microsoft Advanced Threat Analytics
-description: Процедура изменения сертификата, используемого службой IIS для центра ATA.
-keywords:
+title: "Изменение конфигурации ATA. Сертификат служб IIS | Microsoft ATA"
+description: "Процедура изменения сертификата, используемого службой IIS для центра ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,26 +10,22 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: e58a0390-57ef-4c68-a987-2e75e5f3d6b3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 6516500f3134228cc92e269ef5ea8bfe4faa19d9
+
 
 ---
 
 # Изменение конфигурации ATA. Сертификат IIS
 
 >[!div class="step-by-step"]
-[« Изменение IP-адреса консоли ATA](modifying-ata-config-consoleip.md)
+[« IP-адрес консоли ATA](modifying-ata-config-consoleip.md)
 [Пароль для подключения к домену »](modifying-ata-config-dcpassword.md)
 
-## Изменение сертификата IIS
+## Как изменить сертификат IIS.
 В консоли можно выбрать и изменить сертификат для службы центра ATA, но изменить сертификат, используемый службой IIS, нельзя.
 
 Чтобы изменить этот сертификат, выполните описанные ниже действия.
@@ -58,15 +52,16 @@ ms.suite: ems
 7.  Перед установкой нового шлюза ATA скачайте пакет установки шлюза ATA.
 
 >[!div class="step-by-step"]
-[« Изменение IP-адреса консоли ATA](modifying-ata-config-consoleip.md)
+[« IP-адрес консоли ATA](modifying-ata-config-consoleip.md)
 [Пароль для подключения к домену »](modifying-ata-config-dcpassword.md)
 
 ## См. также
-- [Работа с консолью ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Работа с консолью ATA](working-with-ata-console.md)
 - [Установка ATA](install-ata.md)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

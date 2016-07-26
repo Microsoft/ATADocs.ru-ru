@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Изменение конфигурации ATА. IP-адрес консоли АТА | Microsoft Advanced Threat Analytics
-description: Эта статья содержит информацию о том, как изменить IP-адрес консоли ATA, с помощью которого на шлюзах ATA создается ярлык консоли ATA.
-keywords:
+title: "Изменение конфигурации АТА. IP-адрес консоли АТА | Microsoft ATA"
+description: "Эта статья содержит информацию о том, как изменить IP-адрес консоли ATA, с помощью которого на шлюзах ATA создается ярлык консоли ATA."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 3c02459e6a0cde359e632bf966948cf3a72170a2
+
 
 ---
 
@@ -29,14 +23,14 @@ ms.suite: ems
 
 >[!div class="step-by-step"]
 [« Сертификат центра ATA](modifying-ata-config-centercert.md)
-[Сертификат IIS »](modifying-ata-config-iiscert.md)
+[Сертификатов IIS »](modifying-ata-config-iiscert.md)
 
 ## Изменение IP-адреса консоли ATA
 По умолчанию в качестве URL-адреса консоли ATA используется IP-адрес, выбранный в качестве IP-адреса консоли АТА при установке центра ATA.
 
 URL-адрес используется в следующих сценариях:
 
--   Установка шлюзов ATA. При установке шлюза ATA он регистрирует себя с помощью центра ATA. Такой процесс регистрации требует подключения к консоли АТА. Если указать FQDN в качестве URL-адреса консоли ATA, необходимо убедиться, что шлюз АТА может разрешить FQDN для IP-адреса и что консоль АТА привязана к службе IIS. Кроме того, URL-адрес используется для создания ярлыка для консоли АТА на шлюзах АТА.
+-   Установка шлюзов ATA. При установке шлюза ATA он регистрирует себя с помощью центра ATA. Такой процесс регистрации требует подключения к консоли АТА. Если указать FQDN в качестве URL-адреса консоли ATA, необходимо убедиться, что шлюз ATA может разрешить FQDN для IP-адреса и что консоль ATA привязана к IIS. Кроме того, URL-адрес используется для создания ярлыка для консоли АТА на шлюзах АТА.
 
 -   Оповещения. Когда АТА отправляет оповещение с помощью системы SIEM или электронной почты, такое оповещение содержит ссылку на подозрительное действие. Часть ссылки содержит параметр URL-адреса консоли ATA.
 
@@ -79,15 +73,16 @@ URL-адрес используется в следующих сценариях
 
 >[!div class="step-by-step"]
 [« Сертификат центра ATA](modifying-ata-config-centercert.md)
-[Сертификат IIS »](modifying-ata-config-iiscert.md)
+[Сертификатов IIS »](modifying-ata-config-iiscert.md)
 
 
 ## См. также
-- [Работа с консолью ATA](/advanced-threat-analytics/understand/working-with-ata-console)
+- [Работа с консолью ATA](working-with-ata-console.md)
 - [Установка ATA](install-ata.md)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

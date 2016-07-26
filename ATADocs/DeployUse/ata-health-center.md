@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Центр работоспособности ATA | Microsoft Advanced Threat Analytics
-description: Центр работоспособности ATA позволяет следить за работой службы ATA и своевременно узнавать о возможных проблемах.
-keywords:
+title: "Центр работоспособности ATA | Microsoft ATA"
+description: "Центр работоспособности ATA позволяет следить за работой службы ATA и своевременно узнавать о возможных проблемах."
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c512fd20f913c53ac936f7de288eb024d91cf9f1
+ms.openlocfilehash: 87c92ce4ca7834df7483071a18f78ca6c6bfccd0
+
 
 ---
 
@@ -31,10 +25,10 @@ ms.suite: ems
 ## Работа с центром работоспособности ATA
 Узнать о существующей проблеме можно по красной точке над значком центра работоспособности в строке меню.
 
-![Красная точка над значком центра работоспособности ATA (рисунок)](media/ATA-Health-Center-Alert-red-dot.png)
+![Красная точка над значком центра работоспособности ATA на панели инструментов](media/ATA-Health-Center-Alert-red-dot.png)
 
 ### Управление работоспособностью ATA
-Чтобы проверить общее состояние системы, щелкните в строке меню значок центра работоспособности. ![Значок центра работоспособности ATA](media/ATA-red-dot.png).
+Чтобы проверить общее состояние системы, щелкните в строке меню значок центра работоспособности. ![Значок центра работоспособности ATA](media/ATA-red-dot.png)
 
 -   Управление открытыми оповещениями осуществляется посредством выбора для них одного из двух состояний: **Разрешено** или **Отклонено**. В окне оповещения щелкните **Открыто** и выберите **Разрешено** или **Отклонено**.
 
@@ -47,9 +41,10 @@ ms.suite: ems
 ## См. также
 - [Работа с параметрами обнаружения ATA](working-with-detection-settings.md)
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Для получения поддержки посетите наш форум.](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 
