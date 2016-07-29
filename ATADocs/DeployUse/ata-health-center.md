@@ -3,18 +3,18 @@ title: "Центр работоспособности ATA | Microsoft ATA"
 description: "Центр работоспособности ATA позволяет следить за работой службы ATA и своевременно узнавать о возможных проблемах."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c512fd20f913c53ac936f7de288eb024d91cf9f1
-ms.openlocfilehash: 87c92ce4ca7834df7483071a18f78ca6c6bfccd0
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 3f357d2b21c453e0057370f3dfbbe45e39f3ba97
 
 
 ---
@@ -45,6 +45,6 @@ ms.openlocfilehash: 87c92ce4ca7834df7483071a18f78ca6c6bfccd0
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

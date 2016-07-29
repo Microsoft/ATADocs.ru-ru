@@ -3,18 +3,18 @@ title: "Настройка уведомлений ATA | Microsoft ATA"
 description: "В этой статье описано, как настроить оповещения ATA, чтобы получать уведомления при обнаружении подозрительных действий."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 03f6f184e7f34d6985103f503b8d88a3fc820c18
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 47796a385ce92217fe36040df0723f31e4cb8701
 
 
 ---
@@ -71,6 +71,6 @@ ms.openlocfilehash: 03f6f184e7f34d6985103f503b8d88a3fc820c18
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "Изменение конфигурации АТА. IP-адрес цен
 description: "Описание способов изменения IP-адреса, порта или сертификата центра обработки ATA."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: c5e249f8791eff2a32fe75353e171ded67fae7f9
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 4eb552b9f7d42895abf08ec4cd9216b5204c5e0b
 
 
 ---
@@ -80,6 +80,6 @@ ms.openlocfilehash: c5e249f8791eff2a32fe75353e171ded67fae7f9
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

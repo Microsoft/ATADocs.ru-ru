@@ -3,18 +3,18 @@ title: "Установка ATA | Microsoft ATA"
 description: "На заключительном этапе установки ATA нужно настроить подсети с краткосрочным использованием IP-адресов и пользователя Honeytoken."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 461b59e0f03bd6ba6d982767fa78bb415d2c16e0
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: c9712b0ad8d67b1e618cb75b14785f8079020864
 
 
 ---
@@ -64,6 +64,6 @@ ms.openlocfilehash: 461b59e0f03bd6ba6d982767fa78bb415d2c16e0
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

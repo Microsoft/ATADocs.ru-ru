@@ -3,18 +3,18 @@ title: "Настройка зеркального отображения пор�
 description: "Здесь описываются варианты зеркального отображения портов и их настройка для ATA"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 18b6ceb2c2d3eacb51cc150d5c7faaac5791a3d0
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 92d14179f9177aba824dd5c42c2ef5797af108cb
 
 
 ---
@@ -71,6 +71,6 @@ ms.openlocfilehash: 18b6ceb2c2d3eacb51cc150d5c7faaac5791a3d0
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

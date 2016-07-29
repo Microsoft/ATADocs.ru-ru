@@ -3,18 +3,18 @@ title: "Полное руководство по подготовке к уст�
 description: "В статье описываются обязательные действия, которые необходимо выполнить перед развертыванием ATA."
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: cec388976153a5885c0c6d62180018f4fc054707
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 1a6efd51647e267b4eb88af1b4815e5ee416d598
 
 
 ---
@@ -38,6 +38,6 @@ ms.openlocfilehash: cec388976153a5885c0c6d62180018f4fc054707
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "Работа с консолью ATA | Microsoft ATA"
 description: "В этой статье описывается процедура входа в консоль ATA и ее компоненты"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 7e40a2a6b3d5c4acb926dcab310b95bd7dd5b7af
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 1eb9397b541eb64cef553f61e8517568d16b0092
 
 
 ---
@@ -124,6 +124,6 @@ C помощью консоли можно отслеживать обнаруж
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
