@@ -4,7 +4,7 @@ description: "Процедура изменения пароля для подк
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,16 +13,20 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
 
 
 ---
 
+*Применяется к Advanced Threat Analytics версии 1.7*
+
+
+
 # Изменение конфигурации ATA. Пароль для подключения к домену
 
 >[!div class="step-by-step"]
-[« Сертификат IIS](modifying-ata-config-iiscert.md)
+[« URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
 
 
 ## Изменение пароля для подключения к домену
@@ -31,26 +35,28 @@ ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
 Если у вас возникло подозрение, что служба перестала работать, на шлюзе ATA откройте файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку:
 `The supplied credential is invalid.`
 
-Чтобы исправить эту ошибку, в шлюзе ATA измените пароль для подключения к домену, как описано ниже.
+Чтобы исправить эту ошибку, в центре ATA измените пароль для подключения к домену, как описано ниже.
 
-1.  Откройте на шлюзе ATA консоль ATA.
+1.  Откройте в центре ATA консоль ATA.
 
 2.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
     ![Значок параметров конфигурации ATA](media/ATA-config-icon.JPG)
 
-3.  Выберите пункт **Общие**.
+3.  Выберите **Directory Services** (Службы каталогов).
 
-    ![Изменение пароля для шлюзов ATA (рисунок)](media/ATA-GW-change-DC-password.JPG)
+    ![Изменение пароля для шлюзов ATA (рисунок)](media/ATA-GW-change-DC-password.png)
 
-4.  В разделе **Общие** измените пароль.
+4.  В разделе **Password** (Пароль) измените пароль.
+
+    Если у центра ATA есть подключение к домену, то, чтобы проверить учетные данные, нажмите кнопку **Test Connection** (Проверить подключение).
 
 5.  Нажмите кнопку **Сохранить**.
 
 6.  После изменения пароля убедитесь, что служба шлюза ATA работает на всех шлюзах ATA.
 
 >[!div class="step-by-step"]
-[« Сертификат IIS](modifying-ata-config-iiscert.md)
+[« URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
 
 ## См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
@@ -59,6 +65,6 @@ ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
