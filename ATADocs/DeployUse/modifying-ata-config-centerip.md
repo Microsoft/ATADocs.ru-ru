@@ -4,7 +4,7 @@ description: "Описание способов изменения IP-адрес
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 4eb552b9f7d42895abf08ec4cd9216b5204c5e0b
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: e6d42610d1c785da5b7c7b1cf035d94c2fddff4b
 
 
 ---
+
+*Применяется к Advanced Threat Analytics версии 1.7*
+
+
 
 # Изменение конфигурации АТА. IP-адрес центра АТА
 
@@ -46,9 +50,9 @@ ms.openlocfilehash: 4eb552b9f7d42895abf08ec4cd9216b5204c5e0b
 
     ![Значок параметров конфигурации ATA](media/ATA-config-icon.JPG)
 
-3.  Выберите пункт **Общие**.
+3.  Выберите **Center** (Центр).
 
-4.  В разделе **IP-адрес службы центра ATA: порт** выберите один из существующих IP-адресов или выберите **Добавить пользовательский IP-адрес** и введите IP-адрес.
+4.  В разделе **Center service IP address : port** (IP-адрес службы центра: порт) выберите один из существующих IP-адресов или выберите **Add custom IP address** (Добавить пользовательский IP-адрес) и введите IP-адрес.
 
 5.  Нажмите кнопку **Сохранить**.
 
@@ -76,10 +80,10 @@ ms.openlocfilehash: 4eb552b9f7d42895abf08ec4cd9216b5204c5e0b
 ## См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

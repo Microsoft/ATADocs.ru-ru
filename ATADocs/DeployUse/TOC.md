@@ -1,6 +1,6 @@
 # [Изучение вопроса](/advanced-threat-analytics/understand-explore/what-is-ata)
 # [План и проект](/advanced-threat-analytics/plan-design/ata-capacity-planning)
-# [Развертывание и использование](install-ata.md)
+# [Развертывание и использование](preinstall-ata.md)
 ## [Подготовка к установке ATA](preinstall-ata.md)
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
@@ -17,12 +17,12 @@
 ### [Изменение конфигурации ATA](modifying-ata-configuration.md)
 #### [Изменение IP-адреса центра ATA](modifying-ata-config-centerip.md)
 #### [Изменение сертификата центра ATA](modifying-ata-config-centercert.md)
-#### [Изменение IP-адреса консоли ATA](modifying-ata-config-consoleip.md)
-#### [Изменение сертификата IIS](modifying-ata-config-iiscert.md)
+#### [Изменение URL-адреса консоли ATA](modifying-ata-config-consoleurl.md)
 #### [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
 ### [Работа с консолью ATA](working-with-ata-console.md)
-### [Настройка оповещений ATA](setting-ata-alerts.md)
+### [Группы ролей ATA](ata-role-groups.md)
 ### [Настройка параметров почтового сервера и сервера системного журнала](setting-syslog-email-server-settings.md)
+### [Настройка оповещений ATA](setting-ata-alerts.md)
 ### [Работа с параметрами обнаружения](working-with-detection-settings.md)
 ### [Центр работоспособности ATA](ata-health-center.md)
 ### [Обработка подозрительных действий](working-with-suspicious-activities.md)
@@ -31,6 +31,6 @@
 # [Устранение неполадок](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
