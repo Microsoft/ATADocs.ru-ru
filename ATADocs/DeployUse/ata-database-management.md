@@ -13,11 +13,15 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
+ms.sourcegitcommit: 5cd030f3b952d08c6617a6cda121c344a9c36f51
+ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 
 ---
+
+*Применяется к Advanced Threat Analytics версии 1.7*
+
+
 
 # Управление базой данных ATA
 Из этой статьи вы узнаете, как перемещать и восстанавливать базу данных ATA, а также создавать ее резервные копии на примере MongoDB.
@@ -46,17 +50,18 @@ ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
 
 6.  Запустите службу **MongoDB**.
 
-7.  Откройте командную строку и с помощью команды `mongo.exe ATA` запустите оболочку Mongo.
+7. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
-    По умолчанию файл mongo.exe хранится в расположении C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin.
+## Файл конфигурации ATA
+Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
+Служба центра АТА каждый час выполняет резервное копирование этой коллекции в файлы, которые называются SystemProfile_*timestamp*.json. Сохраняются последние 10 файлов.
+Они расположены в подпапке с именем Backup (Резервная копия). По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
 
-8.  Выполните следующую команду. `db.SystemProfiles.update( {_t: "CenterSystemProfile"} , {$set:{"Configuration.CenterDatabaseClientConfiguration.DataPath" : "<New DB Location>"}})`
+**Примечание**. Рекомендуем создавать резервную копию этого файла, когда в ATA вносятся важные изменения.
 
-   Вместо <New DB Location>, где `&lt;New DB Location&gt;` — это новый путь к папке.
+Можно восстановить все параметры, выполнив следующую команду:
 
-9.  Обновите путь к папке HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath.
-
-9. Запустите службу **центра Microsoft Advanced Threat Analytics**.
+`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
 ## См. также
 - [Архитектура ATA](/advanced-threat-analytics/plan-design/ata-architecture)
@@ -66,6 +71,6 @@ ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

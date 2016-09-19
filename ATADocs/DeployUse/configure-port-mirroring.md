@@ -4,7 +4,7 @@ description: "Здесь описываются варианты зеркаль�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 92d14179f9177aba824dd5c42c2ef5797af108cb
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: d7f15f08a64a9d884a560f4f3429568cf33bdd34
 
 
 ---
+
+*Применяется к Advanced Threat Analytics версии 1.7*
+
+
 
 # Настройка зеркального отображения портов
 > [!NOTE] 
@@ -71,6 +75,6 @@ ms.openlocfilehash: 92d14179f9177aba824dd5c42c2ef5797af108cb
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,7 +4,7 @@ description: "В данной статье описывается двухэта
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,20 +13,24 @@ ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
 
 
 ---
 
+*Применяется к Advanced Threat Analytics версии 1.7*
+
+
+
 # Изменение конфигурации ATA. Сертификат центра ATA
 
 >[!div class="step-by-step"]
-[« IP-адрес сервера ATA Center](modifying-ata-config-centerip.md)
-[IP-адрес консоли ATA »](modifying-ata-config-consoleip.md)
+[« IP-адрес сервера центра ATA](modifying-ata-config-centerip.md)
+[URL-адрес консоли ATA»](modifying-ata-config-consoleurl.md)
 
 ## Как изменить сертификат центра ATA.
-Если срок действия ваших сертификатов истекает и нужно продлить или заменить сертификаты после установки нового сертификата в хранилище локального компьютера на сервере центра АТА, замените сертификат с помощью этого двухэтапного процесса.
+Если срок действия вашего сертификата скоро истечет и вам нужно продлить или заменить его после того, как вы установили новый сертификат в хранилище локального компьютера на сервере центра ATA, сделать это можно в два этапа:
 
 -   Первый этап: обновление сертификата, который должен использоваться центром ATA. На этом этапе служба центра ATA по-прежнему привязана к исходному сертификату. В процессе синхронизации конфигураций у шлюзов ATA будет два потенциальных сертификата, действительных для взаимной проверки подлинности. Пока шлюз ATA может подключаться с помощью исходного сертификата, новый сертификат использоваться не будет.
 
@@ -35,6 +39,7 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 > [!NOTE]
 > -   Если на первом этапе шлюз ATA работал в автономном режиме и не получил обновленную конфигурацию, вам нужно будет вручную обновить файл конфигурации JSON на шлюзе ATA.
 > -   Используемый вами сертификат должен быть доверенным сертификатом шлюзов ATA.
+> -   Сертификат используется также для консоли ATA, поэтому он должен соответствовать адресу консоли ATA, чтобы не появлялись предупреждения браузера.
 > -   Если необходимо развернуть новый шлюз ATA после активации нового сертификата, необходимо скачать пакет установки шлюза ATA еще раз.
 
 1.  Откройте консоль ATA.
@@ -43,7 +48,7 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 
     ![Значок параметров конфигурации ATA](media/ATA-config-icon.JPG)
 
-3.  Выберите **Центр ATA**.
+3.  Выберите **Center** (Центр).
 
 4.  В разделе **Сертификат** выберите один сертификат из списка.
 
@@ -60,16 +65,16 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 8.  Убедитесь, что после активации изменений все шлюзы ATA смогут синхронизировать свои конфигурации.
 
 >[!div class="step-by-step"]
-[« IP-адрес сервера ATA Center](modifying-ata-config-centerip.md)
-[IP-адрес консоли ATA »](modifying-ata-config-consoleip.md)
+[« IP-адрес сервера центра ATA](modifying-ata-config-centerip.md)
+[URL-адрес консоли ATA»](modifying-ata-config-consoleurl.md)
 
 ## См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
