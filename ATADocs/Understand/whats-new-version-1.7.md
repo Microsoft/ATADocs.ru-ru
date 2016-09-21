@@ -13,8 +13,8 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 579e49a8dd9a5cc67961af14259bb8bb27130de5
+ms.sourcegitcommit: ae6a3295d2fffabdb8e5f713674379e4af499ac2
+ms.openlocfilehash: af9101260b1a0d5d9da32398f638f76e0c8c40a7
 
 
 ---
@@ -63,10 +63,53 @@ ms.openlocfilehash: 579e49a8dd9a5cc67961af14259bb8bb27130de5
 ### Автоматическое обновление шлюза может завершиться ошибкой
 **Симптомы:** в средах с медленными каналами связи с глобальной сетью может быть превышено время ожидания для обновления шлюза ATA (100 секунд), в результате чего обновление не будет выполнено.
 В консоли ATA для такого шлюза ATA состояние "Обновление (Загрузка пакета)" будет сохраняться в течение долгого времени, а затем процесс завершается ошибкой.
+
 **Обходное решение:** чтобы обойти эту проблему, загрузите последнюю версию пакета для шлюза ATA через консоль ATA и обновите шлюз ATA вручную.
 
- > [!IMPORTANT]
- Не поддерживается автоматическое продление для тех сертификатов, которые используются в ATA. Если используются такие сертификаты, ATA может перестать работать после автоматического обновления сертификата. 
+### Сбой миграции при обновлении ATA 1.6
+При обновлении ATA до версии 1.7 может произойти сбой, при этом отобразится следующее сообщение об ошибке с кодом *0x80070643*.
+
+![Ошибка при обновлении ATA до версии 1.7](media/ata-update-error.png)
+
+Просмотрите журнал развертывания, чтобы найти причину сбоя. Журнал развертывания находится в следующем расположении: **%temp%\..\Microsoft Advanced Thread Analytics Center_{date_stamp}_MsiPackage.log**. 
+
+В таблице ниже перечислены искомые ошибки и соответствующие им скрипты Mongo для их устранения. Примеры запуска скриптов Mongo см. ниже.
+
+| Ошибка в файле журнала развертывания                                                                                                                  | Скрипт Mongo                                                                                                                                                                         |
+|---|---|
+| System.FormatException: размер {size} превышает MaxDocumentSize 16777216 <br>Далее в файле:<br>  Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.MigrateUniqueEntityProfiles(Boolean isPartial)                                                                                        | db.UniqueEntityProfile.find().forEach(function(obj){if(Object.bsonsize(obj) > 12582912) {print(obj._id);print(Object.bsonsize(obj));db.UniqueEntityProfile.remove({_id:obj._id});}}) |
+| System.OutOfMemoryException: возникло исключение типа "System.OutOfMemoryException"<br>Далее в файле:<br>Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.ReduceSuspiciousActivityDetailsRecords(IMongoCollection`1 suspiciousActivityCollection, Int32 deletedDetailRecordMaxCount) | db.SuspiciousActivity.find().forEach(function(obj){if(Object.bsonsize(obj) > 500000),{print(obj._id);print(Object.bsonsize(obj));db.SuspiciousActivity.remove({_id:obj._id});}})     |
+|System.Security.Cryptography.CryptographicException: недопустимая длина<br>Далее в файле:<br> Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.MigrateCenterSystemProfile(IMongoCollection`1 systemProfileCollection)| CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;db.SystemProfile.update({_t:"CenterSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}})|
+
+
+Чтобы запустить соответствующий скрипт, выполните следующие действия. 
+
+1.  В командной строке с повышенными привилегиями перейдите в следующее расположение: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**
+2.  Введите **Mongo.exe ATA**   (*Примечание*. ATA следует написать прописными буквами.)
+3.  Вставьте скрипт, соответствующий ошибке в журнале развертывания, из таблицы выше.
+
+![Скрипт ATA Mongo](media/ATA-mongoDB-script.png)
+
+К этому моменту у вас должна быть возможность перезапустить обновление.
+
+### ATA сообщает о большом количестве подозрительных действий типа "*Разведывательная атака с помощью перечислений служб каталогов*".
+ 
+Обычно это происходит, если средство сканирования сети выполняется на всех клиентских компьютерах (или большинстве) в организации. Если у вас возникает эта проблема, выполните следующие действия.
+
+1. Если вы можете идентифицировать причину или конкретное приложение, выполняющееся на клиентских компьютерах, отправьте электронное письмо в ATAEval по ссылке Microsoft.com, указав сведения.
+2. Используйте следующий скрипт Mongo, чтобы отклонить все эти события (сведения о том, как выполнить скрипт Mongo, см. выше).
+
+db.SuspiciousActivity.update({_t: "SamrReconnaissanceSuspiciousActivity"}, {$set: {Status: "Dismissed"}}, {multi: true})
+
+### ATA отправляет уведомления об отклоненных подозрительных действиях.
+Если уведомления настроены, ATA может продолжать отправлять уведомления (по электронной почте, в syslog и журналах событий) об отклоненных подозрительных действиях.
+Сейчас решить эту проблему невозможно. 
+
+### Возможно, шлюзу ATA не удастся зарегистрироваться в центре ATA, если TLS 1.0 и TLS 1.1 отключены.
+Если TLS 1.0 и TLS 1.1 отключены в шлюзе ATA (или шлюзе Lightweight), возможно, шлюзу не удастся зарегистрироваться в центре ATA
+
+### Автоматическое продление не поддерживается для тех сертификатов, которые используются в ATA
+Если используется автоматическое продление таких сертификатов, ATA может перестать работать после автоматического обновления сертификата. 
 
 
 ## См. также
@@ -77,6 +120,6 @@ ms.openlocfilehash: 579e49a8dd9a5cc67961af14259bb8bb27130de5
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
