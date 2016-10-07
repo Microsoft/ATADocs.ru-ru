@@ -13,8 +13,8 @@ ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 168a41182128a1fc91d92a4ef11b873c04ecc6b7
+ms.sourcegitcommit: 39eadb9143740741fa592f983f03def5367ada46
+ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 
 
 ---
@@ -45,9 +45,9 @@ ms.openlocfilehash: 168a41182128a1fc91d92a4ef11b873c04ecc6b7
   - **Описание**: введите описание шлюза ATA (необязательно).
   - **Контроллеры домена с зеркалированием портов (полное доменное имя)** (обязательный параметр для шлюза ATA; не доступен для изменения в упрощенном шлюзе ATA): введите полное доменное имя контроллера домена и нажмите кнопку "плюс", чтобы добавить его в список. Например, **dc01.contoso.com**.
 
-        The following information applies to the servers you enter in the **Domain Controllers** list:
-        - All domain controllers whose traffic is being monitored via port mirroring by the ATA Gateway must be listed in the **Domain Controllers** list. If a domain controller is not listed in the **Domain Controllers** list, detection of suspicious activities might not function as expected.
-        - At least one domain controller in the list should be a global catalog. This will enable ATA to resolve computer and user objects in other domains in the forest.
+      Сведения ниже относятся к серверам, которые указываются в списке **Контроллеры домена**.
+      - Все контроллеры домена, трафик которых отслеживается для шлюза ATA с использованием зеркального отображения портов, необходимо указать в списке **Контроллеры домена**. Если контроллер домена не указан в списке **Контроллеры домена**, обнаружение подозрительных действий может выполняться не так, как ожидается.
+      - По крайней мере один контроллер домена из списка должен быть глобальным каталогом. Так решение ATA сможет устранять объекты компьютеров и пользователей в других доменах леса.
 
 - **Сетевые адаптеры для записи** (обязательно)
   - Для шлюза ATA на выделенном сервере выберите сетевые адаптеры, настроенные в качестве зеркальных портов назначения. Они будут получать зеркально отображенный трафик контроллера домена.
@@ -96,6 +96,6 @@ ms.openlocfilehash: 168a41182128a1fc91d92a4ef11b873c04ecc6b7
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
