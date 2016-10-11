@@ -1,10 +1,10 @@
 ---
 title: "Установка ATA | Microsoft ATA"
-description: "На заключительном этапе установки ATA нужно настроить подсети с краткосрочным использованием IP-адресов и пользователя Honeytoken."
+description: "На заключительном этапе установки ATA нужно настроить пользователя Honeytoken."
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/28/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 57fe1272e95f69ef9d614505bbef0bb6c1d8ccb6
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: 9ee2f36d8f0b7eae061873e8735139ccc4da00d1
 
 
 ---
@@ -75,6 +75,6 @@ ATA позволяет исключать определенные IP-адрес
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
