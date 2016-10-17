@@ -4,7 +4,7 @@ description: "Здесь описывается решение Microsoft Advance
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: c2f8d642f5ab0927448730453873a5b6271b3d2b
+ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
+ms.openlocfilehash: 0bc2bcc42b2b59cf297b4af86f0c38aafebc379f
 
 
 ---
@@ -38,9 +38,6 @@ ATA может получать события и журналы из следу
 -   развертывание упрощенного шлюза ATA (LGW) непосредственно на контроллерах домена.
 
 Дополнительные сведения см. в статье [об архитектуре ATA](/advanced-threat-analytics/plan-design/ata-architecture).
-
-Посмотрите ознакомительный видеоролик про ATA.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0nA9FeTRZFw" frameborder="0" allowfullscreen></iframe>
 
 ## Возможности ATA
 
@@ -104,6 +101,6 @@ ATA обнаруживает эти подозрительные действи�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
