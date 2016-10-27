@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
+ms.sourcegitcommit: 3a821bf1479af529fd65e2153f8b722999c83a4f
+ms.openlocfilehash: 444bc4744834219d9db7bc8c209f33c039f90dad
 
 
 ---
@@ -28,6 +28,7 @@ ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
   
 
 ## Обновление ATA до версии 1.7
+
 > [!NOTE] 
 > Если в вашей среде не установлено решение ATA, скачайте его полную версию, которая включает версию 1.7, и выполните стандартную процедуру установки, как описано в статье [Установка ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
@@ -81,8 +82,8 @@ ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
 > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 > Настроенный порт прослушивателя Syslog для всех шлюзов будет изменен на 514.
  
-    > [!NOTE] 
-    > To install new ATA Gateways, go the **Gateways** screen and click **Download Gateway Setup** to get the ATA 1.7 installation package and follow the instructions for new Gateway installation as described in [Step 4. Install the ATA Gateway](/advanced-threat-analytics/deploy-use/install-ata-step4) .
+> [!NOTE] 
+> Чтобы установить новые шлюзы ATA, перейдите к экрану **Шлюзы** и выберите команду **Скачать установщик шлюза**, чтобы получить установочный пакет ATA 1.7, а затем следуйте инструкциям по установке нового шлюза в разделе [Шаг 4. Установка шлюза ATA](/advanced-threat-analytics/deploy-use/install-ata-step4).
 
 
 
@@ -92,6 +93,6 @@ ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
