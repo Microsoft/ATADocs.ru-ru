@@ -19,17 +19,17 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 2
+# <a name="install-ata-step-2"></a>Установка ATA. Шаг 2
 
 >[!div class="step-by-step"]
 [Шаг 1](install-ata-step1.md)
 [Шаг 3](install-ata-step3.md)
 
-## Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
+## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
 
 При первом открытии консоли ATA открывается такой экран:
 
@@ -44,7 +44,7 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
     |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
     
 
-    После сохранения приветственное сообщение в консоли изменяется на следующее: ![ATA welcome stage 1 finished (Этап приветствия 1 в ATA завершен).](media/ATA_1.7-welcome-provide-username-finished.png)
+    После сохранения приветственное сообщение в консоли изменится на следующее: ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png) (Этап приветствия 1 в ATA завершен).
 
 2. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
 
@@ -54,14 +54,14 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 [Шаг 3](install-ata-step3.md)
 
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
