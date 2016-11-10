@@ -4,7 +4,7 @@ description: "На первом шаге установки ATA необходи
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
 
 
 ---
@@ -43,6 +43,9 @@ ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 2.  Войдите на компьютер, на котором вы устанавливаете центр ATA, как участник локальной группы администраторов.
 
 3.  Запустите файл **Setup.exe центра Microsoft ATA** и следуйте указаниям мастера установки.
+
+> [!NOTE]   
+> Запустите файл установки на локальном диске, а не из подключенного ISO-файла, чтобы избежать проблем в том случае, если при установке потребуется перезагрузка.   
 
 4.  Если платформа Microsoft .Net Framework не установлена, вам будет предложено установить ее при запуске установки. После установки платформы .NET Framework может появиться запрос на перезагрузку.
 5.  На странице **приветствия** выберите язык, который будет использоваться в окнах мастера установки ATA, и нажмите кнопку **Далее**.
@@ -102,6 +105,6 @@ ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 
