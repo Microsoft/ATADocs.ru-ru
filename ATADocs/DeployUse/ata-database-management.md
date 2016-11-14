@@ -4,7 +4,7 @@ description: "Процедуры перемещения, резервного к
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,26 +13,26 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5cd030f3b952d08c6617a6cda121c344a9c36f51
-ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: e295e0a0a8b5adbd40ddeb7e389ff82c7482c6d9
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Управление базой данных ATA
+# <a name="ata-database-management"></a>Управление базой данных ATA
 Из этой статьи вы узнаете, как перемещать и восстанавливать базу данных ATA, а также создавать ее резервные копии на примере MongoDB.
 
-## Резервное копирование базы данных ATA
+## <a name="backing-up-the-ata-database"></a>Резервное копирование базы данных ATA
 См. [соответствующую документацию MongoDB](http://docs.mongodb.org/manual/administration/backup/).
 
-## Восстановление базы данных ATA
+## <a name="restoring-the-ata-database"></a>Восстановление базы данных ATA
 См. [соответствующую документацию MongoDB](http://docs.mongodb.org/manual/administration/backup/).
 
-## Перемещение базы данных ATA на другой диск
+## <a name="moving-the-ata-database-to-another-drive"></a>Перемещение базы данных ATA на другой диск
 
 1.  Остановите службу **центра Microsoft Advanced Threat Analytics**.
 
@@ -40,7 +40,7 @@ ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 3.  Откройте файл конфигурации Mongo: C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg (расположение по умолчанию).
 
-    Поиск параметра `storage: dbPath`
+    Найдите параметр `storage: dbPath`.
 
 4.  Переместите папку, указанную в параметре `dbPath`, в новое расположение.
 
@@ -52,25 +52,14 @@ ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 7. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
-## Файл конфигурации ATA
-Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
-Служба центра АТА каждый час выполняет резервное копирование этой коллекции в файлы, которые называются SystemProfile_*timestamp*.json. Сохраняются последние 10 файлов.
-Они расположены в подпапке с именем Backup (Резервная копия). По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
-
-**Примечание**. Рекомендуем создавать резервную копию этого файла, когда в ATA вносятся важные изменения.
-
-Можно восстановить все параметры, выполнив следующую команду:
-
-`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
-
-## См. также
+## <a name="see-also"></a>См. также
 - [Архитектура ATA](/advanced-threat-analytics/plan-design/ata-architecture)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 

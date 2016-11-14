@@ -13,8 +13,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
-ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: 3f78d0dd6b1e3f419c7e72e0449f77e7d2b3167d
 
 
 ---
@@ -42,11 +42,12 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
     |**Имя пользователя** (указывается обязательно)|Введите имя пользователя только для чтения, например **ATAuser**.|
     |**Пароль** (указывается обязательно)|Введите пароль для имени пользователя только для чтения, например **Parolch1k**.|
     |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
-    
+
+2. Кроме того, можно нажать кнопку **Test connection** (Проверить подключение), чтобы проверить подключение к домену и убедиться, что по указанным учетным данным можно получить доступ. Работает, только если Центр ATA подключен к домену.   
 
     После сохранения приветственное сообщение в консоли изменится на следующее: ![ATA welcome stage 1 finished](media/ATA_1.7-welcome-provide-username-finished.png) (Этап приветствия 1 в ATA завершен).
 
-2. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
+3. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
 
 
 >[!div class="step-by-step"]
@@ -62,6 +63,6 @@ ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
