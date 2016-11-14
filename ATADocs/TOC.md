@@ -1,9 +1,10 @@
 # [Изучение вопроса](/understand-explore/what-is-ata)
-# [План и проект](/plan-design/ata-architecture)
-# [Развертывание и использование](/deploy-use/preinstall-ata)
-# [Устранение неполадок](/troubleshoot/troubleshooting-ata-known-errors)
+# [Планирование и проектирование](/plan-design/ata-architecture)
+# [Развертывание](/advanced-threat-analytics/deploy-use/preinstall-ata)
+# [Использование](/advanced-threat-analytics/deploy-use/operate-ata)
+# [Устранение проблем](/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO5-->
 
 
