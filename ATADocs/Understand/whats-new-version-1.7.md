@@ -1,20 +1,21 @@
 ---
-title: "Новые возможности ATA версии 1.7 | Microsoft ATA"
+title: "Новые возможности ATA версии 1.7 | Документация Майкрософт"
 description: "В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.7"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 
+ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: 03a5e6a5398ffcc43e712bd4a3c2f872cd91c0b4
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 
 ---
@@ -77,7 +78,13 @@ ms.openlocfilehash: 03a5e6a5398ffcc43e712bd4a3c2f872cd91c0b4
 
 Оповещения о пропущенном трафике зеркального отражения портов при использовании упрощенного шлюза в VMware
 
-Если используются контроллеры доменов на виртуальных машинах VMware, вам могут приходить оповещения о **пропущенном трафике зеркального отражения портов**. Это происходит из-за несоответствия конфигурации в VMware. Чтобы избежать этих оповещений, задайте значение «0» или «Отключено» для следующих параметров: TsoEnable, LargeSendOffload, IPv4 и TSO Offload. Кроме того, рекомендуется отключить IPv4 Giant TSO Offload. Для получения дополнительной информации обратитесь к документации VMware.
+Если используются контроллеры доменов на виртуальных машинах VMware, вам могут приходить оповещения о **пропущенном трафике зеркального отражения портов**. Это происходит из-за несоответствия конфигурации в VMware. Чтобы эти оповещения не появлялись, присвойте следующим параметрам виртуальной машины значение "0" или "Отключено":  
+
+- TsoEnable
+- LargeSendOffload(IPv4)
+- IPv4 TSO Offload
+
+Кроме того, рекомендуется отключить IPv4 Giant TSO Offload. Для получения дополнительной информации обратитесь к документации VMware.
 
 ### <a name="automatic-gateway-update-fail-when-updating-to-17-update-1"></a>Сбой автоматического обновления шлюза при обновлении до версии 1.7 с обновлением 1
 
@@ -110,6 +117,6 @@ ms.openlocfilehash: 03a5e6a5398ffcc43e712bd4a3c2f872cd91c0b4
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
