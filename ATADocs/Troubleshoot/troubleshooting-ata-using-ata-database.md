@@ -1,33 +1,34 @@
 ---
-title: "Устранение неполадок в ATA с помощью базы данных ATA | Microsoft ATA"
+title: "Устранение неполадок в ATA с помощью базы данных ATA | Документация Майкрософт"
 description: "В данной статье рассказывается о том, как устранять неполадки с помощью базы данных ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af0508f82d8cf190dcd3ff058f4c2ff37b4b0595
-ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: bff3224736981f38616172a6b1717d7d125c3c0a
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Устранение неполадок в ATA с помощью базы данных ATA
+# <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 В качестве своей базы данных ATA использует MongoDB.
 Для взаимодействия с базой данных можно использовать заданную по умолчанию командную строку или инструмент пользовательского интерфейса для выполнения дополнительных задач и устранения неполадок.
 
-## Взаимодействие с базой данных
+## <a name="interacting-with-the-database"></a>Взаимодействие с базой данных
 Чтобы отправить запрос в базу данных, проще всего (и это стандартный способ) использовать оболочку Mongo. Сделать это можно так:
 
 1.  Откройте окно командной строки и измените путь к папке Bin службы MongoDB. По умолчанию задан путь **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**.
@@ -50,15 +51,15 @@ ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## См. также
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+## <a name="see-also"></a>См. также
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

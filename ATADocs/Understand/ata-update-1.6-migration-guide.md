@@ -1,25 +1,26 @@
 ---
-title: "Руководство по миграции на обновленную версию ATA 1.6 | Microsoft ATA"
+title: "Руководство по миграции на обновленную версию ATA 1.6 | Документация Майкр4ософт"
 description: "Процедуры по обновлению ATA до версии 1.6"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
+ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3ec5d56444d618efcfc617172e93e0e8e8a1768
-ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: e361c1b659210934b9fcd70c7c438a47030eeeba
 
 
 ---
 
-# Руководство по миграции на обновленную версию ATA 1.6
+# <a name="ata-update-to-16-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.6
 При обновлении ATA до версии 1.6 появляются следующие улучшения:
 
 -   новые обнаружения;
@@ -36,7 +37,7 @@ ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
 
 -   поддержка IBM QRadar.
 
-## Обновление ATA до версии 1.6
+## <a name="updating-ata-to-version-16"></a>Обновление ATA до версии 1.6
 > [!NOTE] 
 > Если в вашей среде решение ATA не установлено, скачайте его полную версию, включая версию 1.6, и выполните стандартную процедуру установки, описанную в статье [Установка ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
@@ -49,7 +50,7 @@ ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
 
 1. Чтобы избежать проблем с обновлением, выполните шаги 8–10 раздела **Сбой миграции при обновлении ATA до версии 1.6** в статье [Новые возможности версии ATA 1.6](whats-new-version-1.6.md).
 2. Убедитесь, что у вас достаточно свободного места для обновления. Вы можете выполнить установку до проверки готовности, чтобы оценить, сколько свободного места требуется, а затем выделить место и перезапустить обновление.
-1.  [Скачайте обновление 1.6.](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [Скачайте обновление 1.6](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 В этой версии файл установки (Setup.exe центра Microsoft ATA) используется как для установки развертывания ATA, так и для обновления имеющихся развертываний.
 
 2.  Обновите центр ATA.
@@ -61,7 +62,7 @@ ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
     > [!IMPORTANT]
     > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Шаг 1. Обновление центра ATA
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
 
 1.  Создайте резервную копию базы данных (необязательно).
 
@@ -81,11 +82,11 @@ ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
     3.  Прочтите лицензионное соглашение и, если вы принимаете условия, нажмите кнопку **Далее**.
 
     4.  Теперь можно использовать Центр обновления Майкрософт для ATA, чтобы быть в курсе обновлений.  На странице Центра обновления Майкрософт установите флажок **Использовать Центр обновления Майкрософт при проверке наличия обновлений (рекомендуется)**.
-    ![Постоянное обновление ATA ](media/ata_ms_update.png) Таким образом параметры Windows будут разрешать обновление для других продуктов Майкрософт, включая ATA, как показано ниже. 
+    ![Настройка обновления ATA.](media/ata_ms_update.png) Таким образом параметры Windows будут разрешать обновление для других продуктов Майкрософт, включая ATA, как показано ниже. 
      ![Изображение. Настройка автоматического обновления Windows](media/ata_installupdatesautomatically.png)
 
     5.  Перед началом установки ATA выполнит проверку готовности. Просмотрите результаты проверки, чтобы убедиться, что необходимые компоненты настроены и у вас есть по крайней мере минимальный объем места на диске. 
-    ![Изображение. Проверка готовности ATA](media/ata_install_readinesschecks.png)
+    ![Проверка готовности ATA](media/ata_install_readinesschecks.png)
 
     6.  Нажмите кнопку **Обновить**. После нажатия кнопки "Обновить" ATA переходит в автономный режим до завершения обновления.
 
@@ -96,7 +97,7 @@ ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
 > [!IMPORTANT] 
 > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Шаг 2. Скачивание пакета установки шлюза ATA
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>Шаг 2. Скачивание пакета установки шлюза ATA
 Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA.
 
 Чтобы скачать пакет шлюза ATA, сделайте вот что:
@@ -117,7 +118,7 @@ ZIP-файл содержит:
 
 -   файл конфигурации с данными для подключения к центру ATA.
 
-### Шаг 3. Обновление шлюзов АТА
+### <a name="step-3-update-the-ata-gateways"></a>Шаг 3. Обновление шлюзов АТА
 
 1.  На каждом шлюзе ATA извлеките файлы из пакета шлюза ATA и запустите файл **Setup.exe шлюза Microsoft ATA**.
 
@@ -136,12 +137,12 @@ ZIP-файл содержит:
 ![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
