@@ -1,29 +1,30 @@
 ---
-title: "Настройка уведомлений ATA | Microsoft ATA"
+title: "Настройка параметров электронной почты | Документация Майкрософт"
 description: "В этой статье описано, как настроить получение уведомлений ATA о подозрительной активности (по электронной почте или с помощью пересылки событий ATA)"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
+ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4ba68547d6746625a44aca5d05790c3ad138f4e
-ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: d967cbf2674c5f561e63f66b64640ac08daad6c0
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-## Указание параметров почтового сервера в ATA
+## <a name="provide-ata-with-up-your-email-server-settings"></a>Указание параметров почтового сервера в ATA
 Вы можете настроить получение уведомлений ATA в случае обнаружения подозрительной активности. Для отправки уведомлений ATA по почте требуется настроить **параметры почтового сервера**.
 
 1.  На рабочем столе сервера центра ATA щелкните значок **Управление Microsoft Advanced Threat Analytics**.
@@ -44,7 +45,7 @@ ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
     |Отправитель (обязательно)|Введите адрес электронной почты отправителя.|Пример.<br />ATA@contoso.com|
     ![Изображение. Параметры почтового сервера ATA](media/ATA-email-server-1.7.png)
 
-## Указание параметров сервера системного журнала в ATA
+## <a name="provide-ata-with-your-syslog-server-settings"></a>Указание параметров сервера системного журнала в ATA
 Можно настроить отправку уведомлений ATA о подозрительной активности на сервер системного журнала. Если вы настроили получение уведомлений системного журнала, для них можно настроить некоторые дополнительные параметры.
 
 1.  Перед настройкой уведомлений системного журнала обратитесь к администратору системы SIEM, чтобы получить следующие сведения:
@@ -77,11 +78,11 @@ ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
 
 
 
-## См. также
-[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## <a name="see-also"></a>См. также
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
