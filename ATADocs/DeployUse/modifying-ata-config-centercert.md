@@ -1,10 +1,11 @@
 ---
-title: "Изменение конфигурации ATA. Сертификат центра ATA | Microsoft ATA"
+title: "Изменение конфигурации ATA. Сертификат центра ATA | Документация Майкрософт"
 description: "В данной статье описывается двухэтапный процесс продления или замены сертификата в хранилище локального компьютера на сервере центра ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,23 +14,23 @@ ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 534b5f476e580919b11327ddbf9a35edad130515
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Изменение конфигурации ATA. Сертификат центра ATA
+# <a name="change-ata-configuration---ata-center-certificate"></a>Изменение конфигурации ATA. Сертификат центра ATA
 
 >[!div class="step-by-step"]
 [« IP-адрес сервера центра ATA](modifying-ata-config-centerip.md)
 [URL-адрес консоли ATA»](modifying-ata-config-consoleurl.md)
 
-## Как изменить сертификат центра ATA.
+## <a name="change-the-ata-center-certificate"></a>Как изменить сертификат центра ATA.
 Если срок действия вашего сертификата скоро истечет и вам нужно продлить или заменить его после того, как вы установили новый сертификат в хранилище локального компьютера на сервере центра ATA, сделать это можно в два этапа:
 
 -   Первый этап: обновление сертификата, который должен использоваться центром ATA. На этом этапе служба центра ATA по-прежнему привязана к исходному сертификату. В процессе синхронизации конфигураций у шлюзов ATA будет два потенциальных сертификата, действительных для взаимной проверки подлинности. Пока шлюз ATA может подключаться с помощью исходного сертификата, новый сертификат использоваться не будет.
@@ -68,13 +69,12 @@ ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
 [« IP-адрес сервера центра ATA](modifying-ata-config-centerip.md)
 [URL-адрес консоли ATA»](modifying-ata-config-consoleurl.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
-- [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
+- [Ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

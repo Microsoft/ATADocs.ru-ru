@@ -1,10 +1,11 @@
 ---
-title: "Изменение конфигурации ATA. Пароль для подключения к домену | Microsoft ATA"
+title: "Изменение конфигурации ATA — пароль для подключения к домену | Документация Майкрософт"
 description: "Процедура изменения пароля для подключения к домену на шлюзе ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,27 +14,26 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: a6dbdb0d53a0a7f6903ec858bb44054c624ae226
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Изменение конфигурации ATA. Пароль для подключения к домену
+# <a name="change-ata-configuration---domain-connectivity-password"></a>Изменение конфигурации ATA. Пароль для подключения к домену
 
 >[!div class="step-by-step"]
-[« URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
+[" URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
 
 
-## Изменение пароля для подключения к домену
+## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 Изменяя пароль для подключения к домену, указывайте правильный пароль. Если указать неправильный пароль, служба ATA на шлюзах ATA перестанет работать.
 
-Если у вас возникло подозрение, что служба перестала работать, на шлюзе ATA откройте файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку:
-`The supplied credential is invalid.`
+В таком случае откройте на шлюзе ATA файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку: `The supplied credential is invalid.`.
 
 Чтобы исправить эту ошибку, в центре ATA измените пароль для подключения к домену, как описано ниже.
 
@@ -56,15 +56,14 @@ ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
 6.  После изменения пароля убедитесь, что служба шлюза ATA работает на всех шлюзах ATA.
 
 >[!div class="step-by-step"]
-[« URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
+[" URL-адрес консоли ATA](modifying-ata-config-consoleurl.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
-- [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -3,8 +3,9 @@ title: "Изменение конфигурации ATА. IP-адрес конс
 description: "Эта статья содержит информацию о том, как изменить IP-адрес консоли ATA, с помощью которого на шлюзах ATA создается ярлык консоли ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: stevenpo
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: identity-ata
 ms.service: advanced-threat-analytics
@@ -13,23 +14,23 @@ ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: b3d11a87f1909c1fd964fa990e5d36a91691a844
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 8f816c8eda0a1b11a42314a18b1c8c39ac6a7ba8
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Изменение конфигурации АТА. URL-адрес консоли АТА
+# <a name="change-ata-configuration---ata-console-url"></a>Изменение конфигурации АТА. URL-адрес консоли АТА
 
 >[!div class="step-by-step"]
 [« Сертификат центра ATA](modifying-ata-config-centercert.md)
 [Пароль для подключения к домену »](modifying-ata-config-dcpassword.md)
 
-## Как изменить URL-адрес консоли ATA
+## <a name="change-the-ata-console-url"></a>Как изменить URL-адрес консоли ATA
 По умолчанию в качестве URL-адреса консоли ATA используется IP-адрес, выбранный в качестве IP-адреса консоли АТА при установке центра ATA.
 
 URL-адрес используется в следующих сценариях:
@@ -60,6 +61,9 @@ URL-адрес используется в следующих сценариях
 5.  В разделе **Console URL** (URL-адрес консоли) измените URL-адрес так, как вам нужно.
 
     ![URL-адрес консоли ATA](media/ATA-chge-center-URL.png)
+> [!NOTE]
+> Не ставьте косую черту в конце URL-адреса.
+
 6.  Нажмите кнопку **Сохранить**.
 
 >[!div class="step-by-step"]
@@ -67,13 +71,12 @@ URL-адрес используется в следующих сценариях
 [Пароль для подключения к домену »](modifying-ata-config-dcpassword.md)
 
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
-- [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
+- [Ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
