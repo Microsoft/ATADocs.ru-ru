@@ -1,10 +1,11 @@
 ---
-title: "Настройка зеркального отображения портов | Microsoft ATA"
+title: "Настройка зеркального отображения портов | Документация Майкрософт"
 description: "Здесь описываются варианты зеркального отображения портов и их настройка для ATA"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/28/2016
+ms.date: 11/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,17 +14,17 @@ ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: d7f15f08a64a9d884a560f4f3429568cf33bdd34
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 9312287da04f393282857005b68799f82e0bdfa5
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Настройка зеркального отображения портов
+# <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
 > [!NOTE] 
 > Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment).
  
@@ -43,7 +44,7 @@ ms.openlocfilehash: d7f15f08a64a9d884a560f4f3429568cf33bdd34
 > [!NOTE]
 > Если контроллер домена с зеркальным отображением портов подключен через глобальную сеть, убедитесь, что эта сеть может обрабатывать дополнительную нагрузку в виде трафика ERSPAN.
 
-## Поддерживаемые варианты зеркального отображения портов
+## <a name="supported-port-mirroring-options"></a>Поддерживаемые варианты зеркального отображения портов
 
 |Шлюз ATA|Контроллер домена|Рекомендации|
 |---------------|---------------------|------------------|
@@ -68,13 +69,12 @@ ms.openlocfilehash: d7f15f08a64a9d884a560f4f3429568cf33bdd34
 
 Прежде чем установить шлюз ATA, проверьте, что настроенное зеркальное отображение портов работает надлежащим образом.
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Проверка зеркального отображения портов](validate-port-mirroring.md)
-- [Установка ATA](install-ata.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

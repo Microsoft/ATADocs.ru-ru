@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -20,7 +20,7 @@ ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 
 ---
 
-*Область применения: Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
@@ -36,7 +36,6 @@ ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 ## <a name="moving-the-ata-database-to-another-drive"></a>Перемещение базы данных ATA на другой диск
 
 1.  Остановите службу **центра Microsoft Advanced Threat Analytics**.
-
 > [!Important] 
 > Прежде чем продолжать, убедитесь, что служба центра ATA остановлена.
 
