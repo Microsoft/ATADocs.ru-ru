@@ -1,8 +1,9 @@
 ---
-title: "Автоматическая установка ATA | Microsoft ATA"
+title: "Автоматическая установка ATA | Документация Майкрософт"
 description: "Здесь описывается автоматическая установка ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,19 +14,19 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
+ms.sourcegitcommit: b7f9dac8c00f213ee0cefc9ff93f2c9ca40cd28b
+ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Автоматическая установка ATA
+# <a name="ata-silent-installation"></a>Автоматическая установка ATA
 Эта статья содержит указания по автоматической установке ATA.
-## Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Для Microsoft ATA версии 1.7 требуется установить платформу Microsoft .NET Framework 4.6.1. 
 
@@ -36,7 +37,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 При использовании метода автоматической установки ATA установщик настраивается для автоматического перезапуска сервера в конце установки (при необходимости). Чтобы избежать перезагрузки сервера как части установки, используйте флаг `-NoRestart`. Если потребуется использовать флаг `-NoRestart` и выполнить перезапуск в рамках установки, установщик приостановит работу до перезапуска сервера. Чтобы отслеживать ход выполнения развертывания, проверяйте журналы установщика ATA, расположенные в каталоге **%AppData%\Local\Temp**.
 
 
-## Установите центр ATA.
+## <a name="install-the-ata-center"></a>Установите центр ATA.
 
 Для установки центра ATA используйте приведенную ниже команду.
 
@@ -77,7 +78,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
     “Microsoft ATA Center Setup.exe” /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F”
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint=”G9530253C976BFA9342FD1A716C0EC94207BFD5A”
 
-## Обновите центр ATA.
+## <a name="update-the-ata-center"></a>Обновите центр ATA.
 
 Для обновления центра ATA используйте приведенную ниже команду.
 
@@ -102,7 +103,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
         “Microsoft ATA Center Setup.exe” /quiet NetFrameworkCommandLineArguments="/q"
 
-## Автоматическое удаление центра ATA
+## <a name="uninstall-the-ata-center-silently"></a>Автоматическое удаление центра ATA
 
 Для автоматического удаления центра ATA используйте следующую команду: **Синтаксис**:
 
@@ -129,7 +130,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
     “Microsoft ATA Center Setup.exe” /quiet /uninstall --DeleteExistingDatabaseData
 
-## Автоматическая установка шлюза ATA
+## <a name="ata-gateway-silent-installation"></a>Автоматическая установка шлюза ATA
 Для автоматической установки шлюза ATA используйте приведенную ниже команду.
 
 **Синтаксис**
@@ -146,7 +147,6 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 |NoRestart|/norestart|Нет|Предотвращает все попытки перезапуска. По умолчанию в пользовательском интерфейсе будет отображаться запрос перед перезапуском.|
 |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
 |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
-|LicenseAccepted|--LicenseAccepted|да|Указывает, что лицензия прочитана и утверждена. Необходимо задать при автоматической установке.|
 
 **Параметры установки**
 
@@ -162,7 +162,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
     ConsoleAccountName=”user@contoso.com” ConsoleAccountPassword=“userpwd”
     
 
-## Обновление шлюза ATA
+## <a name="update-the-ata-gateway"></a>Обновление шлюза ATA
 
 Для автоматического обновления шлюза ATA используйте приведенную ниже команду.
 
@@ -185,7 +185,7 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-## Автоматическое удаление шлюза ATA
+## <a name="uninstall-the-ata-gateway-silently"></a>Автоматическое удаление шлюза ATA
 
 Для автоматического удаления шлюза ATA используйте следующую команду: **Синтаксис**:
 
@@ -214,13 +214,13 @@ ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
 
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
