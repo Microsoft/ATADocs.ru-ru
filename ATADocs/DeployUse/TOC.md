@@ -5,14 +5,13 @@
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
-## [Установка ATA](install-ata.md)
-### [Шаг 1](install-ata-step1.md)
-### [Шаг 2](install-ata-step2.md)
-### [Шаг 3](install-ata-step3.md)
-### [Шаг 4](install-ata-step4.md)
-### [Шаг 5](install-ata-step5.md)
-### [Шаг 6](install-ata-step6.md)
-### [Автоматическая установка](ata-silent-installation.md)
+## [Установка ATA. Шаг 1](install-ata-step1.md)
+## [Установка ATA. Шаг 2](install-ata-step2.md)
+## [Установка ATA. Шаг 3](install-ata-step3.md)
+## [Установка ATA. Шаг 4](install-ata-step4.md)
+## [Установка ATA. Шаг 5](install-ata-step5.md)
+## [Установка ATA. Шаг 6](install-ata-step6.md)
+## [Автоматическая установка](ata-silent-installation.md)
 # [Использование](modifying-ata-config-centerip.md)
 ## [Изменение IP-адреса Центра ATA](modifying-ata-config-centerip.md)
 ## [Изменение сертификата Центра ATA](modifying-ata-config-centercert.md)
@@ -21,16 +20,16 @@
 ## [Работа с консолью ATA](working-with-ata-console.md)
 ## [Группы ролей ATA](ata-role-groups.md)
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
-## [Настройка оповещений ATA](setting-ata-alerts.md)
+## [Настройка уведомлений ATA](setting-ata-alerts.md)
 ## [Работа с параметрами обнаружения](working-with-detection-settings.md)
 ## [Центр работоспособности ATA](ata-health-center.md)
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Управление базой данных ATA](ata-database-management.md)
-## [Файл конфигурации ATA](ata-configuration-file.md)
+## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
 ## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
 # [Устранение проблем](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

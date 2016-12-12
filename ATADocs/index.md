@@ -14,17 +14,17 @@ ms.technology:
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: 6d95045842d8bb19dba2e8d0fe13b1bf96e2e304
-ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
+ms.sourcegitcommit: 1dda7ed8bb461a15ae2cc9d379822ed4a96245ff
+ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
 
 
 ---
-# Документация по Microsoft Advanced Threat Analytics
+# <a name="microsoft-advanced-threat-analytics-documentation"></a>Документация по Microsoft Advanced Threat Analytics
 <article id="main">
     <section id="hero-content">
       <h1>Документация по Microsoft Advanced Threat Analytics</h1>
       <h2>Узнайте, как развертывать решение Microsoft Advanced Threat Analytics (ATA), которое представляет собой локальный продукт, помогающий специалистам по информационной безопасности защищать предприятия от сложных целенаправленных атак, а также как им управлять.</h2>
-      <h3>Вы еще не использовали ATA? <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">Посетите страницу продукта &rarr;</a></h3>
+      <h3>Вы еще не использовали ATA? <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">Посетите страницу продукта&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
       <p>Готовы приступить к работе?</p>
@@ -136,7 +136,7 @@ ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/install-ata">
+                  <a href="/advanced-threat-analytics/deploy-use/install-ata-step1">
                     <h3>Установка ATA</h3>
                     <p>Следуйте подробному пошаговому руководству по установке.</p>
                   </a>
@@ -196,6 +196,6 @@ ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
