@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
+ms.sourcegitcommit: 00ddddfd927ed1ba4c52d4774085da04ce359bde
+ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
 
 
 ---
@@ -30,14 +30,14 @@ ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 -   контроль доступа на основе ролей;
 
--   поддержка Windows Server 2016 и Windows Server Core;
+-   Поддержка Windows Server 2016 и Windows Server 2016 Базовая
 
 -   улучшенное взаимодействие с пользователем;
 
 -   несущественные изменения.
 
 
-### <a name="new-updated-detections"></a>новые и обновленные обнаружения;
+### <a name="new--updated-detections"></a>новые и обновленные обнаружения;
 
 
 - **Разведывательная атака с помощью перечисления служб каталогов:** на этапе разведывательной атаки злоумышленники различными методами собирают сведения о сущностях в сети. Перечисление служб каталога с помощью протокола SAM-R позволяет злоумышленникам получить список пользователей и групп в домене, а также понять взаимосвязь между разными сущностями. 
@@ -55,7 +55,7 @@ ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 - **Управление доступом на основе ролей:** возможность управления доступом на основе ролей (RBAC). ATA 1.7 поддерживает три роли: администратор ATA аналитик ATA и руководитель ATA.
 
-- **Поддержка Windows Server 2016 и Windows Server Core:** ATA 1.7 поддерживает развертывание облегченных шлюзов на контроллерах домена под управлением Server Core для Windows Server 2012 и Server Core для Windows Server 2012 R2. Кроме того, в этом выпуске Windows Server 2016 поддерживается обоими компонентами: центром ATA и шлюзом ATA.
+- **Поддержка Windows Server 2016 и Windows Server Базовая**: ATA 1.7 поддерживает развертывание облегченных шлюзов на контроллерах домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (включая основные компоненты, но не Nano). Кроме того, в этом выпуске Windows Server 2016 поддерживается обоими компонентами: центром ATA и шлюзом ATA.
 
 ### <a name="user-experience"></a>Действия пользователя
 - **Возможности настройки:** в этом выпуске переработан интерфейс настройки ATA, чтобы предоставить больше удобств для пользователя и улучшить поддержку сред с несколькими шлюзами ATA. Также в этой версии появилась страница обновления шлюза ATA, которая позволяет проще и точнее управлять автоматическим обновлением для различных шлюзов.
@@ -102,6 +102,12 @@ ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
+### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>Экспорт сведений о подозрительной активности в Excel может завершиться ошибкой.
+При попытке экспортировать сведения о подозрительной активности в файл Excel операция может завершиться следующей ошибкой: *Ошибка [BsonClassMapSerializer`1] System.FormatException: произошла ошибка при десериализации свойства Activity класса Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: элемент "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
+
+Чтобы устранить эту проблему, в командной строке с повышенными привилегиями перейдите в папку **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** и выполните следующую команду:
+1.  **Mongo.exe ATA** ("ATA" следует написать прописными буквами)
+2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
 
 ## <a name="minor-changes"></a>Несущественные изменения
 
@@ -117,6 +123,6 @@ ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
