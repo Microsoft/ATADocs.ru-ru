@@ -20,7 +20,7 @@ ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 
 ---
 
-*Область применения: Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
