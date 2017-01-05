@@ -1,8 +1,9 @@
 ---
-title: "Проверка зеркального отображения портов | Microsoft ATA"
+title: "Проверка зеркального отображения портов | Документация Майкрософт"
 description: "Описание проверки правильной настройки зеркального отображения портов."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,23 +14,23 @@ ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: a836fca1fb11a980ca4d52a7e189f36aa37ffcd1
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Проверка зеркального отображения портов
+# <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 > [!NOTE] 
 > Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment).
  
 Ниже описана последовательность проверки правильной настройки зеркального отображения портов. Для правильной работы решения ATA шлюз ATA должен видеть входящий и исходящий трафик контроллера домена. Основные сведения, требуемые для работы ATA, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы решение ATA могло видеть сетевой трафик, нужно настроить зеркальное отображение портов. Эта функция копирует трафик из одного порта (исходный порт) в другой порт (конечный порт).
 
-## Проверка зеркального отображения портов с помощью сценария Windows PowerShell
+## <a name="validate-port-mirroring-using-a-windows-powershell-script"></a>Проверка зеркального отображения портов с помощью сценария Windows PowerShell
 
 1. Сохраните текст этого сценария в файл с именем *ATAdiag.ps1*.
 2. Выполните этот скрипт в шлюзе ATA, который нужно проверить.
@@ -191,7 +192,7 @@ ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
     [void][System.Console]::ReadKey($true)
     
     
-## Проверка зеркального отображения портов с помощью сетевого монитора
+## <a name="validate-port-mirroring-using-net-mon"></a>Проверка зеркального отображения портов с помощью сетевого монитора
 1.  Установите [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) в шлюзе ATA, который нужно проверить.
 
     > [!IMPORTANT]
@@ -221,13 +222,13 @@ ms.openlocfilehash: 59d50b0d9c5adc78aca260412872076c84db8d57
 
 5.  Если вы видите только входящий или исходящий трафик, обратитесь за помощью к специалистам по сетям или виртуализации. Они помогут вам устранить ошибки в настройках зеркального отображения портов.
 
-## См. также
+## <a name="see-also"></a>См. также
 
 - [Настройка зеркального отображения портов](configure-port-mirroring.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

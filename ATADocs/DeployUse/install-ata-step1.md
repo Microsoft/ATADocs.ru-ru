@@ -1,8 +1,9 @@
 ---
-title: "Установка ATA. Шаг 1 | Microsoft ATA"
+title: "Установка ATA. Шаг 1 | Документация Майкрософт"
 description: "На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: get-started-article
@@ -13,27 +14,27 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c946aa6cfde5bcb72ce8c6efba626c31c2413893
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 1
+# <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
 
 >[!div class="step-by-step"]
-[Шаг 2 »](install-ata-step2.md)
+[Шаг 2 "](install-ata-step2.md)
 
 В ходе установки предоставляются указания по выполнению новой установки ATA 1.7. Дополнительные сведения об обновлении имеющегося развертывания ATA из более ранней версии см. в [руководстве по миграции на ATA версии 1.7](/advanced-threat-analytics/understand-explore/ata-update-1.7-migration-guide).
 
 > [!IMPORTANT] 
 > Если вы используете Windows 2012 R2, то, прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюза ATA. Иначе это обновление будет установлено вместе с ATA, из-за чего во время установки потребуется перезагрузка.
 
-## Шаг 1. Скачивание и установка центра ATA
+## <a name="step-1-download-and-install-the-ata-center"></a>Шаг 1. Скачивание и установка центра ATA
 Проверив соответствие сервера требованиям, можно приступить к установке центра ATA.
 
 На сервере шлюза ATA сделайте следующее:
@@ -85,7 +86,7 @@ ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
 Затем вы будете автоматически перенаправлены на страницу параметров **Общие**. Там вы сможете продолжить настройку и развертывание шлюзов ATA.
 Так как вход на сайт выполняется с помощью IP-адреса, вы получите предупреждение относительно сертификата. Это вполне нормально. Просто щелкните **Continue to this website** (Продолжить открытие этого веб-сайта).
 
-### Проверка установки
+### <a name="validate-installation"></a>Проверка установки
 
 1.  Убедитесь, что запущена служба центра **Microsoft Advanced Threat Analytics**.
 2.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
@@ -96,15 +97,15 @@ ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
 [« Перед установкой](preinstall-ata.md)
 [Шаг 2 »](install-ata-step2.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

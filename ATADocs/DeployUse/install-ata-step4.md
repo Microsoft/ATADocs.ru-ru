@@ -1,8 +1,9 @@
 ---
-title: "Установка ATA. Шаг 4 | Microsoft ATA"
+title: "Установка ATA. Шаг 4 | Документация Майкрософт"
 description: "На четвертом этапе установки ATA вы установите шлюз ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,23 +14,23 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
-ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: ebaab5e8768d6b78c6d9ff93fa1430673827e483
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 4
+# <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
 >[!div class="step-by-step"]
 [« Шаг 3](install-ata-step3.md)
 [Шаг 5 »](install-ata-step5.md)
 
-## Шаг 4. Установите шлюз ATA.
+## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установите шлюз ATA.
 
 Прежде чем устанавливать шлюз ATA на выделенном сервере, убедитесь, что зеркальное отображение портов настроено правильно и что шлюз ATA может просматривать входящий и исходящий трафик на контроллерах домена. Дополнительную информацию см. в статье [Проверка зеркального отображения портов](validate-port-mirroring.md).
 
@@ -89,15 +90,15 @@ ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 [« Шаг 3](install-ata-step3.md)
 [Шаг 5 »](install-ata-step5.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

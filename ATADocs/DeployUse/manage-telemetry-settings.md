@@ -1,8 +1,9 @@
 ---
-title: "Управление параметрами телеметрии | Microsoft ATA"
+title: "Управление параметрами телеметрии | Документация Майкрософт"
 description: "Описание данных, которые собирает решение ATA, и пошаговые инструкции по отключению сбора данных."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a7e375da4acd5546347310c5965394b2addfe63
-ms.openlocfilehash: 0c6b8589fffe24298d0caf2cf2eb5e7e817e4da2
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c7366dcc2cbd7a9eba1503e5af3290ec4ac73c32
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Управление параметрами телеметрии
+# <a name="manage-telemetry-settings"></a>Управление параметрами телеметрии
 Advanced Threat Analytics (ATA) собирает анонимные данные телеметрии об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
 
-## Собираемые данные
+## <a name="data-collected"></a>Собираемые данные
 Собираются такие анонимные данные:
 
 -   Счетчики производительности из центра и шлюза ATA.
@@ -82,19 +83,19 @@ Advanced Threat Analytics (ATA) собирает анонимные данные
 - URL-адреса консоли ATA: URL-адреса, которые вы посещаете при использовании консоли ATA, то есть страницы в консоли ATA.
 
 
-### Отключение сбора данных
+### <a name="disable-data-collection"></a>Отключение сбора данных
 Чтобы остановить сбор данных телеметрии и их отправку в Майкрософт, сделайте вот что:
 
 1.  Войдите в консоль ATA. На панели инструментов щелкните значок многоточия и выберите пункт **О программе**.
 
 2.  Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**.
 
-## См. также
-- [Новые возможности версии 1.6](/advanced-threat-analytics/understand-explore/whats-new-version-1.6)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## <a name="see-also"></a>См. также
+- [Новые возможности версии 1.6](/advanced-threat-analytics/understand-explore/whats-new-version-1.6)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
