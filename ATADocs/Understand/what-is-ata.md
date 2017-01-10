@@ -23,7 +23,7 @@ ms.openlocfilehash: 70d66bccfda484722afa63a7f85dc8f85013f54f
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
-## <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
+# <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
 Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз.
 
 ## <a name="how-ata-works"></a>Как работает ATA
