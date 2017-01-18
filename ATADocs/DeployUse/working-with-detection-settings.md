@@ -1,8 +1,9 @@
 ---
-title: "Работа с параметрами обнаружения ATA | Microsoft ATA"
+title: "Работа с параметрами обнаружения ATA | Документация Майкрософт"
 description: "В этом документе объясняется, как настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 28b6211599395317eb6336c37fd3461b8f5635f6
-ms.openlocfilehash: 09248cdd5f8a66a164a5cd275f2765107f5c706d
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 93f2a72c9623674c73b3ee83ecf12be8e0766365
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Работа с параметрами обнаружения ATA
+# <a name="working-with-ata-detection-settings"></a>Работа с параметрами обнаружения ATA
 На странице настройки **обнаружения** вы можете настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети.
 
-## Настройка обнаружения
+## <a name="setting-up-detection"></a>Настройка обнаружения
 В разделе **Detection** (Обнаружение) вы можете задать такие элементы:
 
 -   **Идентификатор безопасности учетных записей Honeytoken** — это учетная запись пользователя, в которой не должны выполняться сетевые операции. Эта учетная запись будет настроена как пользователь Honeytoken ATA. Если кто-то попытается использовать эту учетную запись, ATA создаст запись о подозрительных действиях, что будет означать вредоносные действия. Для настройки пользователя Honeytoken потребуется идентификатор безопасности учетной записи пользователя, а не имя пользователя.
@@ -47,13 +48,13 @@ ms.openlocfilehash: 09248cdd5f8a66a164a5cd275f2765107f5c706d
 ![Исключения в параметрах обнаружения ATA](media/ata-detection-settings-exclusions-1.7.png)
 
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Изменение конфигурации ATA](modifying-ata-configuration.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

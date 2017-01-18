@@ -1,8 +1,9 @@
 ---
-title: "Руководство по миграции на обновленную версию ATA 1.5 | Microsoft ATA"
+title: "Руководство по миграции на обновленную версию ATA 1.5 | Документация Майкрософт"
 description: "Процедуры по обновлению АТА до версии 1.5"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c23512e159c2f01bc0a930f71373aa5315f0310c
 
 
 ---
 
-# Руководство по миграции на обновленную версию ATA 1.5
+# <a name="ata-update-to-15-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.5
 Обновление до версии ATA 1.5 привносит следующие улучшения:
 
 -   сокращение времени обнаружения;
@@ -36,7 +37,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
 
 -   дополнительные счетчики производительности для улучшения процессов мониторинга и устранения неполадок.
 
-## Обновление АТА до версии 1.5
+## <a name="updating-ata-to-version-15"></a>Обновление АТА до версии 1.5
 > [!NOTE]
 > Если в вашей среде решение ATA не установлено, скачайте его полную версию, включая версию 1.5, и выполните стандартную процедуру установки, описанную в статье [Установка ATA](/advanced-threat-analytics/deploy-use/install-ata).
 
@@ -58,7 +59,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
     > [!IMPORTANT]
     > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Шаг 1. Обновление центра ATA
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
 
 1.  Создайте резервную копию базы данных (необязательно).
 
@@ -89,7 +90,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
 > [!IMPORTANT]
 > - Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Шаг 2. Скачивание пакета установки шлюза ATA
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>Шаг 2. Скачивание пакета установки шлюза ATA
 Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA.
 
 Чтобы скачать пакет шлюза ATA, сделайте вот что:
@@ -110,7 +111,7 @@ ZIP-файл содержит:
 
 -   файл конфигурации с данными для подключения к центру ATA.
 
-### Шаг 3. Обновление шлюзов АТА
+### <a name="step-3-update-the-ata-gateways"></a>Шаг 3. Обновление шлюзов АТА
 
 1.  На каждом шлюзе ATA извлеките файлы из пакета шлюза ATA и запустите файл установки шлюза ATA Microsoft.
 
@@ -128,12 +129,12 @@ ZIP-файл содержит:
 
 ![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

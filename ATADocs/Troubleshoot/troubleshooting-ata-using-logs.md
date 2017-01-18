@@ -1,8 +1,9 @@
 ---
-title: "Устранение неполадок в ATA с помощью журналов событий ATA | Microsoft ATA"
+title: "Устранение неполадок в ATA с помощью журналов событий ATA | Документация Майкрософт"
 description: "В этой статье описывается, как использовать журналы событий ATA для устранения неполадок"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 3a2ae61ba1b54efd5dca5f0f71dc71b98872145d
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Устранение неполадок в ATA с помощью журналов событий ATA
+# <a name="troubleshooting-ata-using-the-ata-logs"></a>Устранение неполадок в ATA с помощью журналов событий ATA
 Журналы ATA содержат сведения о работе компонентов ATA в любой момент времени.
 
-## Журналы событий шлюза ATA
+## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
 Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
@@ -47,7 +48,7 @@ ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
 > [!NOTE]
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
-## Журналы событий центра АТА
+## <a name="ata-center-logs"></a>Журналы событий центра АТА
 Журналы событий центра ATA расположены во вложенной папке **Logs**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**.
 > [!Note]
 > Журналы консоли ATA, которые ранее размещались в разделе "Журналы IIS", теперь перенесены в раздел "Журналы центра ATA".
@@ -67,7 +68,7 @@ ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
 
-## Журналы развертывания ATA
+## <a name="ata-deployment-logs"></a>Журналы развертывания ATA
 Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
 
 Журналы развертывания центра ATA:
@@ -85,15 +86,15 @@ ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
 -   **Microsoft Advanced Threat Analytics Gateway_ГГГГММДДЧЧММСС_001_MsiPackage.log** — здесь перечислены этапы процесса развертывания двоичных файлов шлюза ATA. Его основное назначение — отслеживание развертывания двоичных файлов шлюза ATA.
 
 
-## См. также
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+## <a name="see-also"></a>См. также
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

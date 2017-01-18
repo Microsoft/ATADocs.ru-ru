@@ -1,8 +1,9 @@
 ---
-title: "Установка ATA. Шаг 3 | Microsoft ATA"
+title: "Установка ATA. Шаг 3 | Документация Майкрософт"
 description: "На третьем этапе установки ATA вам нужно скачать пакет установки шлюза ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,23 +14,23 @@ ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba090fdd4f00c001020b1fbedf527e4fd69d3992
-ms.openlocfilehash: 277d08756b456d1a61fb9fdcb5014a6a1b4782ad
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c8f3f5453757fbc7a95aa2377a84c3a133d38181
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 3
+# <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
 >[!div class="step-by-step"]
 [« Шаг 2](install-ata-step2.md)
 [Шаг 4 »](install-ata-step4.md)
 
-## Шаг 3. Скачивание пакета установки шлюза ATA
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>Шаг 3. Скачивание пакета установки шлюза ATA
 Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA. Шлюз ATA можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена он установится как упрощенный шлюз ATA. Дополнительные сведения об упрощенном шлюзе ATA см. в статье [Архитектура ATA](/advanced-threat-analytics/plan-design/ata-architecture). 
 
 Если вы скачиваете шлюз ATA впервые, отобразится такой экран:
@@ -56,14 +57,14 @@ ZIP-файл содержит:
 [« Шаг 2](install-ata-step2.md)
 [Шаг 4 »](install-ata-step4.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

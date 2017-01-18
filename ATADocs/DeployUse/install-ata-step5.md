@@ -1,8 +1,9 @@
 ---
-title: "Установка ATA. Шаг 5 | Microsoft ATA"
+title: "Установка ATA. Шаг 5 | Документация Майкрософт"
 description: "Шаг 5 установки ATA предусматривает настройку параметров шлюза ATA."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,24 +14,24 @@ ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39eadb9143740741fa592f983f03def5367ada46
-ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: b30fe6bc977184fb8cc297e10724c7fe48ee6934
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 5
+# <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
 >[!div class="step-by-step"]
 [« Шаг 4](install-ata-step4.md)
 [Шаг 6 »](install-ata-step6.md)
 
 
-## Шаг 5. Настройка параметров шлюза ATA
+## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройка параметров шлюза ATA
 После установки шлюза ATA выполните следующие шаги по его настройке.
 
 1.  В консоли ATA перейдите к **конфигурации** и в разделе **Системы** выберите **Шлюзы**.
@@ -67,7 +68,7 @@ ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 3. Нажмите кнопку **Сохранить**.
 
 
-## Проверка установки
+## <a name="validate-installations"></a>Проверка установки
 Чтобы проверить, успешно ли вы развернули шлюз ATA, сделайте следующее:
 
 1.  Убедитесь, что служба **шлюза Microsoft Advanced Threat Analytics** запущена. После сохранения параметров шлюза ATA запуск службы может занять несколько минут.
@@ -87,15 +88,15 @@ ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 [« Шаг 4](install-ata-step4.md)
 [Шаг 6 »](install-ata-step6.md)
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
