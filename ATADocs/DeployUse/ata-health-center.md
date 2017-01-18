@@ -1,8 +1,9 @@
 ---
-title: "Центр работоспособности ATA | Microsoft ATA"
+title: "Центр работоспособности ATA | Документация Майкрософт"
 description: "Центр работоспособности ATA позволяет следить за работой службы ATA и своевременно узнавать о возможных проблемах."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,25 +14,25 @@ ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: bff593f07d70cd559a1ee75d3b75c61b6534432d
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Центр работоспособности ATA
+# <a name="ata-health-center"></a>Центр работоспособности ATA
 Центр работоспособности ATA позволяет следить за работой службы ATA и узнавать о возможных проблемах.
 
-## Работа с центром работоспособности ATA
+## <a name="working-with-the-ata-health-center"></a>Работа с центром работоспособности ATA
 Узнать о существующей проблеме можно по красной точке над значком центра работоспособности в строке меню.
 
 ![Красная точка над значком центра работоспособности ATA на панели инструментов](media/ATA-Health-Center-Alert-red-dot.png)
 
-### Управление работоспособностью ATA
+### <a name="managing-ata-health"></a>Управление работоспособностью ATA
 Чтобы проверить общее состояние системы, щелкните в строке меню значок центра работоспособности. ![Значок центра работоспособности ATA](media/ATA-red-dot.png)
 
 -   Управление открытыми оповещениями осуществляется посредством выбора для них одного из двух состояний: **Разрешено** или **Отклонено**. В окне оповещения щелкните **Открыто** и выберите **Разрешено** или **Отклонено**.
@@ -42,13 +43,13 @@ ms.openlocfilehash: 9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa
 
 ![Проблемы в центре работоспособности ATA (рисунок)](media/ATA-Health-Issue.JPG)
 
-## См. также
+## <a name="see-also"></a>См. также
 - [Работа с параметрами обнаружения ATA](working-with-detection-settings.md)
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

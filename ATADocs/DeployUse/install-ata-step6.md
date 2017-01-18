@@ -1,8 +1,9 @@
 ---
-title: "Установка ATA | Microsoft ATA"
+title: "Установка ATA | Документация Майкрософт"
 description: "На заключительном этапе установки ATA нужно настроить пользователя Honeytoken."
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 09/20/2016
 ms.topic: get-started-article
@@ -13,23 +14,23 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
-ms.openlocfilehash: 9ee2f36d8f0b7eae061873e8735139ccc4da00d1
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 17833f000135337fce82d69efb63fc6e1f9ea307
 
 
 ---
 
-*Применяется к Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
-# Установка ATA. Шаг 6
+# <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 
 >[!div class="step-by-step"]
-[« Шаг 5](install-ata-step5.md)
+[" Шаг 5](install-ata-step5.md)
 
-## Шаг 6. Настройка исключений IP-адреса и пользователя Honeytoken
-ATA позволяет исключать определенные IP-адреса и IP-подсети во время обнаружения, относящегося к одному из таких типов: **Исследование DNS** и **Pass-the-Ticket**. 
+## <a name="step-6-configure--ip-address-exclusions-and-honeytoken-user"></a>Шаг 6. Настройка исключений IP-адреса и пользователя Honeytoken
+ATA позволяет исключать определенные IP-адреса при обнаружении атак типа **DNS Reconnaissance** и **Pass-the-Ticket**. 
 
 Например, **исключением исследования DNS** является сканер безопасности, использующий DNS в качестве механизма сканирования. Благодаря этому исключению ATA игнорирует такие сканеры. Примером исключения *Pass-the-Ticket* является устройство NAT.    
 
@@ -41,7 +42,7 @@ ATA позволяет исключать определенные IP-адрес
 
     ![Параметры конфигурации ATA](media/ATA-config-icon.JPG)
 
-2.  Под заголовком **Detection exclusions** (Исключения обнаружения) вот что следует ввести для IP-адресов *Исследование DNS* или *Pass-the-Ticket*. Выберите формат CIDR, например `192.168.1.0/24`, и щелкните знак "*плюс*".
+2.  В разделе **исключений обнаружения** укажите IP-адреса для атак *DNS Reconnaissance* или *Pass-the-Ticket*, а затем щелкните знак *плюс*.
 
     ![Сохранить изменения](media/ATA-exclusions.png)
 
@@ -63,18 +64,18 @@ ATA позволяет исключать определенные IP-адрес
 
 
 >[!div class="step-by-step"]
-[« Шаг 5](install-ata-step5.md)
+[" Шаг 5](install-ata-step5.md)
 
 
-## См. также
+## <a name="see-also"></a>См. также
 
-- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования для ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
