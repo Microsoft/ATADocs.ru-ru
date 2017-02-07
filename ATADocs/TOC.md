@@ -20,12 +20,12 @@
 ### [2. Проверка зеркального отображения портов](/advanced-threat-analytics/deploy-use/validate-port-mirroring.md)
 ### [3. Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection.md)
 ## Установка ATA
-### [Шаг 1](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
-### [Шаг 2](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
-### [Шаг 3](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
-### [Шаг 4](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
-### [Шаг 5](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
-### [Шаг 6](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
+### [Шаг 1. Скачивание и установка центра](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
+### [Шаг 2. Подключение к AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
+### [Шаг 3. Скачивание пакета шлюза](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
+### [Шаг 4. Установка шлюза](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
+### [Шаг 5. Настройка шлюза](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
+### [Шаг 6. Исключения и Honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
 ### [Автоматическая установка](/advanced-threat-analytics/deploy-use/ata-silent-installation.md)
 # Используйте
 ## [Изменение IP-адреса Центра ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip.md)
@@ -49,6 +49,6 @@
 ## [Устранение проблем при помощи базы данных](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database.md)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
