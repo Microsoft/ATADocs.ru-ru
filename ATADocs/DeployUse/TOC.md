@@ -20,12 +20,12 @@
 ### [2. Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [3. Настройка сбора данных о событиях](configure-event-collection.md)
 ## Установка ATA
-### [Шаг 1](install-ata-step1.md)
-### [Шаг 2](install-ata-step2.md)
-### [Шаг 3](install-ata-step3.md)
-### [Шаг 4](install-ata-step4.md)
-### [Шаг 5](install-ata-step5.md)
-### [Шаг 6](install-ata-step6.md)
+### [Шаг 1. Скачивание и установка центра](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
+### [Шаг 2. Подключение к AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
+### [Шаг 3. Скачивание пакета шлюза](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
+### [Шаг 4. Установка шлюза](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
+### [Шаг 5. Настройка шлюза](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
+### [Шаг 6. Исключения и Honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
 ### [Автоматическая установка](ata-silent-installation.md)
 # Используйте
 ## [Изменение IP-адреса Центра ATA](modifying-ata-config-centerip.md)
@@ -49,6 +49,6 @@
 ## [Устранение проблем при помощи базы данных](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
