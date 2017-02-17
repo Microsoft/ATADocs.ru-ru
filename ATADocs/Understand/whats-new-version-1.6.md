@@ -1,11 +1,11 @@
 ---
-title: "Новые возможности ATA версии 1.6 | Документация Майкрософт"
+title: "Новые возможности Advanced Threat Analytics версии 1.6 | Документация Майкрософт"
 description: "В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.6."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 2cf155b0a54d12e78b5cac5be1ac077786e8cd07
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
 
 
 ---
@@ -109,9 +109,9 @@ ms.openlocfilehash: 2cf155b0a54d12e78b5cac5be1ac077786e8cd07
 **Решение** 
 
 1.  Переместите папку data_old во временную папку (которая обычно находится в каталоге %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
-2.  Удалите центр ATA 1.5 и все данные базы данных.
+2.  Удалите центр ATA&1;.5 и все данные базы данных.
 ![Удаление ATA 1.5](http://i.imgur.com/x4nJycx.png)
-3.  Повторно установите центр ATA 1.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
+3.  Повторно установите центр ATA&1;.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
 4.  Остановите работу этих служб в следующем порядке:
     1.  центр Microsoft Advanced Threat Analytics;
     2.  MongoDB
@@ -147,6 +147,6 @@ ms.openlocfilehash: 2cf155b0a54d12e78b5cac5be1ac077786e8cd07
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

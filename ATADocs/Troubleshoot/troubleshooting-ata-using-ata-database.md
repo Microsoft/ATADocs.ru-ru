@@ -1,11 +1,11 @@
 ---
-title: "Устранение неполадок в ATA с помощью базы данных ATA | Документация Майкрософт"
+title: "Устранение неполадок в Advanced Threat Analytics с использованием базы данных | Документация Майкрософт"
 description: "В данной статье рассказывается о том, как устранять неполадки с помощью базы данных ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
-ms.openlocfilehash: fd2cc788ec3fb2c64d47694997762f740f5af503
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 301e57f7bd66a0e557054d9b7a641c4c1c200142
 
 
 ---
@@ -59,6 +59,6 @@ ms.openlocfilehash: fd2cc788ec3fb2c64d47694997762f740f5af503
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

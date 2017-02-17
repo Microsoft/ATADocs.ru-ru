@@ -1,11 +1,11 @@
 ---
-title: "Устранение неполадок по журналу ошибок ATA | Документация Майкрософт"
+title: "Устранение неполадок в Advanced Threat Analytics с использованием журнала ошибок | Документация Майкрософт"
 description: "В этой статье описываются способы устранения распространенных ошибок в ATA"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,13 +14,13 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ba53b7b1c34359f00da9fc9717496cfc7d4271d
-ms.openlocfilehash: 8687263977c7bfdf12581a200bba3a60633fca4d
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
 
 
 ---
 
-*Область применения: Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
@@ -43,7 +43,7 @@ ms.openlocfilehash: 8687263977c7bfdf12581a200bba3a60633fca4d
 |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/en-us/kb/281884).|
 |System.InvalidOperationException: Category does not exist (System.InvalidOperationException: категория не существует).|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/en-us/kb/2554336).|
 |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
-|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2.|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Включите TLS 1.2 в .NET, настроив в разделах реестра использование стандартных значений операционной системы для LLS и TLS: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"`|
+|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2.|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Включите TLS 1.2 в .NET, настроив в разделах реестра использование стандартных значений операционной системы для LLS и TLS: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"`|
 
 
 
@@ -55,7 +55,7 @@ ms.openlocfilehash: 8687263977c7bfdf12581a200bba3a60633fca4d
 **Решение**. Чтобы избежать этих оповещений, задайте значение "0" или "Disabled" (Отключено) для следующих параметров: TsoEnable, LargeSendOffload, IPv4 и TSO Offload. Кроме того, рекомендуется отключить IPv4 Giant TSO Offload. Для получения дополнительной информации обратитесь к документации VMware.
 
 
-## <a name="ata-iis-errors-not-applicable-for-ata-v17-and-above"></a>Ошибки ATA IIS (неприменимо для ATA 1.7 и более поздних версий)
+## <a name="ata-iis-errors-not-applicable-for-ata-v17-and-above"></a>Ошибки ATA IIS (неприменимо для ATA 1.7 и более поздних версий)
 |Ошибка|Описание|Разрешение|
 |-------------|----------|---------|
 |Ошибка HTTP 500.19 — внутренняя ошибка сервера|Не удалось правильно установить модуль переопределения URL-адресов для IIS.|Удалите и повторно установите модуль переопределения URL-адресов для IIS.<br>[Скачать модуль переопределения URL-адресов для IIS](http://go.microsoft.com/fwlink/?LinkID=615137)|
@@ -77,6 +77,6 @@ ms.openlocfilehash: 8687263977c7bfdf12581a200bba3a60633fca4d
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

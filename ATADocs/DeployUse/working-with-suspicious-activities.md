@@ -1,11 +1,11 @@
 ---
-title: "Обработка подозрительных действий | Документация Майкрософт"
+title: "Обработка подозрительных действий в Advanced Threat Analytics | Документация Майкрософт"
 description: "В данной статье рассказывается о том, как проверять подозрительные действия, выявленные АТА."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 29a8b5b76b4b435157f0907f0dc98731dacbc53a
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: c94f61853aa45d45600cbcc0ba0a5a64adc6fd3f
 
 
 ---
@@ -118,6 +118,6 @@ ms.openlocfilehash: 29a8b5b76b4b435157f0907f0dc98731dacbc53a
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

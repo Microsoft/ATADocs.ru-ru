@@ -1,11 +1,11 @@
 ---
-title: "Настройка уведомлений ATA | Документация Майкрософт"
+title: "Настройка уведомлений Advanced Threat Analytics | Документация Майкрософт"
 description: "В этой статье описано, как настроить оповещения ATA, чтобы получать уведомления при обнаружении подозрительных действий."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
-ms.openlocfilehash: f069f910e99c537e08b34b9a0b65aab7dcd08452
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
 
 
 ---
@@ -80,6 +80,6 @@ ms.openlocfilehash: f069f910e99c537e08b34b9a0b65aab7dcd08452
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
