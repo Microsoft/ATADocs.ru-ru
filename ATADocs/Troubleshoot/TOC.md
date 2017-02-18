@@ -47,8 +47,8 @@
 ## [Устранение проблем при помощи журналов](troubleshooting-ata-using-logs.md)
 ## [Устранение проблем при помощи счетчиков производительности](troubleshooting-ata-using-perf-counters.md)
 ## [Устранение проблем при помощи базы данных](troubleshooting-ata-using-ata-database.md)
+## [Аварийное восстановление](/advanced-threat-analytics/troubleshoot/disaster-recovery.md)
 
-
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

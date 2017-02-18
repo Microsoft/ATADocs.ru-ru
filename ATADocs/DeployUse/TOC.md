@@ -47,8 +47,8 @@
 ## [Устранение проблем при помощи журналов](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 ## [Устранение проблем при помощи счетчиков производительности](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)
 ## [Устранение проблем при помощи базы данных](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
+## [Аварийное восстановление](/advanced-threat-analytics/troubleshoot/disaster-recovery)
 
-
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
