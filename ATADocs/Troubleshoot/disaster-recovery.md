@@ -14,8 +14,8 @@ ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ffbbfd96507612b8ec44f232f4ece42988eb588
-ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
+ms.sourcegitcommit: e3f763f7c1cce6c451a1cc969771b73543c76673
+ms.openlocfilehash: 0669ccb78207dde1ede06a229af896bed0b19d28
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
 >[!NOTE]
 > Описанный процесс не позволяет восстановить ранее обнаруженные подозрительные действия, но возвращает центр ATA в состояние полной работоспособности. Кроме того, будет повторно запущено обучение с целью обнаружения некоторых моделей поведения. Большая часть таких обнаруженных моделей, предлагаемых ATA, будет работоспособной после восстановления центра ATA. 
 
-## <a name="how-to-recovery-your-ata-center-after-disaster"></a>Как восстановить центр ATA после аварии
+## <a name="how-to-recover-your-ata-center-after-a-disaster"></a>Как восстановить центр ATA после аварии
 
 1. Резервная копия конфигурации центра ATA записывается в файл каждый час. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](/advanced-threat-analytics/deploy-use/ata-configuration-file). 
 2. Экспортируйте сертификат центра ATA.
@@ -72,6 +72,6 @@ ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
