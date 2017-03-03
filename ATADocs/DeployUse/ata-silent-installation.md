@@ -1,11 +1,11 @@
 ---
-title: "Автоматическая установка ATA | Документация Майкрософт"
+title: "Автоматическая установка Advanced Threat Analytics | Документация Майкрософт"
 description: "Здесь описывается автоматическая установка ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 02/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,9 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f9dac8c00f213ee0cefc9ff93f2c9ca40cd28b
-ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
+ms.sourcegitcommit: 9d26567a0a9a00d4cb1a9421a4ef2e30a52c11a8
+ms.openlocfilehash: 9e550cf8fe795cb679fbcfe10ef40d2ede7875b4
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -43,8 +44,8 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 **Синтаксис**
 
-    “Microsoft ATA Center Setup.exe” [/quiet] [/NoRestart] [/Help] [--LicenseAccepted] [NetFrameworkCommandLineArguments=”/q”] [InstallationPath=“<InstallPath>”] [DatabaseDataPath= “<DBPath>”] [CenterIpAddress=<CenterIPAddress>] [CenterPort=<CenterPort>] [CenterCertificateThumbprint=“<CertThumbprint>”] 
-    [ConsoleIpAddress=<ConsoleIPAddress>] [ConsoleCertificateThumbprint=”<CertThumbprint >”]
+    "Microsoft ATA Center Setup.exe" [/quiet] [/NoRestart] [/Help] [--LicenseAccepted] [NetFrameworkCommandLineArguments="/q"] [InstallationPath="<InstallPath>"] [DatabaseDataPath= "<DBPath>"] [CenterIpAddress=<CenterIPAddress>] [CenterPort=<CenterPort>] [CenterCertificateThumbprint="<CertThumbprint>"] 
+    [ConsoleIpAddress=<ConsoleIPAddress>] [ConsoleCertificateThumbprint="<CertThumbprint >"]
     
 **Варианты установки**
 
@@ -60,23 +61,23 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
-|InstallationPath|InstallationPath=“<InstallPath>”|Нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.|
-|DatabaseDataPath|DatabaseDataPath=“<DBPath>”|Нет|Задает путь к папке данных базы данных ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|
+|InstallationPath|InstallationPath="<InstallPath>"|Нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.|
+|DatabaseDataPath|DatabaseDataPath= "<DBPath>"|Нет|Задает путь к папке данных базы данных ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|
 |CenterIpAddress|CenterIpAddress=<CenterIPAddress>|да|Задает IP-адрес службы центра ATA.|
 |CenterPort|CenterPort=<CenterPort>|да|Задает сетевой порт службы центра ATA.|
-|CenterCertificateThumbprint|CenterCertificateThumbprint=“<CertThumbprint>”|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
+|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 |ConsoleIpAddress|ConsoleIpAddress=<ConsoleIPAddress>|да|Задает IP-адрес консоли ATA.|
-|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint=”<CertThumbprint >”|Нет|Задает отпечаток сертификата для консоли ATA. Этот сертификат используется для проверки удостоверения веб-сайта консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
+|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|Нет|Задает отпечаток сертификата для консоли ATA. Этот сертификат используется для проверки удостоверения веб-сайта консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 
 **Примеры**. Установка центра ATA с использованием путей установки по умолчанию и одного IP-адреса.
 
-    “Microsoft ATA Center Setup.exe” /quiet --LicenseAccepted NetFrameworkCommandLineArguments="/q" CenterIpAddress=192.168.0.10
+    "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments="/q" CenterIpAddress=192.168.0.10
     CenterPort=444 ConsoleIpAddress=192.168.0.10
 
 Установка центра ATA с использованием путей установки по умолчанию, двух IP-адресов и отпечатков сертификатов, определяемых пользователем.
 
-    “Microsoft ATA Center Setup.exe” /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F”
-    ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint=”G9530253C976BFA9342FD1A716C0EC94207BFD5A”
+    "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F"
+    ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint="G9530253C976BFA9342FD1A716C0EC94207BFD5A"
 
 ## <a name="update-the-ata-center"></a>Обновите центр ATA.
 
@@ -84,7 +85,7 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 **Синтаксис**
 
-    Microsoft ATA Center Setup.exe” [/quiet] [-NoRestart] /Help] [NetFrameworkCommandLineArguments=”/q”]
+    "Microsoft ATA Center Setup.exe" [/quiet] [-NoRestart] /Help] [NetFrameworkCommandLineArguments="/q"]
 
 
 **Варианты установки**
@@ -101,7 +102,7 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 **Примеры**. Автоматическое обновление центра ATA. В больших средах обновление центра ATA может занять некоторое время. Просматривайте журналы ATA, чтобы отслеживать ход выполнения обновления.
 
-        “Microsoft ATA Center Setup.exe” /quiet NetFrameworkCommandLineArguments="/q"
+        "Microsoft ATA Center Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 
 ## <a name="uninstall-the-ata-center-silently"></a>Автоматическое удаление центра ATA
 
@@ -128,7 +129,7 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 **Примеры**. Автоматическое удаление центра ATA с сервера и всех имеющихся данных базы данных.
 
 
-    “Microsoft ATA Center Setup.exe” /quiet /uninstall --DeleteExistingDatabaseData
+    "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
 ## <a name="ata-gateway-silent-installation"></a>Автоматическая установка шлюза ATA
 Для автоматической установки шлюза ATA используйте приведенную ниже команду.
@@ -136,8 +137,8 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 **Синтаксис**
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/NoRestart] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
-    [GatewayCertificateThumbprint=”<CertThumbprint >”] [ConsoleAccountName=”<AccountName>”] 
-    [ConsoleAccountPassword=”<AccountPassword>”]
+    [GatewayCertificateThumbprint="<CertThumbprint >"] [ConsoleAccountName="<AccountName>"] 
+    [ConsoleAccountPassword="<AccountPassword>"]
 
 **Варианты установки**
 
@@ -152,14 +153,14 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
-|GatewayCertificateThumbprint|GatewayCertificateThumbprint=”<CertThumbprint >”|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
-|ConsoleAccountName|ConsoleAccountName=”<AccountName>”|да|Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
-|ConsoleAccountPassword|ConsoleAccountPassword=”<AccountPassword>”|да|Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
+|GatewayCertificateThumbprint|GatewayCertificateThumbprint="<CertThumbprint >"|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
+|ConsoleAccountName|ConsoleAccountName="<AccountName>"|Да|Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
+|ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Да|Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
 
 **Примеры**. Автоматическая установка шлюза ATA и его регистрация в центре ATA с помощью указанных учетных данных.
 
-    “Microsoft ATA Gateway Setup.exe” /quiet NetFrameworkCommandLineArguments="/q" 
-    ConsoleAccountName=”user@contoso.com” ConsoleAccountPassword=“userpwd”
+    "Microsoft ATA Gateway Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
+    ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
     
 
 ## <a name="update-the-ata-gateway"></a>Обновление шлюза ATA
@@ -219,8 +220,3 @@ ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-<!--HONumber=Dec16_HO1-->
-
-

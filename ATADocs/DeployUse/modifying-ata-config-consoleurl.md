@@ -1,11 +1,11 @@
 ---
-title: "Изменение конфигурации ATА. IP-адрес консоли АТА | Microsoft Advanced Threat Analytics"
+title: "Изменение конфигурации (IP-адреса консоли) в Advanced Threat Analytics | Документация Майкрософт"
 description: "Эта статья содержит информацию о том, как изменить IP-адрес консоли ATA, с помощью которого на шлюзах ATA создается ярлык консоли ATA."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: stevenpo
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: identity-ata
 ms.service: advanced-threat-analytics
@@ -14,13 +14,13 @@ ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
-ms.openlocfilehash: 8f816c8eda0a1b11a42314a18b1c8c39ac6a7ba8
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 5f662793ae0c758becb08c3fd91b79587124d99a
 
 
 ---
 
-*Область применения: Advanced Threat Analytics версии 1.7*
+*Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
@@ -77,6 +77,6 @@ URL-адрес используется в следующих сценариях
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
