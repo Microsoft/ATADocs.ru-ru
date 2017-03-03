@@ -1,11 +1,11 @@
 ---
-title: "Установка ATA. Шаг 1 | Документация Майкрософт"
+title: "Установка Advanced Threat Analytics. Шаг 1 | Документация Майкрософт"
 description: "На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73fb769438a7290053c27766c233010079dca78
-ms.openlocfilehash: 313ae02742d4acc68c52d5481fdc24c0aa508681
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 35949dfc81ed3753bf1e449a2de06bdf0403fe78
 
 
 ---
@@ -106,6 +106,6 @@ ms.openlocfilehash: 313ae02742d4acc68c52d5481fdc24c0aa508681
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

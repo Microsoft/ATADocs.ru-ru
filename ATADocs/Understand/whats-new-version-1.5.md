@@ -1,11 +1,11 @@
 ---
-title: "Новые возможности ATA версии 1.5 | Документация Майкрософт"
+title: "Новые возможности Advanced Threat Analytics версии 1.5 | Документация Майкрософт"
 description: "В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 4130f19c828045327d9d439059a2beda9bca13dc
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 08da33114bc3f0c9aafb9914b9d77a88fac009f4
 
 
 ---
@@ -75,6 +75,6 @@ ms.openlocfilehash: 4130f19c828045327d9d439059a2beda9bca13dc
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 
