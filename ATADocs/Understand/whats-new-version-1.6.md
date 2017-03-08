@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
-
-
+ms.openlocfilehash: ac10d24c443e0278a1d0995598fb9c1cf0fb4de6
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
@@ -108,21 +105,21 @@ ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
 
 **Решение** 
 
-1.  Переместите папку data_old во временную папку (которая обычно находится в каталоге %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
-2.  Удалите центр ATA&1;.5 и все данные базы данных.
+1.    Переместите папку data_old во временную папку (которая обычно находится в каталоге %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
+2.    Удалите центр ATA&1;.5 и все данные базы данных.
 ![Удаление ATA 1.5](http://i.imgur.com/x4nJycx.png)
-3.  Повторно установите центр ATA&1;.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
-4.  Остановите работу этих служб в следующем порядке:
-    1.  центр Microsoft Advanced Threat Analytics;
-    2.  MongoDB
-5.  Замените файлы базы данных MongoDB файлами в папке data_old.
-6.  Запустите эти службы в следующем порядке:
-    1.  MongoDB
-    2.  центр Microsoft Advanced Threat Analytics;
-7.  Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
-8.  [Скачивание](http://aka.ms/ataremoveduplicateprofiles "Скачайте") инструмент RemoveDuplicateProfiles.exe и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
-9.  Запустите его в командной строке с повышенными привилегиями и дождитесь успешного завершения.
-10. Здесь: каталог …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin: **Mongo ATA** введите следующую команду:
+3.    Повторно установите центр ATA&1;.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
+4.    Остановите работу этих служб в следующем порядке:
+    1.    центр Microsoft Advanced Threat Analytics;
+    2.    MongoDB
+5.    Замените файлы базы данных MongoDB файлами в папке data_old.
+6.    Запустите эти службы в следующем порядке:
+    1.    MongoDB
+    2.    центр Microsoft Advanced Threat Analytics;
+7.    Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
+8.    [Скачивание](http://aka.ms/ataremoveduplicateprofiles "Скачайте") инструмент RemoveDuplicateProfiles.exe и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
+9.    Запустите его в командной строке с повышенными привилегиями и дождитесь успешного завершения.
+10.    Здесь: каталог …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin: **Mongo ATA** введите следующую команду:
 
     db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
@@ -145,8 +142,3 @@ ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
-
-
-<!--HONumber=Feb17_HO1-->
-
-
