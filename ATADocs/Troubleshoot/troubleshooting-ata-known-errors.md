@@ -1,14 +1,17 @@
----
+--
 # <a name="required-metadata"></a>необходимые метаданные
 
-title: Устранение неполадок в Advanced Threat Analytics с использованием журнала ошибок | Документация Майкрософт description: В этой статье описываются способы устранения распространенных ошибок в ATA keywords: author: rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 1/23/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+title: Устранение неполадок в Advanced Threat Analytics с использованием журнала ошибок | Документация Майкрософт description: В этой статье описываются способы устранения распространенных ошибок в ATA keywords: author: rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 3/14/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 
 # <a name="optional-metadata"></a>необязательные метаданные
 
 #<a name="robots"></a>ROBOTS:
 #<a name="audience"></a>audience:
 #<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: arzinger ms.suite: ems#ms.tgt_pltfrm:
+ms.reviewer: arzinger
+
+ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 #<a name="mscustom"></a>ms.custom:
 
 ---

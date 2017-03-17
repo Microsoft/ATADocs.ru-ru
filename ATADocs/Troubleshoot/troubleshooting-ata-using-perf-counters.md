@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 929885891e2fc490e3ff358559e4995c545466b3
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 5c4662cd2d83135227cf86e339d5e30f9713f022
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 *Область применения: Advanced Threat Analytics версии 1.7*
@@ -32,6 +32,16 @@ translationtype: HT
 2.  Cо временем предыдущий компонент начнет увеличивать **свой** собственный размер до тех пор, пока не блокирует прием сущностей от предыдущего компонента.
 
 3.  Этот процесс повторится на всех компонентах вплоть до прослушивателя сети, который будет игнорировать входящий трафик, когда не может отправлять объекты.
+
+
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>Извлечение файлов монитора производительности для устранения неполадок
+
+Извлечение файлов монитора производительности (BLG) из разных компонентов ATA
+1.  Откройте системный монитор.
+2.  Остановите набор сборщиков данных с именем "Microsoft ATA Gateway" или "Microsoft ATA Center".
+3.  Перейдите в папку набора сборщиков данных (по умолчанию — "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" или "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets").
+4.  Скопируйте BLG-файл, который был изменен позже всех.
+5.  Перезапустите набор сборщиков данных "Microsoft ATA Gateway" или "Microsoft ATA Center".
 
 
 ## <a name="ata-gateway-performance-counters"></a>Счетчики производительности шлюза АТА
