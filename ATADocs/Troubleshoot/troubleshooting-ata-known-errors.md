@@ -1,28 +1,32 @@
---
-# <a name="required-metadata"></a>необходимые метаданные
-
-title: Устранение неполадок в Advanced Threat Analytics с использованием журнала ошибок | Документация Майкрософт description: В этой статье описываются способы устранения распространенных ошибок в ATA keywords: author: rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 3/14/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# <a name="optional-metadata"></a>необязательные метаданные
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: arzinger
-
-ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-#<a name="mscustom"></a>ms.custom:
-
 ---
-
+title: "Устранение неполадок в Advanced Threat Analytics с использованием журнала ошибок | Документация Майкрософт"
+description: "В этой статье описываются способы устранения распространенных ошибок в ATA"
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 3/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: advanced-threat-analytics
+ms.technology: 
+ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.reviewer: arzinger
+ms.suite: ems
+ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
+ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
+translationtype: HT
+---
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
 # <a name="troubleshooting-the-ata-error-log"></a>Устранение неполадок журнала ошибок ATA
+
 В этом разделе подробно описываются возможные ошибки в развертываниях ATA и действия, необходимые для их устранения.
+
 ## <a name="ata-gateway-errors"></a>Ошибки шлюза ATA
+
 |Ошибка|Описание|Решение|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException: произошла локальная ошибка|Шлюзу ATA не удалось выполнить аутентификацию в контроллере домена.|1. Убедитесь, что запись DNS контроллера домена на DNS-сервере настроена надлежащим образом. <br>2. Убедитесь, что время шлюза ATA синхронизировано с временем контроллера домена.|
