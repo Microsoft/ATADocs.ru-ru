@@ -27,7 +27,7 @@ translationtype: HT
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию:**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
