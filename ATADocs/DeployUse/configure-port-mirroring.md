@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 8e18bcefc023f1c37b2255000c244bc54bca4fe7
-
-
+ms.openlocfilehash: f91c728614cbe03f794fd0ad45ccc19af712cf54
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -72,9 +69,3 @@ ms.openlocfilehash: 8e18bcefc023f1c37b2255000c244bc54bca4fe7
 ## <a name="see-also"></a>См. также
 - [Проверка зеркального отображения портов](validate-port-mirroring.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

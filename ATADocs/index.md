@@ -1,14 +1,13 @@
 ---
 layout: LandingPage
 description: "Как использовать Advanced Threat Analytics."
-translationtype: Human Translation
-ms.sourcegitcommit: c4e5418a8b5f7093792f52f1553307039f38ff5f
-ms.openlocfilehash: 1fe4d6e06150cc1425c92165445fd087544b8904
-
+ms.openlocfilehash: ddf06db756bd991c49200ba35b6a515832ccc3cb
+ms.sourcegitcommit: 9b128d6946e32b00f595e00902b9ff95f18141ff
+translationtype: HT
 ---
 # <a name="advanced-threat-analytics-documentation"></a>Документация по Advanced Threat Analytics
 
-Управление и защита для электронной почты, документов и конфиденциальных данных, которые вы публикуете за пределами вашей организации. От простой классификации до внедренных меток и разрешений — Azure Information Protection всегда обеспечивает расширенную защиту данных, и неважно, где они хранятся и для кого публикуются.
+Advanced Threat Analytics (ATA) — это локальная платформа, которая помогает защитить вашу организацию от множества видов разнообразных целенаправленных кибератак и внутренних угроз, используя информацию из нескольких источников данных в вашей сети для анализа поведения пользователей и других сущностей в организации и составления профиля их поведения, а также применяя собственную сетевую аналитическую подсистему ATA для записи и анализа сетевого трафика по различным протоколам.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -131,15 +130,10 @@ ms.openlocfilehash: 1fe4d6e06150cc1425c92165445fd087544b8904
                 <div class="card">
                     <div class="cardText">
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=836487">Оценить</a></p>
+                        <p><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook">Сборник тренировочных заданий по моделированию атаки Advanced Threat Analytics</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </li>  
 </ul>
-
-
-
-<!--HONumber=Feb17_HO2-->
-
-
