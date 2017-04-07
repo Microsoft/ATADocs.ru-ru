@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: a909388cfcd35af45ccd4eac35f81e55938db086
-
-
+ms.openlocfilehash: 5c4662cd2d83135227cf86e339d5e30f9713f022
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -35,6 +32,16 @@ ms.openlocfilehash: a909388cfcd35af45ccd4eac35f81e55938db086
 2.  Cо временем предыдущий компонент начнет увеличивать **свой** собственный размер до тех пор, пока не блокирует прием сущностей от предыдущего компонента.
 
 3.  Этот процесс повторится на всех компонентах вплоть до прослушивателя сети, который будет игнорировать входящий трафик, когда не может отправлять объекты.
+
+
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>Извлечение файлов монитора производительности для устранения неполадок
+
+Извлечение файлов монитора производительности (BLG) из разных компонентов ATA
+1.  Откройте системный монитор.
+2.  Остановите набор сборщиков данных с именем "Microsoft ATA Gateway" или "Microsoft ATA Center".
+3.  Перейдите в папку набора сборщиков данных (по умолчанию — "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" или "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets").
+4.  Скопируйте BLG-файл, который был изменен позже всех.
+5.  Перезапустите набор сборщиков данных "Microsoft ATA Gateway" или "Microsoft ATA Center".
 
 
 ## <a name="ata-gateway-performance-counters"></a>Счетчики производительности шлюза АТА
@@ -126,9 +133,3 @@ ms.openlocfilehash: a909388cfcd35af45ccd4eac35f81e55938db086
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

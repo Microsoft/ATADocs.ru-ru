@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 301e57f7bd66a0e557054d9b7a641c4c1c200142
-
-
+ms.openlocfilehash: 671812b59ee00b27a329c72d09c00317a81d06be
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -56,9 +53,3 @@ ms.openlocfilehash: 301e57f7bd66a0e557054d9b7a641c4c1c200142
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

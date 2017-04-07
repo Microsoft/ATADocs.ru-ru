@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 08da33114bc3f0c9aafb9914b9d77a88fac009f4
-
-
+ms.openlocfilehash: fb7f35ad626f28e99f446df8b848bee1e26b8d4c
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
@@ -72,9 +69,3 @@ ms.openlocfilehash: 08da33114bc3f0c9aafb9914b9d77a88fac009f4
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

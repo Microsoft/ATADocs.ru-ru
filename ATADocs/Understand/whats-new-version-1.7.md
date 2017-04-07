@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 00ddddfd927ed1ba4c52d4774085da04ce359bde
-ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
-
-
+ms.openlocfilehash: b9ba013c76c785290649037c8a01af1cd2feced5
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
 
@@ -106,8 +103,8 @@ ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
 При попытке экспортировать сведения о подозрительной активности в файл Excel операция может завершиться следующей ошибкой: *Ошибка [BsonClassMapSerializer`1] System.FormatException: произошла ошибка при десериализации свойства Activity класса Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: элемент "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
 
 Чтобы устранить эту проблему, в командной строке с повышенными привилегиями перейдите в папку **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** и выполните следующую команду:
-1.  **Mongo.exe ATA** ("ATA" следует написать прописными буквами)
-2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
+1.    **Mongo.exe ATA** ("ATA" следует написать прописными буквами)
+2.    **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
 
 ## <a name="minor-changes"></a>Несущественные изменения
 
@@ -119,10 +116,4 @@ ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.7. Руководство по миграции](ata-update-1.7-migration-guide.md)
-
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

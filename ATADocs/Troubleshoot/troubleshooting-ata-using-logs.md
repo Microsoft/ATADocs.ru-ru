@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 58df6ec3473118d0e11a5128eabd8feaa29f9fd2
-
-
+ms.openlocfilehash: 5bde3ff8abbdace3c56bb86b8889b53320470b00
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -30,7 +27,7 @@ ms.openlocfilehash: 58df6ec3473118d0e11a5128eabd8feaa29f9fd2
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию:**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
@@ -42,8 +39,8 @@ ms.openlocfilehash: 58df6ec3473118d0e11a5128eabd8feaa29f9fd2
 
 -   **Microsoft.Tri.Gateway-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения.
     На момент запуска шлюза ATA этот файл пустой. Во время работы шлюза он обновляется каждую минуту. Его основное назначение — получение данных о новых ошибках или событиях шлюза ATA. Понять, появились ли новые ошибки, и ознакомиться с ними гораздо легче, так как они сгруппированы по категориям.
--   **Microsoft.Tri.Gateway.Updater.log** — этот журнал используется для процесса обновления шлюза, который отвечает за автоматическое обновление шлюза, если оно настроено. Для упрощенного шлюза ATA процесс обновления шлюза отвечает также за контроль ограничений ресурсов.
--   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения. Этот файл создается пустым при каждом запуске службы обновления ATA и обновляется каждую минуту. Он позволяет заметить новые ошибки или проблемы, связанные со службой обновления ATA. Ошибки группируются, что позволяет быстро обнаружить любые новые ошибки или проблемы.
+-    **Microsoft.Tri.Gateway.Updater.log** — этот журнал используется для процесса обновления шлюза, который отвечает за автоматическое обновление шлюза, если оно настроено. Для упрощенного шлюза ATA процесс обновления шлюза отвечает также за контроль ограничений ресурсов.
+-    **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения. Этот файл создается пустым при каждом запуске службы обновления ATA и обновляется каждую минуту. Он позволяет заметить новые ошибки или проблемы, связанные со службой обновления ATA. Ошибки группируются, что позволяет быстро обнаружить любые новые ошибки или проблемы.
 
 > [!NOTE]
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
@@ -92,9 +89,3 @@ ms.openlocfilehash: 58df6ec3473118d0e11a5128eabd8feaa29f9fd2
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

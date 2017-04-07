@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: cb712537b42c4e86ed24607e70c614e8d37025c0
-
-
+ms.openlocfilehash: 12eee73f87bfadad2cccd9b3c0da544dccc27e3d
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -123,9 +120,3 @@ C помощью консоли можно отслеживать обнаруж
 
 ## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

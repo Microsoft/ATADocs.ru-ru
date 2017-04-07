@@ -5,28 +5,28 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-ms.reviewer: bennyl
+ms.reviewer: arzinger
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
-
-
+ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
+ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
 
 # <a name="troubleshooting-the-ata-error-log"></a>Устранение неполадок журнала ошибок ATA
+
 В этом разделе подробно описываются возможные ошибки в развертываниях ATA и действия, необходимые для их устранения.
+
 ## <a name="ata-gateway-errors"></a>Ошибки шлюза ATA
+
 |Ошибка|Описание|Решение|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException: произошла локальная ошибка|Шлюзу ATA не удалось выполнить аутентификацию в контроллере домена.|1. Убедитесь, что запись DNS контроллера домена на DNS-сервере настроена надлежащим образом. <br>2. Убедитесь, что время шлюза ATA синхронизировано с временем контроллера домена.|
@@ -74,9 +74,3 @@ ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
 - [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

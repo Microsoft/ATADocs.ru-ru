@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 823d773efd85a453c3e0bf8f263f86ac02aaa237
-
-
+ms.openlocfilehash: 301e50dfc06f969773e4d54dc6977798892465a6
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -39,9 +36,3 @@ ms.openlocfilehash: 823d773efd85a453c3e0bf8f263f86ac02aaa237
 ## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Ознакомьтесь с форумом ATA.](https://aka.ms/ata-forum)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

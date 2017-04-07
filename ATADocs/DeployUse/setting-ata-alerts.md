@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
-
-
+ms.openlocfilehash: 06aa85cededdc3647aadaaca7d594ce3bbbb0723
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *Область применения: Advanced Threat Analytics версии 1.7*
 
 
@@ -40,7 +37,7 @@ ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
 
 2. В разделе **Notifications** (Уведомления) выберите **Settings** (Параметры).
 3. В разделе **Mail recipients** (Получатели почты) укажите получателей, которые будут получать уведомления по электронной почте.
->   [!NOTE]
+>    [!NOTE]
 >   Электронные оповещения ATA о подозрительной активности отправляются только в случае ее обнаружения.
 
 4. В разделе **Notify when:** (Уведомлять, когда:) используйте переключатели, чтобы выбрать уведомления, которые следует отправлять.
@@ -77,9 +74,3 @@ ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
 
 ## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-
