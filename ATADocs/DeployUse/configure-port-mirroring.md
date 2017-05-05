@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f91c728614cbe03f794fd0ad45ccc19af712cf54
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: ff27dbe4b2b5e44add5dfd93e0a71419ba818ea6
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 *Область применения: Advanced Threat Analytics версии 1.7*
@@ -40,6 +40,7 @@ translationtype: HT
 
 > [!NOTE]
 > Если контроллер домена с зеркальным отображением портов подключен через глобальную сеть, убедитесь, что эта сеть может обрабатывать дополнительную нагрузку в виде трафика ERSPAN.
+> ATA поддерживает мониторинг трафика только тогда, когда трафик достигает сетевой карты и контроллера домена одним и тем же образом. ATA не поддерживает мониторинг трафика, когда трафик разбивается на различные порты.
 
 ## <a name="supported-port-mirroring-options"></a>Поддерживаемые варианты зеркального отображения портов
 
