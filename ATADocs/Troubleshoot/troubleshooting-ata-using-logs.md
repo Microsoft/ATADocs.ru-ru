@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 04/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5bde3ff8abbdace3c56bb86b8889b53320470b00
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 4a5b48f490a13cfb990f49b864462b556e36c3ce
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 *Область применения: Advanced Threat Analytics версии 1.7*
@@ -27,7 +27,7 @@ translationtype: HT
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлено ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Расположение этой папки по умолчанию:**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлен ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
@@ -81,6 +81,10 @@ translationtype: HT
 -   **Microsoft Advanced Threat Analytics Gateway_ГГГГММДДЧЧММСС.log** — здесь перечислены этапы процесса развертывания шлюза ATA. Его основное назначение заключается в отслеживании процесса развертывания шлюза ATA.
 
 -   **Microsoft Advanced Threat Analytics Gateway_ГГГГММДДЧЧММСС_001_MsiPackage.log** — здесь перечислены этапы процесса развертывания двоичных файлов шлюза ATA. Его основное назначение — отслеживание развертывания двоичных файлов шлюза ATA.
+
+
+> [!NOTE] 
+> Помимо журналов развертывания, упомянутых здесь, есть и другие журналы, которые начинаются с "Microsoft Advanced Threat Analytics" и могут также содержать дополнительные сведения о процессе развертывания.
 
 
 ## <a name="see-also"></a>См. также
