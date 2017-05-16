@@ -42,6 +42,7 @@
 ## [Управление базой данных ATA](ata-database-management.md)
 ## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
 ## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
+## [Анализ псевдоатак PAC](use-case-forged-pac.md)
 # Устранение неполадок
 ## [Устранение проблем при помощи известных ошибок](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 ## [Устранение проблем при помощи журналов](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
