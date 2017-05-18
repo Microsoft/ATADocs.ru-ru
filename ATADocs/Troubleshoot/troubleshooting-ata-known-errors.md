@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
-ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
-translationtype: HT
+ms.openlocfilehash: a87fed6bf8ce69ea3391e729c57217d1cff8ffc2
+ms.sourcegitcommit: a1595b51c95235eede3d3b34a02f24bedd5dfc5a
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/14/2017
 ---
 *Область применения: Advanced Threat Analytics версии 1.7*
 
@@ -43,7 +45,7 @@ translationtype: HT
 |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/en-us/kb/281884).|
 |System.InvalidOperationException: Category does not exist (System.InvalidOperationException: категория не существует).|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/en-us/kb/2554336).|
 |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
-|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2.|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Включите TLS 1.2 в .NET, настроив в разделах реестра использование стандартных значений операционной системы для LLS и TLS: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"`|
+|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2.|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Включите TLS 1.2 в .NET, настроив в разделах реестра использование стандартных значений операционной системы для LLS и TLS: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`|
 
 
 
