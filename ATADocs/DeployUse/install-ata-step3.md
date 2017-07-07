@@ -1,61 +1,8 @@
 ---
-title: "Установка Advanced Threat Analytics. Шаг 3 | Документация Майкрософт"
-description: "На третьем этапе установки ATA вам нужно скачать пакет установки шлюза ATA."
-keywords: 
-author: rkarlin
-ms.author: rkarlin
-manager: mbaldwin
-ms.date: 01/23/2017
-ms.topic: get-started-article
-ms.prod: 
-ms.service: advanced-threat-analytics
-ms.technology: 
-ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
-ms.reviewer: bennyl
-ms.suite: ems
-ms.openlocfilehash: d1336eae3196697c6d0c3b4d9c29c31af5e866cb
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
-translationtype: HT
+redirect_url: /advanced-threat-analytics/install-ata-step3
+ms.openlocfilehash: 6d911d714f9a402420daebf3c70ee7a329c72146
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-*Область применения: Advanced Threat Analytics версии 1.7*
-
-
-
-# <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
-
->[!div class="step-by-step"]
-[« Шаг 2](install-ata-step2.md)
-[Шаг 4 »](install-ata-step4.md)
-
-## <a name="step-3-download-the-ata-gateway-setup-package"></a>Шаг 3. Скачивание пакета установки шлюза ATA
-Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA. Шлюз ATA можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена он установится как упрощенный шлюз ATA. Дополнительные сведения об упрощенном шлюзе ATA см. в статье [Архитектура ATA](/advanced-threat-analytics/plan-design/ata-architecture). 
-
-Если вы скачиваете шлюз ATA впервые, отобразится такой экран:
-
-![Параметры конфигурации шлюза ATA](media/ATA_1.7-welcome-download-gateway.PNG)
-
-А если это уже не первое скачивание, приветственное сообщение не появится.
-
-> [!NOTE] 
-> Чтобы открыть окно конфигурации позже, щелкните **значок настройки** (верхний правый угол), выберите **Configuration** (Конфигурация), а затем в разделе **System** (Система) щелкните **Gateways** (Шлюзы).  
-
-1.  Щелкните **"Download Gateway Setup"** (Скачать средство установки шлюза).
-2.  Сохраните пакет на локальном компьютере.
-3.  Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается шлюз ATA. Кроме того, можно открыть консоль ATA с выделенного сервера или контроллера домена и пропустить этот шаг.
-
-ZIP-файл содержит:
-
--   установщик шлюза ATA;
-
--   файл конфигурации с данными для подключения к центру ATA.
-
-
->[!div class="step-by-step"]
-[« Шаг 2](install-ata-step2.md)
-[Шаг 4 »](install-ata-step4.md)
-
-## <a name="see-also"></a>См. также
-
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)

@@ -1,140 +1,133 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics update to 1.5 migration guide | Microsoft Docs
-description: Procedures to update ATA to version 1.5
-keywords:
+title: "Руководство по миграции на обновленную версию Advanced Threat Analytics 1.5 | Документация Майкрософт"
+description: "Процедуры по обновлению АТА до версии 1.5"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: daaa2b3d495900d84fe7b61afb8e3bb22b3d7f72
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
+# <a name="ata-update-to-15-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.5
+Обновление до версии ATA 1.5 привносит следующие улучшения:
 
-# ATA update to 1.5 migration guide
-The update to ATA 1.5 provides improvements in the following areas:
+-   сокращение времени обнаружения;
 
--   Faster detection times
+-   улучшенный алгоритм автоматического обнаружения устройств NAT (преобразование сетевых адресов);
 
--   Enhanced automatic detection algorithm for NAT (network address translation) devices
+-   улучшенный процесс разрешения имен для устройств, не присоединенных к домену;
 
--   Enhanced name resolution process for non-domain joined devices
+-   поддержка переноса данных во время обновления продукта;
 
--   Support for data migration during product updates
+-   более быстрая реакция пользовательского интерфейса на подозрительные действия, в которых задействованы тысячи сущностей;
 
--   Better UI responsiveness for suspicious activities with thousands of entities involved
+-   улучшенное автоматическое разрешение для оповещений системы мониторинга;
 
--   Improved auto-resolution of monitoring alerts
+-   дополнительные счетчики производительности для улучшения процессов мониторинга и устранения неполадок.
 
--   Additional performance counters for enhanced monitoring and troubleshooting
-
-## Updating ATA to version 1.5
+## <a name="updating-ata-to-version-15"></a>Обновление АТА до версии 1.5
 > [!NOTE]
-> If ATA is not installed in your environment, download the full version of ATA which includes version 1.5  and follow the standard installation procedure described in [Install ATA](install-ata-step1.md).
+> Если в вашей среде решение ATA не установлено, скачайте его полную версию, включая версию 1.5, и выполните стандартную процедуру установки, описанную в статье [Установка ATA](install-ata-step1.md).
 
-If you already have ATA version 1.4 deployed, this procedure will walk you through the steps necessary to update your installation.
+Если в вашей среде уже развернута версия ATA 1.4, эта процедура поможет вам выполнить действия, необходимые для обновления установки.
 
-Follow these steps to update to ATA version 1.5:
+Выполните следующие действия, чтобы установить обновление для ATA версии 1.5:
 
-1.  Download ATA v1.5 from VLSC or MSDN.
+1.  Скачайте ATA 1.5 из Центра VLSC или c портала MSDN.
       > [!NOTE]
-         You can also use the updated full version of ATA to perform the update to version 1.5.
+         Или же вы можете просто воспользоваться уже обновленной полной версией ATA.
 
 
-2.  Update the ATA Center
+2.  Обновите центр ATA.
 
-3.  Download the updated ATA Gateway package
+3.  Скачайте обновленный пакет шлюза ATA.
 
-4.  Update the ATA Gateways
+4.  Обновите шлюзы АТА.
 
     > [!IMPORTANT]
-    > Update all the ATA Gateways to make sure ATA functions properly.
+    > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Step 1: Update the ATA Center
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
 
-1.  Back up your database: (optional)
+1.  Создайте резервную копию базы данных (необязательно).
 
-    -   If the ATA Center is running as a virtual machine and you want to take a checkpoint, shut the virtual machine down first.
+    -   Если центр АТА работает как виртуальная машина и вы хотите создать контрольную точку, сначала отключите виртуальную машину.
 
-    -   If the ATA Center is running on a physical server, follow the recommended procedure to [back up MongoDB](https://docs.mongodb.org/manual/core/backups/).
+    -   Если центр ATA работает на физическом сервере, следуйте рекомендованной процедуре, чтобы выполнить [резервное копирование MongoDB](https://docs.mongodb.org/manual/core/backups/).
 
-2.  Run the update file, Microsoft ATA Center Update.exe, and follow the instructions on the screen to install the update.
+2.  Запустите файл обновления Microsoft ATA Center Update.exe и следуйте инструкциям на экране, чтобы установить обновление.
 
-    1.  In the **Welcome** page, select your language and click **Next**.
+    1.  На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
 
-    2.  Read the End User License Agreement and if you accept the terms, click the checkbox and click **Next**.
+    2.  Прочтите лицензионное соглашение и, если вы принимаете его условия, установите соответствующий флажок и нажмите кнопку **Далее**.
 
-    3.  Select whether you want to run the full (default) or partial migration.
+    3.  Выберите необходимый вариант миграции: полная (по умолчанию) или частичная.
 
-        ![Choose full or partial migration](media/ATA-center-fullpartial.png)
+        ![Выбор полной или частичной миграции](media/ATA-center-fullpartial.png)
 
-        -   If you select **Partial** migration, any network traffic collected and forwarded Windows events analyzed by ATA will be deleted and user behavioral profiles will have to be re-learned; this takes a minimum of three weeks. If you are running low on disk space then it is helpful to run a **Partial** migration.
+        -   При выборе **частичной** миграции любой собираемый сетевой трафик и перенаправляемые события Windows, проанализированные АТА, будут удалены, а профили поведения пользователей необходимо будет изучить повторно. На это уйдет не менее трех недель. Если на диске мало свободного пространства, лучше запустить **частичную** миграцию.
 
-        -   If you run a **Full** migration, you will need additional disk space, as calculated for you on the upgrade page, and the migration may take longer, depending on the network traffic. The full migration retains all previously collected data and user behavioral profiles are maintained, meaning that it will not take additional time for ATA to learn behavior profiles and anomalous behavior can be detected immediately after update.
+        -   При запуске **полной** миграции потребуется дополнительное пространство на диске, объем которого вычисляется на странице обновления. При этом миграция может занять больше времени (это зависит от сетевого трафика). При полной миграции сохраняются все ранее собранные данные и профили поведения пользователей: это означает, что решению АТА не потребуется дополнительное время для изучения профилей поведения и аномальные действия можно будет выявить сразу после обновления.
 
-3.  Click **Update**. Once you click Update, ATA is offline until the update procedure is complete.
+3.  Нажмите кнопку **Обновить**. После нажатия кнопки "Обновить" ATA переходит в автономный режим до завершения процедуры обновления.
 
-4.  After updating the ATA Center, the ATA Gateways will report that they are now outdated.
+4.  После обновления центра ATA вы получите отчет о том, что шлюзы ATA устарели.
 
-    ![Outdated gateways image](media/ATA-center-outdated.png)
+    ![Изображение устаревших шлюзов](media/ATA-center-outdated.png)
 
 > [!IMPORTANT]
-> - Update all the ATA Gateways to make sure ATA functions properly.
+> - Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Step 2. Download the ATA Gateway setup package
-After configuring the domain connectivity settings you can download the ATA Gateway setup package.
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>Шаг 2. Скачивание пакета установки шлюза ATA
+Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA.
 
-To download the ATA Gateway package:
+Чтобы скачать пакет шлюза ATA, сделайте вот что:
 
-1.  Delete any previous versions of the ATA Gateway package you previously downloaded.
+1.  Удалите все предыдущие версии ранее загруженного пакета шлюза ATA.
 
-2.  On the ATA Gateway machine, open a browser and enter the IP address you configured in the ATA Center for the ATA Console. When the ATA Console opens, click on the settings icon and select **Configuration**.
+2.  На компьютере шлюза ATA откройте браузер и введите IP-адрес, настроенный в центре ATA для консоли ATA. Когда откроется консоль ATA, щелкните значок параметров и выберите **Конфигурация**.
 
-    ![Configuration settings icon](media/ATA-config-icon.JPG)
+    ![Значок параметров конфигурации](media/ATA-config-icon.png)
 
-3.  In the **ATA Gateways** tab, click **Download ATA Gateway Setup**.
+3.  На вкладке **Шлюзы ATA** щелкните **Скачать программу установки шлюза ATA**.
 
-4.  Save the package locally.
+4.  Сохраните пакет на локальном компьютере.
 
-The zip file includes the following:
+ZIP-файл содержит:
 
--   ATA Gateway installer
+-   установщик шлюза ATA;
 
--   Configuration setting file with the required information to connect to the ATA Center
+-   файл конфигурации с данными для подключения к центру ATA.
 
-### Step 3: Update the ATA Gateways
+### <a name="step-3-update-the-ata-gateways"></a>Шаг 3. Обновление шлюзов АТА
 
-1.  On each ATA Gateway, extract the files from the ATA Gateway package and run the file Microsoft ATA Gateway Setup.
+1.  На каждом шлюзе ATA извлеките файлы из пакета шлюза ATA и запустите файл установки шлюза ATA Microsoft.
 
     > [!NOTE]
-    > You can also use this ATA Gateway package to install new ATA Gateways.
+    > Вы можете использовать этот пакет шлюза ATA также для установки новых шлюзов ATA.
 
-2.  Your previous settings will be preserved, but it may take a few minutes until for the service to restart.
+2.  Ранее указанные параметры будут сохранены, а установка может занять несколько минут, после чего будет выполнен перезапуск службы.
 
-3.  Repeat this step for all other ATA Gateways deployed.
+3.  Повторите этот шаг для всех остальных развернутых шлюзов АТА.
 
 > [!NOTE]
-> After successfully updating an ATA Gateway, the outdated notification for the specific ATA Gateway will go away.
+> После успешного обновления шлюза ATA устаревшие уведомления для конкретного шлюза ATA исчезнут.
 
-You will know that all the ATA Gateways have been successfully updated when all the ATA Gateways report that they are successfully synced and the message that an updated ATA Gateway package is available is no longer displayed.
+Вы будете знать, что все шлюзы ATA обновлены, когда все шлюзы ATA сообщат о своей успешной синхронизации и перестанет отображаться сообщение о том, что доступен обновленный пакет шлюза АТА.
 
-![Updated gateways image](media/ATA-gw-updated.png)
+![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
-## See Also
+## <a name="see-also"></a>См. также
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

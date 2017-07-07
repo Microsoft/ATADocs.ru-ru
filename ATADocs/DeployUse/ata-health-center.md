@@ -1,46 +1,8 @@
 ---
-title: "Оповещения центра работоспособности Advanced Threat Analytics | Документация Майкрософт"
-description: "Центр работоспособности ATA позволяет следить за работой службы ATA и своевременно узнавать о возможных проблемах."
-keywords: 
-author: rkarlin
-ms.author: rkarlin
-manager: mbaldwin
-ms.date: 01/23/2017
-ms.topic: article
-ms.prod: 
-ms.service: advanced-threat-analytics
-ms.technology: 
-ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
-ms.reviewer: bennyl
-ms.suite: ems
-ms.openlocfilehash: e929714ca33dfaa82bdf93dbaf230abadef1b86d
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
-translationtype: HT
+redirect_url: /advanced-threat-analytics/ata-health-center
+ms.openlocfilehash: 30a177092f7ba3ea5634b789e9a1ac99602776b3
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-*Область применения: Advanced Threat Analytics версии 1.7*
-
-
-
-# <a name="ata-health-center"></a>Центр работоспособности ATA
-Центр работоспособности ATA позволяет следить за работой службы ATA и узнавать о возможных проблемах.
-
-## <a name="working-with-the-ata-health-center"></a>Работа с центром работоспособности ATA
-Узнать о существующей проблеме можно по красной точке над значком центра работоспособности в строке меню.
-
-![Красная точка над значком центра работоспособности ATA на панели инструментов](media/ATA-Health-Center-Alert-red-dot.png)
-
-### <a name="managing-ata-health"></a>Управление работоспособностью ATA
-Чтобы проверить общее состояние системы, щелкните в строке меню значок центра работоспособности. ![Значок центра работоспособности ATA](media/ATA-red-dot.png)
-
--   Управление открытыми оповещениями осуществляется посредством выбора для них одного из двух состояний: **Разрешено** или **Отклонено**. В окне оповещения щелкните **Открыто** и выберите **Разрешено** или **Отклонено**.
-
--   Если вы разрешите проблему, но решение ATA снова ее обнаружит, проблема автоматически будет перемещена в список **открытых**. Если ATA обнаруживает, что открытая проблема устранена, проблема автоматически перемещается в список **разрешенных**.
-
--   **Отклоненные** проблемы — это проблемы, которые решение ATA не должно больше отслеживать. Например, вы получаете оповещение о проблеме. Вы знаете, что такая проблема существует, но не планируете ее решать, не хотите в будущем получать оповещения о ней и не хотите, чтобы она отображалась в списке **открытых** проблем. В таком случае для проблемы можно установить состояние **Отклонено**.
-
-![Проблемы в центре работоспособности ATA (рисунок)](media/ATA-Health-Issue.JPG)
-
-## <a name="see-also"></a>См. также
-- [Работа с параметрами обнаружения ATA](working-with-detection-settings.md)
-- [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -1,108 +1,101 @@
 ---
-# required metadata
-
-title: What's new in Advanced Threat Analytics version 1.4 | Microsoft Docs
-description: Lists what was new in ATA version 1.4 along with known issues
-keywords:
+title: "Новые возможности Advanced Threat Analytics версии 1.4 | Документация Майкрософт"
+description: "В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.4"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 69127773d9c3130bd07dee0b65956b93848ec399
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
+# <a name="what39s-new-in-ata-version-14"></a>Новые возможности ATA версии 1.4
+Данные заметки о выпуске содержат сведения об известных проблемах в версии 1.4 решения Advanced Threat Analytics.
 
-# What&#39;s new in ATA version 1.4
-These release notes provide information about known issues in version 1.4 of  Advanced Threat Analytics.
+## <a name="whats-new-in-this-version"></a>Новые возможности этой версии
 
-## What's new in this version?
+-   Поддержка функции пересылки событий Windows для отправки событий в шлюз ATA непосредственно с контроллеров домена.
 
--   Support for Windows Event Forwarding (WEF) to send events directly from the domain controllers to the ATA gateway.
+-   Улучшенное обнаружение атак типа Pass-The-Hash на корпоративные ресурсы за счет объединения точек на дюйм (глубокая проверка пакетов) и журналов событий Windows.
 
--   Pass-The-Hash detection enhancements on corporate resources by combining DPI (Deep Packet Inspection) and Windows event logs.
+-   Улучшенная поддержка устройств, не присоединенных к домену и не являющихся устройствами Windows, для обнаружения и видимости.
 
--   Enhancements for the support of non-domain joined devices and non-Windows devices for detection and visibility.
+-   Повышенная производительность для увеличения поддерживаемого объема трафика на каждый шлюз ATA.
 
--   Performance improvements to support more traffic per ATA Gateway.
+-   Повышенная производительность для поддержки большего числа шлюзов ATA на каждый центр АТА.
 
--   Performance improvements to support more ATA Gateways per ATA Center.
+-   Добавлен новый автоматический процесс разрешения имен, который сопоставляет имена компьютеров с IP-адресами. Эта уникальная возможность позволит экономить ценное время в процессе исследования и обеспечит убедительные доказательства для аналитиков по вопросам безопасности.
 
--   A new automatic name resolution process was added which matches computer names and IP addresses – this unique capability will save precious time in the investigation process and provide strong evidence for security analysts
+-   Улучшенные возможности для сбора входных данных пользователей, с помощью которых можно автоматически настроить процесс обнаружения.
 
--   Improved ability to collect input from users to automatically fine-tune the detection process.
+-   Автоматическое обнаружение устройств NAT.
 
--   Automatic detection for NAT devices.
+-   Автоматическая отработка отказа, если контроллеры домена недоступны.
 
--   Automatic failover when domain controllers are not reachable.
+-   Уведомления и функция наблюдения за работоспособностью системы теперь предоставляют сведения об общем состоянии работоспособности развернутых приложений, а также о конкретных проблемах, связанных с настройкой и подключением.
 
--   System health monitoring and notifications now provide the overall health state of the deployment as well as specific issues related to configuration and connectivity.
+-   Видимость для сайтов и расположений, в которых работают сущности.
 
--   Visibility into sites and locations where entities operate.
+-   Поддержка нескольких доменов.
 
--   Multi-domain support.
+-   Поддержка одноуровневых доменов (SLD).
 
--   Support for Single Label Domains (SLD).
+-   Поддержка возможности изменения IP-адресов и сертификатов шлюзов ATA и центра ATA.
 
--   Support for modifying the IP address and certificate of the ATA Gateways and ATA Center.
+-   Данные телеметрии для улучшения качества.
 
--   Telemetry to help improve customer experience.
+## <a name="known-issues"></a>Известные проблемы
+В этой версии существуют следующие проблемы.
 
-## Known issues
-The following known issues exist in this version.
+### <a name="network-capture-software"></a>Программное обеспечение для записи сетевого трафика
+Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
 
-### Network Capture Software
-On the ATA Gateway, the only supported network capture software you can install is [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Do not install Microsoft Message Analyzer or any other network capturing software. Installing other software will cause the ATA Gateway to stop functioning properly.
+### <a name="installation-from-zip-file"></a>Установка из ZIP-файла
+Перед установкой шлюза ATA извлеките файлы из ZIP-файла в локальный каталог и установите шлюз из него. Не устанавливайте шлюз ATA непосредственно из ZIP-файла, иначе произойдет сбой установки.
 
-### Installation from Zip file
-When installing the ATA Gateway, make sure to extract the files from the zip file to a local directory and install it from there. Do not install the ATA Gateway directly from within the zip file or the installation will fail.
+### <a name="uninstalling-previous-versions-of-ata"></a>Удаление предыдущих версий АТА
+Если на вашем компьютере установлена предыдущая версия АТА, общедоступная предварительная версия или личная ознакомительная версия, следует удалить центр АТА и шлюзы АТА перед установкой данного выпуска АТА.
 
-### Uninstalling previous versions of ATA
-If you installed a previous version of ATA, Public Preview or Private Preview versions, you must uninstall the ATA Center and ATA Gateways before installing this release of ATA.
+Необходимо удалить также файлы базы данных и файлы журнала. Базы данных из предыдущих версий ATA несовместимы с общедоступной версией ATA.
 
-You must also delete the Database files and log files. The databases from previous versions of ATA are not compatible with the GA version of ATA.
+Если при попытке удалить центр ATA или шлюз ATA вместо удаления открывается окно установки ATA, необходимо добавить следующий раздел реестра и удалить ATA еще раз.
 
-When you attempt to uninstall the ATA Center or ATA Gateway, if the ATA installation opens instead of the uninstallation, you will need to add the following registry key and then uninstall ATA again.
-
-**ATA Center**
+**Центр ATA**
 
 -   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center
 
--   Add a new String value named `InstallationPath` with a value of `C:\Program Files\Microsoft Advanced Threat Analytics\Center` . This is the default installation folder. If you changed the installation folder enter the path where ATA is installed.
+-   Добавьте новое строковое значение с именем `InstallationPath` и значением `C:\Program Files\Microsoft Advanced Threat Analytics\Center`. Это папка установки по умолчанию. Если вы изменили папку установки, укажите путь установки ATA.
 
-    ![Registry editor for ATA Center installation path](media/ATA-uninstall-center-bug.jpg)
+    ![Редактор реестра для пути установки центра ATA](media/ATA-uninstall-center-bug.jpg)
 
-**ATA Gateway**
+**Шлюз ATA**
 
 -   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Gateway
 
--   Add a new String value named `InstallationPath` with a value of `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway`. This is the default installation folder.  If you changed the installation folder enter the path where ATA is installed.
+-   Добавьте новое строковое значение с именем `InstallationPath` и значением `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway`. Это папка установки по умолчанию.  Если вы изменили папку установки, укажите путь установки ATA.
 
-    ![Registry editor for ATA Gateway installation path](media/ATA-GW-uninstall-bug.jpg)
+    ![Редактор реестра для пути установки шлюза ATA](media/ATA-GW-uninstall-bug.jpg)
 
-After uninstalling, delete the installation folder on both the ATA Center and the ATA Gateway.  If you installed the Database in a separate folder, delete the Database folder on the ATA Center.
+По завершении удаления удалите папку установки в центре ATA и на шлюзе ATA.  Если база данных установлена в отдельную папку, удалите папку базы данных в центре ATA.
 
-### Health alert - disconnected ATA Gateway
-If you have more than one ATA Gateway and have Disconnected ATA Gateway alerts, automatic resolve will work on only one of them, leaving the rest in an Open status. You must manually confirm that the ATA Gateway is up and the service is running and manually resolve the alert.
+### <a name="health-alert---disconnected-ata-gateway"></a>Оповещение о работоспособности: шлюз ATA отключен
+Если вы используете несколько шлюзов ATA и оповещения об отключении шлюзов ATA отключены, автоматическое устранение сработает только на одном из них, а остальные останутся в открытом состоянии. Необходимо вручную подтвердить, что шлюз ATA включен и запущена служба, а также вручную устранить это оповещение.
 
-### KB on virtualization host
-Do not install KB 3047154 on a virtualization host. This may cause port mirroring to stop working properly.
+### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
+Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## See Also
+## <a name="see-also"></a>См. также
 
-[Update ATA to version 1.6 - migration guide](ata-update-1.6-migration-guide.md)
+[Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
