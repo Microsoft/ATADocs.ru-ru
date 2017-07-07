@@ -1,81 +1,73 @@
 ---
-# required metadata
-
-title: What's new in Advanced Threat Analytics version 1.5 | Microsoft Docs
-description: Lists what was new in ATA version 1.5 along with known issues
-keywords:
+title: "Новые возможности Advanced Threat Analytics версии 1.5 | Документация Майкрософт"
+description: "В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 08da33114bc3f0c9aafb9914b9d77a88fac009f4
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
+# <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
+В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
-# What's new in ATA version 1.5
-These release notes provide information about known issues in this version of  Advanced Threat Analytics.
+## <a name="whats-new-in-the-ata-15-update"></a>Что нового в обновлении ATA 1.5
+Обновление до версии ATA 1.5 привносит следующие улучшения:
 
-## What's new in the ATA 1.5 update?
-The update to ATA 1.5 provides improvements in the following areas:
+-   сокращение времени обнаружения;
 
--   Faster detection times
+-   улучшенный алгоритм автоматического обнаружения устройств NAT (преобразование сетевых адресов);
 
--   Enhanced automatic detection algorithm for NAT (network address translation) devices
+-   улучшенный процесс разрешения имен для устройств, не присоединенных к домену;
 
--   Enhanced name resolution process for non-domain joined devices
+-   поддержка переноса данных во время обновления продукта;
 
--   Support for data migration during product updates
+-   более быстрая реакция пользовательского интерфейса на подозрительные действия, в которых задействованы тысячи сущностей;
 
--   Better UI responsiveness for suspicious activities with thousands of entities involved
+-   улучшенное автоматическое разрешение для оповещений системы мониторинга;
 
--   Improved auto-resolution of monitoring alerts
+-   дополнительные счетчики производительности для улучшения процессов мониторинга и устранения неполадок.
 
--   Additional performance counters for enhanced monitoring and troubleshooting
+## <a name="known-issues"></a>Известные проблемы
+В этой версии существуют следующие проблемы.
 
-## Known issues
-The following known issues exist in this version.
+### <a name="new-ata-gateway-installation-fails"></a>Сбой установки нового шлюза ATA
+После обновления развертывания ATA до версии 1.5 возникает ошибка при установке нового шлюза ATA: Microsoft Advanced Threat Analytics Gateway is not installed (Шлюз Microsoft Advanced Threat Analytics не установлен).
 
-### New ATA Gateway installation fails
-After updating your ATA deployment to ATA version 1.5, you get the following error when installing a new ATA Gateway:
-Microsoft Advanced Threat Analytics Gateway is not installed
+![Ошибка шлюза ATA](media/ata-install-error.png)
 
-![ATA GW error](media/ata-install-error.png)
+<b>Решение</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
+### <a name="deployment"></a>Развертывание
+Папка, указанная в параметрах "Путь к данным базы данных" и "Путь к журналу базы данных", должна быть пустой (никаких файлов или подпапок).
+Если она не пустая, развертывание не выполнится.
 
-<b>Workaround:</b> Send an email to <ataeval@microsoft.com> to request workaround steps.
-### Deployment
-The folder specified for the "Database data path" and "Database journal path" has to be empty (no files or subfolders).
-If it is not empty, the deployment will not progress.
+### <a name="installation-from-zip-file"></a>Установка из ZIP-файла
+Перед установкой шлюза ATA извлеките файлы из ZIP-файла в локальный каталог и установите шлюз из него. Не устанавливайте шлюз ATA непосредственно из ZIP-файла, иначе произойдет сбой установки.
 
-### Installation from Zip file
-When installing the ATA Gateway, make sure to extract the files from the zip file to a local directory and install it from there. Do not install the ATA Gateway directly from within the zip file or the installation will fail.
+### <a name="configuration"></a>Конфигурация
+Когда конфигурация шлюза ATA настроена, при первом запуске шлюза ATA надпись "Не синхронизировано" будет отображаться до тех пор, пока служба полностью не запустится. При первом запуске службы это может занять до 10 минут.
 
-### Configuration
-After the configuration for an ATA Gateway is set, when the ATA Gateway starts for the first time, the "Not Synced" label is displayed until the service is fully started which may take up to 10 minutes the first time the service starts.
+### <a name="network-capture-software"></a>Программное обеспечение для записи сетевого трафика
+Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
 
-### Network Capture Software
-On the ATA Gateway, the only supported network capture software you can install is [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Do not install Microsoft Message Analyzer or any other network capturing software. Installing other software will cause the ATA Gateway to stop functioning properly.
+### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
+Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-### KB on virtualization host
-Do not install KB 3047154 on a virtualization host. This may cause port mirroring to stop working properly.
+## <a name="see-also"></a>См. также
 
-## See Also
+[Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
 
-[Update ATA to version 1.5 - migration guide](ata-update-1.5-migration-guide.md)
+[Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
-[Update ATA to version 1.6 - migration guide](ata-update-1.6-migration-guide.md)
-
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
