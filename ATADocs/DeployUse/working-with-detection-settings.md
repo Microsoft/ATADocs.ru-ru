@@ -1,51 +1,8 @@
 ---
-title: "Работа с параметрами обнаружения Advanced Threat Analytics | Документация Майкрософт"
-description: "В этом документе объясняется, как настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети."
-keywords: 
-author: rkarlin
-ms.author: rkarlin
-manager: mbaldwin
-ms.date: 01/23/2017
-ms.topic: article
-ms.prod: 
-ms.service: advanced-threat-analytics
-ms.technology: 
-ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
-ms.reviewer: bennyl
-ms.suite: ems
-ms.openlocfilehash: 831bafd08e0eea821fda94bd4f519d92ffec3397
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
-translationtype: HT
+redirect_url: /advanced-threat-analytics/working-with-detection-settings
+ms.openlocfilehash: d7541af0107849b4acf4208aec21c0b30369cfc1
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-*Область применения: Advanced Threat Analytics версии 1.7*
-
-
-
-# <a name="working-with-ata-detection-settings"></a>Работа с параметрами обнаружения ATA
-На странице настройки **обнаружения** вы можете настроить список IP-адресов и подсетей, для которых возникли непредвиденные обстоятельства и которые нужно обрабатывать отдельно от остальных сущностей в сети.
-
-## <a name="setting-up-detection"></a>Настройка обнаружения
-В разделе **Detection** (Обнаружение) вы можете задать такие элементы:
-
--   **Идентификатор безопасности учетных записей Honeytoken** — это учетная запись пользователя, в которой не должны выполняться сетевые операции. Эта учетная запись будет настроена как пользователь Honeytoken ATA. Если кто-то попытается использовать эту учетную запись, ATA создаст запись о подозрительных действиях, что будет означать вредоносные действия. Для настройки пользователя Honeytoken потребуется идентификатор безопасности учетной записи пользователя, а не имя пользователя.
-
->[!NOTE]
-> Найти идентификатор безопасности пользователя вы можете на вкладке *Account Info* (Сведения об учетной записи) профиля пользователя в консоли ATA.
-
-
-![Параметры обнаружения ATA (honeytoken)](media/ata-detection-settings-honeytoken-1.7.png)
-
-
-**Исключения обнаружения**: вы можете исключить IP-адреса из следующих случаев обнаружения. Если ввести IP-адрес в один из этих списков, ATA исключит такой IP-адрес из этого типа обнаруженных действий.
-
--   Исключаемые IP-адреса в случае проверки DNS
-
--   Исключаемые IP-адреса в случае атаки Pass-the-Ticket
-
-![Исключения в параметрах обнаружения ATA](media/ata-detection-settings-exclusions-1.7.png)
-
-
-## <a name="see-also"></a>См. также
-- [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Изменение конфигурации ATA](modifying-ata-configuration.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
