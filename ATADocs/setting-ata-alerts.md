@@ -1,85 +1,56 @@
 ---
-# required metadata
-
-title: Set Advanced Threat Analytics notifications | Microsoft Docs
-description: Describes how to set ATA alerts so you are notified when suspicious activities are detected.
-keywords:
+title: "Настройка уведомлений Advanced Threat Analytics | Документация Майкрософт"
+description: "В этой статье описано, как настроить оповещения ATA, чтобы получать уведомления при обнаружении подозрительных действий."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 6/12/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: cc7f5d2e75076b1f684ad76daca9ceb35e0d30e3
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Set ATA Notifications
-ATA can notify you when it detects a suspicious activity, either by email or by using ATA event forwarding and forwarding the event to your SIEM/syslog server. Before selecting which notifications you want to receive, you have to [set up your email server and your Syslog server](setting-syslog-email-server-settings.md).
+
+# Настройка уведомлений ATA
+<a id="set-ata-notifications" class="xliff"></a>
+Существует три способа получения уведомлений ATA о подозрительной активности: по электронной почте, при помощи пересылки событий ATA и пересылки событий на сервер SIEM или сервер системного журнала. Перед выбором уведомлений, которые вы хотите получать, необходимо [настроить почтовый сервер и сервер системного журнала](setting-syslog-email-server-settings.md).
 
 > [!NOTE]
-> -   Email notifications include a link that will take the user directly to the suspicious activity that was detected. The host name portion of the link is taken from the setting of the ATA Console URL on the ATA Center page. By default, the ATA Console URL is the IP address selected during the installation  of the ATA Center.  If you are going to configure email notifications it is recommended to use an FQDN as the ATA Console URL.
-> -   Notifications are sent from the ATA Center to either the SMTP server and the Syslog server.
-
-## Mail notifications
-To receive mail notifications, set the following:
+> -   В уведомлении по электронной почте содержится ссылка, с помощью которой пользователь сможет перейти непосредственно на страницу с подробными сведениями об обнаруженной подозрительной активности. Имя узла, содержащееся в ссылке, соответствует параметрам URL-адреса консоли ATA на странице центра ATA. По умолчанию URL-адрес консоли ATA — это IP-адрес, выбранный при установке центра ATA.  При настройке уведомлений по электронной почте в качестве URL-адреса консоли ATA рекомендуется использовать полное доменное имя.
+> -   Уведомления отправляются из центра ATA на сервер SMTP и сервер системного журнала.
 
 
-1. In the ATA Console, select the settings option on the toolbar and select **Configuration**.
-![ATA configuration settings icon](media/ATA-config-icon.JPG)
-
-2. Under the **Notifications** section, select **Settings**.
-3. Under **Mail recipients**, specify the recipients who will receive the notifications via email.
->	[!NOTE]
->   Email alerts for suspicious activities are only sent when the suspicious activity is created.
-
-4. Under **Notify when:**, use the toggles to select to which notifications should be sent:
-  - New suspicious activity is detected
-  - New health issue is detected
-  - New software update is available
-
-5. Click **Save**.
-
-![ATA mail notification settings image](media/ATA-mail-notification-settings-1.7.png)
+Чтобы получать уведомления, выполните указанные ниже действия.
 
 
-## Syslog notification
+1. В консоли ATA на панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-To receive Syslog notifications, set the following:
+![Значок параметров конфигурации ATA](media/ATA-config-icon.png)
 
+2. В разделе **Уведомления и отчеты** выберите элемент **Уведомления**.
+3. В разделе **Почтовые уведомления** укажите, какие уведомления следует отправлять по электронной почте. Доступны уведомления о новых подозрительных действиях и новых проблемах с работоспособностью. Для уведомлений о подозрительных действиях и уведомлений о проблемах с работоспособностью можно настроить разные адреса электронной почты. Например, уведомления первого типа могут отправляться аналитику безопасности, а второго — ИТ-администратору.
+>   [!NOTE]
+>   Электронные оповещения ATA о подозрительной активности отправляются только в случае ее обнаружения.
+3. В разделе **Уведомления системного журнала** укажите, какие уведомления должны отправляться на сервер системного журнала. Доступны уведомления о новых подозрительных действиях, обновленных подозрительных действиях и новых проблемах с работоспособностью.
+5. Нажмите кнопку **Сохранить**.
 
-1. In the ATA Console, select the settings option on the toolbar and select **Configuration**.
-![ATA configuration settings icon](media/ATA-config-icon.JPG)
-
-2. Under the **Notifications** section, select **Settings**.
-3. Under **Syslog notifications**, use the toggles to select to which notifications should be sent:
-
-
-	- New suspicious activity is detected
-	- Existing suspicious activity is updated
-	- New health issue is detected
-5. Click **Save**.
-
-![ATA notification settings image](media/ATA-syslog-notification-settings-1.7.png)
+![Изображение. Параметры почтовых уведомлений ATA](media/ata-mail-notification-settings.png)
 
 
 
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -1,83 +1,225 @@
 ---
-# required metadata
-
-title: Install Advanced Threat Analytics - Step 6 | Microsoft Docs
-description: In the final step of installing ATA, you configure the Honeytoken user.
-keywords:
+title: "Установка Advanced Threat Analytics. Шаг 6 | Документация Майкрософт"
+description: "На этом этапе установки ATA настраиваются источники данных."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 07/5/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: ffab11a99ae62c1c0b37c43ee212d87508f886b8
+ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/05/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Install ATA - Step 6
 
->[!div class="step-by-step"]
-[« Step 5](install-ata-step5.md)
-
-## Step 6. Configure  IP address exclusions and Honeytoken user
-ATA enables the exclusion of specific IP addresses from two types of detections: **DNS Reconnaissance** and **Pass-the-Ticket**. 
-
-For example, a **DNS Reconnaissance exclusion** could be a security scanner that uses DNS as a scanning mechanism. The exclusion helps ATA ignore such scanners. An example of a *Pass-the-Ticket* exclusion is a NAT device.    
-
-ATA also enables the configuration of a Honeytoken user, which is used as a trap for malicious actors - any authentication associated with this (normally dormant) account will trigger an alert.
-
-To configure the above, follow these steps:
-
-1.  From the ATA Console, click on the settings icon and select **Configuration**.
-
-    ![ATA configuration settings](media/ATA-config-icon.JPG)
-
-2.  Under **Detection exclusions**, enter an IP address for either *DNS Reconnaissance* or *Pass-the-Ticket* and click the *plus* sign.
-
-    ![Save changes](media/ATA-exclusions.png)
-
-3.  Under **Detection settings** enter the Honeytoken account SIDs and click the plus sign. For example: `S-1-5-21-72081277-1610778489-2625714895-10511`.
-
-    ![ATA configuration settings](media/ATA-honeytoken.png)
-
-    > [!NOTE]
-    > To find the SID for a user, search for the user in the ATA Console, and then click on the **Account Info** tab. 
-
-4.  Click **Save**.
-
-
-Congratulations, you have successfully deployed Microsoft Advanced Threat Analytics!
-
-Check the attack time line to view detected suspicious activities and search for users or computers and view their profiles.
-
-ATA will start scanning for suspicious activities immediately. Some activities, such as some of the suspicious behavior activities, will not be available until ATA has had time to build behavioral profiles (minimum of three weeks).
-
-To check that ATA is up and running and catching breaches in your network, you can check out the [ATA attack simulation playbook](https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook).
-
+# Установка ATA. Шаг 6
+<a id="install-ata---step-6" class="xliff"></a>
 
 >[!div class="step-by-step"]
-[« Step 5](install-ata-step5.md)
+[" Шаг 5](install-ata-step5.md)
+
+## Шаг 6. Настройка сбора данных о событиях и VPN
+<a id="step-6-configure-event-collection-and-vpn" class="xliff"></a>
+### Настройка сбора данных о событиях
+<a id="configure-event-collection" class="xliff"></a>
+Чтобы улучшить возможности обнаружения вторжений, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](#configuring-windows-event-forwarding).
+
+> [!NOTE]
+> В версии ATA 1.8 и более поздних настройка сбора событий для упрощенных шлюзов ATA больше не требуется. Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
+
+Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, ATA может использовать события Windows для улучшенного обнаружения. Событие 4776 улучшает обнаружение различных атак при использовании NTLM, а события 4732, 4733, 4728, 4729, 4756 и 4757 улучшают обнаружение изменения привилегированных групп. Оно может быть получено от вашего SIEM или в случае настройки переадресации событий Windows на вашем контроллере домена. Собранные события предоставляют ATA дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
+
+#### Система SIEM/системный журнал
+<a id="siemsyslog" class="xliff"></a>
+Для обработки ATA данных с сервера системного журнала необходимо выполнить следующие действия:
+
+-   Выполните настройку серверов шлюза ATA на прослушивание и прием событий, перенаправляемых с сервера SIEM или системного журнала.
+> [!NOTE]
+> ATA прослушивает только IPv4, но не IPv6. 
+-   Выполните настройку сервера SIEM или системного журнала на пересылку определенных событий на шлюз ATA.
+
+> [!IMPORTANT]
+> -   Не выполняйте пересылку всех данных системного журнала на шлюз ATA.
+> -   ATA поддерживает трафик UDP с сервера SIEM или системного журнала.
+
+Подробности о настройке пересылки событий на другой сервер см. в документации по серверу SIEM или системному журналу. 
+
+> [!NOTE]
+>Если сервер SIEM или системный журнал отсутствуют, настройку контроллеров домена Windows можно выполнить таким образом, чтобы АТА выполнял сбор и анализ событий 4776 с журнала событий Windows. События 4776 с журнала событий Windows содержат информацию о проверках подлинности NTLM.
+
+#### Настройка прослушивания событий SIEM в шлюзе ATA
+<a id="configuring-the-ata-gateway-to-listen-for-siem-events" class="xliff"></a>
+
+1.  В разделе настройки ATA на вкладке **Источники данных** щелкните **SIEM**, включите **Системный журнал** и нажмите кнопку **Сохранить**.
+
+    ![Разрешите использование образа UDP для прослушивания системного журнала](media/ATA-enable-siem-forward-events.png)
+
+2.  Выполните настройку сервера SIEM или системного журнала таким образом, чтобы события с идентификатором 4776 от журнала событий Windows направлялись на один из шлюзов ATA. Дополнительные сведения о настройке SIEM — см. справку в Интернете; об особых требованиях к форматированию каждого SIEM сервера — см. варианты технической поддержки.
+
+ATA поддерживает события SIEM в следующих форматах:  
+
+#### Аналитика безопасности RSA
+<a id="rsa-security-analytics" class="xliff"></a>
+&lt;Заголовок системного журнала&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
+
+-   Заголовок системного журнала необязателен.
+
+-   Между всеми полями должен стоять символ-разделитель "\n".
+
+-   Поля в порядке очередности:
+
+    1.  Постоянное значение RsaSA (должно появиться).
+
+    2.  Метка времени фактического события (необходимо убедиться в том, что это значение не является меткой времени поступления на SIEM или отправки на ATA). Важно! Значение желательно представлять в миллисекундах.
+
+    3.  Код события Windows
+
+    4.  Имя поставщика событий Windows
+
+    5.  Имя журнала событий Windows
+
+    6.  Имя компьютера, получающего событие (в данном случае контроллера домена)
+
+    7.  Имя пользователя, подлинность которого проверяется
+
+    8.  Имя исходного узла
+
+    9. Код результата NTLM
+
+-   Поскольку порядок важен, в сообщении не должно быть ничего другого.
+
+#### HP Arcsight
+<a id="hp-arcsight" class="xliff"></a>
+CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Контроллер домена попытался проверить учетные данные для учетной записи.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
+
+-   Должно соответствовать определению протокола.
+
+-   Отсутствует заголовок системного журнала.
+
+-   Заголовок определения (часть, разделенная вертикальной линией) должен существовать (как указано в протоколе).
+
+-   В _расширении_ должны присутствовать следующие ключи:
+
+    -   externalId = код события Windows
+
+    -   rt = метка времени фактического события (необходимо убедиться в том, что это значение не является меткой времени поступления на SIEM или отправки нам). Важно! Значение желательно представлять в миллисекундах.
+
+    -   cat = имя журнала событий Windows
+
+    -   shost = имя исходного узла
+
+    -   dhost = имя компьютера, получающего событие (в данном случае контроллера домена)
+
+    -   duser = имя пользователя, подлинность которого проверяется
+
+-   Для _расширения_ порядок представления неважен
+
+-   Для следующих двух полей следует назначить отдельный ключ и метку ключа:
+
+    -   "EventSource"
+
+    -   "Reason or Error Code" = код результата NTLM
+
+#### Splunk
+<a id="splunk" class="xliff"></a>
+&lt;Заголовок системного журнала&gt;\r\nEventCode=4776\r\nLogfile=Security\r\nSourceName=Microsoft-Windows-Security-Auditing\r\nTimeGenerated=20150310132717.784882-000\r\ComputerName=YYYYY\r\nMessage=
+
+Компьютер попытался проверить учетные данные для учетной записи.
+
+Пакет проверки подлинности:              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+
+Учетная запись входа: администратор
+
+Исходная рабочая станция:       SIEM
+
+Код ошибки:         0x0
+
+-   Заголовок системного журнала необязателен.
+
+-   Между всеми обязательными полями стоит символ-разделитель "\r\n".
+
+-   Поля имеют формат ключ = значение.
+
+-   Наличие следующих ключей и их значений обязательно:
+
+    -   EventCode = код события Windows
+
+    -   Logfile = имя журнала событий Windows
+
+    -   SourceName = имя поставщика событий Windows
+
+    -   TimeGenerated = метка времени фактического события (необходимо убедиться в том, что это значение не является меткой времени поступления на SIEM или отправки на ATA). Важно! Значение должно быть представлено в формате yyyyMMddHHmmss.FFFFFF, желательно в миллисекундах.
+
+    -   ComputerName = имя исходного узла
+
+    -   Message = исходный текст события Windows
+
+-   Ключ сообщения и его значение должны быть в конце.
+
+-   Для пар ключ=значение порядок представления неважен.
+
+#### QRadar
+<a id="qradar" class="xliff"></a>
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как ATA требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в статье QRadar: Agentless Windows Events Collection using the MSRPC Protocol (QRadar: сбор данных о событиях Windows без агента с помощью протокола MSRPC) ([http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 ").")
+
+    <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+
+Необходимо задать следующие сведения в полях:
+
+- тип агента для сбора данных;
+- имя поставщика журнала событий Windows;
+- источник журнала событий Windows;
+- полное доменное имя контроллера домена;
+- код события Windows.
+
+TimeGenerated — это метка времени фактического события (необходимо убедиться в том, что это значение не является меткой времени поступления на SIEM или отправки на ATA). Значение должно быть представлено в формате yyyyMMddHHmmss.FFFFFF, желательно в миллисекундах.
+
+Message — это исходный текст события Windows.
+
+Между парами "ключ-значение" должен быть разделитель \t.
+
+>[!NOTE] 
+> Использование WinCollect для сбора данных о событиях Windows не поддерживается.
 
 
-## See Also
+### Настройка VPN
+<a id="configuring-vpn" class="xliff"></a>
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Configure event collection](configure-event-collection.md)
-- [ATA prerequisites](ata-prerequisites.md)
+ATA собирает данные VPN, которые помогают профилировать расположения, из которых компьютеры подключаются к сети.
+
+Для настройки данных VPN выберите **Конфигурация** > **VPN** и введите **общий секрет учетной записи Radius** сети VPN.
+
+![Настройка VPN](./media/vpn.png)
+
+Чтобы получить общий секрет, обратитесь к документации по VPN. Поддерживаются следующие поставщики VPN.
+
+- Microsoft
+- F5
+- Check Point
+- Cisco ASA
+
+
+
+>[!div class="step-by-step"]
+[« Шаг 5](install-ata-step5.md)
+[Шаг 7 »](install-ata-step7.md)
+
+
+## См. также
+<a id="see-also" class="xliff"></a>
+
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Предварительные требования ATA](ata-prerequisites.md)
 

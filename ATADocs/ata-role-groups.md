@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 6/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,23 +13,27 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6243c03af9e40b8774b2ce7089a47e54569ba45e
-ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
-translationtype: HT
+ms.openlocfilehash: 1afb8e728fa359721d78833f8220cae3f65bd896
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-*Область применения: Advanced Threat Analytics версии 1.7*
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
 
 
-# <a name="ata-role-groups"></a>Группы ролей ATA
+# Группы ролей ATA
+<a id="ata-role-groups" class="xliff"></a>
 
 Группы ролей позволяют управлять доступом к ATA. С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье объясняется управление доступом и авторизация ролей ATA, что поможет вам начать использовать группы ролей в ATA.
 
 > [!NOTE]
 > Любой локальный администратор в центре ATA автоматически является администратором Microsoft Advanced Threat Analytics.
 
-## <a name="types-of-ata-role-groups"></a>Типы групп ролей ATA 
+## Типы групп ролей ATA
+<a id="types-of-ata-role-groups" class="xliff"></a> 
 
 ATA предлагает три типа групп ролей: администраторы ATA, пользователи ATA и наблюдатели ATA. Следующая таблица описывает тип доступа для каждой из ролей ATA. В зависимости от назначенной роли некоторые экраны и пункты меню в ATA будут недоступны, как описано в таблице.
 
@@ -51,7 +55,8 @@ ATA предлагает три типа групп ролей: админист
 
 Если пользователь обращается к странице, которая не доступна для его группы, ATA перенаправляет его на страницу неавторизованного доступа. 
 
-## <a name="add--remove-users---ata-role-groups"></a>Добавление пользователей в группы ролей ATA и удаление из групп ролей 
+## Добавление пользователей в группы ролей ATA и удаление из групп ролей
+<a id="add--remove-users---ata-role-groups" class="xliff"></a> 
 
 В качестве основы для групп ролей ATA использует локальные группы Windows. Управление группами ролей должно осуществляться на сервере центра ATA.
 Чтобы добавить или удалить пользователей, используйте оснастку MMC **Локальные пользователи и группы** (Lusrmgr.msc). На компьютерах, присоединенных к домену, можно добавлять как учетные записи домена, так и локальные учетные записи. 

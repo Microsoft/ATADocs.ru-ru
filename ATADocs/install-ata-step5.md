@@ -1,102 +1,100 @@
 ---
-# required metadata
-
-title: Install Advanced Threat Analytics - Step 5 | Microsoft Docs
-description: Step five of installing ATA helps you configure settings for your ATA Gateway.
-keywords:
+title: "Установка Advanced Threat Analytics. Шаг 5 | Документация Майкрософт"
+description: "Шаг 5 установки ATA предусматривает настройку параметров шлюза ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/12/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 6952a239eb5f11cdfefc9ce201f9a765e61de8e8
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Install ATA - Step 5
+
+# Установка ATA. Шаг 5
+<a id="install-ata---step-5" class="xliff"></a>
 
 >[!div class="step-by-step"]
-[« Step 4](install-ata-step4.md)
-[Step 6 »](install-ata-step6.md)
+[« Шаг 4](install-ata-step4.md)
+[Шаг 6 »](install-ata-step6.md)
 
 
-## Step 5. Configure the ATA Gateway settings
-After the ATA Gateway was installed, perform the following steps to configure the settings for the ATA Gateway.
+## Шаг 5. Настройка параметров шлюза ATA
+<a id="step-5-configure-the-ata-gateway-settings" class="xliff"></a>
+После установки шлюза ATA выполните следующие шаги по его настройке.
 
-1.  In the ATA Console, go to **Configuration** and, under **System**, select **Gateways**.
+1.  В консоли ATA перейдите к **конфигурации** и в разделе **Системы** выберите **Шлюзы**.
    
-     ![Configure gateway settings image](media/ATA-Gateways-config-1.png)
+     ![Изображение страницы настройки параметров шлюза](media/ata-gw-config-1.png)
 
 
-2.  Select the Gateway you want to configure and then enter the following information:
+2.  Выберите шлюз, который требуется настроить, а затем введите указанные ниже сведения.
 
-    ![Configure gateway settings image](media/ATA-Gateways-config-2.png)
+    ![Изображение страницы настройки параметров шлюза](media/ATA-Gateways-config-2.png)
 
-  - **Description**: Enter a description for the ATA Gateway (optional).
-  - **Port Mirrored Domain Controllers (FQDN)** (required for the ATA Gateway, this cannot be changed for the ATA Lightweight Gateway): Enter the complete FQDN of your domain controller and click the plus sign to add it to the list. For example,  **dc01.contoso.com**
+  - **Описание**: введите описание шлюза ATA (необязательно).
+  - **Контроллеры домена с зеркалированием портов (полное доменное имя)** (обязательный параметр для шлюза ATA; не доступен для изменения в упрощенном шлюзе ATA): введите полное доменное имя контроллера домена и нажмите кнопку "плюс", чтобы добавить его в список. Например, **dc01.contoso.com**.
 
-      The following information applies to the servers you enter in the **Domain Controllers** list:
-      - All domain controllers whose traffic is being monitored via port mirroring by the ATA Gateway must be listed in the **Domain Controllers** list. If a domain controller is not listed in the **Domain Controllers** list, detection of suspicious activities might not function as expected.
-      - At least one domain controller in the list should be a global catalog. This will enable ATA to resolve computer and user objects in other domains in the forest.
+      Сведения ниже относятся к серверам, которые указываются в списке **Контроллеры домена**.
+      - Все контроллеры домена, трафик которых отслеживается для шлюза ATA с использованием зеркального отображения портов, необходимо указать в списке **Контроллеры домена**. Если контроллер домена не указан в списке **Контроллеры домена**, обнаружение подозрительных действий может выполняться не так, как ожидается.
+      - По крайней мере один контроллер домена из списка должен быть глобальным каталогом. Так решение ATA сможет устранять объекты компьютеров и пользователей в других доменах леса.
 
-- **Capture Network adapters** (required):
-  - For an ATA Gateway on a dedicated server, select the network adapters that are configured as the destination mirror port. These will receive the mirrored domain controller traffic.
-  - For an ATA Lightweight Gateway, this should be all the network adapters that are used for communication with other computers in your organization.
-
-
- - **Domain synchronizer candidate**: Any ATA Gateway set to be a domain synchronizer candidate can be responsible for synchronization between ATA and your Active Directory domain. Depending on the size of the domain, the initial synchronization might take some time and is resource intensive. By default, only ATA Gateways are set as Domain synchronizer candidates.
-   It is recommended to disable any remote site ATA Gateways from being Domain synchronizer candidates.
-   If your domain controller is read-only, do not set it as a Domain synchronizer candidate. For more information, see [ATA architecture](ata-architecture.md#ata-lightweight-gateway-features).
-
-> [!NOTE] 
-> It will take a few minutes for the ATA Gateway service to start the first time after installation because it builds the cache of the network capture parsers.
-> The configuration changes will be applied to the ATA Gateway on the next scheduled sync between the ATA Gateway and the ATA Center.
-
-3. Optionally, you can set the [Syslog listener and Windows Event Forwarding Collection](configure-event-collection.md). 
-4. Enable **Update ATA Gateway automatically** so that in upcoming version releases when you update the ATA Center, this ATA Gateway will be automatically updated.
-3. Click **Save**.
+  - **Сетевые адаптеры для записи** (обязательно)
+  - Для шлюза ATA на выделенном сервере выберите сетевые адаптеры, настроенные в качестве зеркальных портов назначения. Они будут получать зеркально отображенный трафик контроллера домена.
+  - Для упрощенного шлюза ATA выберите все сетевые адаптеры, используемые для обмена данными с другими компьютерами в вашей организации.
 
 
-## Validate installations
-To validate that the ATA Gateway has been successfully deployed, check the following:
+  - **Синхронизатор домена-кандидат**: за синхронизацию между ATA и доменом Active Directory может отвечать любой шлюз ATA, настроенный в качестве кандидата для синхронизатора домена. В зависимости от размера домена начальная синхронизация может занять существенное время и потреблять много ресурсов. По умолчанию только шлюзы ATA указываются в качестве потенциальных синхронизаторов домена.
+   Рекомендуется отключить настройку шлюзов ATA на удаленных площадках в качестве потенциальных синхронизаторов домена.
+   Если контроллер домена предназначен только для чтения, не указывайте его в качестве потенциального синхронизатора домена. Дополнительные сведения см. в статье [Архитектура ATA](ata-architecture.md#ata-lightweight-gateway-features).
 
-1.  Check that the service named **Microsoft Advanced Threat Analytics Gateway** is running. After you save the ATA Gateway settings, it might take a few minutes for the service to start.
+  > [!NOTE] 
+  > Первый запуск службы шлюза ATA после установки может занять несколько минут, так как при этом создается кэш средств синтаксического анализа сетевого трафика.
+  > Применение изменений конфигурации к шлюзу ATA произойдет при следующей запланированной синхронизации шлюза и центра ATA.
 
-2.  If the service does not start, review the “Microsoft.Tri.Gateway-Errors.log” file located in the following default folder, “%programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs” and Check [ATA Troubleshooting](troubleshooting-ata-known-errors.md) for help.
+3. При необходимости можно настроить [прослушиватель системного журнала и сбор данных пересылки событий Windows](configure-event-collection.md). 
+4. Включите параметр **Update ATA Gateway automatically** (Автоматическое обновление шлюза ATA), чтобы в ближайшей версии выпусков при обновлении центра ATA шлюз ATA обновлялся автоматически.
 
-3.  If this is the first ATA Gateway installed, after a few minutes, log into the ATA Console and open the notification pane by swiping the right side of the screen open. You should see a list of **Entities Recently Learned** in the notification bar on the right side of the console.
+5. Нажмите кнопку **Сохранить**.
 
-4.  On the desktop, click the **Microsoft Advanced Threat Analytics** shortcut to connect to the ATA Console. Log in with the same user credentials that you used to install the ATA Center.
-5.  In the console, search for something in the search bar, such as a user or a group on your domain.
-6.  Open Performance Monitor. In the Performance tree, click on **Performance Monitor** and then click the plus icon to **Add a Counter**. Expand **Microsoft ATA Gateway** and scroll down to **Network Listener PEF Captured Messages/Sec** and add it. Then, make sure you see activity on the graph.
 
-    ![Add performance counters image](media/ATA-performance-monitoring-add-counters.png)
+## Проверка установки
+<a id="validate-installations" class="xliff"></a>
+Чтобы проверить, успешно ли вы развернули шлюз ATA, сделайте следующее:
+
+1.  Убедитесь, что служба **шлюза Microsoft Advanced Threat Analytics** запущена. После сохранения параметров шлюза ATA запуск службы может занять несколько минут.
+
+2.  Если служба не запускается, просмотрите файл Microsoft.Tri.Gateway-Errors.log, расположенный в папке по умолчанию с путем %programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs. Разобраться в нем поможет статья [об устранении неполадок ATA](troubleshooting-ata-known-errors.md).
+
+3.  Если это первый установленный шлюз ATA, войдите в консоль ATA через несколько минут и откройте панель уведомлений, проведя в правой части открывшегося экрана. Вы увидите список **Недавно изученные сущности** в панели уведомлений в правой части консоли.
+
+4.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
+5.  В консоли на панели поиска выполните поиск какой-либо сущности, например пользователя или группы в домене.
+6.  Откройте системный монитор. В дереве "Производительность" выберите **Системный монитор**, а затем щелкните значок плюса, чтобы **добавить счетчик**. Разверните раздел **Microsoft ATA Gateway** (Шлюз Microsoft ATA), а затем прокрутите список вниз до пункта **Network Listener PEF Captured Messages/Sec** (Счетчик производительности. Количество сообщений, фиксируемых прослушивателем сети в секунду) и добавьте его. Затем убедитесь, что на графе отображаются выполняемые действия.
+
+    ![Изображение окна добавления счетчиков производительности](media/ATA-performance-monitoring-add-counters.png)
 
 
 >[!div class="step-by-step"]
-[« Step 4](install-ata-step4.md)
-[Step 6 »](install-ata-step6.md)
+[« Шаг 4](install-ata-step4.md)
+[Шаг 6 »](install-ata-step6.md)
 
-## See Also
+## См. также
+<a id="see-also" class="xliff"></a>
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Configure event collection](configure-event-collection.md)
-- [ATA prerequisites](ata-prerequisites.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Предварительные требования ATA](ata-prerequisites.md)
 

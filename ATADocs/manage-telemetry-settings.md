@@ -1,101 +1,98 @@
 ---
-# required metadata
-
-title: Manage Advanced Threat Analytics telemetry settings | Microsoft Docs
-description: Describes the data collected by ATA and provides steps to turn off data collection.
-keywords:
+title: "Управление параметрами телеметрии в Advanced Threat Analytics | Документация Майкрософт"
+description: "Описание данных, которые собирает решение ATA, и пошаговые инструкции по отключению сбора данных."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 07/3/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: b0e94ca7d817d6d5735921fefd7c9f4cf2cbd866
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/03/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Manage Telemetry Settings
-Advanced Threat Analytics (ATA) collects anonymized telemetry data about ATA and transmits the data over an HTTPS connection to Microsoft servers.  This data is used by Microsoft to help improve future versions of ATA.
 
-## Data collected
-Collected anonymized data includes the following:
+# Управление параметрами телеметрии
+<a id="manage-telemetry-settings" class="xliff"></a>
+Advanced Threat Analytics (ATA) собирает анонимные данные телеметрии об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
 
--   Performance counters from both the ATA Center and the ATA Gateway
+## Собираемые данные
+<a id="data-collected" class="xliff"></a>
+Собираются такие анонимные данные:
 
--   Product ID from licensed copies of ATA
+-   Счетчики производительности из центра и шлюза ATA.
 
--   Deployment date of the ATA Center
+-   Идентификатор продукта из лицензированных копий ATA.
 
--   Number of deployed ATA Gateways
+-   Дата развертывания центра ATA.
 
--   The following anonymized Active Directory information:
+-   Количество развернутых шлюзов ATA.
 
-    -   Domain ID for the domain whose name would be the first domain when sorted alphabetically
+-   Анонимные сведения из Active Directory:
 
-    -   Number of domain controllers
+    -   идентификатор домена, имя которого будет первым в списке доменов при сортировке в алфавитном порядке;
 
-    -   Number of domain controllers monitored by ATA via port mirroring
+    -   количество контроллеров домена;
 
-    -   Number of Sites
+    -   количество контроллеров домена, за которыми решение ATA наблюдает посредством зеркального отображения портов;
 
-    -   Number of Computers
+    -   количество сайтов;
 
-    -   Number of Groups
+    -   количество компьютеров;
 
-    -   Number of Users
+    -   количество групп;
 
--   Suspicious Activities  – The following anonymized data is collected for each suspicious activity:
+    -   количество пользователей.
 
-    (Computer names, user names, and IP addresses are **not** collected)
+-   Подозрительные действия. Для каждого подозрительного действия собираются такие анонимные данные:
 
-    -   Suspicious activity type
+    (Имена компьютеров, имена пользователей и IP-адреса **не** собираются).
 
-    -   Suspicious activity ID
+    -   тип подозрительного действия;
 
-    -   Status
+    -   идентификатор подозрительного действия;
 
-    -   Start and End Time
+    -   состояние;
 
-    -   Input provided
+    -   время начала и окончания;
 
-- Health issues – The following anonymized data is collected for each health issue:
+    -   входные данные.
 
-    (Computer names, user names, and IP addresses are not collected)
+- Проблемы с работоспособностью: для каждой проблемы безопасности собираются такие анонимные данные:
 
-    -   Health issue type
+    (Имена компьютеров, имена пользователей и IP-адреса не собираются.)
 
-    -   Health issue ID
+    -   тип проблемы работоспособности;
 
-    -   Status
+    -   идентификатор проблемы работоспособности;
 
-    -   Start and End Time
+    -   состояние;
 
-- ATA Console URL addresses - URL addresses when using the ATA Console i.e. which pages in the ATA Console are visited.
+    -   время начала и окончания;
+
+- URL-адреса консоли ATA: URL-адреса, которые вы посещаете при использовании консоли ATA, то есть страницы в консоли ATA.
 
 
-### Disable data collection
-Perform the following steps to stop collecting and sending telemetry data to Microsoft:
+### Отключение сбора данных
+<a id="disable-data-collection" class="xliff"></a>
+Чтобы остановить сбор данных телеметрии и их отправку в Майкрософт, сделайте вот что:
 
-1.  Log in to the ATA Console, click the three dots in the toolbar and select **About**.
+1.  Войдите в консоль ATA. На панели инструментов щелкните значок многоточия и выберите пункт **О программе**.
 
-2.  Uncheck the box for **Send us usage information to help improve your customer experience in the future**.
+2.  Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**.
 
-## See Also
-- [What's new in version 1.6](whats-new-version-1.6.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Устранение неполадок ATA с помощью журнала событий](troubleshooting-ata-using-logs.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

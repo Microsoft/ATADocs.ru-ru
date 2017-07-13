@@ -1,88 +1,84 @@
 ---
-# required metadata
-
-title: Setting email notification settings in Advanced Threat Analytics | Microsoft Docs
-description: Describes how to have ATA notify you (by email or by ATA event forwarding) when it detects suspicious activities 
-keywords:
+title: "Настройка параметров уведомлений по электронной почте в Advanced Threat Analytics | Документация Майкрософт"
+description: "В этой статье описано, как настроить получение уведомлений ATA о подозрительной активности (по электронной почте или с помощью пересылки событий ATA)"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 47d1125856631ecedcbc7779bf0529741c3da61f
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Provide ATA with your email server settings
-ATA can notify you when it detects a suspicious activity. For ATA to be able to send email notifications, you must first configure the **Email server settings**.
 
-1.  On the ATA Center server, click the **Microsoft Advanced Threat Analytics Management** icon on the desktop.
+# Указание параметров почтового сервера в ATA
+<a id="provide-ata-with-your-email-server-settings" class="xliff"></a>
+Вы можете настроить получение уведомлений ATA в случае обнаружения подозрительной активности. Для отправки уведомлений ATA по почте требуется настроить **параметры почтового сервера**.
 
-2.  Enter your user name and password and click **Log in**.
+1.  На рабочем столе сервера центра ATA щелкните значок **Управление Microsoft Advanced Threat Analytics**.
 
-3.  Select the settings option on the toolbar and select **Configuration**.
+2.  Введите имя пользователя и пароль, а затем нажмите кнопку **Войти**.
 
-    ![ATA configuration settings icon](media/ATA-config-icon.JPG)
+3.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-4.  In the **notifications** section, under **Mail server**, enter the following information:
+    ![Значок параметров конфигурации ATA](media/ATA-config-icon.png)
 
-    |Field|Description|Value|
+4.  В разделе **Notifications** (Уведомления) под заголовком **Mail server** (Почтовый сервер) введите следующую информацию:
+
+    |Поле|Описание|Значение|
     |---------|---------------|---------|
-    |SMTP server endpoint (required)|Enter the FQDN of your SMTP server and optionally change the port number (default 25).|For example:<br />smtp.contoso.com|
-    |SSL|Toggle SSL if the SMTP server required SSL. **Note:** If you enable SSL you will also need to change the Port number.|Default is disabled|
-    |Authentication|Enable if your SMTP server requires authentication. **Note:** If you enable authentication you must provide a user name and password of an email account that has permission to connect to the SMTP server.|Default is disabled|
-    |Send from (required)|Enter an email address from whom the email will be sent from.|For example:<br />ATA@contoso.com|
-    ![ATA email server settings image](media/ATA-email-server-1.7.png)
+    |Конечная точка сервера SMTP (обязательно)|Введите полное доменное имя SMTP-сервера и при необходимости измените номер порта (по умолчанию 25).|Пример.<br />smtp.contoso.com|
+    |SSL|Если серверу SMTP требуется SSL, активируйте его. **Примечание**. После включения SSL необходимо также изменить номер порта.|По умолчанию отключено|
+    |Проверка подлинности|Активируйте, если для сервера SMTP требуется проверка подлинности. **Примечание**. При включении проверки подлинности необходимо предоставить имя пользователя и пароль учетной записи электронной почты, которая имеет разрешение на подключение к серверу SMTP.|По умолчанию отключено|
+    |Отправитель (обязательно)|Введите адрес электронной почты отправителя.|Пример.<br />ATA@contoso.com|
+    ![Изображение. Параметры почтового сервера ATA](media/ata-email-server.png)
 
-## Provide ATA with your Syslog server settings
-ATA can notify you when it detects a suspicious activity by sending the notification to your Syslog server. If you enable Syslog notifications, you can set the following for them.
+## Указание параметров сервера системного журнала в ATA
+<a id="provide-ata-with-your-syslog-server-settings" class="xliff"></a>
+Можно настроить отправку уведомлений ATA о подозрительной активности на сервер системного журнала. Если вы настроили получение уведомлений системного журнала, для них можно настроить некоторые дополнительные параметры.
 
-1.  Before configuring Syslog notifications, work with your SIEM admin to find out the following information:
+1.  Перед настройкой уведомлений системного журнала обратитесь к администратору системы SIEM, чтобы получить следующие сведения:
 
-    -   FQDN or IP address of the SIEM server
+    -   полное доменное имя или IP-адрес сервера SIEM;
 
-    -   Port on which the SIEM server is listening
+    -   порт, который прослушивает сервер SIEM;
 
-    -   What transport to use: UDP, TCP or TLS (Secured Syslog)
+    -   тип транспортного протокола, который следует использовать (UDP, TCP или TLS (защищенный системный журнал));
 
-    -   Format in which to send the data RFC 3164 or 5424
+    -   формат, в котором необходимо отправлять данные (RFC 3164 или RFC 5424).
 
-2.  On the ATA Center server, click the **Microsoft Advanced Threat Analytics Management** icon on the desktop.
+2.  На рабочем столе сервера центра ATA щелкните значок **Управление Microsoft Advanced Threat Analytics**.
 
-3.  Enter your user name and password and click **Log in**.
+3.  Введите имя пользователя и пароль, а затем нажмите кнопку **Войти**.
 
-4.  Select the settings option on the toolbar and select **Configuration**.
+4.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-    ![ATA configuration settings icon](media/ATA-config-icon.JPG)
+    ![Значок параметров конфигурации ATA](media/ATA-config-icon.png)
 
-5.  Under Notifications section, Select **Syslog server** and enter the following information:
+5.  В разделе "Notifications" (Уведомления) выберите **Syslog server** (Сервер системного журнала) и введите следующую информацию:
 
-    |Field|Description|
+    |Поле|Описание|
     |---------|---------------|
-    |Syslog server endpoint|FQDN of the Syslog server and optionally change the port number (default 514)|
-    |Transport|Can be UDP, TCP or TLS (Secured Syslog)|
-    |Format|This is the format that ATA uses to send events to the SIEM server - either RFC 5424 or RFC 3164.|
+    |Конечная точка сервера системного журнала|Введите полное доменное имя сервера системного журнала и при необходимости измените номер порта (по умолчанию 514).|
+    |Транспорт|UDC, TCP или TLS (защищенный системный журнал)|
+    |Формат|Для отправки событий ATA на сервер SIEM используются форматы RFC 5424 или RFC 3164.|
 
- ![ATA Syslog server settings image](media/ata-syslog-server-settings-1.7.png)
+ ![Изображение. Параметры сервера системного журнала ATA](media/ata-syslog-server-settings.png)
 
 
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

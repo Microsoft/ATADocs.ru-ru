@@ -1,70 +1,62 @@
 ---
-# required metadata
-
-title: Change Advanced Threat Analytics config - domain connectivity password | Microsoft Docs
-description: Describes how to change the Domain Connectivity Password on the ATA Gateway.
-keywords:
+title: "Изменение конфигурации Advanced Threat Analytics с использованием пароля для подключения к домену | Документация Майкрософт"
+description: "Процедура изменения пароля для подключения к домену на шлюзе ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 6/12/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 19eee0466269bbc2255d3a83e2f8c073057ba356
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Change ATA configuration - domain connectivity password
 
->[!div class="step-by-step"]
-[« ATA Console URL](modifying-ata-config-consoleurl.md)
+# Изменение конфигурации ATA. Пароль для подключения к домену
+<a id="change-ata-configuration---domain-connectivity-password" class="xliff"></a>
 
 
-## Change the domain connectivity password
-If you modify the Domain Connectivity Password, make sure that the password you enter is correct. If it is not, the ATA Gateway service will stop running on the ATA Gateways.
 
-If you suspect that this happened, on the ATA Gateway, look at the Microsoft.Tri.Gateway-Errors.log file for the following:
-`The supplied credential is invalid.`
+## Изменение пароля для подключения к домену
+<a id="change-the-domain-connectivity-password" class="xliff"></a>
+Изменяя пароль для подключения к домену, указывайте правильный пароль. Если указать неправильный пароль, служба ATA на шлюзах ATA перестанет работать.
 
-To correct this, follow this procedure to update the Domain Connectivity password on the ATA Center:
+В таком случае откройте на шлюзе ATA файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку: `The supplied credential is invalid.`.
 
-1.  Open the ATA Console on the ATA Center.
+Чтобы исправить эту ошибку, в центре ATA измените пароль для подключения к домену, как описано ниже.
 
-2.  Select the settings option on the toolbar and select **Configuration**.
+1.  Откройте в центре ATA консоль ATA.
 
-    ![ATA configuration settings icon](media/ATA-config-icon.JPG)
+2.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-3.  Select **Directory Services**.
+    ![Значок параметров конфигурации ATA](media/ATA-config-icon.png)
 
-    ![ATAA Gateway change password image](media/ATA-GW-change-DC-password.png)
+3.  Выберите **Directory Services** (Службы каталогов).
 
-4.  Under **Password**, change the password.
+    ![Изменение пароля для шлюзов ATA (рисунок)](media/ATA-GW-change-DC-password.png)
 
-    If the ATA Center have connectivity to the domain, use the **Test Connection** button to validate the credentials
+4.  В разделе **Password** (Пароль) измените пароль.
 
-5.  Click **Save**.
+    Если у центра ATA есть подключение к домену, то, чтобы проверить учетные данные, нажмите кнопку **Test Connection** (Проверить подключение).
 
-6.  After changing the password, manually check that the ATA Gateway service is running on the ATA Gateway servers.
+5.  Нажмите кнопку **Сохранить**.
 
->[!div class="step-by-step"]
-[« ATA Console URL](modifying-ata-config-consoleurl.md)
+6.  После изменения пароля убедитесь, что служба шлюза ATA работает на всех шлюзах ATA.
 
-## See Also
-- [Working with the ATA Console](working-with-ata-console.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+
+
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Работа с консолью ATA](working-with-ata-console.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -1,105 +1,102 @@
 ---
-# required metadata
-
-title: Troubleshooting Advanced Threat Analytics using the logs | Microsoft Docs
-description: Describes how you can use the ATA logs to troubleshoot issues
-keywords:
+title: "Устранение неполадок в Advanced Threat Analytics с использованием журналов | Документация Майкрософт"
+description: "В этой статье описывается, как использовать журналы событий ATA для устранения неполадок"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/30/2017
+ms.date: 06/30/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: d5a3587de2aa628eb61ace199b2282e7d7fe773a
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Troubleshooting ATA using the ATA logs
-The ATA logs provide insight into what each component of ATA is doing at any given point in time.
 
-## ATA Gateway logs
-In this section, every reference to the ATA Gateway is relevant also for the ATA Lightweight Gateway. 
+# Устранение неполадок в ATA с помощью журналов событий ATA
+<a id="troubleshooting-ata-using-the-ata-logs" class="xliff"></a>
+Журналы ATA содержат сведения о работе компонентов ATA в любой момент времени.
 
-The ATA Gateway logs are located in a subfolder called **Logs** where ATA is installed; the default location is: **C:\Program Files\Microsoft Advanced Threat Analytics\**. In the default installation location, it can be found at: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+## Журналы событий шлюза ATA
+<a id="ata-gateway-logs" class="xliff"></a>
+В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-The ATA Gateway has the following logs:
+Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлен ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
--   **Microsoft.Tri.Gateway.log** – This log contains everything that happens in the ATA Gateway (including resolution and errors). Its main use is getting the overall status of all operations in the chronological order in which they occurred.
+В шлюзе ATA ведутся такие журналы событий:
 
--   **Microsoft.Tri.Gateway-Resolution.log** – This log contains the resolution details of the entities seen in traffic by the ATA Gateway. Its main use is investigating resolution issues of entities.
+-   **Microsoft.Tri.Gateway.log** — содержит информацию о событиях, связанных с шлюзом ATA, включая события разрешения и ошибки. Его основное назначение заключается в получении сведений о состоянии всех операций в хронологическом порядке.
 
--   **Microsoft.Tri.Gateway-Errors.log** – This log contains just the errors that are caught by the ATA Gateway. Its main use is performing health checks and investigating issues that need to be correlated to specific times.
+-   **Microsoft.Tri.Gateway Resolution.log** — содержит сведения о разрешении сущностей на основе трафика, получаемого шлюзом ATA. Его основное назначение — изучение событий разрешения сущностей.
 
--   **Microsoft.Tri.Gateway-ExceptionStatistics.log** – This log groups all similar errors and exceptions, and measures their count.
-    This file starts out  empty each time the ATA Gateway service starts and is updated every minute. Its main use is understanding if there are any new errors or issues with the ATA Gateway (because the errors are grouped it is easier to read and quickly understand if there are any new issues).
--	**Microsoft.Tri.Gateway.Updater.log** - This log is used for the gateway updater process, which is responsible for updating the gateway if configured to do so automatically. 
-For the ATA Lightweight Gateway, the gateway updater process is also responsible  for the resource limitations of the ATA Lightweight Gateway.
--	**Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** - This log groups all similar errors and exceptions together, and measures their count. This file starts out empty each time the ATA Updater service starts and is updated every minute. It enables you to understand if there are any new errors or issues with the ATA Updater. The errors are grouped to make it easier to quickly understand if any new errors or issues are detected.
+-   **Microsoft.Tri.Gateway-Errors.log** — содержит только те ошибки, которые перехватывает шлюз ATA. Его основное назначение — проверка работоспособности и изучение событий, которые необходимо сопоставить с моментом времени.
+
+-   **Microsoft.Tri.Gateway-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения.
+    На момент запуска шлюза ATA этот файл пустой. Во время работы шлюза он обновляется каждую минуту. Его основное назначение — получение данных о новых ошибках или событиях шлюза ATA. Понять, появились ли новые ошибки, и ознакомиться с ними гораздо легче, так как они сгруппированы по категориям.
+-   **Microsoft.Tri.Gateway.Updater.log** — этот журнал используется для процесса обновления шлюза, который отвечает за автоматическое обновление шлюза, если оно настроено. Для упрощенного шлюза ATA процесс обновления шлюза отвечает также за контроль ограничений ресурсов.
+-   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения. Этот файл создается пустым при каждом запуске службы обновления ATA и обновляется каждую минуту. Он позволяет заметить новые ошибки или проблемы, связанные со службой обновления ATA. Ошибки группируются, что позволяет быстро обнаружить любые новые ошибки или проблемы.
 
 > [!NOTE]
-> The first three log files have a maximum size of up to 50 MB. When that size is reached, a new log file is opened and the previous one is renamed to "&lt;original file name&gt;-Archived-00000" where the number increments each time it is renamed. By default, if more than 10 files from the same type already exist, the oldest are deleted.
+> Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
-## ATA Center logs
-The ATA Center logs are located in a subfolder called **Logs**. In the default installation location, it can be found at: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**".
+## Журналы событий центра АТА
+<a id="ata-center-logs" class="xliff"></a>
+Журналы событий центра ATA расположены во вложенной папке **Logs**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**.
 > [!Note]
-> The ATA console logs that were formerly under IIS logs are now located under ATA Center logs.
+> Журналы консоли ATA, которые ранее размещались в разделе "Журналы IIS", теперь перенесены в раздел "Журналы центра ATA".
 
-The ATA Center has the following logs:
+В центре ATA ведутся такие журналы событий:
 
--   **Microsoft.Tri.Center.log** – This log contains everything that happens in the ATA Center, including detections and errors. Its main use is getting the overall status of all operations in the chronological order in which they occurred.
+-   **Microsoft.Tri.Center.log** — содержит информацию о событиях, связанных с центром ATA, включая события обнаружения и ошибки. Его основное назначение заключается в получении сведений о состоянии всех операций в хронологическом порядке.
 
--   **Microsoft.Tri.Center-Detection.log** – This log contains just the detection details of the ATA Center. Its main use is investigating detection issues.
+-   **Microsoft.Tri.Center-Detection.log** — содержит сведения только об обнаружении центром ATA. Его основное назначение — изучение случаев обнаружения.
 
--   **Microsoft.Tri.Center-Errors.log** – This log contains just the errors that are caught by the ATA Center. Its main use is performing health checks and investigating issues that need to be correlated to specific times.
+-   **Microsoft.Tri.Center-Errors.log** — содержит только те ошибки, которые перехватывает центр ATA. Его основное назначение — проверка работоспособности и изучение событий, которые необходимо сопоставить с моментом времени.
 
--   **Microsoft.Tri.Center-ExceptionStatistics.log** – This log groups all similar errors and exceptions, and measures their count.
-    This file starts out empty each time the ATA Center service starts and is updated every minute. Its main use is understanding if there are any new errors or issues with the ATA Center - because the errors are grouped it is easier to quickly understand if there is a new errors or issues.
+-   **Microsoft.Tri.Center-ExceptionStatistics.log** — здесь группируются и подсчитываются однотипные ошибки и исключения.
+    На момент запуска центра ATA этот файл пустой. Во время работы центра он обновляется каждую минуту. Его основное назначение — получение информации о новых ошибках или событиях центра ATA. Ошибки здесь группируются, что позволяет быстро обнаружить любые новые ошибки или проблемы.
 
 > [!NOTE]
-> The first three log files have a maximum size of up to 50 MB. When that size is reached, a new log file is opened and the previous one is renamed to "&lt;original file name&gt;-Archived-00000" where the number increments each time it is renamed. By default, if more than 10 files from the same type already exist, the oldest are deleted.
+> Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
 
-## ATA Deployment logs
-The ATA deployment logs are located in the temp directory for the user who installed the product. In the default installation location, it can be found at: **C:\Users\Administrator\AppData\Local\Temp** (or one directory above %temp%).
+## Журналы развертывания ATA
+<a id="ata-deployment-logs" class="xliff"></a>
+Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
 
-ATA Center deployment logs:
+Журналы развертывания центра ATA:
 
--   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS.log** - This log lists the steps in the process of the deployment of the ATA Center. Its main use is tracking the ATA Center deployment process.
+-   **Microsoft Advanced Threat Analytics Center_ГГГГММДДЧЧММСС.log** — здесь перечислены этапы процесса развертывания Центра ATA. Его основное назначение — отслеживание процесса развертывания центра ATA.
 
--   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS_0_MongoDBPackage.log** - This log lists the steps in the process of MongoDB deployment on the ATA Center. Its main use is tracking the MongoDB deployment process.
+-   **Microsoft Advanced Threat Analytics Center_ГГГГММДДЧЧММСС_0_MongoDBPackage.log** — здесь перечислены этапы процесса развертывания базы данных MongoDB в Центре ATA. Его основное назначение — отслеживание процесса развертывания MongoDB.
 
--   **Microsoft Advanced Threat Analytics Center_YYYYMMDDHHMMSS_1_MsiPackage.log** - This log file lists the steps in the process of the deployment of the ATA Center binaries. Its main use is tracking the deployment of the ATA Center binaries.
+-   **Microsoft Advanced Threat Analytics Center_ГГГГММДДЧЧММСС_1_MsiPackage.log** — здесь перечислены этапы процесса развертывания двоичных файлов Центра ATA. Его основное назначение — отслеживание развертывания двоичных файлов центра ATA.
 
-ATA Gateway and ATA Lightweight Gateway deployment logs:
+Журналы развертывания шлюза ATA и упрощенного шлюза ATA:
 
--   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS.log** - This log lists the steps in the process of the deployment of the ATA Gateway. Its main use is tracking the ATA Gateway deployment process.
+-   **Microsoft Advanced Threat Analytics Gateway_ГГГГММДДЧЧММСС.log** — здесь перечислены этапы процесса развертывания шлюза ATA. Его основное назначение заключается в отслеживании процесса развертывания шлюза ATA.
 
--   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS_001_MsiPackage.log** - This log file lists the steps in the process of the deployment of the ATA Gateway binaries. Its main use is tracking the deployment of the ATA Gateway binaries.
+-   **Microsoft Advanced Threat Analytics Gateway_ГГГГММДДЧЧММСС_001_MsiPackage.log** — здесь перечислены этапы процесса развертывания двоичных файлов шлюза ATA. Его основное назначение — отслеживание развертывания двоичных файлов шлюза ATA.
 
 
 > [!NOTE] 
-> In addition to the deployment logs mentioned here, there are other logs that begin with "Microsoft Advanced Threat Analytics" that can also provide additional information on the deployment process.
+> Помимо журналов развертывания, упомянутых здесь, есть и другие журналы, которые начинаются с "Microsoft Advanced Threat Analytics" и могут также содержать дополнительные сведения о процессе развертывания.
 
 
-## See Also
-- [ATA prerequisites](ata-prerequisites.md)
-- [ATA capacity planning](ata-capacity-planning.md)
-- [Configure event collection](configure-event-collection.md)
-- [Configuring Windows event forwarding](configure-event-collection.md#configuring-windows-event-forwarding)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Предварительные требования ATA](ata-prerequisites.md)
+- [Планирование производительности ATA](ata-capacity-planning.md)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

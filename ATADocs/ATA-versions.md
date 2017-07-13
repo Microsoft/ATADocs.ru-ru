@@ -1,59 +1,56 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics versions | Microsoft Docs
-description: Explains the different support options for Microsoft Advanced Threat Analytics (ATA) versions.
+title: "Версии Advanced Threat Analytics | Документация Майкрософт"
+description: "Описание разных вариантов поддержки версий Microsoft Advanced Threat Analytics (ATA)."
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 7/3/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: f1092e1cf6c991785dbf8bad3b197b68a21c0833
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/03/2017
 ---
+*Применяется к Advanced Threat Analytics версии 1.8*
 
-# Support for Microsoft Advanced Threat Analytics (ATA) versions
+# Поддержка версий Microsoft Advanced Threat Analytics (ATA)
+<a id="support-for-microsoft-advanced-threat-analytics-ata-versions" class="xliff"></a>
 
-Microsoft plans to release updates for ATA a few times per year with each update version supported for twelve (12) months from its general availability (GA) release date. Technical support will be provided for the entire twelve (12) months. However, our support structure is now dynamic, evolving into two distinct servicing phases that depend on the availability of the latest version.
+Корпорация Майкрософт планирует выпускать обновления для АТА несколько раз в год. Каждая обновленная версия будет поддерживаться 12 месяцев с момента выпуска. Техническая поддержка будет оказываться в течение всех 12 месяцев. При этом структура поддержки стала динамической. Теперь она предусматривает два отдельных этапа обслуживания, которые зависят от доступности последней версии.
 
--	Security and Critical Updates servicing phase - When running the latest version of ATA, you will receive both Security and Critical updates.
+-   Этап предоставления критических обновлений и обновлений для системы безопасности: при использовании последней версии АТА вы будете получать критические обновления и обновления для системы безопасности.
 
--	Security Updates (Only) servicing phase - After a new ATA version is released, support for older versions will reduce to Security updates only for the remainder of the twelve (12) month support lifecycle (shown in the below example of verions servicing support).
+-   Этап предоставления только обновлений для системы безопасности: после выпуска новой версии АТА поддержка предыдущих версий ограничивается обновлениями для системы безопасности в течение оставшегося времени 12-месячного жизненного цикла поддержки (см. пример с версиями поддержки ниже).
  
-![Example of verions servicing support](media/versions.png)
+![Пример с версиями поддержки](media/versions.png)
 
 > [!Note]
-> The latest ATA version is always in the Security and Critical Updates servicing phase. This means that if you encounter a code defect that warrants a critical update, you must have the latest current branch version installed to receive a fix. All other supported versions will only be eligible to receive security updates. All support ends after the twelve (12) month lifecycle for a version has expired. At that time, customers must update to a supported version.
+> Последняя версия АТА всегда используется на этапе предоставления критических обновлений и обновлений для системы безопасности. Это означает следующее. Если вы обнаружили ошибку в коде, для исправления которой требуется критическое обновление, получить такое исправление можно, только установив последнюю версию продукта. Все другие поддерживаемые версии позволяют получать только обновления для системы безопасности. По истечении 12-месячного жизненного цикла поддержка текущей версии полностью прекращается. Клиентам необходимо обновиться до поддерживаемой версии продукта.
 
-## Version History
+## Журнал версий
+<a id="version-history" class="xliff"></a>
 
-|VERSION|BUILD NUMBER|AVAILABILITY DATE| SUPPORT END DATE|
+|ВЕРСИЯ|Номер сборки|Дата выпуска| Дата прекращения поддержки|
 |----|----|----|----|
-|1.4|1.4.2457|31-AUG-2015|30-AUG-2016|
-|1.5|1.5.2946|17-DEC-2015|16-DEC-2016|
-|1.6|1.6.4103|05-MAY-2016|04-MAY-2017|
-|1.6.1|1.6.4317|15-JUN-2016|14-JUN-2017|
-|1.7|1.7.5402|31-AUG-2016|30-AUG-2017|
-|1.7.1|1.7.5647|06-OCT-2016|05-OCT-2017|
-|1.7.2|1.7.5757|15-NOV-2016|14-NOV-2017|
+|1.4|1.4.2457|31 августа 2015 г.|30 августа 2016 г.|
+|1,5|1.5.2946|17 декабря 2015 г.|16 декабря 2016 г.|
+|1.6|1.6.4103|5 мая 2016 г.|4 мая 2017 г.|
+|1.6.1|1.6.4317|15 июня 2016 г.|14 июня 2017 г.|
+|1.7|1.7.5402|31 августа 2016 г.|30 августа 2017 г.|
+|1.7.1|1.7.5647|6 октября 2016 г.|5 октября 2017 г.|
+|1.7.2|1.7.5757|15 ноября 2016 г.|14 ноября 2017 г.|
 
 
 
 
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
