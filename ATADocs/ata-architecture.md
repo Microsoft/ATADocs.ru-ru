@@ -1,192 +1,198 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics architecture | Microsoft Docs
-description: Describes the architecture of Microsoft Advance Threat Analytics (ATA)
-keywords:
+title: "Архитектура Advanced Threat Analytics | Документация Майкрософт"
+description: "Здесь описывается архитектура решения Microsoft Advance Threat Analytics"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 07/5/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 4d95e5b13d06ea0963b7cac129be4eb1458e5d4c
+ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/05/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
-
-
-
-# ATA Architecture
-The Advanced Threat Analytics architecture is detailed in this diagram:
-
-![ATA architcture topology diagram](media/ATA-architecture-topology.jpg)
-
-ATA monitors your domain controller network traffic by utilizing port mirroring to an ATA Gateway using physical or virtual switches, or by deploying the ATA Lightweight Gateway directly on your domain controllers, which removes the requirement for port mirroring. In addition, ATA can leverage Windows events (forwarded directly from your domain controllers or from a SIEM server) and analyze the data for attacks and threats.
-This section describes the flow of network and event capturing and drills down to describe the functionality of the main components of ATA: the ATA Gateway, ATA Lightweight Gateway (which has the same core functionality as the ATA Gateway) and the ATA Center.
-
-
-![ATA traffic flow diagram](media/ATA-traffic-flow.jpg)
-
-## ATA Components
-ATA consists of the following:
-
--   **ATA Center** <br>
-The ATA Center receives data from any ATA Gateways and/or ATA Lightweight Gateways you deploy.
--   **ATA Gateway**<br>
-The ATA Gateway is installed on a dedicated server that monitors the traffic from your domain controllers using either port mirroring or a network TAP.
--   **ATA Lightweight Gateway**<br>
-The ATA Lightweight Gateway is installed directly on your domain controllers and monitors their traffic directly, without the need for a dedicated server or configuration of port mirroring. It is an alternative to the ATA Gateway.
-
-An ATA deployment can consist of a single ATA Center connected to all ATA Gateways, all ATA Lightweight Gateways or a combination of ATA Gateways and ATA Lightweight Gateways.
-
-
-## Deployment options
-You can deploy ATA using the following combination of gateways:
-
--	**Using only ATA Gateways** <br>
-If your ATA deployment contains only ATA Gateways, without any ATA Lightweight Gateways, all the domain controllers must be configured to enable port mirroring to an ATA Gateway or network TAPs must be in place.
--	**Using only ATA Lightweight Gateways**<br>
-If your ATA deployment contains only ATA Lightweight Gateways, the ATA Lightweight Gateways are deployed on each domain controller and no additional servers or port mirroring configuration is necessary.
--	**Using both ATA Gateways and ATA Lightweight Gateways**<br>
-If your ATA deployment includes both ATA Gateways and ATA Lightweight Gateways, where the ATA Lightweight Gateway is installed on some of your domain controllers (for example, all domain controllers in your branch sites) while other domain controllers are monitored by ATA Gateways (for example, the larger domain controllers in your main data centers).
-
-In all 3 scenarios, all the gateways send their data to the ATA Center.
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
 
 
-## ATA Center
-The **ATA Center** performs the following functions:
+# Архитектура ATA
+<a id="ata-architecture" class="xliff"></a>
+Архитектура решения Microsoft Advanced Threat Analytics (ATA) подробно представлена на следующей схеме:
 
--   Manages ATA Gateway and ATA Lightweight Gateway configuration settings
+![Схема топологии архитектуры ATA](media/ATA-architecture-topology.jpg)
 
--   Receives data from ATA Gateways and ATA Lightweight Gateways 
+ATA отслеживает сетевой трафик контроллеров домена, используя зеркальное отображение портов на шлюз ATA с помощью физических или виртуальных коммутаторов. При развертывании упрощенного шлюза ATA непосредственно на контроллерах домена зеркальное отображение портов не требуется. Кроме того, ATA может использовать события Windows (которые пересылаются непосредственно из контроллеров домена или сервера SIEM) и анализировать данные, связанные с атаками и угрозами.
+В этом разделе рассматривается процесс фиксации сетевого трафика и событий, а также подробно описаны функции основных компонентов ATA: шлюза ATA, упрощенного шлюза ATA (основные функции этих двух компонентов совпадают) и центра ATA.
 
--   Detects suspicious activities
 
--   Runs ATA behavioral machine learning algorithms to detect abnormal behavior
+![Схема процесса фиксации трафика ATA](media/ATA-traffic-flow.jpg)
 
--   Runs various deterministic algorithms to detect advanced attacks based on the attack kill chain
+## Компоненты ATA
+<a id="ata-components" class="xliff"></a>
+Решение ATA включает в себя следующие компоненты.
 
--   Runs the ATA Console
+-   **Центр ATA** <br>
+Центр ATA получает данные от всех развернутых шлюзов ATA и упрощенных шлюзов ATA.
+-   **Шлюз ATA**<br>
+Шлюз ATA устанавливается на выделенном сервере, отслеживающем трафик от контроллеров домена, посредством зеркального отображения портов или перехватчика трафика.
+-   **Упрощенный шлюз ATA**<br>
+Упрощенный шлюз ATA устанавливается непосредственно на контроллерах домена и напрямую отслеживает их трафик. Для этого не нужен выделенный сервер и не требуется настраивать зеркальное отображение портов. Он представляет собой альтернативу шлюзу ATA.
 
--   Optional: The ATA Center can be configured to send emails and events when a suspicious activity is detected.
+Развертывание ATA может состоять из одного центра ATA, подключенного ко всем шлюзам ATA, всем упрощенным шлюзам ATA или и к тем и к другим одновременно.
 
-The ATA Center receives parsed traffic from the ATA Gateway and ATA Lightweight Gateway, performs profiling, runs deterministic detection and runs machine learning and behavioral algorithms to learn about your network to enable detection of anomalies and warn you of suspicious activities.
 
-|||
-|-|-|
-|Entity Receiver|Receives batches of entities from all ATA Gateways and ATA Lightweight Gateways .|
-|Network Activity Processor|Processes all the network activities within each batch received. For example, matching between the various Kerberos steps performed from potentially different computers|
-|Entity Profiler|Profiles all the Unique Entities according to the traffic and events. For example, this is where ATA updates the list of logged-on computers for each user profile.|
-|Center Database|Manages the writing process of the Network Activities and events into the database. |
-|Database|ATA utilizes MongoDB for purposes of storing all the data in the system:<br /><br />-   Network activities<br />-   Event activities<br />-   Unique entities<br />-   Suspicious activities<br />-   ATA configuration|
-|Detectors|The Detectors use machine learning algorithms and deterministic rules to find suspicious activities and abnormal user behavior in your network.|
-|ATA Console|The ATA Console is for configuring ATA and monitoring suspicious activities detected by ATA on your network. The ATA Console is not dependent on the ATA Center service and will run even when the service is stopped, as long as it can communicate with the database.|
-Consider the following when deciding how many ATA Centers to deploy on your network:
+## Варианты развертывания
+<a id="deployment-options" class="xliff"></a>
+При развертывании ATA можно использовать следующие сочетания шлюзов:
 
--   One ATA Center can monitor a single Active Directory forest. If you have more than one Active Directory forest you will need a minimum of one ATA Center per Active Directory forest.
+-   **Только шлюзы ATA** <br>
+В развертывании ATA могут быть только шлюзы ATA, но не упрощенные шлюзы ATA: для всех контроллеров домена необходимо включить зеркальное отображение портов на шлюз ATA либо нужно настроить перехватчики трафика.
+-   **Только упрощенные шлюзы ATA**<br>
+В развертывании ATA могут быть только упрощенные шлюзы ATA: они развертываются на каждом контроллере домена. При этом не нужно настраивать дополнительные серверы или зеркальное отображение портов.
+-   **Шлюзы ATA и упрощенные шлюзы ATA**<br>
+Развертывание ATA содержит как обычные, так и упрощенные шлюзы ATA. Упрощенные шлюзы ATA устанавливаются на некоторых контроллерах домена (например, на всех контроллерах домена на сайтах филиалов). В то же время трафик других контроллеров домена (например, контроллеров домена большого размера в основных центрах обработки данных) отслеживают шлюзы ATA.
 
--    In very large Active Directory deployments, a single ATA Center might not be able to handle all of the traffic of all your domain controllers. In this case, multiple ATA Centers will be required. The number of ATA Centers should be dictated by [ATA capacity planning](ata-capacity-planning.md).
+Во всех этих сценариях все шлюзы отправляют данные центру ATA.
 
-## ATA Gateway and ATA Lightweight Gateway
 
-### Gateway core functionality
-The **ATA Gateway** and **ATA Lightweight Gateway** both have the same core functionality:
 
--   Capture and inspect domain controller network traffic (port mirrored traffic in the case of an ATA Gateway and local traffic of the domain controller in the case of an ATA Lightweight Gateway) 
 
--   Receive Windows events from SIEM or Syslog servers, or from domain controllers using Windows Event Forwarding
+## Центр АТА
+<a id="ata-center" class="xliff"></a>
+**Центр ATA** выполняет следующие функции:
 
--   Retrieve data about users and computers from the Active Directory domain
+-   управление параметрами конфигурации шлюза ATA и упрощенного шлюза ATA;
 
--   Perform resolution of network entities (users, groups and computers)
+-   получение данных от шлюзов ATA и упрощенных шлюзов ATA; 
 
--   Transfer relevant data to the ATA Center
+-   выявление подозрительных действий;
 
--   Monitor multiple domain controllers from a single ATA Gateway, or monitor a single domain controller for an ATA Lightweight Gateway.
+-   выполнение алгоритмов машинного обучения ATA для анализа поведения, чтобы обнаружить необычное поведение;
 
-The ATA Gateway receives network traffic and Windows Events from your network and processes it in the following main components:
+-   выполнение различных детерминированных алгоритмов для выявления продвинутых атак в цепочке атаки;
+
+-   обеспечение работы консоли ATA;
+
+-   отправка уведомлений о подозрительных действиях по электронной почте (настраивается отдельно).
+
+Центр ATA получает проанализированный трафик из шлюза ATA и упрощенного шлюза ATA. После этого выполняется профилирование, детерминированное обнаружение и запуск алгоритмов машинного обучения и анализа поведения. Это позволяет получить сведения о сети, выявить аномалии и сообщить о подозрительных действиях.
 
 |||
 |-|-|
-|Network Listener|The Network Listener is responsible for capturing network traffic and parsing the traffic. This is a CPU-heavy task, so  it is especially important to check [ATA Prerequisites](ata-prerequisites.md) when planning your ATA Gateway or ATA Lightweight Gateway.|
-|Event Listener|The Event Listener is responsible for capturing and parsing Windows Events forwarded from a SIEM server on your network.|
-|Windows Event Log Reader|The Windows Event Log Reader is responsible for reading and parsing Windows Events forwarded to the ATA Gateway's Windows Event Log from the domain controllers.|
-|Network Activity Translator | Translates parsed traffic into a logical representation of the traffic used by ATA (NetworkActivity).
-|Entity Resolver|The Entity Resolver takes the parsed data (network traffic and events) and resolves it data with Active Directory to find account and identity information. It is then matched with the IP addresses found in the parsed data. The Entity Resolver inspects the packet headers efficiently, to enable parsing of authentication packets for machine names, properties, and identities. The Entity Resolver combines the parsed authentication packets with the data in the actual packet.|
-|Entity Sender|The Entity Sender is responsible for sending the parsed and matched data to the ATA Center.|
+|Получатель сущностей|Этот компонент получает пакеты сущностей из всех шлюзов ATA и упрощенных шлюзов ATA.|
+|Обработчик сетевых операций|Этот компонент обрабатывает все сетевые операции в каждом полученном пакете. К примеру, он сопоставляет различные действия Kerberos, выполненные на разных компьютерах.|
+|Профилировщик сущностей|Этот компонент профилирует все уникальные сущности в соответствии с трафиком и событиями. Например, ATA обновляет список компьютеров, с которых выполнен вход, для каждого профиля пользователя.|
+|База данных центра|Этот компонент управляет процессом записи сетевых операций и событий в базу данных. |
+|База данных|ATA использует базу данных MongoDB для хранения в системе следующих данных:<br /><br />— сетевых операций;<br />— действий-событий;<br />— уникальных сущностей;<br />— подозрительных действий;<br />— данных конфигурации ATA.|
+|Средства обнаружения|Эти компоненты выявляют подозрительные действия и аномальное поведение пользователей в сети, используя алгоритмы машинного обучения и детерминированные правила.|
+|Консоль ATA|Этот компонент используется для настройки решения ATA и отслеживания подозрительных сетевых действий, обнаруженных этим решением. Консоль ATA не зависит от службы центра ATA и работает даже после ее остановки, если связь с базой данных не потеряна.|
+При определении числа центров ATA, которые необходимо развернуть в сети, учитывайте указанные ниже критерии.
 
-## ATA Lightweight Gateway features
+-   Один центр ATA может отслеживать лишь один лес Active Directory. При наличии нескольких лесов Active Directory для каждого из них требуется по крайней мере один центр ATA.
 
-The following features work differently depending on whether you are running an ATA Gateway or an ATA Lightweight Gateway.
+-    При очень крупных развертываниях Active Directory одного центра ATA может быть недостаточно для обработки всего трафика от контроллеров домена. В этом случае требуется несколько центров ATA. Число центров ATA зависит от [планирования производительности решения](ata-capacity-planning.md).
 
--	**Domain synchronizer candidate**<br>
-The domain synchronizer gateway is responsible for synchronizing all entities from a specific Active Directory domain proactively (similar to the mechanism used by the domain controllers themselves for replication). One gateway is chosen randomly, from the list of candidates, to serve as the domain synchronizer. <br><br>
-If the synchronizer is offline for more than 30 minutes, another candidate is chosen instead. If there is no domain synchronizer available for a specific domain, ATA will not be able to proactively synchronize entities and their changes, however ATA will reactively retrieve new entities as they are detected in the monitored traffic. 
-<br>If there is no domain synchronizer available, and you search for an entity that did not have any traffic related to it, no search results will be displayed.<br><br>
-By default, all ATA Gateways are synchronizer candidates.<br><br>
-Because all ATA Lightweight Gateways are more likely to be deployed in branch sites and on small domain controllers, they are not synchronizer candidates by default.
+## Шлюз ATA и упрощенный шлюз ATA
+<a id="ata-gateway-and-ata-lightweight-gateway" class="xliff"></a>
+
+### Основные функции шлюза
+<a id="gateway-core-functionality" class="xliff"></a>
+**Шлюз ATA**  и **упрощенный шлюз ATA** выполняют одинаковые основные функции:
+
+-   фиксация и проверка сетевого трафика контроллеров домена (трафик на зеркально отображенных портах для шлюзов ATA и локальный трафик контроллера домена для упрощенных шлюзов ATA); 
+
+-   получение событий Windows с серверов SIEM или серверов системного журнала либо из контроллеров домена с помощью функции пересылки событий Windows;
+
+-   получение данных о пользователях и компьютерах из домена Active Directory;
+
+-   разрешение сетевых сущностей (пользователей, групп и компьютеров);
+
+-   передача соответствующих данных в центр ATA;
+
+-   мониторинг нескольких контроллеров домена из одного шлюза ATA или одного контроллера домена для упрощенного шлюза ATA.
+
+Шлюз ATA получает сетевой трафик и события Windows из сети и обрабатывает их с помощью следующих основных компонентов:
+
+|||
+|-|-|
+|Прослушиватель сети|Этот компонент фиксирует и анализирует сетевой трафик. Эта задача существенно нагружает ЦП, поэтому при настройке шлюза ATA и упрощенного шлюза ATA необходимо выполнить [предварительные требования для ATA](ata-prerequisites.md).|
+|Прослушиватель событий|Этот компонент фиксирует и анализирует события Windows, пересылаемые с сервера SIEM в сети.|
+|Средство чтения журнала событий Windows|Этот компонент считывает и анализирует события Windows, пересылаемые в журнал событий Windows шлюза ATA с контроллеров домена.|
+|Транслятор сетевых операций | Этот компонент преобразует проанализированный трафик (сетевые операции) в логическое представление трафика ATA.
+|Сопоставитель сущностей|Этот компонент принимает проанализированные данные (сетевой трафик и события) и разрешает их с помощью Active Directory, чтобы найти сведения об учетных записях и удостоверениях. Затем они сопоставляются с IP-адресами в этих данных. Сопоставитель сущностей проверяет заголовки пакетов и анализирует пакеты аутентификации для определения имен, свойств и удостоверений компьютеров. Затем он объединяет проанализированные пакеты аутентификации с данными в пакете.|
+|Отправитель сущностей|Этот компонент отправляет проанализированные и сопоставленные данные в центр ATA.|
+
+## Функции упрощенного шлюза ATA
+<a id="ata-lightweight-gateway-features" class="xliff"></a>
+
+Следующие компоненты и возможности работают по-разному в шлюзе ATA и упрощенном шлюзе ATA.
+
+-   Упрощенный шлюз ATA может считывать события локально — настраивать переадресацию событий не требуется.
+
+-   **Потенциальный синхронизатор домена**<br>
+Шлюз синхронизатора домена отвечает за своевременную синхронизацию всех сущностей из определенного домена Active Directory (аналогичный механизм используется для репликации в контроллерах домена). В списке синхронизаторов домена случайным образом выбирается один шлюз. <br><br>
+Если синхронизатор находится в автономном режиме более 30 минут, его заменяет другой кандидат. Если для конкретного домена синхронизатор домена недоступен, ATA не сможет своевременно синхронизировать сущности и изменения в них. Однако это решение будет оперативно получать новые сущности по мере их обнаружения в отслеживаемом трафике. 
+<br>Если синхронизатор домена недоступен и требуется сущность, с которой не связан трафик, результаты поиска будут пусты.<br><br>
+По умолчанию все шлюзы ATA подходят в качестве потенциальных синхронизаторов.<br><br>
+Так как все упрощенные шлюзы ATA, скорее всего, развертываются на сайтах филиалов и на небольших контроллерах домена, они по умолчанию не рассматриваются в качестве потенциальных синхронизаторов.
 
 
--	**Resource limitations**<br>
-The ATA Lightweight Gateway includes a monitoring component which evaluates the available compute and memory capacity on the domain controller on which it is running. The monitoring process runs every 10 seconds and dynamically updates the CPU and memory utilization quota on the ATA Lightweight Gateway process to make sure that at any given point in time, the domain controller has at least 15% of free compute and memory resources.<br><br>
-No matter what happens on the domain controller, this process always frees up resources to make sure the domain controller's core functionality is not affected.<br><br>
-If this causes the ATA Lightweight Gateway to run out of resources, only partial traffic is monitored and the monitoring alert "Dropped port mirrored network traffic" will appear in the Health page.
+-   **Ограничения ресурсов**<br>
+Упрощенный шлюз ATA содержит компонент мониторинга, который оценивает доступный объем вычислительных ресурсов и памяти на контроллере домена, в котором он выполняется. Мониторинг выполняется каждые 10 секунд. При этом также осуществляется динамическое обновление квоты использования ресурсов ЦП и памяти для упрощенного шлюза ATA. Благодаря этому в любой момент времени на контроллере домена доступно по крайней мере 15 % свободных вычислительных ресурсов и ресурсов памяти.<br><br>
+Независимо от операций, выполняемых на контроллере домена, в результате всегда освобождаются ресурсы, чтобы обеспечить непрерывную работу основных функций контроллера домена.<br><br>
+Если это приводит к нехватке ресурсов упрощенного шлюза ATA, отслеживается только часть трафика, а на странице работоспособности появится оповещение мониторинга "Dropped port mirrored network traffic" (Сетевой трафик зеркально отображенных портов сброшен).
 
-The following table provides an example of a domain controller with enough compute resource available to allow for a larger quota then is currently needed, so that all traffic is monitored:
+В таблице ниже приведен пример контроллера домена с достаточным количеством вычислительных ресурсов для больших квот, чем нужны в данный момент, чтобы обеспечить мониторинг всего трафика:
 
 ||||||
 |-|-|-|-|-|
-|Active Directory (Lsass.exe)|ATA Lightweight Gateway (Microsoft.Tri.Gateway.exe)|Miscellaneous (other processes) |ATA Lightweight Gateway Quota|Gateway dropping|
-|30%|20%|10%|45%|No|
+|Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Сброс шлюза|
+|30 %|20 %|10 %|45 %|Нет|
 
-If Active Directory needs more compute, the quota needed by the ATA Lightweight Gateway is reduced. In the following example, The ATA Lightweight Gateway needs more than the allocated quota and drops some of the traffic (monitoring only partial traffic):
+Если Active Directory требуются дополнительные вычислительные ресурсы, квота для упрощенного шлюза ATA сокращается. В следующем примере упрощенному шлюзу ATA требуется больше ресурсов, чем выделено квотой. Поэтому он сбрасывает некоторый трафик (выполняется мониторинг только части трафика):
 
 ||||||
 |-|-|-|-|-|
-|Active Directory (Lsass.exe)|ATA Lightweight Gateway (Microsoft.Tri.Gateway.exe)|Miscellaneous (other processes) |ATA Lightweight Gateway Quota|Is gateway dropping|
-|60%|15%|10%|15%|Yes|
+|Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Выполняется ли сброс шлюза|
+|60 %|15 %|10 %|15 %|да|
 
 
 
-## Your network components
-In order to work with ATA, make sure of the following:
+## Компоненты сети
+<a id="your-network-components" class="xliff"></a>
+Для работы с ATA требуется настроить следующие компоненты:
 
-### Port mirroring
-If you are using ATA Gateways, you have to setup port mirroring for the domain controllers that will be monitored and set the ATA Gateway as the destination using the physical or virtual switches. Another option is to use network TAPs. ATA will work if some but not all of your domain controllers are monitored, but detections will be less effective.
+### Зеркальное отображение портов
+<a id="port-mirroring" class="xliff"></a>
+При использовании шлюзов ATA необходимо настроить зеркальное отображение портов для контроллеров домена, которые будут отслеживаться, и указать шлюз ATA в качестве места назначения с помощью физических или виртуальных коммутаторов. Кроме того, можно использовать перехватчик трафика. Решение ATA будет работать, если мониторинг выполняется только для некоторых контроллеров домена, однако эффективность обнаружения будет ниже.
 
-While port mirroring mirrors all the domain controller network traffic to the ATA Gateway, only a very small percentage of that traffic is then sent, compressed, to the ATA Center for analysis.
+Хотя при зеркальном отображении портов шлюз ATA получает весь зеркально отображенный сетевой трафик контроллера домена, для анализа в центр ATA отправляется лишь небольшой объем данных о трафике в сжатом виде.
 
-Your domain controllers and the ATA Gateways can be physical or virtual, see [Configure port mirroring](configure-port-mirroring.md) for more information.
+Контроллеры домена и шлюзы ATA могут быть как физическими, так и виртуальными. Дополнительные сведения см. в статье [Настройка зеркального отображения портов](configure-port-mirroring.md).
 
 
-### Events
-To enhance ATA detection of Pass-the-Hash, Brute Force and Honey Tokens, ATA needs Windows Event log ID 4776. This can be forwarded to the ATA Gateway in one of two ways, by configuring the ATA Gateway to listen for SIEM events or by using Windows Event Forwarding.
+### События
+<a id="events" class="xliff"></a>
+Для повышения эффективности обнаружения атак Pass-the-Hash, атак методом подбора, атак путем изменения привилегированных групп и атак с использованием honeytoken решению ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](#configuring-windows-event-forwarding).
 
--   Configuring the ATA Gateway to listen for SIEM events <br>Configure your SIEM to forward specific Windows events to ATA. ATA supports a number of SIEM vendors. For more information, see [Configure event collection](configure-event-collection.md).
+-   Настройка прослушивания событий SIEM в шлюзе ATA <br>Настройте пересылку определенных событий Windows из системы SIEM в ATA. ATA поддерживает несколько поставщиков SIEM. Дополнительные сведения см. в статье [Настройка сбора данных о событиях](configure-event-collection.md).
 
--   Configuring Windows Event Forwarding<br>Another way ATA can get your events is by configuring your domain controllers to forward Windows event 4776 to your ATA Gateway. This is especially useful if you don't have a SIEM or if your SIEM is not currently supported by ATA. For more information about Windows Event Forwarding in ATA, see [Configuring Windows event forwarding](configure-event-collection.md#configuring-windows-event-forwarding).
+-   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку событий Windows 4776, 4732, 4733, 4728, 4729, 4756 и 4757 с контроллеров домена в шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Дополнительные сведения о пересылке событий Windows в ATA см. в разделе [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding). Обратите внимание, что это относится только к физическим шлюзам ATA, но не к упрощенному шлюзу ATA.
 
-## See Also
-- [ATA prerequisites](ata-prerequisites.md)
-- [ATA capacity planning](ata-capacity-planning.md)
-- [Configure event collection](configure-event-collection.md)
-- [Configuring Windows event forwarding](configure-event-collection.md#configuring-windows-event-forwarding)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Предварительные требования ATA](ata-prerequisites.md)
+- [Планирование производительности ATA](ata-capacity-planning.md)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

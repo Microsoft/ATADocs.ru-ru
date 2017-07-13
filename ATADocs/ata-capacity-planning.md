@@ -1,224 +1,225 @@
 ---
-# required metadata
-
-title: Planning your Advanced Threat Analytics deployment | Microsoft Docs
-description: Helps you plan your deployment and decide how many ATA servers will be needed to support your network
-keywords:
+title: "Планирование развертывания Advanced Threat Analytics | Документация Майкрософт"
+description: "В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов ATA потребуется для поддержки сети"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
-ms.prod:
+ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 3a313ba032a43bff90e37908909830f7c741c39c
+ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/05/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# ATA Capacity Planning
-This topic helps you determine how many ATA servers will be needed to monitor your network, including understanding how many ATA Gateways and/or ATA Lightweight Gateways you need and the server capacity for your ATA Center and ATA Gateways.
+
+# Планирование производительности ATA
+<a id="ata-capacity-planning" class="xliff"></a>
+В этой статье содержится информация, которая поможет определить, сколько серверов ATA потребуется для мониторинга сети. Она также поможет понять, сколько шлюзов ATA, упрощенных шлюзов ATA и ресурсов серверов понадобится для центра ATA и шлюзов ATA.
 
 > [!NOTE] 
-> The ATA Center can be deployed on any IaaS vendor as long as the performance requirements described in this article are met.
+> Центр ATA можно развернуть в любом поставщике IaaS, если выполнены требования к производительности, описанные в этой статье.
 
-##Using the sizing tool
-The recommended and simplest way to determine capacity for your ATA deployment is to use the [ATA Sizing Tool](http://aka.ms/atasizingtool). Run the ATA Sizing Tool and from the Excel file results, use the following fields to determine the ATA capacity you need:
+##Использование средства изменения размера
+<a id="using-the-sizing-tool" class="xliff"></a>
+Рекомендуемый и самый простой способ определить емкость развертывания ATA — это использовать [средство изменения размера ATA](http://aka.ms/atasizingtool). Запустите средство изменения размера ATA и в файле Excel с результатами определите необходимую емкость с помощью следующих полей:
 
-- ATA Center CPU and Memory: Match the **Busy Packets/sec** field in the ATA Center table in the results file to the **PACKETS PER SECOND** field in the [ATA Center table](#ata-center-sizing).
+- ЦП и память центра ATA: сопоставьте поле **Busy Packets/sec** (Занятых пакетов/с) в таблице центра ATA в файле результатов с полем **PACKETS PER SECOND** (Пакетов в секунду) в [таблице центра ATA](#ata-center-sizing).
 
-- ATA Center Storage: Match the **Avg Packets/sec** field in the ATA Center table in the results file to the **PACKETS PER SECOND** field in the [ATA Center table](#ata-center-sizing).
-- ATA Gateway: Match the **Busy Packets/sec** field in the ATA Gateway table in the results file to the **PACKETS PER SECOND** field in the [ATA Gateway table](#ata-gateway-sizing) or the [ATA Lightweight Gateway table](#ata-lightweight-gateway-sizing), depending on the [gateway type you choose](#choosing-the-right-gateway-type-for-your-deployment).
-
-
-![Sample capacity planning tool](media/capacity tool.png)
+- Хранилище центра ATA: сопоставьте поле **Avg Packets/sec** (Среднее число пакетов/с) в таблице центра ATA в файле результатов с полем **PACKETS PER SECOND** (ПАКЕТОВ В СЕКУНДУ) в [таблице центра ATA](#ata-center-sizing).
+- Шлюз ATA: сопоставьте поле **Busy Packets/sec** (Занятых пакетов/с) в таблице шлюзов ATA в файле результатов с полем **PACKETS PER SECOND** (ПАКЕТОВ В СЕКУНДУ) в [таблице шлюзов ATA](#ata-gateway-sizing) или [таблице легковесных шлюзов ATA](#ata-lightweight-gateway-sizing), в зависимости от [выбранного типа шлюза](#choosing-the-right-gateway-type-for-your-deployment).
 
 
-
-If for some reason you cannot use the ATA Sizing Tool, you need to manually gather the packet/sec counter information from all your Domain Controllers for a period of 24 hours with a very low collection interval (approximately 5 seconds). Then, for each Domain Controller, you  must calculate the daily average and the busiest period (15 minutes) average.
-The following sections present the instruction for how to collect the packets/sec counter from one Domain Controller.
+![Пример средства планирования емкости](media/capacity tool.png)
 
 
 
-### ATA Center Sizing
-The ATA Center requires a recommended minimum of 30 days of data for user behavioral analytics.
+Если по каким-либо причинам вы не можете использовать средство изменения размера ATA, необходимо вручную собрать данные по числу пакетов в секунду с коротким интервалом сбора (примерно 5 секунд) со всех контроллеров домена за 24 часа. Затем для каждого контроллера домена необходимо вычислить ежедневное среднее значение и среднее значение самого занятого периода (15 минут).
+В следующих разделах представлены инструкции по сбору числа пакетов в секунду с одного контроллера домена.
+
+
+
+### Определение размера и количества ресурсов для центра ATA
+<a id="ata-center-sizing" class="xliff"></a>
+Чтобы проанализировать поведение пользователя, центру ATA требуются данные минимум за 30 дней.
  
 
-|Packets per second from all DCs|CPU (cores&#42;)|Memory (GB)|Database storage per day (GB)|Database storage per month (GB)|IOPS&#42;&#42;|
+|Пакетов в секунду от всех контроллеров домена|ЦП (ядра*)|Память (ГБ)|Объем хранилища базы данных в день (ГБ)|Объем хранилища базы данных в месяц (ГБ)|Операций ввода-вывода**|
 |---------------------------|-------------------------|-------------------|---------------------------------|-----------------------------------|-----------------------------------|
-|1,000|2|32|0.3|9|30 (100)
-|10,000|4|48|3|90|200 (300)
-|40,000|8|64|12|360|500 (1,000)
-|100,000|12|96|30|900|1,000 (1,500)
-|200,000|24|112|60|1,800|2,000 (3,000)
-|400,000|40|128|120|3,600|4,000 (5,000)
+|1000|2|32|0,3|9|30 (100)
+|10 000|4|48|3|90|200 (300)
+|40 000|8|64|12|360|500 (1000)
+|100 000|12|96|30|900|1000 (1500)
+|200 000|24|112|60|1800|2,000 (3,000)
+|400 000|40|128|120|3600|4000 (5000)
 
-&#42;This includes physical cores, not hyper-threaded cores.
+* Сюда относятся физические ядра, а не ядра с поддержкой технологии Hyper-Threading.
 
-&#42;&#42;Average numbers (Peak numbers)
+** Средние значения (пиковые значения).
 > [!NOTE]
-> -   The ATA Center can handle an aggregated maximum of 400,000 frames per second (FPS) from all the monitored domain controllers. In some environments, the same ATA Center can handle overall traffic that is higher than 400,000. Please contact askcesec@microsoft.com for assistance with such environments.
-> -   The amounts of storage dictated here are net values, you should always account for future growth and to make sure that the disk the database resides on has at least 20% of free space.
-> -   If your free space reaches a minimum of either 20% or 100 GB, the oldest collection of data will be deleted. This will continue to occur until 5% or 50 GB of free space remains at which point data collection will stop working.
-> - It's possible to deploy the ATA Center on any IaaS vendor as long as the performance requirements that are described in this article are met.
-> -   The storage latency for read and write activities should be below 10 ms.
-> -   The ratio between read and write activities is approximately 1:3 below 100,000 packets-per-second and 1:6 above 100,000 packets-per-second.
-> -   When running as a virtual machine dynamic memory or any other memory ballooning feature is not supported.
-> -   For optimal performance, set the **Power Option** of the ATA Center to **High Performance**.<br>
-> -   When working on a physical server, the ATA database necessitates that you **disable** Non-uniform memory access (NUMA) in the BIOS. Your system may refer to NUMA as Node Interleaving, in which case you will have to **enable** Node Interleaving in order to disable NUMA. See your BIOS documentation for more information. Note that this is not relevant when the ATA Center is running on a virtual server.
+> -   Совокупное максимальное количество обрабатываемых центром ATA пакетов в секунду от всех отслеживаемых контроллеров домена составляет 400 000. В некоторых средах один центр ATA может обрабатывать трафик, превышающий 400 000. Обратитесь к askcesec@microsoft.com. Вам помогут приступить к работе с такими средами.
+> -   Указанные объемы памяти — это фактические значения. Всегда учитывайте будущий рост нагрузки и помните, что на диске с базой данных должно быть по крайней мере 20 % свободного пространства.
+> -   Если на диске базы данных остается менее 20 % (100 ГБ) свободного пространства, самая старая коллекция данных удаляется. Это происходит, пока на диске не остается только 5 % или 50 ГБ свободного пространства. Затем сбор данных останавливается.
+> - Вы можете развернуть Центр ATA в любом поставщике IaaS, если выполнены требования к производительности, описанные в этой статье.
+> -   При выполнении действий чтения и записи задержка хранилища должна быть менее 10 мс.
+> -   Соотношение между количеством операций чтения и записи должно составлять примерно 1:3 при обработке меньше 100 000 пакетов в секунду и 1:6 при обработке свыше 100 000 пакетов в секунду.
+> -   При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
+> -   Для обеспечения оптимальной производительности задайте для **параметра электропитания** центра ATA значение **высокой производительности**.<br>
+> -   При работе с физическим сервером для базы данных ATA необходимо **отключить** доступ к неоднородной памяти (NUMA) в BIOS. Система может ссылаться на NUMA как на чередование узлов. В таком случае необходимо **включить** чередование узлов, чтобы отключить NUMA. Дополнительные сведения см. в документации по BIOS. Это не имеет значения, если центр ATA выполняется на виртуальном сервере.
 
 
-## Choosing the right gateway type for your deployment
-In an ATA deployment any combination of the ATA Gateway types is supported:
+## Выбор правильного типа шлюза для развертывания
+<a id="choosing-the-right-gateway-type-for-your-deployment" class="xliff"></a>
+В развертывании ATA поддерживается любое сочетание типов шлюза ATA:
 
-- Only ATA Gateway(s)
-- Only ATA Lightweight Gateway(s)
-- A combination of both
+- только шлюзы ATA;
+- только упрощенные шлюзы ATA.
+- Комбинация шлюзов
 
-When deciding the Gateway deployment type, consider the following:
+При выборе типа развертывания шлюза необходимо учитывать указанные ниже преимущества.
 
-|Gateway type|Benefits|Cost|Deployment topology|Domain controller use|
+|Тип шлюза|Преимущества|Стоимость|Топология развертывания|Использование контроллера домена|
 |----|----|----|----|-----|
-|ATA Gateway|The Out of band deployment makes it harder for attackers to discover ATA is present|Higher|Installed alongside the domain controller (out of band)|Supports up to 50,000 packets per second|
-|ATA Lightweight Gateway|Doesn't require a dedicated server and port-mirroring configuration|Lower|Installed on the domain controller|Supports up to 10,000 packets per second|
+|Шлюз ATA|Внешнее развертывание усложняет обнаружение ATA для злоумышленников|Выше|Устанавливается вместе с контроллером домена (внешняя установка)|Поддерживает до 50 000 пакетов в секунду|
+|Упрощенный шлюз ATA|Не требует выделенного сервера и настройки зеркального отражения портов|Нижний|Устанавливается на контроллере домена|Поддерживает до 10 000 пакетов в секунду|
 
-The following are examples of scenarios in which domain controllers should be covered by the ATA Lightweight Gateway:
-
-
-- Branch sites
-
-- Virtual domain controllers deployed in the cloud (IaaS)
+Ниже приведены примеры сценариев, в которых работу всех контроллеров домена контролирует упрощенный шлюз ATA:
 
 
-The following are examples of scenarios in which domain controllers should be covered by the ATA Gateway:
+- сайты филиалов;
+
+- Виртуальные контроллеры доменов, развернутые в облаке (IaaS)
 
 
-- Headquarter data centers (having domain controllers with more than 10,000 packets per seconds)
+Ниже приведены примеры сценариев, в которых работу всех контроллеров домена контролирует шлюз ATA:
 
 
-### ATA Lightweight Gateway Sizing
-
-An ATA Lightweight Gateway can support the monitoring of one domain controller based on the amount of network traffic the domain controller generates. 
+- Главные центры обработки данных (имеющие контроллеры доменов со скоростью передачи более 10 000 пакетов в секунду)
 
 
-|Packets per second&#42;|CPU (cores&#42;&#42;)|Memory (GB)&#42;&#42;&#42;|
+### Размеры упрощенных шлюзов ATA
+<a id="ata-lightweight-gateway-sizing" class="xliff"></a>
+
+Упрощенный шлюз ATA поддерживает отслеживание одного контроллера домена в зависимости от объема сетевого трафика, создаваемого контроллером домена. 
+
+
+|Пакетов в секунду&#42;|Число ядер ЦП&#42;&#42;|Память (ГБ)&#42;&#42;&#42;|
 |---------------------------|-------------------------|---------------|
-|1,000|2|6|
-|5,000|6|16|
-	|10,000|10|24|
+|1000|2|6|
+|5000|6|16|
+    |10 000|10|24|
 
-&#42;Total number of packets-per-second on the domain controller being monitored by the specific ATA Lightweight Gateway.
+&#42; Общее количество пакетов в секунду в контроллере домена, который отслеживает конкретный упрощенный шлюз ATA.
 
-&#42;&#42;Total amount of non-hyper threaded cores that this domain controller has installed.<br>While hyper threading is acceptable for the ATA Lightweight Gateway, when planning for capacity, you should count actual cores and not hyper threaded cores.
+&#42;&#42;Общее количество ядер без применения технологии Hyper-Threading, установленных на этом контроллере домена.<br>Хотя технология Hyper-Threading является приемлемой для упрощенного шлюза ATA, при планировании производительности необходимо подсчитать фактические ядра и ядра без применения технологии Hyper-Threading.
 
-&#42;&#42;&#42;Total amount of memory that this domain controller has installed.
+&#42;&#42;&#42;Общий объем памяти, установленной в этом контроллере домена.
 
-> [!NOTE]	
-> -   If the domain controller does not have the necessary amount of resources required by the ATA Lightweight Gateway, the domain controller performance will not be effected, but the ATA Lightweight Gateway might not operate as expected.
-> -   When running as a virtual machine dynamic memory or any other memory ballooning feature is not supported.
-> -   For optimal performance, set the **Power Option** of the ATA Lightweight Gateway to **High Performance**.
-> -   A minimum of 5 GB of space is required and 10 GB is recommended. This includes space needed for the ATA binaries, [ATA logs](troubleshooting-ata-using-logs.md) and [performance logs](troubleshooting-ata-using-perf-counters.md).
+> [!NOTE]   
+> -   Если на контроллере домена нет ресурсов, необходимых для упрощенного шлюза ATA, это не повлияет на производительность контроллера домена, но упрощенный шлюз ATA, возможно, не будет работать должным образом.
+> -   При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
+> -   Для обеспечения оптимальной производительности задайте для **параметра электропитания** упрощенного шлюза ATA значение **высокой производительности**.
+> -   Требуется не менее 5 ГБ пространства; рекомендуется 10 ГБ. Сюда входит пространство, необходимое для двоичных файлов ATA, [журналов ATA](troubleshooting-ata-using-logs.md) и [журналов производительности](troubleshooting-ata-using-perf-counters.md).
 
 
-### ATA Gateway Sizing
+### Определение размера шлюза ATA
+<a id="ata-gateway-sizing" class="xliff"></a>
 
-Consider the following when deciding how many ATA Gateways to deploy.
+При определении числа шлюзов ATA, которые необходимо развернуть, учитывайте указанные ниже моменты.
 
--	**Active Directory forests and domains**<br>
-	ATA can monitor traffic from multiple domains from a single Active Directory forest. Monitoring multiple Active Directory forests requires separate ATA deployments. A single ATA deployment should not be configured to monitor network traffic of domain controllers from different forests.
+-   **Леса и домены Active Directory**<br>
+    ATA может отслеживать трафик из нескольких доменов в рамках одного леса Active Directory. Чтобы выполнять мониторинг нескольких лесов Active Directory, требуются отдельные развертывания ATA. Не настраивайте одно развертывание ATA для отслеживания сетевого трафика контроллеров домена в разных лесах.
 
--	**Port Mirroring**<br>
-Port mirroring considerations might require you to deploy multiple ATA Gateways per data center or branch site.
+-   **Зеркальное отображение портов**<br>
+Согласно рекомендациям по зеркальному отображению портов, возможно, потребуется развернуть несколько шлюзов ATA в центре данных или на сайте филиала.
 
--	**Capacity**<br>
-	An ATA Gateway can support monitoring multiple domain controllers, depending on the amount of network traffic of the domain controllers being monitored. 
+-   **Емкость**<br>
+    Шлюз ATA поддерживает отслеживание нескольких контроллеров домена в зависимости от объема сетевого трафика отслеживаемых контроллеров домена. 
 <br>
 
 
 
-|Packets per second&#42;|CPU (cores&#42;&#42;)|Memory (GB)|
+|Пакетов в секунду&#42;|Число ядер ЦП&#42;&#42;|Память (ГБ)|
 |---------------------------|-------------------------|---------------|
-|1,000|1|6|
-|5,000|2|10|
-|10,000|3|12|
-|20,000|6|24|
-|50,000|16|48|
-&#42;Total average number of packets-per-second from all domain controllers being monitored by the specific ATA Gateway during their busiest hour of the day.
+|1000|1|6|
+|5000|2|10|
+|10 000|3|12|
+|20 000|6|24|
+|50 000|16|48|
+&#42; Среднее количество пакетов в секунду, отправляемых всеми контроллерами домена, которые отслеживает конкретный шлюз ATA в час наибольшей нагрузки.
 
-&#42;The total amount of domain controller port-mirrored traffic cannot exceed the capacity of the capture NIC on the ATA Gateway.
+&#42; Общий объем зеркально отображенного трафика контроллера домена не может превышать емкость сетевого адаптера в шлюзе ATA.
 
-&#42;&#42;Hyper-threading must be disabled.
+&#42;&#42; Технология Hyper-Threading должна быть отключена.
 
 > [!NOTE] 
-> -   Dynamic memory is not supported.
-> -   For optimal performance, set the **Power Option** of the ATA Gateway to **High Performance**.
-> -   A minimum of 5 GB of space is required and 10 GB is recommended. This includes space needed for the ATA binaries, [ATA logs](troubleshooting-ata-using-logs.md) and [performance logs](troubleshooting-ata-using-perf-counters.md).
+> -   Динамическая память не поддерживается.
+> -   Для обеспечения оптимальной производительности установите **Параметр электропитания** шлюза ATA на **Высокую производительность**.
+> -   Требуется не менее 5 ГБ пространства; рекомендуется 10 ГБ. Сюда входит пространство, необходимое для двоичных файлов ATA, [журналов ATA](troubleshooting-ata-using-logs.md) и [журналов производительности](troubleshooting-ata-using-perf-counters.md).
 
 
-## Domain controller traffic estimation
-There are various tools that you can use to discover the average packets per second of your domain controllers. If you do not have any tools that track this counter, you can use Performance Monitor to gather the required information.
+## Оценка трафика контроллера домена
+<a id="domain-controller-traffic-estimation" class="xliff"></a>
+Существуют различные инструменты, с помощью которых можно определить среднее число пакетов в секунду, отправляемых с контроллеров домена. Если у вас нет таких инструментов, эти сведения можно отследить с помощью системного монитора.
 
-To determine packets per second, perform the following on each domain controller:
+Чтобы определить число пакетов в секунду, выполните на каждом контроллере домена указанные ниже действия.
 
-1.  Open Performance Monitor.
+1.  Откройте системный монитор.
 
-    ![Performance monitor image](media/ATA-traffic-estimation-1.png)
+    ![Изображение системного монитора](media/ATA-traffic-estimation-1.png)
 
-2.  Expand **Data Collector Sets**.
+2.  Разверните узел **Группы сборщиков данных**.
 
-    ![Data collector sets image](media/ATA-traffic-estimation-2.png)
+    ![Изображение узла "Группы сборщиков данных"](media/ATA-traffic-estimation-2.png)
 
-3.  Right click **User Defined** and select **New** &gt; **Data Collector Set**.
+3.  Щелкните правой кнопкой мыши узел **Определяется пользователем** и последовательно выберите **Создать** &gt; **Группа сборщиков данных**.
 
-    ![New data collector set image](media/ATA-traffic-estimation-3.png)
+    ![Изображение окна создания группы сборщиков данных](media/ATA-traffic-estimation-3.png)
 
-4.  Enter a name for the collector set and select **Create Manually (Advanced)**.
+4.  Введите имя группы сборщиков данных и установите переключатель **Создать вручную (для опытных)**.
 
-5.  Under **What type of data do you want to include?**, select  **Create data logs and Performance counter**.
+5.  В разделе **Какой тип данных вы хотите использовать?** выберите **Создать журналы данных и Счетчик производительности**.
 
-    ![Type of data for new data collector set image](media/ATA-traffic-estimation-5.png)
+    ![Изображение окна выбора типа данных для новой группы сборщиков данных](media/ATA-traffic-estimation-5.png)
 
-6.  Under **Which performance counters would you like to log** click **Add**.
+6.  В разделе **Какие счетчики производительности следует записывать в журнал?** нажмите кнопку **Добавить**.
 
-7.  Expand **Network Adapter** and select **Packets/sec** and select the proper instance. If you are not sure, you can select **&lt;All instances&gt;** and click **Add** and **OK**.
+7.  Разверните узел **Сетевой адаптер**, выберите пункт **Пакетов/с** и выберите подходящий экземпляр. Если вы не уверены, выберите значение **&lt;Все экземпляры&gt;** и нажмите кнопку **Добавить**, а затем — **ОК**.
 
     > [!NOTE]
-    > To do this, in a command line, run `ipconfig /all` to see the name of the adapter and configuration.
+    > Чтобы увидеть имя адаптера и сведения о конфигурации, выполните в командной строке команду `ipconfig /all`.
 
-    ![Add performance counters image](media/ATA-traffic-estimation-7.png)
+    ![Изображение окна добавления счетчиков производительности](media/ATA-traffic-estimation-7.png)
 
-8.  Change the **Sample interval** to **1 second**.
+8.  Установите для параметра **Интервал выборки** значение **1 секунда**.
 
-9. Set the location where you want the data to be saved.
+9. Задайте папку для хранения данных.
 
-10. Under **Create the data collector set**  select **Start this data collector set now** and click **Finish**.
+10. В разделе **Создать группу сборщиков данных** выберите **Запустить группу сборщиков данных сейчас** и нажмите кнопку **Готово**.
 
-    You should now see the data collector set you just created with a green triangle indicating that it is working.
+    После этого отобразится созданная группа сборщиков данных с зеленым треугольником, который указывает на то, что она активна.
 
-11. After 24 hours, stop the data collector set, by right clicking the data collector set and selecting **Stop**.
+11. Через 24 часа остановите группу сборщиков данных, щелкнув ее правой кнопкой мыши и выбрав пункт **Остановить**.
 
-    ![Stop data collector set image](media/ATA-traffic-estimation-12.png)
+    ![Изображения остановки группы сборщиков данных](media/ATA-traffic-estimation-12.png)
 
-12. In File Explorer, browse to the folder where the .blg file was saved and double click it to open it in Performance Monitor.
+12. В проводнике перейдите к папке, в которой сохранен BLG-файл, и дважды щелкните его, чтобы открыть в системном мониторе.
 
-13. Select the Packets/sec counter, and record the average and maximum values.
+13. Выберите счетчик пакетов в секунду и запишите приведенные в нем среднее и максимальные значения.
 
-    ![Packets per second counter image](media/ATA-traffic-estimation-14.png)
+    ![Изображения счетчика пакетов в секунду](media/ATA-traffic-estimation-14.png)
 
-## See Also
-- [ATA prerequisites](ata-prerequisites.md)
-- [ATA architecture](ata-architecture.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Предварительные требования ATA](ata-prerequisites.md)
+- [Архитектура ATA](ata-architecture.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

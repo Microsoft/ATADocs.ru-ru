@@ -1,48 +1,43 @@
 ---
-# required metadata
-
-title: Export and Import Advanced Threat Analytics Configuration | Microsoft Docs
-description: How to export and import the ATA configuration.
-keywords:
+title: "Экспорт и импорт конфигурации Advanced Threat Analytics | Документация Майкрософт"
+description: "Как выполнять экспорт и импорт конфигурации ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 6/13/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: a04378838fab20c43df159ef3259530b8a599ed4
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Export and Import the ATA Configuration
-The configuration of ATA is stored in the "SystemProfile" collection in the database.
-This collection is backed up every hour by the ATA Center service to files called: "SystemProfile_*timestamp*.json". The most recent 10 versions are stored.
-This is located in a subfolder called "Backup". In the default ATA installed location it can be found here:  *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
 
-**Note**: It is recommended that you back up this file somewhere when making major changes to ATA.
+# Экспорт и импорт конфигурации ATA
+<a id="export-and-import-the-ata-configuration" class="xliff"></a>
+Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
+Служба центра АТА каждый час выполняет резервное копирование этой коллекции в файлы, которые называются SystemProfile_*timestamp*.json. Сохраняются последние 10 файлов.
+Они расположены в подпапке с именем Backup (Резервная копия). По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
 
-It is possible to restore all the settings by running the following command:
+**Примечание**. Рекомендуем создавать резервную копию этого файла, когда в ATA вносятся важные изменения.
+
+Можно восстановить все параметры, выполнив следующую команду:
 
 `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
-## See Also
-- [ATA architecture](ata-architecture.md)
-- [ATA prerequisites](ata-prerequisites.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Архитектура ATA](ata-architecture.md)
+- [Предварительные требования ATA](ata-prerequisites.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

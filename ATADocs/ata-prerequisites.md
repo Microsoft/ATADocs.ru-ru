@@ -1,306 +1,307 @@
 ---
-# required metadata
-
-title: Advanced Threat Analytics prerequisites | Microsoft Docs
-description: Describes the requirements for a successful deployment of ATA in your environment
-keywords:
+title: "Предварительные требования для Advanced Threat Analytics | Документация Майкрософт"
+description: "Описывает требования для успешного развертывания ATA в среде."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 7/2/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: b810d066c59ea4663157027894eb7e2a39f7ff14
+ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/05/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# ATA Prerequisites
-This article describes the requirements for a successful deployment of ATA in your environment.
+
+# Предварительные требования для ATA
+<a id="ata-prerequisites" class="xliff"></a>
+В этой статье описываются требования для успешного развертывания ATA в среде.
 
 >[!NOTE]
-> For information on how to plan resources and capacity, see [ATA capacity planning](ata-capacity-planning.md).
+> Дополнительные сведения о планировании ресурсов и производительности см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
 
-ATA is comprised of the ATA Center, the ATA Gateway and/or the ATA Lightweight Gateway. For more information about the ATA components, see [ATA architecture](ata-architecture.md).
+ATA состоит из центра ATA, шлюза ATA и/или упрощенного шлюза ATA. Дополнительные сведения о компонентах ATA см. в статье [Архитектура ATA](ata-architecture.md).
 
-The ATA System works on active directory forest boundary and supports Forest Functional Level (FFL) of Windows 2003 and above.
-
-
-[Before you start](#before-you-start): This section lists information you should gather and accounts and network entities you should have before starting ATA installation.
-
-[ATA Center](#ata-center-requirements): This section lists ATA Center hardware, software requirements as well as settings  you need to configure on your ATA Center server.
-
-[ATA Gateway](#ata-gateway-requirements): This section lists ATA Gateway hardware, software requirements as well as settings  you need to configure on your ATA Gateway servers.
-
-[ATA Lightweight Gateway](#ata-lightweight-gateway-requirements): This section lists ATA Lightweight Gateway hardware, and software requirements.
-
-[ATA Console](#ata-console): This section lists browser requirements for running the ATA Console.
-
-![ATA architecture diagram](media/ATA-architecture-topology.jpg)
-
-## Before you start
-This section lists information you should gather and accounts and network entities you should have before starting ATA installation.
+Система ATA работает на границы леса Active Directory и поддерживает режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
 
--   User account and password with read access to all objects in the domains that will be monitored.
+[Перед началом работы](#before-you-start). В этом разделе перечислены сведения, которые необходимо собрать, а также учетные записи и сетевые объекты, которые должны быть созданы перед установкой ATA.
+
+[Центр ATA](#ata-center-requirements). В этом разделе перечислены требования центра ATA к оборудованию и программному обеспечению, а также параметры, которые необходимо настроить на сервере центра ATA.
+
+[Шлюз ATA](#ata-gateway-requirements). В этом разделе перечислены требования шлюза ATA к оборудованию и программному обеспечению, а также параметры, которые необходимо настроить на серверах шлюзов ATA.
+
+[Упрощенный шлюз ATA](#ata-lightweight-gateway-requirements). В этом разделе перечислены требования к оборудованию и программному обеспечению для упрощенного шлюза ATA.
+
+[Консоль ATA](#ata-console). В этом разделе перечислены требования к браузеру для запуска консоли ATA.
+
+![Схема архитектуры ATA](media/ATA-architecture-topology.jpg)
+
+## Перед началом работы
+<a id="before-you-start" class="xliff"></a>
+В этом разделе перечислены сведения, которые необходимо собрать, а также учетные записи и сетевые объекты, которые должны быть созданы перед установкой ATA.
+
+
+-   Учетная запись пользователя и пароль с доступом для чтения всех объектов в доменах, которые будут отслеживаться.
 
     > [!NOTE]
-    > If you have set custom ACLs on various Organizational Units (OU) in your domain, make sure that the selected user has read permissions to those OUs.
+    > Если для различных подразделений в домене были установлены настраиваемые списки управления доступом, убедитесь, что у выбранного пользователя есть разрешение на чтение данных подразделений.
 
--   Make sure that Message Analyzer and WireShark are not installed on the ATA Gateway.
--    Recommended: User should have read only permissions on the Deleted Objects container. This will allow ATA to detect bulk deletion of objects in the domain. For information about configuring read only permissions on the Deleted Objects container, see the **Changing permissions on a deleted object container** section in the [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) topic.
+-   Не устанавливайте анализатор сообщений Майкрософт в шлюзе ATA или упрощенном шлюзе. Драйвер анализатора сообщений конфликтует с драйверами шлюза ATA и упрощенного шлюза. При выполнении Wireshark в шлюзе ATA необходимо перезапустить службу шлюза Microsoft Advanced Threat Analytics после остановки записи Wireshark. В противном случае шлюз перестанет собирать трафик. Обратите внимание на то, что выполнение Wireshark в упрощенном шлюзе ATA не мешает его работе.
 
--   Optional: A user account of a user who has no network activities. This account will be configured as the ATA Honeytoken user. To configure the Honeytoken user you will need the SID of the user account, not the username. For more information see [Working with ATA Detection Settings](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings) topic.
+-    Рекомендуется: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Это позволит ATA обнаруживать массовое удаление объектов в домене. Дополнительные сведения о настройке разрешений только на чтение в контейнере удаленных объектов см. в разделе **Изменение разрешений на доступ для контейнера удаленных объектов** статьи [Просмотр или установка разрешений на доступ к объекту каталога](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx).
 
--   Optional: In addition to collecting and analyzing network traffic to and from the domain controllers, ATA can use Windows event 4776 to further enhance ATA Pass-the-Hash detection. This can be received from your SIEM or by  setting Windows Event Forwarding from your domain controller. Events collected provide ATA with additional information that is not available via the domain controller network traffic.
+-   Необязательно: учетная запись пользователя, не совершавшего операции в сети. Эта учетная запись будет настроена как пользователь Honeytoken ATA. Для настройки пользователя Honeytoken потребуется идентификатор безопасности учетной записи пользователя, а не имя пользователя. Дополнительные сведения см. в статье [Работа с параметрами обнаружения ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings).
 
-
-## ATA Center requirements
-This section lists the requirements for the ATA Center.
-### General
-The ATA Center supports installation on a server running Windows Server 2012 R2 or Windows Server 2016. 
-The ATA Center can be installed on a server that is a member of a domain or workgroup.
-
-Before installing ATA Center running Windows 2012 R2, confirm that the following update has been installed: [KB2919355](https://support.microsoft.com/kb/2919355/).
-
-You can check by running the following Windows PowerShell cmdlet: `[Get-HotFix -Id kb2919355]`.
-
-Installation of the ATA Center as a virtual machine is supported. 
-
->[!NOTE] 
-> When running as a virtual machine dynamic memory or any other memory ballooning feature is not supported.
-
-If you run the ATA Center as a virtual machine, shut down the server before creating a new checkpoint to avoid potential database corruption.
-### Server specifications
-When working on a physical server, the ATA database necessitates that you **disable** Non-uniform memory access (NUMA) in the BIOS. Your system may refer to NUMA as Node Interleaving, in which case you will have to **enable** Node Interleaving in order to disable NUMA. See your BIOS documentation for more information. Note that this is not relevant when the ATA Center is running on a virtual server.<br>
-For optimal performance, set the **Power Option** of the ATA Center to **High Performance**.<br>
-The number of domain controllers you are monitoring and the load on each of the domain controllers dictates the server specifications needed see [ATA capacity planning](ata-capacity-planning.md) for more details.
+-   Необязательно. Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, ATA может использовать события Windows 4776, 4732, 4733, 4728, 4729, 4756 и 4757 для улучшенного обнаружения атак типа Pass-the-Hash, атак методом подбора, изменений привилегированных групп и атак типа honeytoken. Эти события можно получать из системы SIEM или путем настройки пересылки событий Windows с контроллера домена. Собранные события предоставляют ATA дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
 
 
-### Time synchronization
-The ATA Center server, the ATA Gateway servers and the domain controllers must have time synchronized to within 5 minutes of each other.
+## Требования для центра ATA
+<a id="ata-center-requirements" class="xliff"></a>
+В этом разделе перечислены требования для центра ATA.
+### Общие
+<a id="general" class="xliff"></a>
+Центр ATA поддерживает установку на сервере под управлением Windows Server 2012 R2 или Windows Server 2016. Центр ATA можно установить на сервер, который входит в домен или рабочую группу.
 
+Перед установкой центра ATA с Windows Server 2012 R2 убедитесь, что установлено обновление [KB2919355](https://support.microsoft.com/kb/2919355/).
 
-### Network adapters
-You should have the following:
--   At least one network adapter (if using physical server in VLAN environment, it is recommended to use two network adapters)
+Проверку можно выполнить, запустив следующий командлет Windows PowerShell: `[Get-HotFix -Id kb2919355]`.
 
--   Two IP addresses (recommended but not required)
-
-Communication between the ATA Center and the ATA Gateway is encrypted using SSL on port 443. Additionally, the ATA Console is also using SSL on port 443. **Two IP addresses** are recommended. The ATA Center service will bind port 443 to the first IP address and ATA Console will bind port 443 to the second IP address.
-
-> [!NOTE]
-> A single IP address with two different ports can be used, but two IP addresses are recommended.
-
-### Ports
-The following table lists the minimum ports that have to be opened for the ATA Center to work properly.
-
-In this table, IP address 1 is bound to the ATA Center service and IP address 2 is bound to the ATA Console:
-
-|Protocol|Transport|Port|To/From|Direction|IP Address|
-|------------|-------------|--------|-----------|-------------|--------------|
-|**SSL** (ATA Communications)|TCP|443, or configurable|ATA Gateway|Inbound|IP address 1|
-|**HTTP**|TCP|80|Company Network|Inbound|IP address 2|
-|**HTTPS**|TCP|443|Company Network and ATA Gateway|Inbound|IP address 2|
-|**SMTP** (optional)|TCP|25|SMTP Server|Outbound|IP address 2|
-|**SMTPS** (optional)|TCP|465|SMTP Server|Outbound|IP address 2|
-|**Syslog** (optional)|TCP|514|Syslog server|Outbound|IP address 2|
-
-### Certificates
-Make sure the ATA Center has access to your CRL distribution point. If the ATA Gateways don't have Internet access, follow [the procedure to manually import a CRL](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), taking care to install the all the CRL distribution points for the whole chain.
-
-To ease the installation of ATA, you can install self-signed certificates during installation. Post deployment you can replace the self-signed with a certificate from an internal Certification Authority to be used by the ATA Gateway.<br>
-> [!NOTE]
-> The certificate's Provider Type must be Cryptographic Service Provider (CSP).
-
-
-> Using of automatic certificate renewal is not supported.
-
-
-> [!NOTE]
-> If you are going to access the ATA Console from other computers, ensure that those computers trust the certificate being used by ATA Center otherwise you will get a warning page that there is a problem with the website's security certificate before getting to the log in page.
-
-## ATA Gateway requirements
-This section lists the requirements for the ATA Gateway.
-### General
-The ATA Gateway supports installation on a server running Windows Server 2012 R2 or Windows Server 2016 (Include server core).
-The ATA Gateway can be installed on a server that is a member of a domain or workgroup.
-The ATA Gateway can be used to monitor Domain Controllers with Domain Functional Level of Windows 2003 and above.
-
-Before installing ATA Gateway running Windows 2012 R2, confirm that the following update has been installed: [KB2919355](https://support.microsoft.com/kb/2919355/).
-
-You can check by running the following Windows PowerShell cmdlet: `[Get-HotFix -Id kb2919355]`.
-
-
-For information on using virtual machines with the ATA Gateway, see [Configure port mirroring](configure-port-mirroring.md).
-
-> [!NOTE]
-> A minimum of 5 GB of space is required and 10 GB is recommended. This includes space needed for the ATA binaries, [ATA logs](troubleshooting-ata-using-logs.md) and [performance logs](troubleshooting-ata-using-perf-counters.md).
-
-### Server specifications
-For optimal performance, set the **Power Option** of the ATA Gateway to **High Performance**.<br>
-An ATA Gateway can support monitoring multiple domain controllers, depending on the amount of network traffic to and from the domain controllers.
+Поддерживается установка Центра ATA в качестве виртуальной машины. 
 
 >[!NOTE] 
-> When running as a virtual machine dynamic memory or any other memory ballooning feature is not supported.
+> При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
 
-For more information about the ATA Gateway hardware requirements see [ATA capacity planning](ata-capacity-planning.md).
+При запуске Центра ATA в качестве виртуальной машины следует завершить работу сервера перед созданием новой контрольной точки, чтобы избежать возможного повреждения базы данных.
+### Спецификации сервера
+<a id="server-specifications" class="xliff"></a>
+При работе с физическим сервером для базы данных ATA необходимо **отключить** доступ к неоднородной памяти (NUMA) в BIOS. Система может ссылаться на NUMA как на чередование узла. В таком случае необходимо будет **включить** чередование узла, чтобы отключить NUMA. Дополнительные сведения см. в документации по BIOS. Обратите внимание на то, что это не имеет значение, если на виртуальном сервере запущен центр ATA.<br>
+Для обеспечения оптимальной производительности задайте для **параметра электропитания** центра ATA значение **высокой производительности**.<br>
+Требования к спецификациям сервера зависят от количества отслеживаемых контроллеров домена и нагрузки на каждый из них. Дополнительные сведения см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
-### Time synchronization
-The ATA Center server, the ATA Gateway servers and the domain controllers must have time synchronized to within 5 minutes of each other.
 
-### Network adapters
-The ATA Gateway requires at least one Management adapter and at least one Capture adapter:
+### Синхронизация времени
+<a id="time-synchronization" class="xliff"></a>
+Время сервера центра ATA, серверов шлюзов ATA и контроллеров домена должно быть синхронизировано в пределах 5 минут.
 
--   **Management adapter** - will be used for communications on your corporate network. This adapter should be configured with the following:
 
-    -   Static IP address including default gateway
+### Сетевые адаптеры
+<a id="network-adapters" class="xliff"></a>
+Необходимо иметь следующее:
+-   по крайней мере один сетевой адаптер (при использовании физического сервера в среде виртуальной локальной сети рекомендуется использовать два сетевых адаптера);
 
-    -   Preferred and alternate DNS servers
+-   два IP-адреса (рекомендуется, но не является обязательным).
 
-    -   The **DNS suffix for this connection** should be the DNS name of the domain for each domain being monitored.
+Обмен данными между Центром ATA и шлюзом ATA шифруется с использованием SSL через порт 443. Консоль ATA также использует SSL через порт 443. Рекомендуется использовать **два IP-адреса**. Служба центра ATA привяжет порт 443 к первому IP-адресу, а консоль ATA привяжет порт 443 ко второму IP-адресу.
 
-        ![Configure DNS suffix in advanced TCP/IP settings](media/ATA-DNS-Suffix.png)
+> [!NOTE]
+> Можно использовать один IP-адрес с двумя различными портами, однако рекомендуется использовать два IP-адреса.
+
+### Порты
+<a id="ports" class="xliff"></a>
+В следующей таблице перечислены порты, которые обязательно должны быть открыты для надлежащей работы Центра ATA.
+
+|Протокол|Транспорт|Port|В/Из|Direction|
+|------------|-------------|--------|-----------|-------------|
+|**SSL** (ATA Communications)|TCP|443 или настраиваемый|Шлюз ATA|Входящие|
+|**HTTP** (необязательно)|TCP|80|Сеть организации|Входящие|
+|**HTTPS**|TCP|443|Сеть организации и шлюз ATA|Входящие|
+|**SMTP** (необязательно)|TCP|25|SMTP-сервер|Исходящее|
+|**SMTPS** (необязательно)|TCP|465|SMTP-сервер|Исходящее|
+|**Syslog** (необязательно)|TCP|514|Сервер Syslog|Исходящее|
+|**LDAP**|TCP и UDP|389|Контроллеры домена|Исходящее|
+|**LDAPS** (необязательно)|TCP|636|Контроллеры домена|Исходящее|
+|**DNS**|TCP и UDP|53|DNS-серверы|Исходящее|
+|**Kerberos** (необязательно при присоединении к домену)|TCP и UDP|88|Контроллеры домена|Исходящее|
+|**Netlogon** (необязательно при присоединении к домену)|TCP и UDP|445|Контроллеры домена|Исходящее|
+|**Служба времени Windows** (необязательно при присоединении к домену)|UDP|123|Контроллеры домена|Исходящее|
+
+### Сертификаты
+<a id="certificates" class="xliff"></a>
+Убедитесь, что у центра ATA есть доступ к точке распространения списков отзыва сертификатов. Если у шлюзов ATA нет доступа к Интернету, выполните [процедуру импорта списка отзыва сертификатов вручную](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), при этом не забудьте установить все точки распространения списков отзыва сертификатов для всей цепочки.
+
+Установка ATA будет более простой, если в ходе ее выполнения установить самозаверяющие сертификаты. После развертывания самозаверяющий сертификат можно заменить на сертификат из внутреннего центра сертификации, который будет использоваться шлюзом ATA.<br>
+> [!NOTE]
+> В качестве поставщика сертификатов можно использовать поставщик служб шифрования (CSP) или поставщик хранилища ключей (KSP).
+
+
+> Использование автоматического продления для сертификата не поддерживается.
+
+
+> [!NOTE]
+> Если требуется получить доступ к консоли ATA с других компьютеров, убедитесь, что эти компьютеры доверяют сертификату, используемому центром ATA. В противном случае перед переходом на страницу входа отобразится страница с предупреждением о том, что возникла проблема с сертификатом безопасности веб-сайта.
+
+## Требования к шлюзу ATA
+<a id="ata-gateway-requirements" class="xliff"></a>
+В этом разделе перечислены требования для шлюза ATA.
+### Общие
+<a id="general" class="xliff"></a>
+Центр ATA поддерживает установку на сервере под управлением Windows Server 2012 R2 или Windows Server 2016 (в том числе Core).
+Шлюз ATA можно установить на сервер, который входит в домен или рабочую группу.
+Шлюз ATA можно использовать для отслеживания контроллеров домена с режимом работы домена Windows 2003 и более поздних версий.
+
+Перед установкой шлюза ATA с Windows Server 2012 R2 убедитесь, что установлено обновление [KB2919355](https://support.microsoft.com/kb/2919355/).
+
+Проверку можно выполнить, запустив следующий командлет Windows PowerShell: `[Get-HotFix -Id kb2919355]`.
+
+
+Сведения об использовании виртуальных машин со шлюзом ATA см. в статье [Настройка зеркального отображения портов](configure-port-mirroring.md).
+
+> [!NOTE]
+> Требуется не менее 5 ГБ пространства; рекомендуется 10 ГБ. Сюда входит пространство, необходимое для двоичных файлов ATA, [журналов ATA](troubleshooting-ata-using-logs.md) и [журналов производительности](troubleshooting-ata-using-perf-counters.md).
+
+### Спецификации сервера
+<a id="server-specifications" class="xliff"></a>
+Для обеспечения оптимальной производительности установите **Параметр электропитания** шлюза ATA на **Высокую производительность**.<br>
+В зависимости от объема входящего и исходящего сетевого трафика контроллеров домена, шлюз ATA поддерживает мониторинг нескольких контроллеров домена.
+
+>[!NOTE] 
+> При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
+
+Дополнительные сведения о требованиях к оборудованию см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
+
+### Синхронизация времени
+<a id="time-synchronization" class="xliff"></a>
+Время сервера центра ATA, серверов шлюзов ATA и контроллеров домена должно быть синхронизировано в пределах 5 минут.
+
+### Сетевые адаптеры
+<a id="network-adapters" class="xliff"></a>
+Для шлюза ATA требуется по крайней мере один адаптер управления и по крайней мере один адаптер записи.
+
+-   **Адаптер управления** — будет использоваться для связи в корпоративной сети. При настройке этого адаптера следует настроить следующие параметры:
+
+    -   статический IP-адрес, включая шлюз по умолчанию;
+
+    -   предпочитаемый и альтернативный DNS-серверы.
+
+    -   **DNS-суффикс этого подключения** должен быть DNS-именем домена для каждого отслеживаемого домена.
+
+        ![Настройка DNS-суффикса в дополнительных параметрах TCP/IP](media/ATA-DNS-Suffix.png)
 
         > [!NOTE]
-        > If the ATA Gateway is a member of the domain, this may be configured automatically.
+        > Если шлюз ATA входит в состав домена, эту настройку можно выполнять автоматически.
 
--   **Capture adapter** - will be used to capture traffic to and from the domain controllers.
+-   **Адаптер записи** — будет использоваться для записи входящего и исходящего трафика контроллеров домена.
 
     > [!IMPORTANT]
-    > -   Configure port mirroring for the capture adapter as the destination of the domain controller network traffic. See [Configure port mirroring](configure-port-mirroring.md) for additional information. Typically, you will need to work with the networking or virtualization team to configure port mirroring.
-    > -   Configure a static non-routable IP address for your environment with no default gateway and no DNS server addresses. For example, 1.1.1.1/32. This will ensure that the capture network adapter can capture the maximum amount of traffic and that the management network adapter is used to send and receive the required network traffic.
+    > -   Следует настроить зеркальное отображение портов адаптера записи в качестве целевого размещения сетевого трафика контроллера домена. Дополнительные сведения см. в статье [Настройка зеркального отображения портов](configure-port-mirroring.md). Как правило, чтобы настроить зеркальное отображение портов, вам понадобится привлечь специалистов по обслуживанию сети или группу виртуализации.
+    > -   Для конкретной среды следует настроить статический немаршрутизируемый IP-адрес без адресов DNS-сервера и шлюза по умолчанию. Например, 1.1.1.1/32. Это позволит гарантировать, что сетевой адаптер записи может записать максимальное количество трафика, а также что сетевой адаптер управления используется для отправки и получения требуемого сетевого трафика.
 
-### Ports
-The following table lists the minimum ports that the ATA Gateway requires configured on the management adapter:
+### Порты
+<a id="ports" class="xliff"></a>
+В следующей таблице перечислены порты, которые необходимо настроить на адаптере управления для работы шлюза ATA.
 
-|Protocol|Transport|Port|To/From|Direction|
+|Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
-|LDAP|TCP and UDP|389|Domain controllers|Outbound|
-|Secure LDAP (LDAPS)|TCP|636|Domain controllers|Outbound|
-|LDAP to Global Catalog|TCP|3268|Domain controllers|Outbound|
-|LDAPS to Global Catalog|TCP|3269|Domain controllers|Outbound|
-|Kerberos|TCP and UDP|88|Domain controllers|Outbound|
-|Netlogon|TCP and UDP|445|Domain controllers|Outbound|
-|Windows Time|UDP|123|Domain controllers|Outbound|
-|DNS|TCP and UDP|53|DNS Servers|Outbound|
-|NTLM over RPC|TCP|135|All devices on the network|Outbound|
-|NetBIOS|UDP|137|All devices on the network|Outbound|
-|SSL|TCP|443 or as configured for the Center Service|ATA Center:<br /><br />-   Center Service IP Address<br />-   Console IP Address|Outbound|
-|Syslog (optional)|UDP|514|SIEM Server|Inbound|
+|LDAP|TCP и UDP|389|Контроллеры домена|Исходящее|
+|Защищенный LDAP (LDAPS)|TCP|636|Контроллеры домена|Исходящее|
+|LDAP для глобального каталога|TCP|3268|Контроллеры домена|Исходящее|
+|LDAPS для глобального каталога|TCP|3269|Контроллеры домена|Исходящее|
+|Kerberos|TCP и UDP|88|Контроллеры домена|Исходящее|
+|Netlogon|TCP и UDP|445|Контроллеры домена|Исходящее|
+|Служба времени Windows|UDP|123|Контроллеры домена|Исходящее|
+|DNS|TCP и UDP|53|DNS-серверы|Исходящее|
+|HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
+|NetBIOS|UDP|137|Все устройства в сети|Исходящее|
+|SSL|TCP|443 или настроенный для службы центра|Центр АТА:<br /><br />— IP-адрес службы центра<br />— IP-адрес консоли ATA|Исходящее|
+|Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
 > [!NOTE]
-> As part of the resolution process done by the ATA Gateway, the following ports need to be open inbound on devices on the network from the ATA Gateways.
+> В рамках процесса разрешения, выполняемого шлюзом ATA, следующие порты должны быть открыты для входящего трафика на устройствах в сети из шлюзов ATA.
 >
-> -   NTLM over RPC (TCP Port 135)
-> -   NetBIOS (UDP port 137)
+> -   NTLM через RPC (TCP-порт 135)
+> -   NetBIOS (UDP-порт 137)
 
-### Certificates
-Make sure the ATA Center has access to your CRL distribution point. If the ATA Gateways do not have Internet access, follow the procedure to manually import a CRL, taking care to install the all the CRL distribution points for the whole chain.<br>
-To ease installation of the ATA, you can install self-signed certificates during installation. Post deployment you can replace the self-signed with a certificate from an internal Certification Authority to be used by the ATA Gateway.
+## Требования к упрощенному шлюзу ATA
+<a id="ata-lightweight-gateway-requirements" class="xliff"></a>
+В этом разделе перечислены требования к упрощенному шлюзу ATA.
+### Общие
+<a id="general" class="xliff"></a>
+Упрощенный шлюз ATA поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2 или Windows Server 2016 (в том числе основные компоненты, но не Nano).
 
-> [!NOTE]
-> The certificate's Provider Type must be Cryptographic Service Provider (CSP).<br>
+Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 
-A certificate supporting **Server Authentication** is required to be installed in the Computer store of the ATA Gateway in the Local Computer store. This certificate must be trusted by the ATA Center.
+Перед установкой упрощенного шлюза ATA на контроллере домена под управлением Windows Server 2012 R2 убедитесь, что установлено следующее обновление: [KB2919355](https://support.microsoft.com/kb/2919355/).
 
-## ATA Lightweight Gateway requirements
-This section lists the requirements for the ATA Lightweight Gateway.
-### General
-The ATA Lightweight Gateway supports installation on a domain controller running Windows Server 2008 R2 SP1 (not including Server Core), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (including Core but not Nano).
+Проверку можно выполнить, запустив следующий командлет Windows PowerShell: `[Get-HotFix -Id kb2919355]`
 
-The domain controller can be a read only domain controller (RODC).
+Если установка выполняется на контроллере домена под управлением Windows Server 2012 R2 в режиме основных серверных компонентов, дополнительно следует установить обновление [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1%2c-windows-8.1%2c-and-windows-server-2012-r2).
 
-Before installing ATA Lightweight Gateway on a domain controller running Windows Server 2012 R2,
- confirm that the following update has been installed: [KB2919355](https://support.microsoft.com/kb/2919355/).
-
-You can check by running the following Windows PowerShell cmdlet: `[Get-HotFix -Id kb2919355]`
-
-If the installation is for Windows server 2012 R2 Server Core, the following update should also be installed:
- [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1%2c-windows-8.1%2c-and-windows-server-2012-r2).
-
- You can check by running the following Windows PowerShell cmdlet: `[Get-HotFix -Id kb3000850]`
+ Проверку можно выполнить, запустив следующий командлет Windows PowerShell: `[Get-HotFix -Id kb3000850]`
 
 
-During installation, the .Net Framework 4.6.1 is installed and might cause a reboot of the domain controller.
+Во время установки устанавливается платформа .NET Framework 4.6.1, что может приводить к перезагрузке контроллера домена.
 
 
 > [!NOTE]
-> A minimum of 5 GB of space is required and 10 GB is recommended. This includes space needed for the ATA binaries, [ATA logs](troubleshooting-ata-using-logs.md) and [performance logs](troubleshooting-ata-using-perf-counters.md).
+> Требуется не менее 5 ГБ пространства; рекомендуется 10 ГБ. Сюда входит пространство, необходимое для двоичных файлов ATA, [журналов ATA](troubleshooting-ata-using-logs.md) и [журналов производительности](troubleshooting-ata-using-perf-counters.md).
 
-### Server specifications
+### Спецификации сервера
+<a id="server-specifications" class="xliff"></a>
 
-The ATA Lightweight Gateway requires a minimum of 2 cores and 6 GB of RAM installed on the domain controller.
-For optimal performance, set the **Power Option** of the ATA Lightweight Gateway to **High Performance**.
-The ATA Lightweight Gateway can be deployed on domain controllers of various loads and sizes, depending on the amount of network traffic to and from the domain controllers and the amount of resources installed on that domain controller.
+Для упрощенного шлюза ATA на контроллере домена должно быть как минимум 2 ядра и 6 ГБ ОЗУ.
+Для обеспечения оптимальной производительности задайте для **параметра электропитания** упрощенного шлюза ATA значение **высокой производительности**.
+Упрощенный шлюз ATA можно развернуть на контроллерах домена с различной нагрузкой и различных размеров в зависимости от объема входящего и исходящего трафика и ресурсов, установленных на контролере домена.
 
 >[!NOTE] 
-> When running as a virtual machine dynamic memory or any other memory ballooning feature is not supported.
+> При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
 
-For more information about the ATA Lightweight Gateway hardware requirements see [ATA capacity planning](ata-capacity-planning.md).
+Дополнительные сведения о требованиях упрощенного шлюза ATA к оборудованию см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
-### Time synchronization
-The ATA Center server, the ATA Lightweight Gateway servers and the domain controllers must have time synchronized to within 5 minutes of each other.
-### Network adapters
-The ATA Lightweight Gateway monitors the local traffic on all of the domain controller's network adapters. <br>
-After deployment, you can use the ATA Console if you ever want to modify which network adapters are monitored.
+### Синхронизация времени
+<a id="time-synchronization" class="xliff"></a>
+Время сервера центра ATA, серверов упрощенных шлюзов ATA и контроллеров домена должно быть синхронизировано в пределах 5 минут.
+### Сетевые адаптеры
+<a id="network-adapters" class="xliff"></a>
+Упрощенный шлюз ATA отслеживает локальный трафик всех сетевых адаптеров контроллера домена. <br>
+После развертывания можно использовать консоль ATA, чтобы изменить параметры отслеживания сетевых адаптеров.
 
-### Ports
-The following table lists the minimum ports that the ATA Lightweight Gateway requires:
+### Порты
+<a id="ports" class="xliff"></a>
+В следующей таблице перечислены порты, необходимые для работы упрощенного шлюза ATA.
 
-|Protocol|Transport|Port|To/From|Direction|
+|Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
-|DNS|TCP and UDP|53|DNS Servers|Outbound|
-|NTLM over RPC|TCP|135|All devices on the network|Outbound|
-|NetBIOS|UDP|137|All devices on the network|Outbound|
-|SSL|TCP|443 or as configured for the Center Service|ATA Center:<br /><br />-   Center Service IP Address<br />-   Console IP Address|Outbound|
-|Syslog (optional)|UDP|514|SIEM Server|Inbound|
+|DNS|TCP и UDP|53|DNS-серверы|Исходящее|
+|HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
+|NetBIOS|UDP|137|Все устройства в сети|Исходящее|
+|SSL|TCP|443 или настроенный для службы центра|Центр АТА:<br /><br />— IP-адрес службы центра<br />— IP-адрес консоли ATA|Исходящее|
+|Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
 > [!NOTE]
-> As part of the resolution process performed by the ATA Lightweight Gateway, the following ports need to be open inbound on devices on the network from the ATA Lightweight Gateways.
+> В рамках процесса разрешения, выполняемого упрощенным шлюзом ATA, следующие порты должны быть открыты для входящего трафика на устройствах в сети из упрощенных шлюзов ATA.
 >
-> -   NTLM over RPC
+> -   HTML через RPC
 > -   NetBIOS
 
-### Certificates
-Make sure the ATA Center has access to your CRL distribution point. If the ATA Lightweight Gateways don't have Internet access, follow the procedure to manually import a CRL, taking care to install the all the CRL distribution points for the whole chain.
-To ease installation of ATA, you can install self-signed certificates during installation. Post deployment you can replace the self-signed with a certificate from an internal Certification Authority to be used by the ATA Lightweight Gateway.
-> [!NOTE]
-> The certificate's Provider Type must be Cryptographic Service Provider (CSP).
+## Консоль ATA
+<a id="ata-console" class="xliff"></a>
+Доступ к консоли ATA осуществляется через браузер, который должен соответствовать следующим требованиям:
 
-A certificate supporting Server Authentication is required to be installed in the Computer store of the ATA Lightweight Gateway in the Local Computer store. This certificate must be trusted by the ATA Center.
-
-## ATA Console
-Access to the ATA Console is via a browser, supporting the following:
-
--   Internet Explorer version 10 and above
+-   Internet Explorer версии 10 и более поздних версий;
 
 -   Microsoft Edge
 
--   Google Chrome 40 and above
+-   Google Chrome 40 и более поздних версий;
 
--   Minimum screen width resolution of 1700 pixels
+-   минимальное разрешение экрана —1700 пикселей.
 
-## See Also
+## См. также
+<a id="see-also" class="xliff"></a>
 
-- [ATA architecture](ata-architecture.md)
-- [Install ATA](install-ata-step1.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Архитектура ATA](ata-architecture.md)
+- [Установка ATA](install-ata-step1.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 

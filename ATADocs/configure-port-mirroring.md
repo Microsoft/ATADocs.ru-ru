@@ -1,81 +1,77 @@
 ---
-# required metadata
-
-title: Configure Port Mirroring when deploying Advanced Threat Analytics | Microsoft Docs
-description: Describes port mirroring options and how to configure them for ATA
-keywords:
+title: "Настройка зеркального отображения портов при развертывании Advanced Threat Analytics | Документация Майкрософт"
+description: "Здесь описываются варианты зеркального отображения портов и их настройка для ATA"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/30/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 234c759db2b766b2a4ad9b26ae31a8f6825d957f
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Configure Port Mirroring
+
+# Настройка зеркального отображения портов
+<a id="configure-port-mirroring" class="xliff"></a>
 > [!NOTE] 
-> This article is relevant only if you deploy ATA Gateways instead of ATA Lightweight Gateways. To determine if you need to use ATA Gateways, see [Choosing the right gateways for your deployment](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
+> Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
  
-The main data source used by ATA is deep packet inspection of the network traffic to and from your domain controllers. For ATA to see the network traffic, you must either configure port mirroring, or use a Network TAP.
+Основные сведения, требуемые для работы ATA, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы предоставить решению ATA доступ к сетевому трафику, необходимо настроить зеркальное отображение портов или использовать перехватчик трафика.
 
-For port mirroring, configure **port mirroring** for each domain controller to be monitored, as the **source** of the network traffic. Typically, you will need to work with the networking or virtualization team to configure port mirroring.
-For more information, refer to your vendor's documentation.
+**Зеркальное отображение портов** следует настроить в качестве **средства** получения сетевого трафика для каждого контроллера домена, который необходимо отслеживать. Как правило, чтобы настроить зеркальное отображение портов, вам понадобится привлечь специалистов по обслуживанию сети или группу виртуализации.
+Дополнительные сведения см. в документации поставщика.
 
-Your domain controllers and ATA Gateways can be either physical or virtual. The following are common methods for port mirroring and some considerations. Refer to your switch or virtualization server product documentation for additional information. Your switch manufacturer might use different terminology.
+Контроллеры домена и шлюзы ATA могут быть физическими или виртуальными. Ниже приведены распространенные технологии зеркального отображения портов и некоторые связанные рекомендации. Дополнительные сведения см. в документации по коммутатору или серверу виртуализации. Изготовитель коммутатора может использовать другую терминологию.
 
-**Switched Port Analyzer (SPAN)** – Copies network traffic from one or more switch ports to another switch port on the same switch. Both the ATA Gateway and domain controllers must be connected to the same physical switch.
+**Switched Port Analyzer (SPAN)** — эта технология копирует сетевой трафик из одного или нескольких коммутируемых портов на другой коммутируемый порт на одном коммутаторе. Контроллеры домена и шлюз ATA должны быть подключены к одному физическому коммутатору.
 
-**Remote Switch Port Analyzer (RSPAN)**  – Allows you to monitor network traffic from source ports distributed over multiple physical switches. RSPAN copies the source traffic into a special RSPAN configured VLAN. This VLAN needs to be trunked to the other switches involved. RSPAN works at Layer 2.
+**Remote Switch Port Analyzer (RSPAN)** — эта технология позволяет отслеживать сетевой трафик из исходных портов, распределенных по нескольким физическим коммутаторам. RSPAN копирует исходящий трафик в специальную виртуальную ЛС, настроенную для RSPAN. Необходимо настроить магистральные линии связи между этой виртуальной ЛС и другими вовлеченными коммутаторами. RSPAN работает на уровне 2.
 
-**Encapsulated Remote Switch Port Analyzer (ERSPAN)** – Is a Cisco proprietary technology working at Layer 3. ERSPAN allows you to monitor traffic across switches without the need for VLAN trunks. ERSPAN uses generic routing encapsulation (GRE) to copy monitored network traffic. ATA currently cannot directly receive ERSPAN traffic. For ATA to work with ERSPAN traffic, a switch or router that can decapsulate the traffic needs to be configured as the destination of ERSPAN where the traffic will be decapsulated. The switch or router will then need to be configured to forward it to the ATA Gateway using either SPAN or RSPAN.
+**Encapsulated Remote Switch Port Analyzer (ERSPAN)** — это технология компании Cisco, которая работает на уровне 3. ERSPAN позволяет отслеживать трафик между коммутаторами, при этом магистральные линии связи для виртуальной ЛС не требуются. Для копирования отслеживаемого сетевого трафика эта технология использует общую инкапсуляцию маршрутов (Generic Routing Encapsulation, GRE). В настоящее время трафик ERSPAN не может поступать непосредственно в ATA. Чтобы направить трафик ERSPAN в решение ATA, необходимо настроить коммутатор или маршрутизатор, который может декапсулировать исходящий трафик, в качестве пункта назначения для ERSPAN, где и будет выполнена декапсуляция. Затем для коммутатора или маршрутизатора необходимо настроить переадресацию трафика в шлюз ATA с помощью SPAN или RSPAN.
 
 > [!NOTE]
-> If the domain controller being port mirrored is connected over a WAN link, make sure the WAN link can handle the additional load of the ERSPAN traffic.
-> ATA only supports traffic monitoring when the traffic reaches the NIC and the domain controller in the same manner. ATA does not support traffic monitoring when the traffic is broken out to different ports.
+> Если контроллер домена с зеркальным отображением портов подключен через глобальную сеть, убедитесь, что эта сеть может обрабатывать дополнительную нагрузку в виде трафика ERSPAN.
+> ATA поддерживает мониторинг трафика только тогда, когда трафик достигает сетевой карты и контроллера домена одним и тем же образом. ATA не поддерживает мониторинг трафика, когда трафик разбивается на различные порты.
 
-## Supported port mirroring options
+## Поддерживаемые варианты зеркального отображения портов
+<a id="supported-port-mirroring-options" class="xliff"></a>
 
-|ATA Gateway|Domain Controller|Considerations|
+|Шлюз ATA|Контроллер домена|Рекомендации|
 |---------------|---------------------|------------------|
-|Virtual|Virtual on same host|The virtual switch needs to support port mirroring.<br /><br />Moving one of the virtual machines to another host by itself may break the port mirroring.|
-|Virtual|Virtual on different hosts|Make sure your virtual switch supports this scenario.|
-|Virtual|Physical|Requires a dedicated network adapter otherwise ATA will see all of the traffic coming in and out of the host, even the traffic it sends to the ATA Center.|
-|Physical|Virtual|Make sure your virtual switch supports this scenario - and port mirroring configuration on your physical switches based on the scenario:<br /><br />If the virtual host is on the same physical switch, you will need to configure a switch level span.<br /><br />If the virtual host is on a different switch, you will need to configure RSPAN or ERSPAN&#42;.|
-|Physical|Physical on the same switch|Physical switch must support SPAN/Port Mirroring.|
-|Physical|Physical on a different switch|Requires physical switches to support RSPAN or ERSPAN&#42;.|
-&#42; ERSPAN is only supported when decapsulation is performed before the traffic is analyzed by ATA.
+|Виртуальная|Виртуальный на том же узле|Виртуальный коммутатор должен поддерживать зеркальное отображение портов.<br /><br />Перемещение одной из виртуальных машин на другой узел может нарушить зеркальное отображение портов.|
+|Виртуальная|Виртуальный на других узлах|Убедитесь, что виртуальный коммутатор поддерживает такой сценарий.|
+|Виртуальная|Физическая|Требуется отдельный сетевой адаптер, иначе ATA будет просматривать весь исходящий и входящий трафик узла, в том числе трафик, отправляемый в центр ATA.|
+|Физическая|Виртуальная|Убедитесь, что виртуальный коммутатор поддерживает этот сценарий и конфигурацию зеркального отображения портов на физических коммутаторах в рамках этого сценария:<br /><br />если виртуальный узел расположен на одном и том же физическом коммутаторе, необходимо настроить SPAN на уровне коммутатора;<br /><br />если виртуальный узел расположен на другом коммутаторе, необходимо настроить RSPAN или ERSPAN&#42;.|
+|Физическая|Физический на том же коммутаторе|Физический коммутатор должен поддерживать SPAN и зеркальное отображение портов.|
+|Физическая|Физический на другом коммутаторе|Требуются физические коммутаторы, поддерживающие RSPAN или ERSPAN&#42;.|
+&#42; ERSPAN поддерживается только в том случае, если декапсуляция выполняется до анализа трафика решением ATA.
 
 > [!NOTE]
-> Make sure that domain controllers and the ATA Gateways to which they connect have time synchronized to within 5 minutes of each other.
+> Время контроллеров домена и шлюзов ATA, к которым они подключаются, должно быть синхронизировано в пределах 5 минут.
 
-**If you are working with virtualization clusters:**
+**При работе с кластерами виртуализации:**
 
--   For each domain controller running on the virtualization cluster in a virtual machine with the ATA Gateway,  configure affinity between the domain controller and the ATA Gateway. This way when the domain controller moves to another host in the cluster the ATA Gateway will follow it. This works well when there are a few domain controllers.
+-   Настройте сопоставление между контроллером домена и шлюзом ATA для каждого контроллера домена в кластере виртуализации на виртуальной машине со шлюзом ATA. Таким образом при перемещении контроллера домена на другой узел в кластере шлюз ATA останется привязанным к нему. Такая конфигурация подходит при наличии нескольких контроллеров домена.
 > [!NOTE]
-> If your environment supports Virtual to Virtual on different hosts (RSPAN) you do not need to worry about affinity.
+> Если среда поддерживает преобразование виртуальной машины в виртуальную машину на других узлах (RSPAN), не нужно беспокоиться о сходстве.
 > 
--   To make sure the ATA Gateways are properly sized to handle monitoring all of the DCs by themselves, try this option: Install a virtual machine on each virtualization host and install an ATA Gateway on each host. Configure each ATA Gateway to monitor all of the domain controllers  that run on the cluster. This way, any host the domain controllers run on will be monitored.
+-   Чтобы правильно подобрать размеры шлюзов ATA для мониторинга всех контроллеров домена, необходимо установить виртуальную машину на каждом узле виртуализации, а шлюз ATA — на каждом узле. Затем настройте каждый шлюз ATA для мониторинга всех контроллеров домена в кластере. Таким образом будет отслеживаться каждый узел, на котором работают контроллеры домена.
 
-After configuring port mirroring, validate that port mirroring is working before installing the ATA Gateway.
+Прежде чем установить шлюз ATA, проверьте, что настроенное зеркальное отображение портов работает надлежащим образом.
 
-## See Also
-- [Validate port mirroring](validate-port-mirroring.md)
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Проверка зеркального отображения портов](validate-port-mirroring.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

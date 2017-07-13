@@ -1,107 +1,117 @@
 ---
-# required metadata
-
-title: What is Microsoft Advanced Threat Analytics (ATA)? | Microsoft Docs
-description: Explains what Microsoft Advanced Threat Analytics (ATA) is and what kinds of suspicious activities it can detect
-keywords:
+title: "Основные сведения о решении Microsoft Advanced Threat Analytics (ATA) | Документация Майкрософт"
+description: "Здесь описывается решение Microsoft Advanced Threat Analytics (ATA) и подозрительные действия, которые оно может обнаружить"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/26/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: c338441b37c41b810023ecf5c5ae348651f5ad64
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/03/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
-
-# What is Advanced Threat Analytics?
-Advanced Threat Analytics (ATA) is an on-premises platform that helps protect your enterprise from multiple types of advanced targeted cyber attacks and insider threats.
-
-## How ATA works
-ATA takes information from multiple data-sources from logs and events in your network to learn the behavior of users and other entities in the organization and build a behavioral profile about them.
-ATA can receive events and logs from:
-
-- 	SIEM Integration
-- 	Windows Event Forwarding (WEF)
-
-In addition, ATA leverages a proprietary network parsing engine to capture and parse network traffic of multiple protocols (such as Kerberos, DNS, RPC, NTLM and others) for authentication, authorization and information gathering. This information is collected by ATA via:
-
-- 	Port mirroring from Domain Controllers and DNS servers to the ATA Gateway
-- 	Deploying an ATA Lightweight Gateway (LGW) directly on Domain Controllers
-
-For more information on ATA architecture see [ATA Architecture](ata-architecture.md).
-
-## What does ATA do?
-
-ATA technology detects multiple suspicious activities, focusing on several phases of the cyber-attack kill chain including:
-
-- 	Reconnaissance, during which attackers are gathering information on how the environment is built, what are the different assets and entities which exist and are generally building their plan for the next phases of the attack.
-- 	Lateral movement cycle, during which an attacker invests time and effort in spreading their attack surface inside your network.
-- 	Domain dominance (persistence), during which an attacker captures the information allowing them to resume their campaign using various set of entry points, credentials and techniques. 
-
-These phases of a cyber attack are similar and predictable, no matter what type of company is under attack or what type of information is being targeted.
-ATA searches for three main types of attacks: Malicious attacks, abnormal behavior and security issues and risks.
-
-**Malicious attacks** are detected deterministically, by looking for the full list of known attack types including:
-
-- 	Pass-the-Ticket (PtT)
-- 	Pass-the-Hash (PtH)
-- 	Overpass-the-Hash
-- 	Forged PAC (MS14-068)
-- 	Golden Ticket
-- 	Malicious replications
-- 	Reconnaissance
-- 	Brute Force
-- 	Remote execution
-
-For a complete list of the detections and their descriptions please see [What Suspicious Activities Can ATA detect?](ata-threats.md)
-ATA detects these suspicious activities and surfaces the information in the ATA Console including a clear view of Who, What, When and How. As you can see, by monitoring this simple, user-friendly dashboard, you are alerted that ATA suspects that a Pass-the-Hash attack was attempted on Client 1 and Client 2 computers in your network.
-
- ![sample ATA screen pass-the-hash](media/sample screen pth.png)
-
-**Abnormal behavior** is detected by ATA using behavioral analytics and leveraging Machine Learning to uncover questionable activities and abnormal behavior in users and devices in your network, including:
-
-- 	Anomalous logins
-- 	Unknown threats
-- 	Password sharing
-- 	Lateral movement
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-You can view suspicious activities of this type in the ATA Dashboard. In the following example, ATA alerts you when a user accesses 4 computers that are not ordinarily accessed by this user, which could be a cause for alarm.
+# Что такое Advanced Threat Analytics?
+<a id="what-is-advanced-threat-analytics" class="xliff"></a>
+Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз.
 
- ![sample ATA screen abnormal behavior](media/sample screen abnormal behavior.png) 
+## Как работает ATA
+<a id="how-ata-works" class="xliff"></a>
 
-ATA also detects **security issues and risks**, including:
+ATA использует собственный механизм сетевого анализа для сбора и проверки сетевого трафика по нескольким протоколам проверки подлинности, авторизации и сбора информации (Kerberos, DNS, RPC, NTLM и другие). ATA собирает эти сведения с использованием одного из следующих механизмов:
 
-- 	Broken trust
-- 	Weak protocols
-- 	Known protocol vulnerabilities
+-   зеркальное отображение портов с контроллеров домена на шлюз ATA;
+-   развертывание упрощенного шлюза ATA (LGW) непосредственно на контроллерах домена.
 
-You can view suspicious activities of this type in the ATA Dashboard. In the following example, ATA is letting you know that there is a broken trust relationship between a computer in your network and the domain.
+ATA собирает из множества источников данных, таких как журналы и события в вашей сети, на основе которых изучает поведение пользователей и других сущностей в организации и создает их поведенческие профили.
+ATA может получать события и журналы из следующих источников:
 
-  ![sample ATA screen broken trust](media/sample screen broken trust.png)
+-   интеграция SIEM;
+-   пересылка событий Windows (WEF).
+-   непосредственно из сборщика событий Windows (для упрощенного шлюза).
 
 
-## What's next?
+Дополнительные сведения см. в статье [об архитектуре ATA](ata-architecture.md).
 
--   For more information about how ATA fits into your network: [ATA architecture](ata-architecture.md)
+## Возможности ATA
+<a id="what-does-ata-do" class="xliff"></a>
 
--   To get started deploying ATA: [Install ATA](install-ata-step1.md)
+Технология ATA выявляет различные подозрительные действия, относящиеся к различным этапам проведения кибератак, в том числе перечисленные ниже.
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+-   Разведка, в ходе которой злоумышленники собирают сведения о конфигурации среды, выявляют действующие активы и сущности и разрабатывают общий план для следующих этапов атаки.
+-   Боковое смещение, в ходе которого злоумышленник стремится захватить максимальное пространство внутри сети.
+-   Захват контроля (устойчивости), нацеленный на сбор сведений, позволяющих возобновить атаку с использованием различных точек входа, учетных данных и методов. 
+
+Эти этапы кибератак достаточно схожи и предсказуемы при любых методах нападения на организацию и любых целях атаки.
+ATA выявляет три основных вида угроз: атака злоумышленников, аномальное поведение и проблемы/риски безопасности.
+
+**Атаки злоумышленников** определяются детерминировано по полному списку известных типов атак, в том числе:
+
+-   Pass-the-Ticket (PtT)
+-   Pass-the-Hash (PtH)
+-   Overpass-the-Hash
+-   Forged PAC (MS14-068)
+-   Golden ticket
+-   Вредоносные запросы на репликацию
+-   Разведывательная атака
+-   Атака методом подбора
+-   Удаленное выполнение.
+
+Полный список и описания выявляемых действий можно изучить в статье [What Suspicious Activities Can ATA detect?](ata-threats.md) (Какие подозрительные действия выявляет ATA?)
+ATA обнаруживает эти подозрительные действия и передает на консоль ATA соответствующую информацию, включая четкое описание "кто, что, как и когда" делал. В этом примере вы видите, что на этой несложной и удобной панели представлена информация о предполагаемой атаке Pass-the-Ticket на компьютерах Client 1 и Client 2.
+
+ ![пример экрана ATA для атаки pass-the-ticket](media/pass_the_ticket_sa.png)
+
+**Аномальное поведение** ATA выявляет с помощью поведенческого анализа и механизмов машинного обучения. Целью являются подозрительные действия и необычное поведение пользователей и устройств в сети, в том числе перечисленные ниже.
+
+-   Необычные попытки входа
+-   Неизвестные угрозы
+-   Совместное использование пароля
+-   Боковое смещение
+-   Изменение привилегированных групп
+
+
+Подозрительные действия этого типа можно просмотреть на панели мониторинга ATA. В следующем примере ATA предупреждает, что пользователь обратился к 4 компьютерам, с которыми он обычно не взаимодействует. Это может являться причиной для тревоги.
+
+ ![пример экрана ATA: аномальное поведение](media/abnormal-behavior-sa.png) 
+
+Также ATA выявляет **проблемы/риски безопасности**, в том числе перечисленные ниже.
+
+-   Нарушение доверительного отношения
+-   Слабые протоколы
+-   Известные уязвимости протоколов
+
+Подозрительные действия этого типа можно просмотреть на панели мониторинга ATA. В следующем примере ATA сообщает о нарушении доверительных отношений между доменом и одним из компьютеров сети.
+
+  ![пример экрана ATA: нарушение доверительных отношений](media/broken-trust-sa.png)
+
+
+## Известные проблемы
+<a id="known-issues" class="xliff"></a>
+
+- Если вы выполняете обновление до версии ATA 1.7, а затем сразу до версии ATA 1.8, не обновляя сначала шлюзы ATA, вы не можете выполнить миграцию в ATA 1.8. Перед обновлением центра ATA до версии 1.8 необходимо сначала обновить все шлюзы до версии 1.7.1 или 1.7.2.
+
+- Если вы выбираете полную миграцию, она может занять очень много времени в зависимости от размера базы данных. При выборе вариантов миграции отображается предполагаемое время. Обратите на него внимание, прежде чем выбирать вариант. 
+
+
+## Дальнейшие действия
+<a id="whats-next" class="xliff"></a>
+
+-   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
+
+-   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
+
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

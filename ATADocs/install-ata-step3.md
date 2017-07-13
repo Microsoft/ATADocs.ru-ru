@@ -1,70 +1,65 @@
 ---
-# required metadata
-
-title: Install Advanced Threat Analytics - Step 3 | Microsoft Docs
-description: Step three of installing ATA helps you download the ATA Gateway setup package.
-keywords:
+title: "Установка Advanced Threat Analytics. Шаг 3 | Документация Майкрософт"
+description: "На третьем этапе установки ATA вам нужно скачать пакет установки шлюза ATA."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/12/2017
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 68c169ffd0f42bd8b030dc12f4711cbde2718a99
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Install ATA - Step 3
+
+# Установка ATA. Шаг 3
+<a id="install-ata---step-3" class="xliff"></a>
 
 >[!div class="step-by-step"]
-[« Step 2](install-ata-step2.md)
-[Step 4 »](install-ata-step4.md)
+[« Шаг 2](install-ata-step2.md)
+[Шаг 4 »](install-ata-step4.md)
 
-## Step 3. Download the ATA Gateway setup package
-After configuring the domain connectivity settings you can download the ATA Gateway setup package. The ATA Gateway can be installed on a dedicated server or on a domain controller. If you install it on a domain controller, it will be installed as an ATA Lightweight Gateway. For more information on the ATA Lightweight Gateway, see [ATA Architecture](ata-architecture.md). 
+## Шаг 3. Скачивание пакета установки шлюза ATA
+<a id="step-3-download-the-ata-gateway-setup-package" class="xliff"></a>
+Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA. Шлюз ATA можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена он установится как упрощенный шлюз ATA. Дополнительные сведения об упрощенном шлюзе ATA см. в статье [Архитектура ATA](ata-architecture.md). 
 
-If this is the first time you are downloading an ATA Gateway, you will get the following screen:
+В списке действий в верхней части страницы щелкните "Скачать программу установки шлюза", чтобы перейти на страницу "Шлюзы".
 
-![ATA gateway configuration settings](media/ATA_1.7-welcome-download-gateway.PNG)
-
-If this is not your first time downloading an ATA Gateway, this welcome message will not appear.
+![Параметры конфигурации шлюза ATA](media/ATA_1.7-welcome-download-gateway.PNG)
 
 > [!NOTE] 
-> To reach the configuration screen later, click the **settings icon** (upper right corner) and select **Configuration**, then, under **System**, click **Gateways**.  
+> Чтобы открыть окно настройки шлюза позже, щелкните **значок параметров** (правый верхний угол), выберите **Конфигурация**, а затем в разделе **Система** щелкните **Шлюзы**.  
 
-1.  Click **"Download Gateway Setup"**.
-2.  Save the package locally.
-3.  Copy the package to the dedicated server or domain controller onto which you are installing the ATA Gateway. Alternatively, you can open the ATA Console from the dedicated server or domain controller and skip this step.
+1.  Щелкните **Установка шлюза**.
+  ![Скачивание программы установки шлюза ATA](media/download-gateway-setup.png)
+2.  Сохраните пакет на локальном компьютере.
+3.  Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается шлюз ATA. Кроме того, можно открыть консоль ATA с выделенного сервера или контроллера домена и пропустить этот шаг.
 
-The zip file includes the following:
+ZIP-файл содержит:
 
--   ATA Gateway installer
+-   установщик шлюза ATA;
 
--   Configuration setting file with the required information to connect to the ATA Center
+-   файл конфигурации с данными для подключения к центру ATA.
 
 
 >[!div class="step-by-step"]
-[« Step 2](install-ata-step2.md)
-[Step 4 »](install-ata-step4.md)
+[« Шаг 2](install-ata-step2.md)
+[Шаг 4 »](install-ata-step4.md)
 
-## See Also
+## См. также
+<a id="see-also" class="xliff"></a>
 
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Configure event collection](configure-event-collection.md)
-- [ATA prerequisites](ata-prerequisites.md)
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Предварительные требования ATA](ata-prerequisites.md)

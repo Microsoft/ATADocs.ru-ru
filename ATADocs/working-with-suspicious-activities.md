@@ -1,123 +1,115 @@
 ---
-# required metadata
-
-title: Working with suspicious activities in Advanced Threat Analytics | Microsoft Docs
-description: Describes how to review suspicious activities identified by ATA
-keywords:
+title: "Обработка подозрительных действий в Advanced Threat Analytics | Документация Майкрософт"
+description: "В данной статье рассказывается о том, как проверять подозрительные действия, выявленные АТА."
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 06/23/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 1ff15a323f461cf8436e1ff7e15738a49bf3973c
+ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/30/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Working with Suspicious Activities
-This topic explains the basics of how to work with Advanced Threat Analytics.
 
-## Review suspicious activities on the attack time line
-After logging in to the ATA Console, you are automatically taken to the open **Suspicious Activities Time Line**. Suspicious activities are listed in chronological order with the newest suspicious activities on the top of the time line.
-Each suspicious activity has the following information:
+# Обработка подозрительных действий
+<a id="working-with-suspicious-activities" class="xliff"></a>
+В данном руководстве рассматриваются основы работы с решением Advanced Threat Analytics.
 
--   Entities involved, including users, computers, servers, domain controllers, and resources.
+## Проверка подозрительных действий на временной шкале атаки
+<a id="review-suspicious-activities-on-the-attack-time-line" class="xliff"></a>
+После входа в консоль ATA автоматически откроется **временная шкала подозрительных действий**. Подозрительные действия перечислены в хронологическом порядке, при этом последние действия указаны в верхней строке временной шкалы.
+Для каждого подозрительного действия указана следующая информация:
 
--   Times and time frame of the suspicious activities.
+-   сведения о вовлеченных сущностях, в том числе о пользователях, компьютерах, серверах, контроллерах домена и ресурсах;
 
--   Severity of the suspicious activity, High, Medium, or Low.
+-   время совершения и временные рамки подозрительных действий;
 
--   Status: Open, resolved, or dismissed.
+-   степень серьезности подозрительных действий: высокая, средняя или низкая;
 
--   Ability to
+-   состояние: открыто, закрыто или заблокировано;
 
-    -   Share the suspicious activity with other people in your organization via email.
+-   возможности:
 
-    -   Export the suspicious activity to Excel.
+    -   отправка сведений о подозрительных действиях другим сотрудникам вашей организации по электронной почте;
 
-    -   Add a note to the suspicious activity.
+    -   экспорт сведений о подозрительных действиях в Excel;
 
-    -   Provide input on the suspicious activity.
+    -   добавление примечаний к сведениям о подозрительных действиях;
 
--   Provides recommendations for how to respond to the suspicious activity.
+    -   добавление входных данных о подозрительных действиях;
+
+-   добавление рекомендаций о том, как реагировать на подозрительные действия.
 
 > [!NOTE]
-> -   When you hover your mouse over a user or computer, an entity mini-profile is displayed that provides additional information about the entity and includes the number of suspicious activities that the entity is linked to.
-> -   If you click on an entity, it will take you to the entity profile of the user or computer.
+> -   При наведении мыши на имя пользователя или компьютер отображается мини-профиль сущности, содержащий дополнительные сведения, в том числе сведения о количестве подозрительных действий, связанных с этой сущностью.
+> -   При выборе сущности вы перейдете в профиль сущности пользователя или компьютера.
 
-![ATA suspicious activities timeline image](media/ATA-Suspicious-Activity-Timeline.JPG)
+![Изображение временной шкалы подозрительных действий ATA](media/ATA-Suspicious-Activity-Timeline.JPG)
 
-## Filter suspicious activities list
-To filter the suspicious activities list:
+## Фильтрация списка подозрительных действий
+<a id="filter-suspicious-activities-list" class="xliff"></a>
+Для фильтрации списка подозрительных действий сделайте вот что:
 
-1.  In the **Filter by** pane on the left side of the screen, select one of the following: **All**, **Open**, **Resolved**, or **Dismissed**.
+1.  В области **Фильтрация по** в левой части экрана выберите один из следующих вариантов: **Все**, **Открыто**, **Разрешено** или **Отклонено**.
 
-2.  To further filter the list, select **High**, **Medium** or **Low**.
+2.  Чтобы еще глубже профильтровать список, выберите один из вариантов: **Высокая**, **Средняя** или **Низкая**.
 
-**Suspicious activity severity**
+**Степень серьезности подозрительного действия**
 
--   **Low**
+-   **Низкая**
 
-    Indicates suspicious activities that can lead to attacks designed for malicious users or software to gain access to organizational data.
+    Указывает на подозрительные действия, которые могут привести к атакам, в результате которых пользователи-злоумышленники или вредоносное программное обеспечение, возможно, получат доступ к данным организации.
 
--   **Medium**
+-   **Средняя**
 
-    Indicates suspicious activities that can put specific identities at risk for more severe attacks that could result in identity theft or privileged escalation
+    Указывает на подозрительные действия, которые могут поставить под угрозу определенные удостоверения и тем самым создать предпосылки для более серьезных атак с вероятностью кражи идентификационных данных или совершения неправомерных действий от имени пользователя.
 
--   **High**
+-   **Высокая**
 
-    Indicates suspicious activities that can lead to identity theft, privilege escalation or other high-impact attacks
+    Указывает на подозрительные действия, которые могут привести к краже идентификационных данных, совершению неправомерных действий от имени пользователя или более серьезным атакам.
 
-**Suspicious activity status**
 
--   **Open**
 
-    All new suspicious activities appear in this list
 
--   **Resolved**
+## Принятие мер в отношении подозрительных действий
+<a id="remediating-suspicious-activities" class="xliff"></a>
+Вы можете изменить состояние подозрительного действия, щелкнув его текущее состояние и выбрав один из следующих вариантов: **Открыто**, **Заблокировано**, **Закрыто** или **Удалено**.
+Для этого щелкните многоточие в правом верхнем углу соответствующего подозрительного действия, чтобы открыть список доступных действий.
 
-    Is used to track suspicious activities which you identified, researched and fixed for mitigated.
+![Действия ATA в отношении подозрительных действий](./media/sa-actions.png)
+
+**Состояние подозрительного действия**
+
+-   **Открыть**: в этом списке отображаются все новые подозрительные действия.
+
+-   **Закрыть**: используется для отслеживания подозрительных действий, которые были выявлены и изучены и возможные последствия которых минимизированы.
 
     > [!NOTE]
-    > ATA may reopen a resolved activity if it the same activity is detected again within a short period of time.
+    > ATA может повторно открывать разрешенное действие, если оно будет обнаружено еще раз в течение короткого периода времени.
 
--   **Dismissed**
+-   **Заблокировать**: блокировка действия означает, что в настоящее время оно игнорируется и что оповещение о нем выводится снова, только если оно обнаружено повторно. Это означает, что при наличии схожего оповещения ATA не будет открывать его еще раз. Но если оповещение отсутствует в течение 7 дней, а затем снова возникает, оно будет выведено повторно.
 
-    Are activities that you manually dismissed. If ATA detects a similar suspicious activity a new detection will be created.
+- **Удалить**: оповещение удаляется из системы и из базы данных. Восстановить его невозможно. Щелкнув "Удалить", можно удалить все подозрительные действия одного типа.
 
-## Provide input on a suspicious activity
-To enable ATA to learn about your network with you, some suspicious activities (DNS reconnaissance, Pass the Ticket, SMB Session Enumeration, Abnormal Behavior and Remote Execution) request your input to will enhance the detection of suspicious activities going forward.
+- **Исключить**: возможность отключить инициацию оповещений определенного типа для сущности. Например, можно запретить ATA инициировать для определенной сущности (пользователя или компьютера) оповещения о подозрительных действиях указанного типа, например об удаленном выполнении кода определенным администратором или проверке DNS сканером безопасности. Помимо возможности добавлять исключения для обнаруженных подозрительных действий непосредственно на временной шкале, вы можете открыть страницу "Конфигурация", перейти к разделу **Исключения** и вручную добавить или удалить исключаемые сущности или подсети для каждого подозрительного действия (например, атаки Pass-the-Ticket). 
+> [!NOTE]
+> Изменения на странице "Конфигурация" могут вносить только администраторы ATA.
 
-1.  For suspicious activities that enable you to provide input, the input question opens automatically. You will be asked to answer questions about activities on your network and whether or not they should be considered suspicious. In the below example, you are being asked if running scanning tools is allowed from a specific computer.
 
-    ![ATA provide input for suspicious activities image](media/ATA-Input.JPG)
-
-2.  If you answer no, this activity will be considered suspicious and any time ATA encounters this activity from this computer, you will be alerted.
-
-3.  However, if you answer yes, the suspicious activity may be dismissed and future activities of this type from this computer may not generate a suspicious activity or will generate an activity that is automatically dismissed.
-
-4.  If you do not know, you can click **Cancel**.
-
-## Change the status of a suspicious activity
-You can change the status of a suspicious activity by clicking the current status of the suspicious activity and selecting one of the following **Open**, **Resolved** or **Dismissed**.
-
-## See Also
-- [Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [Working with ATA detection settings](working-with-detection-settings.md)
-- [Modifying ATA configuration](modifying-ata-configuration.md)
+## См. также
+<a id="see-also" class="xliff"></a>
+- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Работа с параметрами обнаружения ATA](working-with-detection-settings.md)
+- [Изменение конфигурации ATA](modifying-ata-center-configuration.md)

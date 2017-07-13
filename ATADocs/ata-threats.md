@@ -1,109 +1,122 @@
 ---
-# required metadata
-
-title: What threats does Advanced Threat Analytics detect? | Microsoft Docs
-description: Lists the threats that Advanced Threat Analytics detects 
-keywords:
+title: "Какие угрозы обнаруживает решение Advanced Threat Analytics? | Документация Майкрософт"
+description: "Список угроз, которые обнаруживает Advanced Threat Analytics"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 07/2/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 630bb2b74dafcf9ab9b3469c2afbf8abc59c2dbf
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/03/2017
 ---
+*Применяется к Advanced Threat Analytics версии 1.8*
 
-*Applies to: Advanced Threat Analytics version 1.7*
+# Типы угроз, которые ищет ATA
+<a id="what-threats-does-ata-look-for" class="xliff"></a>
 
-# What threats does ATA look for?
+ATA обнаруживает события на следующих этапах продвинутой атаки: разведка, компрометация учетных данных, боковое смещение, повышение привилегий, полное управление доменом и т. д. При этом продвинутые атаки и внутренние угрозы обнаруживаются, прежде чем они смогут нанести ущерб организации.
+На каждом этапе выявляется несколько подозрительных действий, которые относятся к проверяемому этапу. При этом каждое подозрительное действие сопоставляется с различными видами возможных атак.
+Эти этапы процесса атаки, на которых ATA в настоящее время выявляет угрозы, выделены на рисунке ниже.
 
-ATA provides detection for the following various phases of an advanced attack: reconnaissance, credential compromise, lateral movement, privilege escalation, domain dominance and others. These detections are aimed at detecting advanced attacks and insider threats before they cause damage to your organization.
-The detection of each phase results in several suspicious activities relevant for the phase in question, where each suspicious activity correlates to different flavors of possible attacks.
-These phases in the kill-chain where ATA currently provides detections are highlighted in the image below.
-
-![ATA focus on lateral activity in attack kill chain](media/attack-kill-chain-small.jpg)
-
-
-### Reconnaissance
-ATA provides multiple reconnaissance detections. These detections include:
--	**Reconnaissance using account enumeration**
-Detects attempts by attackers using the Kerberos protocol to discover if a user exists, even if the activity was not logged as an event on the domain controller.
--	**Net Session Enumeration**
-As part of the reconnaissance phase, attackers may query the DC for all active SMB sessions on the server, allowing them to gain access to all the users and IP addresses associated with those SMB sessions. SMB session enumeration can be used by attackers for targeting sensitive accounts, helping them move laterally across the network.
--	**Reconnaissance using DNS**
-DNS information in the target network is often very useful reconnaissance information. DNS information contains a list of all the servers and often all the clients and the mapping to their IP addresses. Viewing DNS information may provide attackers with a detailed view of these entities in your environment allowing attackers to focus their efforts on the relevant entities for the campaign.
--   **Reconnaissance using directory services enumeration**
-Detecting reconnaissance for entities (users, groups, etc.) performed using the SAM-remote protocol to run queries against the domain controllers. This reconnaissance method is prevalent in many types of malware seen in real-world attack scenarios. 
+![Особое внимание ATA уделяет действиям бокового смещения в процессе атаки](media/attack-kill-chain-small.jpg)
 
 
-### Compromised credentials
-To provide detection of compromised credentials, ATA leverages both machine-learning based behavioral analytics as well as known malicious attacks and technique detection.
-Using behavioral analytics and machine learning, ATA is able to detect suspicious activities such as anomalous logins, abnormal resource access, and abnormal working hours which would point to credential compromise. To protect against compromised credentials, ATA detects the following known malicious attacks and techniques:
--	**Brute force**
-In brute-force attacks, attackers try to guess user credentials by trying multiple users and pairing them with multiple password attempts. The attackers often use complex algorithms or dictionaries to try as many values as a system allows.
--	**Sensitive account exposed in plain text authentication**
-If high-privileged account credentials are sent in plain text, ATA alerts you so that you can update the computer configuration.
--	**Service exposing accounts in plain text authentication** 
-If a service on a computer is sending multiple account credentials in plain text, ATA alerts you so that you can update the service configuration.
--	**Honey Token account suspicious activities**
-Honey Token accounts are dummy accounts set up to trap, identify, and track malicious activity that attempts to use these dummy accounts. ATA alerts you to any activities across these Honey Tokens accounts.
--	**Unusual protocol implementation**
-Authentication requests (Kerberos or NTLM) are usually performed using a normal set of methods and protocols. However, in order to successfully authenticate, the request only has to meet a specific set of requirements. Attackers can implement these protocols with minor deviations from the normal implementation in the environment. These deviations may indicate the presence of an attacker attempting to leverage or successfully leveraging compromised credentials.
--	**Malicious Data Protection Private Information Request**
-Data Protection API (DPAPI) is a password-based data protection service. This protection service is used by various applications that stores user’s secrets, such as website passwords and file share credentials. In order to support password-loss scenarios, users can decrypt protected data by using a recovery key which does not involve their password. In a domain environment, attackers may remotely steal the recovery key and use it to decrypt protected data in all the domain joined computers.
--	**Abnormal Behavior**
-Often in cases of insider threats, as well as advanced attacks, the account credentials may be compromised using social engineering methods or new and not-yet-known methods and techniques. ATA is able to detect these types of compromises by analyzing the entity’s behavior and detecting and alerting on abnormalities of the operations performed by the entity.
+### Разведывательная атака
+<a id="reconnaissance" class="xliff"></a>
 
-### Lateral movement
-To provide detection of lateral movement, when users take advantage of credentials that provide access to some resources to gain access resources that they are not meant to have access to, ATA leverages both machine-learning based behavioral analytics as well as known malicious attacks and technique detection.
-Using behavioral analytics and machine learning, ATA detects abnormal resource access, abnormal devices used and other indicators that are evidence of lateral movement.
-In addition, ATA is able to detect lateral movement by detecting the techniques used by attackers to perform lateral movement, such as:
--	**Pass the ticket** 
-In pass the ticket attacks, attackers steal a Kerberos ticket from one computer and use it to gain access to another computer by impersonating an entity on your network.
--	**Pass the hash** 
-In pass the hash attacks, attackers steal the NTLM hash of an entity, and use it to authenticate with NTLM and impersonate that entity and gain access to resources on your network.
--	**Over-pass the hash**
-Over-pass the hash are attacks in which the attacker uses a stolen NTLM hash to authenticate with Kerberos, and obtain a valid Kerberos TGT ticket, which is then used to authenticate as a valid user and gain access to resources on your network.
--	**Abnormal behavior**
-Lateral movement is a technique often used by attackers, to move between devices and areas in the victim’s network to gain access to privileged credentials or sensitive information of interest to the attacker. ATA is able to detect lateral movement by analyzing the behavior of users, devices and their relationship inside the corporate network, and detect on any abnormal access patterns which may indicate a lateral movement performed by an attacker.
+ATA предоставляет несколько средств обнаружения разведывательной атаки. Обнаруживаются следующие атаки:
 
-### Privilege escalation
-ATA detects successful and attempted privilege escalation attacks, in which attackers attempt to increase existing privileges and use them multiple times in order to eventually gain full control over the victim’s environment.
-ATA enables privilege escalation detection by combining behavioral analytics to detect anomalous behavior of privileged accounts as well as detecting known and malicious attacks and techniques that are often used to escalate privileges such as:
--	**MS14-068 exploit (Forged PAC)**
-Forged PAC are attacks in which the attacker plants authorization data in their valid TGT ticket in the form of a forged authorization header that grants them additional permissions that they weren't granted by their organization. In this scenario the attacker leverages previously compromised credentials, or credentials harvested during lateral movement operations.
--	**MS11-013 exploit (Silver PAC)**
-MS11-013 exploit attacks are an elevation of privilege vulnerability in Kerberos which allows for certain aspects of a Kerberos service ticket to be forged. A malicious user or attacker who successfully exploited this vulnerability could obtain a token with elevated privileges on the Domain Controller. In this scenario the attacker leverages previously compromised credentials, or credentials harvested during lateral movement operations.
+-   **Разведывательная атака с использованием перечисления учетных записей**<br></br>При этой атаке определяются попытки злоумышленника обнаружить существование пользователя с помощью протокола Kerberos, даже если действие не зафиксировано как событие на контроллере домена.
 
-### Domain dominance
-ATA detects attackers attempting or successfully achieving total control and dominance over the victim’s environment by performing detection over known techniques used by attackers, which include:
--	**Skeleton key malware**
-In skeleton key attacks, malware is installed on your domain controller that allows attackers to authenticate as any user, while still enabling legitimate users to log on.
--	**Golden ticket**
-In golden ticket attacks, an attacker steals the KBTGT's credentials, the Kerberos Golden Ticket. That ticket enables the attacker to create a TGT ticket offline, to be used to gain access to resources in the network.
--	**Remote execution**
-Attackers can attempt to control your network by running code remotely on your domain controller.
--	**Malicious replication requests** In Active Directory (AD) environments replication happens regularly between Domain Controllers. An attacker can spoof AD replication request (sometimes impersonating as a Domain Controller) allowing the attacker to retrieve the data stored in AD, including password hashes, without utilizing more intrusive techniques like Volume Shadow Copy.
+-   **Перечисление сеансов NET**<br></br>На этапе разведки злоумышленники могут запрашивать в контроллере домена все активные сеансы SMB на сервере. Таким образом они получают доступ ко всем пользователям и IP-адресам, связанным с этими сеансами SMB. При перечислении сеансов SMB злоумышленники используют конфиденциальные учетные записи, за счет чего они могут осуществлять боковое смещение в сети.
+
+-   **Разведывательная атака с использованием DNS**<br></br>Как правило, сведения о DNS в целевой сети часто используются на этапе разведки. Они включают список всех серверов и зачастую всех клиентов, а также сведения о сопоставлении с IP-адресами. Просмотрев сведения о DNS, злоумышленник получает подробное представление об этих сущностях в вашей среде и может подвергнуть атаке заинтересовавшие сущности.
+
+-   **Разведывательная атака с использованием перечисления служб каталогов**<br></br>Обнаружение разведывательных действий с сущностями (пользователями, группами и т. д.), выполняемых с использованием протокола SAM-R, который предназначен для удаленных запросов к контроллерам домена. Этот метод разведки широко используется многими вредоносными программами в реальных сценариях атак. 
 
 
-## What's next?
+### Компрометация учетных данных.
+<a id="compromised-credentials" class="xliff"></a>
 
--   For more information about how ATA fits into your network: [ATA architecture](ata-architecture.md)
+Чтобы обеспечить обнаружение скомпрометированных учетных данных, ATA использует аналитику поведения на основе машинного обучения, а также механизмы обнаружения вредоносных атак и методов нарушения безопасности.
+Используя аналитику поведения и машинное обучение, ATA может обнаруживать подозрительные действия, например аномальный вход, аномальный доступ к ресурсам и аномальное время работы, благодаря чему можно выявить компрометацию учетных данных. Чтобы обеспечить защиту от компрометации учетных данных, ATA обнаруживает следующие известные вредоносные атаки и методы нарушения безопасности.
 
--   To get started deploying ATA: [Install ATA](install-ata-step1.md)
+-   **Атака методом подбора**<br></br>При таком виде атаки злоумышленники пробуют угадать учетные данные пользователя, несколько раз вводя разные имена пользователей и пароли. Злоумышленники часто используют сложные алгоритмы или словари, чтобы использовать максимально допустимое количество значений.
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- **Подозрительные неудачные попытки проверки подлинности** (поведение при атаке методом подбора) <br></br> Злоумышленники пытаются получить несанкционированный доступ к учетным записям путем подбора учетных данных. ATA создает оповещение при обнаружении аномальных ошибок проверки подлинности.
+
+-   **Представление конфиденциальной учетной записи при проверке подлинности в виде обычного текста**<br></br>Если учетные данные учетной записи с высоким уровнем привилегий отправляются в виде обычного текста, ATA выводит предупреждение об обновлении конфигурации компьютера.
+
+-   **Представление учетной записи службой при проверке подлинности в виде обычного текста** <br></br>Если служба на компьютере отправляет учетные данные нескольких учетных записей в виде обычного текста, ATA выводит предупреждение об обновлении конфигурации службы.
+
+-   **Подозрительные действия с использованием учетной записи honeytoken**<br></br>Учетные записи honeytoken представляют собой фиктивные учетные записи-ловушки, предназначенные для определения и отслеживания вредоносных действий злоумышленников, которые пытаются их использовать. ATA выводит предупреждение о любых действиях с этими учетными записям honeytoken.
+
+-   **Внедрение нестандартных протоколов**<br></br>Обычно запросы на аутентификацию (Kerberos или NTLM) выполняются с использованием набора обычных протоколов и методов. Однако для успешной аутентификации запрос должен удовлетворять только определенным требованиям. Злоумышленники могут внедрить эти протоколы в среду, немного изменив их. По этим изменениям можно определить попытку злоумышленника использовать скомпрометированные учетные данные или успешное использование скомпрометированных учетных данных.
+
+-   **Вредоносный запрос конфиденциальных сведений для защиты данных**<br></br>API защиты данных (DPAPI) — это служба защиты данных на основе пароля. Эта служба защиты используется различными приложениями, в которых хранятся секретные данные пользователей, например пароли веб-сайтов и учетные данные файловых ресурсов. Для решения проблемы при потере пароля пользователи могут расшифровывать защищенные данные с помощью ключа восстановления. При этом пароль не используется. В среде домена злоумышленники могут удаленно похищать ключи восстановления и использовать их для расшифровки защищенных данных на всех компьютерах, присоединенных к домену.
+
+-   **Аномальное поведение**<br></br>При внутренних угрозах и продвинутых атаках учетные данные учетной записи компрометируются с использованием социотехнических приемов, а также новых и неизвестных методов и приемов. ATA может определить такую компрометацию, анализируя поведение сущности, обнаруживая аномальные операции, выполняемые в сущности, и сообщая о нем.
+
+### Боковое смещение
+<a id="lateral-movement" class="xliff"></a>
+
+Чтобы обеспечить обнаружение бокового смещения, когда пользователи используют учетные данные, предоставляющие доступ к некоторым ресурсам, которые в свою очередь позволяют получить доступ к непредназначенным для них ресурсам, ATA анализирует поведение на основе машинного обучения, а также выявляет известные атаки и методы злоумышленников.
+Используя анализ поведения и машинное обучение, ATA обнаруживает аномальный доступ к ресурсам, аномально используемые устройства и другие показатели, свидетельствующие о боковом смещении.
+Кроме того, ATA может определить боковое смещение по методам, используемым злоумышленниками для его выполнения.
+
+-   **Атака Pass-the-Ticket** <br></br>Во время атак Pass-the-Ticket злоумышленник похищает билет Kerberos с одного компьютера и использует его для доступа к другому компьютеру путем олицетворения сущности в сети.
+
+-   **Атака Pass-the-Hash** <br></br>Во время атаки Pass-the-Hash злоумышленник похищает хэш NTLM сущности и использует его для аутентификации NTLM и олицетворения сущности, а также получения доступа к ресурсам в сети.
+
+-   **Атака Over-pass-the-hash**<br></br>К этому типу атак относятся атаки, при которых злоумышленник использует похищенный хэш NTLM для аутентификации с использованием Kerberos и получения действительного билета предоставления билетов Kerberos, который затем используется для входа в качестве допустимого пользователя и получения доступа к ресурсам в сети.
+
+-   **Аномальное поведение**<br></br>Боковое смещение — это методика, которую злоумышленники часто используют, чтобы перемещаться между устройствами и зонами в атакуемой сети и получить доступ к привилегированным учетным данным или требуемым конфиденциальным сведениям. ATA может обнаруживать боковое смещение, анализируя поведение пользователей, устройств и их связи в корпоративной сети, и аномальный доступ, который может указывать на боковое смещение, выполняемое злоумышленником.
+
+### Повышение привилегий
+<a id="privilege-escalation" class="xliff"></a>
+
+ATA выявляет как успешные, так и неудачные атаки повышения привилегий. Такая атака происходит, если злоумышленник пытается повысить уровень имеющихся привилегий и многократно использовать повышенные привилегии, чтобы со временем получить полный контроль над средой атакуемого.
+В ATA повышение привилегий обнаруживается путем анализа поведения, в ходе которого выявляется аномальное поведение привилегированных учетных записей, и определения известных атак и методов злоумышленников, которые часто используются для повышения прав, например:
+
+-   **Эксплойт MS14-068 (подделка сертификата атрибута привилегий)**<br></br>При подделке сертификата атрибута привилегий злоумышленник помещает данные для авторизации в свой действительный билет предоставления билетов в виде поддельного заголовка авторизации. Таким образом злоумышленник получает разрешения, не предоставленные организацией. В этом сценарии злоумышленник использует ранее скомпрометированные учетные данные или учетные данные, полученные при боковом смещении.
+
+-   **Эксплойт MS11-013 ("серебряный" сертификат атрибута привилегий)**<br></br>При этой атаке уязвимость в Kerberos используется для повышения привилегий, за счет чего можно подделать определенные характеристики билета службы Kerberos. Воспользовавшись этой уязвимостью, пользователь-злоумышленник может получить маркер с повышенными привилегиями на контроллере домена. В этом сценарии злоумышленник использует ранее скомпрометированные учетные данные или учетные данные, полученные при боковом смещении.
+
+-   **Аномальное изменение привилегированных групп**  <br></br>На этапе повышения привилегий злоумышленники изменяют группы с высоким уровнем привилегий, чтобы получить доступ к конфиденциальным ресурсам. ATA теперь обнаруживает аномальное изменение групп с повышенными привилегиями.
+
+### Полное управление доменом
+<a id="domain-dominance" class="xliff"></a>
+
+ATA обнаруживает неудачные и успешные попытки полного управления средой атакуемого, выявляя следующие известные методы злоумышленников.
+
+-   **Атака с помощью вредоносной программы, использующей мастер-ключи**<br></br>При таком типе атаки на контроллере домена устанавливается вредоносная программа, позволяющая злоумышленнику пройти аутентификацию в качестве любого пользователя. При этом действительный пользователь также может войти.
+
+-   **Golden ticket**<br></br>При таком типе атаки злоумышленник похищает учетные данные билета предоставления билетов Kerberos, т. е. "золотого" билета Kerberos. Этот билет позволяет злоумышленнику создать билет получения билетов в автономном режиме, который будет использоваться для доступа к ресурсам в сети.
+
+-   **Удаленное выполнение**<br></br>Злоумышленники могут совершить попытку управления сетью, выполнив код удаленно на контроллере домена.
+
+- **Попытка удаленного выполнения — выполнение WMI**<br></br>Злоумышленники могут совершить попытку управления сетью, выполнив код удаленно на контроллере домена. ATA обнаруживает удаленное выполнение кода с помощью методов WMI.
+
+-   **Вредоносные запросы на репликацию** <br></br>В среде Active Directory между контроллерами домена регулярно выполняется репликация. Злоумышленник может подделать запрос на репликацию AD (иногда путем олицетворения в качестве контроллера домена) и получить данные, хранящиеся в AD, включая хэши паролей, без использования более продвинутых методов, например теневого копирования томов.
+
+
+## Дальнейшие действия
+<a id="whats-next" class="xliff"></a>
+
+-   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
+
+-   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
+
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

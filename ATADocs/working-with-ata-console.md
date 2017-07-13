@@ -1,132 +1,170 @@
 ---
-# required metadata
-
-title: Understanding the Advanced Threat Analytics console | Microsoft Docs
-description: Describes how to log into the ATA console and the components of the console
-keywords:
+title: "Работа с консолью Advanced Threat Analytics | Документация Майкрософт"
+description: "В этой статье описывается процедура входа в консоль ATA и ее компоненты"
+keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 7/2/2017
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology:
+ms.technology: 
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
+ms.openlocfilehash: 3d687087dd9e1ae7f7642f9fdd7d89420f3bec27
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/03/2017
 ---
-
-*Applies to: Advanced Threat Analytics version 1.7*
-
+*Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Working with the ATA Console
 
-Use the ATA console to monitor and respond to suspicious activity detected by ATA.
+# Работа с консолью ATA
+<a id="working-with-the-ata-console" class="xliff"></a>
 
-## Enabling access to the ATA Console
-To successfully login to the ATA Console, you have to log in with a user who was assigned the proper ATA role to access the ATA Console. 
-For more information about role based access control (RBAC) in ATA, see [Working with ATA role groups](ata-role-groups.md).
+C помощью консоли можно отслеживать обнаруженные решением ATA подозрительные действия и принимать соответствующие меры.
 
-## Logging into the ATA Console
+Если ввести символ "?" будет выведен список сочетаний клавиш для работы с порталом ATA. 
 
-1. In the ATA Center server, click the **Microsoft ATA Console** icon on the desktop or open a browser and browse to the ATA Console.
+## Предоставление доступа к консоли ATA
+<a id="enabling-access-to-the-ata-console" class="xliff"></a>
+Чтобы успешно войти в консоль ATA, следует войти в качестве пользователя, которому назначена роль ATA, нужная для доступа к консоли ATA. Дополнительные сведения об управлении доступом на основе ролей (RBAC) в ATA см. в статье [Working with ATA role groups](ata-role-groups.md) (Работа с группами ролей ATA).
 
-    ![ATA server icon](media/ata-server-icon.png)
+## Вход в консоль ATA
+<a id="logging-into-the-ata-console" class="xliff"></a>
+
+1. На рабочем столе сервера центра ATA щелкните значок **консоли Microsoft ATA** или откройте браузер и перейдите к консоли ATA.
+
+    ![Значок сервера ATA](media/ata-server-icon.png)
 
 >[!NOTE]
-> You can also open a browser from either the ATA Center or the ATA Gateway and browse to the IP address you configured in the ATA Center installation for the ATA Console.    
+> Кроме того, можно открыть браузер из центра или шлюза ATA и ввести в адресную строку IP-адрес, указанный для консоли ATA при установке центра ATA.    
 
-2.  Enter your username and password and click **Log in**.
+2.  Если компьютер, на котором установлен центр ATA, и компьютер, с которого вы пытаетесь получить доступ к консоли ATA, присоединены к домену, ATA поддерживает единый вход, интегрированный с проверкой подлинности. Если вы уже вошли в компьютер, ATA будет использовать соответствующий токен для входа в консоль ATA. Кроме того, можно выполнять вход в систему с помощью смарт-карты. Ваши разрешения в ATA будут соответствовать вашей [роли администратора](ata-role-groups.md).
 
-![ATA login screen image](media/ATA-log-in-screen.png)
+> [!NOTE]
+> При входе в компьютер, с которого вы будете получать доступ к консоли ATA, используйте имя пользователя и пароль администратора ATA. Вы также можете запустить браузер от имени другого пользователя или выйти из системы Windows и снова войти как администратор ATA. Чтобы при доступе к консоли ATA был выведен запрос на ввод учетных данных, откройте ее, перейдя по соответствующему IP-адресу.
 
+Для выполнения входа с использованием функции единого входа сайт консоли ATA должен быть определен в браузере как сайт местной интрасети, а доступ должен осуществляться с помощью краткого имени или localhost.
 
-## The ATA Console
-
-The ATA Console provides you a quick view of all suspicious activities in chronological order. It enables you to drill into details of any activity and perform actions based on those activities. The console also displays alerts and notifications to highlight problems with the ATA network or new activities that are deemed suspicious.
-
-These are the key elements of the ATA console.
-
-
-### Attack time line
-
-This is the default landing page you are taken to when you log in to the ATA Console. By default, all open suspicious activities are shown on the attack time line. You can filter the attack time line to show All, Open, Dismissed or Resolved suspicious activities. You can also see the severity assigned to each activity.
-
-![ATA attack timeline image](media/attack-timeline-1.7.png)
-
-For more information, see [Working with suspicious activities](working-with-suspicious-activities.md).
-
-### Notification bar
-
-When a new suspicious activity is detected, the notification bar will open automatically on the right hand side. If there are new suspicious activities since the last time you logged in, the notification bar will open after you have successfully logged in. You can click the arrow on the right at any time to access the notification bar.
-
-![ATA notification bar image](media/notification-bar-1.7.png)
-
-### Filtering panel
-
-You can filter which suspicious activities are displayed in the attack time line or displayed in the entity profile suspicious activities tab based on Status and Severity.
-
-### Search bar
-
-In the top menu, you will find a search bar. You can search for a specific user, computer or groups in ATA. To give it a try, just start typing.
-
-![ATA console search image](media/ATA-console-search.png)
-
-### Health Center
-
-The Health Center provides you with alerts when something isn't working properly in your ATA deployment.
-
-![ATA health center image](media/ATA-Health-Issue.jpg)
-
-Any time your system encounters a problem, such as a connectivity error or a disconnected ATA Gateway, the Health Center icon will let you know by displaying a red dot. ![ATA health center red dot image](media/ATA-Health-Center-Alert-red-dot.png)
-
-Health Center alerts can be dismissed or resolved and are categorized High, Medium or Low depending on their severity. If you resolve an alert that the ATA service detects as still active, it will automatically be moved to the Open list of alerts. If the system detects that there is no longer cause for an alert (the situation has been fixed), it will automatically be moved to the resolved list.
-
-### User and computer profiles
-
-ATA builds a profile for each user and computer in the network. In the user profile ATA displays general information, such as group membership, recent logins, and recently accessed resources.
-
-![User profile](media/user-profile.png)
-
-In the computer profile, ATA displays general information, such as recently logins and recently accessed resources.
-
-![Computer profile](media/computer-profile.png)
-
-ATA provides additional information about entities (computers, devices, users) on the following pages: Summary, Activities, and Suspicious activities.
-
-A profile that ATA has not been able to fully resolve will be identified with half-filled circle icon next to it.
-
-
-![ATA unresolved profile image](media/ATA-Unresolved-Profile.jpg)
-
-### Mini profile
-
-Anywhere in the console where there is a single entity presented, such as a user or computer, if you hover your mouse over the entity, a mini profile will automatically open displaying the following information if available:
-
-![ATA mini profile image](media/ATA-mini-profile.jpg)
-
--   Name
-
--   Picture
-
--   Email
-
--   Telephone
-
--   Number of suspicious activities by severity
+> [!NOTE]
+> Помимо записи в журнал всех подозрительных действий и оповещений о работоспособности, выполняется аудит всех изменений конфигурации, вносимых в консоли ATA, в журнале событий Windows на компьютере центра ATA (**Журнал приложений и служб** > **Microsoft ATA**). Кроме того, выполняется аудит всех операций входа в консоль ATA.<br></br>  Сведения об изменениях конфигурации, влияющих на работу шлюза ATA, также записываются в журнал событий Windows на компьютере шлюза ATA. 
 
 
 
-## See Also
-[Check out the ATA forum!](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## Консоль ATA
+<a id="the-ata-console" class="xliff"></a>
+
+Консоль ATA предоставляет краткий обзор всех оповещений о подозрительных действиях в хронологическом порядке и позволяет получить дополнительные сведения о любой активности и связанных с ней действиями. В консоли также отображаются оповещения и уведомления о неполадках сети ATA или о новых подозрительных действиях.
+
+Ниже приведены основные элементы консоли ATA.
+
+
+### Временная шкала атак
+<a id="attack-time-line" class="xliff"></a>
+
+Целевая страница по умолчанию, на которую вы попадаете сразу после входа в консоль ATA. По умолчанию на временной шкале атак отображаются все открытые подозрительные действия. Временную шкалу атак можно фильтровать, чтобы просмотреть все, открытые, закрытые или устраненные подозрительные действия. Вы также можете просмотреть уровень серьезности каждого действия.
+
+![Изображение временной шкалы атак ATA](media/ATA-Suspicious-Activity-Timeline.jpg)
+
+Дополнительные сведения см. в статье [Обработка подозрительных действий](working-with-suspicious-activities.md).
+
+### Панель уведомлений
+<a id="notification-bar" class="xliff"></a>
+
+При обнаружении нового подозрительного действия панель уведомлений автоматически открывается с правой стороны. Если подозрительные действия были обнаружены после того, как вы покинули консоль, панель уведомлений откроется после выполнения входа. Чтобы открыть панель уведомлений, щелкните стрелку справа.
+
+![Изображение панели уведомлений ATA](media/notification-bar-1.7.png)
+
+### Панель фильтров
+<a id="filtering-panel" class="xliff"></a>
+
+Подозрительные действия, которые отображаются на временной шкале атак или на вкладке подозрительных действий в профиле сущности, можно фильтровать по состоянию и уровню серьезности.
+
+### Панель поиска
+<a id="search-bar" class="xliff"></a>
+
+Панель поиска расположена в верхнем меню. С ее помощью можно найти конкретного пользователя, компьютер или группу в ATA. Чтобы воспользоваться панелью поиска, просто начните вводить текст в текстовом поле.
+
+![Изображение панели поиска консоли ATA](media/ATA-console-search.png)
+
+### Центр работоспособности
+<a id="health-center" class="xliff"></a>
+
+В центре работоспособности отображаются оповещения об аномальном поведении компонентов в развернутом решении ATA.
+
+![Изображение центра работоспособности ATA](media/ATA-Health-Issue.jpg)
+
+При обнаружении каких-либо ошибок сети (например, ошибки подключения или отключения шлюза ATA) на значке центра работоспособности появится красная точка. ![Красная точка над значком центра работоспособности ATA (рисунок)](media/ATA-Health-Center-Alert-red-dot.png)
+
+Оповещения центра работоспособности можно закрывать или разрешать, а также фильтровать по уровню серьезности (высокий, средний или низкий). Если разрешить оповещение, которое служба ATA все еще распознает как активное, оно автоматически перемещается в список открытых оповещений. Если система обнаруживает, что проблема устранена, оповещение автоматически помещается в список разрешенных.
+
+### Профили пользователей и компьютеров
+<a id="user-and-computer-profiles" class="xliff"></a>
+
+Решение ATA создает профиль для каждого пользователя и компьютера в сети. В профиле пользователя отображаются общие сведения (например, членство в группе, история операций входа и недавно запрашиваемые ресурсы). В нем также приводится список расположений, из которых пользователь выполнял подключение посредством VPN. Список групп, которые рассматриваются в ATA как привилегированные, см. ниже.
+
+![Профиль пользователя](media/user-profile.png)
+
+В профиле компьютера отображаются общие сведения о компьютере (например, история операций входа и недавно запрашиваемые ресурсы).
+
+![Профиль компьютера](media/computer-profile.png)
+
+Дополнительные сведения об объектах (компьютерах, устройствах, пользователях) отображаются на страницах ATA "Сводка", "Действия" и "Подозрительные действия".
+
+Возле профиля, который ATA не удалось полностью опознать, будет отображаться наполовину заполненный круг.
+
+
+![Изображение неразрешенного профиля ATA](media/ATA-Unresolved-Profile.jpg)
+
+### Привилегированные группы
+<a id="sensitive-groups" class="xliff"></a>
+
+Перечисленные ниже группы рассматриваются в ATA как **привилегированные**. Эти группы помечаются как имеющие права администратора и инициируют оповещения, соответствующие привилегированным учетным записям.
+
+- Контроллеры домена предприятия — только чтение 
+- Администраторы домена 
+- Контроллеры домена 
+- Администраторы схемы
+- Администраторы предприятия 
+- Владельцы-создатели групповой политики 
+- Контроллеры домена только для чтения 
+- Администраторы  
+- Опытные пользователи  
+- Операторы учета  
+- Операторы сервера   
+- Операторы печати
+- Операторы архива
+- Репликаторы 
+- Пользователи удаленного рабочего стола 
+- Операторы настройки сети 
+- Создатели входящего доверия леса 
+- Администраторы DNS 
+
+
+### Мини-профиль
+<a id="mini-profile" class="xliff"></a>
+
+При наведении в консоли указателя мыши на пользователя или компьютер автоматически отображается мини-профиль сущности, в котором содержатся следующие сведения:
+
+![Изображение мини-профиля ATA](media/ATA-mini-profile.jpg)
+
+-   Имя
+
+-   Изображение
+
+-   Электронная почта
+
+-   Телефон
+
+-   Сведения о количестве подозрительных действий по уровню серьезности
+
+
+
+## См. также
+<a id="see-also" class="xliff"></a>
+[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
