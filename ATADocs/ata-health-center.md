@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7e396cddb818c0e80f8b7d78764a58d6abd560e5
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 59e5cafcff7b84ffb9dc161cd0b50cd3014e455a
+ms.sourcegitcommit: 3177d5894413fbd363b9aca8130f3f7a369223b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/10/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -54,6 +54,6 @@ ms.lasthandoff: 07/03/2017
 
 ## См. также
 <a id="see-also" class="xliff"></a>
-- [Работа с параметрами обнаружения ATA](working-with-detection-settings.md)
+
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
