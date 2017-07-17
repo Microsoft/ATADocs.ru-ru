@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: f2a4ed151db38497a6cec977f1090faf2eb4133e
-ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.openlocfilehash: 6850c5e8e264a9610e377a9ab4aadca338971ee1
+ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 07/11/2017
 ---
 # Новые возможности ATA версии 1.8
 <a id="whats-new-in-ata-version-18" class="xliff"></a>
+
+Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=55536), а полную версию — в [Центре оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
+
 В этих заметках о выпуске содержатся сведения об обновлениях, новых функциях, исправлениях ошибок и известных проблемах в текущей версии Advanced Threat Analytics.
 
 
@@ -65,7 +68,6 @@ ms.lasthandoff: 07/05/2017
 
 -   Повышена производительность центра ATA. В версии ATA 1.8 центр ATA может обрабатывать более одного миллиона пакетов в секунду.
 -   Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
--   Расширение специальных возможностей — ATA теперь соответствует стандартам Майкрософт по обеспечению возможности работы всех пользователей независимо от их возможностей. 
 -   Теперь можно настроить электронную почту отдельно для оповещений мониторинга и сообщений о подозрительных действиях.
 
 ## Усовершенствования системы безопасности
