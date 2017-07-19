@@ -23,16 +23,14 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Настройка пересылки событий Windows
-<a id="configuring-windows-event-forwarding" class="xliff"></a>
+# <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
 Чтобы улучшить возможности обнаружения вторжений, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](#configuring-windows-event-forwarding).
 
 > [!NOTE]
 > В версии ATA 1.8 и более поздних настройка сбора событий для упрощенных шлюзов ATA больше не требуется. Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
 
-### Настройка пересылки событий Windows для шлюза ATA с зеркалированием портов
-<a id="wef-configuration-for-ata-gateways-with-port-mirroring" class="xliff"></a>
+### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>Настройка пересылки событий Windows для шлюза ATA с зеркалированием портов
 
 Когда вы настроите зеркалирование портов от контроллеров домена на шлюз ATA, выполните приведенные ниже инструкции, чтобы осуществлять пересылку событий Windows с помощью настройки "инициировано источником". Это один из возможных способов пересылки событий Windows. 
 
@@ -96,7 +94,6 @@ ms.lasthandoff: 07/03/2017
 
 Подробности см. в статье [Настройка компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890)
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Установка ATA](install-ata-step1.md)
 - [Ознакомьтесь с форумом ATA](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Экспорт и импорт конфигурации ATA
-<a id="export-and-import-the-ata-configuration" class="xliff"></a>
+# <a name="export-and-import-the-ata-configuration"></a>Экспорт и импорт конфигурации ATA
 Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
 Служба центра АТА каждый час выполняет резервное копирование этой коллекции в файлы, которые называются SystemProfile_*timestamp*.json. Сохраняются последние 10 файлов.
 Они расположены в подпапке с именем Backup (Резервная копия). По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
@@ -35,8 +34,7 @@ ms.lasthandoff: 06/30/2017
 
 `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Архитектура ATA](ata-architecture.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Настройка уведомлений ATA
-<a id="set-ata-notifications" class="xliff"></a>
+# <a name="set-ata-notifications"></a>Настройка уведомлений ATA
 Существует три способа получения уведомлений ATA о подозрительной активности: по электронной почте, при помощи пересылки событий ATA и пересылки событий на сервер SIEM или сервер системного журнала. Перед выбором уведомлений, которые вы хотите получать, необходимо [настроить почтовый сервер и сервер системного журнала](setting-syslog-email-server-settings.md).
 
 > [!NOTE]
@@ -51,6 +50,5 @@ ms.lasthandoff: 06/30/2017
 
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

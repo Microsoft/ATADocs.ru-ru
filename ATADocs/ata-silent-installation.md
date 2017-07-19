@@ -23,11 +23,9 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Автоматическая установка ATA
-<a id="ata-silent-installation" class="xliff"></a>
+# <a name="ata-silent-installation"></a>Автоматическая установка ATA
 Эта статья содержит указания по автоматической установке ATA.
-## Предварительные требования
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Предварительные требования
 
 Для ATA версии 1.8 требуется установить платформу Microsoft .NET Framework 4.6.1. 
 
@@ -40,8 +38,7 @@ ms.lasthandoff: 06/30/2017
 Чтобы отслеживать ход выполнения развертывания, проверяйте журналы установщика ATA, расположенные в каталоге **%AppData%\Local\Temp**.
 
 
-## Установите центр ATA.
-<a id="install-the-ata-center" class="xliff"></a>
+## <a name="install-the-ata-center"></a>Установите центр ATA.
 
 Для установки центра ATA используйте приведенную ниже команду.
 
@@ -81,8 +78,7 @@ ms.lasthandoff: 06/30/2017
     "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F"
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint="G9530253C976BFA9342FD1A716C0EC94207BFD5A"
 
-## Обновите центр ATA.
-<a id="update-the-ata-center" class="xliff"></a>
+## <a name="update-the-ata-center"></a>Обновите центр ATA.
 
 Для обновления центра ATA используйте приведенную ниже команду.
 
@@ -106,8 +102,7 @@ ms.lasthandoff: 06/30/2017
 
         "Microsoft ATA Center Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 
-## Автоматическое удаление центра ATA
-<a id="uninstall-the-ata-center-silently" class="xliff"></a>
+## <a name="uninstall-the-ata-center-silently"></a>Автоматическое удаление центра ATA
 
 Для автоматического удаления центра ATA используйте следующую команду: **Синтаксис**:
 
@@ -133,8 +128,7 @@ ms.lasthandoff: 06/30/2017
 
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
-## Автоматическая установка шлюза ATA
-<a id="ata-gateway-silent-installation" class="xliff"></a>
+## <a name="ata-gateway-silent-installation"></a>Автоматическая установка шлюза ATA
 Для автоматической установки шлюза ATA используйте приведенную ниже команду.
 
 **Синтаксис**
@@ -169,8 +163,7 @@ ms.lasthandoff: 06/30/2017
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
     
 
-## Обновление шлюза ATA
-<a id="update-the-ata-gateway" class="xliff"></a>
+## <a name="update-the-ata-gateway"></a>Обновление шлюза ATA
 
 Для автоматического обновления шлюза ATA используйте приведенную ниже команду.
 
@@ -192,8 +185,7 @@ ms.lasthandoff: 06/30/2017
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-## Автоматическое удаление шлюза ATA
-<a id="uninstall-the-ata-gateway-silently" class="xliff"></a>
+## <a name="uninstall-the-ata-gateway-silently"></a>Автоматическое удаление шлюза ATA
 
 Для автоматического удаления шлюза ATA используйте следующую команду: **Синтаксис**:
 
@@ -221,8 +213,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

@@ -23,8 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Устранение неполадок при запуске службы центра ATA
-<a id="troubleshooting-ata-center-service-startup" class="xliff"></a>
+# <a name="troubleshooting-ata-center-service-startup"></a>Устранение неполадок при запуске службы центра ATA
 
 Если центр ATA не запускается, выполните описанную ниже процедуру устранения неполадок.
 
@@ -37,8 +36,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

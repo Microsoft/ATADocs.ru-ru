@@ -23,15 +23,13 @@ ms.lasthandoff: 07/03/2017
 
 
 
-# Установка ATA. Шаг 2
-<a id="install-ata---step-2" class="xliff"></a>
+# <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
 >[!div class="step-by-step"]
 [Шаг 1](install-ata-step1.md)
 [Шаг 3](install-ata-step3.md)
 
-## Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
-<a id="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest" class="xliff"></a>
+## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
 
 При первом открытии консоли ATA открывается такой экран:
 
@@ -57,8 +55,7 @@ ms.lasthandoff: 07/03/2017
 [Шаг 3](install-ata-step3.md)
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

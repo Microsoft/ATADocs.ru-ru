@@ -21,24 +21,20 @@ ms.lasthandoff: 07/03/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
-# Часто задаваемые вопросы об ATA
-<a id="ata-frequently-asked-questions" class="xliff"></a>
+# <a name="ata-frequently-asked-questions"></a>Часто задаваемые вопросы об ATA
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Microsoft Advanced Threat Analytics (ATA).
 
 
-## Где можно получить лицензию для Advanced Threat Analytics (ATA)?
-<a id="where-can-i-get-a-license-for-advanced-threat-analytics-ata" class="xliff"></a>
+## <a name="where-can-i-get-a-license-for-advanced-threat-analytics-ata"></a>Где можно получить лицензию для Advanced Threat Analytics (ATA)?
 
 Если у вас есть действующее соглашение Enterprise, вы можете скачать программное обеспечение в центре корпоративного лицензирования Майкрософт (VLSC).
 
 Если вы приобрели лицензию Enterprise Mobility + Security (EMS) непосредственно на портале Office 365 или по модели лицензирования Cloud Solution Partner (CSP) и у вас нет доступа к ATA в центре корпоративного лицензирования Майкрософт (VLSC), обратитесь в службу поддержки клиентов Майкрософт, чтобы узнать, как активировать решение Advanced Threat Analytics (ATA).
 
-## Что делать, если шлюз ATA не запускается?
-<a id="what-should-i-do-if-the-ata-gateway-wont-start" class="xliff"></a>
+## <a name="what-should-i-do-if-the-ata-gateway-wont-start"></a>Что делать, если шлюз ATA не запускается?
 Просмотрите самую последнюю ошибку в текущем журнале ошибок (в месте установки ATA в папке Logs).
 
-## Как протестировать ATA?
-<a id="how-can-i-test-ata" class="xliff"></a>
+## <a name="how-can-i-test-ata"></a>Как протестировать ATA?
 Можно имитировать подозрительные действия, что представляет собой сквозной тест, одним из следующих методов:
 
 1.  Проверка DNS с использованием средства Nslookup.exe.
@@ -47,8 +43,7 @@ ms.lasthandoff: 07/03/2017
 
 Это нужно выполнить удаленно через отслеживаемый контроллер домена, а не через шлюз ATA.
 
-## Какая сборка ATA соответствует той или иной версии?
-<a id="which-ata-build-corresponds-to-each-version" class="xliff"></a>
+## <a name="which-ata-build-corresponds-to-each-version"></a>Какая сборка ATA соответствует той или иной версии?
 
 |Версия|Номер сборки|
 |----|----|
@@ -59,14 +54,12 @@ ms.lasthandoff: 07/03/2017
 |1.7 с обновлением 2|1.7.5757|
 |1,8|1.8.6645|
 
-## Какую версию следует использовать для обновления текущего развертывания ATA до последней версии?
-<a id="what-version-should-i-use-to-upgrade-my-current-ata-deployment-to-the-latest-version" class="xliff"></a>
+## <a name="what-version-should-i-use-to-upgrade-my-current-ata-deployment-to-the-latest-version"></a>Какую версию следует использовать для обновления текущего развертывания ATA до последней версии?
 
 ![Таблица обновления версий ATA](./media/version-matrix.png)
 
 
-## Как проверить пересылку событий Windows?
-<a id="how-do-i-verify-windows-event-forwarding" class="xliff"></a>
+## <a name="how-do-i-verify-windows-event-forwarding"></a>Как проверить пересылку событий Windows?
 Приведенный ниже код можно сохранить в файл и выполнить этот файл в командной строке из каталога **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**, используя следующую команду.
 
 mongo.exe ATA filename
@@ -79,32 +72,26 @@ mongo.exe ATA filename
                 }
         });
 
-## Поддерживает ли ATA зашифрованный трафик?
-<a id="does-ata-work-with-encrypted-traffic" class="xliff"></a>
+## <a name="does-ata-work-with-encrypted-traffic"></a>Поддерживает ли ATA зашифрованный трафик?
 Принцип действия ATA основан на анализе множества сетевых протоколов и событий, информация о которых собирается из SIEM и через пересылку событий Windows. При этом ATA не анализирует зашифрованный трафик (например, LDAPS и IPSEC ESP), но это не мешает системе успешно работать и выполнять почти все обнаружения.
 
-## Поддерживает ли ATA защиту Kerberos?
-<a id="does-ata-work-with-kerberos-armoring" class="xliff"></a>
+## <a name="does-ata-work-with-kerberos-armoring"></a>Поддерживает ли ATA защиту Kerberos?
 ATA поддерживает механизм защиты Kerberos (также известный как безопасное туннелирование для гибкой аутентификации (FAST)). Однако в случае его активации ATA не сможет обнаруживать атаки Over-pass-the-hash.
 
-## Как узнать число требуемых шлюзов ATA?
-<a id="how-many-ata-gateways-do-i-need" class="xliff"></a>
+## <a name="how-many-ata-gateways-do-i-need"></a>Как узнать число требуемых шлюзов ATA?
 
 Число шлюзов ATA зависит от структуры сети, объема передаваемых пакетов и количества событий, собираемых ATA. Чтобы определить точное число, ознакомьтесь с разделом [Размеры упрощенных шлюзов ATA](ata-capacity-planning.md#ata-lightweight-gateway-sizing). 
 
-## Какой объем хранилища требуется для ATA?
-<a id="how-much-storage-do-i-need-for-ata" class="xliff"></a>
+## <a name="how-much-storage-do-i-need-for-ata"></a>Какой объем хранилища требуется для ATA?
 На каждый полный день при среднем показателе 1000 пакетов/с требуется 0,3 ГБ свободного места в хранилище.<br /><br />Дополнительные сведения об определении размера центра ATA см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
 
-## Почему некоторые учетные записи рассматриваются как конфиденциальные?
-<a id="why-are-certain-accounts-considered-sensitive" class="xliff"></a>
+## <a name="why-are-certain-accounts-considered-sensitive"></a>Почему некоторые учетные записи рассматриваются как конфиденциальные?
 Такие учетные записи могут быть у участников определенных групп, которые считаются конфиденциальными (например, у участников группы администраторов домена).
 
 Чтобы понять, почему учетная запись конфиденциальная, нужно просмотреть, к каким конфиденциальным группам она относится. Группы, к которым она принадлежит, также могут быть конфиденциальными из-за другой группы, поэтому необходимо обнаружить группу с самым высоким уровнем конфиденциальности.
 
-## Как обеспечить отслеживание виртуального контроллера домена с помощью ATA?
-<a id="how-do-i-monitor-a-virtual-domain-controller-using-ata" class="xliff"></a>
+## <a name="how-do-i-monitor-a-virtual-domain-controller-using-ata"></a>Как обеспечить отслеживание виртуального контроллера домена с помощью ATA?
 Упрощенный шлюз ATA поддерживают большинство виртуальных контроллеров домена. Сведения о том, как определить, пригодна ли ваша среда для размещения упрощенных шлюзов ATA см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
 Если в виртуальном контроллере домена невозможно разместить упрощенный шлюз ATA, в нем можно реализовать физический или виртуальный шлюз ATA, как описано в статье [Настройка зеркального отображения портов](configure-port-mirroring.md).  <br />Проще всего настроить виртуальный шлюз ATA на каждом узле, где есть виртуальный контроллер домена.<br />Если виртуальные контроллеры домена перемещаются между узлами, необходимо выполнить одно из следующих действий:
@@ -113,81 +100,64 @@ ATA поддерживает механизм защиты Kerberos (также 
 -   Сопоставьте виртуальный шлюз ATA с виртуальным контроллером домена. Таким образом, они останутся связанными.
 -   Используйте виртуальные коммутаторы, которые могут отправлять трафик между узлами.
 
-## Как осуществить резервное копирование данных ATA?
-<a id="how-do-i-back-up-ata" class="xliff"></a>
+## <a name="how-do-i-back-up-ata"></a>Как осуществить резервное копирование данных ATA?
 
 См. статью [Аварийное восстановление АТА](disaster-recovery.md).
 
 
 
-## Какие атаки и угрозы может обнаружить ATA?
-<a id="what-can-ata-detect" class="xliff"></a>
+## <a name="what-can-ata-detect"></a>Какие атаки и угрозы может обнаружить ATA?
 
 Решение ATA обнаруживает известные вредоносные атаки и методы нарушения безопасности, а также проблемы безопасности и риски.
 Полный список обнаружений ATA см. в статье [Какие угрозы обнаруживает ATA?](ata-threats.md)
 
-## Какой тип хранилища необходим для ATA?
-<a id="what-kind-of-storage-do-i-need-for-ata" class="xliff"></a>
+## <a name="what-kind-of-storage-do-i-need-for-ata"></a>Какой тип хранилища необходим для ATA?
 Мы советуем использовать быстродействующее устройство хранения (диски со скоростью до 7200 об/мин) с малой задержкой (менее 10 мс) и конфигурацией RAID, которая поддерживает большие нагрузки операций записи (кроме RAID 5 и 6, а также производных конфигураций).
 
-## Какое количество сетевых адаптеров требуется для шлюза ATA?
-<a id="how-many-nics-does-the-ata-gateway-require" class="xliff"></a>
+## <a name="how-many-nics-does-the-ata-gateway-require"></a>Какое количество сетевых адаптеров требуется для шлюза ATA?
 Для шлюза ATA необходимо как минимум два сетевых адаптера:<br>1. сетевой адаптер для подключения к внутренней сети и центру ATA;<br>2. Сетевой адаптер для записи сетевого трафика контроллеров домена путем зеркального отображения порта.<br>* Это не относится к упрощенному шлюзу ATA, в котором изначально используются сетевые адаптеры, применяемые контроллером домена.
 
-## Какой ATA интегрируется с системами SIEM?
-<a id="what-kind-of-integration-does-ata-have-with-siems" class="xliff"></a>
+## <a name="what-kind-of-integration-does-ata-have-with-siems"></a>Какой ATA интегрируется с системами SIEM?
 ATA поддерживает двунаправленную интеграцию с системами SIEM:
 
 1. В ATA можно настроить отправку оповещений системного журнала при обнаружении подозрительной активности на любой сервер системы SIEM, который поддерживает формат CEF.
 2. В ATA можно настроить получение сообщений системного журнала о событиях Windows из [этих систем SIEM](install-ata-step6.md).
 
-## Возможно ли с помощью ATA отслеживать виртуализированные контроллеры домена в решении IaaS?
-<a id="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution" class="xliff"></a>
+## <a name="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution"></a>Возможно ли с помощью ATA отслеживать виртуализированные контроллеры домена в решении IaaS?
 Да, можно использовать упрощенный шлюз ATA, чтобы отслеживать контроллеры домена, входящие в любое решение IaaS.
 
-## Это локальное или облачное решение?
-<a id="is-this-an-on-premises-or-in-cloud-offering" class="xliff"></a>
+## <a name="is-this-an-on-premises-or-in-cloud-offering"></a>Это локальное или облачное решение?
 Microsoft Advanced Threat Analytics — это локальный продукт.
 
-## Будет ли решение предоставляться в составе Azure Active Directory или локальной версии Active Directory?
-<a id="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory" class="xliff"></a>
+## <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>Будет ли решение предоставляться в составе Azure Active Directory или локальной версии Active Directory?
 Сейчас это отдельное предложение, которое не относится к службе Azure Active Directory или локальной версии Active Directory.
 
-## Нужно ли писать собственные правила и определять ограничения или базовые показатели?
-<a id="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline" class="xliff"></a>
+## <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>Нужно ли писать собственные правила и определять ограничения или базовые показатели?
 В Microsoft Advanced Threat Analytics не нужно создавать правила, ограничения, базовые показатели и настраивать их. ATA анализирует поведение пользователей, устройств и ресурсов, а также их взаимодействие и быстро обнаруживает подозрительные действия и атаки известных типов. Это решение начинает определять подозрительные действия через три недели после развертывания, а обнаружение проблем безопасности и известных вредоносных атак начинается сразу после развертывания.
 
-## Определит ли Microsoft Advanced Threat Analytics аномальное поведение, если безопасность уже нарушена?
-<a id="if-you-are-already-breached-will-microsoft-advanced-threat-analytics-be-able-to-identify-abnormal-behavior" class="xliff"></a>
+## <a name="if-you-are-already-breached-will-microsoft-advanced-threat-analytics-be-able-to-identify-abnormal-behavior"></a>Определит ли Microsoft Advanced Threat Analytics аномальное поведение, если безопасность уже нарушена?
 Да, даже если решение ATA установили после нарушения, оно все равно обнаружит подозрительные действия злоумышленников. ATA отслеживает поведение не только одного пользователя, но и других пользователей в схеме безопасности предприятия. Если во время начального анализа злоумышленник выполняет аномальные действия, решение определяет их как "выброс" и создает отчеты о аномальном поведении. Кроме того, если злоумышленник пытается украсть учетные данные пользователей, например при атаке Pass-the-Ticket, или удаленно выполнить действие на одном из контроллеров домена, ATA также определит эти действия как подозрительные.
 
-## Решение анализирует только трафик Active Directory?
-<a id="does-this-only-leverage-traffic-from-active-directory" class="xliff"></a>
+## <a name="does-this-only-leverage-traffic-from-active-directory"></a>Решение анализирует только трафик Active Directory?
 Вдобавок к анализу трафика Active Directory с использованием технологии тщательного анализа пакетов ATA также выполняет сбор данных о соответствующих событиях из систем SIEM и создает профили сущностей на основе сведений из доменных служб Active Directory. ATA также может собирать сведения о событиях из журналов событий, если в организации настроена пересылка журналов событий Windows.
 
-## Что такое зеркальное отображение портов?
-<a id="what-is-port-mirroring" class="xliff"></a>
+## <a name="what-is-port-mirroring"></a>Что такое зеркальное отображение портов?
 Зеркальное отображение портов, также известное как SPAN (Switched Port Analyzer) — это технология мониторинга сетевого трафика. Если зеркальное отображение портов включено, коммутатор отправляет копию всех сетевых пакетов одного порта (или всей виртуальной ЛС) на другой порт, где пакеты можно проанализировать.
 
-## ATA отслеживает действия только присоединенных к домену устройств?
-<a id="does-ata-monitor-only-domain-joined-devices" class="xliff"></a>
+## <a name="does-ata-monitor-only-domain-joined-devices"></a>ATA отслеживает действия только присоединенных к домену устройств?
 Нет. Microsoft Advanced Threat Analytics выполняет мониторинг всех устройств в сети, которые отправляют запросы проверки подлинности и авторизации в Active Directory, в том числе мобильных устройств не под управлением Windows.
 
-## Поддерживает ли ATA мониторинг учетных записей компьютеров и пользователей?
-<a id="does-ata-monitor-computer-accounts-as-well-as-user-accounts" class="xliff"></a>
+## <a name="does-ata-monitor-computer-accounts-as-well-as-user-accounts"></a>Поддерживает ли ATA мониторинг учетных записей компьютеров и пользователей?
 Да. Так как учетные записи компьютеров (как и любые другие сущности) могут использовать для вредоносных действий, Microsoft Advanced Threat Analytics отслеживает поведение всех учетных записей компьютеров и всех других сущностей в среде.
 
-## Поддерживает ли ATA несколько доменов и лесов?
-<a id="can-ata-support-multi-domain-and-multi-forest" class="xliff"></a>
+## <a name="can-ata-support-multi-domain-and-multi-forest"></a>Поддерживает ли ATA несколько доменов и лесов?
 Microsoft Advanced Threat Analytics поддерживает многодоменную среду в пределах одного леса. Если лесов несколько, для каждого из них требуется отдельное развертывание ATA.
 
-## Можно ли проверить общую работоспособность развертывания?
-<a id="can-you-see-the-overall-health-of-the-deployment" class="xliff"></a>
+## <a name="can-you-see-the-overall-health-of-the-deployment"></a>Можно ли проверить общую работоспособность развертывания?
 Да, вы можете проверить общую работоспособность развертывания, а также узнать о конкретных проблемах, связанных с конфигурацией, подключением и т. п. Кроме того, вы будете получать оповещения в случае их возникновения.
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
