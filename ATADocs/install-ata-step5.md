@@ -23,16 +23,14 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Установка ATA. Шаг 5
-<a id="install-ata---step-5" class="xliff"></a>
+# <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
 >[!div class="step-by-step"]
 [« Шаг 4](install-ata-step4.md)
 [Шаг 6 »](install-ata-step6.md)
 
 
-## Шаг 5. Настройка параметров шлюза ATA
-<a id="step-5-configure-the-ata-gateway-settings" class="xliff"></a>
+## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройка параметров шлюза ATA
 После установки шлюза ATA выполните следующие шаги по его настройке.
 
 1.  В консоли ATA перейдите к **конфигурации** и в разделе **Системы** выберите **Шлюзы**.
@@ -70,8 +68,7 @@ ms.lasthandoff: 06/30/2017
 5. Нажмите кнопку **Сохранить**.
 
 
-## Проверка установки
-<a id="validate-installations" class="xliff"></a>
+## <a name="validate-installations"></a>Проверка установки
 Чтобы проверить, успешно ли вы развернули шлюз ATA, сделайте следующее:
 
 1.  Убедитесь, что служба **шлюза Microsoft Advanced Threat Analytics** запущена. После сохранения параметров шлюза ATA запуск службы может занять несколько минут.
@@ -91,8 +88,7 @@ ms.lasthandoff: 06/30/2017
 [« Шаг 4](install-ata-step4.md)
 [Шаг 6 »](install-ata-step6.md)
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

@@ -23,15 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Установка ATA. Шаг 4
-<a id="install-ata---step-4" class="xliff"></a>
+# <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
 >[!div class="step-by-step"]
 [« Шаг 3](install-ata-step3.md)
 [Шаг 5 »](install-ata-step5.md)
 
-## Шаг 4. Установите шлюз ATA.
-<a id="step-4-install-the-ata-gateway" class="xliff"></a>
+## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установите шлюз ATA.
 
 Прежде чем устанавливать шлюз ATA на выделенном сервере, убедитесь, что зеркальное отображение портов настроено правильно и что шлюз ATA может просматривать входящий и исходящий трафик на контроллерах домена. Дополнительную информацию см. в статье [Проверка зеркального отображения портов](validate-port-mirroring.md).
 
@@ -90,8 +88,7 @@ ms.lasthandoff: 06/30/2017
 [« Шаг 3](install-ata-step3.md)
 [Шаг 5 »](install-ata-step5.md)
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

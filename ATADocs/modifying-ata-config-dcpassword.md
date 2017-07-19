@@ -23,13 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Изменение конфигурации ATA. Пароль для подключения к домену
-<a id="change-ata-configuration---domain-connectivity-password" class="xliff"></a>
+# <a name="change-ata-configuration---domain-connectivity-password"></a>Изменение конфигурации ATA. Пароль для подключения к домену
 
 
 
-## Изменение пароля для подключения к домену
-<a id="change-the-domain-connectivity-password" class="xliff"></a>
+## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 Изменяя пароль для подключения к домену, указывайте правильный пароль. Если указать неправильный пароль, служба ATA на шлюзах ATA перестанет работать.
 
 В таком случае откройте на шлюзе ATA файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку: `The supplied credential is invalid.`.
@@ -56,7 +54,6 @@ ms.lasthandoff: 06/30/2017
 
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

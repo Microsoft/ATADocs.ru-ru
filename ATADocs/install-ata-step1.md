@@ -22,8 +22,7 @@ ms.lasthandoff: 07/03/2017
 *Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Установка ATA. Шаг 1
-<a id="install-ata---step-1" class="xliff"></a>
+# <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
 
 >[!div class="step-by-step"]
 [Шаг 2 "](install-ata-step2.md)
@@ -33,8 +32,7 @@ ms.lasthandoff: 07/03/2017
 > [!IMPORTANT] 
 > Если вы используете Windows 2012 R2, то, прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюза ATA. Иначе это обновление будет установлено вместе с ATA, из-за чего во время установки потребуется перезагрузка.
 
-## Шаг 1. Скачивание и установка центра ATA
-<a id="step-1-download-and-install-the-ata-center" class="xliff"></a>
+## <a name="step-1-download-and-install-the-ata-center"></a>Шаг 1. Скачивание и установка центра ATA
 Проверив соответствие сервера требованиям, можно приступить к установке центра ATA.
     
 > [!NOTE]
@@ -88,8 +86,7 @@ ms.lasthandoff: 07/03/2017
 Затем вы будете автоматически перенаправлены на страницу параметров **Общие**. Там вы сможете продолжить настройку и развертывание шлюзов ATA.
 Так как вход на сайт выполняется с помощью IP-адреса, вы получите предупреждение относительно сертификата. Это вполне нормально. Просто щелкните **Continue to this website** (Продолжить открытие этого веб-сайта).
 
-### Проверка установки
-<a id="validate-installation" class="xliff"></a>
+### <a name="validate-installation"></a>Проверка установки
 
 1.  Убедитесь, что запущена служба центра **Microsoft Advanced Threat Analytics**.
 2.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
@@ -100,8 +97,7 @@ ms.lasthandoff: 07/03/2017
 [« Перед установкой](configure-port-mirroring.md)
 [Шаг 2 »](install-ata-step2.md)
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

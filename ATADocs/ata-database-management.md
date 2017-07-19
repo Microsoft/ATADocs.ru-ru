@@ -23,20 +23,16 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Управление базой данных ATA
-<a id="ata-database-management" class="xliff"></a>
+# <a name="ata-database-management"></a>Управление базой данных ATA
 Из этой статьи вы узнаете, как перемещать и восстанавливать базу данных ATA, а также создавать ее резервные копии на примере MongoDB.
 
-## Резервное копирование базы данных ATA
-<a id="backing-up-the-ata-database" class="xliff"></a>
+## <a name="backing-up-the-ata-database"></a>Резервное копирование базы данных ATA
 См. [соответствующую документацию MongoDB](http://docs.mongodb.org/manual/administration/backup/).
 
-## Восстановление базы данных ATA
-<a id="restoring-the-ata-database" class="xliff"></a>
+## <a name="restoring-the-ata-database"></a>Восстановление базы данных ATA
 См. [соответствующую документацию MongoDB](http://docs.mongodb.org/manual/administration/backup/).
 
-## Перемещение базы данных ATA на другой диск
-<a id="moving-the-ata-database-to-another-drive" class="xliff"></a>
+## <a name="moving-the-ata-database-to-another-drive"></a>Перемещение базы данных ATA на другой диск
 
 1.  Остановите службу **центра Microsoft Advanced Threat Analytics**.
 > [!Important] 
@@ -58,8 +54,7 @@ ms.lasthandoff: 06/30/2017
 
 7. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Архитектура ATA](ata-architecture.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

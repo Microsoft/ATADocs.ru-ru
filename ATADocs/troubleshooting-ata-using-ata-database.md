@@ -23,13 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Устранение неполадок в ATA с помощью базы данных ATA
-<a id="troubleshooting-ata-using-the-ata-database" class="xliff"></a>
+# <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 В качестве своей базы данных ATA использует MongoDB.
 Для взаимодействия с базой данных можно использовать заданную по умолчанию командную строку или инструмент пользовательского интерфейса для выполнения дополнительных задач и устранения неполадок.
 
-## Взаимодействие с базой данных
-<a id="interacting-with-the-database" class="xliff"></a>
+## <a name="interacting-with-the-database"></a>Взаимодействие с базой данных
 Чтобы отправить запрос в базу данных, проще всего (и это стандартный способ) использовать оболочку Mongo. Сделать это можно так:
 
 1.  Откройте окно командной строки и измените путь к папке Bin службы MongoDB. По умолчанию задан путь **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**.
@@ -51,8 +49,7 @@ ms.lasthandoff: 06/30/2017
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

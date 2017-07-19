@@ -21,8 +21,7 @@ ms.lasthandoff: 07/05/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
-# Работа с журналами аудита ATA
-<a id="working-with-ata-audit-logs" class="xliff"></a>
+# <a name="working-with-ata-audit-logs"></a>Работа с журналами аудита ATA
 
 Журналы аудита ATA хранятся в журналах событий Windows в разделе **Приложения и службы** > **Microsoft ATA** как на компьютере центра ATA, так и на компьютерах шлюзов ATA.
 
@@ -40,7 +39,6 @@ ms.lasthandoff: 07/05/2017
 * Журнал аудита изменений конфигурации содержит сведения как о прежней, так и о новой конфигурации.
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,15 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-# Установка ATA. Шаг 3
-<a id="install-ata---step-3" class="xliff"></a>
+# <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
 >[!div class="step-by-step"]
 [« Шаг 2](install-ata-step2.md)
 [Шаг 4 »](install-ata-step4.md)
 
-## Шаг 3. Скачивание пакета установки шлюза ATA
-<a id="step-3-download-the-ata-gateway-setup-package" class="xliff"></a>
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>Шаг 3. Скачивание пакета установки шлюза ATA
 Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA. Шлюз ATA можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена он установится как упрощенный шлюз ATA. Дополнительные сведения об упрощенном шлюзе ATA см. в статье [Архитектура ATA](ata-architecture.md). 
 
 В списке действий в верхней части страницы щелкните "Скачать программу установки шлюза", чтобы перейти на страницу "Шлюзы".
@@ -57,8 +55,7 @@ ZIP-файл содержит:
 [« Шаг 2](install-ata-step2.md)
 [Шаг 4 »](install-ata-step4.md)
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
