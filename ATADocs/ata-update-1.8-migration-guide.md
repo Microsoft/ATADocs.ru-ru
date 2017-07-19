@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/10/2017
 ---
-# Обновление ATA до версии 1.8
-<a id="updating-ata-to-version-18" class="xliff"></a>
+# <a name="updating-ata-to-version-18"></a>Обновление ATA до версии 1.8
 
 > [!NOTE] 
 > Если в вашей среде решение ATA не установлено, скачайте его полную версию, включая версию 1.8, и выполните стандартную процедуру установки, описанную в статье [Установка ATA](install-ata-step1.md).
@@ -42,8 +41,7 @@ ms.lasthandoff: 07/10/2017
     > [!IMPORTANT]
     > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### Шаг 1. Обновление центра ATA
-<a id="step-1-update-the-ata-center" class="xliff"></a>
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
 
 1.  Создайте резервную копию базы данных (необязательно).
 
@@ -84,7 +82,6 @@ ms.lasthandoff: 07/10/2017
 > Чтобы установить новые шлюзы ATA, перейдите к экрану **Шлюзы** и выберите команду **Скачать установщик шлюза**, чтобы получить установочный пакет шлюза ATA 1.8, а затем следуйте инструкциям по установке нового шлюза в разделе [Шаг 4. Установка шлюза ATA](install-ata-step4.md).
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
