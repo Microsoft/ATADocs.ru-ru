@@ -23,14 +23,12 @@ ms.lasthandoff: 07/10/2017
 
 
 
-# Установка ATA. Шаг 7
-<a id="install-ata---step-7" class="xliff"></a>
+# <a name="install-ata---step-7"></a>Установка ATA. Шаг 7
 
 >[!div class="step-by-step"]
 [«Шаг 6»](install-ata-step6.md)
 
-## Шаг 7. Настройка исключений IP-адресов и пользователя Honeytoken
-<a id="step-7-configure-ip-address-exclusions-and-honeytoken-user" class="xliff"></a>
+## <a name="step-7-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 7. Настройка исключений IP-адресов и пользователя Honeytoken
 В ATA можно исключать из обнаружения определенные IP-адреса или пользователей. 
 
 Например, **исключением исследования DNS** является сканер безопасности, использующий DNS в качестве механизма сканирования. Благодаря этому исключению ATA игнорирует такие сканеры. Примером исключения *Pass-the-Ticket* является устройство NAT.    
@@ -73,8 +71,7 @@ ms.lasthandoff: 07/10/2017
 [«Шаг 6»](install-ata-step6.md)
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

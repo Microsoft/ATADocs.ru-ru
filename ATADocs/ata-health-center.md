@@ -22,21 +22,17 @@ ms.lasthandoff: 07/10/2017
 *Применяется к Advanced Threat Analytics версии 1.8*
 
 
-# Работа со сведениями о работоспособности системы и событиями ATA
-<a id="working-with-ata-system-health-and-events" class="xliff"></a>
+# <a name="working-with-ata-system-health-and-events"></a>Работа со сведениями о работоспособности системы и событиями ATA
 
-## Центр работоспособности ATA
-<a id="ata-health-center" class="xliff"></a>
+## <a name="ata-health-center"></a>Центр работоспособности ATA
 Центр работоспособности ATA позволяет следить за работой службы ATA и узнавать о возможных проблемах.
 
-## Работа с центром работоспособности ATA
-<a id="working-with-the-ata-health-center" class="xliff"></a>
+## <a name="working-with-the-ata-health-center"></a>Работа с центром работоспособности ATA
 Узнать о существующей проблеме можно по красной точке над значком центра работоспособности в строке меню.
 
 ![Красная точка над значком центра работоспособности ATA на панели инструментов](media/ATA-Health-Center-Alert-red-dot.png)
 
-### Управление работоспособностью ATA
-<a id="managing-ata-health" class="xliff"></a>
+### <a name="managing-ata-health"></a>Управление работоспособностью ATA
 Чтобы проверить общее состояние системы, щелкните в строке меню значок центра работоспособности. ![Значок центра работоспособности ATA](media/ATA-red-dot.png)
 
 -   Управление открытыми оповещениями осуществляется посредством выбора для них одного из двух состояний: **Разрешено** или **Отклонено**. В окне оповещения щелкните **Открыто** и выберите **Разрешено** или **Отклонено**.
@@ -52,8 +48,7 @@ ms.lasthandoff: 07/10/2017
 
 
 
-## См. также
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>См. также
 
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
