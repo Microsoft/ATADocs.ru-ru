@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/28/2017
+ms.date: 07/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5b46d53d4e72ebe32b6e1f57960694194b71b31c
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -49,6 +49,7 @@ ms.lasthandoff: 06/30/2017
     
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
@@ -58,6 +59,7 @@ ms.lasthandoff: 06/30/2017
 
 **Параметры установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
 |InstallationPath|InstallationPath="<InstallPath>"|Нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.|
@@ -89,6 +91,7 @@ ms.lasthandoff: 06/30/2017
 
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
@@ -111,6 +114,7 @@ ms.lasthandoff: 06/30/2017
 
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматического удаления?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
@@ -119,6 +123,7 @@ ms.lasthandoff: 06/30/2017
 
 **Параметры установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматического удаления?|Описание|
 |-------------|----------|---------|---------|
 |DeleteExistingDatabaseData|DeleteExistingDatabaseData|Нет|Удаляет все файлы в имеющейся базе данных.|
@@ -134,7 +139,7 @@ ms.lasthandoff: 06/30/2017
 **Синтаксис**
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
-    [GatewayCertificateThumbprint="<CertThumbprint >"] [ConsoleAccountName="<AccountName>"] 
+    [ConsoleAccountName="<AccountName>"] 
     [ConsoleAccountPassword="<AccountPassword>"]
 
 > [!NOTE]
@@ -143,6 +148,7 @@ ms.lasthandoff: 06/30/2017
 
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
@@ -151,9 +157,9 @@ ms.lasthandoff: 06/30/2017
 
 **Параметры установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
-|GatewayCertificateThumbprint|GatewayCertificateThumbprint="<CertThumbprint >"|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|Да|Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Да|Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
 
@@ -174,6 +180,7 @@ ms.lasthandoff: 06/30/2017
 
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
@@ -193,6 +200,7 @@ ms.lasthandoff: 06/30/2017
     
 **Варианты установки**
 
+> [!div class="mx-tableFixed"]
 |Имя|Синтаксис|Обязательно для автоматического удаления?|Описание|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
