@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 28b3bca7e84213b0f41bd8e2de61c006592819d5
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 734455b06514cadb232916b8db76e47b8bf3e67a
+ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/30/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -51,6 +51,7 @@ ms.lasthandoff: 07/25/2017
 |Оповещения о пропущенном трафике зеркального отражения портов при использовании упрощенного шлюза в VMware|Если используются контроллеры домена на виртуальных машинах VMware, вам могут приходить оповещения о **пропущенном сетевом трафике зеркального отражения портов**. Это происходит из-за несоответствия конфигурации в VMware. |Чтобы избежать этих оповещений, задайте значение «0» или «Отключено» для следующих параметров: TsoEnable, LargeSendOffload, IPv4 и TSO Offload. Кроме того, рекомендуется отключить IPv4 Giant TSO Offload. Для получения дополнительной информации обратитесь к документации VMware.|
 |System.Net.WebException: удаленный сервер вернул ошибку: требуется проверка подлинности прокси-сервера (407)|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
 |System.IO.DirectoryNotFoundException: система не может найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
+|System.Net.WebException: удаленный сервер возвратил ошибку "403 —запрещено".|Шлюзу ATA или упрощенному шлюзу было отказано в установлении HTTP-подключения, так как центр ATA не является доверенным.|Добавьте имя NetBIOS и полное доменное имя центра ATA в список доверенных веб-сайтов и очистите кэш браузера Interne Explorer. Если в конфигурации указано имя центра ATA, отличное от имени NetBIOS или полного доменного имени, укажите имя из конфигурации.|
 
 ## <a name="deployment-errors"></a>Ошибки развертывания
 > [!div class="mx-tableFixed"]
