@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0a9d92e5851f1cf64c5e4b4e1ee57d7ee4562d96
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: bd3ddca6f233499441bf82a0cdb5a79078df0bf5
+ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -115,8 +115,7 @@ ms.lasthandoff: 08/02/2017
 |**Служба времени Windows** (необязательно при присоединении к домену)|UDP|123|Контроллеры домена|Исходящее|
 
 > [!NOTE]
-> Протокол LDAP требуется для проверки работы учетных данных между шлюзом ATA и контроллерами домена. Центр ATA подключается к контроллеру домена и проверяет действительность учетных данных. После этого шлюз ATA использует протокол LDAP в ходе обычного обмена данными.
-
+> Для проверки работы учетных данных между шлюзами ATA и контроллерами домена требуется протокол LDAP. Центр ATA подключается к контроллеру домена и проверяет допустимость учетных данных. После этого шлюз ATA выполняет обычный процесс разрешения с использованием протокола LDAP.
 
 ### <a name="certificates"></a>Сертификаты
 Убедитесь, что у центра ATA есть доступ к точке распространения списков отзыва сертификатов. Если у шлюзов ATA нет доступа к Интернету, выполните [процедуру импорта списка отзыва сертификатов вручную](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), при этом не забудьте установить все точки распространения списков отзыва сертификатов для всей цепочки.
