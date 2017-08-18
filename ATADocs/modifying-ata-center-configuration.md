@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e9fa0b9162aabdaa9a42c532cf69af37decf3e05
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: bfd86dadbc773b349f28a6327ec2e177da74be8d
+ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/14/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -68,7 +68,7 @@ URL-адрес используется в следующих сценариях
 
 Чтобы заменить сертификат, выполните следующие действия:
 
-1. До истечения срока действия текущего сертификата создайте новый сертификат и установите его на сервер центра ATA. 
+1. До истечения срока действия текущего сертификата создайте новый сертификат и установите его на сервер центра ATA. <br></br>Рекомендуется выбрать сертификат из внутреннего центра сертификации, но также можно создать самозаверяющий сертификат. Дополнительные сведения: [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate).
 
 2. В настройках ATA в разделе **Центр** выберите новый сертификат. На этом этапе служба центра ATA все еще будет привязана к исходному сертификату. 
 
