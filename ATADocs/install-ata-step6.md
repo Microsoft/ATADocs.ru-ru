@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/5/2017
+ms.date: 08/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ffab11a99ae62c1c0b37c43ee212d87508f886b8
-ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.openlocfilehash: 61ff0535d3497d39d58b96f1b4acc255b74e05b5
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -206,8 +206,14 @@ ATA собирает данные VPN, которые помогают проф�
 [Шаг 7 »](install-ata-step7.md)
 
 
-## <a name="see-also"></a>См. также
 
+## <a name="related-videos"></a>Видео по теме
+- [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
+- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

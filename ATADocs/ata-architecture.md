@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/5/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5410f706e84517eb964e991deeb21001a09d0cef
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 250c68f0efc7064f7ec4a4578342c935d04e815b
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -180,8 +180,13 @@ ATA отслеживает сетевой трафик контроллеров 
 
 -   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку событий Windows 4776, 4732, 4733, 4728, 4729, 4756 и 4757 с контроллеров домена в шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Дополнительные сведения о пересылке событий Windows в ATA см. в разделе [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding). Обратите внимание, что это относится только к физическим шлюзам ATA, но не к упрощенному шлюзу ATA.
 
+## <a name="related-videos"></a>Видео по теме
+- [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+
 ## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
+- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
