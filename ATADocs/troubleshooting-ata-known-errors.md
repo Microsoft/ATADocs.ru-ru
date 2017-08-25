@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 675543c11e07bcc243131e2350cfb33bfe8e7e39
-ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
+ms.openlocfilehash: 89d1472b18f20d9702fcd7dfd47fa4b22858ab83
+ms.sourcegitcommit: 37fdfb6a21d1b81f5a4b4c1351112bdf727a633f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -53,7 +53,9 @@ ms.lasthandoff: 08/07/2017
 |System.Net.WebException: удаленный сервер вернул ошибку: требуется проверка подлинности прокси-сервера (407)|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
 |System.IO.DirectoryNotFoundException: система не может найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
 |System.Net.WebException: удаленный сервер возвратил ошибку "403 —запрещено".|Шлюзу ATA или упрощенному шлюзу было отказано в установлении HTTP-подключения, так как центр ATA не является доверенным.|Добавьте имя NetBIOS и полное доменное имя центра ATA в список доверенных веб-сайтов и очистите кэш браузера Interne Explorer. Если в конфигурации указано имя центра ATA, отличное от имени NetBIOS или полного доменного имени, укажите имя из конфигурации.|
+|System.Net.Http.HttpRequestException: сбой PostAsync [requestTypeName=StopNetEventSessionRequest]|Шлюзу ATA или упрощенному шлюзу ATA не удается остановить и запустить сеанс трассировки событий Windows, в котором собирается трафик, из-за проблемы с инструментарием WMI.|Чтобы устранить проблему с инструментарием WMI, выполните инструкции в статье [WMI: Rebuilding the WMI Repository](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) (WMI: перестроение репозитория).|
 
+ 
 ## <a name="deployment-errors"></a>Ошибки развертывания
 > [!div class="mx-tableFixed"]
 |Ошибка|Описание|Разрешение|

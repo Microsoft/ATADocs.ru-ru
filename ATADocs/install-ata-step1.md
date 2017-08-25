@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97fa1522ca43cf92416ac845b8886f2905e9981b
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 3dc73583295136567ac221006430a3e8bc1353d9
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -97,8 +97,13 @@ ms.lasthandoff: 07/03/2017
 [« Перед установкой](configure-port-mirroring.md)
 [Шаг 2 »](install-ata-step2.md)
 
-## <a name="see-also"></a>См. также
+## <a name="related-videos"></a>Видео по теме
+- [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
+- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

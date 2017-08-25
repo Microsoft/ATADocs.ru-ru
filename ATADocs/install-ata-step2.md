@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/2/2017
+ms.date: 08/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: aa5e752fa10644165cb70d2cd8c08a1145261edb
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 3bad455834956eefe634687a70ac6d9a0d97449c
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -56,7 +56,13 @@ ms.lasthandoff: 07/03/2017
 
 
 ## <a name="see-also"></a>См. также
+## <a name="related-videos"></a>Видео по теме
+- [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
+- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

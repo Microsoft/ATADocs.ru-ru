@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/23/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d943dc9aae7192f46f079175c2216b5b27e459e2
-ms.sourcegitcommit: 3177d5894413fbd363b9aca8130f3f7a369223b8
+ms.openlocfilehash: fcee6f1887e6842d1ccdfd2863620af8a5a8279f
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -104,6 +104,11 @@ ms.lasthandoff: 07/10/2017
 > Изменения на странице "Конфигурация" могут вносить только администраторы ATA.
 
 
+## <a name="related-videos"></a>Видео по теме
+- [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
+
+
 ## <a name="see-also"></a>См. также
+- [Сборник тренировочных заданий по реагированию на подозрительные действия ATA](http://aka.ms/ataplaybook)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Изменение конфигурации ATA](modifying-ata-center-configuration.md)
