@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 08/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
+ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/29/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
 
-
 # <a name="ata-silent-installation"></a>Автоматическая установка ATA
 Эта статья содержит указания по автоматической установке ATA.
+
 ## <a name="prerequisites"></a>Предварительные требования
 
 Для ATA версии 1.8 требуется установить платформу Microsoft .NET Framework 4.6.1. 
@@ -134,6 +134,11 @@ ms.lasthandoff: 07/25/2017
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
 ## <a name="ata-gateway-silent-installation"></a>Автоматическая установка шлюза ATA
+
+> [!NOTE]
+> При автоматическом развертывании упрощенного шлюза ATA с помощью System Center Configuration Manager или другой системы развертывания программного обеспечения рекомендуется создать два пакета развертывания:</br>Net Framework 4.6.1, включая перезагрузку контроллера домена;</br>шлюз ATA. </br>Сделайте пакет шлюза ATA зависимым от развертывания пакета .NET Framework. </br>Получите [пакет автономного развертывания .NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49982). 
+
+
 Для автоматической установки шлюза ATA используйте приведенную ниже команду.
 
 **Синтаксис**
