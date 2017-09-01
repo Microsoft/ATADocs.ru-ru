@@ -17,19 +17,18 @@
 ## [Планирование производительности ATA](ata-capacity-planning.md)
 ## [Предварительные требования ATA](ata-prerequisites.md)
 # Развернуть
-## Шаги предустановки
+## [1. Скачивание и установка центра](install-ata-step1.md)
+## [2. Подключение к AD](install-ata-step2.md)
+## [3. Скачивание пакета шлюза ATA](install-ata-step3.md)
+## [4. Установка шлюза ATA](install-ata-step4.md)
+## [5. Настройка шлюза ATA](install-ata-step5.md)
+## [6. Сбор данных о событиях и VPN](install-ata-step6.md)
+## [7. Исключения и Honeytoken](install-ata-step7.md)
+## [Автоматическая установка](ata-silent-installation.md)
+## Дополнительные шаги для шлюза ATA
 ### [1. Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [2. Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [3. Настройка пересылки событий Windows](configure-event-collection.md)
-## Установка ATA
-### [Шаг 1. Скачивание и установка центра](install-ata-step1.md)
-### [Шаг 2. Подключение к AD](install-ata-step2.md)
-### [Шаг 3. Скачивание пакета шлюза ATA](install-ata-step3.md)
-### [Шаг 4. Установка шлюза ATA](install-ata-step4.md)
-### [Шаг 5. Настройка шлюза ATA](install-ata-step5.md)
-### [Шаг 6. Сбор событий и VPN](install-ata-step6.md)
-### [Шаг 7. Исключения и Honeytoken](install-ata-step7.md)
-### [Автоматическая установка](ata-silent-installation.md)
 # Используйте
 ## [Работа с консолью ATA](working-with-ata-console.md)
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
