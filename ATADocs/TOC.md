@@ -16,6 +16,7 @@
 ## [Архитектура ATA](ata-architecture.md)
 ## [Планирование производительности ATA](ata-capacity-planning.md)
 ## [Предварительные требования ATA](ata-prerequisites.md)
+## [Рекомендуемые варианты обновления](upgrade-path.md)
 # Развернуть
 ## [1. Скачивание и установка центра](install-ata-step1.md)
 ## [2. Подключение к AD](install-ata-step2.md)
