@@ -45,8 +45,7 @@
 ## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
 ## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
 # Анализ
-## [Повышение привилегий с использованием атаки с поддельными данными авторизации](use-case-forged-pac.md)
-## [Разведывательная атака с использованием DNS](use-case-dns.md)
+## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
 # Устранение неполадок
 ## [Работа с журналами аудита](troubleshoot-audit.md)
 ## [Устранение известных проблем](troubleshooting-ata-known-errors.md)
