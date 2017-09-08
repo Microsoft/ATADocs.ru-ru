@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 09/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 527e62553913dc12b2b0d5ff149f765002de7946
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: f5cb87148741c92dc7832da16cc37a749fa72fae
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/03/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -50,10 +50,6 @@ ms.lasthandoff: 08/20/2017
 3. Щелкните **Исключения**. Для каждого типа угрозы введите учетную запись пользователя или IP-адрес, которые следует исключить при обнаружении этих угроз, а затем щелкните знак *плюс*. Поле **Добавить сущность** (пользователя или компьютер) поддерживает поиск и автоматически заполняется сущностями из вашей сети. См. дополнительные сведения об [исключении сущностей из результатов обнаружения](excluding-entities-from-detections.md).
 
    ![Исключения](media/exclusions.png)
-
-
-  > [!NOTE]
-  > Чтобы найти идентификатор безопасности пользователя, найдите пользователя в консоли ATA и выберите вкладку**Сведения об учетной записи**. 
 
 4.  Нажмите кнопку **Сохранить**.
 
