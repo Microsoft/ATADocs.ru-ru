@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/14/2017
+ms.date: 9/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 1ec9308e046a228ac1276eb1aace58eec47e95d0
-ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
+ms.openlocfilehash: 2793a602a0cd0fb9902197acd45dd5bdd4612ea4
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 
@@ -126,6 +126,14 @@ ms.lasthandoff: 08/14/2017
 **Описание**. Начиная с версии 1.8, шлюз ATA взаимодействует с центром ATA через протокол HTTP. Если компьютер, на котором установлен шлюз ATA, использует для подключения к центру ATA прокси-сервер, он может разорвать эту связь. 
 
 **Обходной путь**. Отключите использование прокси-сервера для учетной записи службы шлюза ATA. В будущем выпуске эта проблема будет устранена.
+
+### <a name="report-settings-reset"></a>Сброс параметров отчета
+
+**Симптомы.** Все параметры, внесенные в запланированные отчеты, сбрасываются при обновлении до версии 1.8 с обновлением 1.
+
+**Описание.** При переходе с версии 1.8 до 1.8 с обновлением 1 сбрасываются параметры расписания отчетов.
+
+**Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
 
 ## <a name="see-also"></a>См. также
