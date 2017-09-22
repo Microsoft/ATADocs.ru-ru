@@ -1,11 +1,11 @@
 ---
-title: "Установка Advanced Threat Analytics. Шаг 7 | Документация Майкрософт"
+title: "Установка Advanced Threat Analytics. Шаг 8 | Документация Майкрософт"
 description: "На заключительном этапе установки ATA нужно настроить пользователя Honeytoken."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/03/2017
+ms.date: 09/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,22 +13,22 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f5cb87148741c92dc7832da16cc37a749fa72fae
-ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
+ms.openlocfilehash: 3a8ccb1412bbd8e2013c84d36f4142301159c46c
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 09/19/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
 
 
-# <a name="install-ata---step-7"></a>Установка ATA. Шаг 7
+# <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
 >[!div class="step-by-step"]
-[«Шаг 6»](install-ata-step6.md)
+[«Шаг 7»](vpn-integration-install-step.md)
 
-## <a name="step-7-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 7. Настройка исключений IP-адресов и пользователя Honeytoken
+## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 8. Настройка исключений IP-адресов и пользователя Honeytoken
 В ATA можно исключать из обнаружения определенные IP-адреса или пользователей. 
 
 Например, **исключением исследования DNS** является сканер безопасности, использующий DNS в качестве механизма сканирования. Благодаря этому исключению ATA игнорирует такие сканеры. Примером исключения *Pass-the-Ticket* является устройство NAT.    
@@ -64,7 +64,7 @@ ms.lasthandoff: 09/03/2017
 
 
 >[!div class="step-by-step"]
-[«Шаг 6»](install-ata-step6.md)
+[«Шаг 7»](vpn-integration-install-step.md)
 
 
 

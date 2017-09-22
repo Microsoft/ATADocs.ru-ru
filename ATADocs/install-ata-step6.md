@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 09/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ac591d960028268f6c1ebd74706839a3b91597da
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 068c3ca2858934f68beea9d092fbeb113b77ba2a
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/19/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -26,9 +26,10 @@ ms.lasthandoff: 08/29/2017
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 
 >[!div class="step-by-step"]
-[" Шаг 5](install-ata-step5.md)
+[« Шаг 5](install-ata-step5.md)
+[Шаг 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection-and-vpn"></a>Шаг 6. Настройка сбора данных о событиях и VPN
+## <a name="step-6-configure-event-collection"></a>Шаг 6. Настройка сбора данных о событиях
 ### <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 Чтобы улучшить возможности обнаружения вторжений, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](configure-event-collection.md).
 
@@ -184,26 +185,10 @@ Message — это исходный текст события Windows.
 > Использование WinCollect для сбора данных о событиях Windows не поддерживается.
 
 
-### <a name="configuring-vpn"></a>Настройка VPN
-
-ATA собирает данные VPN, которые помогают профилировать расположения, из которых компьютеры подключаются к сети.
-
-Для настройки данных VPN выберите **Конфигурация** > **VPN** и введите **общий секрет учетной записи Radius** сети VPN.
-
-![Настройка VPN](./media/vpn.png)
-
-Чтобы получить общий секрет, обратитесь к документации по VPN. Поддерживаются следующие поставщики VPN.
-
-- Microsoft
-- F5
-- Check Point
-- Cisco ASA
-
-
 
 >[!div class="step-by-step"]
 [« Шаг 5](install-ata-step5.md)
-[Шаг 7 »](install-ata-step7.md)
+[Шаг 7 »](vpn-integration-install-step.md)
 
 
 
