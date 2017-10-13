@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 384384ebd6b6fadcaa5636200ccd08667d9c41a5
-ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
+ms.openlocfilehash: c02649a6acb6a083145ba81b3b9c1647e7f8ea2a
+ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -67,6 +67,7 @@ ATA собирает данные VPN. Они помогают профилир�
 
 
 ## <a name="related-videos"></a>Видео по теме
+- [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
