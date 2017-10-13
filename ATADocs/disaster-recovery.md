@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: d3621338070c257d9fa196fba8657a805216383b
-ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
+ms.openlocfilehash: 21661568ccb75811fa860137fe053714b28a7260
+ms.sourcegitcommit: 699d238ef9022cfd59663bd8e4e7636daa218f4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/09/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/07/2017
 
 ## <a name="back-up-your-ata-center-configuration"></a>Резервное копирование конфигурации центра ATA
 
-1. Резервная копия конфигурации центра ATA записывается в файл каждый час. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](/advanced-threat-analytics/deploy-use/ata-configuration-file). 
+1. Резервная копия конфигурации центра ATA записывается в файл каждый час. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
 2. Экспортируйте сертификат центра ATA.
     1. В диспетчере сертификатов щелкните **Сертификаты — локальный компьютер** -> **Личные** ->**Сертификаты** и выберите **Центр ATA**.
     2. Щелкните правой кнопкой мыши **Центр ATA**, а затем выберите **Все задачи** и **Экспорт**. 
@@ -40,13 +40,13 @@ ms.lasthandoff: 08/07/2017
     4. Создайте резервную копию экспортированного файла сертификата на отдельном компьютере.
 
   > [!NOTE] 
-  > Если экспортировать закрытый ключ не удается, создайте другой сертификат и разверните его в ATA, как описано в статье [Изменение конфигурации ATA. Сертификат центра ATA](/advanced-threat-analytics/deploy-use/modifying-ata-config-centercert), а затем экспортируйте его. 
+  > Если экспортировать закрытый ключ не удается, создайте другой сертификат и разверните его в ATA, как описано в статье [Изменение конфигурации ATA. Сертификат центра ATA](modifying-ata-center-configuration#the-ata-center-certificate), а затем экспортируйте его. 
 
 ## <a name="recover-your-ata-center"></a>Восстановление центра ATA
 
 1. Создайте сервер Windows Server, используя те же IP-адрес и имя компьютера, как и для предыдущего сервера с центром ATA.
 4. Импортируйте на новый сервер резервную копию сертификата, созданную на предыдущем шаге.
-5. Следуйте инструкциям, чтобы [развернуть центр ATA](/advanced-threat-analytics/deploy-use/install-ata-step1) на только что созданном сервере Windows Server. Развертывать шлюзы ATA снова не нужно. При появлении запроса на сертификат укажите сертификат, экспортированный при резервном копировании конфигурации центра ATA. 
+5. Следуйте инструкциям, чтобы [развернуть центр ATA](install-ata-step1.md) на только что созданном сервере Windows Server. Развертывать шлюзы ATA снова не нужно. При появлении запроса на сертификат укажите сертификат, экспортированный при резервном копировании конфигурации центра ATA. 
 ![Восстановление центра ATA](media/disaster-recovery-deploymentss.png)
 6. Импортируйте резервную конфигурацию центра ATA:
     1. Удалите из MongoDB документ с системным профилем центра ATA по умолчанию: 
@@ -54,9 +54,9 @@ ms.lasthandoff: 08/07/2017
         2. Выполнить `mongo.exe ATA` 
         3. Выполните следующую команду, чтобы удалить системный профиль по умолчанию: `db.SystemProfile.remove({})`
     2. Выполните команду `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`, используя файл резервной копии из шага 1.</br>
-    Полное описание того, как найти и импортировать файлы резервной копии, см. в статье [Экспорт и импорт конфигурации ATA](/advanced-threat-analytics/deploy-use/ata-configuration-file). 
+    Полное описание того, как найти и импортировать файлы резервной копии, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
     3. Откройте консоль ATA. Вы должны увидеть все связанные шлюзы ATA на вкладке с конфигурациями и шлюзами. 
-    5. Обязательно определите [**пользователя служб каталогов**](/advanced-threat-analytics/deploy-use/install-ata-step2) и выберите [**синхронизатор контроллера домена**](/advanced-threat-analytics/deploy-use/install-ata-step5). 
+    5. Обязательно определите [**пользователя служб каталогов**](install-ata-step2.md) и выберите [**синхронизатор контроллера домена**](install-ata-step5.md). 
 
 
 
@@ -64,8 +64,8 @@ ms.lasthandoff: 08/07/2017
 
 
 ## <a name="see-also"></a>См. также
-- [Предварительные требования ATA](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [Планирование производительности ATA](/advanced-threat-analytics/plan-design/ata-capacity-planning)
-- [Настройка сбора данных о событиях](/advanced-threat-analytics/deploy-use/configure-event-collection)
-- [Настройка пересылки событий Windows](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
+- [Предварительные требования ATA](ata-prerequisites.md)
+- [Планирование производительности ATA](ata-capacity-planning.md)
+- [Настройка сбора данных о событиях](configure-event-collection.md)
+- [Настройка пересылки событий Windows](configure-event-collection#configuring-windows-event-forwarding)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
