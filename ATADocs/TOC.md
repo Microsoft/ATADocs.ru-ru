@@ -38,14 +38,16 @@
 ## [Группы ролей ATA](ata-role-groups.md)
 ## [Изменение конфигурации Центра ATA](modifying-ata-center-configuration.md)
 ## [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
-###[Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
+## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
 ## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
 ## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
 ## [Настройка уведомлений ATA](setting-ata-alerts.md)
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
-## [Справочник по журналу ATA SIEM](cef-format-sa.md)
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Работа с консолью ATA](working-with-ata-console.md)
+## [ATA cправочные сведения]
+### [Справочник по журналу ATA SIEM](cef-format-sa.md)
+### [Ссылка код события](event-id-reference.md)
 # Анализ
 ## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
 # Устранение неполадок
