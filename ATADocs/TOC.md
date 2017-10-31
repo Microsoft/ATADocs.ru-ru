@@ -45,7 +45,7 @@
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Работа с консолью ATA](working-with-ata-console.md)
-## [ATA cправочные сведения]
+## ATA cправочные сведения
 ### [Справочник по журналу ATA SIEM](cef-format-sa.md)
 ### [Ссылка код события](event-id-reference.md)
 # Анализ
