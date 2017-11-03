@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/29/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fb34b1d10e923620e1c5e59ef210ebbac15e1ef0
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 3ebf3165973c14c45d33c95769f0e6ae47e3e795
+ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 10/23/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 08/29/2017
    4.   Щелкните **Выбрать события**.
 
         1. Щелкните **По журналу** и выберите **Журнал безопасности**.
-        2. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. 
+        2. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. Например, введите 4776, как в следующем примере.
 
  ![Изображение фильтра запросов](media/wef 4 query filter.png)
 

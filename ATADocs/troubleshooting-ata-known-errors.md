@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2362f6bf64147b972e9c45e3b97bab4280c6eeac
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: 09936cf9f86711ea6d48d0571178d2387694d412
+ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -48,12 +48,11 @@ ms.lasthandoff: 08/28/2017
 |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
 |System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 |System.TypeLoadException: не удалось загрузить тип "Microsoft.Opn.Runtime.Values.BinaryValueBufferManager" из сборки "Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"|Шлюзу ATA не удалось загрузить необходимые файлы анализа.|Проверьте, установлен ли анализатор сообщений Майкрософт. Установка анализатора сообщений вместе со шлюзом ATA или упрощенным шлюзом ATA не поддерживается. Удалите анализатор сообщений и перезапустите службу шлюза.|
-|Оповещения о пропущенном трафике зеркального отражения портов при использовании упрощенного шлюза в VMware|Если используются контроллеры домена на виртуальных машинах VMware, вам могут приходить оповещения о **пропущенном сетевом трафике зеркального отражения портов**. Это происходит из-за несоответствия конфигурации в VMware. |Чтобы избежать этих оповещений, задайте значение «0» или «Отключено» для следующих параметров: TsoEnable, LargeSendOffload, IPv4 и TSO Offload. Кроме того, рекомендуется отключить IPv4 Giant TSO Offload. Для получения дополнительной информации обратитесь к документации VMware.|
 |System.Net.WebException: удаленный сервер вернул ошибку: требуется проверка подлинности прокси-сервера (407)|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
 |System.IO.DirectoryNotFoundException: система не может найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
 |System.Net.WebException: удаленный сервер возвратил ошибку "403 —запрещено".|Шлюзу ATA или упрощенному шлюзу было отказано в установлении HTTP-подключения, так как центр ATA не является доверенным.|Добавьте имя NetBIOS и полное доменное имя центра ATA в список доверенных веб-сайтов и очистите кэш браузера Interne Explorer. Если в конфигурации указано имя центра ATA, отличное от имени NetBIOS или полного доменного имени, укажите имя из конфигурации.|
 |System.Net.Http.HttpRequestException: сбой PostAsync [requestTypeName=StopNetEventSessionRequest]|Шлюзу ATA или упрощенному шлюзу ATA не удается остановить и запустить сеанс трассировки событий Windows, в котором собирается трафик, из-за проблемы с инструментарием WMI.|Чтобы устранить проблему с инструментарием WMI, выполните инструкции в статье [WMI: Rebuilding the WMI Repository](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) (WMI: перестроение репозитория).|
-
+|System.Net.Sockets.SocketException: предпринята попытка получить доступ к сокету способом, запрещенным правами доступа|Другое приложение использует порт 514 на шлюзе ATA|Используйте `netstat -o`, чтобы определить, какой процесс использует этот порт.|
  
 ## <a name="deployment-errors"></a>Ошибки развертывания
 > [!div class="mx-tableFixed"]
