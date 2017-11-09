@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 09936cf9f86711ea6d48d0571178d2387694d412
-ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
+ms.openlocfilehash: f13416c4179d65ee8096d246ea92969b1cf9af43
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/23/2017
 |System.Threading.Tasks.TaskCanceledException: отменена задача|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1.    Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу в браузере. <br></br>2.    Проверьте конфигурацию прокси-сервера или брандмауэра.|
 |System.Net.Http.HttpRequestException: произошла ошибка при отправке запроса. ---> System.Net.WebException: удаленный сервер возвратил ошибку: (407) Требуется проверка подлинности прокси.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
 |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Используйте один из следующих вариантов: </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-|Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления [\[]CurrentlyLoggedOnUser=<domain>\<имя_пользователя>Status=FailedAuthentication Exception=[\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее:</br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
+|Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления [\[]CurrentlyLoggedOnUser=<domain>\<имя_пользователя>Status=FailedAuthentication Exception=[\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
 
 
 
