@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 518153d03f41956871ec5e7bf680f72187e4919c
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 05af384d91e899c1c0bc50ec2da6147eb47adb82
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 10/09/2017
 
 
 ## <a name="validate-installations"></a>Проверка установки
-Чтобы проверить, успешно ли вы развернули шлюз ATA, сделайте следующее:
+Чтобы проверить, успешно ли вы развернули шлюз ATA, выполните такие шаги:
 
 1.  Убедитесь, что служба **шлюза Microsoft Advanced Threat Analytics** запущена. После сохранения параметров шлюза ATA запуск службы может занять несколько минут.
 

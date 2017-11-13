@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1f531db341f442d135b802af965f714b37f69e3a
-ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
+ms.openlocfilehash: 06f96ad4627cd5400d822caabeaff15dfaabfb72
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/16/2017
 
 ## <a name="types-of-ata-role-groups"></a>Типы групп ролей ATA 
 
-ATA предлагает три типа групп ролей: администраторы ATA, пользователи ATA и наблюдатели ATA. Следующая таблица описывает тип доступа для каждой из ролей ATA. В зависимости от назначенной роли некоторые экраны и пункты меню в ATA будут недоступны, как описано в таблице.
+ATA предлагает три типа групп ролей: администраторы ATA, пользователи ATA и наблюдатели ATA. Следующая таблица описывает тип доступа для каждой из ролей ATA. В зависимости от назначенной роли некоторые экраны и пункты меню в ATA могут быть недоступны, как описано в таблице.
 
 |Действие |Администраторы Microsoft Advanced Threat Analytics|Пользователи Microsoft Advanced Threat Analytics|Наблюдатели Microsoft Advanced Threat Analytics|
 |----|----|----|----|
@@ -50,7 +50,7 @@ ATA предлагает три типа групп ролей: админист
 |Просмотр предупреждений и подозрительных действий|Доступно|Доступно|Доступно|
 
 
-Если пользователь обращается к странице, которая не доступна для его группы, ATA перенаправляет его на страницу неавторизованного доступа. 
+Если пользователь обращается к странице, недоступной для его группы, ATA перенаправляет его на страницу неавторизованного доступа. 
 
 ## <a name="add--remove-users---ata-role-groups"></a>Добавление пользователей в группы ролей ATA и удаление из групп ролей 
 

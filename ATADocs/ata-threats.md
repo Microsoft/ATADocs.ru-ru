@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 858bc9874855c02ad598d89a6e85296fe98073af
-ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
+ms.openlocfilehash: 842b2a5d4e211c2b2fcb4cd0afc96bb33ac42311
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/19/2017
 
 ATA обнаруживает события на следующих этапах продвинутой атаки: разведка, компрометация учетных данных, боковое смещение, повышение привилегий, полное управление доменом и т. д. При этом продвинутые атаки и внутренние угрозы обнаруживаются, прежде чем они смогут нанести ущерб организации.
 На каждом этапе выявляется несколько подозрительных действий, которые относятся к проверяемому этапу. При этом каждое подозрительное действие сопоставляется с различными видами возможных атак.
-Эти этапы процесса атаки, на которых ATA в настоящее время выявляет угрозы, выделены на рисунке ниже.
+Эти этапы процесса атаки, на которых ATA в настоящее время выявляет угрозы, выделены в следующем изображении:
 
 ![Особое внимание ATA уделяет действиям бокового смещения в процессе атаки](media/attack-kill-chain-small.jpg)
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/3/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b0e94ca7d817d6d5735921fefd7c9f4cf2cbd866
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 2f5db3fad62b0fe2243b5bbd82677426ee6fe90c
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/03/2017
 Advanced Threat Analytics (ATA) собирает анонимные данные телеметрии об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
 
 ## <a name="data-collected"></a>Собираемые данные
-Собираются такие анонимные данные:
+Собираемые анонимные данные включают следующие параметры:
 
 -   Счетчики производительности из центра и шлюза ATA.
 

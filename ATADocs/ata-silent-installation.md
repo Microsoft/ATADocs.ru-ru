@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 3210d9153cd6781ae13a784e1f2b5927e0703009
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/29/2017
 
 Для ATA версии 1.8 требуется установить платформу Microsoft .NET Framework 4.6.1. 
 
-При установке или обновлении ATA платформа .NET Framework 4.6.1 автоматически установится в составе развертывания Microsoft ATA.
+При установке или обновлении ATA платформа .NET Framework 4.6.1 автоматически устанавливается в составе развертывания Microsoft ATA.
 
 > [!Note] 
 > Для установки платформы .NET Framework 4.6.1 может потребоваться перезагрузка сервера. При установке шлюза ATA на контроллерах домена рекомендуется запланировать период обслуживания.
@@ -68,7 +68,7 @@ ms.lasthandoff: 08/29/2017
 |CenterPort|CenterPort=<CenterPort>|да|Задает сетевой порт службы центра ATA.|
 |CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|Нет|Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 |ConsoleIpAddress|ConsoleIpAddress=<ConsoleIPAddress>|да|Задает IP-адрес консоли ATA.|
-|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|Нет|Задает отпечаток сертификата для консоли ATA. Этот сертификат используется для проверки удостоверения веб-сайта консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
+|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|Нет|Задает отпечаток сертификата для консоли ATA. Этот сертификат используется для проверки подлинности на веб-сайте консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 
 **Примеры**. Установка центра ATA с использованием путей установки по умолчанию и одного IP-адреса.
 

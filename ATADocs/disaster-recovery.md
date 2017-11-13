@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 819f006ae89960ed8f9494ce36ba4fd7f120357a
-ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
+ms.openlocfilehash: 005f698c19c99c31dfa0e660e489f8c402eb1bc6
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 10/30/2017
 ## <a name="recover-your-ata-center"></a>Восстановление центра ATA
 
 1. Создайте сервер Windows Server, используя те же IP-адрес и имя компьютера, как и для предыдущего сервера с центром ATA.
-4. Импортируйте на новый сервер резервную копию сертификата, созданную на предыдущем шаге.
+4. Импортируйте на новый сервер резервную копию сертификата, созданную ранее.
 5. Следуйте инструкциям, чтобы [развернуть центр ATA](install-ata-step1.md) на только что созданном сервере Windows Server. Развертывать шлюзы ATA снова не нужно. При появлении запроса на сертификат укажите сертификат, экспортированный при резервном копировании конфигурации центра ATA. 
 ![Восстановление центра ATA](media/disaster-recovery-deploymentss.png)
 6. Импортируйте резервную конфигурацию центра ATA:
