@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d0d7ce6aae1bb59d266ddc0f7162ecfbc477b78a
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
+ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/14/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 11/07/2017
 
 |Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
-|**SSL** (ATA Communications)|TCP|443 или настраиваемый|Шлюз ATA|Входящие|
+|**SSL** (ATA Communications)|TCP|443|Шлюз ATA|Входящие|
 |**HTTP** (необязательно)|TCP|80|Сеть организации|Входящие|
 |**HTTPS**|TCP|443|Сеть организации и шлюз ATA|Входящие|
 |**SMTP** (необязательно)|TCP|25|SMTP-сервер|Исходящее|
@@ -206,7 +206,7 @@ ms.lasthandoff: 11/07/2017
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
 |HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
 |NetBIOS|UDP|137|Все устройства в сети|Исходящее|
-|SSL|TCP|443 или настроенный для службы центра|Центр АТА:<br /><br />— IP-адрес службы центра<br />— IP-адрес консоли ATA|Исходящее|
+|SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
 > [!NOTE]
@@ -262,7 +262,7 @@ ms.lasthandoff: 11/07/2017
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
 |HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
 |NetBIOS|UDP|137|Все устройства в сети|Исходящее|
-|SSL|TCP|443 или настроенный для службы центра|Центр АТА:<br /><br />— IP-адрес службы центра<br />— IP-адрес консоли ATA|Исходящее|
+|SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
 > [!NOTE]
