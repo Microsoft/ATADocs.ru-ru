@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 036871da05f59e380b045139e735762c1cc8a363
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 7bbca4eeb6ad8c5b9cf161f60144bbd27ca3c8d2
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
@@ -105,13 +105,13 @@ ms.lasthandoff: 06/30/2017
 При попытке экспортировать сведения о подозрительной активности в файл Excel операция может завершиться следующей ошибкой: *Ошибка [BsonClassMapSerializer`1] System.FormatException: произошла ошибка при десериализации свойства Activity класса Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: элемент "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
 
 Чтобы устранить эту проблему, в командной строке с повышенными привилегиями перейдите в папку **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** и выполните следующую команду:
-1.  **Mongo.exe ATA** ("ATA" следует написать прописными буквами)
-2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
+1.  `Mongo.exe ATA` (ATA следует указать прописными буквами).
+2.  `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
 
 ## <a name="minor-changes"></a>Несущественные изменения
 
 - Для консоли ATA вместо IIS теперь используется OWIN.
-- Если служба центра ATA не работает, вы не сможете попасть в консоль ATA.
+- Если служба центра ATA не работает, вы не сможете получить доступ к консоли ATA.
 - Из-за изменений в механизме разрешения сетевых имен ATA подсети с краткосрочной арендой больше не требуются.
 
 ## <a name="see-also"></a>См. также

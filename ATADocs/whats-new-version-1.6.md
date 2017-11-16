@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5beb4868fb8ced42457a8cadd1123956dd69ad7
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 47a8b5c52bf978d5e07007a3402a567be39e2157
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -103,14 +103,14 @@ ms.lasthandoff: 06/30/2017
 
 Также может появиться следующая ошибка: System.ArgumentNullException: значение не может быть NULL.
     
-Если вы видите одну из этих ошибок, запустите следующий обходной путь.
+Если вы видите одну из этих ошибок, запустите следующий обходной путь:
 
 **Решение** 
 
 1.  Переместите папку data_old во временную папку (которая обычно находится в каталоге %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin).
 2.  Удалите центр ATA 1.5 и все данные базы данных.
 ![Удаление ATA 1.5](http://i.imgur.com/x4nJycx.png)
-3.  Повторно установите центр ATA 1.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
+3.  Повторно установите центр ATA версии 1.5. Используйте ту же конфигурацию, что и при предыдущей установке ATA 1.5 (сертификаты, IP-адреса, путь к базе данных и т. д.).
 4.  Остановите работу этих служб в следующем порядке:
     1.  центр Microsoft Advanced Threat Analytics;
     2.  MongoDB
@@ -120,14 +120,14 @@ ms.lasthandoff: 06/30/2017
     2.  центр Microsoft Advanced Threat Analytics;
 7.  Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
 8.  [Скачивание](http://aka.ms/ataremoveduplicateprofiles "Скачайте") инструмент RemoveDuplicateProfiles.exe и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
-9.  Запустите его в командной строке с повышенными привилегиями и дождитесь успешного завершения.
+9.  Из командной строки с повышенными привилегиями запустите файл `RemoveDuplicateProfiles.exe` и дождитесь его успешного выполнения.
 10. Здесь: каталог …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin: **Mongo ATA** введите следующую команду:
 
-    db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
+          db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
 ![Обходной путь обновления](http://i.imgur.com/Nj99X2f.png)
 
-Должен вернуться WriteResult({ "nRemoved" : XX }), где "XX" — количество подозрительных действий, которые были удалены. Если число больше 0, выйдите из командной строки и продолжите процесс обновления.
+Должен вернуться `WriteResult({ "nRemoved" : XX })`, где "XX" — количество подозрительных действий, которые были удалены. Если число больше 0, выйдите из командной строки и продолжите процесс обновления.
 
 
 ### <a name="net-framework-461-requires-restarting-the-server"></a>NET Framework 4.6.1 требует перезапуска сервера

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/12/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 19eee0466269bbc2255d3a83e2f8c073057ba356
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 652d3a9e20737d26e8776035690a180f6bd84593
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 Изменяя пароль для подключения к домену, указывайте правильный пароль. Если указать неправильный пароль, служба ATA на шлюзах ATA перестанет работать.
 
-В таком случае откройте на шлюзе ATA файл Microsoft.Tri.Gateway-Errors.log и найдите в нем такую строку: `The supplied credential is invalid.`.
+В таком случае откройте на шлюзе ATA файл Microsoft.Tri.Gateway-Errors.log и найдите в нем следующие ошибки: `The supplied credential is invalid.`.
 
 Чтобы исправить эту ошибку, в центре ATA измените пароль для подключения к домену, как описано ниже.
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 06/30/2017
 
 4.  В разделе **Password** (Пароль) измените пароль.
 
-    Если у центра ATA есть подключение к домену, то, чтобы проверить учетные данные, нажмите кнопку **Test Connection** (Проверить подключение).
+    Если у центра ATA есть подключение к домену, то, чтобы проверить учетные данные, нажмите кнопку **Проверить подключение**.
 
 5.  Нажмите кнопку **Сохранить**.
 

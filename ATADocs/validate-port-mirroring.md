@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/26/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 16afa7e8b7755b0f9294425aac96fe134ff03691
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: c0105b940e97a5854d45e147b724f1169c73ad65
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 06/30/2017
     
     
 ## <a name="validate-port-mirroring-using-net-mon"></a>Проверка зеркального отображения портов с помощью сетевого монитора
-1.  Установите [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) в шлюзе ATA, который нужно проверить.
+1.  Установите [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) в шлюзе ATA, который нужно проверить.
 
     > [!IMPORTANT]
     > Не устанавливайте на шлюз ATA анализатор сообщений Microsoft Message Analyzer или другое программное обеспечение для записи сетевого трафика.

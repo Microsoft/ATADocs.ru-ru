@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 08da33114bc3f0c9aafb9914b9d77a88fac009f4
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: a00a555c0dc4590043f93abcd650f6e38d719e6c
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
