@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 25c2defd02e260248d30eb76f6ae297c1b36325f
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: da225af4578d4673040315f8814b9067a46517ce
+ms.sourcegitcommit: d41dcc40196a165026fd27db7bbd74d87b8fedda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/10/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -66,7 +66,8 @@ mongo.exe ATA filename
         });
 
 ## <a name="does-ata-work-with-encrypted-traffic"></a>Поддерживает ли ATA зашифрованный трафик?
-Принцип действия ATA основан на анализе множества сетевых протоколов и событий, информация о которых собирается из SIEM и через пересылку событий Windows. При этом ATA не анализирует зашифрованный трафик (например, LDAPS и IPSEC), но это не мешает системе успешно работать и почти всегда обнаруживать угрозы.
+ATA анализирует множество сетевых протоколов, а также события, собираемые из систем SIEM и через пересылку событий Windows. Данные, обнаруженные при использовании сетевых протоколов с зашифрованным трафиком (например, LDAPS и IPSEC), анализироваться не будут.
+
 
 ## <a name="does-ata-work-with-kerberos-armoring"></a>Поддерживает ли ATA защиту Kerberos?
 ATA поддерживает механизм защиты Kerberos (также известный как безопасное туннелирование для гибкой аутентификации (FAST)). Однако в случае его активации ATA не сможет обнаруживать атаки Over-pass-the-hash.
