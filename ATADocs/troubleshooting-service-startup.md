@@ -1,11 +1,11 @@
 ---
-title: "Устранение неполадок в Advanced Threat Analytics с использованием журналов | Документация Майкрософт"
-description: "В этой статье описывается, как использовать журналы событий ATA для устранения неполадок"
+title: "Устранение неполадок при запуске службы Advanced Threat Analytics | Документация Майкрософт"
+description: "В этой статье описываются способы устранения неполадок при запуске службы ATA"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 125376b1e3530481a3b9f62c4661dd10dce13f22
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 33ff11f592984b754521c562414ffeabd2d1f255
+ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/20/2017
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
 
 
-# <a name="troubleshooting-ata-center-service-startup"></a>Устранение неполадок при запуске службы центра ATA
+# <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
+
+## <a name="troubleshooting-ata-center-service-startup"></a>Устранение неполадок при запуске службы центра ATA
 
 Если центр ATA не запускается, выполните описанную ниже процедуру устранения неполадок:
 
@@ -42,6 +44,22 @@ ms.lasthandoff: 11/07/2017
         logman start "Microsoft ATA Center"
         sc start ATACenter
 
+## <a name="troubleshooting-ata-lightweight-gateway-startup"></a>Устранение неполадок при запуске упрощенного шлюза ATA
+
+**Симптом**
+
+Шлюз ATA не запускается, и выводится следующее сообщение об ошибке:<br></br>
+*System.Net.Http.HttpRequestException: Код состояния ответа не указывает на успешное выполнение: 500 (внутренняя ошибка сервера)*
+
+**Описание**
+
+Это происходит, поскольку в ходе процесса установки упрощенного шлюза служба ATA выделяет пороговое значение ЦП, позволяющее упрощенному шлюзу использовать ЦП с буфером 15 %. Если пороговое значение было задано независимо с помощью раздела реестра, этот конфликт будет препятствовать запуску упрощенного шлюза. 
+
+**Решение**
+
+1. Если в разделах реестра имеется значение DWORD **Отключить счетчики производительности**, задайте его равным **0**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\` `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
+ 
+2. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
 
 
 ## <a name="see-also"></a>См. также
