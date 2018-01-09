@@ -58,3 +58,4 @@
 ## [Устранение проблем при помощи базы данных](troubleshooting-ata-using-ata-database.md)
 ## [Устранение неполадок при запуске службы](troubleshooting-service-startup.md)
 ## [Аварийное восстановление](disaster-recovery.md)
+# [Ресурсы](ata-resources.md)
