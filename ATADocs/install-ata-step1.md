@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f35c495193806f1c1ccc00800402d9b0aca36982
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 7a5dd2c722244ec94ebf49555483ddd201b5ba54
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -90,6 +90,10 @@ ms.lasthandoff: 11/07/2017
 
 1.  Убедитесь, что запущена служба центра **Microsoft Advanced Threat Analytics**.
 2.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
+
+### <a name="set-anti-virus-exclusions"></a>Настройка исключений антивируса
+
+После установки центра ATA следует исключить из постоянного сканируемого антивирусным приложением контента каталог баз данных MongoDB. По умолчанию путь в базе данных — **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**.
 
 
 

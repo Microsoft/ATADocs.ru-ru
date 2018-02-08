@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a0cc958cd7c802d02c96b6d7d3bc7e7180bd3d95
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 76173dfa0b41195e641235f8792723fa7b038a68
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 11/07/2017
 
 ![Пример средства планирования емкости](media/capacity tool.png)
 
+
+> [!NOTE]
+> Из-за различия разных сред и множества особых и непредвиденных особенностей сетевого трафика после первого развертывания ATA и запуска средства изменения размера может потребоваться изменить и настроить емкость развертывания.
 
 
 Если по каким-либо причинам вы не можете использовать средство изменения размера ATA, необходимо вручную собрать данные по числу пакетов в секунду с коротким интервалом сбора (примерно 5 секунд) со всех контроллеров домена за 24 часа. Затем для каждого контроллера домена необходимо вычислить ежедневное среднее значение и среднее значение самого занятого периода (15 минут).
