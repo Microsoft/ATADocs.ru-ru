@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 05be0f1a696bab215f35521e0c719ddf45238a37
-ms.sourcegitcommit: 55f7ac32bcd4ac8edb8b8b3b47993bf96b9acce2
+ms.openlocfilehash: dd422a7feffcddc0f56b54b11d5dadb029457a8e
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/01/2018
 ---
 *Применяется к Advanced Threat Analytics версии 1.8*
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 01/15/2018
 
 ### <a name="server-specifications"></a>Спецификации сервера
 
-При работе с физическим сервером для базы данных ATA необходимо **отключить** доступ к неоднородной памяти (NUMA) в BIOS. Система может ссылаться на NUMA как на чередование узла. В таком случае необходимо **включить** чередование узла, чтобы отключить NUMA. Дополнительные сведения см. в документации по BIOS. Это не имеет значения, если центр ATA выполняется на виртуальном сервере.<br>
+При работе с физическим сервером для базы данных ATA необходимо **отключить** доступ к неоднородной памяти (NUMA) в BIOS. Система может ссылаться на NUMA как на чередование узла. В таком случае необходимо **включить** чередование узла, чтобы отключить NUMA. Дополнительные сведения см. в документации по BIOS. <br>
 Для обеспечения оптимальной производительности задайте для **параметра электропитания** центра ATA значение **высокой производительности**.<br>
 Необходимые характеристики оборудования зависят от количества отслеживаемых контроллеров домена и нагрузки на каждый из них. Дополнительные сведения см. в статье [Планирование производительности ATA](ata-capacity-planning.md).
 
