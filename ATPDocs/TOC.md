@@ -1,1 +1,41 @@
-# [Указатель](index.md)
+# Знакомство и изучение — предварительная версия!
+## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
+## [Часто задаваемые вопросы](atp-technical-faq.md)
+# План и проект
+## [Требования для Azure ATP](atp-prerequisites.md)
+## [Архитектура Azure ATP](atp-architecture.md)
+## [Планирование производительности Azure ATP](atp-capacity-planning.md)
+# Развернуть
+## [1. Создание рабочей области на портале управления](install-atp-step1.md)
+## [2. Подключение к AD](install-atp-step2.md)
+## [3. Скачивание пакета датчиков Azure ATP](install-atp-step3.md)
+## [4. Установка датчика Azure ATP](install-atp-step4.md)
+## [5. Настройка датчика Azure ATP](install-atp-step5.md)
+## [6. Интеграция с VPN](install-atp-step6-vpn.md)
+## [7. Исключения и учетные записи Honeytoken](install-atp-step7.md)
+### [8. Настройка разрешений для SAM-R](install-atp-step8-samr.md)
+## [Автоматическая установка](ATP-silent-installation.md)
+## Дополнительные шаги для датчиков Azure ATP
+### [Настройка зеркального отображения портов](configure-port-mirroring.md)
+### [Настройка сбора данных о событиях](configure-event-collection.md)
+### [Настройка переадресации событий Windows](configure-event-forwarding.md)
+### [Настройка прокси-сервера для взаимодействия](configure-proxy.md)
+# Используйте
+## [Центр работоспособности Azure ATP](atp-health-center.md)
+## [Отчеты Azure ATP](reports.md)
+## [Группы ролей Azure ATP](atp-role-groups.md)
+## [Изменение пароля для подключения к домену](modifying-atp-config-dcpassword.md)
+## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
+## [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md)
+## [Оповещения мониторинга](monitoring-alerts.md)
+## [Настройка уведомлений Azure ATP](notifications.md)
+## [Интеграция с Syslog](setting-syslog.md)
+## [Работа с конфиденциальными учетными записями](sensitive-accounts.md)
+## [Работа с порталом рабочей области Azure ATP](workspace-portal.md)
+## Справочные сведения по Azure ATP
+### [Справочник по журналу ATA SIEM](cef-format-sa.md)
+# Анализ
+## [Обработка подозрительных действий](working-with-suspicious-activities.md)
+## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
+## [Анализ путей горизонтального перемещения в Azure ATP](use-case-lateral-movement-path.md)
+## [Анализ сущностей](entity-profiles.md)
