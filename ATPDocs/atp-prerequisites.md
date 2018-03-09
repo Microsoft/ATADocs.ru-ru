@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/25/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 819eeb73c57e7b1de5e7e5e837aa2d6db2e0848d
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 3cb4eb8a914f1fd4be0c1ddb26f9be3964c529f7
+ms.sourcegitcommit: 26d833f7d9502db73876ced9879789db395224f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/21/2018
 В этом разделе перечислены сведения, которые необходимо собрать, а также учетные записи и сетевые объекты, которые должны быть созданы перед установкой Azure ATP.
 
 
--   Учетная запись пользователя **локальной** службы Azure AD и пароль на доступ для чтения всех объектов в отслеживаемых доменах.
+-   Учетная запись пользователя **локальной** службы AD и пароль на доступ для чтения всех объектов в отслеживаемых доменах.
 
     > [!NOTE]
     > Если для различных подразделений в домене были установлены настраиваемые списки управления доступом, убедитесь, что у выбранного пользователя есть разрешение на чтение данных подразделений.
