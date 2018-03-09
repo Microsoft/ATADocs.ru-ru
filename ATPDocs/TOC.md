@@ -2,7 +2,7 @@
 ## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
 ## [Часто задаваемые вопросы](atp-technical-faq.md)
 # План и проект
-## [Требования для Azure ATP](atp-prerequisites.md)
+## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 ## [Архитектура Azure ATP](atp-architecture.md)
 ## [Планирование производительности Azure ATP](atp-capacity-planning.md)
 # Развернуть
@@ -13,12 +13,13 @@
 ## [5. Настройка датчика Azure ATP](install-atp-step5.md)
 ## [6. Интеграция с VPN](install-atp-step6-vpn.md)
 ## [7. Исключения и учетные записи Honeytoken](install-atp-step7.md)
-### [8. Настройка разрешений для SAM-R](install-atp-step8-samr.md)
+## [8. Настройка разрешений для SAM-R](install-atp-step8-samr.md)
 ## [Автоматическая установка](ATP-silent-installation.md)
 ## Дополнительные шаги для датчиков Azure ATP
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
+### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
-### [Настройка переадресации событий Windows](configure-event-forwarding.md)
+### [Настройка пересылки событий Windows](configure-event-forwarding.md))
 ### [Настройка прокси-сервера для взаимодействия](configure-proxy.md)
 # Используйте
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
@@ -37,5 +38,7 @@
 # Анализ
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
-## [Анализ путей горизонтального перемещения в Azure ATP](use-case-lateral-movement-path.md)
+## [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)
 ## [Анализ сущностей](entity-profiles.md)
+# Диагностика
+## [Устранение известных проблем](troubleshooting-atp-known-issues.md)

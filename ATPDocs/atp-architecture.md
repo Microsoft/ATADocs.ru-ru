@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 09f82fa21bbaf61573b39fbe7a051db5c5e3b92a
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: ffa58d4e6ca24773f7168dd94ad0596878eaf151
+ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -71,6 +71,9 @@ Azure ATP включает в себя следующие компоненты.
 -   выполнять интеграцию с другими службами безопасности Майкрософт.
 
 Главную рабочую область можно задать как **основную**. Задать в качестве основной можно только одну рабочую область. Настройка рабочей области в качестве основной оказывает влияние на интегрируемые компоненты — для основной рабочей области можно интегрировать только Azure ATP с ATP в Защитнике Windows. Позднее можно назначить основной другую рабочую область, но для этого необходимо удалить все интеграции, уже заданные для текущей основной рабочей области.
+
+> [!NOTE]
+> Сейчас в Azure ATP поддерживается создание двух рабочих областей. Рекомендуем создать основную рабочую область для рабочей среды и дополнительную — для промежуточной среды.
 
 ### <a name="azure-atp-workspace-portal"></a>Портал рабочей области Azure ATP
 
