@@ -1,6 +1,7 @@
-# Знакомство и изучение — предварительная версия!
+# Изучение вопроса
 ## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
 ## [Часто задаваемые вопросы](atp-technical-faq.md)
+## [Новые возможности Azure ATP](atp-whats-new.md)
 # План и проект
 ## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 ## [Архитектура Azure ATP](atp-architecture.md)
@@ -19,7 +20,7 @@
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
-### [Настройка пересылки событий Windows](configure-event-forwarding.md))
+### [Настройка переадресации событий Windows](configure-event-forwarding.md)
 ### [Настройка прокси-сервера для взаимодействия](configure-proxy.md)
 # Используйте
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
