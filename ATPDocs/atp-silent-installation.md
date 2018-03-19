@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 862420fb6914dbf9ee57c36bc21103cc7dddf7af
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: f27020f1b4a5fa7aa8fefbda28eac0c2ad6c64d0
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/12/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -31,7 +31,10 @@ ms.lasthandoff: 02/21/2018
 
 При установке Azure ATP платформа .NET Framework 4.7 автоматически устанавливается в составе развертывания Azure ATP.
 
-> [!Note] 
+> [!IMPORTANT] 
+> У вас должна быть установлена последняя версия .NET Framework. Если установлена предыдущая версия .NET, автоматическая установка Azure ATP зациклится и не будет выполнена. 
+
+> [!NOTE] 
 > Для установки платформы .NET Framework 4.7 может потребоваться перезагрузка сервера. При установке датчика Azure ATP на контроллерах домена рекомендуется запланировать период обслуживания контроллеров.
 При использовании метода автоматической установки Azure ATP установщик настраивается для автоматического перезапуска сервера в конце установки (при необходимости). Из-за ошибки в установщике Windows флаг *norestart* не позволяет гарантированно запретить перезагрузку сервера, поэтому автоматическую установку следует проводить только в периоды обслуживания.
 
