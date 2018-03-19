@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ffa58d4e6ca24773f7168dd94ad0596878eaf151
-ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
+ms.openlocfilehash: 640974bbeb0ff147b21da24d6ad6df2f54e9ab4d
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -74,6 +74,8 @@ Azure ATP включает в себя следующие компоненты.
 
 > [!NOTE]
 > Сейчас в Azure ATP поддерживается создание двух рабочих областей. Рекомендуем создать основную рабочую область для рабочей среды и дополнительную — для промежуточной среды.
+> После удаления рабочей области вы можете активировать ее повторно, обратившись в службу поддержки. У вас может быть не более трех удаленных рабочих областей. Чтобы сохранить больше удаленных рабочих областей, обратитесь в службу поддержки Azure ATP.
+
 
 ### <a name="azure-atp-workspace-portal"></a>Портал рабочей области Azure ATP
 
@@ -119,6 +121,8 @@ Azure ATP включает в себя следующие компоненты.
 -   передача соответствующих данных в облачную службу Azure ATP;
 
 -   мониторинг нескольких контроллеров домена из одного автономного датчика Azure ATP или одного контроллера домена для датчика Azure ATP.
+
+Azure ATP поддерживает до 100 датчиков. Чтобы установить дополнительные датчики, обратитесь в службу поддержки Azure ATP.
 
 Автономный датчик Azure ATP получает сетевой трафик и события Windows из сети и обрабатывает их с помощью следующих основных компонентов:
 

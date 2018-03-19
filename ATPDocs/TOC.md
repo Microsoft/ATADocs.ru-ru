@@ -43,3 +43,4 @@
 ## [Анализ сущностей](entity-profiles.md)
 # Диагностика
 ## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
+## [Поддержка и информация](atp-support.md)
