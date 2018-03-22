@@ -2,6 +2,8 @@
 ## [Что представляет собой решение Microsoft Advanced Threat Analytics?](what-is-ata.md)
 ## [Какие угрозы обнаруживает ATA?](ata-threats.md)
 ## Новые возможности ATA?
+### [Новые возможности ATA версии 1.9](whats-new-version-1.9.md)
+#### [Обновление до ATA 1.9. Руководство по миграции](ata-update-1.9-migration-guide.md)
 ### [Новые возможности в ATA версии 1.8](whats-new-version-1.8.md)
 #### [Обновление до ATA 1.8. Руководство по миграции](ata-update-1.8-migration-guide.md)
 ### [Новые возможности в ATA версии 1.7](whats-new-version-1.7.md)
@@ -26,6 +28,7 @@
 ## [6. Сбор данных о событиях](install-ata-step6.md)
 ## [7. Интеграция с VPN](vpn-integration-install-step.md)
 ## [8. Исключения и Honeytoken](install-ata-step7.md)
+## [9. Настройка SAM-R](install-ata-step9-samr.md)
 ## [Автоматическая установка](ata-silent-installation.md)
 ## Дополнительные шаги для шлюза ATA
 ### [1. Настройка зеркального отображения портов](configure-port-mirroring.md)
@@ -43,8 +46,11 @@
 ## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
 ## [Настройка уведомлений ATA](setting-ata-alerts.md)
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
+## [Пометка конфиденциальных учетных записей](tag-sensitive-accounts.md)
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Работа с консолью ATA](working-with-ata-console.md)
+### [Профили сущностей](entity-profiles.md)
+##[Предотвращение путей бокового смещения](use-case-lateral-movement-path.md)
 ## ATA cправочные сведения
 ### [Справочник по журналу ATA SIEM](cef-format-sa.md)
 ### [Ссылка код события](event-id-reference.md)
