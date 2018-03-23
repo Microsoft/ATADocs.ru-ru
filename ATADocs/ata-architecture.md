@@ -1,25 +1,25 @@
 ---
-title: "Архитектура Advanced Threat Analytics | Документация Майкрософт"
-description: "Здесь описывается архитектура решения Microsoft Advance Threat Analytics"
-keywords: 
+title: Архитектура Advanced Threat Analytics | Документация Майкрософт
+description: Здесь описывается архитектура решения Microsoft Advance Threat Analytics
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 66f5678285c203476aee3daafae22ac7b34d0ae2
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: b620e5b6203d387de389cfb857c2dd6125239ed9
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
@@ -158,7 +158,7 @@ ATA отслеживает сетевой трафик контроллеров 
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Выполняется ли сброс шлюза|
-|60 %|15 %|10 %|15 %|да|
+|60 %|15 %|10 %|15 %|Да|
 
 
 ## <a name="your-network-components"></a>Компоненты сети
@@ -172,7 +172,7 @@ ATA отслеживает сетевой трафик контроллеров 
 Контроллеры домена и шлюзы ATA могут быть как физическими, так и виртуальными. Дополнительные сведения см. в статье [Настройка зеркального отображения портов](configure-port-mirroring.md).
 
 
-### <a name="events"></a>События
+### <a name="events"></a>Элемент Event
 Для повышения эффективности обнаружения атак Pass-the-Hash, атак методом подбора, атак путем изменения привилегированных групп и атак с использованием honeytoken решению ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](#configuring-windows-event-forwarding).
 
 -   Настройка прослушивания событий SIEM в шлюзе ATA <br>Настройте пересылку определенных событий Windows из системы SIEM в ATA. ATA поддерживает несколько поставщиков SIEM. Дополнительные сведения см. в статье [Настройка сбора данных о событиях](configure-event-collection.md).

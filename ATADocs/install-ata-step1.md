@@ -1,25 +1,25 @@
 ---
-title: "Установка Advanced Threat Analytics. Шаг 1 | Документация Майкрософт"
-description: "На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер."
-keywords: 
+title: Установка Advanced Threat Analytics. Шаг 1 | Документация Майкрософт
+description: На первом шаге установки ATA необходимо скачать и установить центр ATA на выбранный сервер.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7a5dd2c722244ec94ebf49555483ddd201b5ba54
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: 27a016fe71d08dd8e8852fc44d5dea142f914d9e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 # <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/01/2018
 >[!div class="step-by-step"]
 [Шаг 2 "](install-ata-step2.md)
 
-В ходе установки предоставляются указания по выполнению новой установки ATA 1.8. Сведения об обновлении имеющегося развертывания ATA с более ранней версии см. в [руководстве по миграции в ATA версии 1.8](ata-update-1.8-migration-guide.md).
+В ходе установки предоставляются указания по выполнению новой установки ATA 1.8. Сведения об обновлении имеющегося развертывания ATA с более ранней версии см. в [руководстве по миграции для ATA версии 1.9](ata-update-1.9-migration-guide.md).
 
 > [!IMPORTANT] 
 > Если вы используете Windows 2012 R2, то, прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюза ATA. Иначе обновление, устанавливаемое вместе с ATA, потребует перезагрузки во время процесса установки.

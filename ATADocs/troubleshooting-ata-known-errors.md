@@ -1,25 +1,25 @@
 ---
-title: "Устранение известных неполадок ATA | Документы Майкрософт"
-description: "Описывается устранение известных ошибок в ATA."
-keywords: 
+title: Устранение известных неполадок ATA | Документы Майкрософт
+description: Описывается устранение известных ошибок в ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: f13416c4179d65ee8096d246ea92969b1cf9af43
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: a7172447de5b4d4088da2d8d687a7bec47a01551
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 11/07/2017
  
 ## <a name="deployment-errors"></a>Ошибки развертывания
 > [!div class="mx-tableFixed"]
-|Ошибка|Описание|Разрешение|
+|Ошибка|Описание|Решение|
 |-------------|----------|---------|
 |Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 |System.Threading.Tasks.TaskCanceledException: отменена задача|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1.    Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу в браузере. <br></br>2.    Проверьте конфигурацию прокси-сервера или брандмауэра.|
@@ -71,7 +71,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="ata-gateway-and-lightweight-gateway-issues"></a>Проблемы со шлюзом ATA и упрощенным шлюзом
 
 > [!div class="mx-tableFixed"]
-|Проблема|Описание|Разрешение|
+|Проблема|Описание|Решение|
 |-------------|----------|---------|
 |От контроллера домена не поступает трафик, но оповещения мониторинга выводятся|    От контроллера домена не поступает трафик с использованием зеркального отображения портов через шлюз ATA|В сетевом адаптере захвата в шлюзе ATA отключите следующие функции в разделе **Дополнительные параметры**:<br></br>объединение полученных сегментов (IPv4);<br></br>объединение полученных сегментов (IPv6).|
 |Отображается следующее предупреждение системы мониторинга: **Часть сетевого трафика не анализируется**|Вы можете получить это предупреждение, если у вас есть шлюз ATA или упрощенный шлюз на виртуальных машинах VMware. Это происходит из-за несоответствия конфигураций в VMware.|Задайте в конфигурации сетевого адаптера виртуальной машины значения **0** или **Отключено** для следующих параметров: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|

@@ -1,25 +1,25 @@
 ---
-title: "Управление базой данных Advanced Threat Analytics | Документация Майкрософт"
-description: "Процедуры перемещения, резервного копирования и восстановления базы данных ATA."
-keywords: 
+title: Управление базой данных Advanced Threat Analytics | Документация Майкрософт
+description: Процедуры перемещения, резервного копирования и восстановления базы данных ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 98923fbd56678291c4e10e595396f9454b0aeb11
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 20762e0d944adaa0c81de9f3ad1c32de445157fe
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 

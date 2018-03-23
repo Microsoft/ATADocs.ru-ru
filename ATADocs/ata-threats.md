@@ -1,25 +1,25 @@
 ---
-title: "Какие угрозы обнаруживает решение Advanced Threat Analytics? | Документация Майкрософт"
-description: "Список угроз, которые обнаруживает Advanced Threat Analytics"
-keywords: 
+title: Какие угрозы обнаруживает решение Advanced Threat Analytics? | Документация Майкрософт
+description: Список угроз, которые обнаруживает Advanced Threat Analytics
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 842b2a5d4e211c2b2fcb4cd0afc96bb33ac42311
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2d5d5769f4016b09f899ff09c4d1888698d81819
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 # <a name="what-threats-does-ata-look-for"></a>Типы угроз, которые ищет ATA
 

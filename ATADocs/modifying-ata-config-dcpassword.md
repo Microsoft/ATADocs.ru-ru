@@ -1,25 +1,25 @@
 ---
-title: "Изменение конфигурации Advanced Threat Analytics с использованием пароля для подключения к домену | Документация Майкрософт"
-description: "Процедура изменения пароля для подключения к домену на шлюзе ATA."
-keywords: 
+title: Изменение конфигурации Advanced Threat Analytics с использованием пароля для подключения к домену | Документация Майкрософт
+description: Процедура изменения пароля для подключения к домену на шлюзе ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 652d3a9e20737d26e8776035690a180f6bd84593
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 47bd7e9cdd97d8343202be86954e82e69948afed
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 

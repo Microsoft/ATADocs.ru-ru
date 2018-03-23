@@ -1,25 +1,25 @@
 ---
-title: "Справочник по идентификаторам событий ATA | Microsoft Docs"
-description: "Предоставляет список идентификаторов событий ATA и их описания."
-keywords: 
+title: Справочник по идентификаторам событий ATA | Microsoft Docs
+description: Предоставляет список идентификаторов событий ATA и их описания.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 07be2dad511158a9234c99287f7eefd7cc12ba83
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: e9147f4333f481eaec4967dd32846bd123866941
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
@@ -84,8 +84,6 @@ ms.lasthandoff: 11/07/2017
 
 2004 — подозрительное действие: атака методом подбора LDAP 
 
-2005 — подозрительное действие: компьютер не прошел предварительную проверку подлинности 
-
 2006 — подозрительное действие: репликация служб каталогов 
 
 2007 — подозрительное действие: разведывательная атака с использованием DNS 
@@ -97,8 +95,6 @@ ms.lasthandoff: 11/07/2017
 2013 — подозрительное действие: подложный PAC 
 
 2014 — подозрительное действие: действие Honeytoken 
-
-2015 — подозрительное действие: открытый пароль LDAP 
 
 2016 — подозрительное действие: массовое удаление объектов 
 
