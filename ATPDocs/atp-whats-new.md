@@ -1,28 +1,36 @@
 ---
-title: "Новые возможности Azure ATP | Microsoft Docs"
-description: "Описание последних выпусков Azure ATP и сведения о новых возможностях в каждой версии."
-keywords: 
+title: Новые возможности Azure ATP | Microsoft Docs
+description: Описание последних выпусков Azure ATP и сведения о новых возможностях в каждой версии.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4a81d84a46b9710c2376bbc50f699966a24138db
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 6b3c9ddd1873b3139009a44e9c1f7a85ea3b6901
+ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/19/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+## <a name="azure-atp-release-225"></a>Azure ATP выпуск 2.25
+
+Выпущен: 18 марта 2018 г.
+
+- Теперь в Azure ATP поддерживается многофакторная идентификация (MFA). Клиенты, использующие MFA, могут входить на портал Azure ATP.
+- В Azure ATP появилась страница [**Состояние системы**](https://health.atp.azure.com/) со сведениями о работоспособности портала управления рабочей областью, наличии проблем с операциями обнаружения и возможности датчика направлять трафик в облако. Получить доступ к странице **Состояние системы** можно из меню Azure ATP.
+
 
 ## <a name="azure-atp-release-224"></a>Azure ATP выпуск 2.24
 

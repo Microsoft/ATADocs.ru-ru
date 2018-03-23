@@ -1,25 +1,25 @@
 ---
-title: "Установка Advanced Threat Analytics. Шаг 4 | Документация Майкрософт"
-description: "На четвертом этапе установки ATA вы установите шлюз ATA."
-keywords: 
+title: Установка Advanced Threat Analytics. Шаг 4 | Документация Майкрософт
+description: На четвертом этапе установки ATA вы установите шлюз ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4abeda5a54de771c6e6d3c73d9217113dfe88b8e
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 5b516c3179e5a870b022bd4c890dcd4099adcb67
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 

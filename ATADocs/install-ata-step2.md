@@ -1,33 +1,33 @@
 ---
-title: "Установка Advanced Threat Analytics. Шаг 2 | Документация Майкрософт"
-description: "На втором этапе установки ATA вы настроите параметры подключения к домену на сервере центра ATA."
-keywords: 
+title: Установка Advanced Threat Analytics. Шаг 2 | Документация Майкрософт
+description: На втором этапе установки ATA вы настроите параметры подключения к домену на сервере центра ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c4cd30446193ff2d9ab4069b1312593a2102282a
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2b3505693650f353772511804198b617f53d0437
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
 >[!div class="step-by-step"]
-[Шаг 1](install-ata-step1.md)
-[Шаг 3](install-ata-step3.md)
+[« Шаг 1](install-ata-step1.md)
+[Шаг 3 »](install-ata-step3.md)
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
 
@@ -51,8 +51,8 @@ ms.lasthandoff: 11/07/2017
 
 
 >[!div class="step-by-step"]
-[Шаг 1](install-ata-step1.md)
-[Шаг 3](install-ata-step3.md)
+[« Шаг 1](install-ata-step1.md)
+[Шаг 3 »](install-ata-step3.md)
 
 
 ## <a name="see-also"></a>См. также

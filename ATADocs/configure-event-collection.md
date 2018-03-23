@@ -1,25 +1,25 @@
 ---
-title: "Настройка пересылки событий Windows в Advanced Threat Analytics | Документы Майкрософт"
-description: "Описываются параметры настройки пересылки событий Windows в ATA."
-keywords: 
+title: Настройка пересылки событий Windows в Advanced Threat Analytics | Документы Майкрософт
+description: Описываются параметры настройки пересылки событий Windows в ATA.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 482b16462d115c7bcc2854d30c2ef19fce37f2c0
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2c8f67d0c8d9020eb0e7ae16e8410db473ace044
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*Применяется к Advanced Threat Analytics версии 1.8*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 > В версии ATA 1.8 и более поздних настройка сбора событий для упрощенных шлюзов ATA больше не требуется. Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
 
 
-Чтобы улучшить возможности обнаружения вторжений, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757. Они могут автоматически считываться упрощенным шлюзом ATA или, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA путем настройки прослушивания событий SIEM в шлюзе ATA или пересылки событий Windows.
+Чтобы улучшить возможности обнаружения, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757, 7045. Они могут автоматически считываться упрощенным шлюзом ATA или, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA путем настройки прослушивания событий SIEM в шлюзе ATA или пересылки событий Windows.
 
 
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 11/07/2017
    
     1.  Выберите значение **Включено**.
     2.  В разделе **Параметры** щелкните **Показать**.
-    3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (Например, Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (например, Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![Изображение настройки целевой подписки](media/wef 2 config target sub manager.png)
    
