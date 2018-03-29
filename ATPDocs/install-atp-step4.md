@@ -1,23 +1,23 @@
 ---
-title: "Установка Azure Advanced Threat Protection. Шаг 4 | Документы Майкрософт"
-description: "На четвертом шаге установки Azure ATP выполняется установка автономного датчика Azure ATP."
-keywords: 
+title: Установка Azure Advanced Threat Protection. Шаг 4 | Документы Майкрософт
+description: На четвертом шаге установки Azure ATP выполняется установка автономного датчика Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/25/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7b003882f21f22b3427fb95534ca2bde255b14e6
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 56b3cea2089c64e2c78361c44d049d6de67764b6
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -35,11 +35,16 @@ ms.lasthandoff: 02/21/2018
 
 
 > [!IMPORTANT]
->На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, это создаст пакет установки датчика Azure ATP, после чего потребуется перезагрузить сервер. Убедитесь, что у компьютера есть подключение к конечной точке облачной службы Azure ATP: https://triprd1wceuw1sensorapi.atp.azure.com (для Европы) или https://triprd1wcuse1sensorapi.atp.azure.com (для США).
+>На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, это создаст пакет установки датчика Azure ATP, после чего потребуется перезагрузить сервер.
 
 Выполните следующие действия на сервере датчика Azure ATP или контроллере домена.
 
-1.  Извлеките файлы из ZIP-файла. 
+1. Убедитесь, что компьютер подключен к правильной конечной точке облачной службы Azure ATP:
+  - https://triprd1wceuw1sensorapi.atp.azure.com (для Европы)  
+  - https://triprd1wcuse1sensorapi.atp.azure.com (для США)
+  - https://triprd1wcasse1sensorapi.atp.azure.com (для Азии)
+
+2. Извлеките файлы установки из ZIP-файла. 
 > [!NOTE] 
 > При установке непосредственно из ZIP-файла произойдет сбой.
 

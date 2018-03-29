@@ -1,23 +1,23 @@
 ---
-title: "Предварительные требования к Azure Advanced Threat Protection | Документы Майкрософт"
-description: "Описание требований для успешного развертывания Azure ATP в среде."
-keywords: 
+title: Предварительные требования к Azure Advanced Threat Protection | Документы Майкрософт
+description: Описание требований для успешного развертывания Azure ATP в среде.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3cb4eb8a914f1fd4be0c1ddb26f9be3964c529f7
-ms.sourcegitcommit: 26d833f7d9502db73876ced9879789db395224f7
+ms.openlocfilehash: 3c8e0b239c335981b2030021d1d4e319b2810fda
+ms.sourcegitcommit: 7c9fe4eb781bec71129310a6e0c5e76b022a0213
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -131,11 +131,13 @@ ms.lasthandoff: 02/27/2018
 
 |Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
+|**Интернет-порты**|||||
+|SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
+|**Внутренние порты**|||||
 |LDAP|TCP и UDP|389|Контроллеры домена|Исходящее|
 |Защищенный LDAP (LDAPS)|TCP|636|Контроллеры домена|Исходящее|
 |LDAP для глобального каталога|TCP|3268|Контроллеры домена|Исходящее|
 |LDAPS для глобального каталога|TCP|3269|Контроллеры домена|Исходящее|
-|SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
 |Kerberos|TCP и UDP|88|Контроллеры домена|Исходящее|
 |Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Контроллеры домена|Исходящее|
 |Служба времени Windows|UDP|123|Контроллеры домена|Исходящее|
@@ -195,7 +197,9 @@ ms.lasthandoff: 02/27/2018
 
 |Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
+|**Интернет-порты**|||||
 |SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
+|**Внутренние порты**|||||
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
 |HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Контроллеры домена|Исходящее|

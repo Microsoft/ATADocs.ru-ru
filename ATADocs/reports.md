@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b7f921bb2eb655a929eb19c849788c1bf9f64527
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 9a113d8d090c5a90a07043a0ef75e1be0fc840c3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -51,6 +51,9 @@ ms.lasthandoff: 03/22/2018
 1. На странице **Отчеты** щелкните **Настроить запланированные отчеты** либо на странице настройки консоли ATA в разделе "Уведомления и отчеты" щелкните **Запланированные отчеты**.
 
    ![Планирование создания отчетов](./media/ata-sched-reports.png)
+
+  > [!NOTE]
+  > Ежедневные отчеты о предназначены для отправки вскоре после полуночи (время UTC).
 
 2. Рядом с выбранным типом отчета щелкните **Запланировать**, чтобы указать периодичность и адрес электронной почты, на который будут доставляться отчеты. Чтобы добавить адреса электронной почты, щелкните знак "плюс" рядом с ними. Нажмите кнопку **Сохранить**.
 
