@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 99865293dd5aa6648516fbebbf61977176b1de36
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 0bd4bca536facb9ad4b7fea627f2ef512949728e
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="updating-ata-to-version-19"></a>Обновление ATA до версии 1.9
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/22/2018
 
 Чтобы провести обновление до ATA версии 1.9, выполните указанные ниже действия.
 
-1.  [Скачайте обновление до версии ATA 1.9 из Центра загрузки](https://www.microsoft.com/download/details.aspx?id=55536) или полную версию из [Центра оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).<br>
+1.  [Скачайте обновление до версии ATA 1.9 из Центра загрузки](https://www.microsoft.com/download/details.aspx?id=56725) или полную версию из [Центра оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).<br>
 Файл версии для миграции можно использовать только для обновления с версии ATA 1.8. В версии из Центра оценки файл установки (Setup.exe центра Microsoft ATA) используется как для установки нового развертывания ATA, так и для обновления имеющихся развертываний.
 
 2.  Обновите центр ATA.

@@ -1,23 +1,23 @@
 ---
-title: "Установка Azure Advanced Threat Protection | Документы Майкрософт"
-description: "На этом этапе установки ATP настраиваются источники данных."
-keywords: 
+title: Установка Azure Advanced Threat Protection | Документы Майкрософт
+description: На этом этапе установки ATP настраиваются источники данных.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 060ebd048fddacfb276ae32e4e589d7c8b70cbb6
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 2c2a8e6d70d937c559c110a18feec4afc75271e9
+ms.sourcegitcommit: 45d0108d0cbf8fe7550d13486d3d9c06c1e58506
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -38,8 +38,10 @@ ms.lasthandoff: 02/21/2018
 Для обработки Azure ATP данных с сервера системного журнала необходимо выполнить следующие шаги:
 
 -   Настройте серверы датчика Azure ATP на прослушивание и прием событий, перенаправляемых с сервера SIEM или системного журнала.
-> [!NOTE]
-> Azure ATP прослушивает только IPv4, но не IPv6. 
+
+ > [!NOTE]
+ > Azure ATP прослушивает только IPv4, но не IPv6. 
+
 -   Настройте сервер SIEM или сервер системного журнала на пересылку определенных событий на датчик Azure ATP.
 
 > [!IMPORTANT]
@@ -159,7 +161,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 -   Для пар ключ=значение порядок представления неважен.
 
 ### <a name="qradar"></a>QRadar
-QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в статье QRadar: Agentless Windows Events Collection using the MSRPC Protocol (QRadar: сбор данных о событиях Windows без агента с помощью протокола MSRPC) ([http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 ").")
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в статье[http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol") (QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC).
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
