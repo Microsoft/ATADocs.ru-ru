@@ -1,23 +1,23 @@
 ---
-title: "Работа с отчетами Azure ATP | Документы Майкрософт"
-description: "Сведения о создания отчетов в Azure ATP для мониторинга сети."
-keywords: 
+title: Работа с отчетами Azure ATP | Документы Майкрософт
+description: Сведения о создания отчетов в Azure ATP для мониторинга сети.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ebc0d9bb860bd93f14c4c511b034c740b59dffb
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 8d9c7f9208ce76e6c2ca915729b9c64f769ae7bd
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -25,6 +25,7 @@ ms.lasthandoff: 02/21/2018
 # <a name="azure-atp-reports"></a>Отчеты Azure ATP
 
 В разделе отчетов на портале рабочей области Azure ATP можно создавать отчеты, которые содержат сведения о состоянии системы (ее работоспособности и подозрительных действиях, обнаруженных в среде).
+
 
 Чтобы открыть страницу отчетов, щелкните в строке меню значок отчета: ![значок отчета](./media/atp-report-icon.png).
 Доступны указанные ниже отчеты. 
@@ -51,6 +52,9 @@ ms.lasthandoff: 02/21/2018
 1. На странице **Отчеты** щелкните **Настроить запланированные отчеты** либо на странице настройки портала рабочей области Azure ATP в разделе "Уведомления и отчеты" щелкните **Запланированные отчеты**.
 
    ![Планирование создания отчетов](./media/atp-sched-reports.png)
+ 
+ > [!NOTE]
+ > Ежедневные отчеты о предназначены для отправки вскоре после полуночи (время UTC).
 
 2. Рядом с выбранным типом отчета щелкните **Запланировать**, чтобы указать периодичность и адрес электронной почты, на который будут доставляться отчеты. Чтобы добавить адреса электронной почты, щелкните знак "плюс" рядом с ними. Нажмите кнопку **Сохранить**.
 
