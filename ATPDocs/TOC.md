@@ -6,6 +6,7 @@
 ## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 ## [Архитектура Azure ATP](atp-architecture.md)
 ## [Планирование производительности Azure ATP](atp-capacity-planning.md)
+### [Настройка прокси-сервера для взаимодействия](configure-proxy.md)
 # Развернуть
 ## [1. Создание рабочей области на портале управления](install-atp-step1.md)
 ## [2. Подключение к AD](install-atp-step2.md)
@@ -21,7 +22,6 @@
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
 ### [Настройка переадресации событий Windows](configure-event-forwarding.md)
-### [Настройка прокси-сервера для взаимодействия](configure-proxy.md)
 # Используйте
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
 ## [Отчеты Azure ATP](reports.md)
@@ -44,3 +44,4 @@
 # Диагностика
 ## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
 ## [Поддержка и информация](atp-support.md)
+## [План подготовки Azure ATP к работе](atp-resources.md)
