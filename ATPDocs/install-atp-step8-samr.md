@@ -1,23 +1,23 @@
 ---
-title: "Настройка SAM-R для включения обнаружения пути бокового смещения в Azure ATP | Документы Майкрософт"
-description: "Сведения о настройке SAM-R для включения обнаружения пути бокового смещения в Azure ATP"
-keywords: 
+title: Настройка SAM-R для включения обнаружения пути бокового смещения в Azure ATP | Документы Майкрософт
+description: Сведения о настройке SAM-R для включения обнаружения пути бокового смещения в Azure ATP
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 4/29/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e2ac4fb68fb1429610a0416582c871c9ae704df
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 24b42c5425933d8931a85e0ba454a69e0ca94a21
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 Обнаружение [пути бокового смещения](use-case-lateral-movement-path.md) основано на запросах, определяющих локальных администраторов на конкретных компьютерах. Эти запросы выполняются с использованием протокола SAM-R с помощью учетной записи службы ATP Azure, созданной на [шаге 2. Подключение к AD](install-atp-step2.md).
  
-Чтобы клиенты и серверы Windows разрешали учетной записи службы ATP Azure выполнять эту операцию SAM-R, необходимо внести изменения в групповую политику.
+Чтобы клиенты и серверы Windows позволяли учетной записи Azure ATP выполнять эту операцию SAM-R, в **групповую политику** необходимо внести изменение по добавлению учетной записи службы Azure ATP помимо настроенных учетных записей, указанных в политике **Сетевой доступ**.
 
 1. Найдите политику.
 

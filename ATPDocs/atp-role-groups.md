@@ -1,23 +1,23 @@
 ---
-title: "Группы ролей в Azure Advanced Threat Protection для управления доступом | Документы Майкрософт"
-description: "Руководство по работе с группами ролей Azure ATP."
-keywords: 
+title: Группы ролей в Azure Advanced Threat Protection для управления доступом | Документы Майкрософт
+description: Руководство по работе с группами ролей Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 4/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 86cb55fd2b5ce81460dead4b8b753c88f79edd7b
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 8fda27ed8ed4a589ff205e815e8b3cf97026b819
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -46,10 +46,9 @@ ms.lasthandoff: 02/21/2018
 |Действие |Администраторы *имя рабочей области* Azure ATP|Пользователи *имя рабочей области* Azure ATP|Читатели *имя рабочей области* Azure ATP|
 |----|----|----|----|
 |Имя входа|Доступно|Доступно|Доступно|
-|Ввод данных о подозрительных действиях|Доступно|Доступно|Недоступно|
 |Изменение состояния подозрительных действий|Доступно|Доступно|Недоступно|
-|Эскалация или экспорт подозрительных действий через электронную почту или ссылку для просмотра|Доступно|Доступно|Недоступно|
-|Изменение состояния предупреждений мониторинга|Доступно|Доступно|Недоступно|
+|Эскалация или экспорт подозрительных действий через электронную почту или ссылку для просмотра|Доступно|Доступно|Доступно|
+|Изменение состояния предупреждений мониторинга|Доступно|Недоступно|Недоступно|
 |Обновление конфигурации Azure ATP|Доступно|Недоступно|Недоступно|
 |Датчик — добавление|Доступно|Недоступно|Недоступно|
 |Датчик — удаление |Доступно|Недоступно|Недоступно|
@@ -62,7 +61,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="add-and-remove-users"></a>Добавление и удаление пользователей 
 
-В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять по адресу: [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups).  Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
+В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять по следующему адресу: [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups).  Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
 
 
 ## <a name="see-also"></a>См. также
