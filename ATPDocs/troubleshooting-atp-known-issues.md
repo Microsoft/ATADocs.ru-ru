@@ -1,28 +1,51 @@
 ---
-title: "Устранение известных неполадок Azure ATP | Документация Майкрософт"
-description: "В этой статье описываются способы устранения неполадок в службе Azure ATP."
-keywords: 
+title: Устранение известных неполадок Azure ATP | Документация Майкрософт
+description: В этой статье описываются способы устранения неполадок в службе Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2018
+ms.date: 4/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2895a38e2328fb7de4fe7f47d00c4e40ac854e74
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: c430ec58c197c8fcc6e539d0923278cd8469987d
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP 
+
+
+## <a name="deployment-log-location"></a>Расположение журнала развертывания
+ 
+Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (or one directory above %temp%).
+
+## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка лицензирования
+
+Во время установки датчика возникает следующая ошибка, информирующая о том, что **датчик не удалось зарегистрировать из-за проблем с лицензированием.**
+
+Записи журнала развертывания: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
+
+
+**Причина**.
+
+Когда обмен данными выполняется через прокси-сервер, во время аутентификации он может отвечать на обращение датчика Azure ATP, возвращая ошибку 401 или 403 вместо ошибки 407. Датчик Azure ATP будет интерпретировать ошибку 401 или 403 как проблему с лицензированием, а не с аутентификацией прокси-сервера. 
+
+**Решение:**
+
+Датчик должен обращаться по адресу *.atp.azure.com через настроенный прокси-сервер без аутентификации. См. дополнительные сведения о [настройке прокси-сервера для включения обмена данными](configure-proxy.md).
+
+
+
 
 ## <a name="azure-atp-sensor-nic-teaming-issue"></a>Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт
 
@@ -30,14 +53,14 @@ ms.lasthandoff: 03/08/2018
 
 Если вы еще не установили датчик, сделайте следующее:
 
-1.  Скачайте библиотеку Npcap на странице [https://nmap.org/npcap/](https://nmap.org/npcap/).
+1.  Скачать Npcap из [https://nmap.org/npcap/](https://nmap.org/npcap/).
 2.  Удалите библиотеку WinPcap, если она установлена.
 3.  Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
 4.  Установите пакет датчика.
 
 Если вы уже установили датчик, сделайте следующее:
 
-1.  Скачайте библиотеку Npcap на странице [https://nmap.org/npcap/](https://nmap.org/npcap/).
+1.  Скачать Npcap из [https://nmap.org/npcap/](https://nmap.org/npcap/).
 2.  Удалите датчик.
 3.  Удалите WinPcap.
 4.  Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.

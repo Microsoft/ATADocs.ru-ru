@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/25/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,51 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0693bd3a25d6438874d422bedf8da05931a15d54
-ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
+ms.openlocfilehash: de761df3badbd1ae1118c96d018a24dd22318328
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+
+
+## <a name="azure-atp-release-230"></a>Azure ATP., выпуск 2.30
+
+Выпущено 29 апреля 2018 г.
+ 
+- Подозрительные действия по снижению уровня шифрования теперь включаются в специальный раздел, в котором описываются обнаруживаемые Azure ATP признаки, указывающие на выполнение таких действий. 
+-   Теперь Azure ATP использует оркестратор электронной почты Azure для всех сообщений электронной почты, отправленных Azure ATP, содержащих сведения о подозрительных действиях, оповещения мониторинга и отчеты. Вы увидите, что такие уведомления создаются в согласованном формате, что упрощает работу с ними. Кроме того, в уведомлениях будет содержаться ссылка на скачивание файлов Excel из консоли.
+ 
+ 
+
+## <a name="azure-atp-release-229"></a>Azure ATP, выпуск 2.29
+
+Выпущен 22 апреля 2018 г.
+ 
+- Эта версия включает улучшения, а также исправления нескольких проблем. 
+ 
+ 
+## <a name="azure-atp-release-228"></a>Azure ATP, выпуск 2.28
+
+Выпущен 15 апреля 2018 г.
+ 
+-   Пользователи, являющиеся членами групп ролей пользователей и наблюдателей ATP Azure теперь имеют разрешения просматривать оповещения мониторинга.
+- Эта версия включает улучшения, а также исправления нескольких проблем. 
+
+
+## <a name="azure-atp-release-227"></a>Azure ATP., выпуск 2.27
+
+Выпущен 8 апреля 2018 г.
+
+- Теперь вы можете отправлять отзывы с панели навигации вверху. Щелкнув смайлик в строке меню, вы можете отправить сообщение электронной почты группе разработчиков Azure Advanced Threat Protection.
+
+- Эта версия включает улучшения, а также исправления нескольких проблем. 
+ 
 
 ## <a name="azure-atp-release-226"></a>Azure ATP выпуск 2.26
 
