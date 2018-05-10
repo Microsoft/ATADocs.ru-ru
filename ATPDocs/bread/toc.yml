@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security
+      items:
+        - name: Защита Azure от угроз
+          tocHref: /azure-threat-protection/
+          topicHref: /azure-advanced-threat-protection
