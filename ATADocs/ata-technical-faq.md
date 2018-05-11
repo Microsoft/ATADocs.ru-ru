@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 5/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5fe0e6f0d8c75c099aa6623cd0f5245c955d9ffa
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f372b4b85c240079da157052e2c20c46801398be
+ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -51,6 +51,10 @@ ms.lasthandoff: 03/22/2018
 
 Таблицу обновления версий ATA см. в статье [Рекомендуемые варианты обновления ATA](upgrade-path.md).
 
+
+## <a name="how-does-the-ata-center-update-its-latest-signatures"></a>Каким образом обновляются последние сигнатуры центра ATA?
+
+Механизм обнаружения ATA расширяется при установке новой версии в центре ATA. Центр можно обновить с помощью Центра обновления Майкрософт или вручную скачать новую версию из Центра загрузки или веб-сайта VLSC.
 
 ## <a name="how-do-i-verify-windows-event-forwarding"></a>Как проверить пересылку событий Windows?
 Приведенный ниже код можно сохранить в файл и выполнить этот файл в командной строке из каталога **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**, используя следующую команду.
