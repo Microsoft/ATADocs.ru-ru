@@ -1,23 +1,23 @@
 ---
-title: "Интеграция Azure Advanced Threat Protection с ATP в Защитнике Windows | Документы Майкрософт"
-description: "Сведения об интеграции Azure Advanced Threat Protection с ATP в Защитнике Windows для полной поддержки обнаружения угроз"
-keywords: 
+title: Интеграция Azure Advanced Threat Protection с ATP в Защитнике Windows | Документы Майкрософт
+description: Сведения об интеграции Azure Advanced Threat Protection с ATP в Защитнике Windows для полной поддержки обнаружения угроз
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/16/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3521e500548b04febbff37d3dfe9150cf6f2d35b
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 17ade33a55039eaf8abc98901cdab9ebeef850c5
+ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/16/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -96,8 +96,10 @@ Azure Advanced Threat Protection позволяет интегрировать A
  ![ATP в Защитнике Windows — неактивно](./media/wd-grey.png)
 
 На портале ATP в Защитнике Windows щелкните конечную точку, чтобы просмотреть оповещения Azure ATP. Если щелкнуть оповещения для этой сущности в ATP в Защитнике Windows, страница профиля сущности откроется в Azure ATP. 
+ 
+ > ![Примечание] Сейчас при интеграции Azure ATP с ATP в Защитнике Windows поддерживаются только пользователи и компьютеры из локальной службы AD. Пользователи Azure AD и виртуальных машин, управляемые посредством Azure, не будут показаны при интеграции 
 
- ![Оповещения ATP в Защитнике Windows](./media/wd-atp-alerts.png)
+![Оповещения ATP в Защитнике Windows](./media/wd-atp-alerts.png)
 
 
 ## <a name="see-also"></a>См. также
