@@ -44,7 +44,7 @@
 ## [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
 ## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
 ## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
-## [Управление данными телеметрии ATA](manage-telemetry-settings.md)
+## [Управление создаваемыми системой журналами](manage-telemetry-settings.md)
 ## [Настройка уведомлений ATA](setting-ata-alerts.md)
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
 ## [Пометка конфиденциальных учетных записей](tag-sensitive-accounts.md)
