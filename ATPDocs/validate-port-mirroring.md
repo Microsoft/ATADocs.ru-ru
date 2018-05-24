@@ -1,23 +1,23 @@
 ---
-title: "Проверка зеркального отображения портов в Azure Advanced Threat Protection | Документация Майкрософт"
-description: "В этой статье описано, как проверить, правильно ли настроено зеркальное отображение портов в Azure ATP."
-keywords: 
+title: Проверка зеркального отображения портов в Azure Advanced Threat Protection | Документация Майкрософт
+description: В этой статье описано, как проверить, правильно ли настроено зеркальное отображение портов в Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7628fa491ddbe477cab7eb414409028c0f94f44d
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: b3d9d35d31eee7ae46800e0547f18330d66e90cc
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/22/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 > [!NOTE] 
-> Сведения в этой статье относятся только к развертыванию автономного датчика Azure ATP, а не датчика Azure ATP. Чтобы определить, нужно ли использовать датчик Azure ATP, см. статью о [выборе правильных датчиков для развертывания](atp-capacity-planning#choosing-the-right-sensor-type-for-your-deployment).
+> Сведения в этой статье относятся только к развертыванию автономного датчика Azure ATP, а не датчика Azure ATP. Чтобы определить, нужно ли использовать датчик Azure ATP, см. статью о [выборе правильных датчиков для развертывания](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment).
  
 Ниже описана последовательность проверки правильной настройки зеркального отображения портов. Для правильной работы службы Azure ATP автономный датчик Azure ATP должен отслеживать входящий и исходящий трафик контроллера домена. Основные сведения, требуемые для работы Azure ATP, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы служба Azure ATP могла отслеживать сетевой трафик, нужно настроить зеркальное отображение портов. Эта функция копирует трафик из одного порта (исходный порт) в другой порт (конечный порт).
 

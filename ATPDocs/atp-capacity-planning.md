@@ -1,22 +1,22 @@
 ---
-title: "Планирование развертывания Azure Advanced Threat Protection | Документы Майкрософт"
-description: "В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов Azure ATP потребуется для поддержки сети."
-keywords: 
+title: Планирование развертывания Azure Advanced Threat Protection | Документы Майкрософт
+description: В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов Azure ATP потребуется для поддержки сети.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.service: azure-advanced-threat-protection
-ms.prod: 
+ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 577b7a5105e8de773f57b1e00bc1c9cb51096799
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 35d3495585cce321adccb05f202fd664356db37f
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/22/2018
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/12/2018
 Если по каким-либо причинам вы не можете использовать средство изменения размера Azure ATP, необходимо вручную собрать данные по числу пакетов в секунду с коротким интервалом сбора (примерно 5 секунд) со всех контроллеров домена за 24 часа. Затем для каждого контроллера домена необходимо вычислить ежедневное среднее значение и среднее значение самого занятого периода (15 минут).
 В следующих разделах представлены инструкции по сбору числа пакетов в секунду с одного контроллера домена.
 
-## Выбор правильного типа датчика для развертывания<a name="choosing-the right-sensor-type-for-your-deployment"></a>
+## Выбор правильного типа датчика для развертывания<a name="choosing-the-right-sensor-type-for-your-deployment"></a>
 В развертывании Azure ATP поддерживается любое сочетание типов автономных датчиков Azure:
 
 - Только автономные датчики Azure ATP
