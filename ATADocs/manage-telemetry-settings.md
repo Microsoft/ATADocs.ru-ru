@@ -1,5 +1,5 @@
 ---
-title: Управление параметрами телеметрии в Advanced Threat Analytics | Документация Майкрософт
+title: Управление системными журналами Advanced Threat Analytics | Документация Майкрософт
 description: Описание данных, которые собирает решение ATA, и пошаговые инструкции по отключению сбора данных.
 keywords: ''
 author: rkarlin
@@ -13,18 +13,22 @@ ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 98d377dd7e09636d1866d461a981cdcf1cf8aea7
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 7f1a0cb9a7e237259a9b77b96e16c6680336c2b0
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444524"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
-# <a name="manage-telemetry-settings"></a>Управление параметрами телеметрии
-Advanced Threat Analytics (ATA) собирает анонимные данные телеметрии об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
+# <a name="manage-system-generated-logs-note"></a>Управление системными журналами> [!NOTE]
+> Если вы заинтересованы в просмотре или удалении персональных данных, ознакомьтесь с руководством Майкрософт в [Microsoft Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) и [разделе о GDPR на сайте соответствия требованиям Microsoft 365 Enterprise](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr). Если вы ищете общие сведения о GDPR, ознакомьтесь с [разделом о GDPR на портале Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+
+
+Advanced Threat Analytics (ATA) собирает анонимные данные системных журналов об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
 
 ## <a name="data-collected"></a>Собираемые данные
 Собираемые анонимные данные включают следующие параметры:

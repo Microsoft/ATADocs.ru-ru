@@ -1,23 +1,24 @@
 ---
-title: "Обработка подозрительных действий в Azure Advanced Threat Protection | Документы Майкрософт"
-description: "В данной статье рассказывается о том, как проверять подозрительные действия, выявленные Azure ATP."
-keywords: 
+title: Обработка подозрительных действий в Azure Advanced Threat Protection | Документы Майкрософт
+description: В данной статье рассказывается о том, как проверять подозрительные действия, выявленные Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a5e7598e94e1d6d4b09c827770e062be9fefd1c4
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 1dccee094f4d6a8ec9bdc94a1d1314fa0675da9d
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444626"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/21/2018
 # <a name="working-with-suspicious-activities"></a>Обработка подозрительных действий
 В этой статье рассматриваются основы работы с решением Azure Advanced Threat Protection.
 
-## <a name="review-suspicious-activities-on-the-attack-time-line"></a>Проверка подозрительных действий на временной шкале атаки
+## Проверка подозрительных действий на временной шкале атаки <a name="review-suspicious-activities-on-the-attack-time-line"></a>
 После входа на портал рабочей области Azure ATP автоматически откроется **временная шкала подозрительных действий**. Подозрительные действия перечислены в хронологическом порядке, при этом последние действия указаны в верхней строке временной шкалы.
 Для каждого подозрительного действия указана следующая информация:
 

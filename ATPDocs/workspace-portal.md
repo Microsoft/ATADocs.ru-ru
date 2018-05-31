@@ -1,23 +1,24 @@
 ---
-title: "Общие сведения о портале рабочей области Azure Advanced Threat Protection | Документы Майкрософт"
-description: "Сведения о входе на портал рабочей области Azure ATP и описание компонентов портала рабочей области"
-keywords: 
+title: Общие сведения о портале рабочей области Azure Advanced Threat Protection | Документы Майкрософт
+description: Сведения о входе на портал рабочей области Azure ATP и описание компонентов портала рабочей области
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 21cc8b6b27efb514d2a313fc0959152d601d4344
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 40e139cc5e7dc6396914b0314d2d698a4782af02
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444711"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -39,7 +40,7 @@ C помощью портала рабочей области Azure ATP можн
 
 ## <a name="logging-into-the-azure-atp-workspace-portal"></a>Вход на портал рабочей области Azure ATP
 
-1. Чтобы войти на портал рабочей области, можно войти на портал управления рабочей областью [https://portal.atp.azure.com](https://portal.atp.azure.com) и выбрать соответствующую рабочую область либо перейти по URL-адресу рабочей области: [https://*workspacename*.atp.azure.com](https://*workspacename*.atp.azure.com).
+1. Чтобы войти на портал рабочей области, можно войти на портал управления рабочей областью [https://portal.atp.azure.com](https://portal.atp.azure.com) и выбрать соответствующую рабочую область либо перейти по URL-адресу рабочей области: [https://*имя_рабочей_области*.atp.azure.com](https://*workspacename*.atp.azure.com).
 
 
 2.  Azure ATP поддерживает единый вход, интегрированный с проверкой подлинности Windows. Если вы уже вошли в систему компьютера, Azure ATP использует существующий токен для входа на портал рабочей области Azure ATP. Кроме того, можно выполнять вход в систему с помощью смарт-карты. Ваши разрешения в Azure ATP будут соответствовать вашей [роли администратора](atp-role-groups.md).
@@ -64,7 +65,7 @@ C помощью портала рабочей области Azure ATP можн
 
 Подозрительные действия, которые отображаются на временной шкале атак или на вкладке подозрительных действий в профиле сущности, можно фильтровать по состоянию и уровню серьезности.
 
-### <a name="search-bar"></a>Панель поиска
+### Панель поиска <a name="search-bar"></a>
 
 Панель поиска расположена в верхнем меню. С ее помощью можно найти конкретного пользователя, компьютер или группы в Azure ATP. Чтобы воспользоваться панелью поиска, просто начните вводить текст в текстовом поле. В нижней части панели поиска указывается количество результатов поиска. 
 

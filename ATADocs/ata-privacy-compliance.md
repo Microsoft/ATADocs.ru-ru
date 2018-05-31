@@ -1,11 +1,11 @@
 ---
-title: Соответствие требованиям, надежность, защита и обеспечение конфиденциальности данных Advanced Threat Analytics | Документация Майкрософт
-description: Содержит список ссылок на ресурсы, видео, руководства по началу работы, сведения о развертывании и план подготовки к работе для ATA.
+title: Политика конфиденциальности персональных данных Advanced Threat Analytics | Документация Майкрософт
+description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из ATA.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: dee55446c18ee9bc560045c94f9421840fc28fc2
-ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
+ms.openlocfilehash: b89e841412385c9eca20e40d78ff10be342c6b22
+ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470735"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
-# <a name="ata-compliance-trust-data-security-and-privacy"></a>ATA: соответствие требованиям, надежность, защита и обеспечение конфиденциальности данных 
+# <a name="ata-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в ATA
 
-Сведения о надежности и соответствии требованиям ATA см. на портале [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) и на сайте [соответствия GDPR Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview).
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 ## <a name="searching-for-and-identifying-personal-data"></a>Поиск и идентификация персональных данных 
 
@@ -36,6 +37,7 @@ ms.lasthandoff: 05/16/2018
 Персональные данные пользователей и сущностей в ATA наследуются из объекта пользователя в AD организации. По этой причине все изменения, внесенные в профиль пользователя в AD, отражаются в ATA. 
 
 ## <a name="deleting-personal-data"></a>Удаление персональных данных 
+
 
 Хотя данные в ATA реплицируются и всегда обновляются из AD, при удалении сущности из AD данные сущности в ATA сохраняются для анализа безопасности. 
 
@@ -74,29 +76,17 @@ ms.lasthandoff: 05/16/2018
 ATA позволяет экспортировать в Excel все сведения, связанные с системой безопасности, в которые могут входить персональные данные. 
 
  
-## <a name="opt-out-of-telemetry"></a>Отказ от телеметрии 
+## <a name="opt-out-of-system-generated-logs"></a>Отключение системных журналов 
 
-ATA собирает анонимизированные данные телеметрии о каждом развертывании и передает их по HTTPS на серверы Майкрософт. Эти данные используются в Майкрософт для улучшения будущих версий ATA. 
+ATA собирает анонимные системные журналы о каждом развертывании и передает их по HTTPS на серверы Майкрософт. Эти данные используются в Майкрософт для улучшения будущих версий ATA. 
 
-Дополнительные сведения см. в разделе [Управление параметрами телеметрии](manage-telemetry-settings.md).
+Дополнительные сведения см. в статье об [управлении системными журналами](manage-telemetry-settings.md).
 
 Отключение сбора данных
 
 1. Войдите в консоль ATA. На панели инструментов щелкните значок многоточия и выберите пункт **О программе**. 
 2. Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**. 
 
- 
-
- 
-
- 
-
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-[Страница по безопасности Майкрософт на портале Channel 9](https://channel9.msdn.com/Shows/Microsoft-Security/)
-
-## <a name="community-resources"></a>Ресурсы сообщества
-
-[Блог ATA](https://aka.ms/ATABlog)
-[Сообщество ATA](https://aka.ms/ATACommunity)
-[Отзывы по ATA](https://aka.ms/ATAUserVoice)
+- Сведения о надежности и соответствии требованиям ATA см. на портале [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) и на сайте [соответствия GDPR Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview).

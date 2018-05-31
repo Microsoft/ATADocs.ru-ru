@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/8/2018
+ms.date: 5/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ae859121fbe856c93b8568ef38bf0b4bdb77837a
-ms.sourcegitcommit: 8472f3f46fc90da7471cd1065cdb2f6a1d5a9f69
+ms.openlocfilehash: 1fc2b3656701ee5db54a4f918ab617a2ad487780
+ms.sourcegitcommit: 3539dd3f9ab7729e5326b904fc64985c808bc8ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34401992"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 05/08/2018
 
 -   При выполнении Wireshark в автономном датчике Azure ATP необходимо перезапустить службу датчика Azure Advanced Threat Protection после остановки записи Wireshark. В противном случае датчик перестанет записывать трафик.
 
-- При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, обратитесь к представителю службы поддержки Azure ATP.
+- При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, ознакомьтесь с [соответствующей проблемой](troubleshooting-atp-known-issues.md#nic-teaming).
 
 -    Рекомендуется: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Так Azure ATP сможет обнаруживать массовое удаление объектов в домене. Дополнительные сведения о настройке в контейнере удаленных объектов разрешений только на чтение см. в разделе **Изменение разрешений для контейнера удаленных объектов** статьи [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (Просмотр или установка разрешений для объекта каталога).
 
