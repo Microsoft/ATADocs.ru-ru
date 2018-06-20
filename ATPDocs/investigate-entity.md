@@ -18,6 +18,7 @@ ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190457"
 ---
 *Применяется к: Azure Advanced Threat Protection версии 1.9*
 

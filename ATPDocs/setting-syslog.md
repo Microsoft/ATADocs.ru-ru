@@ -1,15 +1,15 @@
 ---
-title: "Настройка параметров уведомлений по электронной почте в Azure Advanced Threat Protection | Документы Майкрософт"
-description: "В этой статье описано, как настроить получение уведомлений Azure ATP о подозрительной активности (по электронной почте или с помощью пересылки событий Azure ATP)"
-keywords: 
+title: Настройка параметров уведомлений по электронной почте в Azure Advanced Threat Protection | Документы Майкрософт
+description: В этой статье описано, как настроить получение уведомлений Azure ATP о подозрительной активности (по электронной почте или с помощью пересылки событий Azure ATP)
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444870"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 

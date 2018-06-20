@@ -18,6 +18,7 @@ ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30010505"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 03/22/2018
 # <a name="export-and-import-the-ata-configuration"></a>Экспорт и импорт конфигурации ATA
 Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
 Служба центра АТА каждый час проводит резервное копирование этой коллекции в файлы **SystemProfile_*метка времени*.json**. Сохраняются последние 10 файлов.
-Эти файлы расположены во вложенной папке с именем **Резервная копия**. По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*. 
+Эти файлы расположены во вложенной папке с именем **Резервная копия**. По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_* timestamp *.json*. 
 
 **Примечание**. Рекомендуем создавать резервную копию этого файла, когда в ATA вносятся важные изменения.
 

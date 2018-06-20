@@ -1,15 +1,15 @@
 ---
-title: "Часто задаваемые вопросы об Azure Advanced Threat Protection | Документы Майкрософт"
-description: "Здесь содержатся ответы на часто задаваемые вопросы о решении Azure ATP"
-keywords: 
+title: Часто задаваемые вопросы об Azure Advanced Threat Protection | Документы Майкрософт
+description: Здесь содержатся ответы на часто задаваемые вопросы о решении Azure ATP
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: c77e378d18e654bea4b4af4f24cc941a6659ce99
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29883956"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 

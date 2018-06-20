@@ -1,15 +1,15 @@
 ---
-title: "Новые возможности Advanced Threat Analytics версии 1.5 | Документация Майкрософт"
-description: "В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5."
-keywords: 
+title: Новые возможности Advanced Threat Analytics версии 1.5 | Документация Майкрософт
+description: В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24018275"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.

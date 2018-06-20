@@ -1,15 +1,15 @@
 ---
-title: "Исключение сущностей из результатов обнаружения в Azure Advanced Threat Protection | Документы Майкрософт"
-description: "Сведения о том, как настроить Azure ATP не отмечать определенные действия сущностей как подозрительные."
-keywords: 
+title: Исключение сущностей из результатов обнаружения в Azure Advanced Threat Protection | Документы Майкрософт
+description: Сведения о том, как настроить Azure ATP не отмечать определенные действия сущностей как подозрительные.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444920"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 

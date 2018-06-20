@@ -1,15 +1,15 @@
 ---
-title: "Установка Azure Advanced Threat Protection. Шаг 2 | Документы Майкрософт"
-description: "На втором этапе установки Azure ATP выполняется настройка параметров подключения к домену в облачной службе Azure ATP."
-keywords: 
+title: Установка Azure Advanced Threat Protection. Шаг 2 | Документы Майкрософт
+description: На втором этапе установки Azure ATP выполняется настройка параметров подключения к домену в облачной службе Azure ATP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29445580"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 

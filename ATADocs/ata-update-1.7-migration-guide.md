@@ -1,15 +1,15 @@
 ---
-title: "Руководство по миграции на обновленную версию Advanced Threat Analytics 1.7 | Документация Майкрософт"
-description: "Процедуры по обновлению ATA до версии 1.7"
-keywords: 
+title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.7 | Документация Майкрософт
+description: Процедуры по обновлению ATA до версии 1.7
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24019244"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.7
 При обновлении ATA до версии 1.7 появляются следующие улучшения:
