@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/5/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 17ade33a55039eaf8abc98901cdab9ebeef850c5
-ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
+ms.openlocfilehash: 6d6c2cdb157d4e3f75794c8c40abfc7556e314d5
+ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34760079"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -25,9 +26,6 @@ ms.lasthandoff: 05/16/2018
 
 Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows для формирования еще более полного решения защиты от угроз. Azure ATP наблюдает за трафиком на контроллерах домена, ATP в Защитнике Windows отслеживает конечные точки, а вместе эти службы формируют единую систему для защиты среды.
 
-> [!NOTE]
-> В настоящее время интеграция доступна только клиентам закрытой предварительной версии ATP в Защитнике Windows.
- 
 Благодаря интеграции ATP в Защитнике Windows с Azure ATP можно использовать все преимущества обеих служб и обеспечить безопасность имеющейся среды, включая:
 
 - Датчики и автономные датчики Azure ATP. Могут находиться непосредственно на контроллерах домена или зеркалировать порты с контроллеров домена на ATP для сбора и анализа сетевого трафика, передаваемого по нескольким протоколам (например, Kerberos, DNS, RPC, NTLM и проч.), в целях проверки подлинности авторизации и сбора информации. 

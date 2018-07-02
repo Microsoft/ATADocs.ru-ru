@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 15c857085fb7d003f783981a89fe02e920a8e49a
-ms.sourcegitcommit: 3539dd3f9ab7729e5326b904fc64985c808bc8ce
+ms.openlocfilehash: d460a57d82f3eb233192235067e116f5ede5f5df
+ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34402043"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34760062"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -69,7 +69,7 @@ ms.locfileid: "34402043"
 
 ## <a name="windows-defender-atp-integration-issue"></a>Проблема интеграции ATP в Защитнике Windows
 
-Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows. Сейчас интеграция доступна только клиентам закрытой предварительной версии ATP в Защитнике Windows. 
+Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows. 
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>Проблема с датчиком виртуальной машины VMware
 

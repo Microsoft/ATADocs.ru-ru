@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: b89e841412385c9eca20e40d78ff10be342c6b22
-ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
+ms.openlocfilehash: 34c758cf96b583c32ad19aa2f8deab7a3bb96392
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34470735"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948954"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -37,7 +37,6 @@ ms.locfileid: "34470735"
 Персональные данные пользователей и сущностей в ATA наследуются из объекта пользователя в AD организации. По этой причине все изменения, внесенные в профиль пользователя в AD, отражаются в ATA. 
 
 ## <a name="deleting-personal-data"></a>Удаление персональных данных 
-
 
 Хотя данные в ATA реплицируются и всегда обновляются из AD, при удалении сущности из AD данные сущности в ATA сохраняются для анализа безопасности. 
 
