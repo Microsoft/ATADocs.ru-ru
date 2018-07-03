@@ -18,6 +18,7 @@
 ## [7. Исключения и учетные записи Honeytoken](install-atp-step7.md)
 ## [8. Настройка разрешений для SAM-R](install-atp-step8-samr.md)
 ## [Автоматическая установка](ATP-silent-installation.md)
+## [Обновление датчиков ATP](sensor-update.md)
 ## Дополнительные шаги для датчиков Azure ATP
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
