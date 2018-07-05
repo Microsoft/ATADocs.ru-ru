@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 77a2464634b4286d2f6d35504e9ab7512cf7b612
-ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
+ms.openlocfilehash: 39709e4749b7f897bffb914dd1e15c80277d6ed8
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444779"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948971"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -29,8 +29,7 @@ ms.locfileid: "34444779"
 
 Azure ATP обеспечивает безопасность на основе ролей для защиты данных в соответствии с конкретными требованиями безопасности и соответствия требованиям организации. Azure ATP поддерживает три отдельные роли: администраторы, пользователи и наблюдатели. 
 
-> [!NOTE]
-> Если вы заинтересованы в просмотре или удалении персональных данных, ознакомьтесь с руководством Майкрософт в [Microsoft Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) и [разделе о GDPR на сайте соответствия требованиям Microsoft 365 Enterprise](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr). Если вы ищете общие сведения о GDPR, ознакомьтесь с [разделом о GDPR на портале Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 Группы ролей позволяют управлять доступом к Azure ATP. С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье объясняется управление доступом и авторизация ролей Azure ATP, что поможет вам начать использовать группы ролей в ATP.
 
@@ -67,7 +66,7 @@ Azure ATP обеспечивает безопасность на основе р
 
 ## <a name="add-and-remove-users"></a>Добавление и удаление пользователей 
 
-В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять по следующему адресу: [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups).  Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
+В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять из [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups). Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
 
 
 ## <a name="see-also"></a>См. также

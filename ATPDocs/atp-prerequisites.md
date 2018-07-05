@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2018
+ms.date: 6/7/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1fc2b3656701ee5db54a4f918ab617a2ad487780
-ms.sourcegitcommit: 3539dd3f9ab7729e5326b904fc64985c808bc8ce
+ms.openlocfilehash: 070062cccb26bd99be48614bf8d40bd781d7b240
+ms.sourcegitcommit: 37b9ff946aad31eed1c6eab5d55d44fce167e20a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34401992"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34827491"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -83,7 +83,7 @@ ms.locfileid: "34401992"
 Автономный датчик Azure ATP можно установить на сервер, который входит в домен или рабочую группу.
 Автономный датчик Azure ATP можно использовать для отслеживания контроллеров домена с режимом работы домена Windows 2003 и более поздних версий.
 
-Чтобы контроллеры домена могли обмениваться данными с облачной службой, откройте порт 443 *.atp.azure.com в брандмауэре или на прокси-сервере.
+Чтобы автономные датчики могли обмениваться данными с облачной службой, откройте порт 443 *.atp.azure.com в брандмауэре или на прокси-сервере.
 
 
 Сведения об использовании виртуальных машин с автономным датчиком Azure ATP см. в статье [Настройка зеркального отображения портов](configure-port-mirroring.md).
@@ -146,7 +146,7 @@ ms.locfileid: "34401992"
 |HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
 |NetBIOS|UDP|137|Все устройства в сети|Исходящее|
 |Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Входящие|
-|RADIUS|UDDP|1813|RADIUS|Входящие|
+|RADIUS|UDP|1813|RADIUS|Входящие|
 |RDP|TCP|3389|Все устройства в сети|Исходящее|
 
 > [!NOTE]
@@ -206,7 +206,7 @@ ms.locfileid: "34401992"
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Все устройства в сети|Исходящее|
 |NetBIOS|UDP|137|Все устройства в сети|Исходящее|
 |Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Входящие|
-|RADIUS|UDDP|1813|RADIUS|Входящие|
+|RADIUS|UDP|1813|RADIUS|Входящие|
 |TLS для RDP-порта|TCP|3389|Все устройства в сети|Исходящее|
 
 > [!NOTE]
