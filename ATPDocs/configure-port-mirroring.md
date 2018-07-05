@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 7/4/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1f59f02f73507fe29b41fd13c96a359dee2e88fc
-ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
+ms.openlocfilehash: 9f23426fca9602d4e9f280b2db1407060bf4db5b
+ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444599"
+ms.lasthandoff: 07/04/2018
+ms.locfileid: "37799133"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -55,6 +55,7 @@ ms.locfileid: "34444599"
 |Физическая|Виртуальная|Убедитесь, что виртуальный коммутатор поддерживает этот сценарий и конфигурацию зеркального отображения портов на физических коммутаторах в рамках этого сценария:<br /><br />Если виртуальный узел расположен на одном и том же физическом коммутаторе, необходимо настроить SPAN на уровне коммутатора.<br /><br />Если виртуальный узел расположен на другом коммутаторе, необходимо настроить RSPAN или ERSPAN*.|
 |Физическая|Физический на том же коммутаторе|Физический коммутатор должен поддерживать SPAN и зеркальное отображение портов.|
 |Физическая|Физический на другом коммутаторе|Требуются физические коммутаторы, поддерживающие RSPAN или ERSPAN&#42;.|
+
 &#42; ERSPAN поддерживается только в том случае, если декапсуляция выполняется до анализа трафика решением ATP.
 
 > [!NOTE]
