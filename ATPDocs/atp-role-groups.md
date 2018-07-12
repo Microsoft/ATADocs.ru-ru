@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 39709e4749b7f897bffb914dd1e15c80277d6ed8
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: c41e695124b65623e9c2aed5aeb6e76369add5b6
+ms.sourcegitcommit: 4170888deee71060e9a17c8a1ac772cc2fe4b51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948971"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37800663"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -66,7 +66,7 @@ Azure ATP обеспечивает безопасность на основе р
 
 ## <a name="add-and-remove-users"></a>Добавление и удаление пользователей 
 
-В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять из [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups). Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
+В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Группами ролей можно управлять по следующему адресу: [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups). Добавлять в группы безопасности или удалять из этих групп можно только пользователей AAD. 
 
 
 ## <a name="see-also"></a>См. также
