@@ -17,6 +17,7 @@
 ## [6. Интеграция с VPN](install-atp-step6-vpn.md)
 ## [7. Исключения и учетные записи Honeytoken](install-atp-step7.md)
 ## [8. Настройка разрешений для SAM-R](install-atp-step8-samr.md)
+## [9. Настройка поддержки нескольких лесов](atp-multi-forest.md)
 ## [Автоматическая установка](ATP-silent-installation.md)
 ## [Обновление датчиков ATP](sensor-update.md)
 ## Дополнительные шаги для датчиков Azure ATP
