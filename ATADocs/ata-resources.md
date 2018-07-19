@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a56a24a2012239ed05f0a2f214dba345a817df39
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 39451c20d934c0d3e49f8790dc55169a230e238c
+ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010233"
+ms.lasthandoff: 07/16/2018
+ms.locfileid: "39064055"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -29,7 +29,7 @@ ms.locfileid: "30010233"
 
 Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз. Чтобы получить дополнительные сведения об ATA, воспользуйтесь следующими ресурсами.
 
-- [Обзор ATA](https://aka.ms/ATAOverview)
+- [Обзор ATA](what-is-ata.md)
 
 - [Краткое ознакомительное видео по ATA](https://aka.ms/ATAShort)
 
@@ -49,9 +49,9 @@ ATA состоит из центра ATA, который можно устано
 
 Если вы используете физические серверы, необходимо планирование емкости. Выделить место вам поможет средство определения размера ATA.
 
-[Средство определения размера ATA](http://aka.ms/atasizing) — это инструмент, который автоматизирует сбор данных о необходимом ATA объеме трафика. Он автоматически обеспечивает поддержку и рекомендует ресурсы как для центра ATA, так и для упрощенных шлюзов ATA.
+[Средство определения размера ATA](ata-capacity-planning.md) — это инструмент, который автоматизирует сбор данных о необходимом ATA объеме трафика. Он автоматически обеспечивает поддержку и рекомендует ресурсы как для центра ATA, так и для упрощенных шлюзов ATA.
 
-[Планирование производительности ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/ata-capacity-planning)
+[Планирование производительности ATA](ata-capacity-planning.md)
 
 ## <a name="deploy-ata"></a>Развертывание ATA
 
@@ -69,7 +69,7 @@ ATA состоит из центра ATA, который можно устано
 
 [Параметры аудита](https://aka.ms/ataauditingblog) — проводите аудит работоспособности контроллера домена до и после развертывания ATA.
 
-[Общая документация по ATA](https://docs.microsoft.com/en-us/advanced-threat-analytics/)
+[Общая документация по ATA](https://docs.microsoft.com/advanced-threat-analytics/)
 
 ## <a name="work-with-ata"></a>Работа с ATA
 
@@ -77,7 +77,7 @@ ATA состоит из центра ATA, который можно устано
 
 [Сценарии подозрительных действий в ATA](http://aka.ms/ataplaybook) — эта статья демонстрирует методы атаки для кражи учетных данных, использующие готовые инструменты сбора информации в Интернете. Вы узнаете, каким образом ATA помогает вам увидеть такие угрозы в каждой точке атаки.
 
-[Руководство по работе с подозрительными действиями в ATA](http://aka.ms/atasaguide)
+[Руководство по работе с подозрительными действиями в ATA](suspicious-activity-guide.md)
 
 
 
@@ -85,7 +85,7 @@ ATA состоит из центра ATA, который можно устано
 
 [Рекомендации по ATA](https://aka.ms/atasecbestpractices) — рекомендации по защите ATA.
 
-[Вопросы и ответы по ATA](http://aka.ms/atafaq) — ответы на часто задаваемые вопросы о решении ATA.
+[Вопросы и ответы по ATA](ata-technical-faq.md) — ответы на часто задаваемые вопросы о решении ATA.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
