@@ -2,10 +2,10 @@
 title: Список полезных ресурсов по Azure Advanced Threat Protection | Документация Майкрософт
 description: В этой статье приводится перечень полезных ресурсов по Azure ATP
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b8d91468664a76436078772ad1fc8510ea56d67a
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: 498d1b4d14db079583da1999bfb68a5648111362
+ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298487"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39227144"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -46,7 +46,7 @@ Azure ATP состоит из облачной службы, размещенн
 - [Попробуйте решение ATP Azure (часть EMS E5)](http://aka.ms/aatptrial) — пробная версия действительна в течение 90 дней.
 - [Создание рабочей области на портале управления](install-atp-step1.md) — разверните Azure ATP в своей среде, выполнив приведенные инструкции.
 - [Интеграция Azure ATP с ATP в Защитнике Windows](integrate-wd-atp.md)
-- 
+
 ## <a name="azure-atp-settings"></a>Параметры Azure ATP
 
 Основные необходимые параметры в Azure ATP настраиваются при создании рабочей области. Однако помимо них существует несколько других параметров для детализированной настройки Azure ATP, например интеграция SIEM и настройки аудита, которые обеспечивают более высокую точность обнаружения в вашей среде. 
@@ -64,6 +64,7 @@ Azure ATP состоит из облачной службы, размещенн
 ## <a name="security-best-practices"></a>Рекомендации по безопасности
 
 - [Часто задаваемые вопросы об Azure ATP](atp-technical-faq.md). В этой статье содержатся ответы на часто задаваемые вопросы о решении Azure ATP. 
+
 ## <a name="community-resources"></a>Ресурсы сообщества
 
 Блог: [блог по Azure ATP](https://aka.ms/aatpblog)
