@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/17/2018
+ms.date: 7/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c76e459709c786082bea7566a61e5384a235eda4
-ms.sourcegitcommit: 8feb9b65dc0e1de0ace00aca11784e54f9852a15
+ms.openlocfilehash: a48bf96bd6a71282455d932a35aac23ba4c8193a
+ms.sourcegitcommit: 7909deafdd9323f074d0ff2f590e307bcfaaabad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39098186"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202138"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -44,7 +44,7 @@ ms.locfileid: "39098186"
 Для обнаружения действий между лесами датчики службы "Расширенная защита SQL от угроз" обращаются к контроллерам доменов в удаленных лесах для создания профилей всех задействованных сущностей, включая пользователей и компьютеры в удаленных лесах. 
 
 > [!NOTE]
-> - Чтобы этот механизм работал, лес, в котором установлены датчики службы "Расширенная защита SQL от угроз", должен быть доверенным для всех остальных лесов.
+> - Датчики службы Azure ATP можно установить для каждого из лесов (при наличии минимального одностороннего отношения доверия).
 > - Пользователь, для которого вы выполняете настройку в консоли службы "Расширенная защита SQL от угроз" в разделе **Службы каталогов**, должен быть доверенным во всех остальных лесах.
 
 
