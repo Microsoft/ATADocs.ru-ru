@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df06235de3a29051f9ffcd889bb95936ed9fc27d
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 1b37bcbfc304ee0ef71d80eb84f6298d64e50d3f
+ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29445010"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39396423"
 ---
 *Применяется к: Azure Advanced Threat Protection версии 1.9*
 
@@ -57,7 +57,7 @@ ms.locfileid: "29445010"
 2.  В командной строке введите *gpedit.msc*.
 3.  Раскройте элементы **Конфигурация компьютера > Административные шаблоны > Компоненты Windows > Пересылка событий**.
 
- ![Изображения редактора локальной групповой политики](media/wef 1 local group policy editor.png)
+ ![Изображения редактора локальной групповой политики](media/wef%201%20local%20group%20policy%20editor.png)
 
 4.  Дважды щелкните **Настроить конечный диспетчер подписки**.
    
@@ -65,7 +65,7 @@ ms.locfileid: "29445010"
     2.  В разделе **Параметры** щелкните **Показать**.
     3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (например, Server=http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
-   ![Изображение настройки целевой подписки](media/wef 2 config target sub manager.png)
+   ![Изображение настройки целевой подписки](media/wef%202%20config%20target%20sub%20manager.png)
    
     5.  Нажмите кнопку **ОК**.
     6.  В командной строке с повышенными привилегиями введите команду *gpupdate /force*. 
@@ -82,7 +82,7 @@ ms.locfileid: "29445010"
         1.  Щелкните **Добавить компьютер в домен**.
         2.  Введите имя контроллера домена в поле **Введите имена выбираемых объектов**. Щелкните **Проверить имена** и нажмите кнопку **ОК**. 
        
-        ![Изображение средства просмотра событий](media/wef3 event viewer.png)
+        ![Изображение средства просмотра событий](media/wef3%20event%20viewer.png)
    
         
         3.  Нажмите кнопку **ОК**.
