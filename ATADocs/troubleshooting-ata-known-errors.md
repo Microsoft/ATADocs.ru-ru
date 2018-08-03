@@ -2,10 +2,10 @@
 title: Устранение известных неполадок ATA | Документы Майкрософт
 description: Описывается устранение известных ошибок в ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 7/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: a7172447de5b4d4088da2d8d687a7bec47a01551
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 3433da5ca3d6d08f91cd97b24f6b97251c6b28ae
+ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010488"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39336002"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -66,7 +66,11 @@ ms.locfileid: "30010488"
 |Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления [\[]CurrentlyLoggedOnUser=<domain>\<имя_пользователя>Status=FailedAuthentication Exception=[\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
 
 
-
+## <a name="ata-center-errors"></a>Ошибки центра ATA
+> [!div class="mx-tableFixed"]
+|Ошибка|Описание|Решение|
+|-------------|----------|---------|
+|System.Security.Cryptography.CryptographicException: отказано в доступе.|Центру ATA не удалось использовать выданный сертификат для расшифровки. Вероятно, это произошло из-за использования сертификата, в котором для KeySpec (KeyNumber) вместо KeyExchange (AT\_KEYEXCHANGE) задано значение Signature (AT\_SIGNATURE), что не поддерживается для расшифровки.|1.    Остановите службу центра ATA. <br></br>2.     Удалите сертификат центра АТА из хранилища сертификатов центра. (Перед удалением убедитесь, что у вас есть сертификат с копией закрытого ключа в PFX-файле.) <br></br>3.    Откройте командную строку с повышенными привилегиями и выполните certutil -importpfx "CenterCertificate.pfx" AT\_KEYEXCHANGE. <br></br>4.     Запустите службу центра ATA. <br></br>5.     Убедитесь, что теперь все работает правильно.|
 
 
 ## <a name="ata-gateway-and-lightweight-gateway-issues"></a>Проблемы со шлюзом ATA и упрощенным шлюзом

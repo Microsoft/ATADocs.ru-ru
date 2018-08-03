@@ -2,10 +2,10 @@
 title: Предварительные требования для Advanced Threat Analytics | Документация Майкрософт
 description: Описывает требования для успешного развертывания ATA в среде.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 7/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 90c4bcad1b5a2d6da06153706129d9670ad57e1c
-ms.sourcegitcommit: 321ff1af2c140f41600c4c42ac4d455b3cdb9440
+ms.openlocfilehash: 199830a6cd0b84cf897311cc80472a078f582b59
+ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233010"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335917"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -129,7 +129,7 @@ ms.locfileid: "36233010"
 
 ### <a name="certificates"></a>Сертификаты
 
-Установка ATA будет более простой, если в ходе ее выполнения установить самозаверяющие сертификаты. После развертывания самозаверяющий сертификат следует заменить на сертификат из внутреннего центра сертификации, который будет использоваться центром ATA.
+Чтобы ускорить установку и развертывание ATA, можно сразу установить самозаверяющие сертификаты. Если вы решили использовать самозаверяющие сертификаты, после начального развертывания рекомендуется заменить их сертификатами из внутреннего центра сертификации для использования центром ATA.
 
 
 Убедитесь, что у центра и шлюзов ATA есть доступ к точке распространения списков отзыва сертификатов. Если у них нет доступа к Интернету, выполните [процедуру импорта списка отзыва сертификатов вручную](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), при этом не забудьте установить все точки распространения списков отзыва сертификатов для всей цепочки.
@@ -139,6 +139,7 @@ ms.locfileid: "36233010"
 -   тип поставщика удостоверений: поставщик служб шифрования (CSP) или поставщик хранилища ключей (KSP);
 -   открытый ключ длиной 2048 бит;
 -   набор значений флагов потребления KeyEncipherment и в ServerAuthentication.
+-   значение KeySpec (KeyNumber) для KeyExchange (AT\_KEYEXCHANGE). Обратите внимание, что значение Signature (AT\_SIGNATURE) не поддерживается. 
 
 Например, вы можете использовать стандартные шаблоны **веб-сервера** или **компьютера**.
 

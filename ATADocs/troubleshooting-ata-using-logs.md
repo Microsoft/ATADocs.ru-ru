@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9f00d01d7986b6a04c4ba69f25e5c84259c66f99
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: b2b00342c3c13615386fa1c16d98d28fbbf1d121
+ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010362"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39396389"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -30,7 +30,7 @@ ms.locfileid: "30010362"
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются во вложенной папке **Logs** того каталога, где установлен ATA; каталог по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются во вложенной папке **Logs** в каталоге с установкой ATA (по умолчанию это **C:\Program Files\Microsoft Advanced Threat Analytics\\**). Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
