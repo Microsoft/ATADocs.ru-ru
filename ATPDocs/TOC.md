@@ -43,7 +43,8 @@
 ## [Обработка подозрительных действий](working-with-suspicious-activities.md)
 ## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
 ## [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)
-## [Анализ сущностей](entity-profiles.md)
+## [Анализ сущностей](investigate-entity.md)
+## [Общие сведения о профилях сущностей](entity-profiles.md)
 # Диагностика
 ## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
 ## [Поддержка и информация](atp-support.md)
