@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a77e7e86d635d80ee09338843c42e003220133a0
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f415fabe71512a5f9948a824d04e7bfece086ba4
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010165"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585041"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -43,6 +43,7 @@ ms.locfileid: "30010165"
     |SSL|Если серверу SMTP требуется SSL, активируйте его. **Примечание**. При включении SSL необходимо также изменить номер порта.|По умолчанию отключено|
     |Проверка подлинности|Активируйте, если для сервера SMTP требуется проверка подлинности. **Примечание**. При включении проверки подлинности необходимо предоставить имя пользователя и пароль учетной записи электронной почты, которая имеет разрешение на подключение к серверу SMTP.|По умолчанию отключено|
     |Отправитель (обязательно)|Введите адрес электронной почты отправителя.|Пример.<br />ATA@contoso.com|
+    
     ![Изображение. Параметры почтового сервера ATA](media/ata-email-server.png)
 
 ## <a name="provide-ata-with-your-syslog-server-settings"></a>Указание параметров сервера системного журнала в ATA
