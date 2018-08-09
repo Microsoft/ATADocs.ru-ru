@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 58e3b0d04b196f0c49b6e146952c1819c8413ee3
-ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
+ms.openlocfilehash: 281db5cfee9366babfcdf30e14a80122aa6d04c8
+ms.sourcegitcommit: 7ab273d1a4c05b457ee02f1631f642346d687b1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2018
-ms.locfileid: "29977579"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39625614"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -30,7 +30,7 @@ ms.locfileid: "29977579"
 
 |Для выполнения этого…|…сделайте следующее.|
 |----|----|
-|Посмотреть самую популярную документацию|Прочитайте пять ключевых страниц.|- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>- [Создание рабочей области](install-atp-step1.md)|
+|Посмотреть самую популярную документацию|Прочитайте пять ключевых страниц.<br>- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>- [Создание рабочей области](install-atp-step1.md)|
 |Связь с группой разработчиков и коллегами|Посетите страницу сообщества [Tech Community](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) по Azure Advanced Threat Protection.|
 |Проверить данные подписки и получить список поддерживаемых компонентов|См. [сведения о подписке](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) и [список компонентов](https://www.microsoft.com/cloud-platform/azure-information-protection-features) на сайте Azure Advanced Threat Protection.|
 
