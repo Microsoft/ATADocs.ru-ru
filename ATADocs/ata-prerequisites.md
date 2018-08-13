@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/25/2018
+ms.date: 8/1/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 199830a6cd0b84cf897311cc80472a078f582b59
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 6a51832f3dbff55ed2ad396307a487ad607b3a2b
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335917"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567667"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -117,7 +117,7 @@ ms.locfileid: "39335917"
 |**HTTPS**|TCP|443|Сеть организации и шлюз ATA|Входящие|
 |**SMTP** (необязательно)|TCP|25|SMTP-сервер|Исходящее|
 |**SMTPS** (необязательно)|TCP|465|SMTP-сервер|Исходящее|
-|**Syslog** (необязательно)|TCP|514|Сервер Syslog|Исходящее|
+|**Syslog** (необязательно)|TCP/ИБП/TLS (настраиваемые)|514 (по умолчанию)|Сервер Syslog|Исходящее|
 |**LDAP**|TCP и UDP|389|Контроллеры домена|Исходящее|
 |**LDAPS** (необязательно)|TCP|636|Контроллеры домена|Исходящее|
 |**DNS**|TCP и UDP|53|DNS-серверы|Исходящее|

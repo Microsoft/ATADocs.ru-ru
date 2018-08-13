@@ -12,12 +12,12 @@ ms.prod: ''
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e58fe62fc655fed8f17ae800dda20e022e198a26
-ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
+ms.openlocfilehash: 5fafa4e8e9644c870a92c1684fa5165ef68b31a7
+ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "30010029"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "39585112"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -155,6 +155,7 @@ ms.locfileid: "30010029"
 |10 000|3|12|
 |20 000|6|24|
 |50 000|16|48|
+
 &#42; Среднее количество пакетов в секунду, отправляемых всеми контроллерами домена, которые отслеживает конкретный шлюз ATA в час наибольшей нагрузки.
 
 &#42; Общий объем зеркально отображенного трафика контроллера домена не может превышать емкость сетевого адаптера в шлюзе ATA.

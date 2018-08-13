@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/29/2018
+ms.date: 8/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ebdae7617dd550631186ab87cba922758649fd45
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 0062fc22df357e338d8eaf446688ea8bba56019c
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335985"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567956"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
-
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+
+## <a name="azure-atp-release-243"></a>"Расширенная защита SQL от угроз", выпуск 2.43
+
+Выпущен 5 августа 2018 г.
+
+- Эта версия включает улучшения, а также исправления нескольких проблем.
+
+
 
 ## <a name="azure-atp-release-242"></a>Azure ATP, выпуск 2.42
 

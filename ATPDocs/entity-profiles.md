@@ -2,10 +2,10 @@
 title: Работа с профилями пользователей на портале рабочей области Azure Advanced Threat Protection | Документы Майкрософт
 description: Сведения об анализе пользователей на экране профилей пользователей на портале рабочей области Azure ATP
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 8/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6ceefeeba6a52abf5da7ff44135cff55e9beab02
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: cd34be695a190c719f991f8cc4b374942363a7c1
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29444980"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567888"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 
-# <a name="investigating-entity-profiles"></a>Анализ профилей сущностей
+# <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
 
 Профиль сущности является страницей с полными данными о сущности, предназначенной для всестороннего детального анализа пользователей, компьютеров, устройств и ресурсов, к которым они имеют доступ, а также их истории. На странице профиля используется новый преобразователь логических действий Azure ATP, который может просмотреть группу выполняющихся действий (объединенных до 1 минуты) и объединить их в одно логическое действие, чтобы помочь вам понять фактические действия пользователей.
 
