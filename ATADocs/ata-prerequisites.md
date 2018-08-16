@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/1/2018
+ms.date: 8/9/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6a51832f3dbff55ed2ad396307a487ad607b3a2b
-ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
+ms.openlocfilehash: 04284a622aec1985e363bac7f0215cfd031d9854
+ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567667"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "39723418"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -215,8 +215,8 @@ ms.locfileid: "39567667"
 |Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Все устройства в сети|Исходящее|
 |Служба времени Windows|UDP|123|Контроллеры домена|Исходящее|
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
-|NetBIOS|UDP|137|Все устройства в сети|Исходящее|
+|HTML через RPC|TCP|135|Все устройства в сети|Оба варианта|
+|NetBIOS|UDP|137|Все устройства в сети|Оба варианта|
 |SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
@@ -282,8 +282,8 @@ ms.locfileid: "39567667"
 |Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|HTML через RPC|TCP|135|Все устройства в сети|Исходящее|
-|NetBIOS|UDP|137|Все устройства в сети|Исходящее|
+|HTML через RPC|TCP|135|Все устройства в сети|Оба варианта|
+|NetBIOS|UDP|137|Все устройства в сети|Оба варианта|
 |SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 |Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Все устройства в сети|Исходящее|
