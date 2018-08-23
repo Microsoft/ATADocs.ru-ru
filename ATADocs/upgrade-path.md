@@ -2,10 +2,10 @@
 title: Рекомендуемые варианты обновления Advanced Threat Analytics | Документация Майкрософт
 description: Инструкции по обновлению версии Advanced Threat Analytics (ATA).
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 52d500bfb61818b9cc1785382f92c7d3b4ca3501
-ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
+ms.openlocfilehash: 7dfec797a25884ba9115d6ef6ab3a0045f9a2797
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39064157"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734558"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 

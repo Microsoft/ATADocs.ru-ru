@@ -2,10 +2,10 @@
 title: Аварийное восстановление в Advanced Threat Analytics | Документация Майкрософт
 description: Быстрое восстановление функций ATA после аварии
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 72598380f574e0475e4796887f44131009911be2
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 5e6fac695e1dc51a1a0afcf20330918be82c75e9
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009559"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734618"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -54,12 +54,12 @@ ms.locfileid: "30009559"
     1. Удалите из MongoDB документ с системным профилем центра ATA по умолчанию: 
         1. Перейдите в каталог **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**. 
         2. Выполнить `mongo.exe ATA` 
-        3. Запустите службу центра ATA.
-        4. Выполните следующую команду, чтобы удалить системный профиль по умолчанию: `db.SystemProfile.remove({})`
+        3. Выполните следующую команду, чтобы удалить системный профиль по умолчанию: `db.SystemProfile.remove({})`
     2. Выполните команду `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`, используя файл резервной копии из шага 1.</br>
     Полное описание того, как найти и импортировать файлы резервной копии, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
-    3. Откройте консоль ATA. Вы должны увидеть все связанные шлюзы ATA на вкладке с конфигурациями и шлюзами. 
-    4. Обязательно определите [**пользователя служб каталогов**](install-ata-step2.md) и выберите [**синхронизатор контроллера домена**](install-ata-step5.md). 
+    3. Запустите службу центра ATA.
+    4. Откройте консоль ATA. Вы должны увидеть все связанные шлюзы ATA на вкладке с конфигурациями и шлюзами.
+    5. Обязательно определите [**пользователя служб каталогов**](install-ata-step2.md) и выберите [**синхронизатор контроллера домена**](install-ata-step5.md). 
 
 
 

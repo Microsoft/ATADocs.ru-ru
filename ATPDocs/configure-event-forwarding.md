@@ -2,10 +2,10 @@
 title: Настройка пересылки событий Windows в Azure Advanced Threat Protection | Документы Майкрософт
 description: Сведения о параметрах настройки пересылки событий Windows в Azure ATP
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 08/12/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1b37bcbfc304ee0ef71d80eb84f6298d64e50d3f
-ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
+ms.openlocfilehash: 730ff2e96da8dc6329cf4855e9e7d279ef5a067d
+ms.sourcegitcommit: 845b8c0b6e0ec2d2e882672fd9f17ed573fafa56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39396423"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "41734589"
 ---
-*Применяется к: Azure Advanced Threat Protection версии 1.9*
+*Применяется к: Azure Advanced Threat Protection*
 
 
 
@@ -63,12 +63,12 @@ ms.locfileid: "39396423"
    
     1.  Выберите значение **Включено**.
     2.  В разделе **Параметры** щелкните **Показать**.
-    3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (например, Server=http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
- 
-   ![Изображение настройки целевой подписки](media/wef%202%20config%20target%20sub%20manager.png)
-   
-    5.  Нажмите кнопку **ОК**.
-    6.  В командной строке с повышенными привилегиями введите команду *gpupdate /force*. 
+    3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=`http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10*` (например, Server=`http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`).
+    
+    ![Изображение настройки целевой подписки](media/wef%202%20config%20target%20sub%20manager.png)
+    
+5.  Нажмите кнопку **ОК**.
+6.  В командной строке с повышенными привилегиями введите команду *gpupdate /force*. 
 
 **Шаг 3. Выполнение действий на автономном датчике Azure ATP** 
 
@@ -91,7 +91,7 @@ ms.locfileid: "39396423"
         1. Щелкните **По журналу** и выберите **Журнал безопасности**.
         2. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. Например, введите 4776, как в следующем примере.
 
- ![Изображение фильтра запросов](media/wef-4-query-filter.png)
+        ![Изображение фильтра запросов](media/wef-4-query-filter.png)
 
    5.   Щелкните созданную подписку правой кнопкой мыши и выберите **Состояние выполнения**, чтобы проверить, есть ли проблемы с состоянием. 
    6.   Через несколько минут убедитесь в том, что события, для которых настроена пересылка, отображаются в списке пересланных событий в автономном датчике ATA.
