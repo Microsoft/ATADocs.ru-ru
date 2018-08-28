@@ -2,10 +2,10 @@
 title: Политика конфиденциальности персональных данных Azure Advanced Threat Protection | Документация Майкрософт
 description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/26/2018
+ms.date: 8/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: d64cc0d40acc31e2187305c38a625924a91db06b
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: e4aad8af65c27f351185808585aea37a8a67de42
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948937"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734557"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -30,13 +30,13 @@ ms.locfileid: "36948937"
 
 В Azure Advanced Threat Protection вы можете просмотреть идентифицируемые персональные данные на [портале Workspace](workspace-portal.md), используя [панель поиска](workspace-portal.md#search-bar). 
 
-Вы можете выполнить поиск конкретного пользователя или компьютера, а если щелкните сущность — попадете на [страницу профиля](entity-profiles.md) пользователя или компьютера. В профиле содержатся подробные сведения о сущности из Active Directory, включая сетевую активность, связанную с этой сущностью, и ее историю.
+Вы можете выполнить поиск конкретного пользователя или компьютера. Щелкнув сущность, вы попадете на [страницу профиля](entity-profiles.md) пользователя или компьютера. В профиле содержатся подробные сведения о сущности из Active Directory, включая сетевую активность, связанную с этой сущностью, и ее историю.
 
 Персональные данные Azure ATP собираются из Active Directory через датчик Azure ATP и сохраняются в серверной базе данных.
 
 ## <a name="update-personal-data"></a>Обновление персональных данных 
 
-Так как персональные данные пользователя Azure ATP получены из объекта пользователя в Active Directory организации, любые изменения, внесенные в профиль пользователя в AD, будут отражены в Azure ATP.
+Персональные данные пользователя Azure ATP являются производными от объекта пользователя в корпоративном каталоге Active Directory. По этой причине все изменения, внесенные в профиль пользователя в корпоративном каталоге AD, отражаются в Azure ATP.
 
 
 ## <a name="delete-personal-data"></a>Удаление персональных данных 
@@ -45,7 +45,7 @@ ms.locfileid: "36948937"
 
 ## <a name="export-personal-data"></a>Экспорт персональных данных 
 
-Azure ATP поддерживает [экспорт](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) данных, содержащихся в оповещениях системы безопасности, в Excel. При этом также будут экспортированы персональные данные. 
+Azure ATP поддерживает [экспорт](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) данных, содержащихся в оповещениях системы безопасности, в Excel. Эта функция также экспортирует персональные данные. 
  
 ## <a name="audit-personal-data"></a>Аудит персональных данных
 

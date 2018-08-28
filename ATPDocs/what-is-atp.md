@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5ccac90a171c895ee8b4d5336a125ccd7fa66239
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: c889fc070ffaf79a89c072d83edf6cc6f1cd0413
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29445080"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734675"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -62,6 +62,8 @@ Azure ATP выявляет три основных вида угроз: вред
 -   Overpass-the-Hash
 -   Forged PAC (MS14-068)
 -   Golden ticket
+    -   Аномальное время
+    -   Несуществующая учетная запись — обновлено
 -   Вредоносные запросы на репликацию
 -   Перечисление служб каталогов
 -   перечисление сеансов SMB;
@@ -73,6 +75,9 @@ Azure ATP выявляет три основных вида угроз: вред
 -   Переход на более слабое шифрование
 -   Удаленное выполнение.
 -   Создание вредоносной службы
+-   Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow) — обновлено
+-   Подозрительный запрос на репликацию (потенциальная атака DCShadow) — обновлено
+-   VPN 
 
 
 Azure ATP обнаруживает эти подозрительные действия и передает на портал рабочей области Azure ATP соответствующую информацию, включая четкое описание "кто, что, как и когда" делал. В этом примере вы видите, что на этой несложной и удобной панели представлена информация о предполагаемой атаке Pass-the-Ticket на компьютерах Client 1 и Client 2 в сети.

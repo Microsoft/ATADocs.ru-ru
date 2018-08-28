@@ -2,10 +2,10 @@
 title: Часто задаваемые вопросы об Azure Advanced Threat Protection | Документы Майкрософт
 description: Здесь содержатся ответы на часто задаваемые вопросы о решении Azure ATP
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/13/2018
+ms.date: 8/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d7f7f4841c40fb78dc06bae1c06e3c57d2e7f7ee
-ms.sourcegitcommit: c77e378d18e654bea4b4af4f24cc941a6659ce99
+ms.openlocfilehash: 6550f6b6575af56eab7de911b22b1e4f27cff0f3
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29883956"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734520"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -31,19 +31,21 @@ ms.locfileid: "29883956"
 Вы можете получить лицензию на Enterprise Mobility + Security 5 (EMS E5) непосредственно на [портале Office 365](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) или по модели лицензирования Cloud Solution Partner (партнер по облачным решениям, CSP).                  
 
 ## <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>Что делать, если датчик Azure ATP или автономный датчик не запускается?
-Просмотрите самую последнюю ошибку в текущем журнале ошибок (в месте установки Azure ATP в папке Logs).
+Просмотрите сведения о последней ошибке в текущем [журнале](troubleshooting-atp-using-logs.md) ошибок (в месте установки Azure ATP в папке Logs).
 
 ## <a name="how-can-i-test-azure-atp"></a>Как протестировать Azure ATP?
-Можно имитировать подозрительные действия, что представляет собой сквозной тест, выполнив следующую команду:
+Можно имитировать подозрительные действия с помощью сквозного теста. В следующем сценарии моделируется атака зондирования DNS:
 
--  Проверка DNS с использованием средства Nslookup.exe.
-
-
-Это нужно выполнить удаленно через отслеживаемый контроллер домена, а не через автономный датчик Azure ATP.
-
+1.  Датчики Azure ATP должны быть установлены и настроены на контроллерах домена (или установлены и настроены автономные датчики и связанное зеркальное отображение портов).
+2.  Откройте CMD.
+3.  Выполните команду nslookup -<DC iP address>.
+    1.  Нажмите клавишу ВВОД.
+    2.  Введите: Is -d <FQDN>.
+    3.  В зависимости от конфигурации вашей среды ответы будут включать сообщения об отклонении запроса или список DNS-записей. 
+4. Просмотрите предупреждения, связанные с имитацией атак зондирования DNS, в консоли Azure ATP. 
 
 ## <a name="does-azure-atp-work-with-encrypted-traffic"></a>Поддерживает ли Azure ATP зашифрованный трафик?
-Azure ATP анализирует множество сетевых протоколов, а также события, собираемые из систем SIEM и через пересылку событий Windows. Данные, обнаруженные при использовании сетевых протоколов с зашифрованным трафиком (например, LDAPS и IPSEC), не анализируются.
+Azure ATP анализирует множество сетевых протоколов, а также события, собираемые из систем SIEM и через пересылку событий Windows.  Сетевые протоколы с зашифрованным трафиком (например, LDAPS и IPSEC) не расшифровываются, но анализируются.
 
 
 ## <a name="does-azure-atp-work-with-kerberos-armoring"></a>Поддерживает ли Azure ATP защиту Kerberos?
@@ -110,7 +112,7 @@ Azure ATP поддерживает двунаправленную интегра
 Да. Так как учетные записи компьютеров (как и любые другие сущности) могут использовать для вредоносных действий, Azure ATP отслеживает поведение всех учетных записей компьютеров и всех других сущностей в среде.
 
 ## <a name="can-azure-atp-support-multi-domain-and-multi-forest"></a>Поддерживает ли Azure ATP несколько доменов и лесов?
-Azure Advanced Threat Protection поддерживает многодоменную среду в пределах одного леса. Если лесов несколько, для каждого из них требуется отдельная рабочая область Azure ATP.
+Azure Advanced Threat Protection поддерживает многодоменные среды и множество лесов. Эта функция сейчас предоставляется в режиме общедоступной предварительной версии. Дополнительные сведения о поддерживаемых сценариях и ограничениях см. в описании [поддержки множества лесов](atp-multi-forest.md).
 
 ## <a name="can-you-see-the-overall-health-of-the-deployment"></a>Можно ли проверить общую работоспособность развертывания?
 Да, вы можете проверить общую работоспособность развертывания, а также узнать о конкретных проблемах, связанных с конфигурацией, подключением и т. п. Кроме того, вы будете получать оповещения в случае их возникновения.

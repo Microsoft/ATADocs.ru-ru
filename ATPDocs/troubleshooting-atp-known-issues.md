@@ -2,10 +2,10 @@
 title: Устранение известных неполадок Azure ATP | Документация Майкрософт
 description: В этой статье описываются способы устранения неполадок в службе Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/21/2018
+ms.date: 8/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d460a57d82f3eb233192235067e116f5ede5f5df
-ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
+ms.openlocfilehash: 986dc057127e8de1e26a78dd7a138b02efeebf99
+ms.sourcegitcommit: dc56b9e9533db1a2dc314b199e90191bb25adaba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34760062"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "41734644"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -28,7 +28,7 @@ ms.locfileid: "34760062"
 
 ## <a name="deployment-log-location"></a>Расположение журнала развертывания
  
-Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (or one directory above %temp%).
+Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (or one directory above %temp%). См. дополнительные сведения об [устранении неполадок с ATP при использовании журналов](troubleshooting-atp-using-logs.md).
 
 ## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка лицензирования
 
