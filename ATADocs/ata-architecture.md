@@ -2,10 +2,10 @@
 title: Архитектура Advanced Threat Analytics | Документация Майкрософт
 description: Здесь описывается архитектура решения Microsoft Advance Threat Analytics
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fa2b5fa5da1d73f90cac6937bef71fd239e498fc
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: f2ae9948f6865480797b4a2a8b761c12553728b9
+ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585058"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43039025"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -179,7 +179,7 @@ ATA отслеживает сетевой трафик контроллеров 
 
 -   Настройка прослушивания событий SIEM в шлюзе ATA <br>Настройте пересылку определенных событий Windows из системы SIEM в ATA. ATA поддерживает несколько поставщиков SIEM. Дополнительные сведения см. в статье [Настройка сбора данных о событиях](configure-event-collection.md).
 
--   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку событий Windows 4776, 4732, 4733, 4728, 4729, 4756 и 4757 с контроллеров домена в шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Дополнительные сведения о пересылке событий Windows в ATA см. в разделе [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding). Это относится только к физическим шлюзам ATA, но не к упрощенному шлюзу ATA.
+-   Настройка пересылки событий Windows<br>Чтобы обеспечить отправку сведений о событиях в ATA, можно также настроить пересылку событий Windows 4776, 4732, 4733, 4728, 4729, 4756 и 4757 с контроллеров домена в шлюз ATA. Это целесообразно, если у вас нет SIEM или ваша версия SIEM в настоящее время не поддерживается в ATA. Чтобы завершить настройку пересылки событий Windows в ATA см. раздел [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding). Это относится только к физическим шлюзам ATA, но не к упрощенному шлюзу ATA.
 
 ## <a name="related-videos"></a>Видео по теме
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
