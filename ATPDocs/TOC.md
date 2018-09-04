@@ -45,7 +45,9 @@
 ## [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)
 ## [Анализ сущностей](investigate-entity.md)
 ## [Общие сведения о профилях сущностей](entity-profiles.md)
-# Диагностика
+# Устранение неполадок
+## [Проверка расширенной политики аудита](atp-advanced-audit-policy.md)
 ## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
+## [Устранение неполадок с помощью журналов](troubleshooting-atp-using-logs.md)
 ## [Поддержка и информация](atp-support.md)
 ## [План подготовки Azure ATP к работе](atp-resources.md)
