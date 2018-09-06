@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/20/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c7fda04658dc70406fc7c0d543286e46da4cfa86
-ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
+ms.openlocfilehash: 6b94282411cd2918e475acb08600265455d9e0f3
+ms.sourcegitcommit: 6f1406f28c4c2af6a36bc691ebaf4e819adc6b4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43039085"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43675140"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -191,5 +191,4 @@ Azure ATP включает в себя следующие компоненты.
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка пересылки событий](configure-event-forwarding.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-
-- - [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)

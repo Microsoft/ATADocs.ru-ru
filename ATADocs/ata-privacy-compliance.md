@@ -2,10 +2,10 @@
 title: Политика конфиденциальности персональных данных Advanced Threat Analytics | Документация Майкрософт
 description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/26/2018
+ms.date: 9/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 34c758cf96b583c32ad19aa2f8deab7a3bb96392
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: 831fceafe3672d916d18801eb1273a62a81c84cd
+ms.sourcegitcommit: f9400ae27d22607e4146dc9b8a0b9ba6f61fdd38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948954"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743337"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -52,7 +52,7 @@ ms.locfileid: "36948954"
 
 Это действие окончательно удаляет сущность из базы данных ATA. Чтобы выполнить эту команду, укажите имя команды `deleteAccount` и `SamName`, `UpnName` или `GUID` компьютера либо имя пользователя, которое нужно удалить. Пример. 
 
-`C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval “var params= deleteAccount,admin1@contoso.com;” GDPR.js `
+`"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteAccount,admin1@contoso.com';" GDPR.js`
 
 При выполнении этой команды сущность с именем субъекта-пользователя admin1@contoso.com будет полностью удалена из базы данных вместе со всеми связанными действиями и оповещениями системы безопасности. 
 
@@ -64,7 +64,7 @@ ms.locfileid: "36948954"
 
 Пример. 
 
-`C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval “var params= deleteOldData,30;” GDPR.js`
+`"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteOldData,30';" GDPR.js`
 
 Этот сценарий удаляет из базы данных все данные действий сущности и оповещений системы безопасности старше 30 дней. Будут храниться только данные за последние 30 дней.
 
