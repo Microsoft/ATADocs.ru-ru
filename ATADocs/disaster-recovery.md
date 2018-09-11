@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/20/2018
+ms.date: 9/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5e6fac695e1dc51a1a0afcf20330918be82c75e9
-ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
+ms.openlocfilehash: dea1d1b936344121c2f1cd3132ed6bd0f2cccaba
+ms.sourcegitcommit: f9400ae27d22607e4146dc9b8a0b9ba6f61fdd38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "41734618"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743388"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -32,7 +32,7 @@ ms.locfileid: "41734618"
 
 ## <a name="back-up-your-ata-center-configuration"></a>Резервное копирование конфигурации центра ATA
 
-1. Резервная копия конфигурации центра ATA записывается в файл каждый час. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
+1. Резервная копия конфигурации центра ATA записывается в файл каждые четыре часа. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
 2. Экспортируйте сертификат центра ATA.
     1. В диспетчере сертификатов щелкните **Сертификаты — локальный компьютер** -> **Личные** ->**Сертификаты** и выберите **Центр ATA**.
     2. Щелкните правой кнопкой мыши **Центр ATA**, а затем выберите **Все задачи** и **Экспорт**. 
