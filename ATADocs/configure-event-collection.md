@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e337c56730e1672ce1a4382a49bb16dab7b3a95d
-ms.sourcegitcommit: d8ee6c236dc91802a8315fb97a9dc0ac501861cf
+ms.openlocfilehash: 0a939f36a86e1ad6cd275a16a4dd4468defa7a76
+ms.sourcegitcommit: a5823d0dfc48783ab990a99ca3f65b614fb49e75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43353102"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44697214"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -56,7 +56,7 @@ ms.locfileid: "43353102"
 2.  В командной строке введите *gpedit.msc*.
 3.  Раскройте элементы **Конфигурация компьютера > Административные шаблоны > Компоненты Windows > Пересылка событий**.
 
-![Изображения редактора локальной групповой политики](media/wef 1 local group policy editor.png)
+![Изображения редактора локальной групповой политики](media/wef%201%20local%20group%20policy%20editor.png)
 
 4.  Дважды щелкните **Настроить конечный диспетчер подписки**.
    
@@ -64,7 +64,7 @@ ms.locfileid: "43353102"
     2.  В разделе **Параметры** щелкните **Показать**.
     3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=`http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10*` (например, Server=`http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`).
  
-    ![Изображение настройки целевой подписки](media/wef 2 config target sub manager.png)
+    ![Изображение настройки целевой подписки](media/wef%202%20config%20target%20sub%20manager.png)
    
     5.  Нажмите кнопку **ОК**.
     6.  В командной строке с повышенными привилегиями введите команду *gpupdate /force*. 
@@ -80,14 +80,14 @@ ms.locfileid: "43353102"
     3.  Выберите **Инициировано исходным компьютером** и нажмите **Выбор групп компьютеров**.
         1.  Щелкните **Добавить компьютер в домен**.
         2.  Введите имя контроллера домена в поле **Введите имена выбираемых объектов**. Щелкните **Проверить имена** и нажмите кнопку **ОК**.  
-          ![Изображение средства просмотра событий](media/wef3 event viewer.png)  
+          ![Изображение средства просмотра событий](media/wef3%20event%20viewer.png)  
         3.  Нажмите кнопку **ОК**.
      4. Щелкните **Выбрать события**.
 
         1. Щелкните **По журналу** и выберите **Журнал безопасности**.
         2. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. Например, введите 4776, как в следующем примере.
 
-    ![Изображение фильтра запросов](media/wef 4 query filter.png)
+        ![Изображение фильтра запросов](media/wef%204%20query%20filter.png)
 
     5.  Щелкните созданную подписку правой кнопкой мыши и выберите **Состояние выполнения**, чтобы проверить, есть ли проблемы с состоянием. 
     6.  Через несколько минут убедитесь в том, что события, для которых настроена пересылка, отображаются в списке пересланных событий в шлюзе ATA.

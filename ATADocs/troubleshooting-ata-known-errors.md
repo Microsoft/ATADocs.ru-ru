@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 7/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 3433da5ca3d6d08f91cd97b24f6b97251c6b28ae
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 855c4d01f67be6331bb566b1f91821e5721e6911
+ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336002"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44166584"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 

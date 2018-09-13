@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 7bbca4eeb6ad8c5b9cf161f60144bbd27ca3c8d2
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 73b62edd2a03001998a5fdcef75a14a71177d1d7
+ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24018224"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44166533"
 ---
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
@@ -109,7 +109,7 @@ ms.locfileid: "24018224"
 1.  `Mongo.exe ATA` (ATA следует указать прописными буквами).
 2.  `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
 
-## <a name="minor-changes"></a>Несущественные изменения
+## <a name="minor-changes"></a>несущественные изменения.
 
 - Для консоли ATA вместо IIS теперь используется OWIN.
 - Если служба центра ATA не работает, вы не сможете получить доступ к консоли ATA.
