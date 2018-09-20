@@ -7,18 +7,18 @@ ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
 ms.topic: conceptual
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: abfe00cb0dbaf055d74b8f33a32b1f7f8d10d533
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 1374b57a4633c45bce2d4ab88952197a7b8f168a
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165802"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46134030"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 

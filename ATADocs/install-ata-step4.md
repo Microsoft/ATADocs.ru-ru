@@ -7,18 +7,18 @@ ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
 ms.topic: conceptual
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5414539edca088b49d16dc03c17dfe0ee0a2bfc5
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 886b044725976559a35ee40e461e455320cb2200
+ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125878"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46362465"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -82,7 +82,7 @@ ms.locfileid: "44125878"
     -   Распространяемый пакет Microsoft Visual C++ 2013.
     -   пользовательский набор сбора данных системного монитора;
 
-5.  После завершения установки для шлюза ATA нажмите кнопку **Запустить**, чтобы открыть браузер и войти в консоль ATA, а для упрощенного шлюза ATA нажмите кнопку **Готово**.
+6.  После завершения установки для шлюза ATA нажмите кнопку **Запустить**, чтобы открыть браузер и войти в консоль ATA, а для упрощенного шлюза ATA нажмите кнопку **Готово**.
 
 
 >[!div class="step-by-step"]

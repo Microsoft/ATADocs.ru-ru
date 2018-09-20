@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 080b3469c862d4063db5a4832f63dd3614905fac
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: c3fc5adbb700c4b8df66c243a655cf98aacc79af
+ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46362431"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -39,8 +39,8 @@ Azure ATP может по электронной почте отправлять
  
  >  [!NOTE]
  >   Электронные оповещения ATA о подозрительной активности отправляются только в случае ее обнаружения.
-
-5. Нажмите кнопку **Сохранить**.
+ 
+4. Нажмите кнопку **Сохранить**.
 
  ![Уведомления Azure ATP](media/atp-notifications.png)
 
