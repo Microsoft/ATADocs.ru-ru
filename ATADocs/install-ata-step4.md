@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 886b044725976559a35ee40e461e455320cb2200
-ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
+ms.openlocfilehash: 0973554e0fba448bc48526d1499768b2a2c864b1
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46362465"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453856"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46362465"
 
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
->[!div class="step-by-step"]
-[« Шаг 3](install-ata-step3.md)
-[Шаг 5 »](install-ata-step5.md)
+> [!div class="step-by-step"]
+> [« Шаг 3](install-ata-step3.md)
+> [Шаг 5 »](install-ata-step5.md)
 
 ## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установите шлюз ATA.
 
@@ -85,9 +85,9 @@ ms.locfileid: "46362465"
 6.  После завершения установки для шлюза ATA нажмите кнопку **Запустить**, чтобы открыть браузер и войти в консоль ATA, а для упрощенного шлюза ATA нажмите кнопку **Готово**.
 
 
->[!div class="step-by-step"]
-[« Шаг 3](install-ata-step3.md)
-[Шаг 5 »](install-ata-step5.md)
+> [!div class="step-by-step"]
+> [« Шаг 3](install-ata-step3.md)
+> [Шаг 5 »](install-ata-step5.md)
 
 
 ## <a name="related-videos"></a>Видео по теме

@@ -13,20 +13,20 @@ ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 63fee52a45913685c75872df156fecdddc5a6803
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 34ee1589d59b0740e9d3b05eb117991325619295
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125827"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453998"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 # <a name="install-azure-atp---step-8"></a>Установка Azure ATP. Шаг 8
 
->[!div class="step-by-step"]
-[«Шаг 7](install-atp-step7.md)
-[Шаг 9»](atp-multi-forest.md)
+> [!div class="step-by-step"]
+> [«Шаг 7](install-atp-step7.md)
+> [Шаг 9»](atp-multi-forest.md)
 
 ## <a name="step-8-configure-sam-r-required-permissions"></a>Шаг 8. Настройка необходимых разрешений для SAM-R
 
@@ -53,9 +53,9 @@ ms.locfileid: "44125827"
 Дополнительные сведения о SAM-R и этой групповой политике см. в статье [Network access: Restrict clients allowed to make remote calls to SAM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) (Сетевой доступ: ограничение клиентов, которые могут выполнять удаленные вызовы SAM).
 
 
->[!div class="step-by-step"]
-[«Шаг 7](install-atp-step7.md)
-[Шаг 9»](atp-multi-forest.md)
+> [!div class="step-by-step"]
+> [«Шаг 7](install-atp-step7.md)
+> [Шаг 9»](atp-multi-forest.md)
 
 
 

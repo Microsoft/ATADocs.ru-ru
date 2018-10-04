@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a6ba913710d5158c2e39105061acbebd566c5f13
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: ad120cfe3e736935a557f66417794cd531fa5b2e
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126201"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454094"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 # <a name="install-azure-atp---step-9"></a>Установка службы "Расширенная защита SQL от угроз". Шаг 9
 
->[!div class="step-by-step"]
-[«Шаг 8»](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [«Шаг 8»](install-atp-step8-samr.md)
 
 ## <a name="step-9--set-up-azure-advanced-threat-protection-multi-forest-support"></a>Шаг 9.  Настройка поддержки нескольких лесов в службе "Расширенная защита SQL от угроз"
 
@@ -82,8 +82,8 @@ Azure ATP поддерживает организации с нескольки�
 -   Сведения об интерактивном входе в систему, выполняемом пользователями в одном лесу для доступа к ресурсам в другом лесу, не отображаются на панели мониторинга службы "Расширенная защита SQL от угроз".
 
 
->[!div class="step-by-step"]
-[«Шаг 8»](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [«Шаг 8»](install-atp-step8-samr.md)
 
 
 ## <a name="see-also"></a>См. также

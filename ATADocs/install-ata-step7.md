@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: eacc3c2449e6fd7771c43b97b8ed08276ab130d2
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b45012f82a2457d09a616c2bd9e7e8866d0f5cdc
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133551"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453941"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133551"
 
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
->[!div class="step-by-step"]
-[«Шаг 7](vpn-integration-install-step.md)
-[Шаг 9»](install-ata-step9-samr.md)
+> [!div class="step-by-step"]
+> [«Шаг 7](vpn-integration-install-step.md)
+> [Шаг 9»](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 8. Настройка исключений IP-адресов и пользователя Honeytoken
 В ATA можно исключать из обнаружения определенные IP-адреса или пользователей. 
@@ -65,9 +65,9 @@ ms.locfileid: "46133551"
 Чтобы проверить, запущена ли служба ATA и выявляет ли она бреши в вашей сети, см. [Сборник тренировочных заданий по моделированию атаки](https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook).
 
 
->[!div class="step-by-step"]
-[«Шаг 7](vpn-integration-install-step.md)
-[Шаг 9»](install-ata-step9-samr.md)
+> [!div class="step-by-step"]
+> [«Шаг 7](vpn-integration-install-step.md)
+> [Шаг 9»](install-ata-step9-samr.md)
 
 
 ## <a name="related-videos"></a>Видео по теме

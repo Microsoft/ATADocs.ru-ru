@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 86941e2081c3893d3ea8499b435968fbad243015
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: d49770f435985027690ddfc05a9359e84841c0ff
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133163"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454043"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133163"
 
 # <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
->[!div class="step-by-step"]
-[« Шаг 2](install-ata-step2.md)
-[Шаг 4 »](install-ata-step4.md)
+> [!div class="step-by-step"]
+> [« Шаг 2](install-ata-step2.md)
+> [Шаг 4 »](install-ata-step4.md)
 
 ## <a name="step-3-download-the-ata-gateway-setup-package"></a>Шаг 3. Скачивание пакета установки шлюза ATA
 Настроив параметры подключения к домену, скачайте пакет установки шлюза ATA. Шлюз ATA можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена он установится как упрощенный шлюз ATA. Дополнительные сведения об упрощенном шлюзе ATA см. в статье [Архитектура ATA](ata-architecture.md). 
@@ -52,9 +52,9 @@ ZIP-файл содержит следующие файлы:
 -   файл конфигурации с данными для подключения к центру ATA.
 
 
->[!div class="step-by-step"]
-[« Шаг 2](install-ata-step2.md)
-[Шаг 4 »](install-ata-step4.md)
+> [!div class="step-by-step"]
+> [« Шаг 2](install-ata-step2.md)
+> [Шаг 4 »](install-ata-step4.md)
 
 
 ## <a name="related-videos"></a>Видео по теме

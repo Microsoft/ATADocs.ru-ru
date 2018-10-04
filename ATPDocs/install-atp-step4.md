@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9eaa6b37d56c3d8b18c3f5d015581cf7975d6e93
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 87a2b47261293fffffe9d822d698b551a332a481
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126336"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454145"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -26,9 +26,9 @@ ms.locfileid: "44126336"
 
 # <a name="install-azure-atp---step-4"></a>Установка Azure ATP. Шаг 4
 
->[!div class="step-by-step"]
-[« Шаг 3](install-atp-step3.md)
-[Шаг 5 »](install-atp-step5.md)
+> [!div class="step-by-step"]
+> [« Шаг 3](install-atp-step3.md)
+> [Шаг 5 »](install-atp-step5.md)
 
 ## <a name="step-4-install-the-azure-atp-sensor"></a>Шаг 4. Установка датчика Azure ATP
 
@@ -89,9 +89,9 @@ ms.locfileid: "44126336"
 8.  После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал рабочей области Azure ATP.
 
 
->[!div class="step-by-step"]
-[« Шаг 3](install-atp-step3.md)
-[Шаг 5 »](install-atp-step5.md)
+> [!div class="step-by-step"]
+> [« Шаг 3](install-atp-step3.md)
+> [Шаг 5 »](install-atp-step5.md)
 
 
 ## <a name="see-also"></a>См. также

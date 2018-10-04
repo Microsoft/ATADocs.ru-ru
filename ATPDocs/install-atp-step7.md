@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 268898c5b39d889b29c2d4f560c8cff3ac70f274
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 9252e47978a4adc0e2059a3111b362ff2b042daf
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125963"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453805"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -26,9 +26,9 @@ ms.locfileid: "44125963"
 
 # <a name="install-azure-atp---step-7"></a>Установка Azure ATP. Шаг 7
 
->[!div class="step-by-step"]
-[« Шаг 6](install-atp-step6-vpn.md)
-[Шаг 8 »](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« Шаг 6](install-atp-step6-vpn.md)
+> [Шаг 8 »](install-atp-step8-samr.md)
 
 ## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>Шаг 7. Настройка учетных записей Honeytoken и исключений из обнаружения
 
@@ -66,9 +66,9 @@ ms.locfileid: "44125963"
 
 
 
->[!div class="step-by-step"]
-[« Шаг 6](install-atp-step6-vpn.md)
-[Шаг 8 »](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« Шаг 6](install-atp-step6-vpn.md)
+> [Шаг 8 »](install-atp-step8-samr.md)
 
 ## <a name="see-also"></a>См. также
 - [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)

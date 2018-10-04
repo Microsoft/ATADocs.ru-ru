@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4b2e7ae1dad939db3a2394876acfe9ed4042924b
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 431368a1ceee57870a3eadf176b5899b69784c98
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133265"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454128"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133265"
 
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
->[!div class="step-by-step"]
-[« Шаг 1](install-ata-step1.md)
-[Шаг 3 »](install-ata-step3.md)
+> [!div class="step-by-step"]
+> [« Шаг 1](install-ata-step1.md)
+> [Шаг 3 »](install-ata-step3.md)
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
 
@@ -51,9 +51,9 @@ ms.locfileid: "46133265"
 3. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
 
 
->[!div class="step-by-step"]
-[« Шаг 1](install-ata-step1.md)
-[Шаг 3 »](install-ata-step3.md)
+> [!div class="step-by-step"]
+> [« Шаг 1](install-ata-step1.md)
+> [Шаг 3 »](install-ata-step3.md)
 
 
 ## <a name="see-also"></a>См. также
