@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 9/05/2018
+ms.date: 9/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,32 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f6f291ebed680278391498361737e0f8be5ea710
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: f9959f1b517890b725845f8dd01156f9a3e8198b
+ms.sourcegitcommit: 5ff50807f855db1051b977a64eb6e90487ea196c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166686"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750560"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+## <a name="azure-atp-release-248"></a>Azure ATP, выпуск 2.48
+Выпущен 16 сентября 2018 г.
+- **Оповещение системы безопасности**: разведывательная атака с использованием запросов к службам каталогов
+
+  Это оповещение системы безопасности теперь содержит улучшенную инфографику и свидетельство. 
+
+- **Исключение сущностей из результатов обнаружения** 
+
+  Чтобы сократить ложные срабатывания, теперь вы можете исключить сущности из следующих случаев обнаружения. 
+  - Подозрительное VPN-подключение (пользовательское исключение)
+  - Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)
+  - Подозрительный запрос на репликацию (потенциальная атака DCShadow)
+
+- Эта версия также включает улучшения и исправления нескольких проблем.
+
 
 ## <a name="azure-atp-release-247"></a>Azure ATP, выпуск 2.47
 Выпущен 2 сентября 2018 г.

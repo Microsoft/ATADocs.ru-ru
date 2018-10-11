@@ -2,23 +2,23 @@
 title: Интеграция Azure Advanced Threat Protection с ATP в Защитнике Windows | Документы Майкрософт
 description: Сведения об интеграции Azure Advanced Threat Protection с ATP в Защитнике Windows для полной поддержки обнаружения угроз
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/5/2018
-ms.topic: get-started-article
+ms.date: 9/12/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6d6c2cdb157d4e3f75794c8c40abfc7556e314d5
-ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
+ms.openlocfilehash: 4dca942b6c7b066cfec44e51aaad0f1e003da6ec
+ms.sourcegitcommit: 5ff50807f855db1051b977a64eb6e90487ea196c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34760079"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750424"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -59,13 +59,9 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
 ## <a name="how-to-integrate-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
 
-1. Задайте рабочую область, которую нужно интегрировать, в качестве **основной**. Только одна рабочая область может быть основной, и только основную рабочую область можно интегрировать с другими службами. Если в какой-то момент в будущем потребуется отменить назначение рабочей области как основной, сначала нужно будет удалить интеграцию, а затем задать рабочую область в качестве неосновной.
+1. Щелкните **Конфигурация**, а затем в разделе **Источники данных** выберите **ATP в Защитнике Windows**. Затем щелкните ссылку на **управление рабочей областью**. Она доступна только при наличии лицензии для ATP в Защитнике Windows и если вы уже внедрили ATP в Защитнике Windows. 
 
- ![основная рабочая область](./media/primary-workspace.png)
-
-2. Щелкните **Конфигурация**, а затем в разделе **Источники данных** выберите **ATP в Защитнике Windows**. Затем щелкните ссылку на **управление рабочей областью**. Она доступна только при наличии лицензии для ATP в Защитнике Windows и если вы уже внедрили ATP в Защитнике Windows. 
-
-3. В основной рабочей области щелкните значок шестеренки.
+2. В рабочей области щелкните значок шестеренки.
 
  ![интеграция рабочей области](./media/edit-workspace.png)
  
@@ -95,7 +91,8 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
 На портале ATP в Защитнике Windows щелкните конечную точку, чтобы просмотреть оповещения Azure ATP. Если щелкнуть оповещения для этой сущности в ATP в Защитнике Windows, страница профиля сущности откроется в Azure ATP. 
  
- > ![Примечание] Сейчас при интеграции Azure ATP с ATP в Защитнике Windows поддерживаются только пользователи и компьютеры из локальной службы AD. Пользователи Azure AD и виртуальных машин, управляемые посредством Azure, не будут показаны при интеграции 
+ > [!NOTE]
+ > Сейчас при интеграции Azure ATP с ATP в Защитнике Windows поддерживаются только пользователи и компьютеры из локальной службы AD. Пользователи Azure AD и виртуальных машин, управляемые посредством Azure, не будут показаны при интеграции 
 
 ![Оповещения ATP в Защитнике Windows](./media/wd-atp-alerts.png)
 

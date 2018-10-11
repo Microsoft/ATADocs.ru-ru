@@ -5,20 +5,20 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/30/2018
-ms.topic: get-started-article
+ms.date: 9/25/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d37a55bdb1c437f7775f530cfc143146eb38ba96
-ms.sourcegitcommit: 93a133430ac85d6db7afad5f6f2583b3a39c423a
+ms.openlocfilehash: d54bfa71c2f587450fe7c68aaca1e721356c11d7
+ms.sourcegitcommit: 8e80f59409c65e7d8d60ec7de8b96b621795699a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43469722"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168541"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -32,7 +32,9 @@ ms.locfileid: "43469722"
 ![Оповещение о работоспособности расширенной политики аудита](media/atp-health-alert-audit-policy.png)
 
 
-Расширенная политика аудита безопасности включается через объект групповой политики. Эти события аудита записываются в журнал событий Windows контроллера домена. Запись следует включить в разделе **Политика контроллеров домена по умолчанию** в Active Directory.
+Расширенная политика аудита безопасности включается с помощью объекта групповой политики **Политика контроллеров домена по умолчанию**. Эти события аудита записываются в журнал событий Windows контроллера домена. 
+
+
 
 <br>Чтобы изменить расширенные политики аудита контроллера домена, выполните следующие инструкции.
 
@@ -50,9 +52,12 @@ ms.locfileid: "43469722"
 
     ![Проверка учетных данных](media/atp-advanced-audit-policy-check-step-3.png)
 
-6. Перейдите к учетной записи входа, дважды щелкните **Аудит управления группами безопасности** и выберите параметр **Настроить следующие события аудита** для успешных и неудачных событий.
+6. Перейдите к управлению учетными записями, дважды щелкните **Аудит управления группами безопасности** и выберите параметр **Настроить следующие события аудита** для успешных и неудачных событий.
 
     ![Аудит управления группами безопасности](media/atp-advanced-audit-policy-check-step-4.png)
+
+> [!NOTE]
+> - Если вы решили использовать локальную политику, добавьте в нее журналы аудита **Учетная запись входа** и **Управление учетными записями**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
 
 7. Новые события, примененные с помощью объекта групповой политики, отображаются в **журналах событий Windows**.
 

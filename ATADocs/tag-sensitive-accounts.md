@@ -5,19 +5,20 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.date: 6/14/2018
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d9666c0a4fb3aad027ac1f85719bc533e919d75a
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: cea6d666d3d969070541fc8dcc4fd59726ac8c38
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46134095"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -41,6 +42,28 @@ ms.lasthandoff: 03/22/2018
 
 5. Перейдите на страницу профиля сущности, щелкнув имя сущности. Здесь можно увидеть, почему сущность считается конфиденциальной — благодаря членству в группе или пометке вручную как конфиденциальной.
 
+
+## <a name="sensitive-groups"></a>Привилегированные группы
+
+Перечисленные ниже группы рассматриваются в ATA как привилегированные. Любая сущность, которая входит в эти группы, считается конфиденциальной:
+
+-   Администраторы
+-   Опытные пользователи
+-   Операторы учета
+-   Операторы сервера
+-   Операторы печати
+-   Операторы архива
+-   Репликаторы
+-   Пользователи удаленного рабочего стола 
+-   Операторы настройки сети 
+-   Создатели входящего доверия леса
+-   Администраторы домена
+-   Контроллеры домена
+-   Владельцы-создатели групповой политики 
+-   Контроллеры домена только для чтения 
+-   Корпоративные контроллеры домена только для чтения 
+-   Администраторы схемы 
+-   Администраторы предприятия
      
 ## <a name="see-also"></a>См. также:
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

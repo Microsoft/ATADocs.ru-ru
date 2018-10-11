@@ -5,20 +5,20 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/06/2018
-ms.topic: get-started-article
+ms.date: 9/12/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 35ca436a1da10b1675daed974920c9dc8ccc3da0
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: 8a6481070abf1188507f31dbd01b26f7221b2e36
+ms.sourcegitcommit: a5823d0dfc48783ab990a99ca3f65b614fb49e75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585024"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44697248"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -28,7 +28,9 @@ ms.locfileid: "39585024"
 
 Служба Azure ATP обновляется несколько раз в месяц, включая исправления ошибок, улучшения производительности и новые типы обнаружения. Иногда эти обновления требуют обновления датчиков. 
 
-Если не обновить датчики, вы не сможете взаимодействовать с облачной службой Azure ATP, соответственно, качество обслуживания будет ухудшаться.
+Если не обновить датчики, вы не сможете взаимодействовать с облачной службой Azure ATP, соответственно, качество обслуживания будет ухудшаться. 
+
+Между датчиками и облачной службой Azure используется строгая взаимная проверка подлинности на основе сертификатов. 
 
 Каждое обновление протестировано и проверено для всех поддерживаемых операционных систем и оказывает минимальное воздействие на сеть и работу организации.
 

@@ -12,12 +12,12 @@ ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3426829c0c3b9b52ec1c0fb2c7f19e5a0944bfdf
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: e894422e7264650186c6f4eea28d5a9099ca7914
+ms.sourcegitcommit: 56065ee43dac299203871cd6f025315520750b3b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126371"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233904"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -58,7 +58,7 @@ ms.locfileid: "44126371"
 При определении числа автономных датчиков Azure ATP, которые необходимо развернуть, учитывайте указанные ниже моменты.
 
 -   **Леса и домены Active Directory**<br>
-    Azure ATP может отслеживать трафик из нескольких доменов в одном лесу Active Directory для каждой создаваемой рабочей области. Для отслеживания нескольких лесов необходимо создать несколько рабочих областей. 
+    Azure ATP может отслеживать трафик из нескольких доменов в нескольких лесах Active Directory для каждой создаваемой рабочей области. 
 
 -   **Зеркальное отображение портов**<br>
 Согласно рекомендациям по зеркальному отображению портов, возможно, потребуется развернуть несколько автономных датчиков Azure ATP в центре данных или на сайте филиала.

@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 87d3f1de8167c1198e6b334826f90df83cc96780
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: e3f59bc7c6873407d8764dc5ab64bfd7a52fdebe
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009274"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46133350"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -30,7 +30,8 @@ ms.locfileid: "30009274"
 
 Если центр ATA не запускается, выполните описанную ниже процедуру устранения неполадок:
 
-1.  Выполните следующую команду Windows PowerShell: `Get-Service Pla | Select Status`, чтобы убедиться в том, что служба счетчиков производительности запущена. Если она не запущена, это неполадка платформы и эту службу необходимо снова запустить.
+1.  Выполните следующую команду Windows PowerShell: `Get-Service Pla | Select Status`,
+    чтобы убедиться в том, что служба счетчиков производительности запущена. Если она не запущена, это неполадка платформы и эту службу необходимо снова запустить.
 2.  Если она была запущена, попробуйте перезапустить ее, чтобы проверить, не исчезнет ли проблема: `Restart-Service Pla`
 3.  Попробуйте создать новый сборщик данных вручную (достаточно любого сборщика, например, для сбора данных по ЦП компьютера).
 Если он запускается, скорее всего, платформа исправна. В противном случае имеется неполадка платформы.
@@ -58,7 +59,8 @@ ms.locfileid: "30009274"
 
 **Решение**
 
-1. Если в разделах реестра имеется значение DWORD **Отключить счетчики производительности**, задайте его равным **0**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\` `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
+1. Если в разделах реестра имеется значение DWORD **Отключить счетчики производительности**, задайте его равным **0**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\`.
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
  
 2. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
 

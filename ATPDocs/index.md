@@ -1,13 +1,20 @@
 ---
 layout: LandingPage
-description: Научитесь использовать Azure Advanced Threat Protection.
+title: Документация по Azure Advanced Threat Protection — учебники, примеры, справочник и ресурсы
+description: Научитесь использовать Azure Advanced Threat Protection
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 5c7261a99e1b6209598a29e5d3a751ea77a150ce
-ms.sourcegitcommit: e0b9252c770b3a3695af1642b76e3304f3df15d4
+keywords: advanced threat protection, azure, atp, учебники, примеры, справочник
+author: rkarlin
+manager: mbaldwin
+ms.author: rkarlin
+ms.topic: landing-page
+ms.date: 09/26/2018
+ms.openlocfilehash: ac88b5b2acad571ce0d578847fe9eeb795f6b45a
+ms.sourcegitcommit: 56065ee43dac299203871cd6f025315520750b3b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566593"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233887"
 ---
 # <a name="azure-advanced-threat-protection-documentation"></a>Документация по Azure Advanced Threat Protection
 
@@ -105,3 +112,4 @@ Azure Advanced Threat Protection (ATP) — это облачная служб�
         </a>
     </li>
 </ul>
+

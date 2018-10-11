@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7c6eaba8f80dcc7a8fc767f2bb8168221fbc7207
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: e4dc613ded1234bad931a67af679bb067c2d7719
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009876"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46134088"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -38,7 +38,7 @@ ATA может пересылать события, связанные с под
 -   cnt — число инициации оповещения (например, число угаданных паролей при атаке методом подбора);
 -   app — протокол, используемый в оповещении;
 -   externalId — идентификатор события, соответствующий оповещению, который ATA записывает в журнал событий;
--   cs#label и cs# — пользовательские строки, которые можно использовать в CEF. cs#label — это имя нового поля, а cs# — значение, например: cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
+-   cs#label и cs# — пользовательские строки, которые можно использовать в CEF. cs#label — это имя нового поля, а cs# — значение, например: cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
 
 В этом примере cs1 — это поле, содержащее URL-адрес оповещения.
 
@@ -76,7 +76,7 @@ ATA может пересылать события, связанные с под
 ### <a name="account-enumeration"></a>Перечисление учетных записей
 05-10-2017          16:44:22               Auth.Warning    192.168.0.220     1 2017-05-10T13:44:22.706381+00:00 CENTER ATA 596 AccountEnumerationSuspiciousActi ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|AccountEnumerationSuspiciousActivity|Разведывательная атака путем перечисления учетных записей|5|start=2017-05-10T13:44:20.9930644Z app=Kerberos shost=CLIENT3 msg=Обнаружено подозрительное перечисление учетных записей с использованием протокола Kerberos с компьютера CLIENT3. Злоумышленник предпринял всего 72 попытки подобрать имена учетных записей; в 2 случаях имена совпали с имеющимися именами учетных записей в Active Directory. externalId=2003 cs1Label=url cs1=https://center/suspiciousActivity/591319368ca1ec02543c56ee
 ### <a name="dns-recon"></a>Проверка DNS
-05-03-2017          13:16:57               Auth.Warning    192.168.0.220     3 мая 10:16:57 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:16:41.8297467Z app=Dns shost=CLIENT1 msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером) в отношении DC1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa 05-03-2017          13:24:21               Auth.Warning    192.168.0.220     3 мая 10:24:21 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:24:08.0950753Z app=Dns shost=CLIENT1 request=contoso.com requestMethod=Axfr reason=NameError outcome=Failure msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером). Был выполнен запрос к contoso.com (типа Axfr). Получен ответ NameError. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
+05-03-2017          13:16:57               Auth.Warning    192.168.0.220     3 мая 10:16:57 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:16:41.8297467Z app=Dns shost=CLIENT1 msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером) в отношении DC1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa 05-03-2017          13:24:21               Auth.Warning    192.168.0.220     May  3 10:24:21 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:24:08.0950753Z app=Dns shost=CLIENT1 request=contoso.com requestMethod=Axfr reason=NameError outcome=Failure msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером). Был выполнен запрос к contoso.com (типа Axfr). Получен ответ NameError. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
 ### <a name="smb-session-enumeration"></a>Перечисление сеансов SMB
 3 мая 11:55:43 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|EnumerateSessionsSuspiciousActivity|Разведывательная атака с использованием перечисления сеансов SMB|5|start=2017-05-03T11:52:02.4360718Z app=SrvSvc shost=CLIENT1 msg=Попытки перечисления сеансов SMB были успешно выполнены с компьютера CLIENT1 в отношении DC1; получен доступ к учетной записи user1 (daf::1). cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c53f8ca1ec04d05f1cf1
 ### <a name="samr-enumeration"></a>Перечисление SAMR
