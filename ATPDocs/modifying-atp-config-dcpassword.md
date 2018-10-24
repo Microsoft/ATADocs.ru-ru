@@ -2,10 +2,10 @@
 title: Изменение конфигурации Azure Advanced Threat Protection с использованием пароля для подключения к домену | Документы Майкрософт
 description: Процедура изменения пароля для подключения к домену на автономном датчике Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/14/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e5b3fd544fb52cd2979ab95d34918ffba3f56541
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: a175a23a087b11d481dbcf055bff4fe5577b4f8e
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166193"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783123"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -33,12 +33,12 @@ ms.locfileid: "44166193"
 
 В таком случае откройте на автономном датчике Azure ATP файл Microsoft.Tri.sensor-Errors.log и найдите в нем следующие ошибки: `The supplied credential is invalid.`.
 
-Чтобы изменить пароль для подключения к домену на портале рабочей области Azure ATP, выполните описанную ниже процедуру.
+Чтобы изменить пароль для подключения к домену на портале Azure ATP, выполните описанную ниже процедуру:
 
 > [!NOTE]
 > Это имя пользователя и пароль из локального развертывания Active Directory, а не из Azure AD.
 
-1.  Откройте портал рабочей области Azure ATP, воспользовавшись URL-адресом рабочей области.
+1.  Откройте портал Azure ATP, воспользовавшись URL-адресом рабочей области.
 
 2.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
@@ -57,9 +57,9 @@ ms.locfileid: "44166193"
 
 6.  После изменения пароля вручную проверьте, что служба автономного датчика Azure ATP запущена на серверах автономного датчика Azure ATP.
 
-7. На портале рабочей области в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
+7. На портале Azure ATP в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
 
 ## <a name="see-also"></a>См. также
 
 - [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

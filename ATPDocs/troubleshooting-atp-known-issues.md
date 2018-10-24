@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/13/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a56845c619e93ed2fae0e10876a4d49a49e23e7d
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: e65133fdd09f821c633a3095ae419df01da98b16
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166314"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783718"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -30,9 +30,9 @@ ms.locfileid: "44166314"
  
 Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (or one directory above %temp%). См. дополнительные сведения об [устранении неполадок с ATP при использовании журналов](troubleshooting-atp-using-logs.md).
 
-## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка лицензирования
+## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка лицензирования
 
-Во время установки датчика возникает следующая ошибка, информирующая о том, что **датчик не удалось зарегистрировать из-за проблем с лицензированием.**
+Если во время установки датчика возникает следующая ошибка, информирующая о том, что **датчик не удалось зарегистрировать из-за проблем с лицензированием.**
 
 Записи журнала развертывания: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
 
@@ -50,9 +50,9 @@ ms.locfileid: "44166314"
 
 ## Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт <a name="nic-teaming"></a>
 
-При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, следуйте приведенным ниже инструкциям.
+При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, следуйте приведенным ниже инструкциям:
 
-Если вы еще не установили датчик, сделайте следующее:
+Если вы еще не установили датчик:
 
 1.  Скачать Npcap из [https://nmap.org/npcap/](https://nmap.org/npcap/).
 2.  Удалите библиотеку WinPcap, если она установлена.
@@ -69,7 +69,7 @@ ms.locfileid: "44166314"
 
 ## <a name="windows-defender-atp-integration-issue"></a>Проблема интеграции ATP в Защитнике Windows
 
-Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows. 
+Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows. Дополнительные сведения см. в статье [Интеграция Azure ATP с ATP в Защитнике Windows](integrate-wd-atp.md). 
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>Проблема с датчиком виртуальной машины VMware
 
@@ -88,4 +88,4 @@ Azure Advanced Threat Protection позволяет интегрировать A
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

@@ -1,11 +1,11 @@
 ---
-title: Установка Azure Advanced Threat Protection. Шаг 7 | Документы Майкрософт
-description: На заключительном этапе установки Azure ATP нужно настроить пользователя Honeytoken.
+title: Настройка учетных записей Honeytoken и исключений из обнаружения в Azure Advanced Threat Protection | Документы Майкрософт
+description: Настройка учетных записей пользователей Honeytoken и исключений из обнаружения.
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/2/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,19 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9252e47978a4adc0e2059a3111b362ff2b042daf
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: a538ce4596da106d11646e27aa65131bb47380d2
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453805"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782994"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
+<<<<<<< ЗАГОЛОВОК
+# <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>Настройка учетных записей Honeytoken и исключений из обнаружения
+=======
 
 # <a name="install-azure-atp---step-7"></a>Установка Azure ATP. Шаг 7
 
@@ -31,6 +34,7 @@ ms.locfileid: "47453805"
 > [Шаг 8 »](install-atp-step8-samr.md)
 
 ## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>Шаг 7. Настройка учетных записей Honeytoken и исключений из обнаружения
+>>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 В Azure ATP можно исключать из обнаружения определенные IP-адреса или пользователей. 
 
@@ -40,7 +44,7 @@ ms.locfileid: "47453805"
 
 Для настройки выполните следующее:
 
-1.  На портале рабочей области Azure ATP щелкните значок параметров и выберите пункт **Конфигурация**.
+1.  На портале Azure ATP щелкните значок параметров и выберите пункт **Конфигурация**.
 
     ![Параметры конфигурации Azure ATP](media/atp-config-menu.png)
 
@@ -65,13 +69,16 @@ ms.locfileid: "47453805"
 В службе "Расширенная защита SQL от угроз" сразу же начнется проверка на наличие подозрительных действий. Для некоторых обнаружений, например чрезмерных изменений группы, требуется период распознавания, поэтому они недоступны сразу же после развертывания службы "Расширенная защита SQL от угроз".
 
 
+<a name="-head"></a><<<<<<< ЗАГОЛОВОК
+=======
 
 > [!div class="step-by-step"]
 > [« Шаг 6](install-atp-step6-vpn.md)
 > [Шаг 8 »](install-atp-step8-samr.md)
 
+>>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 ## <a name="see-also"></a>См. также
 - [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

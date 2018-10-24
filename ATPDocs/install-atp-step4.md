@@ -1,11 +1,11 @@
 ---
-title: Установка Azure Advanced Threat Protection. Шаг 4 | Документы Майкрософт
-description: На четвертом шаге установки Azure ATP выполняется установка автономного датчика Azure ATP.
+title: Установка Azure Advanced Threat Protection | Документы Майкрософт
+description: На четвертом шаге установки Azure ATP выполняется установка датчика Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/25/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 87a2b47261293fffffe9d822d698b551a332a481
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 52ffbac6acd762d4cf2898c170d7a026d2a37826
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47454145"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783735"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -32,13 +32,10 @@ ms.locfileid: "47454145"
 
 ## <a name="step-4-install-the-azure-atp-sensor"></a>Шаг 4. Установка датчика Azure ATP
 
-Прежде чем устанавливать автономный датчик Azure ATA на выделенном сервере, убедитесь, что зеркальное отображение портов настроено правильно и что автономный датчик Azure ATA может просматривать входящий и исходящий трафик на контроллерах домена. 
-
-
 > [!IMPORTANT]
 >На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, это создаст пакет установки датчика Azure ATP, после чего потребуется перезагрузить сервер.
 
-Выполните следующие действия на сервере датчика Azure ATP или контроллере домена.
+Выполните следующие действия на контроллере домена.
 
 1. Убедитесь, что компьютер подключен к правильной конечной точке облачной службы Azure ATP:
   - https://triprd1wceuw1sensorapi.atp.azure.com (для Европы)  
@@ -73,7 +70,7 @@ ms.locfileid: "47454145"
 
       - Путь установки: это расположение для установки автономного датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
 
-      - Ключ доступа: это ключ, полученный на портале рабочей области на предыдущем шаге.
+      - Ключ доступа: это ключ, полученный на портале Azure ATP на предыдущем шаге.
     
 7. Нажмите кнопку **Установить**. Во время установки автономного датчика Azure ATP устанавливаются и настраиваются следующие компоненты.
 
@@ -86,7 +83,7 @@ ms.locfileid: "47454145"
     -   Служба датчика Azure ATP и служба средства обновления датчика Azure ATP
     -   Распространяемый пакет Microsoft Visual C++ 2013.
 
-8.  После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал рабочей области Azure ATP.
+8.  После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал Azure ATP.
 
 
 > [!div class="step-by-step"]
@@ -102,4 +99,4 @@ ms.locfileid: "47454145"
 
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

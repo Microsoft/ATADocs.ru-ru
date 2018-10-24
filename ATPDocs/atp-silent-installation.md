@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/7/2017
+ms.date: 10/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 363400531fe2b4e2634fa80ec1f65ad80923606f
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 23d92b207c9bcfeb38afa67bdd5e4911b1a16aa4
+ms.sourcegitcommit: 02a4d7a0d44817da8e40580c5fe97f8839a7941f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125793"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48876585"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -46,7 +46,7 @@ ms.locfileid: "44125793"
 ## <a name="azure-atp-sensor-silent-installation"></a>Автоматическая установка датчика Azure ATP
 
 > [!NOTE]
-> При автоматическом развертывании датчика Azure ATP с помощью System Center Configuration Manager или другой системы развертывания программного обеспечения рекомендуется создать два пакета развертывания:</br>Net Framework 4.7, включая перезагрузку контроллера домена;</br>датчик Azure ATP. </br>Сделайте пакет датчика Azure ATP зависимым от развертывания пакета .NET Framework. </br>Получите [пакет автономного развертывания .NET Framework 4.7](https://www.microsoft.com/download/details.aspx?id=49982). 
+> При автоматическом развертывании датчика Azure ATP с помощью System Center Configuration Manager или другой системы развертывания программного обеспечения рекомендуется создать два пакета развертывания:</br>Net Framework 4.7, включая перезагрузку контроллера домена;</br>датчик Azure ATP. </br>Сделайте пакет датчика Azure ATP зависимым от развертывания пакета .NET Framework. </br>Получите [пакет автономного развертывания .NET Framework 4.7](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows). 
 
 
 Для полного автоматического удаления датчика Azure ATP используйте следующую команду:
@@ -58,7 +58,7 @@ ms.locfileid: "44125793"
    
 
 > [!NOTE]
-> Скопируйте ключ доступа с портала рабочей области, выбрав раздел **Конфигурация**, а затем — **Датчик**.
+> Скопируйте ключ доступа с портала Azure ATP, выбрав раздел **Конфигурация**, а затем **Датчик**.
 
 
 **Варианты установки**
@@ -131,6 +131,7 @@ ms.locfileid: "44125793"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка пересылки событий](configure-event-forwarding.md)
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Установка датчика Azure ATP](install-atp-step4.md)
+- [Настройка датчика Azure ATP](install-atp-step5.md)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

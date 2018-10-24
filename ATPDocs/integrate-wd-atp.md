@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 9/12/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4dca942b6c7b066cfec44e51aaad0f1e003da6ec
-ms.sourcegitcommit: 5ff50807f855db1051b977a64eb6e90487ea196c
+ms.openlocfilehash: a888cbb80bba74d920e236b04c353008c7b56daf
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750424"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783667"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
-# <a name="integrating-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
+# <a name="integrate-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
 
 Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows для формирования еще более полного решения защиты от угроз. Azure ATP наблюдает за трафиком на контроллерах домена, ATP в Защитнике Windows отслеживает конечные точки, а вместе эти службы формируют единую систему для защиты среды.
 
@@ -73,11 +73,11 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
  ![включение интеграции с ATP в Защитнике Windows](./media/wd-atp-enable.png)
 
-5. Чтобы проверить состояние интеграции, на портале рабочей области Azure ATP перейдите в раздел **Параметры**, а затем выберите **Интеграция ATP в Защитнике Windows**. Вы увидите состояние интеграции. Если что-то не так, появится сообщение об ошибке. Вы также увидите, какая рабочая область интегрирована с ATP в Защитнике Windows.
+5. Чтобы проверить состояние интеграции, на портале Azure ATP перейдите в раздел **Параметры**, а затем выберите **Интеграция ATP в Защитнике Windows**. Вы увидите состояние интеграции. Если что-то не так, появится сообщение об ошибке. Вы также увидите, какая рабочая область интегрирована с ATP в Защитнике Windows.
 
 ## <a name="how-it-works"></a>Принцип работы
 
-После полной интеграции Azure ATP и ATP в Защитнике Windows на портале рабочей области Azure ATP во всплывающем мини-профиле и на странице профиля сущности для каждой сущности, которая присутствует в ATP в Защитнике Windows, будет отображаться эмблема, указывающая интеграцию сущности с ATP в Защитнике Windows. 
+После полной интеграции Azure ATP и ATP в Защитнике Windows на портале Azure ATP во всплывающем мини-профиле и на странице профиля сущности для каждой сущности, которая присутствует в ATP в Защитнике Windows, будет отображаться эмблема, указывающая интеграцию сущности с ATP в Защитнике Windows. 
 
  ![Оповещения ATP в Защитнике Windows](./media/profile-alerts-wd.png)
 
@@ -103,5 +103,5 @@ Azure Advanced Threat Protection позволяет интегрировать A
 - [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
 - [Архитектура Azure ATP](atp-architecture.md)
 - [Установка ATP](install-atp-step1.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
 

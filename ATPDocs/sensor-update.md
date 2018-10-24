@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 9/12/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8a6481070abf1188507f31dbd01b26f7221b2e36
-ms.sourcegitcommit: a5823d0dfc48783ab990a99ca3f65b614fb49e75
+ms.openlocfilehash: e478fc1a2ae955d66d00b3d87bd5f782354c766d
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44697248"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783769"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -60,7 +60,7 @@ ms.locfileid: "44697248"
 Это позволяет выбрать конкретные датчики, для которых обновление развертывается автоматически, и обновить остальные датчики с задержкой, после того как вы убедитесь, что исходное обновление прошло успешно.
 
 > [!NOTE]
-> В случае возникновения ошибок и неудачного обновления датчика, создайте запрос в службу поддержки.
+> В случае возникновения ошибок и неудачного обновления датчика, создайте запрос в службу поддержки. Чтобы дополнительно усилить защиту прокси-сервера, разрешив ему обмениваться данными только с рабочей областью, обратитесь к разделу [Настройка прокси-сервера](configure-proxy.md).
 
 Настройка отложенного обновления датчика
 
@@ -87,7 +87,7 @@ ms.locfileid: "44697248"
   7. Датчик получает разрешение от облачной службы Azure. Это можно проверить на странице **Обновления**.
   8. Следующий датчик начинает процесс обновления. 
 
-4. Через 24 после обновления облачной службы Azure ATP начинается процесс обновления для датчиков, выбранных для ** отложенного обновления.
+4. Через 24 часа после обновления облачной службы Azure ATP начинается процесс обновления для датчиков, выбранных для **отложенного обновления**.
 
 ![обновление датчика](./media/sensor-update.png)
 
@@ -101,4 +101,4 @@ ms.locfileid: "44697248"
 
 - [Настройка пересылки событий](configure-event-forwarding.md)
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

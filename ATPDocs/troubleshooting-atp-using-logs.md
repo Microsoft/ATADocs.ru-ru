@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/13/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: fee526b836b9fbbf28624bdce4354267ab968cd6
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 2cd1d7b070818044e74838178b0fab5838ab46ef
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166094"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783259"
 ---
 *Область применения: Advanced Threat Protection*
 
@@ -63,4 +63,4 @@ ms.locfileid: "44166094"
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

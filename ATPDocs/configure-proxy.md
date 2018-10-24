@@ -2,23 +2,23 @@
 title: Настройка прокси-сервера или брандмауэра для взаимодействия Azure ATP с датчиком | Документы Майкрософт
 description: Сведения о настройке брандмауэра или прокси-сервера для взаимодействия облачной службы Azure ATP и датчиков Azure ATP
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/29/2018
-ms.topic: get-started-article
+ms.date: 10/04/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2f39c0d3628c3a3cc9e034fa1da8bb5a66bc704b
-ms.sourcegitcommit: 3eade64779002d2c8ae005565bc69e1b3f89fb7d
+ms.openlocfilehash: a7dc9b6c9243377a613490e166fb7c0294ecde99
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34560247"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783327"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -29,7 +29,7 @@ ms.locfileid: "34560247"
 Для успешной работы датчику Advanced Threat Protection (ATP) Azure требуется подключение через Интернет к облачной службе Azure ATP. В некоторых организациях контроллеры домена подключаются к Интернету не напрямую, а через веб-прокси. Для каждого датчика Azure ATP необходимо настроить параметры прокси-сервера Microsoft Windows Internet (WinINET) для передачи данных и взаимодействия со службой Azure ATP. Даже если вы используете для настройки прокси-сервера WinHTTP, необходимо отдельно настроить параметры прокси-сервера в браузере Windows Internet (WinINet) для взаимодействия между датчиком и облачной службой Azure ATP.
 
 
-При настройке прокси-сервера следует помнить, что внедренная служба датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalService**, а служба обновления датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalSystem**. 
+При настройке прокси-сервера следует помнить, что внедренная служба датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalService**, а служба обновления датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalSystem**. 
 
 > [!NOTE]
 > Если в топологии сети используется прозрачный прокси или WPAD, настраивать WinINET для прокси-сервера не нужно.
@@ -45,15 +45,15 @@ ms.locfileid: "34560247"
 
 1.   Обязательно создайте резервные копии разделов реестра перед внесением в их изменений.
 
-2. Выполните в разделе реестра `HKCU\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting` поиск по значению `DefaultConnectionSetting` (REG_BINARY) и скопируйте результат.
+2. Выполните в разделе реестра `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings` поиск по значению `DefaultConnectionSettings` (REG_BINARY) и скопируйте результат.
  
-2.  Если в LocalSystem отсутствуют допустимые параметры прокси-сервера (прокси не настроен или отличается от настроек в Current_User), скопируйте параметры прокси-сервера из Current_User в LocalSystem. Перейдите к разделу реестра `HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting`.
+2.  Если в LocalSystem отсутствуют допустимые параметры прокси-сервера (прокси не настроен или отличается от настроек в Current_User), скопируйте параметры прокси-сервера из Current_User в LocalSystem. Перейдите к разделу реестра `HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
 
-3.  Вставьте значение из Current_User `DefaultConnectionSetting` в формате REG_BINARY.
+3.  Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
 
-4.  Если в LocalService отсутствуют допустимые параметры прокси-сервера, скопируйте эти параметры из Current_User в LocalService. Перейдите к разделу реестра `HKU\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting`.
+4.  Если в LocalService отсутствуют допустимые параметры прокси-сервера, скопируйте эти параметры из Current_User в LocalService. Перейдите к разделу реестра `HKU\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
 
-5.  Вставьте значение из Current_User `DefaultConnectionSetting` в формате REG_BINARY.
+5.  Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
 
 > [!NOTE]
 > Это повлияет на все приложения, включая службы Windows, которые используют WinINET в контексте LocalService или LocalSytem.
@@ -71,8 +71,8 @@ ms.locfileid: "34560247"
 
 
 Вы можете также усилить защиту брандмауэра или правил прокси-сервера для конкретной рабочей области, создав правило для следующих записей DNS:
-- <имя_рабочей_области>.atp.azure.com — для подключения консоли. Например, contosoATP.atp.azure.com.
-- <имя_рабочей_области>sensorapi.atp.azure.com — для подключения датчиков. Например, contosoATPsensorapi.atp.azure.com
+- \<имя_рабочей_области>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
+- \<имя_рабочей_области>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
 
  
 > [!NOTE]
@@ -81,4 +81,4 @@ ms.locfileid: "34560247"
 
 ## <a name="see-also"></a>См. также
 - [Настройка пересылки событий](configure-event-forwarding.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

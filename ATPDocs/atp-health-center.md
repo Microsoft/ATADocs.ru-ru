@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 033d338e9c1e5e85673e362069ff0a815cda127c
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 8fdaa7311d39680ed8e9389f5dc9b7cdeca73197
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165598"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782902"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -46,8 +46,7 @@ ms.locfileid: "44165598"
 
     > [!NOTE]
     > Azure ATP может повторно открывать закрытое действие, если аналогичное действие будет обнаружено еще раз в течение короткого периода времени.
-    > Каждая рабочая область имеет свой собственный центр работоспособности.
-
+    
 -   **Заблокировать**: блокировка действия означает, что в настоящее время оно игнорируется и что оповещение о нем выводится снова, только если оно обнаружено повторно. Если имеется схожее оповещение, Azure ATP не откроет его еще раз. Но если оповещение отсутствует в течение семи дней, а затем снова возникает, оно будет выведено повторно.
 
 -   **Открыть повторно**: вы можете повторно открыть закрытую или заблокированную проблему, чтобы она снова отображалась на временной шкале как открытая.
@@ -56,7 +55,7 @@ ms.locfileid: "44165598"
 
 
 
-![Изображение проблем в центре работоспособности рабочей области Azure ATP](media/atp-health-issue.png)
+![Изображение проблем в центре работоспособности Azure ATP](media/atp-health-issue.png)
 
 
 
@@ -66,4 +65,4 @@ ms.locfileid: "44165598"
 ## <a name="see-also"></a>См. также
 
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

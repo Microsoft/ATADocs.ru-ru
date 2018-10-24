@@ -1,11 +1,11 @@
 ---
 title: Настройка уведомлений Advanced Threat Protection | Документы Майкрософт
-description: В этой статье описано, как настроить оповещения Azure ATP, чтобы получать уведомления при обнаружении подозрительных действий.
+description: В этой статье описано, как настроить оповещения системы безопасности Azure ATP, чтобы получать уведомления при обнаружении подозрительных действий.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c3fc5adbb700c4b8df66c243a655cf98aacc79af
-ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
+ms.openlocfilehash: e6f3647ecaab82a32950fadd0a101385a2cc0051
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46362431"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783055"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 # <a name="set-azure-atp-notifications"></a>Настройка уведомлений Azure ATP
 
-Azure ATP может по электронной почте отправлять уведомления при обнаружении подозрительных действий или при возникновении проблем с работоспособностью. 
+Azure ATP может по электронной почте отправлять уведомления при обнаружении подозрительных действий, а также оповещения системы безопасности и оповещения о проблемах с работоспособностью. 
 
 Чтобы получать уведомления на конкретный адрес электронной почты, установите следующие параметры.
 
 
-1. На портале рабочей области Azure ATP на панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
+1. На портале Azure ATP на панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
 ![Значок параметров конфигурации Azure ATP](media/atp-config-menu.png)
 
@@ -51,4 +51,4 @@ Azure ATP может по электронной почте отправлять
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 
 - [Настройка параметров системного журнала](setting-syslog.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

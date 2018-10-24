@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/2/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d5ac2ae53dfe13b850a06f6dd4b89a91ffedd946
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 432f55891440975e511ab5cd3e2972a1c7a33f37
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166040"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782936"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -63,4 +63,4 @@ ms.locfileid: "44166040"
 ## <a name="see-also"></a>См. также
 
 - [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

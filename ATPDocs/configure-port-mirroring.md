@@ -2,10 +2,10 @@
 title: Настройка зеркального отображения портов при развертывании Azure Advanced Threat Protection | Документы Майкрософт
 description: В этой статье описываются варианты зеркального отображения портов и их настройка для Azure ATP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 10/4/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9ac3c584f5eb73b33415c6c1250eee4c41a12763
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 5ca24df927bc91383449926bdcd67a1c29585618
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125997"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783582"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -26,7 +26,7 @@ ms.locfileid: "44125997"
 
 # <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
 > [!NOTE] 
-> Сведения в этой статье относятся только к развертыванию автономного датчика Azure ATP, а не датчика Azure ATP. Чтобы определить, нужно ли использовать автономный датчик Azure ATP, см. статью о [выборе правильных датчиков для развертывания](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment).
+> Сведения в этой статье относятся только к развертыванию автономных датчиков Azure ATP, а не датчиков Azure ATP. Чтобы определить, нужно ли использовать автономные датчики Azure ATP, см. статью о [выборе правильных датчиков для развертывания](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment).
  
 Основные сведения, требуемые для работы Azure ATP, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы предоставить Azure ATP доступ к сетевому трафику, необходимо настроить зеркальное отображение портов или использовать перехватчик трафика.
 
@@ -74,4 +74,4 @@ ms.locfileid: "44125997"
 
 ## <a name="see-also"></a>См. также
 - [Настройка пересылки событий](configure-event-forwarding.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

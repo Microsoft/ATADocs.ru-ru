@@ -1,11 +1,11 @@
 ---
 title: Настройка SAM-R для включения обнаружения пути бокового смещения в Azure ATP | Документы Майкрософт
-description: Сведения о настройке SAM-R для включения обнаружения пути бокового смещения в Azure ATP
+description: Описание процесса настройки Azure ATP для выполнения удаленных вызовов SAM
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/31/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,25 +13,19 @@ ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 34ee1589d59b0740e9d3b05eb117991325619295
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 49372ce2432e90b04e0d10b2e8e102c1b05e9c9a
+ms.sourcegitcommit: bbbe808c08ce703a314c82b46aedaae79ab256a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453998"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848479"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
-# <a name="install-azure-atp---step-8"></a>Установка Azure ATP. Шаг 8
+# <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>Настройка Azure ATP для выполнения удаленных вызовов SAM
+Обнаружение [пути бокового смещения](use-case-lateral-movement-path.md) основано на запросах, определяющих локальных администраторов на конкретных компьютерах. Эти запросы выполняются с протоколом SAM-R с использованием учетной записи службы Azure ATP, созданной на [шаге 2 в процессе установки Azure ATP. Подключение к AD](install-atp-step2.md).
 
-> [!div class="step-by-step"]
-> [«Шаг 7](install-atp-step7.md)
-> [Шаг 9»](atp-multi-forest.md)
-
-## <a name="step-8-configure-sam-r-required-permissions"></a>Шаг 8. Настройка необходимых разрешений для SAM-R
-
-Обнаружение [пути бокового смещения](use-case-lateral-movement-path.md) основано на запросах, определяющих локальных администраторов на конкретных компьютерах. Эти запросы выполняются с протоколом SAM-R с использованием учетной записи службы "Расширенная защита SQL от угроз", созданной на [шаге 2. Подключение к AD](install-atp-step2.md).
- 
+## <a name="configure-sam-r-required-permissions"></a>Настройка необходимых разрешений для SAM-R
 Чтобы клиенты и серверы Windows позволяли вашей учетной записи службы "Расширенная защита SQL от угроз" выполнять эту операцию SAM-R, в **групповую политику** необходимо внести изменение по добавлению учетной записи службы "Расширенная защита SQL от угроз" помимо настроенных учетных записей, указанных в политике **Сетевой доступ**.
 
 1. Найдите политику.
@@ -53,12 +47,7 @@ ms.locfileid: "47453998"
 Дополнительные сведения о SAM-R и этой групповой политике см. в статье [Network access: Restrict clients allowed to make remote calls to SAM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) (Сетевой доступ: ограничение клиентов, которые могут выполнять удаленные вызовы SAM).
 
 
-> [!div class="step-by-step"]
-> [«Шаг 7](install-atp-step7.md)
-> [Шаг 9»](atp-multi-forest.md)
-
-
 
 ## <a name="see-also"></a>См. также
 - [Анализ атак, использующих пути бокового смещения, в Azure ATP](use-case-lateral-movement-path.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

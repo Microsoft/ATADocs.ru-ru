@@ -2,22 +2,22 @@
 title: Планирование развертывания Azure Advanced Threat Protection | Документы Майкрософт
 description: В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов Azure ATP потребуется для поддержки сети.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: azure-advanced-threat-protection
 ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e894422e7264650186c6f4eea28d5a9099ca7914
-ms.sourcegitcommit: 56065ee43dac299203871cd6f025315520750b3b
+ms.openlocfilehash: 9f2b8f31f88c14f67c8a03b748ac3d2fb6179a62
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233904"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783463"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -26,11 +26,11 @@ ms.locfileid: "47233904"
 # <a name="azure-atp-capacity-planning"></a>Планирование производительности Azure ATP
 В этой статье содержатся сведения, которые помогут определить количество необходимых датчиков и автономных датчиков Azure ATP.
 
-> [!NOTE] 
-> Средство изменения размера состоит из двух листов — по одному для ATA и Azure ATP. Убедитесь, что вы используете нужный лист.
-
 ## <a name="using-the-sizing-tool"></a>Использование средства изменения размера
 Рекомендуемый и самый простой способ определить емкость развертывания Azure ATP — это использовать [средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool). Запустите средство изменения размера Azure ATP и в файле Excel с результатами определите объем памяти и ресурсов ЦП, используемый датчиком.
+
+> [!NOTE] 
+> Средство изменения размера состоит из двух листов — по одному для ATA и Azure ATP. Убедитесь, что вы используете нужный лист.
 
 - Датчик Azure ATP: сопоставьте значение в поле **Занятых пакетов/с** в таблице датчика Azure ATP в файле результатов со значением в поле **Пакетов в секунду** в [таблице автономного датчика Azure ATP](#azure-atp-sensor-sizing) или [таблице датчика Azure ATP](#azure-atp-standalone-sensor-sizing) в зависимости от [выбранного типа датчика](#choosing-the-right-sensor-type-for-your-deployment).
 
@@ -42,10 +42,10 @@ ms.locfileid: "47233904"
 В следующих разделах представлены инструкции по сбору числа пакетов в секунду с одного контроллера домена.
 
 ## Выбор правильного типа датчика для развертывания<a name="choosing-the-right-sensor-type-for-your-deployment"></a>
-В развертывании Azure ATP поддерживается любое сочетание типов автономных датчиков Azure:
+В развертывании Azure ATP поддерживается любое сочетание типов датчиков Azure:
 
+- Только датчики Azure ATP
 - Только автономные датчики Azure ATP
-- Только датчик Azure ATP
 - Комбинация шлюзов
 
 При выборе типа развертывания датчика необходимо учитывать указанные ниже преимущества.
@@ -61,7 +61,7 @@ ms.locfileid: "47233904"
     Azure ATP может отслеживать трафик из нескольких доменов в нескольких лесах Active Directory для каждой создаваемой рабочей области. 
 
 -   **Зеркальное отображение портов**<br>
-Согласно рекомендациям по зеркальному отображению портов, возможно, потребуется развернуть несколько автономных датчиков Azure ATP в центре данных или на сайте филиала.
+    Согласно рекомендациям по зеркальному отображению портов, возможно, потребуется развернуть несколько автономных датчиков Azure ATP в центре данных или на сайте филиала.
 
 -   **Емкость**<br>
     Автономный датчик Azure ATP поддерживает отслеживание нескольких контроллеров домена в зависимости от объема сетевого трафика отслеживаемых контроллеров домена. 
@@ -149,4 +149,4 @@ ms.locfileid: "47233904"
 - [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Архитектура Azure ATP](atp-architecture.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

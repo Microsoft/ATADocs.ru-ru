@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/12/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ccb87ab6b3fabed5edaf7c32324701c74259f098
-ms.sourcegitcommit: 5ff50807f855db1051b977a64eb6e90487ea196c
+ms.openlocfilehash: 31871a03795b1c08e4fd8954cac80a00538863db
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750443"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783344"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -54,7 +54,7 @@ ms.locfileid: "45750443"
 
 Помимо этих групп можно вручную пометить группы или учетные записи как конфиденциальные для повышения эффективности операций обнаружения. Это важно, так как некоторые операции обнаружения ATP Azure, например обнаружение изменения привилегированной группы и путь бокового смещения, зависят от того, какие группы и учетные записи считаются конфиденциальными. В качестве конфиденциальных можно вручную пометить других пользователей или группы, например членов совета директоров, руководителей, начальника отдела продаж и т. д., и Azure ATP будет рассматривать их как конфиденциальные.
 
-1.  На портале рабочей области Azure ATP в строке меню щелкните значок шестеренки **Настройка**.
+1.  На портале Azure ATP в строке меню щелкните значок шестеренки **Настройка**.
 
 2.  В разделе **Обнаружение** выберите пункт **Теги сущности**.
 
@@ -70,4 +70,4 @@ ms.locfileid: "45750443"
 ## <a name="see-also"></a>См. также:
 
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Обязательно ознакомьтесь с форумом ATP](https://aka.ms/azureatpcommunity)
+- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
