@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a888cbb80bba74d920e236b04c353008c7b56daf
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: c0bda95fb789225cf7d05616974f9a333f3c8e4f
+ms.sourcegitcommit: 30d874808cfeafd46ee8fbbf34e0bbcb337f6544
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783667"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49089361"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -69,7 +69,7 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
  ![включение интеграции](./media/enable-integration.png)
 
-4. На [портале ATP в Защитнике Windows](https://beta.securitycenter.windows.com/preferences/advanced) выберите **Параметры**, **Дополнительные функции** и задайте для параметра **Интеграция Azure ATP** значение **Вкл**. 
+4. На [портале ATP в Защитнике Windows](https://securitycenter.windows.com/preferences/advanced) выберите **Параметры**, **Дополнительные функции** и задайте для параметра **Интеграция Azure ATP** значение **Вкл**. 
 
  ![включение интеграции с ATP в Защитнике Windows](./media/wd-atp-enable.png)
 

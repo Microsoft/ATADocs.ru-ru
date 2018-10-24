@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,28 +13,17 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a538ce4596da106d11646e27aa65131bb47380d2
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 9202ba7c2519de0c7cd2eb3103578159dc437e83
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48782994"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315750"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
-<<<<<<< ЗАГОЛОВОК
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>Настройка учетных записей Honeytoken и исключений из обнаружения
-=======
-
-# <a name="install-azure-atp---step-7"></a>Установка Azure ATP. Шаг 7
-
-> [!div class="step-by-step"]
-> [« Шаг 6](install-atp-step6-vpn.md)
-> [Шаг 8 »](install-atp-step8-samr.md)
-
-## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>Шаг 7. Настройка учетных записей Honeytoken и исключений из обнаружения
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 В Azure ATP можно исключать из обнаружения определенные IP-адреса или пользователей. 
 
@@ -69,14 +58,6 @@ ms.locfileid: "48782994"
 В службе "Расширенная защита SQL от угроз" сразу же начнется проверка на наличие подозрительных действий. Для некоторых обнаружений, например чрезмерных изменений группы, требуется период распознавания, поэтому они недоступны сразу же после развертывания службы "Расширенная защита SQL от угроз".
 
 
-<a name="-head"></a><<<<<<< ЗАГОЛОВОК
-=======
-
-> [!div class="step-by-step"]
-> [« Шаг 6](install-atp-step6-vpn.md)
-> [Шаг 8 »](install-atp-step8-samr.md)
-
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 ## <a name="see-also"></a>См. также
 - [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
