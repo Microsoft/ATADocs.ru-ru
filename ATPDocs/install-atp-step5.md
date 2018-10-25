@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6f65b3af56e683a385f7128a989170c8c4073b3e
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: b7ddaca0f0c5691c90873cef9af6cef13fa9650a
+ms.sourcegitcommit: e783df4c9d928fedf6dc3c65d58d9b530cdd2ff2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49800052"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -27,7 +27,8 @@ ms.locfileid: "48783871"
 # <a name="install-azure-atp---step-5"></a>Установка Azure ATP. Шаг 5
 
 > [!div class="step-by-step"]
-> [« Шаг 4](install-atp-step4.md)
+> [« Шаг 4](install-atp-step4.md)
+> [Шаг 6 »](install-atp-step6-vpn.md)
 
 
 
@@ -61,7 +62,7 @@ ms.locfileid: "48783871"
    Рекомендуется отключить настройку датчиков Azure ATP на удаленных площадках в качестве потенциальных синхронизаторов домена.
    Если контроллер домена предназначен только для чтения, не указывайте его в качестве потенциального синхронизатора домена. Дополнительные сведения о синхронизации домена в Azure ATP см. в статье [Архитектура Azure ATP](atp-architecture.md#azure-atp-sensor-features).
   
-4. Нажмите кнопку **Сохранить**.
+3. Нажмите кнопку **Сохранить**.
 
 
 ## <a name="validate-installations"></a>Проверка установки
@@ -79,7 +80,8 @@ ms.locfileid: "48783871"
 
 
 > [!div class="step-by-step"]
-> [« Шаг 4](install-atp-step4.md)
+> [« Шаг 4](install-atp-step4.md)
+> [Шаг 6 »](install-atp-step6-vpn.md)
 
 
 
