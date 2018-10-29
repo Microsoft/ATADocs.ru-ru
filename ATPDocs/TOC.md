@@ -37,6 +37,7 @@
 ## [Отчеты Azure ATP](reports.md)
 ## [Общие сведения о профилях сущностей](entity-profiles.md)
 ## [Отслеживаемые действия](monitored-activities.md)
+### [Поиск и фильтрация отслеживаемых действий](atp-activities-search.md)
 ## [Управление конфиденциальными учетными записями](sensitive-accounts.md)
 ## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
 ## [Исключения и учетные записи Honeytoken](install-atp-step7.md)
