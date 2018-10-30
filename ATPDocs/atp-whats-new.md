@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,21 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: dc008506e7b19a8d6eafd455a4414b1513608811
-ms.sourcegitcommit: c4978be196e0039c7a5d5887bec4cbc5c01d64f9
+ms.openlocfilehash: 5e400f51281ea9d0dd17be50800f0d0a9d467986
+ms.sourcegitcommit: 7b138a310a6b31a6375d87a95c7866cb9f701a9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848636"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315907"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+## <a name="azure-atp-release-250"></a>Azure ATP, выпуск 2.50
+Дата выпуска: 14 октября 2018 г.
+- Эта версия включает улучшения, а также исправления нескольких проблем.
+
 
 ## <a name="azure-atp-release-249"></a>Azure ATP, выпуск 2.49
 Дата выпуска: 7 октября 2018 г.

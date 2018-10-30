@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,29 +13,19 @@ ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 382b0f31cbc24dde3905d99bab7ed8be8feb5cb4
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 9f5caf3ef7c0c986404cfe90a6f8cc40aa9462b4
+ms.sourcegitcommit: 30d874808cfeafd46ee8fbbf34e0bbcb337f6544
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783752"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49089378"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
-
 # <a name="integrate-vpn"></a>Интеграция VPN
 
-<<<<<<< HEAD Azure Advanced Threat Protection (ATP) может собирать сведения о данных учета из решений VPN. Если настроить эту функцию, страница профиля пользователя будет включать сведения из VPN-подключений, в том числе IP-адреса и расположения, из которых осуществлялись подключения. Дополнительные данные о действиях пользователей помогут в процессе анализа, а также при обнаружении неправильных VPN-подключений. Вызов для разрешения внешних IP-адресов в расположении является анонимным. Личный идентификатор в этом вызове не отправляется.
-=======
-> [!div class="step-by-step"]
-> [« Шаг 5](install-atp-step5.md)
-> [Шаг 7 »](install-atp-step7.md)
-
-## <a name="step-6-integrate-vpn"></a>Шаг 6. Интеграция VPN
-
 Azure Advanced Threat Protection (ATP) может собирать сведения о данных учета из решений VPN. Если настроить эту функцию, страница профиля пользователя будет включать сведения из VPN-подключений, в том числе IP-адреса и расположения, из которых осуществлялись подключения. Дополнительные данные о действиях пользователей помогут в процессе анализа, а также при обнаружении неправильных VPN-подключений. Вызов для разрешения внешних IP-адресов в расположении является анонимным. Личный идентификатор в этом вызове не отправляется.
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 Azure ATP интегрируется с решением VPN путем прослушивания событий учета RADIUS, направляемых в датчики Azure ATP. Этот механизм основан на стандартном учете RADIUS ([RFC 2866](https://tools.ietf.org/html/rfc2866)). Поддерживаются следующие поставщики VPN.
 
@@ -88,12 +78,6 @@ Azure ATP собирает данные VPN. Они помогают профи
 
  После того как датчик Azure ATP будет получать события VPN и отправлять их в облачную службу Azure ATP для обработки, в профиле сущности будут указываться различные места доступа VPN, а действия в профиле будут указывать расположения.
 
-<a name="-head"></a><<<<<<< ЗАГОЛОВОК
-=======
-> [!div class="step-by-step"]
-> [« Шаг 6](install-atp-step5.md)
-> [Шаг 7 »](install-atp-step7.md)
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 
 ## <a name="see-also"></a>См. также
