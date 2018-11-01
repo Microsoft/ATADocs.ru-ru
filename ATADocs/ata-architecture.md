@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 41d685916c667a467edd307fac71933366019fea
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: a71491fc717aca3f9b418750b78657e83ac65ecf
+ms.sourcegitcommit: 1b914a85cfa33dc0c5005f9dc68e6ea08a0164ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50411652"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -148,7 +148,6 @@ ATA отслеживает сетевой трафик контроллеров 
 
 В таблице ниже приведен пример контроллера домена с достаточным количеством вычислительных ресурсов для больших квот, чем нужны в данный момент, чтобы обеспечить мониторинг всего трафика:
 
-> [!div class="mx-tableFixed"]
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Сброс шлюза|
@@ -156,7 +155,6 @@ ATA отслеживает сетевой трафик контроллеров 
 
 Если Active Directory требуются дополнительные вычислительные ресурсы, квота для упрощенного шлюза ATA сокращается. В следующем примере упрощенному шлюзу ATA требуется больше ресурсов, чем выделено квотой. Поэтому он сбрасывает некоторый трафик (выполняется мониторинг только части трафика):
 
-> [!div class="mx-tableFixed"]
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Выполняется ли сброс шлюза|

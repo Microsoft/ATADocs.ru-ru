@@ -12,12 +12,12 @@ ms.service: ''
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 80f96966a1ba9e62b23311cc19ed8fc5a8210bba
-ms.sourcegitcommit: 56065ee43dac299203871cd6f025315520750b3b
+ms.openlocfilehash: b1b8b1fb9c1bf5a11c8a05daf3567f4a25c35c3f
+ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233870"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50132696"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -54,6 +54,7 @@ URL-адрес используется в следующих сценариях
 3. Дождитесь завершения синхронизации шлюзов ATA. Сейчас у них есть два потенциальных URL-адреса, по которым они могут подключаться к консоли ATA. Пока шлюз ATA может подключиться с помощью исходного URL-адреса, новый адрес использоваться не будет.
 
 4. После синхронизации обновленной конфигурации на всех шлюзах ATA нажмите на странице настройки центра кнопку **Активировать**, чтобы активировать новый URL-адрес. После активации нового адреса шлюзы начнут использовать его для подключения к центру ATA. Подключившись к службе центра ATA, шлюз ATA скачает последнюю конфигурацию и получит только новый URL-адрес для консоли ATA. 
+
 5. 
  ![Активация сертификата](media/center-activation.png)
 
