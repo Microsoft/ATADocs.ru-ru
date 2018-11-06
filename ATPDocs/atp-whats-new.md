@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/14/2018
+ms.date: 10/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,23 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5e400f51281ea9d0dd17be50800f0d0a9d467986
-ms.sourcegitcommit: 7b138a310a6b31a6375d87a95c7866cb9f701a9e
+ms.openlocfilehash: bf620fd9eb3ee750f19a4fe69aa3efea16b9385a
+ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "49315907"
+ms.lasthandoff: 10/21/2018
+ms.locfileid: "49480673"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+
+## <a name="azure-atp-release-251"></a>Azure ATP, выпуск 2.5.1
+Дата выпуска: 21 октября 2018 г.
+
+- Теперь вы можете включить или отключить **интеграцию ATP и Защитника Windows** на экране [Конфигурация](integrate-wd-atp.md#how-to-integrate-azure-atp-with-windows-defender-atp) на портале Azure ATP. (Для доступа к этой функции пользователь Azure ATP должен иметь права глобального администратора или администратора безопасности в клиенте AAD.)
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-250"></a>Azure ATP, выпуск 2.50
 Дата выпуска: 14 октября 2018 г.
