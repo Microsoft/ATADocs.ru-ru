@@ -1,11 +1,11 @@
 ---
-title: Настройка параметров уведомлений по электронной почте в Azure Advanced Threat Protection | Документы Майкрософт
+title: Настройка параметров syslog в Расширенной защите от угроз Azure | Документация Майкрософт
 description: В этой статье описано, как настроить получение уведомлений Azure ATP о подозрительной активности (по электронной почте или с помощью пересылки событий Azure ATP)
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 11/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 18f6d38f871539cf0701b697c9d0c5d9d96a27e4
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: ac01e5ae534fc5df5da70a8d1c47c11c1c455c98
+ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783548"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50983095"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -58,6 +58,9 @@ ms.locfileid: "48783548"
  ![Изображение: параметры сервера системного журнала Azure ATP](media/atp-syslog.png)
 
 6. Можно выбрать, какие события будут отправляться на сервер системного журнала. В разделе **Уведомления системного журнала** укажите, какие уведомления должны отправляться на сервер системного журнала. Доступны новые оповещения системы безопасности, уведомления об обновленных подозрительных действиях и новых проблемах с работоспособностью.
+
+> [!NOTE]
+> Если вы планируете создавать автоматические действия или сценарии для журналов SIEM в Azure ATP, рекомендуем для идентификации типа оповещения использовать не имя, а поле **externalId**. Имена оповещений иногда могут меняться, а **externalId** остается неизменным. Дополнительные сведения см. в справочнике по [журналам Azure ATP SIEM](cef-format-sa.md). 
 
 
 ## <a name="see-also"></a>См. также

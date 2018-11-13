@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5069fdda7c27a54705a17da79dbb536d412c4113
-ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
+ms.openlocfilehash: c1bbbfd41e368b716a17bf3273e1da7d0340bba5
+ms.sourcegitcommit: 20fae2733391068391b8db650d2a6b3251ae0456
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2018
-ms.locfileid: "49480639"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50972899"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -47,7 +47,7 @@ ms.locfileid: "49480639"
 |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/kb/281884).|
 |System.InvalidOperationException: Category does not exist (System.InvalidOperationException: категория не существует).|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/kb/2554336).|
 |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
-|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих методов. </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+|System.IO.IOException: проверка подлинности не пройдена из-за закрытия транспортного потока удаленной стороной.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 |System.TypeLoadException: не удалось загрузить тип "Microsoft.Opn.Runtime.Values.BinaryValueBufferManager" из сборки "Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"|Шлюзу ATA не удалось загрузить необходимые файлы анализа.|Проверьте, установлен ли анализатор сообщений Майкрософт. Установка анализатора сообщений вместе со шлюзом ATA или упрощенным шлюзом ATA не поддерживается. Удалите анализатор сообщений и перезапустите службу шлюза.|
 |System.Net.WebException: удаленный сервер вернул ошибку: требуется проверка подлинности прокси-сервера (407)|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
 |System.IO.DirectoryNotFoundException: система не может найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
@@ -79,7 +79,8 @@ ms.locfileid: "49480639"
 |Проблема|Описание|Решение|
 |-------------|----------|---------|
 |От контроллера домена не поступает трафик, но оповещения мониторинга выводятся|    От контроллера домена не поступает трафик с использованием зеркального отображения портов через шлюз ATA|В сетевом адаптере захвата в шлюзе ATA отключите следующие функции в разделе **Дополнительные параметры**:<br></br>объединение полученных сегментов (IPv4);<br></br>объединение полученных сегментов (IPv6).|
-|Отображается следующее предупреждение системы мониторинга: **Часть сетевого трафика не анализируется**|Вы можете получить это предупреждение, если у вас есть шлюз ATA или упрощенный шлюз на виртуальных машинах VMware. Это происходит из-за несоответствия конфигураций в VMware.|Задайте в конфигурации сетевого адаптера виртуальной машины значения **0** или **Отключено** для следующих параметров: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|<!-- line contains 5 vertical lines -->
+|Отображается следующее предупреждение системы мониторинга: "Часть сетевого трафика не анализируется".|Вы можете получить это предупреждение, если у вас есть шлюз ATA или упрощенный шлюз на виртуальных машинах VMware. Это происходит из-за несоответствия конфигураций в VMware.|Задайте в конфигурации сетевого адаптера виртуальной машины значения "0" или "Отключено" для следующих параметров: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload. Протокол TLS 1.0 отключен в шлюзе ATA, а для .Net установлено значение TLS 1.2.|
+
 
 
 
