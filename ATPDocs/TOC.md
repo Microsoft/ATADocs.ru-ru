@@ -50,6 +50,7 @@
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
 ## [Управление оповещениями о работоспособности в Azure ATP](monitoring-alerts.md)
 ## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
-### [Устранение неполадок с помощью журналов](troubleshooting-atp-using-logs.md)
+## [Устранение неполадок с помощью журналов](troubleshooting-atp-using-logs.md)
+## [Известные проблемы с Azure ATP](known-issues.md)
 ## [Поддержка и информация](atp-support.md)
 ## [План подготовки Azure ATP к работе](atp-resources.md)
