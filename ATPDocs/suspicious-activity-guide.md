@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: daeb998f6e97bc4ebdf290d4430fec8fcef40313
-ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
+ms.openlocfilehash: 6c2123011f8a9af0db4b04ef1cf6cb139e7e63bb
+ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50983163"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157630"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -436,7 +436,7 @@ API защиты данных (DPAPI) используется Windows для з
 
 [Длинные сложные пароли](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy) обеспечивают необходимый первый уровень защиты от атак методом подбора.
 
-## <a name="suspicious-communication-over-dns---preview"></a>Подозрительный обмен данными через DNS (предварительная версия)
+## <a name="suspicious-communication-over-dns"></a>Подозрительный обмен данными через DNS 
 
 **Описание**
 

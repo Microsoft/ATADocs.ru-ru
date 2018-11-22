@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8707d34f22c358936bd6158311a78a45d783483c
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b3fb06733a2ba1c38aeb682cd6f8cc57a2ba1a3b
+ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133333"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157528"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
@@ -41,7 +41,6 @@ ms.locfileid: "46133333"
 |проверить наличие коллекций в базе данных.|`show collections`|Полезно использовать в качестве полной проверки, чтобы убедиться, что трафик записывается в базу данных и что АТА получает сведения о событии 4776.|
 |получить сведения о пользователе, компьютере или группе (UniqueEntity). Это, например, могут быть сведения об идентификаторе пользователя.|`db.UniqueEntity.find({CompleteSearchNames: "<name of entity in lower case>"})`||
 |найти исходящий трафик проверки подлинности Kerberos с конкретного компьютера в определенный день.|`db.KerberosAs_<datetime>.find({SourceComputerId: "<Id of the source computer>"})`|Чтобы получить &lt;идентификатор исходного компьютера&gt;, выполните запрос к коллекциям UniqueEntity, как показано в примере.<br /><br />Каждый тип сетевой активности, например проверка подлинности Kerberos, имеет собственную коллекцию для каждой даты в формате UTC.|
-|найти исходящий трафик NTLM с конкретного компьютера, имеющего отношение к конкретной учетной записи, в определенный день.|`db.Ntlm_<datetime>.find({SourceComputerId: "<Id of the source computer>", SourceAccountId: "<Id of the account>"})`|Чтобы получить &lt;идентификатор исходного компьютера&gt; и &lt;идентификатор учетной записи&gt;, выполните запрос к коллекциям UniqueEntity, как показано в примере.<br /><br />Каждый тип сетевых операций, например проверка подлинности NTLM, имеет собственную коллекцию для каждой даты в формате UTC.|
 |выполнять расширенные изменения конфигурации. В этом примере измените размер очереди отправки для всех шлюзов ATA до 10 000.|`db.SystemProfile.update( {_t: "GatewaySystemProfile"} ,`<br>`{$set:{"Configuration.EntitySenderConfiguration.EntityBatchBlockMaxSize" : "10000"}})`|`|
 
 Ниже приведен пример кода, в котором используется синтаксис, приведенный ранее. Он предусмотрен для такого сценария — вы анализируете подозрительную активность, зафиксированную 20 октября 2015 года, и хотите узнать больше о действиях NTLM, совершенных в этот день пользователем John Doe:<br /><br />Сначала найдите идентификатор пользователя John Doe.
