@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c1c5aa0359ac0d24d2bf3fc3033986657c3fc897
-ms.sourcegitcommit: 2afc1486b40431f442d51a53df06e289796de87e
+ms.openlocfilehash: cab7dad8187c79ff1e5068594b972f58bb19040c
+ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561435"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157562"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -28,11 +28,11 @@ ms.locfileid: "51561435"
 
 Проблемы Azure ATP с известными обходными решениями см. в разделе [Устранение известных неполадок Azure ATP](troubleshooting-atp-known-issues.md). Проверить состояние клиента Azure ATP можно в [центре работоспособности Azure ATP](atp-health-center.md). 
 
-## <a name="winrm-not-supported-using-windows-server-2016"></a>WinRM не поддерживается в Windows Server 2016
+## <a name="remote-code-execution-attempts-using-remote-powershell-commands-or-scripts-are-not-detected-when-using-windows-server-2016"></a>Попытки удаленного выполнения кода использовать удаленные команды или скрипты PowerShell не обнаруживаются при использовании Windows Server 2016
 > [!div class="mx-tableFixed"]  
 |Проблема|Состояние|
 |----|----|
-|WinRM сейчас не поддерживает Windows Server 2016. Относящиеся сюда обнаружения и оповещения (попытки удаленного выполнения кода) недоступны на компьютерах с ОС Windows Server 2016.|Инженеры работают над устранением этой проблемы и добавлением поддержки Windows Server 2016.|
+|Попытки удаленного выполнения кода использовать удаленные команды PowerShell сейчас не обнаруживаются на компьютерах с датчиками, на которых запущена Windows Server 2016. Связанные обнаружения и полученные оповещения недоступны.|Инженеры работают над устранением этой проблемы и добавлением поддержки Windows Server 2016.|
 
 ## <a name="ad-groups-with-more-than-1000-members-have-limited-detail-sync"></a>Ограниченная синхронизация сведений в группах AD с более чем 1000 участников
 > [!div class="mx-tableFixed"]  

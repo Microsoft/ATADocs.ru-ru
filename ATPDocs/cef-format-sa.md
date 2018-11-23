@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: fcbeb18c3841799aad068c8eedd45af71660925e
-ms.sourcegitcommit: 2afc1486b40431f442d51a53df06e289796de87e
+ms.openlocfilehash: 4d1a4d24e2102a019b9df627f2d00c1df981c3ae
+ms.sourcegitcommit: 4d8e7c690453d9b78e6e597c3f8562250d335ba5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51560768"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177391"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -53,7 +53,9 @@ Azure ATP может пересылать события оповещений с
 > [!NOTE]
 > Если вы планируете создавать автоматические действия или сценарии для журналов SIEM в Azure ATP, рекомендуем для идентификации типа оповещения использовать не имя, а поле **externalId**. Имена оповещений иногда могут меняться, а **externalId** остается неизменным.  
 
-|Оповещение Azure ATP|Уникальный идентификатор ExternalId|
+## <a name="azure-atp-security-alert-unique-externalids"></a>Уникальный идентификатор externalIds оповещения системы безопасности Azure ATP
+
+|Имя оповещения системы безопасности|Уникальный идентификатор ExternalId|
 |---------|---------|
 |Атака методом подбора с помощью простой привязки LDAP|2004|
 |Понижение уровня шифрования — использование мастер-ключа|2011|
@@ -150,8 +152,8 @@ Azure ATP может пересылать события оповещений с
 ### <a name="suspicious-authentication-failures"></a>Подозрительные неудачные попытки проверки подлинности
 02-21-2018  16:19:20    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:15.397995+00:00 CENTER CEF 6076 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|BruteForceSecurityAlert|Подозрительные неудачные попытки проверки подлинности|5|start=2018-02-21T14:19:03.3831122Z app=Kerberos shost=CLIENT1 msg=Обнаружены исходящие с компьютера CLIENT1 подозрительные неудачные попытки проверки подлинности, означающие возможную атаку методом подбора. externalId=2023 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/fea88fc7-4110-454d-816d-349032474fd6 cs2Label=trigger cs2=new
 
-### <a name="suspicious-communication-over-dns--preview"></a>Подозрительный обмен данными через DNS (предварительная версия)
-10-04-2018  14:49:38    Auth.Warning    192.168.0.202   1 2018-10-04T11:49:25.954059+00:00 DC3 CEF 3604 DnsSuspiciousCommunicationSecuri ï»¿0|Microsoft|Azure ATP|2.49.5589.58606|DnsSuspiciousCommunicationSecurityAlert|[PREVIEW] Подозрительный обмен данными через DNS|5|start=2018-10-04T11:49:11.0822077Z app=DnsEvent dhost= suspiciousdomainname msg=Клиент CLIENT1 отправлял подозрительные запросы DNS на разрешение suspiciousdomainname externalId=2031 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/0fc77777-49ca-40b3-a7ba-7644f355539e cs2Label=trigger cs2=new
+### <a name="suspicious-communication-over-dns"></a>Подозрительный обмен данными через DNS
+10-04-2018  14:49:38    Auth.Warning    192.168.0.202   1 2018-10-04T11:49:25.954059+00:00 DC3 CEF 3604 DnsSuspiciousCommunicationSecuri ï»¿0|Microsoft|Azure ATP|2.49.5589.58606|DnsSuspiciousCommunicationSecurityAlert|Подозрительный обмен данными через DNS|5|start=2018-10-04T11:49:11.0822077Z app=DnsEvent dhost= suspiciousdomainname msg=Клиент CLIENT1 отправлял подозрительные запросы DNS на разрешение suspiciousdomainname externalId=2031 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/0fc77777-49ca-40b3-a7ba-7644f355539e cs2Label=trigger cs2=new
 
 ### <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)
 07-12-2018  11:18:07    Auth.Error  192.168.0.200    1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
