@@ -44,7 +44,8 @@
 ## [Управление оповещениями системы безопасности](working-with-suspicious-activities.md)
 # Оповещения системы безопасности Azure ATP
 ## [Руководство по оповещениям системы безопасности](suspicious-activity-guide.md)
-## [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)
+## [Пути бокового смещения](use-case-lateral-movement-path.md)
+### [Анализ путей бокового смещения](investigate-lateral-movement-path.md)
 ## [Анализ сущностей](investigate-entity.md)
 # Устранение неполадок
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
