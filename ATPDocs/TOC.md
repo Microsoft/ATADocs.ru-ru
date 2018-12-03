@@ -8,7 +8,7 @@
 ## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 ## [Планирование производительности Azure ATP](atp-capacity-planning.md)
 # Быстрый запуск
-## [Создание рабочей области на портале Azure ATP](install-atp-step1.md)
+## [Создание экземпляра Azure ATP](install-atp-step1.md)
 ## [Подключение к Active Directory](install-atp-step2.md)
 ### [Поддержка нескольких лесов в Azure ATP](atp-multi-forest.md)
 ## [Скачивание пакета датчиков Azure ATP](install-atp-step3.md)

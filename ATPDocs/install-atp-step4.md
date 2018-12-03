@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 52ffbac6acd762d4cf2898c170d7a026d2a37826
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: fd2a2316f63b5324e7869878104bd663e48b2771
+ms.sourcegitcommit: e2a89030c31376c6798697a62b484f45ed54e679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783735"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52501109"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -33,7 +33,7 @@ ms.locfileid: "48783735"
 ## <a name="step-4-install-the-azure-atp-sensor"></a>Шаг 4. Установка датчика Azure ATP
 
 > [!IMPORTANT]
->На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, это создаст пакет установки датчика Azure ATP, после чего потребуется перезагрузить сервер.
+>На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, пакет установки датчика Azure ATP установит ее, после чего потребуется перезагрузить сервер.
 
 Выполните следующие действия на контроллере домена.
 
