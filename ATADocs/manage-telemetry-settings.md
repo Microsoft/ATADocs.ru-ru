@@ -2,33 +2,35 @@
 title: Управление системными журналами Advanced Threat Analytics | Документация Майкрософт
 description: Описание данных, которые собирает решение ATA, и пошаговые инструкции по отключению сбора данных.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/26/2018
-ms.topic: conceptual
-ms.prod: advanced-threat-analytics
-ms.service: ''
+ms.date: 8/19/2018
+ms.topic: article
+ms.prod: ''
+ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0db1054f47d462251577a4d5251c07e8cd6283e8
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: a0b856ced72ad91a046f1116f96648baba7f7cba
+ms.sourcegitcommit: bdf5dc203ecec3e7542f2ed08852afeff4f20dcd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133418"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52950311"
 ---
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 
 
-# <a name="manage-system-generated-logs-note"></a>Управление системными журналами> [!NOTE]
+# <a name="manage-system-generated-logs"></a>Управление системными журналами> 
+
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-Advanced Threat Analytics (ATA) собирает анонимные данные системных журналов об ATA и передает их по подключению HTTPS на серверы Майкрософт.  Эти данные используются в Майкрософт для улучшения будущих версий ATA.
+ > [!NOTE]
+ > Advanced Threat Analytics (ATA) собирает анонимные данные системных журналов об ATA и передает их по подключению HTTPS на серверы Майкрософт. Эти данные используются в Майкрософт для улучшения будущих версий ATA.
 
 ## <a name="data-collected"></a>Собираемые данные
 Собираемые анонимные данные включают следующие параметры:

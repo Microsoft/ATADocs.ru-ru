@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 12/05/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 23d92b207c9bcfeb38afa67bdd5e4911b1a16aa4
-ms.sourcegitcommit: 02a4d7a0d44817da8e40580c5fe97f8839a7941f
+ms.openlocfilehash: fec3ccbf44b4637132d769e35c4c83f7a4b5e5f5
+ms.sourcegitcommit: bdf5dc203ecec3e7542f2ed08852afeff4f20dcd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48876585"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52950328"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -40,7 +40,6 @@ ms.locfileid: "48876585"
 При использовании автоматической установки Azure ATP установщик настраивается для автоматического перезапуска сервера в конце установки (при необходимости). Автоматическую установку следует выполнять только в течение периода обслуживания. Из-за ошибки в установщике Windows флаг *norestart* не позволяет гарантированно запретить перезагрузку сервера.
 
 Чтобы отслеживать ход выполнения развертывания, проверяйте журналы установщика Azure ATP, расположенные в каталоге **%AppData%\Local\Temp**.
-
 
 
 ## <a name="azure-atp-sensor-silent-installation"></a>Автоматическая установка датчика Azure ATP
@@ -75,9 +74,9 @@ ms.locfileid: "48876585"
 > [!div class="mx-tableFixed"]
 |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
 |-------------|----------|---------|---------|
-|AccessKey|AccessKey="\*\*"|Да|Задает ключ доступа, используемый для регистрации датчика Azure ATP в рабочей области Azure ATP.|
+|AccessKey|AccessKey="\*\*"|Да|Задает ключ доступа, используемый для регистрации датчика Azure ATP в экземпляре Azure ATP.|
 
-**Примеры**. Чтобы автоматически установить датчик Azure ATP, выполните вход в присоединенный к домену компьютер с помощью учетных данных администратора Azure ATP. При этом во время установки вводить учетные данные не потребуется. В противном случае необходимо выполнить регистрацию в облачной службе Azure ATP с помощью указанных учетных данных.
+**Примеры**. Для автоматической установки датчика Azure ATP используйте приведенную ниже команду.
 
     "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
     AccessKey="3WlO0uKW7lY6Lk0+dfkfkJQ0qZV6aSq5WxLf71+fuBhggCl/BMs9JxfAwi7oy9vYGviazUS1EPpzte7z8s4grw==" 

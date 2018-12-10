@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a7dc9b6c9243377a613490e166fb7c0294ecde99
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: da38cef088dcd255c264792fd70bfebf1c42a34b
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783327"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744937"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -70,9 +70,9 @@ ms.locfileid: "48783327"
 |Азия|triprd1wcasse1sensorapi.atp.azure.com|
 
 
-Вы можете также усилить защиту брандмауэра или правил прокси-сервера для конкретной рабочей области, создав правило для следующих записей DNS:
-- \<имя_рабочей_области>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
-- \<имя_рабочей_области>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
+Вы можете также усилить защиту брандмауэра или правил прокси-сервера для конкретного экземпляра, создав правило для следующих записей DNS:
+- \<имя_экземпляра>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
+- \<иvя_экземпляра>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
 
  
 > [!NOTE]

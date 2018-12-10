@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4b72d112a39b9fd7448ecfe2aa5c1808752d32a8
-ms.sourcegitcommit: 034d5cbd077a0dd18638d27aabbcf7b735993b08
+ms.openlocfilehash: ad2a7e86b2280e1b30a7605bc832ede1e19cb7a2
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50749009"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52744954"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 

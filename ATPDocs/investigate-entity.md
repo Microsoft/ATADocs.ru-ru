@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 72e26d9cdc539da168d1bc7c274971526eec61d1
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 379feeef63776e71375a789daf4c9608a863e37b
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783310"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744478"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -34,7 +34,7 @@ ms.locfileid: "48783310"
 
 Чтобы открыть страницу профиля сущности, щелкните имя сущности, например имя пользователя, на временной шкале оповещений системы безопасности. Если навести указатель мыши на имя сущности на странице оповещения системы безопасности, отобразится мини-версия профиля сущности.
 
-Профиль сущности позволяет просматривать действия сущности, данные в каталоге и пути бокового смещения для сущности. Дополнительные сведения см. в статье [Анализ профилей сущностей](entity-profiles.md).
+Профиль сущности позволяет просматривать действия сущности, данные в каталоге и [пути бокового смещения](use-case-lateral-movement-path.md) для сущности. Дополнительные сведения о сущностях см. в статье [Анализ профилей сущностей](entity-profiles.md).
 
 ## <a name="check-entity-tags"></a>Проверка тегов сущности
 
@@ -111,5 +111,5 @@ Azure ATP помогает предотвратить атаки, использ
     
 ## <a name="see-also"></a>См. также:
 
-- [Обработка подозрительных действий](working-with-suspicious-activities.md)
+- [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

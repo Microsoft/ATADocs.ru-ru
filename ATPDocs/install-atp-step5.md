@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b7ddaca0f0c5691c90873cef9af6cef13fa9650a
-ms.sourcegitcommit: e783df4c9d928fedf6dc3c65d58d9b530cdd2ff2
+ms.openlocfilehash: 2bdfd0fe41ed6dc5f489784c2095cefd2032d135
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49800052"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744358"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -75,7 +75,7 @@ ms.locfileid: "49800052"
  >[!NOTE]
  > Так как версия Azure ATP часто обновляется, проверьте последнюю версию на портале Azure ATP, выбрав в разделе **Конфигурация** пункт **О решении**. 
 
-3.  Перейдите по URL-адресу рабочей области. На портале Azure ATP выполните поиск какой-либо сущности, например пользователя или группы в домене.
+3.  Перейдите по URL-адресу экземпляра Azure ATP. На портале Azure ATP выполните поиск какой-либо сущности, например пользователя или группы в домене.
 
 
 

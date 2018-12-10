@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/14/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a5d6693aa44fd82d10654ebd40533100e8834627
-ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
+ms.openlocfilehash: 566b7ac598dcdd0d44d30c50c01846c42d0b643f
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "49315767"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744801"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
@@ -30,13 +30,13 @@ ms.locfileid: "49315767"
 
 |Для выполнения этого…|…сделайте следующее.|
 |----|----|
-|Посмотреть самую популярную документацию|Прочитайте пять ключевых страниц.<br>- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>- [Создание рабочей области](install-atp-step1.md)|
-|Связь с группой разработчиков и коллегами|Посетите страницу сообщества [Tech Community](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) по Azure Advanced Threat Protection.|
-|Проверить данные подписки и получить список поддерживаемых компонентов|См. [сведения о подписке](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) и [список компонентов](https://www.microsoft.com/cloud-platform/azure-information-protection-features) на сайте Azure Advanced Threat Protection.|
+|Посмотреть самую популярную документацию|Прочитайте пять ключевых страниц.<br>- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>- [Создание экземпляра](install-atp-step1.md)|
+|Связь с группой разработчиков и коллегами|Посетите страницу сообщества  [Tech Community](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) по Azure Advanced Threat Protection.|
+|Проверить данные подписки и получить список поддерживаемых компонентов|См.  [сведения о подписке](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) и  [список компонентов](https://www.microsoft.com/cloud-platform/azure-information-protection-features) на сайте Azure Advanced Threat Protection.|
 
 ## <a name="information-about-new-releases-and-updates"></a>Сведения о новых выпусках и обновлениях
 
-Команда по продукту Azure Advanced Threat Protection размещает объявления о новых выпусках и обновлениях в [блоге Enterprise Mobility and Security.](https://cloudblogs.microsoft.com/enterprisemobility/author/microsoft-advanced-threat-analytics-team/)
+Команда по продукту Azure Advanced Threat Protection размещает объявления о новых выпусках и обновлениях в  [блоге Enterprise Mobility and Security](https://cloudblogs.microsoft.com/enterprisemobility/author/microsoft-advanced-threat-analytics-team/).
 В статьях этого блога публикуются дополнения к документации по продукту и сведения о поддержке.
 
 Актуальный список новых возможностей и изменений в Azure ATP см. в статье [Новые возможности Azure Advanced Threat Protection](atp-whats-new.md).
@@ -47,7 +47,7 @@ ms.locfileid: "49315767"
 
 Чтобы обратиться в службу поддержки Майкрософт, сделайте следующее.
 
-При наличии у вас поддержки Premier посетите [портал для клиентов службы поддержки Premier](https://premier.microsoft.com/) для отправки обращений, просмотра решений и получения помощи.
+При наличии у вас поддержки Premier посетите  [портал для клиентов службы поддержки Premier](https://premier.microsoft.com/) для отправки обращений, просмотра решений и получения помощи.
 
 Другие клиенты могут использовать следующие каналы поддержки.
 
@@ -66,7 +66,7 @@ ms.locfileid: "49315767"
 
 #### <a name="on-demand-videos"></a>Видеоролики по запросу
 
-- Семинары, посвященные [Azure Advanced Threat Protection](https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&q=azure%2520advanced%2520threat%2520protection#ignite-html-anchor), на конференции Microsoft Ignite 2018.
+- Семинары, посвященные  [Azure Advanced Threat Protection](https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&q=azure%2520advanced%2520threat%2520protection#ignite-html-anchor), на конференции Microsoft Ignite 2018.
 
 Устранение неполадок.
 
@@ -76,8 +76,8 @@ ms.locfileid: "49315767"
 
 - Если в вашей среде развернута служба ATP в Защитнике Windows и вы хотите интегрировать ее с Azure Advanced Threat Protection, см. [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md).
 
-- Дополнительные сведения об анализе оповещений системы безопасности см. в [руководстве по оповещениям системы безопасности](suspicious-activity-guide.md).
+- Дополнительные сведения об анализе оповещений системы безопасности см. в  [руководстве по оповещениям системы безопасности](suspicious-activity-guide.md).
 
 ### <a name="community-resources"></a>Ресурсы сообщества
 
-Рекомендуем вам [группу Yammer, посвященную Azure Advanced Threat Protection](https://www.yammer.com/AskIPTeam). Здесь вы можете обратиться напрямую к специалистам команды по Azure Advanced Threat Protection, а также обменяться знаниями и опытом с другими администраторами и консультантами.
+Рекомендуем вам  [группу Yammer, посвященную Azure Advanced Threat Protection](https://www.yammer.com/AskIPTeam). Здесь вы можете обратиться напрямую к специалистам команды по Azure Advanced Threat Protection, а также обменяться знаниями и опытом с другими администраторами и консультантами.

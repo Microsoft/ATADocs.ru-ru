@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a175a23a087b11d481dbcf055bff4fe5577b4f8e
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a5b0befaa484a94cf307559296c887370228abb4
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783123"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744308"
 ---
 *Применяется к: Azure Advanced Threat Protection*
 
 
 
-# <a name="change-azure-atp-workspace-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала рабочей области Azure ATP с использованием пароля для подключения к домену
+# <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
 
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "48783123"
 > [!NOTE]
 > Это имя пользователя и пароль из локального развертывания Active Directory, а не из Azure AD.
 
-1.  Откройте портал Azure ATP, воспользовавшись URL-адресом рабочей области.
+1.  Откройте портал Azure ATP, воспользовавшись его URL-адресом.
 
 2.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
