@@ -3,6 +3,7 @@
 ## [Какие угрозы обнаруживает ATA?](ata-threats.md)
 ## Новые возможности ATA?
 ### [Новые возможности ATA версии 1.9](whats-new-version-1.9.md)
+#### [Обновление до ATA 1.9.1. Руководство по миграции](ata-update-1.9.1-migration-guide.md)
 #### [Обновление до ATA 1.9. Руководство по миграции](ata-update-1.9-migration-guide.md)
 ### [Новые возможности в ATA версии 1.8](whats-new-version-1.8.md)
 #### [Обновление до ATA 1.8. Руководство по миграции](ata-update-1.8-migration-guide.md)
