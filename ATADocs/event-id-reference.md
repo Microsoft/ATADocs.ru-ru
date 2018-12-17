@@ -2,10 +2,10 @@
 title: Справочник по идентификаторам событий ATA | Microsoft Docs
 description: Предоставляет список идентификаторов событий ATA и их описания.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 38610c6b8f94dbe1a31e218e064750bf2bde2c49
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 353395f782d29bb18e95c02ad56407a592d8c20b
+ms.sourcegitcommit: 2b15356612eb720f83235ff8cb08e4a6435206ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133146"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53022430"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
@@ -89,7 +89,13 @@ ms.locfileid: "46133146"
 
 2007 — подозрительное действие: разведывательная атака с использованием DNS 
 
-2008 — подозрительное действие: переход на более слабое шифрование 
+2008 — подозрительное действие: переход на более слабое шифрование (нет подтипа)
+
+2009 — подозрительное действие: переход на более слабое шифрование (вероятна атака GoldenTicket)
+       
+2010 — подозрительное действие: переход на более слабое шифрование (вероятна атака Overpass-The-Hash)
+
+2011 — подозрительное действие: переход на более слабое шифрование (вероятен вирус Skeleton-Key)
 
 2012 — подозрительное действие: перечисление сеансов 
 
@@ -113,7 +119,11 @@ ms.locfileid: "46133146"
 
 2023 — подозрительное действие: атака методом подбора 
 
-2024 — подозрительное действие: аномальное изменение конфиденциального членства в группе  
+2024 — подозрительное действие: аномальное изменение членства в конфиденциальной группе 
+
+2025 — подозрительное действие: аномальное VPN-подключение
+
+2026 — подозрительное действие: создание вредоносной службы
 
 ## <a name="ata-auditing-events"></a>События аудита ATA
 

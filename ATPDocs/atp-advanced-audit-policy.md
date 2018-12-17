@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d812673ed387bcd6a14e6b316cb2224819c503e3
-ms.sourcegitcommit: 46b6a5088ed975bcfb36e7f9a3b5c00ecd5e185a
+ms.openlocfilehash: 9d9294a22d1e3fd1847d42bd376e65fd114b04bf
+ms.sourcegitcommit: a2f6b52f66c89b9f2ca7410426b759a0b0de8d31
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645282"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52981944"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 # <a name="azure-atp-advanced-audit-policy-check"></a>Проверка расширенной политики аудита Azure ATP
@@ -56,8 +56,8 @@ ms.locfileid: "51645282"
 
     ![Аудит управления группами безопасности](media/atp-advanced-audit-policy-check-step-4.png)
 
-> [!NOTE]
-> Если вы решили использовать локальную политику, добавьте в нее журналы аудита **Учетная запись входа** и **Управление учетными записями**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
+    > [!NOTE]
+    > Если вы решили использовать локальную политику, добавьте в нее журналы аудита **Учетная запись входа** и **Управление учетными записями**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
 
 7. Новые события, примененные с помощью объекта групповой политики, отображаются в **журналах событий Windows**.
 

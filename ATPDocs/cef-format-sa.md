@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 12/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2cef2652b896ffb31d9b93ebf15e06d2c0638370
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 5d2e359db2cd3b0d358ce14a9f662a82c47e23a2
+ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744495"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125121"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
@@ -81,11 +81,10 @@ Azure ATP может пересылать события оповещений с
 |Подозрительное изменение привилегированных групп|Подозрительное изменение привилегированных групп|2024|
 |Создание подозрительной службы|Создание подозрительной службы|2026|
 |Подозрительные VPN-подключения|Подозрительные VPN-подключения|2025|
-|Предполагаемая атака программы-шантажиста WannaCry|Нестандартное использование протоколов (потенциальная атака программы-шантажиста WannaCry)*|2002|
-|Предполагаемая атака методом подбора (SMB)|Нестандартное использование протоколов (потенциальное использование вредоносных средств, таких как Hydra)*|2002|
-|Предполагаемое использование платформы взлома Metasploit|Нестандартное использование протоколов (потенциальное использование средств взлома Metasploit)*|2002|
-|Предполагаемая атака Overpass-the-Hash (Kerberos)|Нестандартное использование протоколов Kerberos (потенциальная атака Overpass-the-Hash)*|2002|
-|Оповещения о * *нестандартном использовании протоколов* сейчас имеют общий идентификатор externalId. В будущих выпусках каждый тип подобных оповещений получит уникальный externalId.||****|
+|Предполагаемая атака программы-шантажиста WannaCry|Нестандартное использование протоколов (потенциальная атака программы-шантажиста WannaCry)*|2035|
+|Предполагаемая атака методом подбора (SMB)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
+|Предполагаемое использование платформы взлома Metasploit|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
+|Предполагаемая атака Overpass-the-Hash (Kerberos)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
 |Разведывательная атака с использованием пользователя и IP-адреса (SMB) |Разведывательная атака с использованием перечисления сеансов SMB|2012|
 |Разведывательная атака с использованием пользователей и членства в группах (SAMR)|разведывательная атака с использованием запросов к службам каталогов;|2021|
 
@@ -174,14 +173,20 @@ Azure ATP может пересылать события оповещений с
 ### <a name="suspicious-vpn-connection"></a>Подозрительные VPN-подключения
 07-03-2018  13:13:12    Auth.Warning  192.168.0.200   1 2018-07-03T10:13:06.187834+00:00 DC1 CEF 2520 AbnormalVpnSecurityAlert ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.39.0.0|AbnormalVpnSecurityAlert|Подозрительные VPN-подключения|5|start=2018-06-30T15:34:05.3887333Z app=VpnConnection suser=user1 msg=user1 подключился к VPN, используя 3 компьютера из 3 местоположений.     externalId=2025 cs1Label=url cs1=https\://contoso-corp.eng.atp.azure.com:13000/securityAlert/88c46b0e-372f-4c06-9935-67bd512c4f68 cs2Label=trigger cs2=new
 
-### <a name="unusual-protocol-implementation---potential-use-of-malicious-tools-such-a-hydra"></a>Нестандартное использование протоколов (потенциальное использование вредоносных средств, таких как Hydra)
-02-21-2018  16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|Внедрение нестандартных протоколов|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки проверки подлинности с компьютера CLIENT2 в отношении DC1 с использованием внедрения нестандартных протоколов. Такое может происходить при атаках методом перебора, Pass-the-Hash и других атаках, когда используются специальные вредоносные инструменты. externalId=2002 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
+### <a name="suspected-wannacry-ransomware-attack"></a>Предполагаемая атака программы-шантажиста WannaCry
+02-21-2018  16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|SuspectedWannaCryRansomwareAttack|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки аутентификации с компьютера CLIENT2 в DC1 с использованием нестандартной реализации протоколов. Это может быть результатом выполнения атак с использованием вредоносных средств, таких как WannaCry. externalId=2035 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
 
-### <a name="unusual-protocol-implementation---potential-use-of-malicious-tools-such-a-metasploit"></a>Внедрение нестандартных протоколов (потенциальное использование вредоносных средств, таких как Metasploit)
-10-29-2018  11:22:04    Auth.Warning    192.168.0.202   1 2018-10-29T09:22:00.460233+00:00 DC3 CEF 3908 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|AbnormalProtocolSecurityAlert|Нестандартное использование протоколов (потенциальное использование средств взлома Metasploit)|5|start=2018-10-29T09:19:46.6092465Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были попытки пройти проверку подлинности с компьютера CLIENT2 в DC1 через нестандартное использование протоколов. externalId=2002 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/573f10a1-6f8a-44b1-a5b1-212d40996363 cs2Label=trigger cs2=new
+### <a name="suspected-brute-force-attack-smb"></a>Предполагаемая атака методом подбора (SMB)
+002-21-2018 16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|SuspectedBrutForceAttack|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки аутентификации с компьютера CLIENT2 в DC1 с использованием нестандартной реализации протоколов. Это может быть результатом выполнения атак с использованием вредоносных средств, таких как Hydra. externalId=2033 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
+
+### <a name="suspected-use-of-metasploit-hacking-framework"></a>Предполагаемое использование платформы взлома Metasploit
+002-21-2018 16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|SuspectedAttackUsingMetasploit|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки аутентификации с компьютера CLIENT2 в DC1 с использованием нестандартной реализации протоколов. Это может быть результатом выполнения атак с использованием вредоносных средств, таких как Metasploit. externalId=2034 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
+
+### <a name="suspected-overpass-the-hash-attack-kerberos"></a>Предполагаемая атака Overpass-the-Hash (Kerberos)
+002-21-2018 16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|SuspectedOverPassTheHashAttack|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки аутентификации с компьютера CLIENT2 в DC1 с использованием нестандартной реализации протоколов. Это может быть результатом совершения злонамеренных действий с использованием протокола Kerberos. externalId=2002 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
 
 ### <a name="user-and-ip-address-reconnaissance-smb"></a>Разведывательная атака с использованием пользователя и IP-адреса (SMB) 
-02-21-2018  16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.962930+00:00 CENTER CEF 6076 EnumerateSessionsSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EnumerateSessionsSecurityAlert|Разведывательная атака с использованием перечисления сеансов SMB|5|start=2018-02-21T14:19:03.2071170Z app=SrvSvc shost=CLIENT1 msg=Пользователь user1 успешно предпринял попытки перечисления сеанса SMB с компьютера CLIENT1 в отношении DC1 с представлением Eugene Jenkins (user2-computer). externalId=2012 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/622c38ab-324f-4c1f-9caa-1fe85db3b440 cs2Label=trigger cs2=new
+002-21-2018 16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|ReconnaissanceusingSMBSessionEnumeration|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=Были предприняты попытки аутентификации с компьютера CLIENT2 в DC1 с использованием нестандартной реализации протоколов. Это может быть результатом выполнения атак с использованием вредоносных средств, таких как Metasploit. externalId=2034 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
 
 ## <a name="see-also"></a>См. также
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)

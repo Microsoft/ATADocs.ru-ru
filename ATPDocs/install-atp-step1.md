@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3fb857308d945fcae04e7dc3d501404a2334382e
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: e027e57e3f23be61139217b532b3b4a721dc9cdd
+ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744699"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125155"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 # <a name="creating-your-azure-atp-instance-in-the-azure-atp-portal---step-1"></a>Создание экземпляра Azure ATP на портале Azure ATP. Шаг 1
@@ -57,8 +57,8 @@ ms.locfileid: "52744699"
 
     ![Созданный экземпляр Azure](media/instance-created.png)
 
-> [!NOTE]
- > Для входа в Azure ATP необходимо использовать учетную запись пользователя, которому была назначена роль Azure ATP с правами доступа к порталу Azure ATP. Дополнительные сведения об управлении доступом на основе ролей (RBAC) в Azure ATP см. в статье о [группах ролей Azure ATP](atp-role-groups.md).
+    > [!NOTE]
+    > Для входа в Azure ATP необходимо использовать учетную запись пользователя, которому была назначена роль Azure ATP с правами доступа к порталу Azure ATP. Дополнительные сведения об управлении доступом на основе ролей (RBAC) в Azure ATP см. в статье о [группах ролей Azure ATP](atp-role-groups.md).
  
 3. Нажмите кнопку **Конфигурация**, **Управление группами ролей** и перейдите по ссылке [Центр администрирования Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), чтобы приступить к управлению группами ролей. .
 
