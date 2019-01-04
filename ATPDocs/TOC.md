@@ -1,13 +1,11 @@
-# Изучение вопроса
-## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
-## [Часто задаваемые вопросы](atp-technical-faq.md)
-## [Новые возможности Azure ATP](atp-whats-new.md)
-## [Безопасность и конфиденциальность данных в Azure ATP](atp-privacy-compliance.md)
+
 # Обзор
+## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
 ## [Архитектура Azure ATP](atp-architecture.md)
+## [Новые возможности Azure ATP](atp-whats-new.md)
 ## [Предварительные требования к Azure ATP](atp-prerequisites.md)
+# Краткие руководства
 ## [Планирование производительности Azure ATP](atp-capacity-planning.md)
-# Быстрый запуск
 ## [Создание экземпляра Azure ATP](install-atp-step1.md)
 ## [Подключение к Active Directory](install-atp-step2.md)
 ### [Поддержка нескольких лесов в Azure ATP](atp-multi-forest.md)
@@ -18,40 +16,43 @@
 ### [Настройка прокси-сервера](configure-proxy.md)
 ### [Проверка расширенной политики аудита](atp-advanced-audit-policy.md)
 ### [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-atp-step8-samr.md)
-# Расширенная конфигурация
-## [Отложенное обновление датчика Azure ATP](sensor-update.md)
-## [Роли пользователей в Azure  ATP](atp-role-groups.md)
-## [Настройка уведомлений Azure ATP](notifications.md)
 ## [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md)
 ## [Интеграция с VPN](install-atp-step6-vpn.md)
 ## [Интеграция с Syslog](setting-syslog.md)
-### [Справочник по журналу ATA SIEM](cef-format-sa.md)
+# Учебники
+## [Руководство по оповещениям системы безопасности](suspicious-activity-guide.md)
+## [Анализ путей бокового смещения](investigate-lateral-movement-path.md)
+## [Анализ сущностей](investigate-entity.md)
+# Основные понятия
+## [Портал Azure ATP](workspace-portal.md)
+## [Отслеживаемые действия](monitored-activities.md)
+## [Общие сведения о профилях сущностей](entity-profiles.md)
+## [Пути бокового смещения](use-case-lateral-movement-path.md)
+## [Отчеты](reports.md)
+## [Роли пользователя](atp-role-groups.md)
+# Практические руководства
+## [Управление оповещениями системы безопасности](working-with-suspicious-activities.md)
+## [Управление конфиденциальными учетными записями](sensitive-accounts.md)
+## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
+## [Поиск и фильтрация отслеживаемых действий](atp-activities-search.md)
+## [Исключения и учетные записи Honeytoken](install-atp-step7.md)
 ## [Изменение пароля для подключения к домену](modifying-atp-config-dcpassword.md)
+## [Настройка уведомлений Azure ATP](notifications.md)
+## [Центр работоспособности Azure ATP](atp-health-center.md)
+## [Управление оповещениями о работоспособности в Azure ATP](monitoring-alerts.md)
+## [Отложенное обновление датчика Azure ATP](sensor-update.md)
+## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
+## [Устранение неполадок с помощью журналов](troubleshooting-atp-using-logs.md)
 ## Настройка автономного датчика Azure ATP
 ### [Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
 ### [Настройка переадресации событий Windows](configure-event-forwarding.md)
-# Использование и анализ
-## [Портал Azure ATP](workspace-portal.md)
-## [Отчеты Azure ATP](reports.md)
-## [Общие сведения о профилях сущностей](entity-profiles.md)
-## [Отслеживаемые действия](monitored-activities.md)
-### [Поиск и фильтрация отслеживаемых действий](atp-activities-search.md)
-## [Управление конфиденциальными учетными записями](sensitive-accounts.md)
-## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
-## [Исключения и учетные записи Honeytoken](install-atp-step7.md)
-## [Управление оповещениями системы безопасности](working-with-suspicious-activities.md)
-# Оповещения системы безопасности Azure ATP
-## [Руководство по оповещениям системы безопасности](suspicious-activity-guide.md)
-## [Пути бокового смещения](use-case-lateral-movement-path.md)
-### [Анализ путей бокового смещения](investigate-lateral-movement-path.md)
-## [Анализ сущностей](investigate-entity.md)
-# Устранение неполадок
-## [Центр работоспособности Azure ATP](atp-health-center.md)
-## [Управление оповещениями о работоспособности в Azure ATP](monitoring-alerts.md)
-## [Устранение известных проблем](troubleshooting-atp-known-issues.md)
-## [Устранение неполадок с помощью журналов](troubleshooting-atp-using-logs.md)
+# Справочник
+## [Справочник по журналу ATA SIEM](cef-format-sa.md)
 ## [Известные проблемы с Azure ATP](known-issues.md)
+# Ресурсы
 ## [Поддержка и информация](atp-support.md)
+## [Часто задаваемые вопросы](atp-technical-faq.md)
 ## [План подготовки Azure ATP к работе](atp-resources.md)
+## [Безопасность и конфиденциальность данных в Azure ATP](atp-privacy-compliance.md)

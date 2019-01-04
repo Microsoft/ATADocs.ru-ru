@@ -13,16 +13,15 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b645522c26f42b4864a68f3793cb9474e98d2149
-ms.sourcegitcommit: ec5dc294d9c6cd5693b13a7c5e7cf1bdd6fb47d7
+ms.openlocfilehash: 80d6b2744c3299bf92d0c4082085dbd872403cc0
+ms.sourcegitcommit: 9acf035f6f2ce32290e00d2e45385ae7993bb63a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179140"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53334993"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
 
-## <a name="introduction"></a>Введение
 
 В этой статье описываются проблемы, устраненные в обновлении 1 для Microsoft Advanced Threat Analytics (ATA) версии 1.9. Номер сборки этого обновления — 1.9.7412.
 
@@ -37,7 +36,7 @@ ms.locfileid: "53179140"
 - Несогласованный экспорт подозрительных действий в Microsoft Excel. Случайные сбои вместе с генерацией ошибок.  
 
 
-## <a name="improvements-included-in-this-update"></a>Улучшения, содержащиеся в этом обновлении 
+## <a name="improvements-included-in-this-update"></a>Улучшения, содержащиеся в этом обновлении
 - Изменения, требуемые для сертификации Microsoft Accessibility Standards (MAS).
 - Улучшена производительность и система безопасности.
 
@@ -61,7 +60,7 @@ ms.locfileid: "53179140"
 Это обновление заменяет ATA версии 1.9 (1.9.7312).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

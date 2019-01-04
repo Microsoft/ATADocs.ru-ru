@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/09/2018
+ms.date: 12/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cde3c56d0b8ad029337e03602c805930002f8ed4
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: af08c371f19288043eba2377ea03d1a90bd2eaab
+ms.sourcegitcommit: 39822aa24bddb72eea55f484d9df290cce2e19d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125053"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737055"
 ---
 *Область применения: Расширенная защита от угроз Azure*
 
-# <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP 
+# <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-260"></a>Azure ATP, выпуск 2.60
+Выпуск Azure ATP версии 2.60 запланирован на первую неделю 2019 г. Если в течение этого времени будут обнаружены критические проблемы, требующие промежуточного обновления, мы выполним обновление при необходимости.
+
+## <a name="azure-atp-release-259"></a>Azure ATP, выпуск 2.59
+Выпущен 16 декабря 2018 г.
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 
 ## <a name="azure-atp-release-258"></a>Azure ATP, выпуск 2.58
 
@@ -32,6 +41,7 @@ ms.locfileid: "53125053"
 Серия Azure ATP оповещений системы безопасности о нестандартной реализации протоколов, которая ранее имела 1 общий идентификатор externalId (2002), теперь разделена на 4 отдельные оповещения с соответствующим уникальным externalId. 
 
 ### <a name="new-alert-externalids"></a>Новые идентификаторы externalId оповещений
+
 > [!div class="mx-tableFixed"] 
 
 |Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный идентификатор ExternalId|

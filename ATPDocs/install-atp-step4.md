@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fd2a2316f63b5324e7869878104bd663e48b2771
-ms.sourcegitcommit: e2a89030c31376c6798697a62b484f45ed54e679
+ms.openlocfilehash: 5b5d588f11bb1c7a665cf4727cb996e5261b7237
+ms.sourcegitcommit: 281d8ea451b6ac726331d0032c344651b1a964b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52501109"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450394"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 
@@ -38,9 +38,9 @@ ms.locfileid: "52501109"
 Выполните следующие действия на контроллере домена.
 
 1. Убедитесь, что компьютер подключен к правильной конечной точке облачной службы Azure ATP:
-  - https://triprd1wceuw1sensorapi.atp.azure.com (для Европы)  
-  - https://triprd1wcuse1sensorapi.atp.azure.com (для США)
-  - https://triprd1wcasse1sensorapi.atp.azure.com (для Азии)
+  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) (для Европы)  
+  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com) (для США)
+  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com) (для Азии)
 
 2. Извлеките файлы установки из ZIP-файла. 
 > [!NOTE] 
@@ -68,9 +68,9 @@ ms.locfileid: "52501109"
 
     ![Изображение: настройка автономного датчика Azure ATP](media/sensor-install-config.png)
 
-      - Путь установки: это расположение для установки автономного датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
+      - Путь установки — это расположение для установки автономного датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
 
-      - Ключ доступа: это ключ, полученный на портале Azure ATP на предыдущем шаге.
+      - Ключ доступа — это ключ, полученный на портале Azure ATP на предыдущем шаге.
     
 7. Нажмите кнопку **Установить**. Во время установки автономного датчика Azure ATP устанавливаются и настраиваются следующие компоненты.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/09/2018
+ms.date: 12/17/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5d2e359db2cd3b0d358ce14a9f662a82c47e23a2
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 929b0db30632e737e6371d473639f1e22532f75f
+ms.sourcegitcommit: c3ee9495b9d4db985783dcabcc4fa77c7c8eaed4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125121"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53454552"
 ---
 *Область применения: Расширенная защита от угроз Azure*
 
@@ -57,36 +57,37 @@ Azure ATP может пересылать события оповещений с
 
 > [!div class="mx-tableFixed"] 
 
-|Новое имя оповещения системы безопасности|Устаревшее имя оповещения системы безопасности|Уникальный идентификатор ExternalId|
+|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный идентификатор ExternalId|
 |---------|----------|---------|
 |Разведывательная атака путем перечисления учетных записей|Разведывательная атака с использованием перечисления учетных записей.|2003|
 |Действие Honeytoken|Действие Honeytoken|2014|
 |Вредоносный запрос главного ключа API защиты данных|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|
 |Разведывательная атака путем сетевого сопоставления (DNS)|Разведывательная атака с использованием DNS.|2007|
-|Предполагаемая атака методом подбора (LDAP)|Атака методом подбора с помощью простой привязки LDAP|2004|
+|Попытка удаленного выполнения кода|Попытка удаленного выполнения кода|2019|
+|Предполагаемая атака методом подбора (протокол LDAP)|Атака методом подбора с помощью простой привязки LDAP|2004|
+|Предполагаемая атака DCShadow (повышение роли контроллера домена)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|
+|Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|
 |Предполагаемая атака DCSync (репликация служб каталогов)|вредоносная репликация служб каталогов;|2006|
 |Предполагаемое использование Golden Ticket (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака Golden Ticket)|2009|
-|Предполагаемое использование Golden Ticket (аномальное время) |Атака Golden Ticket Kerberos — аномальное время|2022|
-|Предполагаемое использование Golden Ticket (несуществующая учетная запись)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027|
-|Предполагаемое использование Golden Ticket (аномалия билета) — предварительная версия|Н/Д|2032|
 |Предполагаемое использование Golden Ticket (поддельные данные авторизации) |Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|2013|
+|Предполагаемое использование Golden Ticket (несуществующая учетная запись)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027|
+|Предполагаемое использование Golden Ticket (аномальное время) |Атака Golden Ticket в Kerberos — аномальное время|2022|
+|Предполагаемое использование Golden Ticket (аномалия билета) — предварительная версия|Н/Д|2032|
 |Предполагаемая кража удостоверения (Pass-the-Hash)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|
 |Предполагаемая кража удостоверения (Pass-the-Ticket)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|
+|Предполагаемая атака методом подбора (SMB)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
+|Предполагаемая атака методом подбора (Kerberos, NTLM)|Подозрительные неудачные попытки проверки подлинности|2023|
 |Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|
+|Предполагаемая атака Overpass-the-Hash (Kerberos)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
+|Предполагаемое использование платформы взлома Metasploit|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
 |Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010|
-|Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|
-|Предполагаемая атака DCShadow (повышение роли контроллера домена)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|
-|Попытка удаленного выполнения кода|Попытка удаленного выполнения кода|2019|
+|Предполагаемая атака программы-шантажиста WannaCry|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035|
 |Подозрительный обмен данными через DNS|Подозрительный обмен данными через DNS|2031|
 |Подозрительное изменение привилегированных групп|Подозрительное изменение привилегированных групп|2024|
 |Создание подозрительной службы|Создание подозрительной службы|2026|
 |Подозрительные VPN-подключения|Подозрительные VPN-подключения|2025|
-|Предполагаемая атака программы-шантажиста WannaCry|Нестандартное использование протоколов (потенциальная атака программы-шантажиста WannaCry)*|2035|
-|Предполагаемая атака методом подбора (SMB)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
-|Предполагаемое использование платформы взлома Metasploit|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
-|Предполагаемая атака Overpass-the-Hash (Kerberos)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
-|Разведывательная атака с использованием пользователя и IP-адреса (SMB) |Разведывательная атака с использованием перечисления сеансов SMB|2012|
 |Разведывательная атака с использованием пользователей и членства в группах (SAMR)|разведывательная атака с использованием запросов к службам каталогов;|2021|
+|Разведывательная атака с использованием пользователя и IP-адреса (SMB) |Разведывательная атака с использованием перечисления сеансов SMB|2012|
 
 ## <a name="sample-logs"></a>Образцы журналов
 
@@ -116,8 +117,11 @@ Azure ATP может пересылать события оповещений с
 ### <a name="remote-code-execution-attempt"></a>Попытка удаленного выполнения кода
 10-29-2018  11:22:04    Auth.Warning    192.168.0.202   1 2018-10-29T09:22:00.100856+00:00 DC3 CEF 3908 RemoteExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|RemoteExecutionSecurityAlert|Remote code execution attempt|5|start=2018-10-29T09:19:45.0552367Z shost=CLIENT1 msg=На DC1 с компьютера CLIENT1 были предприняты следующие попытки удаленного выполнения.\r\nУспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nНеуспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nУспешное удаленное выполнение одного или нескольких методов WMI пользователем user1. externalId=2019 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f063c778-830c-4e9f-98d1-bc6c11c94e11 cs2Label=trigger cs2=new
 
-### <a name="suspected-brute-force-attack-ldap"></a>Предполагаемая атака методом подбора (LDAP)
+### <a name="suspected-brute-force-attack-ldap"></a>Предполагаемая атака методом подбора (протокол LDAP)
 02-21-2018  16:20:21    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:06.156238+00:00 CENTER CEF 6076 LdapBruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|LdapBruteForceSecurityAlert|Атака методом подбора с использованием простой привязки LDAP|5|start=2018-02-21T14:19:41.7422810Z app=Ldap suser=Wofford Thurston shost=CLIENT1 msg=Предпринята попытка атаки методом подбора с использованием протокола Ldap в отношении Wofford Thurston (разработчика программного обеспечения) с компьютера CLIENT1 (100 попыток подбора). cnt=100 externalId=2004 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/57b8ac96-7907-4971-9b27-ec77ad8c029a cs2Label=trigger cs2=update
+
+### <a name="suspected-brute-force-attack-kerberos-ntlm"></a>Предполагаемая атака методом подбора (Kerberos, NTLM)
+10-29-2018  11:20:47    Auth.Warning    192.168.0.202   1 2018-10-29T09:20:44.478827+00:00 DC3 CEF 3908 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|BruteForceSecurityAlert|Подозрительные неудачные попытки проверки подлинности|5|start=2018-10-29T09:19:44.9512286Z app=Kerberos shost=CLIENT1 msg=Обнаружены исходящие с компьютера CLIENT1 подозрительные неудачные попытки проверки подлинности, означающие возможную атаку методом подбора. externalId=2023 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/85042c8e-27fa-49b3-8667-dabc1aa31580 cs2Label=trigger cs2=new
 
 ### <a name="suspected-golden-ticket-usage-encryption-downgrade"></a>Предполагаемое использование Golden Ticket (понижение уровня шифрования)
 10-29-2018  11:25:07    Auth.Warning    192.168.0.202   1 2018-10-29T09:25:01.007701+00:00 DC3 CEF 3908 GoldenTicketEncryptionDowngradeS ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|GoldenTicketEncryptionDowngradeSecurityAlert|Понижение уровня шифрования (потенциальная атака Golden Ticket)|5|start=2018-10-29T09:37:49.0849130Z app=Kerberos msg=W10-000007-Lap использовал более слабый метод шифрования (RC4) в запросе службы Kerberos (TGS_REQ) из W10-000007-Lap для доступа к host/domain1.test.local. externalId=2009 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f01f8403-88b2-437e-b4ad-d72485fe05ac cs2Label=trigger cs2=new
@@ -141,10 +145,10 @@ Azure ATP может пересылать события оповещений с
 02-21-2018  17:04:47    Auth.Error  192.168.0.220   1 2018-02-21T15:04:33.537583+00:00 CENTER CEF 6076 PassTheTicketSecurityAlert ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.22.4228.22540|PassTheTicketSecurityAlert|Хищение удостоверения с помощью атаки Pass-the-Ticket|10|start=2018-02-21T15:02:22.2577465Z app=Kerberos suser=Eugene Jenkins msg=Были украдены билеты Kerberos, принадлежащие Eugene Jenkins (разработчику программного обеспечения), с компьютера Admin-PC на компьютер Victim-PC. Они использовались для доступа к krbtgt/DOMAIN1.TEST.LOCAL. externalId=2018 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/511f1487-2915-477d-be2e-04cfba702ccd cs2Label=trigger cs2=new
 
 ### <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования) 
-02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|Переход на более слабое шифрование|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg= Согласно ранее установленному поведению для поля Encrypted_Timestamp сообщения AS_REQ от компьютера CLIENT1 был выполнен переход на более слабый метод шифрования. Это может быть результатом кражи учетных данных с помощью атаки Overpass-the-Hash с компьютера CLIENT1. externalId=2011 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=update
+02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|Переход на более слабое шифрование|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg= Согласно ранее установленному поведению для поля Encrypted_Timestamp сообщения AS_REQ от компьютера CLIENT1 был выполнен переход на более слабый метод шифрования. Это может быть результатом кражи учетных данных с помощью атаки Overpass-the-Hash с компьютера CLIENT1. externalId=2008 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=update
 
 ### <a name="suspected-skeleton-key-attack-encryption-downgrade"></a>Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования) 
-02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|переход на более слабое шифрование|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=Согласно ранее установленному поведению для поля ETYPE_INFO2 сообщения KRB_ERR от компьютера CLIENT1 был выполнен переход на более слабый метод шифрования. Это может быть результатом использования мастер-ключа в DC1. externalId=2011 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=new
+02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|переход на более слабое шифрование|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=Согласно ранее установленному поведению для поля ETYPE_INFO2 сообщения KRB_ERR от компьютера CLIENT1 был выполнен переход на более слабый метод шифрования. Это может быть результатом использования мастер-ключа в DC1. externalId=2010 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=new
 
 ### <a name="suspected-dcsync-attack-replication-of-directory-services"></a>Предполагаемая атака DCSync (репликация служб каталогов)
 02-21-2018  16:20:06    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:54.254930+00:00 CENTER CEF 6076 MaliciousServiceCreationSecurity ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|MaliciousServiceCreationSecurityAlert|Создание вредоносной службы|5|start=2018-02-21T14:19:41.7897808Z app=ServiceInstalledEvent shost=CLIENT1 msg=Пользователь user1 создал вредоносную службу для выполнения потенциально опасных команд на компьютере CLIENT1. externalId=2026 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/179229b6-b791-4895-b5aa-fdf3747a325c cs2Label=trigger cs2=update

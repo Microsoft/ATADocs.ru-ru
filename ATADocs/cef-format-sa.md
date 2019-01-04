@@ -1,101 +1,154 @@
 ---
 title: Справочник по журналу ATA SIEM | Документы Майкрософт
-description: Примеры журналов подозрительных действий, отправляемых из ATA в систему SIEM.
+description: Предоставляет примеры журналов оповещений системы безопасности, отправляемых из ATA в SIEM.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
 ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
-ms.reviewer: arzinger
+ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: e4dc613ded1234bad931a67af679bb067c2d7719
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: f96bd9222a803a21efee5def935ecbe3244e0611
+ms.sourcegitcommit: c390d36d75f13607698c2a8d7ac757ecef4c748e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134088"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53709937"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 
 # <a name="ata-siem-log-reference"></a>Справочник по журналу ATA SIEM
 
-ATA может пересылать события, связанные с подозрительными действиями и оповещениями мониторинга, в систему SIEM. События, связанные с подозрительными действиями, передаются в формате CEF. В этой справочной статье приводятся примеры журналов подозрительных действий, пересылаемых в систему SIEM.
+ATA может пересылать события оповещений системы безопасности и мониторинга в SIEM. Оповещения переадресовываются в формате CEF. Ниже приведен пример каждого типа журнала оповещений системы безопасности для отправления в SIEM.
 
-## <a name="sample-ata-suspicious-activities-in-cef-format"></a>Пример сведений о подозрительных действиях, обнаруженных ATA, в формате CEF
+## <a name="sample-ata-security-alerts-in-cef-format"></a>Пример оповещений системы безопасности ATA в формате CEF
 В систему SIEM пересылаются следующие поля и их значения:
 
--   start — время начала оповещения;
--   suser — учетная запись (как правило, учетная запись пользователя), с которой связано оповещение;
--   shost — исходный компьютер оповещения;
--   outcome — указывает на успешность выполнения действия, указанного в оповещении;  
+-   start — время появления оповещения;
+-   suser — учетная запись (обычно пользовательская), связанная с оповещением;
+-   shost — исходный компьютер, выдавший оповещение;
+-   outcome — оповещения с определенным успешным или неуспешным действием, выполненным в оповещении;  
 -   msg — описание оповещения;
--   cnt — число инициации оповещения (например, число угаданных паролей при атаке методом подбора);
--   app — протокол, используемый в оповещении;
--   externalId — идентификатор события, соответствующий оповещению, который ATA записывает в журнал событий;
--   cs#label и cs# — пользовательские строки, которые можно использовать в CEF. cs#label — это имя нового поля, а cs# — значение, например: cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
+-   cnt — оповещение с числом выполнений подозрительного действия (например, число угаданных паролей при атаке методом подбора);
+-   app — протокол оповещений;
+-   externalId — идентификатор события, соответствующий оповещению, который ATA записывает в журнал событий*;
+-   cs#label и cs# — пользовательские строки, которые можно использовать в CEF. cs#label — это имя нового поля, а cs# — значение, например cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa.
 
 В этом примере cs1 — это поле, содержащее URL-адрес оповещения.
 
+* При создании сценариев или автоматизации на основе журналов вместо использования имен журналов используйте постоянный externalID каждого журнала, так как имена журналов могут быть изменены без предварительного уведомления. 
+
+|Имена оповещений|Идентификаторы событий оповещения|
+|---------|---------------|
+|2001|Подозрение на кражу идентификационных данных на основе аномального поведения|
+|2002|Внедрение нестандартных протоколов.|
+|2003|Разведывательная атака с использованием перечисления учетных записей.|
+|2004|Атака методом подбора с помощью простой привязки LDAP|
+|2006|Вредоносная репликация служб каталогов|
+|2007|Разведывательная атака с использованием DNS.|
+|2008|Переход на более слабое шифрование|
+|2009|Действие понижения уровня шифрования (потенциальная атака Golden Ticket)|
+|2010|Действие понижения уровня шифрования (потенциальная атака Overpass-the-Hash)|
+|2011|Действие понижения уровня шифрования (потенциальная атака с использованеим мастер-ключа)|
+|2012|Рекогносцировка с использованием перечисления сеансов SMB|
+|2013|Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|
+|2014|Действие Honeytoken|
+|2016|Массовое удаление объектов|
+|2017|Кража удостоверения с помощью атаки Pass-the-Hash|
+|2018|Кража удостоверения с помощью атаки Pass-the-Ticket|
+|2019|Обнаружение попытки удаленного выполнения|
+|2020|Вредоносный запрос конфиденциальных сведений для защиты данных|
+|2021|Рекогносцировка с использованием запросов к службам каталогов|
+|2022|действие с использованием "золотого" билета Kerberos;|
+|2023|Подозрительные неудачные попытки проверки подлинности|
+|2024|аномальное изменение привилегированных групп;|
+|2026|Создание подозрительной службы|
+
+
+
 ## <a name="sample-logs"></a>Образцы журналов
 
-Приоритеты: 3=низкий; 5=средний; 10=высокий.
+Уровни приоритета: 3 = низкий; 5 = средний; 10 = высокий.
 
-### <a name="bruteforce--ldap"></a>Атака методом подбора — LDAP
-05-03-2017          13:35:01               Auth.Warning    192.168.0.220     3 мая 10:35:01 CENTER ATA:CEF:0|Microsoft|ATA|.5942.64854|BruteForceSuspiciousActivity|Атака методом подбора с использованием простой привязки LDAP|5|start=2017-05-03T10:34:57.2785534Z app=Ldap suser=Darris Woods shost=CLIENT1 msg=Попытка атаки методом подбора с использованием протокола LDAP была предпринята в отношении пользователя Darris Woods (разработчик ПО) с компьютера CLIENT1 (76 попыток подбора). cnt=76 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909b2458ca1ec04d05e6a70
+### <a name="abnormal-modification-of-sensitive-groups"></a>аномальное изменение привилегированных групп;
+1 2018-12-12T16:53:22.925757+00:00 CENTER ATA 4688 AbnormalSensitiveGroupMembership CEF:0|Microsoft|ATA|1.9.0.0|AbnormalSensitiveGroupMembershipChangeSuspiciousActivity|Неправильное изменение конфиденциальных групп|5|start=2018-12-12T18:52:58.0000000Z app=GroupMembershipChangeEvent suser=krbtgt msg=krbtgt нехарактерным образом изменило членство в конфиденциальных группах. externalId=2024 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113d028ca1ec1250ca0491
 
-05-03-2017          13:35:05               Auth.Warning    192.168.0.220     3 мая 10:35:05 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|BruteForceSuspiciousActivity|Атака методом подбора с использованием простой привязки LDAP|5|start=2017-05-03T10:34:58.7004159Z app=Ldap suser=Dino Hopkins shost=CLIENT1 msg=Попытка атаки методом подбора с использованием протокола LDAP была предпринята в отношении пользователя Dino Hopkins (разработчик ПО) с компьютера CLIENT1 (3 попытки подбора). cnt=3 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909b2458ca1ec04d05e6a70
+### <a name="brute-force-attack-using-ldap-simple-bind"></a>Атака методом подбора с помощью простой привязки LDAP
+12-12-2018  19:52:18    Auth.Warning    192.168.0.222   1 2018-12-12T17:52:18.899690+00:00 CENTER ATA 4688 LdapBruteForceSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|LdapBruteForceSuspiciousActivity|Атака методом подбора с помощью простой привязки протокола LDAP|5|start=2018-12-12T17:52:10.2350665Z app=Ldap msg=10000 попытки угадывания пароля на 100 учетных записей с сервера W2012R2-000000-Server. Успешно определено один пароль учетной записи. externalId=2004 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114acb8ca1ec1250cacdcb
 
-05-03-2017          13:35:05               Auth.Warning    192.168.0.220     3 мая 10:35:05 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|BruteForceSuspiciousActivity|Атака методом подбора с использованием простой привязки LDAP|5|start=2017-05-03T10:34:59.7269332Z app=Ldap suser=Dino Hopkins shost=CLIENT1 msg=Атака методом подбора с использованием протокола LDAP успешно проведена в отношении пользователя Dino Hopkins (разработчик ПО) с компьютера CLIENT1 (77 попыток подбора). cnt=77 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909b2458ca1ec04d05e6a70
-### <a name="bruteforce"></a>Атака методом подбора
-05-14-2017          13:27:05               Auth.Warning    192.168.0.220     1 2017-05- ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|BruteForceSuspiciousActivity|Подозрительные ошибки проверки подлинности|5|start=2017-05-14T10:27:04.3904739Z app=Kerberos shost=CLIENT1 msg=Обнаружены подозрительные ошибки проверки подлинности с компьютера CLIENT1, указывающие на потенциальную атаку методом подбора. externalId=2023 cs1Label=url cs1=https://center/suspiciousActivity/591830f98ca1ec11d0c0d7f5
-### <a name="privilege-escalation"></a>Повышение привилегий
-#### <a name="silver"></a>"Серебряный" билет
-05-10-2017          17:14:15               Auth.Error           192.168.0.220     1 2017-05-10T14:14:15.589415+00:00 CENTER ATA 596 ForgedPacSuspiciousActivity ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|ForgedPacSuspiciousActivity|Повышение привилегий с использованием поддельных данных авторизации|10|start=2017-05-10T14:11:51.8053059Z app=Kerberos suser=user1 msg=Пользователь user1 попытался повысить привилегии до HOST/client1 с компьютера CLIENT2 с помощью поддельных данных авторизации. externalId=2013 cs1Label=url cs1=https://center/suspiciousActivity/591320378ca1ec02543e4747
-#### <a name="gold"></a>Золотой
-05-10-2017          17:13:30               Auth.Error           192.168.0.220     1 2017-05-10T14:13:30.244377+00:00 CENTER ATA 596 ForgedPacSuspiciousActivity ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|ForgedPacSuspiciousActivity|Повышение привилегий с использованием поддельных данных авторизации|10|start=2017-05-10T14:11:27.6455273Z app=Kerberos suser=user1 msg=Пользователь user1 попытался повысить привилегии на DC4 с компьютера CLIENT1 с помощью поддельных данных авторизации. externalId=2013 cs1Label=url cs1=https://center/suspiciousActivity/5913200a8ca1ec02543e3ea8
-### <a name="golden-ticket"></a>Golden ticket
-05-14-2017          15:57:10               Auth.Warning    192.168.0.220     1 2017-05-14T12:57:10.392730+00:00 CENTER ATA 4732 EncryptionDowngradeSuspiciousAct ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|EncryptionDowngradeSuspiciousActivity|Переход на более слабое шифрование|5|start=2017-05-14T12:55:08.6913033Z app=Kerberos msg=Согласно ранее выявленному поведению поле TGT сообщения TGS_REQ от компьютера CLIENT1 было переведено на более слабый метод шифрования. Это может быть результатом использования "золотого" билета на компьютере CLIENT1. externalId=2009 cs1Label=url cs1=https://center/suspiciousActivity/591854268ca1ec127ceec396
-### <a name="honey-token-activity"></a>Активность учетной записи honeytoken
-05-11-2017          16:49:10               Auth.Warning    192.168.0.220     1 2017-05-11T13:49:10.725605+00:00 CENTER ATA 876 HoneytokenActivitySuspiciousActi ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|HoneytokenActivitySuspiciousActivity|Активность учетной записи honeytoken|5|start=2017-05-11T13:49:09.6455794Z app=Kerberos suser=privtriservice msg=От имени учетной записи privtriservice выполнены следующие действия:\r\nПроверка подлинности с контроллера домена DC1 с использованием NTLM для доступа к корпоративным ресурсам через DC1. externalId=2014 cs1Label=url cs1=https://center/suspiciousActivity/59146bd68ca1ec036ce57d29
-### <a name="suspicious-replication-of-directory-services"></a>Подозрительная репликация служб каталогов
-3 мая 11:02:28 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DirectoryServicesReplicationSuspiciousActivity|Вредоносная репликация служб каталогов|10|start=2017-05-03T11:00:13.6560919Z suser=user1 shost=CLIENT1 outcome=Failure msg=Пользователем user1 выполнены попытки отправки вредоносных запросов репликации с компьютера CLIENT1 на контроллер домена DC1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909b8c48ca1ec04d05ed28d
-### <a name="malicious-data-protection-private-information-request"></a>Вредоносный запрос конфиденциальных сведений для защиты данных.
-3 мая 13:39:18 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|RetrieveDataProtectionBackupKeySuspiciousActivity|Вредоносный запрос конфиденциальных сведений для защиты данных|10|start=2017-05-03T13:37:06.4039886Z app=LsaRpc shost=CLIENT1 suser= outcome=Success msg=Неизвестный пользователь выполнил с компьютера CLIENT1 4 успешные попытки получить резервный ключ домена DPAPI из DC1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909dd868ca1ec04d05fb01d
-### <a name="massive-object-deletion"></a>Массовое удаление объектов
-05-14-2017          14:38:34               Auth.Warning    192.168.0.220     1 2017-05-14T11:38:34.898810+00:00 CENTER ATA 3748 MassiveObjectDeletionSuspiciousA ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|MassiveObjectDeletionSuspiciousActivity|Массовое удаление объектов|5|start=2017-05-14T11:33:32.0000000Z msg=496 объектов (9,75 % общего количества объектов AD) были удалены за короткий промежуток времени из домена domain1.test.local. cnt=496 externalId=2016 cs1Label=url cs1=https://center/suspiciousActivity/591841ba8ca1ec0ea4ad587a
-### <a name="over-pass-the-hash"></a>Over-Pass-the-Hash
-05-14-2017          12:07:46               Auth.Warning    192.168.0.220     1 2017-05-14T09:07:46.652319+00:00 CENTER ATA 1116 EncryptionDowngradeSuspiciousAct ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|EncryptionDowngradeSuspiciousActivity|Переход на более слабое шифрование|5|start=2017-05-14T09:07:44.9933773Z app=Kerberos msg=Согласно ранее выявленному поведению поле Encrypted_Timestamp сообщения AS_REQ от компьютера CLIENT1 было переведено на более слабый метод шифрования. Это может быть результатом кражи учетных данных с помощью атаки Overpass-the-Hash с компьютера CLIENT1. externalId=2010 cs1Label=url cs1=https://center/suspiciousActivity/59181e628ca1ec045cdfa929
-### <a name="pass-the-hash"></a>Pass-the-Hash
-05-10-2017          17:48:51               Auth.Error           192.168.0.220     1 2017-05-10T14:48:51.998620+00:00 CENTER ATA 596 PassTheHashSuspiciousActivity ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|PassTheHashSuspiciousActivity|Кража идентификационных данных с помощью атаки Pass-the-Hash|10|start=2017-05-10T14:46:50.9463800Z app=Ntlm suser=user2 msg=Хэш пользователя user2 был украден с одного из компьютеров, на которые ранее входил пользователь user2, и использован с компьютера CLIENT1. externalId=2017 cs1Label=url cs1=https://center/suspiciousActivity/591328538ca1ec02543f9a1a
-### <a name="account-enumeration"></a>Перечисление учетных записей
-05-10-2017          16:44:22               Auth.Warning    192.168.0.220     1 2017-05-10T13:44:22.706381+00:00 CENTER ATA 596 AccountEnumerationSuspiciousActi ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|AccountEnumerationSuspiciousActivity|Разведывательная атака путем перечисления учетных записей|5|start=2017-05-10T13:44:20.9930644Z app=Kerberos shost=CLIENT3 msg=Обнаружено подозрительное перечисление учетных записей с использованием протокола Kerberos с компьютера CLIENT3. Злоумышленник предпринял всего 72 попытки подобрать имена учетных записей; в 2 случаях имена совпали с имеющимися именами учетных записей в Active Directory. externalId=2003 cs1Label=url cs1=https://center/suspiciousActivity/591319368ca1ec02543c56ee
-### <a name="dns-recon"></a>Проверка DNS
-05-03-2017          13:16:57               Auth.Warning    192.168.0.220     3 мая 10:16:57 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:16:41.8297467Z app=Dns shost=CLIENT1 msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером) в отношении DC1. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa 05-03-2017          13:24:21               Auth.Warning    192.168.0.220     May  3 10:24:21 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|DnsReconnaissanceSuspiciousActivity|Разведывательная атака с использованием DNS|5|start=2017-05-03T10:24:08.0950753Z app=Dns shost=CLIENT1 request=contoso.com requestMethod=Axfr reason=NameError outcome=Failure msg=Обнаружена подозрительная активность DNS с компьютера CLIENT1 (не являющегося DNS-сервером). Был выполнен запрос к contoso.com (типа Axfr). Получен ответ NameError. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
-### <a name="smb-session-enumeration"></a>Перечисление сеансов SMB
-3 мая 11:55:43 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|EnumerateSessionsSuspiciousActivity|Разведывательная атака с использованием перечисления сеансов SMB|5|start=2017-05-03T11:52:02.4360718Z app=SrvSvc shost=CLIENT1 msg=Попытки перечисления сеансов SMB были успешно выполнены с компьютера CLIENT1 в отношении DC1; получен доступ к учетной записи user1 (daf::1). cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c53f8ca1ec04d05f1cf1
-### <a name="samr-enumeration"></a>Перечисление SAMR
-3 мая 11:44:48 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|SamrReconnaissanceSuspiciousActivity|Разведывательная атака с использованием перечисления служб каталогов|5|start=2017-05-03T11:42:46.5911225Z app=Samr shost=CLIENT1 suser=user1 outcome=Success msg=Были предприняты следующие попытки перечисления служб каталогов с использованием протокола SAMR в отношении DC1 с компьютера CLIENT1:\r\nУспешное перечисление всех групп в домене domain1.test.local пользователем user1 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c2b08ca1ec04d05f0e19
-### <a name="remote-execution"></a>Удаленное выполнение
-3 мая 12:36:47 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|RemoteExecutionSuspiciousActivity|Обнаружена попытка удаленного выполнения|3|start=2017-05-03T12:34:32.3714348Z app=ServiceControl shost=CLIENT1 suser=Administrator outcome=Success msg=Были выполнены следующие попытки удаленного выполнения в отношении DC1 с компьютера CLIENT1:\r\nУспешное удаленное создание PSEXESVC администратором. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909cedf8ca1ec04d05f5692
-### <a name="skeleton-key"></a>использование мастер-ключа;
-05-14-2017          12:13:12               Auth.Warning    192.168.0.220     1 2017-05-14T09:13:12.102468+00:00 CENTER ATA 1116 EncryptionDowngradeSuspiciousAct ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|EncryptionDowngradeSuspiciousActivity|Переход на более слабое шифрование|5|start=2017-05-14T09:13:03.3509467Z app=Kerberos msg=Согласно ранее выявленному поведению поле ETYPE_INFO2 сообщения KRB_ERR от компьютера CLIENT2 было переведено на более слабый метод шифрования. Это может быть результатом использования мастер-ключа в DC3. externalId=2011 cs1Label=url cs1=https://center/suspiciousActivity/59181fa88ca1ec045cdfe630
+### <a name="encryption-downgrade-activity-golden-ticket"></a>Переход на использование более ранней версии шифрования (Golden Ticket)
+12-12-2018  20:12:35    Auth.Warning    192.168.0.222   1 2018-12-12T18:12:35.105942+00:00 CENTER ATA 4688 EncryptionDowngradeSuspiciousAct ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|EncryptionDowngradeSuspiciousActivity|Переход на использование более ранней версии шифрования|5|start=2018-12-12T18:10:35.0334169Z app=Kerberos msg=Согласно ранее выявленному поведению метод шифрования поля TGT сообщения TGS_REQ с сервера W2012R2-000000-Server переведено на использование более ранней версии. Это может быть результатом использования Golden Ticket на сервере W2012R2-000000-Server. externalId=2009 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114f938ca1ec1250cafcfa
+
+### <a name="encryption-downgrade-activity-overpass-the-hash"></a>Переход на использование более ранней версии шифрования (Overpass-the-Hash)
+12-12-2018  19:00:31    Auth.Warning 192.168.0.222 1 2018-12-12T17:00:31.963485+00:00 CENTER ATA 4688 EncryptionDowngradeSuspiciousAct ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|EncryptionDowngradeSuspiciousActivity|Переход на использование более ранней версии шифрования|5|start=2018-12-12T17:00:31.2975188Z app=Kerberos msg=Согласно ранее выявленному поведению метод шифрования поля Encrypted_Timestamp сообщения AS_REQ с сервера W2012R2-000000-Server переведено на использование более ранней версии. Это может быть результатом кражи учетных данных с помощью атаки Overpass-the-Hash с сервера W2012R2-000000-Server. externalId=2010 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113eaf8ca1ec1250ca0883
+
+###  <a name="encryption-downgrade-activity-skeleton-key"></a>переход на более слабое шифрование (вредоносные программы, использующие мастер-ключи);
+12-12-2018  20:07:24    Auth.Warning    192.168.0.222   1 2018-12-12T18:07:24.065140+00:00 CENTER ATA 4688 EncryptionDowngradeSuspiciousAct ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|EncryptionDowngradeSuspiciousActivity|Переход на использование более ранней версии шифрования|5|start=2018-12-12T18:07:24.0222746Z app=Kerberos msg=Согласно ранее выявленному поведению метод шифрования поля ETYPE_INFO2 сообщения KRB_ERR с сервера W2012R2-000000-Server переведено на использование более ранней версии. Это может быть результатом использования мастер-ключа в DC1. externalId=2011 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114e5c8ca1ec1250cafafe
+
+### <a name="honeytoken-activity"></a>Действие Honeytoken
+12-12-2018  19:51:52    Auth.Warning    192.168.0.222   1 2018-12-12T17:51:52.659618+00:00 CENTER ATA 4688 HoneytokenActivitySuspiciousActi ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|HoneytokenActivitySuspiciousActivity|Действие Honeytoken|5|start=2018-12-12T17:51:52.5855994Z app=Kerberos suser=USR78982 msg=Следующие действия были выполнены USR78982 LAST78982:\r\nПодлинность проверена из CLIENT1 с помощью NTLM при попытке получения доступа к domain1.test.local\cifs на DC1. externalId=2014 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114ab88ca1ec1250ca7f76
+
+### <a name="identity-theft-using-pass-the-hash-attack"></a>Кража удостоверения с помощью атаки Pass-the-Hash
+12-12-2018  19:56:02    Auth.Error  192.168.0.222   1 2018-12-12T17:56:02.047236+00:00 CENTER ATA 4688 PassTheHashSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|PassTheHashSuspiciousActivity|Кража удостоверения с помощью атаки Pass-the-Hash|10|start=2018-12-12T17:54:01.9582400Z app=Ntlm suser=USR46829 LAST46829 msg=Хэш USR46829 LAST46829 украден с одного из компьютеров, на которые ранее входил пользователь USR46829 LAST46829, и использован с сервера W2012R2-000000-Server. externalId=2017 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114bb28ca1ec1250caf673
+
+### <a name="identity-theft-using-pass-the-ticket-attack"></a>Кража удостоверения с помощью атаки Pass-the-Ticket
+12-12-2018  22:03:51    Auth.Error  192.168.0.222   1 2018-12-12T20:03:51.643633+00:00 CENTER ATA 4688 PassTheTicketSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|PassTheTicketSuspiciousActivity|Кража удостоверения с помощью атаки Pass-the-Ticket|10|start=2018-12-12T17:54:12.9960662Z app=Kerberos suser=Birdie Lamb msg=Билеты Kerberos Birdie Lamb (разработчик программного обеспечения) украдены с сервера W2012R2-000106-Server на сервер W2012R2-000051-Server и используются для доступа к domain1.test.local\host. externalId=2018 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114b458ca1ec1250caf5b7
+
+### <a name="kerberos-golden-ticket-activity"></a>действие с использованием "золотого" билета Kerberos;
+12-12-2018  19:53:26    Auth.Error  192.168.0.222   1 2018-12-12T17:53:26.869091+00:00 CENTER ATA 4688 GoldenTicketSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|GoldenTicketSuspiciousActivity|Действие Golden Ticket Kerberos|10|start=2018-12-13T06:51:26.7290524Z app=Kerberos suser=Sonja Chadsey msg=Подозрительное использование билета Kerberos Sonja Chadsey (разработчик программного обеспечения), указывающее, что обнаружена потенциальная атака Golden Ticket. externalId=2022 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114b168ca1ec1250caf556
+
+### <a name="malicious-data-protection-private-information-request"></a>Вредоносный запрос конфиденциальных сведений для защиты данных
+12-12-2018  20:03:49    Auth.Error  192.168.0.222   1 2018-12-12T18:03:49.814620+00:00 CENTER ATA 4688 RetrieveDataProtectionBackupKeyS ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|RetrieveDataProtectionBackupKeySuspiciousActivity|Вредоносный запрос конфиденциальных сведений о защите данных|10|start=2018-12-12T17:58:56.3537533Z app=LsaRpc shost=W2012R2-000000-Server msg=Неизвестный пользователь выполнил 1 успешную попытку с сервера W2012R2-000000-Server, чтобы получить резервный ключ домена DPAPI из DC1. externalId=2020 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114d858ca1ec1250caf983
+
+### <a name="malicious-replication-of-directory-services"></a>Вредоносная репликация служб каталогов
+12-12-2018  19:56:49    Auth.Error  192.168.0.222   1 2018-12-12T17:56:49.312648+00:00 CENTER ATA 4688 DirectoryServicesReplicationSusp ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|DirectoryServicesReplicationSuspiciousActivity|Вредоносная репликация служб каталогов|10|start=2018-12-12T17:52:34.3287329Z app=Drsr shost=W2012R2-000000-Server msg=Запросы вредоносной репликации успешно выполнены с сервера W2012R2-000000-Server на DC1. outcome=Success externalId=2006 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114be18ca1ec1250caf6b8
+
+### <a name="privilege-escalation-using-forged-authorization-data"></a>Атака, направленная на повышение привилегий с использованием поддельных данных авторизации
+12-12-2018  19:51:15    Auth.Error  192.168.0.222   1 2018-12-12T17:51:15.658608+00:00 CENTER ATA 4688 ForgedPacSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|ForgedPacSuspiciousActivity|Повышение привилегий с использованием поддельных данных авторизации|10|start=2018-12-12T17:51:15.0261128Z app=Kerberos suser=triservice msg=triservice попытался повысить привилегии на DC1 с сервера W2012R2-000000-Server с помощью поддельных данных авторизации. externalId=2013 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114a938ca1ec1250ca7f48
+
+### <a name="reconnaissance-using-directory-services-queries"></a>Рекогносцировка с использованием запросов к службам каталогов
+12-12-2018  20:23:52    Auth.Warning    192.168.0.222   1 2018-12-12T18:23:52.155531+00:00 CENTER ATA 4688 SamrReconnaissanceSuspiciousActi ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|SamrReconnaissanceSuspiciousActivity|Разведывательная атака с использованием запросов службы каталогов|5|start=2018-12-12T18:04:12.9868815Z app=Samr shost=W2012R2-000000-Server msg=Следующие запросы к службам каталогов с помощью протокола SAMR предприняты в DC1 из W2012R2-000000-Server:\r\nУспешный запрос о создателях входящего доверия леса (члены этой группы могут создать входящее одностороннее отношение доверия для этого леса) в domain1.test.local externalId=2021 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114e758ca1ec1250cafb2e.
+
+### <a name="reconnaissance-using-account-enumeration"></a>Разведывательная атака с использованием перечисления учетных записей.
+1 2018-12-12T16:57:09.661680+00:00 CENTER ATA 4688 AccountEnumerationSuspiciousActi CEF:0|Microsoft|ATA|1.9.0.0|AccountEnumerationSuspiciousActivity|Рекогносцировка с использованием перечисления учетных записей|5|start=2018-12-12T16:57:09.1706828Z app=Kerberos shost=W2012R2-000000-Server msg=Обнаружено подозрительное перечисление учетных записей с использованием протокола Kerberos с сервера W2012R2-000000-Server. Злоумышленник предпринял всего 100 попыток подобрать имена учетных записей; 1 попытка подбора имени совпала с имеющимися именами учетных записей в Active Directory. externalId=2003 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113de58ca1ec1250ca06d8
+
+### <a name="reconnaissance-using-dns"></a>Разведывательная атака с использованием DNS.
+1 2018-12-12T16:57:20.743634+00:00 CENTER ATA 4688 DnsReconnaissanceSuspiciousActiv CEF:0|Microsoft|ATA|1.9.0.0|DnsReconnaissanceSuspiciousActivity|Рекогносцировка с использованием DNS|5|start=2018-12-12T16:57:20.2556472Z app=Dns shost=W2012R2-000000-Server msg=Обнаружена подозрительная активность DNS с сервера W2012R2-000000-Server (не являющегося DNS-сервером) в DC1. externalId=2007 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113df08ca1ec1250ca074c
+
+### <a name="reconnaissance-using-smb-session-enumeration"></a>Рекогносцировка с использованием перечисления сеансов SMB
+12-12-2018  19:50:51    Auth.Warning    192.168.0.222   1 2018-12-12T17:50:51.090247+00:00 CENTER ATA 4688 EnumerateSessionsSuspiciousActiv ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|EnumerateSessionsSuspiciousActivity|Рекогносцировка с использованием перечисления сеансов SMB|5|start=2018-12-12T17:00:42.7234229Z app=SrvSvc shost=W2012R2-000000-Server msg=Попытки перечисления сеансов SMB не удались с сервера W2012R2-000000-Server относительно DC1. Учетные записи не раскрыты. externalId=2012 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114a788ca1ec1250ca7735
+
+### <a name="remote-execution-attempt-detected"></a>Обнаружение попытки удаленного выполнения
+12-12-2018  19:58:45    Auth.Warning    192.168.0.222   1 2018-12-12T17:58:45.082799+00:00 CENTER ATA 4688 RemoteExecutionSuspiciousActivit ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|RemoteExecutionSuspiciousActivity|Обнаружение попытки удаленного выполнения|5|start=2018-12-12T17:54:23.9523766Z shost=W2012R2-000000-Server msg=Следующее обнаружение попытки удаленного выполнения на DC1 с сервера W2012R2-000000-Server:\r\nСбой удаленного планирования одной или нескольких задач. externalId=2019 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114c548ca1ec1250caf783
+
 ### <a name="unusual-protocol-implementation"></a>Внедрение нестандартных протоколов.
-3 мая 12:28:19 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|AbnormalProtocolSuspiciousActivity|Внедрение нестандартного протокола|5|start=2017-05-03T12:28:05.3561302Z app=Ntlm shost=CLIENT1 suser=Administrator outcome=Success msg=Администратор успешно прошел проверку подлинности с компьютера CLIENT1 в DC1 с использованием нестандартного протокола. Это может быть результатом использования вредоносных средств для проведения таких атак, как Pass-the-Hash или атака методом подбора. cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909cce38ca1ec04d05f4ab4
-### <a name="pass-the-ticket"></a>Атака Pass-the-Ticket.
-4 мая 13:15:41 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|PassTheTicketSuspiciousActivity|Кража идентификационных данных с использованием атаки Pass-the-Ticket|10|start=2017-05-04T13:13:44.5160000Z app=Kerberos shost=CLIENT1 suser=Administrator request=krbtgt/DOMAIN1.TEST.LOCAL msg=Билеты Kerberos администратора были украдены с компьютера CLIENT2 на компьютер CLIENT1 и использованы для доступа к krbtgt/DOMAIN1.TEST.LOCAL. cs2Label=ticketSourceComputer cs2=CLIENT2 cs3Label=ticketSourceComputerIpAddress cs3= cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/590b29168ca1ec0ba438acf6
+1 2018-12-12T16:50:46.930234+00:00 CENTER ATA 4688 AbnormalProtocolSuspiciousActivi CEF:0|Microsoft|ATA|1.9.0.0|AbnormalProtocolSuspiciousActivity|Внедрение нестандартных протоколов|5|start=2018-12-12T16:48:46.6480337Z app=Ntlm shost=W2012R2-000000-Server outcome=Success msg=triservice успешно прошел проверку подлинности с сервера W2012R2-000000-Server относительно DC1 с использованием внедрения нестандартных протоколов. Это может быть результатом использования вредоносных средств для проведения таких атак, как Pass-the-Hash или атака методом подбора. externalId=2002 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113c668ca1ec1250ca0397
 
-### <a name="monitoring-alert"></a>Оповещения мониторинга
-2018-01-30T10:42:09.102595+00:00 CENTER ATA 4932 CenterDatabaseDisconnectedMonito ï»¿CEF:0|Microsoft|ATA|1.8.6765.50002|CenterDatabaseDisconnectedMonitoringAlert|CenterDatabaseDisconnectedMonitoringAlert|10|externalId=1005 cs1Label=url cs1=https://center/monitoring msg=База данных, используемая центром CENTER, не работает. Последний раз она была замечена работающей 30.01.2018 в 10:39:39 UTC.
+### <a name="suspicion-of-identity-theft-based-on-abnormal-behavior"></a>Подозрение на кражу идентификационных данных на основе аномального поведения
+1 2018-12-12T16:50:35.746877+00:00 CENTER AТA 4688 AbnormalBehaviorSuspiciousActivi CEF:0|Microsoft|ATA|1.9.0.0|AbnormalBehaviorSuspiciousActivity|Подозрение на кражу идентификационных данных на основе аномального поведения|5|start=2018-12-12T16:48:35.5501183Z app=Kerberos suser=USR45964 msg=USR45964 LAST45964 демонстрирует аномальное поведение при выполнении действий, которые не наблюдались за последний месяц и также не соответствуют действиям других учетных записей в организации. Аномальное поведение зависит от следующих действий.\r\nВыполнено интерактивный вход из 30 неправильных рабочих станций.\r\nЗапрошено доступ к 30 аномальным ресурсам. externalId=2001 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113c5b8ca1ec1250ca0355
+
+### <a name="suspicious-authentication-failures"></a>Подозрительные неудачные попытки проверки подлинности
+12-12-2018  19:50:34    Auth.Warning    192.168.0.222   1 2018-12-12T17:04:25.214067+00:00 CENTER ATA 4688 BruteForceSuspiciousActivity ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|BruteForceSuspiciousActivity|Подозрительные неудачные попытки проверки подлинности|5|start=2018-12-12T17:03:58.5892462Z app=Kerberos shost=W2012R2-000106-Server msg=Подозрительные неудачные попытки проверки подлинности, указывающие на обнаруженную потенциальную атаку методом подбора с сервера W2012R2-000106-Server. externalId=2023 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113f988ca1ec1250ca5810
+
+### <a name="suspicious-service-creation"></a>Создание подозрительной службы
+12-12-2018  19:53:49    Auth.Warning    192.168.0.222   1 2018-12-12T17:53:49.913034+00:00 CENTER ATA 4688 MaliciousServiceCreationSuspicio ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|MaliciousServiceCreationSuspiciousActivity|Создание подозрительной службы|5|start=2018-12-12T19:53:49.0000000Z app=ServiceInstalledEvent shost=W2012R2-000000-Server msg=triservice создал FakeService для выполнения потенциально вредоносных команд на сервере W2012R2-000000-Server. externalId=2026 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114b2d8ca1ec1250caf577
+
+## <a name="monitoring-alerts"></a>Предупреждения наблюдения
+
+### <a name="gatewaydisconnectedmonitoringalert"></a>GatewayDisconnectedMonitoringAlert
+1 2018-12-12T16:52:41.520759+00:00 CENTER ATA 4688 GatewayDisconnectedMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayDisconnectedMonitoringAlert|GatewayDisconnectedMonitoringAlert|5|externalId=1011 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=На протяжении 5 минут отсутствовал обмен данными в Gateway CENTER. Последний обмен данными был 12 декабря 2018 г. в 16:47:03 UTC.
+
+### <a name="gatewaystartfailuremonitoringalert"></a>GatewayStartFailureMonitoringAlert
+1 2018-12-12T15:36:59.701097+00:00 CENTER ATA 1372 GatewayStartFailureMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayStartFailureMonitoringAlert|GatewayStartFailureMonitoringAlert|5|externalId=1018 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=Не удалось запустить службу шлюзов на DC1. Последний раз она была запущена 12 декабря 2018 г. в 15:04:12 UTC.
 
 > [!NOTE]
 > Все оповещения мониторинга отправляются с использованием одного шаблона, как описано выше.
-
 
 
 ## <a name="see-also"></a>См. также
