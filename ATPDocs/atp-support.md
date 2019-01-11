@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 1/7/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 566b7ac598dcdd0d44d30c50c01846c42d0b643f
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 7d7be8cb236a58e6f0576d3b283fb8eff137ac96
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744801"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142409"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 
@@ -60,7 +60,7 @@ ms.locfileid: "52744801"
 
 ### <a name="self-help"></a>Самостоятельное решение проблем
 
-#### <a name="system-status-page"></a>Страница "Состояние системы" 
+#### <a name="system-status-page"></a>Страница "Состояние системы"
 
 Чтобы просмотреть состояние системы Azure ATP, откройте страницу [**Состояние системы**](https://health.atp.azure.com/). На ней приводятся сведения о работоспособности портала Azure ATP, наличии проблем с операциями обнаружения и возможности датчика отправлять трафик в облако. Получить доступ к странице **Состояние системы** можно из меню Azure ATP.
 
@@ -80,4 +80,4 @@ ms.locfileid: "52744801"
 
 ### <a name="community-resources"></a>Ресурсы сообщества
 
-Рекомендуем вам  [группу Yammer, посвященную Azure Advanced Threat Protection](https://www.yammer.com/AskIPTeam). Здесь вы можете обратиться напрямую к специалистам команды по Azure Advanced Threat Protection, а также обменяться знаниями и опытом с другими администраторами и консультантами.
+Рекомендуем вам  [группу сообщества Tech Community по Расширенной защите от угроз Azure](https://aka.ms/azureatpcommunity). Здесь вы можете обратиться напрямую к специалистам команды по Azure Advanced Threat Protection, а также обменяться знаниями и опытом с другими администраторами и консультантами.

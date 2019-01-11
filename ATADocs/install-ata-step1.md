@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 04a25e6f0a73e45b4358566f15f38c20d291a153
-ms.sourcegitcommit: 1b914a85cfa33dc0c5005f9dc68e6ea08a0164ac
+ms.openlocfilehash: b138f533b1ce804af08479a961a791c4069e5a27
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411635"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142443"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 
 # <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
@@ -66,7 +66,7 @@ ms.locfileid: "50411635"
 
     |Поле|Описание|Комментарии|
     |---------|---------------|------------|
-    |Путь установки|Это расположение для установки центра ATA. По умолчанию центр устанавливается в папку с путем %programfiles%\Microsoft Advanced Threat Analytics\Center.|Оставьте значение по умолчанию.|
+    |Путь установки|Это расположение для установки центра ATA. По умолчанию этот путь — %programfiles%\Microsoft Advanced Threat Analytics\Center.|Оставьте значение по умолчанию.|
     |Путь к данным базы данных|Это расположение, в котором размещены файлы базы данных MongoDB. По умолчанию используется путь %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|Выберите расположение, где предусмотрено достаточно пространства для будущего роста данных с учетом требований к размеру. **Примечание.** <ul><li>В рабочих средах следует использовать диск, на котором достаточно свободного места с учетом планирования ресурсов.</li><li>При крупных развертываниях база данных должна находиться на отдельном физическом диске.</li></ul>Дополнительные сведения о размерах см. в статье [Планирование производительности ATA](ata-capacity-planning.md).|
     |SSL-сертификат службы центра|Это сертификат, который используется службами центра ATA и консоли ATA.|Щелкните значок ключа, что выбрать установленный сертификат или проверить самозаверяющий сертификат при развертывании в лабораторной среде. Имеется возможность создать самозаверяющий сертификат.|
         
@@ -94,9 +94,16 @@ ms.locfileid: "50411635"
 
 ### <a name="set-anti-virus-exclusions"></a>Настройка исключений антивируса
 
-После установки центра ATA следует исключить из постоянного сканируемого антивирусным приложением контента каталог баз данных MongoDB. По умолчанию путь в базе данных — **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**.
+После установки центра ATA следует исключить из постоянного сканируемого антивирусным приложением контента каталог баз данных MongoDB. Расположение по умолчанию в базе данных: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**.
 
+Не забудьте также исключить из процедуры сканирования антивирусной программой следующие папки:
 
+C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosAsBloomFilters
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosTgsBloomFilters
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs
+
+Если вы установили ATA в другой каталог, измените пути к папкам соответствующим образом. 
 
 > [!div class="step-by-step"]
 > [« Перед установкой](configure-port-mirroring.md)

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5b5d588f11bb1c7a665cf4727cb996e5261b7237
-ms.sourcegitcommit: 281d8ea451b6ac726331d0032c344651b1a964b7
+ms.openlocfilehash: fa65a796100c23f2b113410fd30f9adf22e79268
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450394"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142426"
 ---
 *Область применения: Расширенная защита от угроз Azure*
 
@@ -33,20 +33,25 @@ ms.locfileid: "53450394"
 ## <a name="step-4-install-the-azure-atp-sensor"></a>Шаг 4. Установка датчика Azure ATP
 
 > [!IMPORTANT]
->На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если платформа .NET Framework 4.7 не установлена, пакет установки датчика Azure ATP установит ее, после чего потребуется перезагрузить сервер.
+>На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если она не установлена, пакет установки датчика Azure ATP установит ее, что может потребовать перезагрузку сервера.
 
 Выполните следующие действия на контроллере домена.
 
-1. Убедитесь, что компьютер подключен к правильной конечной точке облачной службы Azure ATP:
-  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) (для Европы)  
-  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com) (для США)
-  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com) (для Азии)
+1. Проверьте подключение компьютера к необходимым конечным точкам облачной службы Azure ATP:
+  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
+  - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
+<br>(для Европы)  
+  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
+  - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
+  - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+<br>(для США)
+  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)<br>(для Азии)
 
 2. Извлеките файлы установки из ZIP-файла. 
 > [!NOTE] 
 > При установке непосредственно из ZIP-файла произойдет сбой.
 
-3.  Запустите файл **setup.exe датчика Azure ATP** и следуйте указаниям мастера установки.
+3. Запустите файл **setup.exe датчика Azure ATP** и следуйте указаниям мастера установки.
 
 4.  На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
 
