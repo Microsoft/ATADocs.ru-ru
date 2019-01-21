@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 1/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f8bc815c3ffad4f75d84a69f2e6c30cc0707d8e3
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 16951313f18be44a3c42a0f6b2281963d867c7b4
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125036"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249901"
 ---
 *Область применения: Расширенная защита от угроз Azure*
 
@@ -76,7 +76,7 @@ ms.locfileid: "53125036"
 |Отслеживаемое действие|Описание|
 |---------------------|------------------|
 |Репликация службы каталогов  |Пользователь попытался реплицировать службу каталогов.|
-|DNS-запрос  |Пользователь выполнил запрос AXFR в контроллере домена.|
+|DNS-запрос  |Тип запроса, который пользователь выполнил на контроллере домена (**AXFR**,**TXT**, **MX**, **NS**, **SRV**, **ANY**, **DNSKEY**).|
 |Получение закрытых данных  |Пользователь запросил или попытался запросить закрытые данные по протоколу LSARPC.|
 |Создание службы   |Пользователь попытался создать определенную службу на удаленном компьютере.|
 |перечисление сеансов SMB;   |Пользователь попытался перечислить всех пользователей с открытыми сеансами SMB на контроллерах домена.|

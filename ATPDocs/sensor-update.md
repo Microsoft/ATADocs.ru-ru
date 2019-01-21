@@ -1,11 +1,11 @@
 ---
 title: Обновление датчиков Azure ATP | Microsoft Docs
-description: В этой статье описывается обновление датчиков в Azure ATP.
+description: Описывается обновление и задержка обновления датчиков в Azure ATP.
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a24210415929b69152377d34aeec1bdc8906d08c
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: f2df8f8f59edff7ebda3f86aae26b899913d57f8
+ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744444"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314335"
 ---
-*Применяется к: Azure Advanced Threat Protection*
+*Область применения: Расширенная защита от угроз Azure*
 
 
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
@@ -92,7 +92,7 @@ ms.locfileid: "52744444"
 ![обновление датчика](./media/sensor-update.png)
 
 
-В случае сбоя, если датчик не завершает процесс обновления, запускается соответствующее оповещение мониторинга и отправляется уведомление.
+В случае сбоя обновления, если датчик не завершает процесс обновления, запускается соответствующее оповещение мониторинга и отправляется уведомление.
 
 ![датчик устарел](./media/sensor-outdated.png)
 

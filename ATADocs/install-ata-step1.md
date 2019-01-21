@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/10/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b138f533b1ce804af08479a961a791c4069e5a27
-ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
+ms.openlocfilehash: 00bce1b381b32e1fe3fe9a2bb2c11016b33699f7
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142443"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249935"
 ---
 *Область применения: Advanced Threat Analytics версии 1.9*
 
@@ -96,12 +96,17 @@ ms.locfileid: "54142443"
 
 После установки центра ATA следует исключить из постоянного сканируемого антивирусным приложением контента каталог баз данных MongoDB. Расположение по умолчанию в базе данных: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**.
 
-Не забудьте также исключить из процедуры сканирования антивирусной программой следующие папки:
+Кроме того, необходимо исключить следующие папки и процессы из сканирования антивирусной программой:
 
-C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosAsBloomFilters
+**Папки** C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosAsBloomFilters
 <br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosTgsBloomFilters
 <br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup
 <br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs
+
+**Процессы**
+<br>mongod.exe
+<br>Microsoft.Tri.Center.exe
+
 
 Если вы установили ATA в другой каталог, измените пути к папкам соответствующим образом. 
 
