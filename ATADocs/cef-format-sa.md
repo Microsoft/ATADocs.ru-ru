@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: f96bd9222a803a21efee5def935ecbe3244e0611
-ms.sourcegitcommit: c390d36d75f13607698c2a8d7ac757ecef4c748e
+ms.openlocfilehash: 357f3517a864114c0aaa83a074c0b061d21259c2
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53709937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840948"
 ---
-*Область применения: Advanced Threat Analytics версии 1.9*
-
-
 # <a name="ata-siem-log-reference"></a>Справочник по журналу ATA SIEM
+
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 ATA может пересылать события оповещений системы безопасности и мониторинга в SIEM. Оповещения переадресовываются в формате CEF. Ниже приведен пример каждого типа журнала оповещений системы безопасности для отправления в SIEM.
 
@@ -155,5 +155,5 @@ ATA может пересылать события оповещений сист
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-collection.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

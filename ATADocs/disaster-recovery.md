@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 072abaef05432184653d260c43470e86a38d29db
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 09d471710a987db332a84f0e38a761a3b1e4ed16
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133588"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839963"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="ata-disaster-recovery"></a>Аварийное восстановление АТА
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 В этой статье описано, как быстро восстановить центр и функции ATA после сбоя, когда центр АТА отключен, а шлюзы АТА работают. 
 
 >[!NOTE]
@@ -40,8 +39,8 @@ ms.locfileid: "46133588"
     3. Следуйте инструкциям, чтобы экспортировать сертификат и (обязательно) закрытый ключ.
     4. Создайте резервную копию экспортированного файла сертификата на отдельном компьютере.
 
-  > [!NOTE] 
-  > Если экспортировать закрытый ключ не удается, создайте другой сертификат и разверните его в ATA, как описано в статье [Изменение конфигурации ATA. Сертификат центра ATA](modifying-ata-center-configuration.md), а затем экспортируйте его. 
+   > [!NOTE] 
+   > Если экспортировать закрытый ключ не удается, создайте другой сертификат и разверните его в ATA, как описано в статье [Изменение конфигурации ATA. Сертификат центра ATA](modifying-ata-center-configuration.md), а затем экспортируйте его. 
 
 ## <a name="recover-your-ata-center"></a>Восстановление центра ATA
 

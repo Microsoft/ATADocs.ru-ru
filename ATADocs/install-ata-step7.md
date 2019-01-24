@@ -13,24 +13,23 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b45012f82a2457d09a616c2bd9e7e8866d0f5cdc
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 76c149c351400c57d8d70274d152d23ca6f729df
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453941"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839900"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
 > [«Шаг 7](vpn-integration-install-step.md)
 > [Шаг 9»](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 8. Настройка исключений IP-адресов и пользователя Honeytoken
+
 В ATA можно исключать из обнаружения определенные IP-адреса или пользователей. 
 
 Например, **исключением исследования DNS** является сканер безопасности, использующий DNS в качестве механизма сканирования. Благодаря этому исключению ATA игнорирует такие сканеры. Примером исключения *Pass-the-Ticket* является устройство NAT.    

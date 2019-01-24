@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 40faae88e209b8b737dbc7ef364f17a8b82a4d52
-ms.sourcegitcommit: eac0aa855270b550dfb4b8c61b9cf0953f1e5204
+ms.openlocfilehash: 88a7d5e23cc6b3f1202f522e40060e71f676397f
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52298118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459079"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
 
 При боковом смещении злоумышленник использует неконфиденциальные учетные записи для доступа к конфиденциальным учетным записям в вашей сети. Боковое смещение используется злоумышленниками, чтобы определить конфиденциальные учетные записи и компьютеры в вашей сети, которые совместно используют сохраненные учетные данные для входа в учетных записях, группах и компьютерах. Если злоумышленнику удается успешно выполнить боковое смещение к ключевым целевым объектам, он также может получить доступ к контроллерам домена. Атаки, использующие боковое смещение, реализуются с помощью различных методов, описанных в [руководстве по подозрительным действиям](suspicious-activity-guide.md).

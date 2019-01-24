@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a36afd4997a2f148bc5a31726aee22914a3607b4
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 8c80529c5111c909bd5e2b1b0ff17933e4f30b18
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458654"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
-
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
 
 Профиль сущности является страницей с полными данными о сущности, предназначенной для всестороннего детального анализа пользователей, компьютеров, устройств и ресурсов, к которым они имеют доступ, а также их истории. На странице профиля используется новый преобразователь логических действий Azure ATP, который может просмотреть группу выполняющихся действий (объединенных до 1 минуты) и объединить их в одно логическое действие, чтобы помочь вам понять фактические действия пользователей.

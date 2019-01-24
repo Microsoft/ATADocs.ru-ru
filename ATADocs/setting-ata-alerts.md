@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 00601746ffabc8f0d8c798b09a6c2d989630f736
-ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
+ms.openlocfilehash: 1b932d85321e11d85284ef325268ae57b98173b3
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840026"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="set-ata-notifications"></a>Настройка уведомлений ATA
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 Существует три способа получения уведомлений ATA о подозрительной активности: по электронной почте, при помощи пересылки событий ATA и пересылки событий на сервер SIEM или сервер системного журнала. Перед выбором уведомлений, которые вы хотите получать, необходимо [настроить почтовый сервер и сервер системного журнала](setting-syslog-email-server-settings.md).
 
 > [!NOTE]

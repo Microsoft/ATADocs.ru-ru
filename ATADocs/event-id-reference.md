@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: e21e2b984db3d58703cf6503817401f1bab0fda1
-ms.sourcegitcommit: c390d36d75f13607698c2a8d7ac757ecef4c748e
+ms.openlocfilehash: 9698f3905eebb9e1271ea3a401890b7829bde9a9
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53709920"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840612"
 ---
-*Область применения: Advanced Threat Analytics версии 1.9*
-
-
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
+
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 Средство просмотра событий центра ATA записывает события ATA в журнал. В этой статье приводится список идентификаторов событий и описание каждого из них.
 
@@ -101,5 +101,5 @@ ms.locfileid: "53709920"
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-collection.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9fe9011f0fbdf29e80e1957c4e1535f497061aa2
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 947f816d30dbc8e8de817eccf8213d25c026f833
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744869"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458791"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
 # <a name="integrate-vpn"></a>Интеграция VPN
 
 Azure Advanced Threat Protection (ATP) может собирать сведения о данных учета из решений VPN. Если настроить эту функцию, страница профиля пользователя будет включать сведения из VPN-подключений, в том числе IP-адреса и расположения, из которых осуществлялись подключения. Дополнительные данные о действиях пользователей помогут в процессе анализа, а также при обнаружении неправильных VPN-подключений. Вызов для разрешения внешних IP-адресов в расположении является анонимным. Личный идентификатор в этом вызове не отправляется.

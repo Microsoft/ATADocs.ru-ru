@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fa65a796100c23f2b113410fd30f9adf22e79268
-ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
+ms.openlocfilehash: e5e1ee510ba52f541fb224754f82ebfddf553365
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142426"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840528"
 ---
-*Область применения: Расширенная защита от угроз Azure*
-
-
-
 # <a name="install-azure-atp---step-4"></a>Установка Azure ATP. Шаг 4
 
 > [!div class="step-by-step"]
@@ -38,44 +34,44 @@ ms.locfileid: "54142426"
 Выполните следующие действия на контроллере домена.
 
 1. Проверьте подключение компьютера к необходимым конечным точкам облачной службы Azure ATP:
-  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
-  - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
-<br>(для Европы)  
-  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
-  - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
-  - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
-<br>(для США)
-  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)<br>(для Азии)
+   - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
+   - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
+   <br>(для Европы)  
+   - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
+   - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
+   - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+   <br>(для США)
+   - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)<br>(для Азии)
 
 2. Извлеките файлы установки из ZIP-файла. 
-> [!NOTE] 
-> При установке непосредственно из ZIP-файла произойдет сбой.
+   > [!NOTE] 
+   > При установке непосредственно из ZIP-файла произойдет сбой.
 
 3. Запустите файл **setup.exe датчика Azure ATP** и следуйте указаниям мастера установки.
 
-4.  На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
+4. На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
 
-     ![Язык установки автономного датчика Azure ATP](media/sensor-install-language.png)
+    ![Язык установки автономного датчика Azure ATP](media/sensor-install-language.png)
 
 
-5.  Мастер установки автоматически проверит, является ли сервер контроллером домена или выделенным сервером. Если это контроллер домена, будет установлен датчик Azure ATP, если это выделенный сервер, устанавливается автономный датчик Azure ATP. 
+5. Мастер установки автоматически проверит, является ли сервер контроллером домена или выделенным сервером. Если это контроллер домена, будет установлен датчик Azure ATP, если это выделенный сервер, устанавливается автономный датчик Azure ATP. 
     
-    Если устанавливается автономный датчик Azure ATP, вы увидите приведенный ниже экран, который сообщает, что на выделенном сервере будет установлен автономный датчик Azure ATP.
+   Если устанавливается автономный датчик Azure ATP, вы увидите приведенный ниже экран, который сообщает, что на выделенном сервере будет установлен автономный датчик Azure ATP.
     
-    ![Установка автономного датчика Azure ATP](media/sensor-install-deployment-type.png)
+   ![Установка автономного датчика Azure ATP](media/sensor-install-deployment-type.png)
 
-    Нажмите кнопку **Далее**.
+   Нажмите кнопку **Далее**.
 
-    > [!NOTE] 
-    > Если контроллер домена или выделенный сервер не удовлетворяет минимальным требованиям к оборудованию для установки, вы получите предупреждение. Но при этом вы все равно сможете продолжить установку, нажав кнопку **Далее**. Это может быть полезным, если вы устанавливаете Azure ATP в небольшой тестовой среде, где для хранения данных не потребуется много места. Для установки в рабочей среде настоятельно рекомендуется изучить [руководство по планированию ресурсов](atp-capacity-planning.md) для Azure ATP и обеспечить выполнение всех требований для контроллера домена или выделенного сервера.
+   > [!NOTE] 
+   > Если контроллер домена или выделенный сервер не удовлетворяет минимальным требованиям к оборудованию для установки, вы получите предупреждение. Но при этом вы все равно сможете продолжить установку, нажав кнопку **Далее**. Это может быть полезным, если вы устанавливаете Azure ATP в небольшой тестовой среде, где для хранения данных не потребуется много места. Для установки в рабочей среде настоятельно рекомендуется изучить [руководство по планированию ресурсов](atp-capacity-planning.md) для Azure ATP и обеспечить выполнение всех требований для контроллера домена или выделенного сервера.
 
-6.  В разделе **Настройка датчика** введите путь установки и ключ доступа, скопированный на предыдущем шаге, в зависимости от вашей среды:
+6. В разделе **Настройка датчика** введите путь установки и ключ доступа, скопированный на предыдущем шаге, в зависимости от вашей среды:
 
-    ![Изображение: настройка автономного датчика Azure ATP](media/sensor-install-config.png)
+   ![Изображение: настройка автономного датчика Azure ATP](media/sensor-install-config.png)
 
-      - Путь установки — это расположение для установки автономного датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
+     - Путь установки — это расположение для установки автономного датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
 
-      - Ключ доступа — это ключ, полученный на портале Azure ATP на предыдущем шаге.
+     - Ключ доступа — это ключ, полученный на портале Azure ATP на предыдущем шаге.
     
 7. Нажмите кнопку **Установить**. Во время установки автономного датчика Azure ATP устанавливаются и настраиваются следующие компоненты.
 
@@ -88,7 +84,7 @@ ms.locfileid: "54142426"
     -   Служба датчика Azure ATP и служба средства обновления датчика Azure ATP
     -   Распространяемый пакет Microsoft Visual C++ 2013.
 
-8.  После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал Azure ATP.
+8. После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал Azure ATP.
 
 
 > [!div class="step-by-step"]

@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8cff5cbba1c9ed8d04764d9839a5cb2c66093c81
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 084e3752953077b4be8678e6c98a73cb99bc9587
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459113"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>Общие сведения об оповещениях мониторинга датчика и автономного датчика Azure ATP
 
 Центр обеспечения работоспособности Azure ATP сообщает о возникновении проблем с экземплярами Azure ATP, создавая оповещения мониторинга. В этой статье описываются все оповещения мониторинга для каждого компонента с указанием причины и действий, необходимых для устранения проблемы.
@@ -109,5 +107,5 @@ ms.locfileid: "52744767"
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

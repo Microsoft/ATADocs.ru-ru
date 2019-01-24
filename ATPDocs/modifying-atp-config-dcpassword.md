@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a5b0befaa484a94cf307559296c887370228abb4
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 795677a2a8cc81335811cc800195588512241de7
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744308"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840521"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
-
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
 
 
@@ -38,24 +34,24 @@ ms.locfileid: "52744308"
 > [!NOTE]
 > Это имя пользователя и пароль из локального развертывания Active Directory, а не из Azure AD.
 
-1.  Откройте портал Azure ATP, воспользовавшись его URL-адресом.
+1. Откройте портал Azure ATP, воспользовавшись его URL-адресом.
 
-2.  На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
+2. На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-    ![Значок параметров конфигурации Azure ATP](media/atp-config-menu.png)
+   ![Значок параметров конфигурации Azure ATP](media/atp-config-menu.png)
 
-3.  Выберите **Directory Services** (Службы каталогов).
+3. Выберите **Directory Services** (Службы каталогов).
 
-    ![Изображение: изменение пароля автономного датчика Azure ATP](media/directory-services.png)
+   ![Изображение: изменение пароля автономного датчика Azure ATP](media/directory-services.png)
 
-4.  В разделе **Password** (Пароль) измените пароль.
+4. В разделе **Password** (Пароль) измените пароль.
 
- > [!NOTE]
- > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
+   > [!NOTE]
+   > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
 
-5.  Нажмите кнопку **Сохранить**.
+5. Нажмите кнопку **Сохранить**.
 
-6.  После изменения пароля вручную проверьте, что служба автономного датчика Azure ATP запущена на серверах автономного датчика Azure ATP.
+6. После изменения пароля вручную проверьте, что служба автономного датчика Azure ATP запущена на серверах автономного датчика Azure ATP.
 
 7. На портале Azure ATP в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
 

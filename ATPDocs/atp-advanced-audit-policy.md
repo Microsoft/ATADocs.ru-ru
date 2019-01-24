@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9d9294a22d1e3fd1847d42bd376e65fd114b04bf
-ms.sourcegitcommit: a2f6b52f66c89b9f2ca7410426b759a0b0de8d31
+ms.openlocfilehash: 8d7d8bc8ce6c1aefb95b5770a103859fed74efe1
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52981944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458637"
 ---
-*Область применения: Расширенная защита от угроз Azure*
-
-
 # <a name="azure-atp-advanced-audit-policy-check"></a>Проверка расширенной политики аудита Azure ATP
 
 Обнаружения Azure ATP основаны на определенных журналах событий Windows для обеспечения видимости в некоторых сценариях, таких как события входа NTLM, изменения групп и проч. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Из-за неправильных параметров расширенной политики аудита критические события не попадают в журналы, что приводит к неполному охвату Azure ATP.
@@ -46,7 +43,7 @@ ms.locfileid: "52981944"
 
 4. В открывшемся окне последовательно выберите **Конфигурация компьютера** > **Политики** > **Параметры Windows**  >  **Параметры безопасности** > **Конфигурация расширенной политики аудита**.
 
-    ![конфигурацию расширенной политики аудита.](media/atp-advanced-audit-policy-check-step-2.png)
+    ![Расширенная настройка политик аудита](media/atp-advanced-audit-policy-check-step-2.png)
 
 5. Перейдите к учетной записи входа, дважды щелкните **Аудит проверки учетных данных** и выберите параметр **Настроить следующие события аудита** для успешных и неудачных событий. 
 
@@ -64,5 +61,5 @@ ms.locfileid: "52981944"
 ## <a name="see-also"></a>См. также
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
