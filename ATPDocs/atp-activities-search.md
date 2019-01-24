@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fb3839d5348f11b13176375be84ecd46d44fa365
-ms.sourcegitcommit: 3ab48f180aa0276f4e19cf7cd567581c7b4324cc
+ms.openlocfilehash: 4f065b299f499b28368fd43fe03d2e7c38741f67
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458433"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Поиск и фильтрация отслеживаемых действий Azure ATP 
 
 Действия, обнаруженные Azure ATP в вашей сети, можно легко искать, фильтровать и упорядочивать при анализе оповещений системы безопасности.  
