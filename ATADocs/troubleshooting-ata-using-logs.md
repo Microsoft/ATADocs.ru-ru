@@ -13,24 +13,23 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bded73777a62a3a0ed91a73abfe6cd9771985082
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 5e42694b9c3bc6da84344ba0e97cebc4c622290a
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134047"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839752"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>Устранение неполадок в ATA с помощью журналов событий ATA
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 Журналы ATA содержат сведения о работе компонентов ATA в любой момент времени.
 
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются во вложенной папке **Logs** в каталоге с установкой ATA (по умолчанию это **C:\Program Files\Microsoft Advanced Threat Analytics\\**). Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются в подкаталоге с именем **Logs** того каталога, где установлено решение ATA (по умолчанию это **C:\Program Files\Microsoft Advanced Threat Analytics\\**). Расположение установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
@@ -49,7 +48,7 @@ ms.locfileid: "46134047"
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
 ## <a name="ata-center-logs"></a>Журналы событий центра АТА
-Журналы событий центра ATA расположены во вложенной папке **Logs**. Ее можно найти по следующему пути в месте установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**.
+Журналы событий центра ATA расположены во вложенной папке **Logs**. Расположение установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**.
 > [!Note]
 > Журналы консоли ATA, которые ранее размещались в разделе "Журналы IIS", теперь перенесены в раздел "Журналы центра ATA".
 
@@ -69,7 +68,7 @@ ms.locfileid: "46134047"
 
 
 ## <a name="ata-deployment-logs"></a>Журналы развертывания ATA
-Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Их можно найти по следующему пути в месте установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
+Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
 
 Журналы развертывания центра ATA:
 
@@ -94,5 +93,5 @@ ms.locfileid: "46134047"
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-collection.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d37fade3dd287be77bda16ebcd2cda204de265f6
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: d40c21dc761b624eea2412bdfc0778774f2840ca
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133792"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839626"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 > [!NOTE] 
 > Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
  

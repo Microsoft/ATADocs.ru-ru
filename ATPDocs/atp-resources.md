@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b61e840efc1b2ee14c2d367d1492b57836e2d144
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: a61434b7b9c15516c115dcbc9ae58e8cc9815111
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459058"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
-
 # <a name="azure-atp-readiness-guide"></a>План подготовки Azure ATP к работе
 
 В этой статье описывается стратегия подготовки и приводится список ресурсов, которые помогут начать работу со службой расширенной защиты от угроз Azure Advanced Threat Protection. 
@@ -70,13 +66,13 @@ Azure ATP состоит из облачной службы, размещенн�
 
 ## <a name="community-resources"></a>Ресурсы сообщества
 
-Блог: [блог по Azure ATP](https://aka.ms/aatpblog)
+Блог: [блог об Azure ATP](https://aka.ms/aatpblog).
 
-Публичное сообщество: [Azure ATP Tech Community](https://aka.ms/AatpCom)
+Открытое сообщество: [Azure ATP Tech Community](https://aka.ms/AatpCom).
 
-Частное сообщество: [группа ATP Azure в Yammer](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all)
+Закрытое сообщество: [Azure ATP Yammer Group](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all).
 
-Channel 9: [страница по безопасности Майкрософт на портале Channel 9](https://channel9.msdn.com/Shows/Microsoft-Security/)
+Channel 9: [Страница по безопасности Майкрософт на портале Channel 9](https://channel9.msdn.com/Shows/Microsoft-Security/)
 
 
 

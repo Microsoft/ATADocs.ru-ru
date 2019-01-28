@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d8cbbba3f034dac7679d77a645545374bfad643c
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: b40cdeb52f26e3fae32185c3168c5e3073bf5929
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54250194"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840868"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности
 
@@ -119,7 +119,7 @@ ms.locfileid: "54250194"
  
 **JSON-файл уникальной сущности**
  
-Включает данные об учетной записи, полученные Azure ATP из Active Directory. Сюда входят все атрибуты, такие как *Distinguished Name*, *SID*, *LockoutTime и *PasswordExpiryTime*. Для учетных записей пользователей включаются такие данные, как *Department*, *Mail* и *PhoneNumber*. Для учетных записей компьютеров включаются такие данные, как *OperatingSystem*, *IsDomainController и *DnsName*.
+Включает данные об учетной записи, полученные Azure ATP из Active Directory. Сюда входят все атрибуты, такие как *Distinguished Name*, *SID*, <em>LockoutTime и *PasswordExpiryTime</em>. Для учетных записей пользователей включаются такие данные, как *Department*, *Mail* и *PhoneNumber*. Для учетных записей компьютеров включаются такие данные, как *OperatingSystem*, <em>IsDomainController и *DnsName</em>.
 
 **JSON-файл профиля уникальной сущности**
 

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/13/2018
+ms.date: 1/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2cc450a50b35101b768d521d867850946e207dc5
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: 2c957f90215b6c251eadff67f3e66fc450711373
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54250003"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459198"
 ---
-*Область применения: Расширенная защита от угроз Azure*
-
-
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
 Azure ATP может пересылать события оповещений системы безопасности и мониторинга в систему SIEM. Оповещения и события передаются в формате CEF. В этой справочной статье приводятся примеры журналов, пересылаемых в систему SIEM.
@@ -59,36 +56,37 @@ Azure ATP может пересылать события оповещений с
 
 |Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|
 |---------|----------|---------|
-|Разведывательная атака путем перечисления учетных записей|Разведывательная атака с использованием перечисления учетных записей.|2003|
-|Кража данных по SMB| Н/Д| 2030|
-|Действие Honeytoken|Действие Honeytoken|2014|
-|Вредоносный запрос главного ключа API защиты данных|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|
-|Рекогносцировка путем сетевого сопоставления (DNS)|Разведывательная атака с использованием DNS.|2007|
-|Попытка удаленного выполнения кода|Попытка удаленного выполнения кода|2019|
-|Предполагаемая атака методом подбора (протокол LDAP)|Атака методом подбора с помощью простой привязки LDAP|2004|
-|Предполагаемая атака методом подбора (Kerberos, NTLM)|Подозрительные неудачные попытки проверки подлинности|2023|
-|Предполагаемая атака методом подбора (SMB)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
-|Предполагаемая атака DCShadow (повышение роли контроллера домена)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|
-|Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|
-|Предполагаемая атака DCSync (репликация служб каталогов)|вредоносная репликация служб каталогов;|2006|
-|Предполагаемое использование Golden Ticket (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака Golden Ticket)|2009|
-|Предполагаемое использование Golden Ticket (поддельные данные авторизации) |Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|2013|
-|Предполагаемое использование Golden Ticket (несуществующая учетная запись)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027|
-|Предполагаемое использование Golden Ticket (аномальное время) |Атака Golden Ticket в Kerberos — аномальное время|2022|
-|Предполагаемое использование Golden Ticket (аномалия билета) — предварительная версия|Н/Д|2032|
-|Предполагаемая кража удостоверения (Pass-the-Hash)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|
-|Предполагаемая кража удостоверения (Pass-the-Ticket)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|
-|Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|
-|Предполагаемая атака Overpass-the-Hash (Kerberos)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
-|Предполагаемое использование платформы взлома Metasploit|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
-|Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010|
-|Предполагаемая атака программы-шантажиста WannaCry|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035|
-|Подозрительный обмен данными через DNS|Подозрительный обмен данными через DNS|2031|
-|Подозрительное изменение привилегированных групп|Подозрительное изменение привилегированных групп|2024|
-|Создание подозрительной службы|Создание подозрительной службы|2026|
-|Подозрительные VPN-подключения|Подозрительные VPN-подключения|2025|
-|Разведывательная атака с использованием пользователей и членства в группах (SAMR)|разведывательная атака с использованием запросов к службам каталогов;|2021|
-|Разведывательная атака с использованием пользователя и IP-адреса (SMB) |Разведывательная атака с использованием перечисления сеансов SMB|2012|
+|[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|
+|[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb---preview-external-id-2030)| Н/Д| 2030|
+|[Действие Honeytoken](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Действие Honeytoken|2014|
+|[Вредоносный запрос главного ключа API защиты данных](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|
+|[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|
+|[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|
+|[Удаленное выполнение программного кода через DNS (предварительная версия)](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036---preview)|Н/Д|2036|
+|[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|
+|[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|
+|[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
+|[Предполагаемая атака DCShadow (повышение роли контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|
+|[Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|
+|[Предполагаемая атака DCSync (репликация служб каталогов)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|вредоносная репликация служб каталогов;|2006|
+|[Предполагаемое использование Golden Ticket (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|Понижение уровня шифрования (потенциальная атака Golden Ticket)|2009|
+|[Предполагаемое использование Golden Ticket (поддельные данные авторизации)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013) |Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|2013|
+|[Предполагаемое использование Golden Ticket (несуществующая учетная запись)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027|
+|[Предполагаемое совершение атаки Golden Ticket (аномалия билета) — предварительная версия](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032--preview)|Н/Д|2032|
+|[Предполагаемое использование Golden Ticket (аномальное время)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Атака Golden Ticket в Kerberos — аномальное время|2022|
+|[Предполагаемая кража удостоверения (Pass-the-Hash)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|
+|[Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|
+|[Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|
+|[Предполагаемая атака Overpass-the-Hash (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
+|[Предполагаемое использование платформы взлома Metasploit](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
+|[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010|
+|[Предполагаемая атака программы-шантажиста WannaCry](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035|
+|[Подозрительный обмен данными через DNS](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|Подозрительный обмен данными через DNS|2031|
+|[Подозрительное изменение привилегированных групп](atp-domain-dominance-alerts.md#suspicious-modification-of-sensitive-groups-external-id-2024)|Подозрительное изменение привилегированных групп|2024|
+|[Создание подозрительной службы](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|Создание подозрительной службы|2026|
+|[Подозрительные VPN-подключения](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|Подозрительные VPN-подключения|2025|
+|[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|разведывательная атака с использованием запросов к службам каталогов;|2021|
+|[Разведывательная атака с использованием пользователя и IP-адреса (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|Разведывательная атака с использованием перечисления сеансов SMB|2012|
 
 ## <a name="sample-logs"></a>Образцы журналов
 
@@ -121,6 +119,9 @@ Azure ATP может пересылать события оповещений с
 ### <a name="remote-code-execution-attempt"></a>Попытка удаленного выполнения кода
 10-29-2018  11:22:04    Auth.Warning    192.168.0.202   1 2018-10-29T09:22:00.100856+00:00 DC3 CEF 3908 RemoteExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|RemoteExecutionSecurityAlert|Remote code execution attempt|5|start=2018-10-29T09:19:45.0552367Z shost=CLIENT1 msg=На DC1 с компьютера CLIENT1 были предприняты следующие попытки удаленного выполнения.\r\nУспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nНеуспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nУспешное удаленное выполнение одного или нескольких методов WMI пользователем user1. externalId=2019 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f063c778-830c-4e9f-98d1-bc6c11c94e11 cs2Label=trigger cs2=new
 
+### <a name="remote-code-execution-over-dns---preview"></a>Удаленное выполнение программного кода через DNS (предварительная версия)
+1-17-2019   08:24:54    Auth.Warning    192.168.0.202   1 2019-01-17T08:24:54.100856+00:00 DC3 CEF 3908 DnsRemoteCodeExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.63.0.0|DnsRemoteCodeExecutionSecurityAlert|[PREVIEW] Remote code execution over DNS|5|start=2019-01-17T08:24:54.5293800Z app=Dns shost=CLIENT1 msg=An actor attempted to run commands remotely on CLIENT1 from DC1, over DNS protocol. externalId=2036 cs1Label=url cs1=https\:////contoso-corp.atp.azure.com:13000/securityAlert/591f9769-d904-40b1-89fa-c307c2ca814f cs2Label=trigger cs2=new
+
 ### <a name="suspected-brute-force-attack-ldap"></a>Предполагаемая атака методом подбора (протокол LDAP)
 02-21-2018  16:20:21    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:06.156238+00:00 CENTER CEF 6076 LdapBruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|LdapBruteForceSecurityAlert|Атака методом подбора с использованием простой привязки LDAP|5|start=2018-02-21T14:19:41.7422810Z app=Ldap suser=Wofford Thurston shost=CLIENT1 msg=Предпринята попытка атаки методом подбора с использованием протокола Ldap в отношении Wofford Thurston (разработчика программного обеспечения) с компьютера CLIENT1 (100 попыток подбора). cnt=100 externalId=2004 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/57b8ac96-7907-4971-9b27-ec77ad8c029a cs2Label=trigger cs2=update
 
@@ -133,7 +134,7 @@ Azure ATP может пересылать события оповещений с
 ### <a name="suspected-golden-ticket-usage-non-existent-account"></a>Предполагаемое использование Golden Ticket (несуществующая учетная запись)
 07-01-2018  14:28:49    Auth.Error  192.168.0.100   1 2018-07-01T11:28:35.546638+00:00 CENTER CEF 38768 ForgedPrincipalSecurityAlert ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.39.0.0|ForgedPrincipalSecurityAlert|Билет Kerberos Golden Ticket — несуществующая учетная запись|10|start=2018-07-01T09:48:31.2567987Z app=Kerberos suser=domain1.test.local\fake msg=Учетная запись domain1.test.local\fake, которая не существует в Active Directory, использовала билет Kerberos. С 2 компьютеров был обнаружен билет, используемый для доступа к 3 ресурсам. Это может свидетельствовать о потенциальной атаке Golden Ticket. externalId=2027 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/98f050d4-9134-429c-8e54-d8eeb19849c4 cs2Label=trigger cs2=update
 
-### <a name="suspected-golden-ticket-usage-ticket-anomaly--preview"></a>Предполагаемое использование Golden Ticket (аномалия билета) — предварительная версия
+### <a name="suspected-golden-ticket-usage-ticket-anomaly---preview"></a>Предполагаемое использование Golden Ticket (аномалия билета) — предварительная версия
 1 2018-11-18T10:46:23.346946+00:00 MAXIMG-7050 CEF 24284 GoldenTicketSizeAnomalySecurityA 0|Microsoft|Azure ATP|2.56.0.0|GoldenTicketSizeAnomalySecurityAlert|[PREVIEW] Suspected Golden Ticket usage (ticket anomaly)|10|start=2018-11-18T10:44:12.9317797Z app=Kerberos shost=CLIENT2 suser=RFosdyke msg=Пользователь Renzo Fosdyke (Software Engineer) использовал подозрительный билет Kerberos с CLIENT2 для доступа к ldap/domain1.test.local. externalId=2032 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/63600e03-f423-49bf-a92d-4010e1d52b9f cs2Label=trigger cs2=update
 
 ### <a name="suspected-golden-ticket-usage-time-anomaly"></a>Предполагаемое использование Golden Ticket (аномальное время) 
@@ -200,5 +201,5 @@ Azure ATP может пересылать события оповещений с
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

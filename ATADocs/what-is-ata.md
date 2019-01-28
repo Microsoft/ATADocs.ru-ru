@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1aa60326ed3c26e29d2188acb5b766fe34b474ba
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: ab2b6fa569f0c639b63ceb0317ecf0ae7a53411d
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840919"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
 # <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз.
 
 ## <a name="how-ata-works"></a>Как работает ATA
@@ -105,9 +105,9 @@ ATA обнаруживает эти подозрительные действи�
 
 ## <a name="whats-next"></a>Дальнейшие действия
 
--   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
+-   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md)
 
--   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
+-   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md)
 
 ## <a name="related-videos"></a>Видео по теме
 - [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)

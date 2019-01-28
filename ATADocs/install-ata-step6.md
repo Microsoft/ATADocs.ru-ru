@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ef2d163ae96e5bf8f893367095eacd9a44c3411
-ms.sourcegitcommit: 1a5880de35422d050fc1bc7a918dedc4180c45ad
+ms.openlocfilehash: d7c1a2cb171caf732ba4b49ddf50b7eaa2daaa1a
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265685"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840210"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
 > [« Шаг 5](install-ata-step5.md)
@@ -32,6 +30,7 @@ ms.locfileid: "51265685"
 
 ## <a name="step-6-configure-event-collection"></a>Шаг 6. Настройка сбора данных о событиях
 ### <a name="configure-event-collection"></a>Настройка сбора данных о событиях
+
 Чтобы улучшить возможности обнаружения, ATA требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757 и 7045. Они могут считываться автоматически упрощенным шлюзом ATA либо, если упрощенный шлюз ATA не развернут, передаваться в шлюз ATA одним из двух способов: путем настройки прослушивания событий SIEM в шлюзе ATA или [пересылки событий Windows](configure-event-collection.md). 
 
 > [!NOTE]
@@ -46,9 +45,8 @@ ms.locfileid: "51265685"
 
 > [!NOTE]
 > ATA прослушивает только IPv4, но не IPv6. 
-
--   Выполните настройку сервера SIEM или системного журнала на пересылку определенных событий на шлюз ATA.
-
+> -   Выполните настройку сервера SIEM или системного журнала на пересылку определенных событий на шлюз ATA.
+> 
 > [!IMPORTANT]
 > -   Не выполняйте пересылку всех данных системного журнала на шлюз ATA.
 > -   ATA поддерживает трафик UDP с сервера SIEM или системного журнала.
@@ -135,7 +133,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 Пакет проверки подлинности:              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-Учетная запись входа: администратор
+Учетная запись входа: Администратор
 
 Исходная рабочая станция:       SIEM
 
@@ -166,7 +164,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 -   Для пар ключ=значение порядок представления неважен.
 
 #### <a name="qradar"></a>QRadar
-QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как ATA требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в статье[http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol") (QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC).
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как ATA требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. на странице [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 

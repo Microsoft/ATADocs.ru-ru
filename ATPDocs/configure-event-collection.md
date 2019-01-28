@@ -13,20 +13,16 @@ ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eaf798149c828b641ba037ffbb6854ca07c6732a
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 640ea2ab75d4388381f9789dcac5399fa1327d05
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783599"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840647"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
-
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
-Чтобы улучшить возможности обнаружения вторжений, Azure ATP требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757 и 7045. Они могут автоматически считываться датчиком Azure ATP или, если датчик Azure ATP не развернут, передаваться в автономный датчик Azure ATP путем настройки прослушивания событий SIEM в автономном датчике Azure ATP или [настройки пересылки событий Windows](configure-event-forwarding.md).
+Чтобы оптимизировать возможности обнаружения вторжений, Azure ATP требуется доступ к следующим событиям Windows: 4776, 4732, 4733, 4728, 4729, 4756, 4757 и 7045. Они могут автоматически считываться датчиком Azure ATP или, если датчик Azure ATP не развернут, передаваться в автономный датчик Azure ATP путем настройки прослушивания событий SIEM в автономном датчике Azure ATP или [настройки пересылки событий Windows](configure-event-forwarding.md).
 
 > [!NOTE]
 > Очень важно выполнить скрипт аудита Azure ATP перед настройкой сбора данных о событиях, чтобы обеспечить правильность настройки контроллеров домена для записи необходимых событий. 
@@ -36,12 +32,12 @@ ms.locfileid: "48783599"
 ## <a name="siemsyslog"></a>Система SIEM/системный журнал
 Для обработки Azure ATP данных с сервера системного журнала необходимо выполнить следующие шаги:
 
--   Настройте серверы датчика Azure ATP на прослушивание и прием событий, перенаправляемых с сервера SIEM или системного журнала.
+- Настройте серверы датчика Azure ATP на прослушивание и прием событий, перенаправляемых с сервера SIEM или системного журнала.
 
- > [!NOTE]
- > Azure ATP прослушивает только IPv4, но не IPv6. 
+  > [!NOTE]
+  > Azure ATP прослушивает только IPv4, но не IPv6. 
 
--   Настройте сервер SIEM или сервер системного журнала на пересылку определенных событий на датчик Azure ATP.
+- Настройте сервер SIEM или сервер системного журнала на пересылку определенных событий на датчик Azure ATP.
 
 > [!IMPORTANT]
 > -   Не пересылайте все данные системного журнала на датчик Azure ATP.
@@ -129,7 +125,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 Пакет проверки подлинности:              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-Учетная запись входа: администратор
+Учетная запись входа: Администратор
 
 Исходная рабочая станция:       SIEM
 
@@ -160,7 +156,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 -   Для пар ключ=значение порядок представления неважен.
 
 ## <a name="qradar"></a>QRadar
-QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в статье[http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol") (QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC).
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. на странице [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 

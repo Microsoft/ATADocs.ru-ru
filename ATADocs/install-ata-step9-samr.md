@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7fae5fa320aab6a2ad6db4695b0087eab72344e8
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 39d1e03eda182b797412e94ff5427bc74956113a
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453958"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841021"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
 # <a name="install-ata---step-9"></a>Установка ATA. Шаг 9
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
 > [«Шаг 8»](install-ata-step7.md)
@@ -35,21 +35,21 @@ ms.locfileid: "47453958"
 
 1. Найдите политику.
 
- - Имя политики: сетевой доступ — ограничение клиентов, которые могут выполнять удаленные вызовы SAM
- - Расположение: конфигурация компьютера, параметры Windows, параметры безопасности, локальные политики, параметры безопасности
+   - Имя политики: сетевой доступ — ограничение клиентов, которые могут выполнять удаленные вызовы SAM
+   - Расположение: конфигурация компьютера, параметры Windows, параметры безопасности, локальные политики, параметры безопасности
   
-  ![Поиск политики](./media/samr-policy-location.png)
+   ![Поиск политики](./media/samr-policy-location.png)
 
 2. Добавьте службу ATA в список утвержденных учетных записей, которые могут выполнять это действие в современных системах Windows.
  
-  ![Добавление службы](./media/samr-add-service.png)
+   ![Добавление службы](./media/samr-add-service.png)
 
 3. Теперь у **службы ATA** (службы ATA, созданной во время установки) есть соответствующие права для выполнения SAM-R в среде.
 
 > [!NOTE]
 > Прежде чем применять новую политику, путем включения и проверки предложенных изменений в режиме аудита убедитесь, что среда остается защищенной без влияния на совместимость приложений. 
 
- Дополнительные сведения о SAM-R и групповой политике см. в статье [Network access: Restrict clients allowed to make remote calls to SAM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) (Сетевой доступ: ограничение клиентов, которые могут выполнять удаленные вызовы SAM).
+ Дополнительные сведения о SAM-R и групповой политики см. в статье [Network access: Restrict clients allowed to make remote calls to SAM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) (Сетевой доступ — ограничение клиентов, которые могут выполнять удаленные вызовы SAM).
 
 
 > [!div class="step-by-step"]

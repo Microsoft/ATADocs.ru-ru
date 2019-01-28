@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0001be015d45809a0ca550287452cfc4c366778d
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 4f551e27d6417f0fa1a65427998e8d1cb33dcf7c
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744784"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840579"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
 # <a name="azure-atp-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure ATP
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Azure ATP, разделенные на следующие категории. 
 - [Что такое Azure ATP](#what-is-azure-atp)
@@ -136,18 +134,18 @@ Azure Advanced Threat Protection поддерживает многодоменн
 ### <a name="how-can-i-test-azure-atp"></a>Как протестировать Azure ATP?
 Можно имитировать подозрительные действия с помощью сквозного теста. В следующем сценарии моделируется атака зондирования DNS:
 
-1.  Датчики Azure ATP должны быть установлены и настроены на контроллерах домена (или установлены и настроены автономные датчики и связанное зеркальное отображение портов).
-2.  Откройте CMD.
-3.  Выполните команду nslookup -<DC iP address>.
-    -   Нажмите клавишу ВВОД.
-    -   Введите: Is -d <FQDN>.
-    -   В зависимости от конфигурации вашей среды ответы будут включать сообщения об отклонении запроса или список DNS-записей. 
+1. Датчики Azure ATP должны быть установлены и настроены на контроллерах домена (или установлены и настроены автономные датчики и связанное зеркальное отображение портов).
+2. Откройте CMD.
+3. Выполните команду nslookup -<DC iP address>.
+   - Нажмите клавишу ВВОД.
+   - Введите команду: Is -d <FQDN>
+   - В зависимости от конфигурации вашей среды ответы будут включать сообщения об отклонении запроса или список DNS-записей. 
 4. Просмотрите предупреждения, связанные с имитацией атак зондирования DNS, на портале Azure ATP. 
 
 ## <a name="see-also"></a>См. также
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Устранение неполадок](troubleshooting-atp-known-issues.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e31f7552bed4d794ee24131557342105eb2ced43
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 2806bdd4c457628d9202e494ac1a064365cf61db
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133826"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840009"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
 # <a name="ata-frequently-asked-questions"></a>Часто задаваемые вопросы об ATA
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Microsoft Advanced Threat Analytics (ATA).
 
 
@@ -162,6 +163,6 @@ Microsoft Advanced Threat Analytics поддерживает многодоме�
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-collection.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

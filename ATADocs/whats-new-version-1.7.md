@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1eb61e35998fd5caaa49d2149cef91e839cd7286
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: e89933143121355a13ee5d84984bffb822bc2968
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133690"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840766"
 ---
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
@@ -53,7 +53,7 @@ ms.locfileid: "46133690"
 
 ### <a name="infrastructure"></a>Инфраструктура
 
-- **Управление доступом на основе ролей:** возможность управления доступом на основе ролей (RBAC). ATA 1.7 поддерживает три роли: администратор ATA аналитик ATA и руководитель ATA.
+- **Управление доступом на основе ролей:** возможность управления доступом на основе ролей (RBAC). В ATA версии 1.7 поддерживаются три роли: администратор ATA, аналитик ATA и руководитель ATA.
 
 - **Поддержка Windows Server 2016 и Windows Server Базовая**: ATA 1.7 поддерживает развертывание облегченных шлюзов на контроллерах домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (включая основные компоненты, но не Nano). Кроме того, в этом выпуске Windows Server 2016 поддерживается обоими компонентами: центром ATA и шлюзом ATA.
 
@@ -64,15 +64,15 @@ ms.locfileid: "46133690"
 В этой версии существуют следующие проблемы.
 
 ### <a name="gateway-automatic-update-may-fail"></a>Автоматическое обновление шлюза может завершиться ошибкой
-**Симптомы:** в средах с медленными каналами связи с глобальной сетью может быть превышено время ожидания для обновления шлюза ATA (100 секунд), в результате чего обновление не будет выполнено.
+**Признаки**. В окружениях с медленными каналами связи с глобальной сетью может быть превышено время ожидания для обновления шлюза ATA (100 секунд), в результате чего обновление не будет выполнено.
 В консоли ATA для такого шлюза ATA состояние "Обновление (Загрузка пакета)" будет сохраняться в течение долгого времени, а затем процесс завершается ошибкой.
-**Решение:** чтобы обойти эту проблему, загрузите последнюю версию пакета для шлюза ATA через консоль ATA и обновите шлюз ATA вручную.
+**Обходной путь**. Чтобы решить эту проблему, скачайте последнюю версию пакета для шлюза ATA через консоль ATA и обновите шлюз ATA вручную.
 
- > [!IMPORTANT]
- Не поддерживается автоматическое продление для тех сертификатов, которые используются в ATA. Если используются такие сертификаты, ATA может перестать работать после автоматического обновления сертификата. 
+> [!IMPORTANT]
+>  Не поддерживается автоматическое продление для тех сертификатов, которые используются в ATA. Если используются такие сертификаты, ATA может перестать работать после автоматического обновления сертификата. 
 
 ### <a name="no-browser-support-for-jis-encoding"></a>Отсутствие поддержки кодировки JIS в браузере
-**Симптомы:** консоль ATA может работать в браузерах неправильно, если используется кодировка JIS. **Решение:** измените в браузере кодировку на Юникод (UTF-8).
+**Признаки**. Консоль ATA может работать в браузерах неправильно, если используется кодирование JIS. **Решение**. Измените в браузере кодировку на Юникод (UTF-8).
  
 ### <a name="dropped-port-mirror-traffic-when-using-vmware"></a>Пропущенный трафик зеркального отражения портов при использовании VMware
 
@@ -90,7 +90,7 @@ ms.locfileid: "46133690"
 
 При обновлении ATA 1.7 до ATA 1.7 с обновлением 1 процесс автоматического обновления шлюза ATA и установка шлюза вручную при помощи пакета шлюза могут не работать должным образом.
 Эта проблема возникает, если использованный Центром ATA сертификат был изменен перед обновлением ATA.
-Чтобы убедиться, что это та проблема, изучите журнал **Microsoft.Tri.Gateway.Updater.log** на шлюзе ATA и найдите следующие исключения: **System.Net.Http.HttpRequestException: произошла ошибка при отправке запроса. ---> System.Net.WebException: базовое соединение закрыто: непредвиденная ошибка при передаче. ---> System.IdentityModel.Tokens.SecurityTokenValidationException: не удалось проверить отпечаток сертификата**.
+Чтобы проверить эту проблему, просмотрите журнал **Microsoft.Tri.Gateway.Updater.log** сетевого шлюза ATA и найдите следующие исключения: **System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IdentityModel.Tokens.SecurityTokenValidationException: Failed to validate certificate thumbprint**.
 
 ![Ошибка при обновлении шлюза ATA](media/17update_gatewaybug.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "46133690"
 3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
 ### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>Экспорт сведений о подозрительной активности в Excel может завершиться ошибкой.
-При попытке экспортировать сведения о подозрительной активности в файл Excel операция может завершиться следующей ошибкой: *Ошибка [BsonClassMapSerializer`1] System.FormatException: произошла ошибка при десериализации свойства Activity класса Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: элемент "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
+При попытке экспортировать сведения о подозрительной активности в файл Excel, операция может не выполнится со следующей ошибкой: *Error [BsonClassMapSerializer`1] System.FormatException: An error occurred while deserializing the Activity property of class Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element 'ResourceIdentifier' does not match any field or property of class Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: Element 'ResourceIdentifier' does not match any field or property of class Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
 
 Чтобы устранить эту проблему, в командной строке с повышенными привилегиями перейдите в папку **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** и выполните следующую команду:
 1.  `Mongo.exe ATA` (ATA следует указать прописными буквами).

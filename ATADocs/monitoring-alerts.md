@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cf3090ae1248125c9ff4d55bc1db7540ae532720
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 1ce2fde6e459aa11f3d61d8331ece53469ee3e21
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133911"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841140"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
 # <a name="understanding-ata-monitoring-alerts"></a>Сведения об оповещениях мониторинга ATA
+
+*Область применения: Advanced Threat Analytics версии 1.9*
+
 Центр обеспечения работоспособности ATA сообщает о возникновении проблем с развертыванием ATA, создавая оповещения мониторинга.
 В этой статье описываются все оповещения мониторинга для каждого компонента с указанием причины и действий, необходимых для устранения проблемы.
 ## <a name="ata-center-issues"></a>Проблемы с центром ATA
@@ -48,11 +48,11 @@ ms.locfileid: "46133911"
 ### <a name="center-certificate-is-about-to-expire"></a>Истекает срок действия сертификата центра
 |Оповещение|Описание|Решение|Статус|
 |----|----|----|----|
-|Срок действия сертификата центра ATA истекает менее чем через 3 недели.|После того как срок действия сертификата истечет: подключение шлюзов ATA к центру ATA станет невозможным; Процесс центра ATA будет аварийно завершаться, и все функциональные возможности ATA прекратятся.|[Замените сертификат центра ATA](modifying-ata-center-configuration.md).|Средняя|
+|Срок действия сертификата центра ATA истекает менее чем через 3 недели.|После того как срок действия сертификата истечет, подключение шлюзов ATA к центру ATA станет невозможным. Процесс центра ATA будет аварийно завершаться, и все функциональные возможности ATA прекратятся.|[Замените сертификат центра ATA](modifying-ata-center-configuration.md).|Средняя|
 ### <a name="ata-center-certificate-expired"></a>Срок действия сертификата центра ATA истек
 |Оповещение|Описание|Решение|Статус|
 |----|----|----|----|
-|Срок действия сертификата центра ATA истек.|После того как срок действия сертификата истекает: подключение шлюзов ATA к центру ATA невозможно. Происходит аварийное завершение процесса ATA, и ATA перестает функционировать.|[Замените сертификат центра ATA](modifying-ata-center-configuration.md).|Высокий|
+|Срок действия сертификата центра ATA истек.|После того как срок действия сертификата истечет, подключение шлюзов ATA к центру ATA станет невозможным. Происходит аварийное завершение процесса ATA, и ATA перестает функционировать.|[Замените сертификат центра ATA](modifying-ata-center-configuration.md).|Высокий|
 ## <a name="ata-gateway-issues"></a>Проблемы со шлюзом ATA
 ### <a name="read-only-user-password-to-expire-shortly"></a>Истекает срок действия пароля пользователя, у которого ест доступ только для чтения
 |Оповещение|Описание|Решение|Статус|
@@ -123,5 +123,5 @@ ms.locfileid: "46133911"
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Настройка пересылки событий Windows](configure-event-collection.md#configuring-windows-event-forwarding)
+- [Настройка пересылки событий Windows](configure-event-collection.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

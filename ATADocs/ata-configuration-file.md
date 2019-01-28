@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3abe18d7da00e5af0373d74db2dc2dc1f91a6fc9
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b470bc1a7de358d5326539aaf91d71ef08cb1282
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133316"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839938"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
 # <a name="export-and-import-the-ata-configuration"></a>Экспорт и импорт конфигурации ATA
-Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
-Служба центра АТА каждые четыре часа проводит резервное копирование этой коллекции в файлы **SystemProfile_*метка времени*.json**. Сохраняются последние 300 версий.
-Эти файлы расположены во вложенной папке с именем **Резервная копия**. По умолчанию их можно найти здесь: *C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_* timestamp *.json*. 
 
-**Примечание**. Рекомендуем создавать резервную копию этого файла, когда в ATA вносятся важные изменения.
+*Область применения: Advanced Threat Analytics версии 1.9*
+
+Конфигурация ATA хранится в коллекции SystemProfile в базе данных.
+Служба центра АТА каждые четыре часа проводит резервное копирование этой коллекции в файлы **SystemProfile_*timestamp*.json**. Сохраняются последние 300 версий.
+Эти файлы расположены во вложенной папке с именем **Резервная копия**. Расположение установки АТА по умолчанию —  <em>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_</em>timestamp<em>.json</em>. 
+
+**Примечание**. Рекомендуем создавать резервную копию этого файла, когда в АТА вносятся важные изменения.
 
 Можно восстановить все параметры, выполнив следующую команду:
 

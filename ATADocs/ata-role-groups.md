@@ -13,19 +13,17 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ed4d112cda614053aa20a6a486cb29baa1fed58a
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 1e5818e4e37b7d22669721341f3f31a94cd78baa
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133639"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841038"
 ---
-*Применяется к: Advanced Threat Analytics версии 1.9*
-
-
-
-
 # <a name="ata-role-groups"></a>Группы ролей ATA
+
+
+*Область применения: Advanced Threat Analytics версии 1.9*
 
 Группы ролей позволяют управлять доступом к ATA. С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье объясняется управление доступом и авторизация ролей ATA, что поможет вам начать использовать группы ролей в ATA.
 
@@ -34,7 +32,7 @@ ms.locfileid: "46133639"
 
 ## <a name="types-of-ata-role-groups"></a>Типы групп ролей ATA 
 
-ATA предлагает три типа групп ролей: администраторы ATA, пользователи ATA и наблюдатели ATA. Следующая таблица описывает тип доступа для каждой из ролей ATA. В зависимости от назначенной роли некоторые экраны и пункты меню в ATA могут быть недоступны, как описано в таблице.
+В ATA существует три типа групп ролей: администраторы ATA, пользователи ATA и наблюдатели ATA. Следующая таблица описывает тип доступа для каждой из ролей ATA. В зависимости от назначенной роли некоторые экраны и пункты меню в ATA могут быть недоступны, как описано в таблице.
 
 |Действие |Администраторы Microsoft Advanced Threat Analytics|Пользователи Microsoft Advanced Threat Analytics|Наблюдатели Microsoft Advanced Threat Analytics|
 |----|----|----|----|

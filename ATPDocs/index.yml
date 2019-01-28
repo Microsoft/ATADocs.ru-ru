@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: eeac332beebbcd4bce7d8f96b649a292080baec1
+ms.sourcegitcommit: 25e9d94afdfb63032de55eda0ffd7b7e8dda0f6c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443883"
+documentType: LandingData
+title: Документация по Azure Advanced Threat Protection
+metadata:
+  title: Документация по Azure Advanced Threat Protection
+  description: Защита гибридных сред организации от различных сложных целенаправленных электронных атак и внутренних угроз.
+  services: azure-advanced-threat-protection
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: azure-advanced-threat-protection
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/18/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Azure Advanced Threat Protection (ATP) — это облачная служба, которая помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
+sections:
+- title: Дополнительные сведения
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Дополнительные сведения о Расширенной защите от угроз Azure
+      href: what-is-atp.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-atp.md
+    - title: Архитектура Azure ATP
+      href: atp-architecture.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        href: atp-architecture.md
+    - title: Новые возможности Azure ATP
+      href: atp-whats-new.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        href: atp-whats-new.md
+- title: Краткие руководства (5 мин)
+  items:
+  - type: paragraph
+    text: Получите общие сведения о Расширенной защите от угроз Azure с помощью этих кратких руководств.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_design.svg
+      text: Планирование производительности
+      href: atp-capacity-planning.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_event.svg
+      text: Создание экземпляра Azure ATP
+      href: install-atp-step1.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_config-tools.svg
+      text: Подключение к Active Directory
+      href: install-atp-step2
+- title: Пошаговые руководства
+  items:
+  - type: paragraph
+    text: Узнайте том, как работать с оповещениями, с помощью этих кратких руководств.
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/azure-advanced-threat-protection/understanding-security-alerts">Сведения об оповещениях безопасности</a>
+    - html: <a href="/azure-advanced-threat-protection/investigate-a-user">Проверка пользователя</a>
+    - html: <a href="/azure-advanced-threat-protection/investigate-a-computer">Проверка компьютера</a>

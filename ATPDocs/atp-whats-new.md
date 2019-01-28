@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/13/2019
+ms.date: 1/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5248ab54c8fd8d03035e1f6451597c5e8cfc63b2
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: 7bf903b1fde595e41c3b57d8163ed0f06f8e8ac8
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54250037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459181"
 ---
-*Область применения: Расширенная защита от угроз Azure*
-
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-262"></a>Azure ATP, выпуск 2.62
+Выпущен 20 января 2019 г.
+
+- **Новое оповещение системы безопасности: Удаленное выполнение программного кода через DNS (предварительная версия)**<br>
+Оповещение системы безопасности Azure ATP [Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036---preview) теперь доступно в общедоступной предварительной версии. <br> Если запросы к DNS-серверу, предположительно использующие уязвимость системы безопасности [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626), выполняются в отношении контроллера домена в сети, в обнаружении выводится оповещение системы безопасности Azure ATP.
+
+- **Расширение функциональности: Отложенное обновление датчиков (72 ч)** <br> Изменена возможность отложить обновление выбранных датчиков до 72 ч (вместо предыдущей отсрочки в 24 ч) после каждого обновления выпуска Azure ATP. См. инструкции по настройке [обновления датчиков Azure ATP](sensor-update.md). 
+
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-261"></a>Azure ATP, выпуск 2.61
 Выпущен 13 января 2019 г.

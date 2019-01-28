@@ -12,17 +12,13 @@ ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9485e3dd70708caf6e3ebbe60d9c006fac0b0163
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 51ce0ca62d29c58475f8f426ee715515cf106193
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744733"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459096"
 ---
-*Применяется к: Azure Advanced Threat Protection*
-
-
-
 # <a name="azure-atp-capacity-planning"></a>Планирование производительности Azure ATP
 В этой статье содержатся сведения, которые помогут определить количество необходимых датчиков и автономных датчиков Azure ATP.
 
@@ -32,7 +28,7 @@ ms.locfileid: "52744733"
 > [!NOTE] 
 > Средство изменения размера состоит из двух листов — по одному для ATA и Azure ATP. Убедитесь, что вы используете нужный лист.
 
-- Датчик Azure ATP: сопоставьте значение в поле **Занятых пакетов/с** в таблице датчика Azure ATP в файле результатов со значением в поле **Пакетов в секунду** в [таблице датчика Azure ATP](#azure-atp-standalone-sensor-sizing) или [таблице автономного датчика Azure ATP](#azure-atp-sensor-sizing) в зависимости от [выбранного типа датчика](#choosing-the-right-sensor-type-for-your-deployment).
+- Датчик Azure ATP. Сопоставьте значение в поле **Busy Packets/sec** (Занятых пакетов/с) в таблице датчика Azure ATP в файле результатов со значением в поле **PACKETS PER SECOND** (Пакетов в секунду) в [таблице датчика Azure ATP](#azure-atp-standalone-sensor-sizing) или [таблице автономного датчика Azure ATP](#azure-atp-sensor-sizing) в зависимости от [выбранного типа датчика](#choosing-the-right-sensor-type-for-your-deployment).
 
 
 ![Пример средства планирования емкости](media/capacity-tool.png)
