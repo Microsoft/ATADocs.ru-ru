@@ -44,6 +44,7 @@
 ## [Управление конфиденциальными учетными записями](sensitive-accounts.md)
 ## [Поиск и фильтрация отслеживаемых действий](atp-activities-search.md)
 ## [Исключения и учетные записи Honeytoken](install-atp-step7.md)
+## [Мониторинг контроллеров домена](atp-sensor-monitoring.md)
 ## [Изменение пароля для подключения к домену](modifying-atp-config-dcpassword.md)
 ## [Настройка уведомлений Azure ATP](notifications.md)
 ## [Центр работоспособности Azure ATP](atp-health-center.md)
