@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7ff0324da5cff1ac9ff6aa73fd32d0328279c12b
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: ada659d86088cb9f93eba4aca54dd2553e8fb69a
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458688"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085458"
 ---
 # <a name="install-azure-atp---step-2"></a>Установка Azure ATP. Шаг 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "54458688"
 > [« Шаг 1](install-atp-step1.md)
 > [Шаг 3 »](install-atp-step3.md)
 
-## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Указание имени пользователя и пароля для подключения к лесу Active Directory
+## <a name="provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Указание имени пользователя и пароля для подключения к лесу Active Directory
 
 При первом запуске портала Azure ATP открывается такой экран:
 
@@ -44,7 +44,7 @@ ms.locfileid: "54458688"
     |**Пароль** (указывается обязательно)|Введите пароль для пользователя с правами только на чтение, например **Parolch1k**.|
     |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание.** Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
 
-3. На портале Azure ATP щелкните **Скачать пакет установки датчиков и установить первый датчик**, чтобы продолжить.
+2. На портале Azure ATP щелкните **Скачать пакет установки датчиков и установить первый датчик**, чтобы продолжить.
 
 
 > [!div class="step-by-step"]

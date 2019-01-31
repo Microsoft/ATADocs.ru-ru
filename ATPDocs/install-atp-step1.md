@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4c178d4ed874ae3d826e97a154ae2e17bd52f48c
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: df3e75970a797307991620e21629df589406cc40
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840375"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085220"
 ---
 # <a name="creating-your-azure-atp-instance-in-the-azure-atp-portal---step-1"></a>Создание экземпляра Azure ATP на портале Azure ATP. Шаг 1
 
@@ -32,7 +32,7 @@ ms.locfileid: "54840375"
 > [!NOTE]
 > Сейчас центры обработки данных Azure ATP развертываются в Европе, Северной Америке и Центральной Америке, в странах Карибского бассейна и Азии. Экземпляр создается автоматически в центре обработки данных, географически ближайшем к AAD. После создания экземпляры Azure ATP перемещать нельзя. 
 
-## <a name="step-1-enter-the-azure-atp-portal"></a>Шаг 1. Вход на портал Azure ATP
+## <a name="enter-the-azure-atp-portal"></a>Вход на портал Azure ATP
 
 После проверки сети на соответствие требованиям датчика можно приступить к созданию экземпляра Azure ATP.
 
@@ -44,7 +44,7 @@ ms.locfileid: "54840375"
 
 2.  Войдите в систему по учетной записи пользователя Azure Active Directory.
 
-## <a name="step-2-create-your-instance"></a>Шаг 2. Создание экземпляра
+## <a name="create-your-instance"></a>Создание экземпляра
 
 1. Нажмите кнопку **Создать экземпляр**. 
 

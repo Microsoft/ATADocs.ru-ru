@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: dae89e22e7d5e331af3ec6d82455581396289486
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 4816fe56b8a28d349c970be5a304d025875de748
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458977"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085237"
 ---
 # <a name="install-azure-atp---step-3"></a>Установка Azure ATP. Шаг 3
 
@@ -26,7 +26,7 @@ ms.locfileid: "54458977"
 > [« Шаг 2](install-atp-step2.md)
 > [Шаг 4 »](install-atp-step4.md)
 
-## <a name="step-3-download-the-azure-atp-sensor-setup-package"></a>Шаг 3. Скачивание пакета установки датчика Azure ATP
+## <a name="download-the-azure-atp-sensor-setup-package"></a>Скачивание пакета установки датчика Azure ATP
 Настроив параметры подключения к домену, скачайте пакет установки датчика Azure ATP. Пакет установки датчика Azure ATP можно устанавливать на выделенном сервере или на контроллере домена. При установке на контроллере домена пакет устанавливается в виде датчика Azure ATP, при установке на выделенном сервере и использовании зеркального отображения портов пакет устанавливается как автономный датчик Azure ATP. Дополнительные сведения о датчике Azure ATP см. в статье [Архитектура Azure ATP](atp-architecture.md). 
 
 В списке действий в верхней части страницы щелкните **Скачать**, чтобы перейти на страницу **Датчик**.
