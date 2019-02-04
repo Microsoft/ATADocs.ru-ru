@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/7/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e9ffb02c515c34dfa2847c9b93f55c3fa38fa44
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 8c294c20efeac4fae17df84c6a3d6d8d656c9554
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459215"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085475"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 
 
@@ -27,7 +27,7 @@ ms.locfileid: "54459215"
 
 |Для выполнения этого…|…сделайте следующее.|
 |----|----|
-|Посмотреть самую популярную документацию|Прочитайте пять ключевых страниц.<br>- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>- [Создание экземпляра](install-atp-step1.md)|
+|Посмотреть самую популярную документацию|Десять ключевых статей:<br>- [Что такое Azure Advanced Threat Protection?](what-is-atp.md)<br>- [Предварительные требования к Azure ATP](atp-prerequisites.md)<br>- [Архитектура Azure ATP](atp-architecture.md)<br>- [Планирование производительности Azure ATP](atp-capacity-planning.md)<br>-[Создание экземпляра](install-atp-step1.md)<br>-[Основные сведения об оповещениях безопасности](understanding-security-alerts.md)<br>-[Оповещения системы безопасности Azure ATP](suspicious-activity-guide.md)<br>-[Анализ компьютера](investigate-a-computer.md)<br>-[Анализ пользователя](investigate-a-user.md)<br>-[Анализ путей бокового смещения](investigate-lateral-movement-path.md)
 |Связь с группой разработчиков и коллегами|Посетите страницу сообщества  [Tech Community](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) по Azure Advanced Threat Protection.|
 |Проверить данные подписки и получить список поддерживаемых компонентов|См.  [сведения о подписке](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) и  [список компонентов](https://www.microsoft.com/cloud-platform/azure-information-protection-features) на сайте Azure Advanced Threat Protection.|
 
@@ -36,7 +36,7 @@ ms.locfileid: "54459215"
 Команда по продукту Azure Advanced Threat Protection размещает объявления о новых выпусках и обновлениях в  [блоге Enterprise Mobility and Security](https://cloudblogs.microsoft.com/enterprisemobility/author/microsoft-advanced-threat-analytics-team/).
 В статьях этого блога публикуются дополнения к документации по продукту и сведения о поддержке.
 
-Актуальный список новых возможностей и изменений в Azure ATP см. в статье [Новые возможности Azure Advanced Threat Protection](atp-whats-new.md).
+Актуальный список новых возможностей и недавних изменений в Azure ATP см. в статье [Новые возможности Azure Advanced Threat Protection](atp-whats-new.md).
 
 ## <a name="support-options-and-community-resources"></a>Средства поддержки и ресурсы сообщества
 

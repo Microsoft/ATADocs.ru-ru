@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: eeac332beebbcd4bce7d8f96b649a292080baec1
-ms.sourcegitcommit: 25e9d94afdfb63032de55eda0ffd7b7e8dda0f6c
+ms.openlocfilehash: 7a88095aff4c60038768edfd87f734d6cd4ec8e0
+ms.sourcegitcommit: d1b2c44e8455100015bfc1ec9e51a6f1cfab12af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443883"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479479"
 documentType: LandingData
 title: Документация по Azure Advanced Threat Protection
 metadata:
@@ -17,7 +17,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/18/2019
+  ms.date: 01/30/2019
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
@@ -44,6 +44,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
         href: atp-whats-new.md
+    - title: Ознакомьтесь с возможностями Microsoft 365, полнофункционального решения, включающего Azure Advanced Threat Protection.
+      href: https://docs.microsoft.com/microsoft-365/
+      image:
+        src: /office/media/icons/caret-right-blue.svg
+        href: https://docs.microsoft.com/microsoft-365/
 - title: Краткие руководства (5 мин)
   items:
   - type: paragraph

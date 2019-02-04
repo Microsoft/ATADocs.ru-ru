@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 06e31d44afba18cb44d2df6cde167c9a8babc92b
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 829c3685d06ec49182895b4786c89b8281e2de2f
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840732"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085390"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 В этой статье описываются требования для успешного развертывания Azure ATP в среде.
@@ -110,7 +110,7 @@ ms.locfileid: "54840732"
 ### <a name="network-adapters"></a>Сетевые адаптеры
 
 Датчик Azure ATP отслеживает локальный трафик всех сетевых адаптеров контроллера домена. <br>
-После развертывания можно использовать портал Azure ATP, чтобы изменить параметры отслеживания сетевых адаптеров.
+После развертывания используйте портал Azure ATP, чтобы изменить параметры отслеживания сетевых адаптеров.
 
 Датчик не поддерживается в контроллерах доменов под управлением Windows 2008 R2 с включенным группированием сетевых адаптеров Broadcom.
 

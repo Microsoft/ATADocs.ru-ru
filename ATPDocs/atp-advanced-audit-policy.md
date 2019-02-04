@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d7d8bc8ce6c1aefb95b5770a103859fed74efe1
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 86d8583600edc642d177ff327d602a9bc61cf3de
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458637"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085186"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Проверка расширенной политики аудита Azure ATP
 
@@ -31,9 +31,9 @@ ms.locfileid: "54458637"
 
 Расширенная политика аудита безопасности включается с помощью объекта групповой политики **Политика контроллеров домена по умолчанию**. Эти события аудита записываются в журнал событий Windows контроллера домена. 
 
+## <a name="modify-audit-policies"></a>Изменение политик аудита 
 
-
-<br>Чтобы изменить расширенные политики аудита контроллера домена, выполните следующие инструкции.
+Чтобы изменить расширенные политики аудита контроллера домена, выполните следующие инструкции.
 
 1. Войдите на сервер с правами **администратора домена**.
 2. Загрузите редактор управления групповыми политиками из соответствующего раздела, последовательно выбрав **Диспетчер сервера** > **Средства** > **Управление групповой политикой**. 
