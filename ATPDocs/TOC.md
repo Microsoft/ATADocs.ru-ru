@@ -1,9 +1,8 @@
 
+# [Документация по Azure Advanced Threat Protection](index.yml)
 # Обзор
 ## [Что такое Azure Advanced Threat Protection?](what-is-atp.md)
-## [Архитектура Azure ATP](atp-architecture.md)
 ## [Новые возможности Azure ATP](atp-whats-new.md)
-## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 # Краткие руководства
 ## [Планирование производительности Azure ATP](atp-capacity-planning.md)
 ## [Создание экземпляра Azure ATP](install-atp-step1.md)
@@ -31,6 +30,8 @@
 ## [Анализ путей бокового смещения](investigate-lateral-movement-path.md)
 ## [Анализ сущностей](investigate-entity.md)
 # Основные понятия
+## [Архитектура Azure ATP](atp-architecture.md)
+## [Предварительные требования к Azure ATP](atp-prerequisites.md)
 ## [Портал Azure ATP](workspace-portal.md)
 ## [Оповещения системы безопасности Azure ATP](suspicious-activity-guide.md)
 ## [Отслеживаемые действия](monitored-activities.md)
