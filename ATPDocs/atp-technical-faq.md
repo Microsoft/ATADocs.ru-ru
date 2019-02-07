@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4f551e27d6417f0fa1a65427998e8d1cb33dcf7c
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 2e8405f46e404ef6d08ac2ce2517259ad20828b1
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840579"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689325"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure ATP
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Azure ATP, разделенные на следующие категории. 
@@ -131,16 +131,6 @@ Azure Advanced Threat Protection поддерживает многодоменн
 ### <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>Что делать, если датчик Azure ATP или автономный датчик не запускается?
 Просмотрите сведения о последней ошибке в текущем [журнале](troubleshooting-atp-using-logs.md) ошибок (в месте установки Azure ATP в папке Logs).
 
-### <a name="how-can-i-test-azure-atp"></a>Как протестировать Azure ATP?
-Можно имитировать подозрительные действия с помощью сквозного теста. В следующем сценарии моделируется атака зондирования DNS:
-
-1. Датчики Azure ATP должны быть установлены и настроены на контроллерах домена (или установлены и настроены автономные датчики и связанное зеркальное отображение портов).
-2. Откройте CMD.
-3. Выполните команду nslookup -<DC iP address>.
-   - Нажмите клавишу ВВОД.
-   - Введите команду: Is -d <FQDN>
-   - В зависимости от конфигурации вашей среды ответы будут включать сообщения об отклонении запроса или список DNS-записей. 
-4. Просмотрите предупреждения, связанные с имитацией атак зондирования DNS, на портале Azure ATP. 
 
 ## <a name="see-also"></a>См. также
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
