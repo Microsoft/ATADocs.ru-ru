@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/15/2019
+ms.date: 02/04/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 016388807b2e5d027e3fc113c7e34ebaa546e9d5
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: c8e4d9fbc094e5bd1b58253b771cb5d693b7361c
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085356"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689308"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  
 
@@ -115,7 +115,11 @@ ms.locfileid: "55085356"
 
 На DNS-сервере содержится схема всех компьютеров, IP-адресов и служб в сети. Эта информация используется злоумышленниками для определения структуры сети и выявления подходящих компьютеров для проведения последующих этапов атаки. 
  
-Протокол DNS предполагает несколько типов запросов. Это оповещение системы безопасности Azure ATP обнаруживает запрос AXFR (передачи), исходящий от серверов, которые не являются серверами DNS.
+Протокол DNS предполагает несколько типов запросов. Это оповещение системы безопасности Azure ATP обнаруживает подозрительные запросы AXFR (передачи), исходящие от серверов, которые не являются серверами DNS.
+
+**Период обучения**
+
+Период обучения этого оповещения составляет восемь дней от начала наблюдения за контроллерами домена. 
 
 **TP, B-TP или FP**
 

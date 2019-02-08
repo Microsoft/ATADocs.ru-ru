@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9bd886f4c8929af85a3f77e25052ff0fbc7a4c56
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 1710b5f2f96814f2dbe3229473b06c8a963fd380
+ms.sourcegitcommit: cc5017770583042ef8bf90c9c0ece020a0166b91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840681"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55480987"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Коммутаторы и автоматическая установка Azure ATP
 Эта статья содержит рекомендации и инструкции по использованию коммутаторов Azure ATP и выполнению автоматической установки.
@@ -50,11 +50,10 @@ ms.locfileid: "54840681"
 
 **Синтаксис**
 
-    Azure ATP sensor Setup.exe /AccessKey=<Access Key> /quiet NetFrameworkCommandLineArguments ="/q" 
-
+    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 
 > [!NOTE]
-> Скопируйте ключ доступа с портала Azure ATP, выбрав раздел **Конфигурация**, а затем **Датчик**.
+> Скопируйте ключ доступа с портала Azure ATP в разделе **Конфигурация** на странице **Датчик**.
 
 
 **Варианты установки**
@@ -77,8 +76,7 @@ ms.locfileid: "54840681"
 
 **Примеры.** Для автоматической установки датчика Azure ATP используйте приведенную ниже команду.
 
-    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
-    AccessKey="3WlO0uKW7lY6Lk0+dfkfkJQ0qZV6aSq5WxLf71+fuBhggCl/BMs9JxfAwi7oy9vYGviazUS1EPpzte7z8s4grw==" 
+    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="mmAOkLYCzfH8L/zUIsH24BIJBevlAWu7wUcSfIkRJufpuEojaDHYdjrNs0P3zpD+/bObKfLS0puD7biT5KDf3g=="
 
 
 ## <a name="update-the-azure-atp-sensor"></a>Обновление датчика Azure ATP
