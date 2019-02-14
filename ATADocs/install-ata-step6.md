@@ -4,7 +4,7 @@ description: На этом этапе установки ATA настраива�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d7c1a2cb171caf732ba4b49ddf50b7eaa2daaa1a
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 8326d74c7255f946d05a04b6f6e973287434c24c
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840210"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077428"
 ---
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 

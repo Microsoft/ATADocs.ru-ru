@@ -4,7 +4,7 @@ description: В этой статье описываются действия п
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b6aaaf1a93fe635f4e159f88e7d55a110bcef0d2
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: ec01c5b4a5a824df6959461271b763e7fe3d7cd7
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840494"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076799"
 ---
 # <a name="investigating-lateral-movement-paths-with-ata"></a>Анализ путей бокового смещения в ATA
 

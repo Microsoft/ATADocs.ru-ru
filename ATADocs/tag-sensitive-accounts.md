@@ -4,7 +4,7 @@ description: Сведения о пометке конфиденциальных
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8a7c5120f72a341fd4784b68fedb0231de6e98c4
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: d0e6d2136c65c9c523740e380f8d9ffd360103d8
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840218"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076153"
 ---
 # <a name="tag-sensitive-accounts"></a>Пометка конфиденциальных учетных записей
 

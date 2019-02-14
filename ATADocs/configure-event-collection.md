@@ -4,7 +4,7 @@ description: Описываются параметры настройки пер
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a6d8556298a2bf225bef45edf55acf2a75d13a53
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: a1ef3c005c78d3825c9efbfc33346e06a687fe2b
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840715"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078244"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -93,7 +93,7 @@ ms.locfileid: "54840715"
     6.  Через несколько минут убедитесь в том, что события, для которых настроена пересылка, отображаются в списке пересланных событий в шлюзе ATA.
 
 
-Дополнительные сведения см. на странице со сведениями [о настройке компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890).
+Дополнительные сведения см. на странице [Настройка компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890)
 
 ## <a name="see-also"></a>См. также
 - [Установка ATA](install-ata-step1.md)

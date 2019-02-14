@@ -1,22 +1,17 @@
 ---
 title: Краткое руководство. Планирование развертывания Azure ATP | Документация Майкрософт
 description: В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов Azure ATP потребуется для поддержки сети.
-keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
 ms.date: 1/24/2019
 ms.topic: quickstart
 ms.service: azure-advanced-threat-protection
-ms.prod: ''
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: c9930cff1341b0c721b4aaecae50ce00e99cb80f
-ms.sourcegitcommit: c16aab563149bbdfd99ae5b46e168cec700d3ae3
+ms.openlocfilehash: d161b9655a5be09567fb50a837f7d2063d11ee11
+ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703339"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55831520"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>Краткое руководство. Планирование производительности для Azure ATP
 
@@ -154,7 +149,7 @@ ms.locfileid: "55703339"
 В этом кратком руководстве описано, как определить необходимое количество датчиков и автономных датчиков Azure ATP. Вы также можете определить размер датчиков. Перейдите к краткому руководству по созданию экземпляра Azure ATP.
 
 > [!div class="nextstepaction"]
-> [Руководства по виртуальной машине Windows Azure](install-atp-step1.md)
+> [Создание экземпляра Azure ATP](install-atp-step1.md)
 
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!

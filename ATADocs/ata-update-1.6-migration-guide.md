@@ -4,7 +4,7 @@ description: Процедуры по обновлению ATA до версии 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b32e8db898df1cea25e3d8dbb61a7c2293128aeb
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 1d3e0cd545a932daae71fa4242abb43b4dc15bae
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134005"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077709"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.6
 При обновлении ATA до версии 1.6 появляются следующие улучшения:
@@ -62,7 +62,7 @@ ms.locfileid: "46134005"
     > [!IMPORTANT]
     > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновите центр ATA.
 
 1.  Создайте резервную копию базы данных (необязательно).
 
@@ -118,7 +118,7 @@ ZIP-файл содержит следующие файлы:
 
 -   файл конфигурации с данными для подключения к центру ATA.
 
-### <a name="step-3-update-the-ata-gateways"></a>Шаг 3. Обновление шлюзов АТА
+### <a name="step-3-update-the-ata-gateways"></a>Шаг 3 Обновите шлюзы АТА.
 
 1.  На каждом шлюзе ATA извлеките файлы из пакета шлюза ATA и запустите файл **Setup.exe шлюза Microsoft ATA**.
 

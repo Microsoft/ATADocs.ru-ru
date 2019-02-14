@@ -4,7 +4,7 @@ description: На четвертом этапе установки ATA вы ус
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8c0139842094d42c2f7273e9f669267ca4fb092f
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 3cd5f8dd7334d93277d29a63817a061fc6fdf820
+ms.sourcegitcommit: 143ee5c3bf381eaba7d0530c88722e959bc47a18
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839379"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227936"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
@@ -63,11 +63,11 @@ ms.locfileid: "54839379"
     
    > [!NOTE]
    > При развертывании шлюза ATA указывать учетные данные не нужно. Если процессу установки шлюза ATA не удастся получить учетные данные с помощью функции единого входа (это может произойти, например, если центр или шлюз ATA не находится в домене либо если у вас нет учетных данных администратора ATA), появится запрос на ввод учетных данных, как показано на экране ниже: 
-    
-   ![Указание учетных данных шлюза ATA](media/ata-install-credentials.png)
-    
-   - Путь установки — это расположение для установки шлюза ATA. По умолчанию это папка %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Оставьте значение по умолчанию.
-    
+   
+    ![Указание учетных данных шлюза ATA](media/ata-install-credentials.png)
+   
+    - Путь установки — это расположение для установки шлюза ATA. По умолчанию это папка %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Оставьте значение по умолчанию.
+   
 6. Нажмите кнопку **Установить**. Во время установки шлюза ATA устанавливаются и настраиваются следующие компоненты.
     
     -   KB 3047154 (только для Windows Server 2012 R2)

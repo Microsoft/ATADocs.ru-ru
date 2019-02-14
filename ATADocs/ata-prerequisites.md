@@ -4,7 +4,7 @@ description: Описывает требования для успешного �
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0abf415dd896d62e0308f4b236d92bcb327a0a5d
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 008af6edacf27f5cc49f1a3e518f619a4829aae5
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840885"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078091"
 ---
 # <a name="ata-prerequisites"></a>Предварительные требования для ATA
 

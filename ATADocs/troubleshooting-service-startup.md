@@ -4,7 +4,7 @@ description: В этой статье описываются способы ус
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 21afd487fbf15b3fc1f5d618e0e6b98d50d07cae
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: ec9558afef43927e0c1d8f32d519af272b29351c
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839569"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077292"
 ---
 # <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
 

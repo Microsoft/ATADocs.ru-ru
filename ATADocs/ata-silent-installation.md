@@ -4,7 +4,7 @@ description: Здесь описывается автоматическая ус
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 35577c9001d522f1c227731ab0953a0c8425724d
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 6d28648734fed44aa8f18811740bbb60c01fd112
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841174"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077581"
 ---
 # <a name="ata-silent-installation"></a>Автоматическая установка ATA
 

@@ -4,7 +4,7 @@ description: Процедуры по обновлению ATA до версии�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 07/20/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2287fb0a71fc7c11ae271ce7236fb7c86e3d1a4f
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 85ef846b2e6548d6a7dc34ebb8a8be9c678e5bfe
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840271"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076952"
 ---
 # <a name="updating-ata-to-version-18"></a>Обновление ATA до версии 1.8
 

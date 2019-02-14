@@ -4,7 +4,7 @@ description: Инструкции по обновлению версии Advance
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 8/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 318e14a4313b80aec92516829b70314008acb8c5
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 681ece5b5e52f7198ce806f24a30c89495aec32a
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840164"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076748"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 

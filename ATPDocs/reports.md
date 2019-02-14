@@ -4,7 +4,7 @@ description: Сведения о создания отчетов в Azure ATP д
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/26/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 41f66dce4b7aea6654b28f9d82a167439f29eabb
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: a375fa29b455d8b84a741b62fecc65c98b357c72
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840834"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076306"
 ---
 # <a name="azure-atp-reports"></a>Отчеты Azure ATP
 

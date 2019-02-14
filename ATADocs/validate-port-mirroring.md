@@ -4,7 +4,7 @@ description: Описание проверки правильной настро
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d40c21dc761b624eea2412bdfc0778774f2840ca
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 771deca37b03331be663daac09f6c411c10f0307
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839626"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076935"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 

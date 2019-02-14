@@ -4,7 +4,7 @@ description: Сведения об отслеживании датчиков Azu
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6dd6574250819bd8c60da00c7f1547bb34845f75
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: e4e33e79a5ed4dbb80214e50dbccee0f067670fd
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085531"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077921"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>Мониторинг покрытия контроллеров домена
 

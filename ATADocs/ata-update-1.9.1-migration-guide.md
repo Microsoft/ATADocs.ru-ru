@@ -4,7 +4,7 @@ description: Процедуры по обновлению ATA до версии 
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 80d6b2744c3299bf92d0c4082085dbd872403cc0
-ms.sourcegitcommit: 9acf035f6f2ce32290e00d2e45385ae7993bb63a
+ms.openlocfilehash: 67d4c7df5d85daefa51a6b8e38a5996bab766d5e
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53334993"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078142"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
 
@@ -60,7 +60,7 @@ ms.locfileid: "53334993"
 Это обновление заменяет ATA версии 1.9 (1.9.7312).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

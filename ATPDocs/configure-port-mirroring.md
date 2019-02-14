@@ -4,7 +4,7 @@ description: В этой статье описываются варианты з
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/4/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a9b69db461dc322010fcb8aa446a95151b7a276f
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: b65074fa18fd134bd07820b684a4b43e95c2db0c
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840545"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076996"
 ---
 # <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
 > [!NOTE] 

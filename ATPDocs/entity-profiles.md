@@ -4,7 +4,7 @@ description: Сведения об анализе пользователей н�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8c80529c5111c909bd5e2b1b0ff17933e4f30b18
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 22c2ac0ebc75a620083aaa872cd43d9bb5fa9cd5
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458654"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076102"
 ---
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
 

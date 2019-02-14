@@ -4,7 +4,7 @@ description: В этой статье приводятся общие сведе
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4f065b299f499b28368fd43fe03d2e7c38741f67
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 1c056265dad6af77c3d1722a39fe75ee40e1abd8
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458433"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076578"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Поиск и фильтрация отслеживаемых действий Azure ATP 
 

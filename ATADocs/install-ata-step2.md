@@ -4,7 +4,7 @@ description: На втором этапе установки ATA вы настр
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/30/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 867d5b9e7fd5f1f316ad7a5aefa00a7e53b34c87
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: ebe3878ff8334367fad5260bc4bbd1cbd6b4613e
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839643"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076204"
 ---
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
