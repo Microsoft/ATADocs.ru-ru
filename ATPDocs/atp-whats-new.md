@@ -4,7 +4,7 @@ description: Описание последних выпусков Azure ATP и 
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ef2aa85c8695b86ba47d0c42c0a82208b188b893
-ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
+ms.openlocfilehash: c12cb4836e401fbfb788cc243bdc6d29622552bb
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55689427"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077938"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
 
+## <a name="azure-atp-release-265"></a>Azure ATP, выпуск 2.65
+Выпущено 10 февраля 2019 г.
+
+- **Новое оповещение системы безопасности: потенциальная атака ретранслятора NTLM (учетная запись Exchange) — (предварительная версия)**<br>
+Оповещение системы безопасности [Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview) Azure ATP теперь в общем доступе. <br> В этом случае оповещение системы безопасности Azure ATP срабатывает при использовании учетных данных Exchange из подозрительного источника. Атаки этого типа пытаются использовать методы ретранслятора NTLM, чтобы получить права Exchange контроллера домена. Они называются **ExchangePriv**. Дополнительные сведения о методе **ExchangePriv** см. в [рекомендации ADV190007](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007), которая впервые была опубликована 31 января 2019 г., и в разделе [Ответ на оповещение Azure ATP](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511).  
+
+- **Общедоступная версия. Удаленное выполнение кода через DNS**<br>
+Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и функции оповещений см. на странице описаний оповещений [Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036). 
+
+- **Общедоступная версия. Кража данных по SMB**<br>
+Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и функции оповещений см. на странице описаний оповещений [Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030).
+
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 ## <a name="azure-atp-release-264"></a>Azure ATP, выпуск 2.64
 Выпущено 4 февраля 2019 г.
-
 
 - **Общедоступная версия. Предполагаемое использование Golden Ticket (аномалия билета)**<br>
 Это оповещение теперь предоставляется в общедоступной версии. См. дополнительные сведения о [странице описания оповещения о предполагаемом использовании Golden Ticket (аномалия билета)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032). 
@@ -73,7 +87,7 @@ ms.locfileid: "55689427"
 Выпущен 20 января 2019 г.
 
 - **Новое оповещение системы безопасности: удаленное выполнение программного кода через DNS (предварительная версия)**<br>
-Оповещение системы безопасности Azure ATP [Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036---preview) теперь доступно в общедоступной предварительной версии. <br> Если запросы к DNS-серверу, предположительно использующие уязвимость системы безопасности [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626), выполняются в отношении контроллера домена в сети, в обнаружении выводится оповещение системы безопасности Azure ATP.
+Оповещение системы безопасности Azure ATP [Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036) теперь доступно в общедоступной предварительной версии. <br> Если запросы к DNS-серверу, предположительно использующие уязвимость системы безопасности [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626), выполняются в отношении контроллера домена в сети, в обнаружении выводится оповещение системы безопасности Azure ATP.
 
 - **Расширение функциональности: Отложенное обновление датчиков (72 ч)** <br> Изменена возможность отложить обновление выбранных датчиков до 72 ч (вместо предыдущей отсрочки в 24 ч) после каждого обновления выпуска Azure ATP. См. инструкции по настройке [обновления датчиков Azure ATP](sensor-update.md). 
 

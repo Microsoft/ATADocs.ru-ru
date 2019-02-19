@@ -4,8 +4,8 @@ description: Примеры журналов подозрительных дей
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 02/04/2019
+manager: barbkess
+ms.date: 02/11/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 39b5394c876af8034317bc857ee33c93547d9262
-ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
+ms.openlocfilehash: 05d2faf35a9db898f951c6f7da6951ec9360be3b
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55689461"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077904"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -57,12 +57,12 @@ Azure ATP может пересылать события оповещений с
 |Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|
 |---------|----------|---------|
 |[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|
-|[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb---preview-external-id-2030)| Н/Д| 2030|
+|[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| Н/Д| 2030|
 |[Действие Honeytoken](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Действие Honeytoken|2014|
 |[Вредоносный запрос главного ключа API защиты данных](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|
 |[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|
 |[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|
-|[Удаленное выполнение программного кода через DNS (предварительная версия)](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036---preview)|Н/Д|2036|
+|[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|Н/Д|2036|
 |[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|
 |[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|
 |[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
@@ -81,6 +81,7 @@ Azure ATP может пересылать события оповещений с
 |[Предполагаемое использование платформы взлома Metasploit](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
 |[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010|
 |[Предполагаемая атака программы-шантажиста WannaCry](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035|
+|[Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|Н/Д|2037|
 |[Подозрительный обмен данными через DNS](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|Подозрительный обмен данными через DNS|2031|
 |[Подозрительное изменение привилегированных групп](atp-domain-dominance-alerts.md#suspicious-modification-of-sensitive-groups-external-id-2024)|Подозрительное изменение привилегированных групп|2024|
 |[Создание подозрительной службы](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|Создание подозрительной службы|2026|
@@ -119,7 +120,7 @@ Azure ATP может пересылать события оповещений с
 ### <a name="remote-code-execution-attempt"></a>Попытка удаленного выполнения кода
 10-29-2018  11:22:04    Auth.Warning    192.168.0.202   1 2018-10-29T09:22:00.100856+00:00 DC3 CEF 3908 RemoteExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|RemoteExecutionSecurityAlert|Remote code execution attempt|5|start=2018-10-29T09:19:45.0552367Z shost=CLIENT1 msg=На DC1 с компьютера CLIENT1 были предприняты следующие попытки удаленного выполнения.\r\nУспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nНеуспешное удаленное планирование одной или нескольких задач пользователем user1.\r\nУспешное удаленное выполнение одного или нескольких методов WMI пользователем user1. externalId=2019 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f063c778-830c-4e9f-98d1-bc6c11c94e11 cs2Label=trigger cs2=new
 
-### <a name="remote-code-execution-over-dns---preview"></a>Удаленное выполнение программного кода через DNS (предварительная версия)
+### <a name="remote-code-execution-over-dns"></a>Удаленное выполнение кода через DNS
 1-17-2019   08:24:54    Auth.Warning    192.168.0.202   1 2019-01-17T08:24:54.100856+00:00 DC3 CEF 3908 DnsRemoteCodeExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.63.0.0|DnsRemoteCodeExecutionSecurityAlert|[PREVIEW] Remote code execution over DNS|5|start=2019-01-17T08:24:54.5293800Z app=Dns shost=CLIENT1 msg=An actor attempted to run commands remotely on CLIENT1 from DC1, over DNS protocol. externalId=2036 cs1Label=url cs1=https\:////contoso-corp.atp.azure.com:13000/securityAlert/591f9769-d904-40b1-89fa-c307c2ca814f cs2Label=trigger cs2=new
 
 ### <a name="suspected-brute-force-attack-ldap"></a>Предполагаемая атака методом подбора (протокол LDAP)

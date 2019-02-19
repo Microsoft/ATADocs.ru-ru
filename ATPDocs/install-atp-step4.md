@@ -1,51 +1,46 @@
 ---
-title: Установка Azure Advanced Threat Protection | Документы Майкрософт
+title: Краткое руководство по установке датчика Azure ATP | Документация Майкрософт
 description: На четвертом шаге установки Azure ATP выполняется установка датчика Azure ATP.
-keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/27/2019
-ms.topic: conceptual
-ms.prod: ''
+ms.date: 02/06/2019
+ms.topic: quickstart
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5c357ea537c9fe9a23fc426670d47bf85d53f316
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 3a166a1bd820437d92510e3274e4591f41d80edf
+ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085254"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55831469"
 ---
-# <a name="install-azure-atp---step-4"></a>Установка Azure ATP. Шаг 4
+# <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
-> [!div class="step-by-step"]
-> [« Шаг 3](install-atp-step3.md)
-> [Шаг 5 »](install-atp-step5.md)
+Из этого краткого руководства вы узнаете, как установить датчик Azure ATP на контроллере домена. Если вы предпочитаете автоматическую установку, прочтите статью [Автоматическая установка](atp-silent-installation.md).
 
-## <a name="install-the-azure-atp-sensor"></a>Установка датчика Azure ATP
+## <a name="prerequisites"></a>Предварительные условия
 
-> [!IMPORTANT]
->На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если она не установлена, пакет установки датчика Azure ATP установит ее, что может потребовать перезагрузку сервера.
+- [Экземпляр Azure ATP](install-atp-step1.md), [подключенный к Active Directory](install-atp-step2.md).
+- Скачанная копия [пакета установки датчика ATP](install-atp-step3.md) и ключ доступа.
+- На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если она не установлена, пакет установки датчика Azure ATP установит ее, что может потребовать перезагрузку сервера.
+
+## <a name="install-the-sensor"></a>Установка датчика
 
 Выполните следующие действия на контроллере домена.
 
 1. Проверьте подключение компьютера к необходимым конечным точкам облачной службы Azure ATP:
-   - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
-   - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
-   <br>(для Европы)  
-   - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
-   - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
-   - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
-   <br>(для США)
-   - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)<br>(для Азии)
+   - Европа
+      - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
+      - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
+   - США 
+      - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
+      - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
+      - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+   - Азия
+      - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)
 
-2. Извлеките файлы установки из ZIP-файла. 
-   > [!NOTE] 
-   > При установке непосредственно из ZIP-файла произойдет сбой.
+2. Извлеките файлы установки из ZIP-файла. При установке непосредственно из ZIP-файла произойдет сбой.
 
 3. Запустите файл **setup.exe датчика Azure ATP** и следуйте указаниям мастера установки.
 
@@ -54,7 +49,7 @@ ms.locfileid: "55085254"
     ![Язык установки автономного датчика Azure ATP](media/sensor-install-language.png)
 
 
-5. Мастер установки автоматически проверит, является ли сервер контроллером домена или выделенным сервером. Если это контроллер домена, будет установлен датчик Azure ATP, если это выделенный сервер, устанавливается автономный датчик Azure ATP. 
+5. Мастер установки автоматически проверит, является ли сервер контроллером домена или выделенным сервером. Если это контроллер домена, будет установлен датчик Azure ATP. Если это выделенный сервер, будет установлен автономный датчик Azure ATP.
     
     Если устанавливается датчик Azure ATP, вы увидите приведенный ниже экран, который сообщает, что на выделенном сервере будет установлен датчик Azure ATP.
     
@@ -75,29 +70,23 @@ ms.locfileid: "55085254"
     
 7. Нажмите кнопку **Установить**. Во время установки автономного датчика Azure ATP устанавливаются и настраиваются следующие компоненты.
 
-    -   KB 3047154 (только для Windows Server 2012 R2)
+    - KB 3047154 (только для Windows Server 2012 R2)
 
         > [!IMPORTANT]
-        > -   Не устанавливайте исправление KB 3047154 на узел виртуализации. (Узел, на котором выполняется виртуализация. Ее можно запустить на виртуальной машине.) Это может привести к неправильному зеркальному отображению портов. 
-        > -   Если Wireshark устанавливается на компьютере с датчиком ATP, после запуска Wireshark необходимо перезапустить датчик ATP, так как он использует те же драйверы.
+        > - Не устанавливайте исправление KB 3047154 на узел виртуализации. (Узел, на котором выполняется виртуализация. Ее можно запустить на виртуальной машине.) Это может привести к неправильному зеркальному отображению портов. 
+        > - Если Wireshark устанавливается на компьютере с датчиком ATP, после запуска Wireshark необходимо перезапустить датчик ATP, так как он использует те же драйверы.
 
-    -   Служба датчика Azure ATP и служба средства обновления датчика Azure ATP
-    -   Распространяемый пакет Microsoft Visual C++ 2013.
+    - Служба датчика Azure ATP и служба средства обновления датчика Azure ATP
+    - Распространяемый пакет Microsoft Visual C++ 2013.
 
 8. После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал Azure ATP.
 
+## <a name="next-steps"></a>Дальнейшие шаги
 
 > [!div class="step-by-step"]
-> [« Шаг 3](install-atp-step3.md)
-> [Шаг 5 »](install-atp-step5.md)
+> ["Шаг 3. Скачивание файла установки датчика](install-atp-step3.md)
+> [Шаг 5. Настройка параметров датчика"](install-atp-step5.md)
 
+## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-## <a name="see-also"></a>См. также
-
-- [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
-
-- [Настройка сбора данных о событиях](configure-event-collection.md)
-
-- [Предварительные требования к Azure ATP](atp-prerequisites.md)
-
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://aka.ms/azureatpcommunity)!

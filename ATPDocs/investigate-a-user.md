@@ -4,25 +4,27 @@ d|Description: This article explains how to user Azure ATP security alerts to in
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/14/2019
+ms.date: 02/07/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 126653dd2831e0e3dbd9c777d84d32b1c2e74bd9
-ms.sourcegitcommit: 1ee052c4c6b04b290e2d5384c24b65a108b1f1f3
+ms.openlocfilehash: 99ebcfeb4220e547be06e8161636b12c843f292c
+ms.sourcegitcommit: 1da2f5414d27d58ac01ad43cafdb6bed242ce7c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54253407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55889879"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
 
-Свидетельства оповещений Azure ATP и пути бокового смещения обеспечивают четкое указание на выполнение пользователями подозрительных действий или компрометацию их учетных записей. Предложения функций анализа помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
+Свидетельства оповещений Azure ATP и пути бокового смещения обеспечивают четкое указание на выполнение пользователями подозрительных действий или компрометацию их учетных записей. В этом руководстве вы сможете использовать предложения функций анализа, которые помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
+
+> [!div class="checklist"]
+> * Соберите сведения о пользователе.
+> * Проанализируйте действия, выполненные пользователем.
+> * Проанализируйте ресурсы, к которым обращался пользователь.
+> * Проанализируйте пути бокового смещения.
 
 ## <a name="recommended-investigation-steps-for-suspicious-users"></a>Рекомендуемые действия по анализу подозрительных пользователей
 

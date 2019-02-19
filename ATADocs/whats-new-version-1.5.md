@@ -4,7 +4,7 @@ description: В этой статье перечислены новые возм
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 800d5d0ebf7eb044982c35e1f348b6c2faf14b07
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 987d73a4ad3fc970d6e4f03a19f9ef5f9a8fd59e
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133248"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076663"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -44,11 +44,11 @@ ms.locfileid: "46133248"
 В этой версии существуют следующие проблемы.
 
 ### <a name="new-ata-gateway-installation-fails"></a>Сбой установки нового шлюза ATA
-После обновления развертывания ATA до версии 1.5 возникает ошибка при установке нового шлюза ATA: Microsoft Advanced Threat Analytics Gateway is not installed (Шлюз Microsoft Advanced Threat Analytics не установлен).
+После обновления развертывания ATA до версии 1.5 возникает ошибка при установке нового шлюза ATA: Шлюз Microsoft Advanced Threat Analytics не установлен.
 
 ![Ошибка шлюза ATA](media/ata-install-error.png)
 
-<b>Решение</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
+<b>Обходной путь</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
 ### <a name="deployment"></a>Deployment (Развертывание)
 Папка, указанная в параметрах "Путь к данным базы данных" и "Путь к журналу базы данных", должна быть пустой (никаких файлов или подпапок).
 Если она не пустая, развертывание не выполнится.

@@ -1,35 +1,32 @@
 ---
-title: Установка Azure Advanced Threat Protection | Документы Майкрософт
+title: Краткое руководство по настройке параметров датчика Azure ATP | Документация Майкрософт
 description: На пятом шаге установки Azure ATP выполняется настройка параметров для автономного датчика Azure ATP.
-keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 10/04/2018
-ms.topic: conceptual
-ms.prod: ''
+ms.date: 02/06/2018
+ms.topic: quickstart
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cb9987645ffd1546b50117c984a138e8d3169657
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 661e9ec9a40f45c0dc323b5a9d612b03a3128cb7
+ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085271"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55831452"
 ---
-# <a name="install-azure-atp---step-5"></a>Установка Azure ATP. Шаг 5
+# <a name="quickstart-configure-azure-atp-sensor-settings"></a>Краткое руководство. Настройка параметров датчика Azure ATP
 
-> [!div class="step-by-step"]
-> [« Шаг 4](install-atp-step4.md)
-> [Шаг 6 »](install-atp-step6-vpn.md)
+В этом кратком руководстве вы настроите параметры датчика Azure ATP и начнете видеть данные. Для использования возможностей Azure ATP потребуется дополнительная настройка и интеграция.  
 
+## <a name="prerequisites"></a>Предварительные условия
 
+- [Экземпляр Azure ATP](install-atp-step1.md), [подключенный к Active Directory](install-atp-step2.md).
+- Скачанная копия [пакета установки датчика ATP](install-atp-step3.md) и ключ доступа.
 
-## <a name="configure-azure-atp-sensor-settings"></a>Настройка параметров датчика Azure ATP
-После установки датчика Azure ATP выполните следующие шаги по настройке его параметров.
+## <a name="configure-sensor-settings"></a>Настройка параметров датчика
+
+После установки датчика Azure ATP сделайте следующее для настройки его параметров.
 
 1.  На портале Azure ATP перейдите в раздел **Конфигурация** и в разделе **Система** выберите **Датчики**.
    
@@ -56,7 +53,7 @@ ms.locfileid: "55085271"
     
     - Потенциальный синхронизатор домена отвечает за синхронизацию между Azure ATP и доменом Active Directory. В зависимости от размера домена начальная синхронизация может занимать определенное время и потреблять много ресурсов. Разработчики Azure ATP рекомендуют выбрать по крайней мере один контроллер домена датчика в качестве потенциального синхронизатора домена в домене. Если по крайней мере один контроллер домена не будет выбран в качестве потенциального синхронизатора домена, Azure ATP будет пассивно сканировать сеть и не сможет собирать все сведения об изменениях и сущностях в Active Directory. Наличие хотя бы одного назначенного **потенциального синхронизатора домена** в каждом домене гарантирует, что Azure ATP будет выполнять постоянное активное сканирование сети и собирать все сведения об изменениях и сущностях в Active Directory.
   
-    - По умолчанию датчики Azure ATP не являются потенциальными синхронизаторами домена, в отличие от автономных датчиков Azure ATP. Чтобы вручную выбрать датчик Azure ATP в качестве потенциального синхронизатора домена, установите для параметра **Потенциальный синхронизатор домена** на экране конфигурации значение **Вкл**.   
+    - По умолчанию датчики Azure ATP не являются потенциальными синхронизаторами домена, в отличие от автономных датчиков Azure ATP. Чтобы вручную выбрать датчик Azure ATP в качестве потенциального синхронизатора домена, установите для параметра **Потенциальный синхронизатор домена** на экране конфигурации значение **Вкл**.
         
     - Рекомендуется отключить настройку датчиков Azure ATP на удаленных площадках в качестве потенциальных синхронизаторов домена.
    
@@ -77,17 +74,13 @@ ms.locfileid: "55085271"
 
 3. Перейдите по URL-адресу экземпляра Azure ATP. На портале Azure ATP выполните поиск какой-либо сущности, например пользователя или группы в домене.
 
+## <a name="next-steps"></a>Дальнейшие шаги
+
+- [Настройка прокси-сервера](configure-proxy.md)
+- [Расширенная политика аудита](atp-advanced-audit-policy.md)
+- [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-atp-step8-samr.md)
 
 
-> [!div class="step-by-step"]
-> [« Шаг 4](install-atp-step4.md)
-> [Шаг 6 »](install-atp-step6-vpn.md)
+## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-
-
-## <a name="see-also"></a>См. также
-
-- [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
-- [Настройка сбора данных о событиях](configure-event-collection.md)
-- [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://aka.ms/azureatpcommunity)!

@@ -4,8 +4,8 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/15/2019
+manager: barbkess
+ms.date: 02/11/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 67ba3c285577b683bc820ab272a498443b02c493
-ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
+ms.openlocfilehash: 214e3e10979f3508fad5f2b674d5d39b08a5715f
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314301"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56075847"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>Руководство. Предупреждения о краже данных  
 
@@ -36,7 +36,7 @@ ms.locfileid: "54314301"
 
 > [!div class="checklist"]
 > * Подозрительный обмен данными через DNS (внешний код 2031)
-> * Кража данных по SMB — предварительная версия (внешний код 2030)
+> * Кража данных по SMB (внешний код 2030)
 
 ## <a name="suspicious-communication-over-dns-external-id-2031"></a>Подозрительный обмен данными через DNS (внешний код 2031) 
 
@@ -72,7 +72,7 @@ ms.locfileid: "54314301"
 > [!NOTE]
 > В оповещениях системы безопасности типа *Подозрительный обмен данными через DNS* перечисляются подозрительные домены. Новые домены, а также домены, которые были недавно добавлены и еще не известны и не распознаны в Azure ATP, но при этом являются частью организации с соответствующими подтверждениями, могут быть закрыты.
 
-## <a name="data-exfiltration-over-smb---preview-external-id-2030"></a>Кража данных по SMB — предварительная версия (внешний код 2030)
+## <a name="data-exfiltration-over-smb-external-id-2030"></a>Кража данных по SMB (внешний код 2030)
 
 **Описание**. На контроллерах домена хранятся наиболее важные данные организации. Для большинства злоумышленников одной из приоритетных задач является получение доступа к контроллеру домена для кражи наиболее важных данных. Например, утечка файла Ntds.dit, который хранится на контроллере домена, позволяет злоумышленнику создать поддельный билет на получение билетов (TGT) Kerberos, обеспечивающий доступ к любому ресурсу. Поддельные TGT-билеты Kerberos позволяют злоумышленнику задать произвольное истечение срока действия билета. Оповещение **Кража данных по SMB** Azure ATP активируется при наблюдаемой подозрительной передаче данных с отслеживаемых контроллеров домена.
 

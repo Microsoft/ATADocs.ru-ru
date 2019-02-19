@@ -4,25 +4,28 @@ d|Description: This article explains how to use Azure ATP security alerts to inv
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/14/2019
+ms.date: 02/07/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3c707376635facd0fe9ba8e3c3f32f36f5a71c25
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 92364369e26356f514927d9dafc9a31c9468d663
+ms.sourcegitcommit: 1da2f5414d27d58ac01ad43cafdb6bed242ce7c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55889896"
 ---
 # <a name="tutorial-investigate-a-computer"></a>Руководство. Анализ компьютера
 
-Свидетельство оповещения Azure ATP четко указывает на участие компьютеров в подозрительных действиях или на их компрометацию. Предложения функций анализа помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
+Свидетельство оповещения Azure ATP четко указывает на участие компьютеров в подозрительных действиях или на их компрометацию. В этом руководстве вы сможете использовать предложения функций анализа, которые помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
+
+> [!div class="checklist"]
+> * Проверьте компьютер на наличие выполнившего вход пользователя.
+> * Убедитесь, что пользователь получает доступ к компьютерам как обычно.
+> * Проанализируйте подозрительные действия с компьютера.
+> * Возникали ли в то же время другие оповещения?
+
 
 ## <a name="investigation-steps-for-suspicious-computers"></a>Действия по анализу подозрительных компьютеров
 
@@ -46,7 +49,7 @@ ms.locfileid: "54839552"
 - Если включена интеграция ATP в Защитнике Windows, щелкните значок ATP в Защитнике Windows для дальнейшего исследования компьютера. ATP в Защитнике Windows предоставляет информацию о том, какие процессы выполнялись и какие оповещения возникали на момент создания оповещения.
     1. Были ли развернуты или установлены какие-либо новые программы?
 
-## <a name="see-also"></a>См. также
+## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Проверка пользователя](investigate-a-user.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)

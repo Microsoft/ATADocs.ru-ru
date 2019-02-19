@@ -4,7 +4,7 @@ description: В этой статье описывается архитекту�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6988b41b64dc3d8afef5f7af614f78b41501e2af
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 6f50f186d777e8f6da3b0620b0bc384427eb3ff6
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085322"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078074"
 ---
 # <a name="azure-atp-architecture"></a>Архитектура Azure ATP
 
@@ -66,31 +66,33 @@ Azure ATP включает в себя следующие компоненты.
 
  
 ## <a name="azure-atp-sensor-features"></a>Функции датчика Azure ATP
+
 Датчик Azure ATP считывает события локально. Для этого не нужно приобретать и обслуживать дополнительное оборудование или производить настройку. Датчик Azure ATP также поддерживает трассировку событий Windows (ETW), которая позволяет получить сведения журнала для нескольких обнаружений. Обнаружения на основе трассировки событий Windows включают предполагаемую атаку DCShadow путем запроса на репликацию контроллера домена и повышения роли контроллера домена.
 
 ### <a name="domain-synchronizer-candidate"></a>Синхронизатор домена-кандидат
 
-    The domain synchronizer candidate is responsible for synchronizing all entities from a specific Active Directory domain proactively (similar to the mechanism used by the domain controllers themselves for replication). One sensor is chosen randomly, from the list of candidates, to serve as the domain synchronizer. 
+Потенциальный синхронизатор домена отвечает за своевременную синхронизацию всех сущностей из определенного домена Active Directory (аналогичный механизм используется для репликации в контроллерах домена). В списке синхронизаторов домена случайным образом выбирается один датчик. 
 
-    If the synchronizer is offline for more than 30 minutes, another candidate is chosen instead. If there is no domain synchronizer available for a specific domain, Azure ATP proactively synchronizes entities and their changes, however Azure ATP retrieves new entities as they are detected in the monitored traffic. 
+Если синхронизатор находится в автономном режиме более 30 минут, его заменяет другой кандидат. Если для конкретного домена синхронизатор домена недоступен, Azure ATP своевременно синхронизирует сущности и изменения в них. Однако Azure ATP будет оперативно получать новые сущности по мере их обнаружения в отслеживаемом трафике.
     
-    If there is no domain synchronizer available, and you search for an entity that did not have any traffic related to it, no search results are displayed.
+Если синхронизатор домена недоступен и требуется сущность, с которой не связан трафик, результаты поиска будут пусты.
 
-    By default, Azure ATP sensors are not synchronizer candidates. To manually set an Azure ATP sensor as a domain synchronizer candidate, follow the steps in the [Azure ATP installation workflow](install-atp-step5.md#configure-azure-atp-sensor-settings).
+По умолчанию датчики Azure ATP не являются потенциальными синхронизаторами. Чтобы вручную указать датчик Azure ATP в качестве потенциального синхронизатора домена, выполните инструкции, описанные в [процедуре установки Azure ATP](install-atp-step5.md).
 
 ### <a name="resource-limitations"></a>Ограничения ресурсов
 
-    The Azure ATP sensor includes a monitoring component that evaluates the available compute and memory capacity on the domain controller on which it is running. The monitoring process runs every 10 seconds and dynamically updates the CPU and memory utilization quota on the Azure ATP sensor process. The monitoring process makes sure the domain controller always has at least 15% of free compute and memory resources available.
+Датчик Azure ATP содержит компонент мониторинга, который оценивает доступный объем вычислительных ресурсов и памяти на контроллере домена, в котором он выполняется. Мониторинг выполняется каждые 10 секунд. При этом также осуществляется динамическое обновление квоты использования ресурсов ЦП и памяти для датчика Azure ATP. Благодаря этому в любой момент времени в контроллере домена доступно по крайней мере 15 % свободных вычислительных ресурсов и ресурсов памяти.
 
-    No matter what occurs on the domain controller, the monitoring process continually frees up resources to make sure the domain controller's core functionality is never affected.
+Независимо от операций, выполняемых в контроллере домена, в результате всегда освобождаются ресурсы, чтобы обеспечить непрерывную работу основных функций контроллера домена.
 
-    If the monitoring process causes the Azure ATP sensor to run out of resources, only partial traffic is monitored and the monitoring alert "Dropped port mirrored network traffic" appears in the Azure ATP portal Health page.
+Если процесс мониторинга приводит к нехватке ресурсов датчика Azure ATP, отслеживается только часть трафика, а на странице работоспособности на портале Azure ATP появляется оповещение мониторинга "Сетевой трафик зеркально отображенных портов сброшен".
 
 ### <a name="windows-events"></a>События Windows
 
-    To enhance Azure ATP detection coverage of suspected identity theft (pass-the-hash), suspicious authentication failures,modifications to sensitive groups, creation of suspicious services, and Honeytoken activity types of attack, Azure ATP needs to analyze the logs of the following Windows events: 4776,4732,4733,4728,4729,4756,4757, and 7045. These events are read automatically by Azure ATP sensors with correct [advanced audit policy settings](atp-advanced-audit-policy.md). 
+Чтобы расширить охват для обнаружения потенциальных атак кражи удостоверения (Pass-the-Hash), подозрительных сбоев проверки подлинности, изменений в привилегированных группах, создания подозрительных служб и действий с использованием учетной записи honeytoken, службе Azure ATP необходимо проанализировать журналы со следующими событиями Windows: 4776,4732,4733,4728,4729,4756,4757 и 7045. Эти события автоматически считываются датчиками Azure ATP, в которых [расширенная политика аудита](atp-advanced-audit-policy.md) настроена надлежащим образом. 
 
-## <a name="see-also"></a>См. также
+## <a name="next-steps"></a>Дальнейшие шаги
+
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Средство изменения размера Azure ATP](http://aka.ms/trisizingtool)
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
