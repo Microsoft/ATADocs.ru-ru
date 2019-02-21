@@ -5,34 +5,43 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/04/2019
+ms.date: 02/17/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c12cb4836e401fbfb788cc243bdc6d29622552bb
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: be11b073171a192e71656d731619797f077054ab
+ms.sourcegitcommit: 5d3607b3a2c9d1a35dd36287f4a5fc68fca67eb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077938"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56334533"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-266"></a>Azure ATP, выпуск 2.66
+Выпущено 17 февраля 2019 г.
+
+- **Расширение функциональности: оповещение о предполагаемой атаке DCSync (репликация служб каталогов)**<br>
+Мы сделали это оповещение системы безопасности удобнее в использовании. Пересмотрено описание, расширены исходные сведения, добавлена новая инфографика и дополнительные свидетельства. Узнайте больше об оповещениях системы безопасности о [предполагаемой атаке DCSync (репликация служб каталогов)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006). 
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-265"></a>Azure ATP, выпуск 2.65
 Выпущено 10 февраля 2019 г.
 
 - **Новое оповещение системы безопасности: потенциальная атака ретранслятора NTLM (учетная запись Exchange) — (предварительная версия)**<br>
-Оповещение системы безопасности [Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview) Azure ATP теперь в общем доступе. <br> В этом случае оповещение системы безопасности Azure ATP срабатывает при использовании учетных данных Exchange из подозрительного источника. Атаки этого типа пытаются использовать методы ретранслятора NTLM, чтобы получить права Exchange контроллера домена. Они называются **ExchangePriv**. Дополнительные сведения о методе **ExchangePriv** см. в [рекомендации ADV190007](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007), которая впервые была опубликована 31 января 2019 г., и в разделе [Ответ на оповещение Azure ATP](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511).  
+Оповещение системы безопасности [Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview) Azure ATP теперь в общем доступе. <br> В этом случае оповещение системы безопасности Azure ATP срабатывает при использовании учетных данных Exchange из подозрительного источника. Атаки этого типа пытаются использовать методы ретранслятора NTLM, чтобы получить права Exchange контроллера домена. Они называются **ExchangePriv**. Дополнительные сведения о методе **ExchangePriv** см. в [рекомендации ADV190007](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007), которая впервые была опубликована 31 января 2019 г., и в записи блога об [ответе на оповещение Azure ATP](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511).  
 
 - **Общедоступная версия. Удаленное выполнение кода через DNS**<br>
-Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и функции оповещений см. на странице описаний оповещений [Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036). 
+Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и описание функций оповещений см. в разделе об [удаленном выполнении кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036). 
 
 - **Общедоступная версия. Кража данных по SMB**<br>
-Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и функции оповещений см. на странице описаний оповещений [Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030).
+Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и описание функций оповещений см. в разделе о [краже данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030).
 
 
 - Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
@@ -41,7 +50,7 @@ ms.locfileid: "56077938"
 Выпущено 4 февраля 2019 г.
 
 - **Общедоступная версия. Предполагаемое использование Golden Ticket (аномалия билета)**<br>
-Это оповещение теперь предоставляется в общедоступной версии. См. дополнительные сведения о [странице описания оповещения о предполагаемом использовании Golden Ticket (аномалия билета)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032). 
+Это оповещение теперь предоставляется в общедоступной версии. Дополнительные сведения и описание функций оповещений см. в разделе о [предполагаемом использовании Golden Ticket (аномалия билета)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032). 
 
 - **Расширение функциональности: Разведывательная атака путем сетевого сопоставления (DNS)**<br>
 Улучшенная логика обнаружения оповещений развернута для этого оповещения для снижения шума и сокращения числа ложно положительных оповещений. Период обучения этого оповещения составляет теперь восемь дней, после чего оповещений может быть активировано в первый раз. См. дополнительные сведения о [странице описания оповещения о разведывательной атаке путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007). 

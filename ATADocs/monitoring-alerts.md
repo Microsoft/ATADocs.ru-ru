@@ -2,23 +2,24 @@
 title: Сведения об оповещениях мониторинга ATA | Документы Майкрософт
 description: В этой статье описывается, как использовать журналы событий ATA для устранения неполадок
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: barbkess
-ms.date: 3/21/2018
+ms.date: 02/20/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: advanced-threat-analytics
 ms.service: ''
 ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
-ms.reviewer: bennyl
+ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: b62ee7b8b3ab4ee93f05d81efbac983824d9adcd
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 736951f8f74f9493bb07a75e68601c9814793ed3
+ms.sourcegitcommit: c59d67fc58e759b5597917f96089d67e28e4cce8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078380"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56443476"
 ---
 # <a name="understanding-ata-monitoring-alerts"></a>Сведения об оповещениях мониторинга ATA
 
@@ -52,7 +53,7 @@ ms.locfileid: "56078380"
 ### <a name="ata-center-certificate-expired"></a>Срок действия сертификата центра ATA истек
 |Оповещение|Описание|Решение|Статус|
 |----|----|----|----|
-|Срок действия сертификата центра ATA истек.|После того как срок действия сертификата истечет, подключение шлюзов ATA к центру ATA станет невозможным. Происходит аварийное завершение процесса ATA, и ATA перестает функционировать.|[Замените сертификат центра ATA](modifying-ata-center-configuration.md).|Высокий|
+|Срок действия сертификата центра ATA истек.|После того как срок действия сертификата истечет, подключение шлюзов ATA к центру ATA станет невозможным. Происходит аварийное завершение процесса ATA, и ATA перестает функционировать.|[Повторное развертывание центра ATA](install-ata-step1.md)|Высокий|
 ## <a name="ata-gateway-issues"></a>Проблемы со шлюзом ATA
 ### <a name="read-only-user-password-to-expire-shortly"></a>Истекает срок действия пароля пользователя, у которого ест доступ только для чтения
 |Оповещение|Описание|Решение|Статус|
