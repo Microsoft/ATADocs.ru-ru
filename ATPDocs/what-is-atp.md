@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 1/3/2019
 ms.topic: article
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1f54e020026c57768124844ba34ee9fae4b026c8
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: a2e1f7d180cce76dd495c13efaab7336348a57e1
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077615"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263443"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>Что такое Azure Advanced Threat Protection?
 Azure Advanced Threat Protection (ATP) — это облачное решение для обеспечения безопасности, которое помогает обнаруживать и анализировать современные угрозы, направленные на вашу организацию, скомпрометированные удостоверения и действия внутренних нарушителей. Azure ATP позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:  

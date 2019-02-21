@@ -5,13 +5,14 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/05/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 404252e7fb9d71a067def9b28870d68736a493dd
-ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
+ms.openlocfilehash: 3e39bcdd5b3ffbe7a1d39064d28851fba7058d94
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55831418"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263970"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>Краткое руководство. Подключение к лесу Active Directory
 

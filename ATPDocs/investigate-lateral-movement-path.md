@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 1/3/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e8b69c375acb237f545bd3dbdc237d7e7e0c6630
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 15695523663a4d40136126eb8b6668c86be62c7a
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078159"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264005"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>Руководство. Использование путей бокового смещения
 
