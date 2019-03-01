@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 12/17/2018
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,18 +14,25 @@ ms.technology: ''
 ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1689d2d2bd4becd42812010dc8fd6e13f0483ef5
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 916a7a2b8f9782b66867860cdb7575e0069a30d4
+ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263936"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56754367"
 ---
 # <a name="azure-atp-known-issues"></a>Известные проблемы с Azure ATP
 
 В Azure ATP имеется ряд ограничений инженерного и функционального характера, иногда способных затруднять или блокировать использование служб Azure ATP вашей организацией. Здесь описаны известные проблемы, не имеющие обходных решений, или те, над которыми ведется работа без указания даты решения. 
 
 Проблемы Azure ATP с известными обходными решениями см. в разделе [Устранение известных неполадок Azure ATP](troubleshooting-atp-known-issues.md). Проверить состояние клиента Azure ATP можно в [центре работоспособности Azure ATP](atp-health-center.md). 
+
+## <a name="dns-reconnaissance-alert"></a>Оповещение о разведывательной атаке, направленной на DNS
+> [!div class="mx-tableFixed"] 
+
+|Проблема|Состояние|
+|----|----|
+Оповещение системы безопасности о *разведывательной атаке, направленной на DNS*, затрагивает клиентов, выдавая повторяющиеся соответствующие ложноположительные **оповещения** с одного компьютера. Если всплеск **оповещений о разведывательной атаке, направленной на DNS**, поступают с одного компьютера, закройте или удалите эти оповещения, и дождитесь развертывания обновления 2.67. | Обновление 2.67 устраняет эту проблему.|
 
 ## <a name="suspected-brute-force-attack-ldap-security-alert-display"></a>Отображение предупреждения системы безопасности о предполагаемой атаке методом подбора (LDAP)
 > [!div class="mx-tableFixed"] 
