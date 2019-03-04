@@ -13,7 +13,6 @@
 ## [Установка датчика Azure ATP](install-atp-step4.md)
 ## [Настройка датчика Azure ATP](install-atp-step5.md)
 # Учебники
-## [Основные сведения об оповещениях безопасности](understanding-security-alerts.md)
 ## [Оповещения о разведывательных атаках](atp-reconnaissance-alerts.md)
 ## [Оповещения о компрометации учетных данных](atp-compromised-credentials-alerts.md)
 ## [Оповещения об атаках бокового смещения](atp-lateral-movement-alerts.md)
@@ -59,6 +58,13 @@
 ### [Проверка зеркального отображения портов](validate-port-mirroring.md)
 ### [Настройка сбора данных о событиях](configure-event-collection.md)
 ### [Настройка переадресации событий Windows](configure-event-forwarding.md)
+## [Основные сведения об оповещениях безопасности](understanding-security-alerts.md)
+## Занятие по оповещениям системы безопасности
+### [Обзор занятия](atp-playbook-lab-overview.md)
+### [1. Организация занятия](atp-playbook-setup-lab.md)
+### [2. Сборник схем рекогносцировки](atp-playbook-reconnaissance.md)
+### [3. Сборник схем бокового смещения](atp-playbook-lateral-movement.md)
+### [4. Сборник схем захвата управления доменом](atp-playbook-domain-dominance.md)
 # Справочник
 ## [Справочник по журналу ATA SIEM](cef-format-sa.md)
 ## [Известные проблемы с Azure ATP](known-issues.md)
