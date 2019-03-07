@@ -3,18 +3,18 @@ title: Краткое руководство по установке датчи�
 description: На четвертом шаге установки Azure ATP выполняется установка датчика Azure ATP.
 author: mlottner
 ms.author: mlottner
-ms.date: 02/06/2019
+ms.date: 03/03/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8a09346a4529a5368d3f8521a77d1fba274786c8
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 99045c4d8982c34d3defa681417a3b3963c563ac
+ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263729"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57253935"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -80,9 +80,8 @@ ms.locfileid: "56263729"
     - Служба датчика Azure ATP и служба средства обновления датчика Azure ATP
     - Распространяемый пакет Microsoft Visual C++ 2013.
 
-8. После завершения установки нажмите кнопку **Запустить**, чтобы открыть браузер и войти на портал Azure ATP.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="step-by-step"]
 > ["Шаг 3. Скачивание файла установки датчика](install-atp-step3.md)
