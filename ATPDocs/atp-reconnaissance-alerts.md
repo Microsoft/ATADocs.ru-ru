@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 36f7d273273e11d57c681e75cc762e853a127616
-ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
+ms.openlocfilehash: ee5daa580b37db15fde0e4b276e49f4688c7189b
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56754418"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725621"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  
 
@@ -43,7 +43,7 @@ ms.locfileid: "56754418"
 > * Разведывательная атака, направленная на субъект безопасности (LDAP) (внешний код 2038) — предварительная версия
 > * Разведывательная атака с использованием пользователя и IP-адреса (SMB) (внешний код 2012)
 > * Разведывательная атака с использованием пользователей и членства в группах (SAMR) (внешний код 2021)
-> * 
+ 
 
 ## <a name="account-enumeration-reconnaissance-external-id-2003"></a>Разведывательная атака путем перечисления учетных записей (внешний код 2003) 
 
