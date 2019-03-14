@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: becf8a945367d37bbb09bf55a2a2e8f3d52421e7
-ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
+ms.openlocfilehash: 2a68255eed65e6a8b31398c01fb6b0a3ddbfdb4f
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56754384"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725652"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -55,41 +55,41 @@ Azure ATP может пересылать события оповещений с
 
 > [!div class="mx-tableFixed"] 
 
-|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|
-|---------|----------|---------|
-|[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|
-|[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| Н/Д| 2030|
-|[Действие Honeytoken](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Действие Honeytoken|2014|
-|[Вредоносный запрос главного ключа API защиты данных](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|
-|[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|
-|[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|
-|[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|Н/Д|2036|
-|[Разведывательная атака, направленная на участника безопасности (LDAP) — предварительная версия](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)|Н/Д|2038|
-|[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|
-|[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|
-|[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|
-|[Предполагаемая атака DCShadow (повышение роли контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|
-|[Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|
-|[Предполагаемая атака DCSync (репликация служб каталогов)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|вредоносная репликация служб каталогов;|2006|
+|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|MITRE ATT&CK Matrix™ |
+|---------|----------|---------|---------|
+|[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|Discovery|
+|[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| Н/Д| 2030|Exfiltration,<br>Lateral movement,<br>Command and control|
+|[Действие Honeytoken](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Действие Honeytoken|2014||
+|[Вредоносный запрос главного ключа API защиты данных](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|Вредоносный запрос конфиденциальных сведений для защиты данных.|2020|Credential access|
+|[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|Discovery|
+|[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|Execution,<br> Persistence,<br> Privilege Escalation,<br> Defense evasion,<br> Lateral movement|
+|[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|Н/Д|2036|Privilege escalation,<br> Lateral movement|
+|[Разведывательная атака, направленная на участника безопасности (LDAP) — предварительная версия](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)|Н/Д|2038|Credential access|
+|[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|Credential access|
+|[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|Credential access|
+|[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|Lateral movement|
+|[Предполагаемая атака DCShadow (повышение роли контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)|2028|Defense evasion|
+|[Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|Подозрительный запрос на репликацию контроллера домена (потенциальная атака DCShadow)|2029|Defense evasion|
+|[Предполагаемая атака DCSync (репликация служб каталогов)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|Вредоносная репликация служб каталогов|2006||
 |[Предполагаемое использование Golden Ticket (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|Понижение уровня шифрования (потенциальная атака Golden Ticket)|2009|
-|[Предполагаемое использование Golden Ticket (поддельные данные авторизации)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013) |Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|2013|
-|[Предполагаемое использование Golden Ticket (несуществующая учетная запись)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027|
-|[Предполагаемое использование Golden Ticket (аномалия билета)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|Н/Д|2032|
-|[Предполагаемое использование Golden Ticket (аномальное время)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Атака Golden Ticket в Kerberos — аномальное время|2022|
-|[Предполагаемая кража удостоверения (Pass-the-Hash)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|
-|[Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|
-|[Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|
-|[Предполагаемая атака Overpass-the-Hash (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|
-|[Предполагаемое использование платформы взлома Metasploit](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|
-|[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010|
-|[Предполагаемая атака программы-шантажиста WannaCry](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035|
-|[Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|Н/Д|2037|
-|[Подозрительный обмен данными через DNS](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|Подозрительный обмен данными через DNS|2031|
-|[Подозрительное изменение привилегированных групп](atp-domain-dominance-alerts.md#suspicious-modification-of-sensitive-groups-external-id-2024)|Подозрительное изменение привилегированных групп|2024|
-|[Создание подозрительной службы](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|Создание подозрительной службы|2026|
-|[Подозрительные VPN-подключения](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|Подозрительные VPN-подключения|2025|
-|[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|разведывательная атака с использованием запросов к службам каталогов;|2021|
-|[Разведывательная атака с использованием пользователя и IP-адреса (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|Разведывательная атака с использованием перечисления сеансов SMB|2012|
+|[Предполагаемое использование Golden Ticket (поддельные данные авторизации)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013) |Атака, направленная на повышение привилегий с использованием поддельных данных авторизации|2013|Privilege escalation,<br>Lateral movement||
+|[Предполагаемое использование Golden Ticket (несуществующая учетная запись)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Атака Golden Ticket Kerberos — несуществующая учетная запись|2027||
+|[Предполагаемое использование Golden Ticket (аномалия билета)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|Н/Д|2032||
+|[Предполагаемое использование Golden Ticket (аномальное время)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Атака Golden Ticket в Kerberos — аномальное время|2022||
+|[Предполагаемая кража удостоверения (Pass-the-Hash)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|Lateral movement|
+|[Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|Lateral movement|
+|[Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008||
+|[Предполагаемая атака Overpass-the-Hash (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|Lateral movement|
+|[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|Понижение уровня шифрования (потенциальная атака с использованием мастер-ключа)|2010||
+|[Предполагаемое использование платформы взлома Metasploit](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|Нестандартная реализация протоколов (потенциальное использование средств взлома Metasploit)|2034|Lateral movement|
+|[Предполагаемая атака программы-шантажиста WannaCry](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|Нестандартная реализация протоколов (потенциальная атака программы-шантажиста WannaCry)|2035||
+|[Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|Н/Д|2037||
+|[Подозрительный обмен данными через DNS](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|Подозрительный обмен данными через DNS|2031|Exfiltration|
+|[Подозрительное изменение привилегированных групп](atp-domain-dominance-alerts.md#suspicious-modification-of-sensitive-groups-external-id-2024)|Подозрительное изменение привилегированных групп|2024|Credential access,<br>Persistence|
+|[Создание подозрительной службы](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|Создание подозрительной службы|2026|Execution,<br> Persistence,<br> Privilege Escalation,<br> Defense evasion,<br>Lateral movement|
+|[Подозрительные VPN-подключения](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|Подозрительные VPN-подключения|2025|Persistence,<br>Defense evasion|
+|[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|разведывательная атака с использованием запросов к службам каталогов;|2021|Discovery|
+|[Разведывательная атака с использованием пользователя и IP-адреса (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|Разведывательная атака с использованием перечисления сеансов SMB|2012|Discovery|
 
 ## <a name="sample-logs"></a>Образцы журналов
 

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/04/2019
+ms.date: 03/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c8a62ab09451deaeb6ffbf82052c047bb3cc007b
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 073a7e6c6d0257e4dddcae726b939109884f8b6d
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264106"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725637"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 
@@ -46,7 +46,7 @@ ms.locfileid: "56264106"
 ## <a name="before-you-start"></a>Перед началом работы
 В этом разделе перечислены сведения, которые вам необходимо собрать, а также сведения об учетных записях и сетевых объектах, которые должны быть у вас перед установкой Azure ATP.
 
-- Получите лицензию на Enterprise Mobility + Security 5 (EMS E5) непосредственно на [портале Office 365](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) или по модели лицензирования Cloud Solution Partner (партнер по облачным решениям, CSP).  
+- Получите лицензию на Enterprise Mobility + Security 5 (EMS E5) непосредственно на [портале Microsoft 365](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) или по модели лицензирования Cloud Solution Partner (партнер по облачным решениям, CSP).  
 
 - Убедитесь, что контроллеры домена, на которых вы планируете устанавливать датчики Azure ATP, подключены через Интернет к облачной службе Azure ATP. Датчик Azure ATP поддерживает работу с прокси-сервером. Дополнительные сведения о конфигурации прокси-сервера см. в статье [Конфигурация прокси-сервера для Azure ATP](configure-proxy.md).  
 
@@ -83,7 +83,7 @@ ms.locfileid: "56264106"
 В этом разделе перечислены требования к датчику Azure ATP.
 
 ### <a name="general"></a>Общие
-Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2 или Windows Server 2016 (в том числе основные серверные компоненты, но не Nano).
+Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2 или Windows Server 2016 (в том числе основные серверные компоненты, но не Nano). Windows Server 2019 сейчас не поддерживается. 
 
 Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 

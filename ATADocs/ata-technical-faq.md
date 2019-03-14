@@ -2,10 +2,10 @@
 title: Часто задаваемые вопросы об Advanced Threat Analytics | Документация Майкрософт
 description: Здесь содержатся ответы на часто задаваемые вопросы о решении ATA
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: barbkess
-ms.date: 5/6/2018
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b69d78bc5af42b8775c30f49838ba8c7754fe313
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 3db8a52c87e45635d632ad5b2d2f1ba7a82d2706
+ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077870"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562284"
 ---
 # <a name="ata-frequently-asked-questions"></a>Часто задаваемые вопросы об ATA
 
@@ -31,7 +31,7 @@ ms.locfileid: "56077870"
 
 Если у вас есть действующее соглашение Enterprise, вы можете скачать программное обеспечение в центре корпоративного лицензирования Майкрософт (VLSC).
 
-Если вы приобрели лицензию Enterprise Mobility + Security (EMS) непосредственно на портале Office 365 или по модели лицензирования Cloud Solution Partner (CSP) и у вас нет доступа к ATA в центре корпоративного лицензирования Майкрософт (VLSC), обратитесь в службу поддержки клиентов Майкрософт, чтобы узнать, как активировать решение Advanced Threat Analytics (ATA).
+Если вы приобрели лицензию Enterprise Mobility + Security (EMS) непосредственно на портале Microsoft 365 или по модели лицензирования Cloud Solution Partner (CSP) и у вас нет доступа к Advanced Threat Analytics (ATA) на веб-сайте Microsoft Volume Licensing Center (VLSC), обратитесь в службу поддержки Майкрософт, чтобы узнать, как активировать решение ATA.
 
 ## <a name="what-should-i-do-if-the-ata-gateway-wont-start"></a>Что делать, если шлюз ATA не запускается?
 Просмотрите самую последнюю ошибку в текущем журнале ошибок (в месте установки ATA в папке Logs).
