@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/10/2019
+ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,31 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 804f8855ae11b36c01ac52f30590dc36aa4160e1
-ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
+ms.openlocfilehash: 0da5dd11c8d342b6342c06631a73e8c5f119c42c
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725677"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57981227"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-270"></a>Azure ATP, выпуск 2.70
+Выпущено 17 марта 2019 г.
+
+- **Расширение функциональности: в многие оповещения добавлен уровень надежности разрешения сетевых имен (NNR).**<br> Разрешение сетевых имен позволяет достоверно идентифицировать сущность, являющуюся источником предполагаемых атак. Добавив уровни NNR в списки свидетельств оповещений Azure ATP, вы сможете мгновенно оценивать и определять надежность разрешения сетевых имен у идентифицированных потенциальных источников и принимать необходимые меры. 
+
+    Свидетельство уровня надежности NNR было добавлено в следующие оповещения:
+  - [Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)
+  - [Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018) 
+
+  - [Потенциальная атака ретранслятора NTLM (учетная запись Exchange) — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)
+  - [Предполагаемая атака DCSync (репликация служб каталогов)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)
+
+- **Дополнительный сценарий для оповещений о работоспособности: сбой запуска службы датчика Azure ATP.**<br>Теперь при сбоях запуска датчика Azure ATP из-за проблемы драйвера записи сетевого трафика выводится оповещение о работоспособности датчика. Дополнительные сведения о журналах Azure ATP и их использовании см. в статье [Использование журналов для устранения неполадок датчика Azure Advanced Threat Protection (ATP)](troubleshooting-atp-using-logs.md). 
+
+  
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-269"></a>Azure ATP, выпуск 2.69
 Выпущен: 10 марта 2019 г.

@@ -1,0 +1,156 @@
+items:
+- name: Документация по Azure Advanced Threat Protection
+  href: index.yml
+- name: Обзор
+  items:
+  - name: Что такое Azure Advanced Threat Protection?
+    href: what-is-atp.md
+  - name: Архитектура Azure ATP
+    href: atp-architecture.md
+  - name: Предварительные требования для Azure ATP
+    href: atp-prerequisites.md
+  - name: Новые возможности Azure ATP
+    href: atp-whats-new.md
+- name: Краткие руководства
+  items:
+  - name: Планирование производительности Azure ATP
+    href: atp-capacity-planning.md
+  - name: создание экземпляра Azure ATP;
+    href: install-atp-step1.md
+  - name: Подключение к Active Directory
+    href: install-atp-step2.md
+  - name: Скачивание пакета датчика Azure ATP
+    href: install-atp-step3.md
+  - name: Установка датчика Azure ATP
+    href: install-atp-step4.md
+  - name: Настройка датчика Azure ATP
+    href: install-atp-step5.md
+  expanded: true
+- name: Учебники
+  items:
+  - name: Предупреждения о разведывательных атаках
+    href: atp-reconnaissance-alerts.md
+  - name: Предупреждения о компрометации учетных данных
+    href: atp-compromised-credentials-alerts.md
+  - name: Предупреждения об атаках бокового смещения
+    href: atp-lateral-movement-alerts.md
+  - name: Предупреждения о захвате управления доменом
+    href: atp-domain-dominance-alerts.md
+  - name: Предупреждения о краже данных
+    href: atp-exfiltration-alerts.md
+  - name: Анализ пользователя
+    href: investigate-a-user.md
+  - name: Анализ компьютера
+    href: investigate-a-computer.md
+  - name: Анализ путей бокового смещения
+    href: investigate-lateral-movement-path.md
+  - name: Анализ сущностей
+    href: investigate-entity.md
+- name: Основные понятия
+  items:
+  - name: Поддержка нескольких лесов в Azure ATP
+    href: atp-multi-forest.md
+  - name: Портал Azure ATP
+    href: workspace-portal.md
+  - name: Оповещения системы безопасности Azure ATP
+    href: suspicious-activity-guide.md
+  - name: Отслеживаемые действия
+    href: monitored-activities.md
+  - name: Общие сведения о профилях сущностей
+    href: entity-profiles.md
+  - name: Пути бокового смещения
+    href: use-case-lateral-movement-path.md
+  - name: Reports
+    href: reports.md
+  - name: Роли пользователя
+    href: atp-role-groups.md
+- name: Практические руководства
+  items:
+  - name: Работа с оповещениями безопасности
+    href: working-with-suspicious-activities.md
+  - name: Исключение сущностей из обнаружения
+    href: excluding-entities-from-detections.md
+  - name: Работа с конфиденциальными учетными записями
+    href: sensitive-accounts.md
+  - name: Поиск и фильтрация отслеживаемых действий
+    href: atp-activities-search.md
+  - name: Исключения и учетные записи Honeytoken
+    href: install-atp-step7.md
+  - name: Мониторинг контроллеров домена
+    href: atp-sensor-monitoring.md
+  - name: Изменение пароля для подключения к домену
+    href: modifying-atp-config-dcpassword.md
+  - name: Настройка уведомлений Azure ATP
+    href: notifications.md
+  - name: Работа с центром работоспособности Azure ATP
+    href: atp-health-center.md
+  - name: Оповещения о работоспособности Azure ATP
+    href: monitoring-alerts.md
+  - name: Отложенное обновление датчика Azure ATP
+    href: sensor-update.md
+  - name: Устранение известных неполадок
+    href: troubleshooting-atp-known-issues.md
+  - name: Устранение неполадок с помощью журналов
+    href: troubleshooting-atp-using-logs.md
+  - name: Интеграция с ATP в Защитнике Windows
+    href: integrate-wd-atp.md
+  - name: Интеграция VPN
+    href: install-atp-step6-vpn.md
+  - name: Интеграция с Syslog
+    href: setting-syslog.md
+  - name: Автоматическая установка
+    href: ATP-silent-installation.md
+  - name: Настройка датчиков Azure ATP
+    items:
+    - name: настройки прокси-сервера;
+      href: configure-proxy.md
+    - name: Проверка расширенных политик аудита
+      href: atp-advanced-audit-policy.md
+    - name: Настройка Azure ATP для выполнения удаленных вызовов SAM
+      href: install-atp-step8-samr.md
+  - name: Настройка автономного датчика Azure ATP
+    items:
+    - name: Настройка зеркального отображения портов
+      href: configure-port-mirroring.md
+    - name: Проверка зеркального отображения портов
+      href: validate-port-mirroring.md
+    - name: Настройка сбора данных о событиях
+      href: configure-event-collection.md
+    - name: Настройка пересылки событий Windows
+      href: configure-event-forwarding.md
+  - name: Основные сведения об оповещениях безопасности
+    href: understanding-security-alerts.md
+  - name: Занятие по оповещениям системы безопасности
+    items:
+    - name: Обзор лаборатории
+      href: atp-playbook-lab-overview.md
+    - name: 1. Настройка лаборатории
+      href: atp-playbook-setup-lab.md
+    - name: 2. Сборник схем рекогносцировки
+      href: atp-playbook-reconnaissance.md
+    - name: 3. Сборник схем бокового смещения
+      href: atp-playbook-lateral-movement.md
+    - name: 4. Сборник схем захвата управления доменом
+      href: atp-playbook-domain-dominance.md
+- name: Справочник
+  items:
+  - name: Справочник по журналу SIEM
+    href: cef-format-sa.md
+  - name: Известные проблемы с Azure ATP
+    href: known-issues.md
+- name: Ресурсы
+  items:
+  - name: Поддержка и информация
+    href: atp-support.md
+  - name: Часто задаваемые вопросы
+    href: atp-technical-faq.md
+  - name: План подготовки Azure ATP к работе
+    href: atp-resources.md
+  - name: Безопасность и конфиденциальность данных в Azure ATP
+    href: atp-privacy-compliance.md
+ms.openlocfilehash: bdf00229e59fda2490ee75aa19f466a6c0c5a789
+ms.sourcegitcommit: 5f45f48aa9047bb60c74f4cae899d90d5f7b891c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58073723"

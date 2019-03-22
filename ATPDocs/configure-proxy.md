@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 12/02/2018
+ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bc4e207a636d6c6641ccb8c6ac4e1695d82ec0d6
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 5490688653edddae020a8b63191a1c9a7b6e9f8a
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263788"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58136813"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
@@ -58,18 +58,19 @@ ms.locfileid: "56263788"
 
 ## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>Разрешение доступа прокси-сервера к URL-адресам служб Azure ATP
 
-Если прокси-сервер или брандмауэр по умолчанию блокирует весь трафик, разрешая только доступ к определенным доменам, или разрешено HTTPS-сканирование (проверка SSL), обязательно включите в список разрешений следующие URL-адреса, чтобы разрешить обмен данными со службой Azure ATP по порту 443.
+Чтобы разрешить доступ к Azure ATP, разрешите трафик для следующих URL-адресов:
 
-|Обнаружение службы|DNS-запись .Atp.Azure.com|
+- \<имя_экземпляра>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
+
+- \<иvя_экземпляра>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
+
+Предыдущие URL-адреса автоматически сопоставляются с корректным расположением служб для вашего экземпляра Azure ATP. Если требуется более детальный контроль, попробуйте разрешить трафик к нужным конечным точкам из следующей таблицы:
+
+|Обнаружение службы|DNS-запись *.atp.azure.com|
 |----|----|
 |США |triprd1wcusw1sensorapi.atp.azure.com<br>triprd1wcuswb1sensorapi.atp.azure.com<br>triprd1wcuse1sensorapi.atp.azure.com|
 |Европа|triprd1wceun1sensorapi.atp.azure.com<br>triprd1wceuw1sensorapi.atp.azure.com|
 |Азия|triprd1wcasse1sensorapi.atp.azure.com|
-
-
-Вы можете также усилить защиту брандмауэра или правил прокси-сервера для конкретного экземпляра, создав правило для следующих записей DNS:
-- \<имя_экземпляра>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
-- \<иvя_экземпляра>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
 
  
 > [!NOTE]
