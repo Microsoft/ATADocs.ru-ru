@@ -60,6 +60,8 @@ items:
     href: entity-profiles.md
   - name: Пути бокового смещения
     href: use-case-lateral-movement-path.md
+  - name: Разрешение сетевых имен (NNR)
+    href: atp-nnr-policy.md
   - name: Reports
     href: reports.md
   - name: Роли пользователя
@@ -148,9 +150,9 @@ items:
     href: atp-resources.md
   - name: Безопасность и конфиденциальность данных в Azure ATP
     href: atp-privacy-compliance.md
-ms.openlocfilehash: bdf00229e59fda2490ee75aa19f466a6c0c5a789
-ms.sourcegitcommit: 5f45f48aa9047bb60c74f4cae899d90d5f7b891c
+ms.openlocfilehash: c78dcb52783d3f63184f3f16b1f0719731908c37
+ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58073723"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406592"
