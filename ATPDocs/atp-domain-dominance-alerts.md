@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 02/03/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1c3e4fbf435c22ec57a90653d7a1e8133d9acbf3
-ms.sourcegitcommit: 478878e685d1e4d52b5cd0429b9bf7304e5d8552
+ms.openlocfilehash: 40d74431d4175512bce15dcfdec8bb3b80973e30
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56852703"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675291"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>Руководство. Предупреждения о захвате управления доменом  
 

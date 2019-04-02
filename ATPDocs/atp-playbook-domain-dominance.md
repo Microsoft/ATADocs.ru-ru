@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 2bfbbc994ea4ec9aea57541f8f5a35590c397f84
-ms.sourcegitcommit: 8681c4ed6ede58ace737f31eeff9a680b8e4256d
+ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
+ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007472"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58808263"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>Руководство. Сборник схем захвата управления доменом
 
@@ -194,7 +194,7 @@ runas /user:ronhd@contoso.azure "notepad"
 
 ### <a name="golden-ticket---existing-user"></a>Атака Golden Ticket — существующий пользователь
 
-После получения доступа к Golden Ticket (учетная запись krbtgt описана в разделе о [вредоносной репликации](#Malicious-Replication)) злоумышленник может входить в билеты *как будто они являются контроллерами домена*. **Mimikatz**, ИД безопасности домена и украденная учетная запись krbtgt являются обязательными компонентами при выполнении подобной атаки. Мы можем создавать билеты не только для имеющегося пользователя, но и для пользователей, которые еще не существуют.
+После получения доступа к Golden Ticket (учетная запись krbtgt описана в разделе о [вредоносной репликации](#malicious-replication)) злоумышленник может входить в билеты *как будто они являются контроллерами домена*. **Mimikatz**, ИД безопасности домена и украденная учетная запись krbtgt являются обязательными компонентами при выполнении подобной атаки. Мы можем создавать билеты не только для имеющегося пользователя, но и для пользователей, которые еще не существуют.
 
 1. От имени пользователя JeffL выполните указанную ниже команду на компьютере **VictimPC**, чтобы получить ИД безопасности домена:
 
@@ -241,7 +241,7 @@ Azure ATP использует несколько методов для обна
 > [!Important]
 >Напоминание. До тех пор, пока полученный злоумышленником ключ KRBTGT остается допустимым в среде, созданные с его помощью билеты также остаются действительными. В этом случае злоумышленник достигает устойчивого захвата управления доменом, [пока KRBTGT не буде сброшен дважды](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 * [Руководство по оповещениям системы безопасности Azure ATP](suspicious-activity-guide.md)
 * [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)

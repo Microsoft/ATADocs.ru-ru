@@ -7,16 +7,15 @@ ms.author: rkarlin
 manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
-ms.service: ''
 ms.prod: advanced-threat-analytics
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 93afbf108636c46ef93c88b17eb4faca2bc04a10
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 3679dfd71653c607fbb16bec6545640dcd015e95
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077768"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639091"
 ---
 # <a name="ata-capacity-planning"></a>Планирование производительности ATA
 

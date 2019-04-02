@@ -9,17 +9,16 @@ ms.date: 02/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: 736951f8f74f9493bb07a75e68601c9814793ed3
-ms.sourcegitcommit: c59d67fc58e759b5597917f96089d67e28e4cce8
+ms.openlocfilehash: abf42792620035e0427c3cc517094fa859aae5a5
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56443476"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675104"
 ---
 # <a name="understanding-ata-monitoring-alerts"></a>Сведения об оповещениях мониторинга ATA
 

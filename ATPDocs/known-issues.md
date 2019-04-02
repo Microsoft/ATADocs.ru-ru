@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 02/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 916a7a2b8f9782b66867860cdb7575e0069a30d4
-ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
+ms.openlocfilehash: dfba534cd12a1071bce4debf577ee7d12824fffb
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56754367"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674526"
 ---
 # <a name="azure-atp-known-issues"></a>Известные проблемы с Azure ATP
 

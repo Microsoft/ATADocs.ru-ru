@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 74298293dde9de1486662e902201cab4630ff63c
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 78ffb0df8e0750a41d262a984fc0915522cf9ddb
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263681"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675274"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 
