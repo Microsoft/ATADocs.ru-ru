@@ -5,20 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 7/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: bf014e43711d45b74d5bb5efa7a93d7c3e1532d7
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: edac28031e9faa3e5c23bbbd82ef4ce023f1f249
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077734"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764007"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
@@ -65,6 +64,8 @@ ms.locfileid: "56077734"
 > |System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
 > |System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host||Используйте один из следующих вариантов: </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления [\[]CurrentlyLoggedOnUser=<domain>\<имя_пользователя>Status=FailedAuthentication Exception=[\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
+> | Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления|Не удалось проверить подлинность сертификата центра|Для проверки сертификата центра требуется подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
+
 
 
 ## <a name="ata-center-errors"></a>Ошибки центра ATA

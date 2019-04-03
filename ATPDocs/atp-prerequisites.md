@@ -5,21 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/24/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7619c0bf7f1e8a6cf90956124c683400bc5c686d
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: 63d9c5c565c2f241ad7387f1cb64824ee825b025
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406609"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764041"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 
@@ -30,6 +28,8 @@ ms.locfileid: "58406609"
 
 
 В состав Azure ATP входит облачная служба Azure ATP, которая включает портал Azure ATP, датчик Azure ATP и (или) автономный датчик Azure ATP. Дополнительные сведения о каждом компоненте Azure ATP см. в статье [Архитектура Azure ATP](atp-architecture.md).
+
+Azure ATP защищает локальных пользователей Active Directory и/или пользователей, синхронизированных с Azure Active Directory. Сведения о защите среды, в которую входят только пользователи Azure Active Directory, см. в статье о защите идентификационных данных Azure Active Directory (https://docs.microsoft.com/azure/active-directory/identity-protection/overview). 
 
 Чтобы создать экземпляр Azure ATP, требуется клиент AAD, для которого определен как минимум один глобальный администратор или администратор безопасности. Каждый экземпляр Azure ATP поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий. 
 
@@ -77,7 +77,7 @@ ms.locfileid: "58406609"
 
 
 > [!NOTE]
-> По умолчанию Azure ATP поддерживает до 100 датчиков. Чтобы установить дополнительные датчики, обратитесь в службу поддержки Azure ATP.
+> По умолчанию Azure ATP поддерживает до 200 датчиков. Чтобы установить дополнительные датчики, обратитесь в службу поддержки Azure ATP.
 
 ## <a name="azure-atp-sensor-requirements"></a>Требования к датчику Azure ATP
 В этом разделе перечислены требования к датчику Azure ATP.
@@ -85,9 +85,9 @@ ms.locfileid: "58406609"
 ### <a name="general"></a>Общие
 
 > [!NOTE]
-> При использовании Windows Server 2019 убедитесь, что установлено исправление KB4487044. Датчики Azure ATP, установленные на компьютерах под управлением Windows Server 2019 без исправления KB4487044, будут автоматически отключены.
+> При использовании Server 2019 убедитесь, что установлено обновление [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044) или обновление, включающее KB4487044, например [KB4489899](https://support.microsoft.com/help/4489899/windows-10-update-kb4489899). Датчики Azure ATP, установленные на компьютерах под управлением Windows Server 2019 без этого обновления, будут автоматически отключены.
  
-Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе основные серверные компоненты, но не Nano), Windows Server 2019 (в том числе основные серверные компоненты, но не Nano).
+Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе основные компоненты Windows Server, но не Windows Nano Server), Windows Server 2019 (в том числе основные компоненты Windows, но не Windows Nano Server).
 
 Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 

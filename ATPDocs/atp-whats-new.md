@@ -5,23 +5,31 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/24/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b39c51d725a652fe1e936437ad3d0bf0c7d86db7
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: ec0a64b0b4467ae27642dd59281b150fc6953f64
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406643"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764075"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-272"></a>Azure ATP, выпуск 2.72
+Выпуск от 31 марта 2019 г.
+
+- **Расширение функциональности: ограничение детализации путей бокового смещения (LMP)**<br>
+Пути бокового смещения (LMP) — основной метод обнаружения угроз и рисков в Azure ATP. Это обновление позволяет изучить критические риски для пользователей, которые нуждаются в защите конфиденциальности своих данных. Они также упрощают и ускоряют анализ и устранение таких рисков на каждом LMP, ограничивая детализацию в каждой отображаемой диаграмме.   
+
+    Подробные сведения о том, как в Azure ATP используются пути LMP для обнаружения рисков доступа для каждой сущности в вашей среде, см. в статье [Пути бокового смещения Azure ATP (LMP)](use-case-lateral-movement-path.md).   
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-271"></a>Azure ATP, выпуск 2.71
 Выпущено 24 марта 2019 г.

@@ -1,25 +1,23 @@
 ---
-title: Основные сведения о путях бокового смещения в Azure ATP | Документация Майкрософт
+title: Основные сведения о путях бокового смещения и их использовании в Azure ATP | Документация Майкрософт
 description: В этой статье описываются потенциальные пути бокового смещения (LMP) в Azure Advanced Threat Protection (ATP).
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 11/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c115584dd4898e7453325125888667a1bb9a53d6
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 4a24f542576a716ff7a9ffdcde542e6317d394c0
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263409"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764024"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
 
@@ -53,7 +51,6 @@ ms.locfileid: "56263409"
 - "Привилегированные пользователи" — если был определен новый путь к привилегированному пользователю.
 
 ![Обнаружен путь бокового смещения Azure ATP (LMP) к конфиденциальной учетной записи](./media/atp-lmp-activities.png)
-
 
 - "Неконфиденциальные пользователи и компьютеры" — если эта сущность была выявлена в потенциальном пути бокового смещения, ведущем к привилегированному пользователю.
 

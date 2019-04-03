@@ -8,21 +8,19 @@ manager: barbkess
 ms.date: 1/3/2019
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a2e1f7d180cce76dd495c13efaab7336348a57e1
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 13ef41fd698945c2517318f8c68a61d807557e08
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263443"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763990"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>Что такое Azure Advanced Threat Protection?
-Azure Advanced Threat Protection (ATP) — это облачное решение для обеспечения безопасности, которое помогает обнаруживать и анализировать современные угрозы, направленные на вашу организацию, скомпрометированные удостоверения и действия внутренних нарушителей. Azure ATP позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:  
+Azure Advanced Threat Protection (ATP) — это облачное решение для обеспечения безопасности, которая использует сигналы локальной службы Active Directory для обнаружения и анализа современных угроз, направленных на вашу организацию, скомпрометированные удостоверения и действия внутренних нарушителей. Azure ATP позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:  
 - отслеживать пользователей, поведение сущностей и действия с помощью аналитики на основе обучения;  
 - защищать удостоверения и учетные данные пользователей, хранящиеся в Active Directory;  
 - выявлять и изучать подозрительные действия пользователей и современные атаки на основе модели цепочки атаки; 
