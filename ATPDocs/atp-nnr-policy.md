@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7dd41fea1a2a7f8c4a2e122ec75d8735fb49c37d
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: c985dfc4a7d847113838befb3040931434603a7f
+ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58763956"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233179"
 ---
 # <a name="what-is-network-name-resolution"></a>Разрешение сетевых имен
 
@@ -71,7 +71,7 @@ ms.locfileid: "58763956"
 
 Каждое оповещение мониторинга предоставляет подробные сведения о методе, датчиках, проблемной политике, а также рекомендации по настройке.
 
-![Оповещение о малой доле успешных попыток разрешения сетевых имен](media/atp-health-alert-audit-policy.png)
+![Оповещение о малой доле успешных попыток разрешения сетевых имен](media/atp-nnr-success-rate.png)
 
 
 ### <a name="configuration-recommendations"></a>Рекомендации по настройке
