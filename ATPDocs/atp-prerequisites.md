@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 63d9c5c565c2f241ad7387f1cb64824ee825b025
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: b4a5f7c74329d846caaa25a8b1181e0e516d2b08
+ms.sourcegitcommit: c4a0b3eff3e9c4de37e3ca53405ba47992c22b46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58764041"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872891"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 
@@ -85,7 +85,7 @@ Azure ATP защищает локальных пользователей Active
 ### <a name="general"></a>Общие
 
 > [!NOTE]
-> При использовании Server 2019 убедитесь, что установлено обновление [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044) или обновление, включающее KB4487044, например [KB4489899](https://support.microsoft.com/help/4489899/windows-10-update-kb4489899). Датчики Azure ATP, установленные на компьютерах под управлением Windows Server 2019 без этого обновления, будут автоматически отключены.
+> При использовании Windows Server 2019 убедитесь, что установлено исправление [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044). Датчики Azure ATP, установленные на компьютерах под управлением Windows Server 2019 без этого обновления, будут автоматически отключены.
  
 Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе основные компоненты Windows Server, но не Windows Nano Server), Windows Server 2019 (в том числе основные компоненты Windows, но не Windows Nano Server).
 
@@ -176,7 +176,6 @@ Azure ATP защищает локальных пользователей Active
 ### <a name="time-synchronization"></a>Синхронизация времени
 
 Время серверов и контроллеров домена, на которых установлен датчик, должно быть синхронизировано в пределах пяти минут.
-
 
 ### <a name="network-adapters"></a>Сетевые адаптеры
 Для автономного датчика Azure ATP требуется по крайней мере один адаптер управления и по крайней мере один адаптер записи.
