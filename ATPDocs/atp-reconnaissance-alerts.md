@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 72c5a0de163e53ed60fb3871e3a70cb691513806
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2b2d78f7f9f6191f13a9a187ce7e1e7f60dfcaf7
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675206"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59577268"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  
 
@@ -178,11 +178,18 @@ ms.locfileid: "58675206"
 
 **Предлагаемое исправление и шаги по профилактике**
 
-1.  Уменьшите влияние исходного компьютера.
+1. Уменьшите влияние исходного компьютера.
     1. Найдите средство, инициировавшее атаку, и удалите его.
     2. Запущено ли на компьютере средство проверки, которое выполняет различные запросы LDAP?
     3. Найдите пользователей, вошедших в систему во время выполнения подозрительного действия, так как они также могут быть скомпрометированы. Сбросьте их пароли и включите многофакторную проверку подлинности.
-2.  Сбросьте пароль, если был осуществлен доступ к ресурсу имени субъекта-службы, который используется с учетной записью пользователя, а не компьютера.
+2. Сбросьте пароль, если был осуществлен доступ к ресурсу имени субъекта-службы, который используется с учетной записью пользователя, а не компьютера.
+
+**Специальные рекомендации от Kerberoasting для предотвращения и устранения последствий атак**
+
+1. Принудительно сбросьте пароль в скомпрометированной учетной записи.  
+2. Установите обязательное использование [длинных и сложных паролей для пользователей с учетными записями субъектов-служб](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length).  
+3. [Замените учетную запись пользователя на групповую управляемую учетную запись службы (gMSA)](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview). 
+
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>Разведывательная атака с использованием пользователя и IP-адреса (SMB) (внешний код 2012) 
 
