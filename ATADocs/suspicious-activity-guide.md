@@ -13,11 +13,11 @@ ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: abbb382514807741403447ca69343134dae1b21e
-ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233264"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745846"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Руководство по подозрительным действиям, обнаруживаемым Advanced Threat Analytics | Документация Майкрософт
 
