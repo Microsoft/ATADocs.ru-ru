@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/31/2019
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: edac28031e9faa3e5c23bbbd82ef4ce023f1f249
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: b7769c953a27e3739db32c6db0bcbc0ef82679d4
+ms.sourcegitcommit: 8fa812fb4e898e40239febc6dc0fb0bdfcae3e55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58764007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59902113"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
@@ -46,10 +46,10 @@ ms.locfileid: "58764007"
 > |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category.|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/kb/281884).|
 > |System.InvalidOperationException: Category does not exist.|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/kb/2554336).|
 > |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
-> |System.IO.IOException: Authentication failed because the remote party has closed the transport stream.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+> |System.IO.IOException: Authentication failed because the remote party has closed the transport stream.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих методов. </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |System.TypeLoadException: Could not load type 'Microsoft.Opn.Runtime.Values.BinaryValueBufferManager' from assembly 'Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'|Шлюзу ATA не удалось загрузить необходимые файлы анализа.|Проверьте, установлен ли анализатор сообщений Майкрософт. Установка анализатора сообщений вместе со шлюзом ATA или упрощенным шлюзом ATA не поддерживается. Удалите анализатор сообщений и перезапустите службу шлюза.|
 > |System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
-> |System.IO.DirectoryNotFoundException: Системе не удается найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
+> |System.IO.DirectoryNotFoundException: Система не может найти указанный путь. (Исключение HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
 > |System.Net.WebException: The remote server returned an error: (403) Forbidden|Шлюзу ATA или упрощенному шлюзу было отказано в установлении HTTP-подключения, так как центр ATA не является доверенным.|Добавьте имя NetBIOS и полное доменное имя центра ATA в список доверенных веб-сайтов и очистите кэш браузера Interne Explorer. Если в конфигурации указано имя центра ATA, отличное от имени NetBIOS или полного доменного имени, укажите имя из конфигурации.|
 > |System.Net.Http.HttpRequestException: PostAsync failed [requestTypeName=StopNetEventSessionRequest]|Шлюзу ATA или упрощенному шлюзу ATA не удается остановить и запустить сеанс трассировки событий Windows, в котором собирается трафик, из-за проблемы с инструментарием WMI.|Чтобы устранить проблему с репозиторием WMI, следуйте инструкциям по [повторной сборке репозитория WMI](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/).|
 > |System.Net.Sockets.SocketException: An attempt was made to access a socket in a way forbidden by its access permissions|Другое приложение использует порт 514 на шлюзе ATA|Используйте `netstat -o`, чтобы определить, какой процесс использует этот порт.|
@@ -62,10 +62,9 @@ ms.locfileid: "58764007"
 > |Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 > |System.Threading.Tasks.TaskCanceledException: A task was canceled|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1.    Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу в браузере. <br></br>2.    Проверьте конфигурацию прокси-сервера или брандмауэра.|
 > |System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
-> |System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host||Используйте один из следующих вариантов: </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-> |Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления [\[]CurrentlyLoggedOnUser=<domain>\<имя_пользователя>Status=FailedAuthentication Exception=[\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
-> | Ошибка [\[]DeploymentModel[\]] Сбой аутентификации управления|Не удалось проверить подлинность сертификата центра|Для проверки сертификата центра требуется подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
-
+> |System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host||Используйте один из следующих методов. </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+> |Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
+> | Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.|Сбой проверки сертификата центра.|Для проверки сертификата центра может потребоваться подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
 
 
 ## <a name="ata-center-errors"></a>Ошибки центра ATA
@@ -73,7 +72,7 @@ ms.locfileid: "58764007"
 > 
 > |Ошибка|Описание|Решение|
 > |-------------|----------|---------|
-> |System.Security.Cryptography.CryptographicException: Доступ запрещен.|Центру ATA не удалось использовать выданный сертификат для расшифровки. Вероятно, это произошло из-за использования сертификата, в котором для KeySpec (KeyNumber) вместо KeyExchange (AT\_KEYEXCHANGE) задано значение Signature (AT\_SIGNATURE), что не поддерживается для расшифровки.|1.    Остановите службу центра ATA. <br></br>2.     Удалите сертификат центра АТА из хранилища сертификатов центра. (Перед удалением убедитесь, что у вас есть сертификат с копией закрытого ключа в PFX-файле.) <br></br>3.    Откройте командную строку с повышенными привилегиями и выполните certutil -importpfx "CenterCertificate.pfx" AT\_KEYEXCHANGE. <br></br>4.     Запустите службу центра ATA. <br></br>5.     Убедитесь, что теперь все работает правильно.|
+> |System.Security.Cryptography.CryptographicException: Доступ запрещен.|Центру ATA не удалось использовать выданный сертификат для расшифровки. Скорее всего, это произошло из-за использования сертификата, в котором для KeySpec (KeyNumber) задано значение Signature (AT\\_SIGNATURE), что не поддерживается для расшифровки, вместо использования KeyExchange (AT\\_KEYEXCHANGE).|1.    Остановите службу центра ATA. <br></br>2.     Удалите сертификат центра АТА из хранилища сертификатов центра. (Перед удалением убедитесь, что у вас есть сертификат с копией закрытого ключа в PFX-файле.) <br></br>3.    Откройте командную строку с повышенными привилегиями и выполните команду      certutil -importpfx "CenterCertificate.pfx" AT\\_KEYEXCHANGE. <br></br>4.     Запустите службу центра ATA. <br></br>5.     Убедитесь, что теперь все работает правильно.|
 
 
 ## <a name="ata-gateway-and-lightweight-gateway-issues"></a>Проблемы со шлюзом ATA и упрощенным шлюзом
@@ -84,6 +83,7 @@ ms.locfileid: "58764007"
 > |-------------|----------|---------|
 > |От контроллера домена не поступает трафик, но оповещения мониторинга выводятся|    От контроллера домена не поступает трафик с использованием зеркального отображения портов через шлюз ATA|В сетевом адаптере захвата в шлюзе ATA отключите следующие функции в разделе **Дополнительные параметры**:<br></br>объединение полученных сегментов (IPv4);<br></br>объединение полученных сегментов (IPv6).|
 > |Отображается следующее оповещение системы мониторинга: Часть сетевого трафика не анализируется|Вы можете получить это предупреждение, если у вас есть шлюз ATA или упрощенный шлюз на виртуальных машинах VMware. Это происходит из-за несоответствия конфигураций в VMware.|Установите следующие параметры равными 0 или отключите их в меню настройки сетевого адаптера виртуальной машины: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload. Протокол TLS 1.0 отключен в шлюзе ATA, но для .Net задано использование TLS 1.2.|
+
 
 
 
