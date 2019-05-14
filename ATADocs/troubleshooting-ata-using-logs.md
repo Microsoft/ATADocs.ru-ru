@@ -4,7 +4,7 @@ description: В этой статье описывается, как испол�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 25c1ce3a571aeb948bec3fe9875f6f2fb958de4a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 307e7ff1e41b166088cb31822070116f134b36e3
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674948"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195619"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>Устранение неполадок в ATA с помощью журналов событий ATA
 

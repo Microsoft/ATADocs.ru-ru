@@ -4,7 +4,7 @@ description: Процедуры по обновлению ATA до версии�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 81b97c8b9aacf3dc86e2b78f6074129ff29588a1
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 10c2cc0858ba2403fc16721437f39cdd6dd2cc7c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638836"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196156"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.7
 При обновлении ATA до версии 1.7 появляются следующие улучшения:

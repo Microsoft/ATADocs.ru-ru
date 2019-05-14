@@ -4,7 +4,7 @@ d|Description: This article explains how to use and understand Azure ATP securit
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/13/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 490fb20e1fc6e71031c3e3dbf55c3fa13dde4eeb
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: f215639ea72d0c767f32bd9628e1c404da23aaa0
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674696"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196398"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности
 

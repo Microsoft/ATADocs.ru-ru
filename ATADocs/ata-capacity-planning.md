@@ -2,20 +2,21 @@
 title: Планирование развертывания Advanced Threat Analytics | Документация Майкрософт
 description: В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов ATA потребуется для поддержки сети
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 3/21/2018
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 05/12/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
+ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3679dfd71653c607fbb16bec6545640dcd015e95
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 069f6b179ab48b2c19b06e1bbcc64f4336954574
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195840"
 ---
 # <a name="ata-capacity-planning"></a>Планирование производительности ATA
 
@@ -35,7 +36,7 @@ ms.locfileid: "58639091"
 - Шлюз ATA. Сопоставьте поле **Busy Packets/sec** (Занятых пакетов/с) в таблице шлюзов ATA в файле результатов с полем **PACKETS PER SECOND** (ПАКЕТОВ В СЕКУНДУ) в [таблице шлюзов ATA](#ata-gateway-sizing) или [таблице упрощенных шлюзов ATA](#ata-lightweight-gateway-sizing), в зависимости от [выбранного типа шлюза](#choosing-the-right-gateway-type-for-your-deployment).
 
 
-![Пример средства планирования емкости](media/capacity tool.png)
+![Пример средства планирования емкости](media/capacity-tool.png)
 
 
 > [!NOTE]

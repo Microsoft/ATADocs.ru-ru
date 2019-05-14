@@ -4,7 +4,7 @@ description: Описывается обновление и задержка о�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 78ffb0df8e0750a41d262a984fc0915522cf9ddb
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 408c46d620f7b7f5da21d9dcfaf17097660dcc4c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675274"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196366"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 

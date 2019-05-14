@@ -1,18 +1,12 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 135fc9fb96bb71ebb7025de9b3353a247f61ee0f
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077241"
 documentType: LandingData
-title: Документация по Azure Advanced Threat Protection
+title: "Документация по Azure Advanced Threat\_Protection"
 metadata:
-  title: Документация по Azure Advanced Threat Protection
+  title: "Документация по Azure Advanced Threat\_Protection"
   description: Защита гибридных сред организации от различных сложных целенаправленных электронных атак и внутренних угроз.
   services: azure-advanced-threat-protection
   author: msmbaldwin
-  manager: barbkess
+  manager: rkarlin
   ms.prod: azure-advanced-threat-protection
   ms.tgt_pltfrm: na
   ms.devlang: na
@@ -21,60 +15,60 @@ metadata:
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
-  description: Azure Advanced Threat Protection (ATP) — это облачная служба, которая помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
+  description: "Azure Advanced Threat Protection\_(ATP)\_— это облачная служба, которая помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз."
 sections:
-- title: Дополнительные сведения
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
+  - title: Дополнительные сведения
     items:
-    - title: Дополнительные сведения о Расширенной защите от угроз Azure
-      href: what-is-atp.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        href: what-is-atp.md
-    - title: Архитектура Azure ATP
-      href: atp-architecture.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-        href: atp-architecture.md
-    - title: Новые возможности Azure ATP
-      href: atp-whats-new.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        href: atp-whats-new.md
-    - title: Ознакомьтесь с возможностями Microsoft 365, полнофункционального решения, включающего Azure Advanced Threat Protection.
-      href: https://docs.microsoft.com/microsoft-365/
-      image:
-        src: /office/media/icons/caret-right-blue.svg
-        href: https://docs.microsoft.com/microsoft-365/
-- title: Краткие руководства (5 мин)
-  items:
-  - type: paragraph
-    text: Получите общие сведения о Расширенной защите от угроз Azure с помощью этих кратких руководств.
-  - type: list
-    style: icon48
+      - type: list
+        style: cards
+        className: cardsFTitle
+        items:
+          - title: Дополнительные сведения о Расширенной защите от угроз Azure
+            href: what-is-atp.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+              href: what-is-atp.md
+          - title: "Архитектура Azure\_ATP"
+            href: atp-architecture.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+              href: atp-architecture.md
+          - title: Новые возможности Azure ATP
+            href: atp-whats-new.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              href: atp-whats-new.md
+          - title: "Ознакомьтесь с возможностями Microsoft\_365, полнофункционального решения, включающего Azure Advanced Threat Protection."
+            href: 'https://docs.microsoft.com/microsoft-365/'
+            image:
+              src: /office/media/icons/caret-right-blue.svg
+              href: 'https://docs.microsoft.com/microsoft-365/'
+  - title: Краткие руководства (5 мин)
     items:
-    - image:
-        src: https://docs.microsoft.com/media/common/i_design.svg
-      text: Планирование производительности
-      href: atp-capacity-planning.md
-    - image:
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: Создание экземпляра Azure ATP
-      href: install-atp-step1.md
-    - image:
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      text: Подключение к Active Directory
-      href: install-atp-step2
-- title: Пошаговые руководства
-  items:
-  - type: paragraph
-    text: Узнайте том, как работать с оповещениями, с помощью этих кратких руководств.
-  - type: list
-    style: unordered
+      - type: paragraph
+        text: Получите общие сведения о Расширенной защите от угроз Azure с помощью этих кратких руководств.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_design.svg'
+            text: Планирование производительности
+            href: atp-capacity-planning.md
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_event.svg'
+            text: Создание экземпляра Azure ATP
+            href: install-atp-step1.md
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
+            text: Подключение к Active Directory
+            href: install-atp-step2
+  - title: Пошаговые руководства
     items:
-    - html: <a href="/azure-advanced-threat-protection/understanding-security-alerts">Сведения об оповещениях безопасности</a>
-    - html: <a href="/azure-advanced-threat-protection/investigate-a-user">Проверка пользователя</a>
-    - html: <a href="/azure-advanced-threat-protection/investigate-a-computer">Проверка компьютера</a>
+      - type: paragraph
+        text: 'Узнайте том, как работать с оповещениями, с помощью этих кратких руководств.'
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/azure-advanced-threat-protection/understanding-security-alerts">Сведения об оповещениях безопасности</a>
+          - html: <a href="/azure-advanced-threat-protection/investigate-a-user">Проверка пользователя</a>
+          - html: <a href="/azure-advanced-threat-protection/investigate-a-computer">Проверка компьютера</a>

@@ -4,7 +4,7 @@ description: Сведения об анализе сущностей на экр
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 014bf17948c1a0fe342cf01d98932d876df914e8
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 1f8f2c507ea45ddb422868f8b86a973c8454509e
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638921"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195848"
 ---
 # <a name="investigating-entity-profiles"></a>Анализ профилей сущностей
 

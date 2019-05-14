@@ -4,7 +4,7 @@ description: Сведения о параметрах настройки пер�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 11/29/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 839c1533f884e49c7603be4942c1c3be231cb974
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: c5acf930c53e27818d44cde99ad3aace15073090
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674943"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197209"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 

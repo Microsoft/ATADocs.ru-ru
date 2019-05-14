@@ -4,7 +4,7 @@ description: Центр работоспособности Расширенно�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/3/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 60f7de5fe85e0706bee9067dabf356c9c6fa73be
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: b1ad4963e3863cd89a78834e8fc98cec3490b1b0
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675393"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195595"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>Работа с состоянием работоспособности и событиями Azure ATP
 

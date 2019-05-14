@@ -4,7 +4,7 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 02/03/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 40d74431d4175512bce15dcfdec8bb3b80973e30
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: ec1d2bc0de905a32181749e435d0f88afe5a80fc
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195531"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>Руководство. Предупреждения о захвате управления доменом  
 

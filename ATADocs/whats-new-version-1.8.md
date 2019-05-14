@@ -4,7 +4,7 @@ description: В этой статье перечисляются новые во
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 9/03/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 8b13fe8b96021086859beaf73ff08b7d104f584a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 1f623642813c0474ddf3c7d050a91aebbd1b40b7
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196909"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 

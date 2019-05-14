@@ -4,7 +4,7 @@ d|Description: This article provides a list of the security alerts issued by Azu
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,18 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0dcdd37bdad7c52325c527b3fa768f851000ff3a
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 0dd8d987472ef88108f2cb3541bd590d1a816726
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745829"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196660"
 ---
 # <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
 
 Оповещения системы безопасности Azure ATP сообщают о подозрительных действиях, обнаруженных датчиками Azure ATP в сети, а также о субъектах и компьютерах, вовлеченных в угрозы.   Списки свидетельств оповещений содержат прямые ссылки на связанных пользователей и компьютеры, упрощая анализ.
 
 Предупреждения системы безопасности Azure ATP можно разделить на следующие категории или этапы (соответствующие этапам в стандартной цепочке устранения кибератак). Ниже приведены ссылки на дополнительные сведения о каждом этапе, оповещениях, предназначенных для выявления разных типов атак, а также сведения об использовании этих оповещений для защиты сети.
+
   1. [Оповещения этапа разведывательной атаки](atp-reconnaissance-alerts.md)
   2. [Оповещения этапа компрометации учетных данных](atp-compromised-credentials-alerts.md)
   3. [Оповещения этапа бокового смещения](atp-lateral-movement-alerts.md)

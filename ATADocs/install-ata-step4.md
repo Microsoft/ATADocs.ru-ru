@@ -4,7 +4,7 @@ description: На четвертом этапе установки ATA вы ус
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b36275bfec9d34c0d4af9a3a935bd032e886d57d
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 55279f066b093e975d33d9d392530dc1a3238112
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195714"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 

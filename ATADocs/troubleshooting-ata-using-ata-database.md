@@ -4,7 +4,7 @@ description: В данной статье рассказывается о том
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 01970d461406f35a8f3096fb6176766dd0b49ef4
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: fd929ff7c2a11997997b2c5107e66f9e8a1d2038
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195809"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 

@@ -4,7 +4,7 @@ description: На этом этапе установки ATP настраива�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 40eef8bde4caa76fccef29667f178c3a31b03c30
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: d7f6e10d3e8a46f3e4add4c48a5ad5dadd7fe1b0
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195491"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 

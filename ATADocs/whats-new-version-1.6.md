@@ -4,7 +4,7 @@ description: В этой статье перечислены новые возм
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fbb9f413c23eaec0157672c32eeafca758ce7736
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675376"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196972"
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.

@@ -4,7 +4,7 @@ description: В этой статье описано, как настроить 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c02fdd1481b1e4c76576b8fa000499becd5a0666
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2f60b7450c430793c9c14139f9cf268908a5dbc4
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674509"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195680"
 ---
 # <a name="provide-ata-with-your-email-server-settings"></a>Указание параметров почтового сервера в ATA
 

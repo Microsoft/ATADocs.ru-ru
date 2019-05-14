@@ -4,7 +4,7 @@ description: В этой статье описываются потенциал�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4a24f542576a716ff7a9ffdcde542e6317d394c0
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 13bf3d9fb517c5ba20a6ec07f1cdf7e7e42ccb23
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196644"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
 

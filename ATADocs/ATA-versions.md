@@ -3,20 +3,20 @@ title: Версии Advanced Threat Analytics | Документация Май
 description: Описание разных вариантов поддержки версий Microsoft Advanced Threat Analytics (ATA).
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 04/02/2019
+manager: rkarlin
+ms.date: 05/12/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0750603c525bc0388efabe924a00df3b87404a4c
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 03a7ab3be33d012aac49b4559af3e4baeaadbf79
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195698"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Поддержка версий Microsoft Advanced Threat Analytics (ATA)
 

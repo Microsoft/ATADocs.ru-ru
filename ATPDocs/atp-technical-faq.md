@@ -4,7 +4,7 @@ description: Здесь содержатся ответы на часто зад
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 677dec4468fa272b55d5f9c20c3163fea5770f20
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: c844aa445378643200997d4389a3bee1aae45099
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745812"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195516"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure ATP
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Azure ATP, разделенные на следующие категории. 
