@@ -4,7 +4,7 @@ description: Сведения о настройке SAM-R для включен�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 7/30/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a98de1e669d998b8a92f0b001f3f5a5605ad8485
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 623e5b3623238ec8a1e12c1154a76e0aeb6b57bb
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674272"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195894"
 ---
 # <a name="install-ata---step-9"></a>Установка ATA. Шаг 9
 

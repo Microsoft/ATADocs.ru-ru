@@ -4,20 +4,20 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 03/17/2019
+manager: rkarlin
+ms.date: 05/01/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2b2d78f7f9f6191f13a9a187ce7e1e7f60dfcaf7
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 8e2b07c8fa0f52bcb3c5fd9faa62672c033cf803
+ms.sourcegitcommit: 1676cc7178cafcdd9a8e013c4c2e1f7902713a27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59577268"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64993730"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  
 
@@ -162,7 +162,7 @@ ms.locfileid: "59577268"
 
 **Период обучения**
 
-10 дней на каждый компьютер с даты первого события, зарегистрированного на компьютере. 
+15 дней на каждый компьютер с даты первого события, зарегистрированного на компьютере. 
 
 **TP, B-TP или FP**
 

@@ -4,20 +4,20 @@ description: Быстрое восстановление функций ATA по
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 9/05/2018
+manager: rkarlin
+ms.date: 05/02/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0bcbd23b045f6d261026a914f37f3429513837ff
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: e42811432fe01e0eddcfe0acf5dc1c47a3f34379
+ms.sourcegitcommit: 4fdee32cea25e126db91ba89f09c40a3bbbc7b3b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638887"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65044057"
 ---
 # <a name="ata-disaster-recovery"></a>Аварийное восстановление АТА
 
@@ -53,6 +53,7 @@ ms.locfileid: "58638887"
         1. Перейдите в каталог **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**. 
         2. Выполнить `mongo.exe ATA` 
         3. Выполните следующую команду, чтобы удалить системный профиль по умолчанию: `db.SystemProfile.remove({})`
+        4. Выйдите из оболочки Mongo и вернитесь в командную строку с помощью команды `exit`
     2. Выполните команду `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`, используя файл резервной копии из шага 1.</br>
     Полное описание того, как найти и импортировать файлы резервной копии, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
     3. Запустите службу центра ATA.

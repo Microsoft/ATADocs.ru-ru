@@ -4,7 +4,7 @@ description: В этой статье перечисляются новые во
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 34c96fd2a9f517749655d27aba553b5aa6d94e25
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 0570ac2574dfca2fbc22a332228d52fcd429652d
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674832"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195954"
 ---
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
@@ -89,7 +89,7 @@ ms.locfileid: "58674832"
 
 При обновлении ATA 1.7 до ATA 1.7 с обновлением 1 процесс автоматического обновления шлюза ATA и установка шлюза вручную при помощи пакета шлюза могут не работать должным образом.
 Эта проблема возникает, если использованный Центром ATA сертификат был изменен перед обновлением ATA.
-Чтобы проверить эту проблему, просмотрите журнал **Microsoft.Tri.Gateway.Updater.log** сетевого шлюза ATA и найдите следующие исключения: **System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: базовое соединение закрыто: An unexpected error occurred on a send. ---> System.IdentityModel.Tokens.SecurityTokenValidationException: Failed to validate certificate thumbprint**.
+Чтобы проверить эту проблему, просмотрите журнал **Microsoft.Tri.Gateway.Updater.log** сетевого шлюза ATA и найдите следующие исключения: **System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Базовое подключение закрыто: An unexpected error occurred on a send. ---> System.IdentityModel.Tokens.SecurityTokenValidationException: Failed to validate certificate thumbprint**.
 
 ![Ошибка при обновлении шлюза ATA](media/17update_gatewaybug.png)
 

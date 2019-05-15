@@ -4,32 +4,48 @@ description: Описание последних выпусков Azure ATP и 
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 04/14/2019
+manager: rkarlin
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 426f89a61d2cdcd5b52d12e8c7a9c2cfede69940
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 86c76a14403e7539156c7f882a30d022842a5771
+ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59577286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226785"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
 
+## <a name="azure-atp-release-276"></a>Azure ATP, выпуск 2.76
+
+Дата выпуска: 6 мая 2019 г.
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+## <a name="azure-atp-release-275"></a>Azure ATP, выпуск 2.75
+
+Дата выпуска: 28 апреля 2019 г.
+
+- **Расширение функциональности: Конфиденциальные объекты**<br> Начиная с этой версии (2.75) компьютеры, которые служба Azure ATP идентифицирует как серверы Exchange Server, теперь автоматически помечаются как **конфиденциальные**.  
+
+    Таким образом, объектам, которые автоматически помечаются как **конфиденциальные**, потому что они работают как серверы Exchange Servers, присваивается эта категория с указанием соответствующей причины. 
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 ## <a name="azure-atp-release-274"></a>Azure ATP, выпуск 2.74
 
-Выпуск от 14 апреля 2019 г.
+Дата выпуска: 14 апреля 2019 г.
 
 - Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-273"></a>Azure ATP, выпуск 2.73
 
-Выпуск от 10 апреля 2019 г.
+Дата выпуска: 10 апреля 2019 г.
 
 - Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
