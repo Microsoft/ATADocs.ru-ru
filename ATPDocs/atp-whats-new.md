@@ -5,21 +5,44 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
-ms.reviewer: itargoet
+ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 86c76a14403e7539156c7f882a30d022842a5771
-ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
+ms.openlocfilehash: 8f9426a51f0bd709685c365a39d2f4aad1dbf8cb
+ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226785"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933660"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-278"></a>Azure ATP, выпуск 2.78
+
+Выпущен 19 мая 2019 г.
+
+- **Расширение функциональности: Конфиденциальные объекты**<br> Добавление тегов конфиденциальности вручную для серверов Exchange Server
+
+    Теперь можно вручную отмечать сущности как серверы Exchange Server во время настройки.
+
+    Чтобы вручную отметить сущность как Exchange Server, выполните следующее:
+    1. На портале Azure ATP перейдите в меню **Конфигурация**.
+    2. В разделе **Обнаружение**выберите **Entity tags** (Теги сущности), а затем — **Конфиденциально**.
+    3. Выберите **Серверы Exchange Server** и добавьте сущность, которую требуется пометить.
+
+    После того как компьютер отмечен как сервер Exchange Server, он отмечается как конфиденциальный, а также отображаются сведения о том, что компьютер отмечен как сервер Exchange Server.  Тег конфиденциальности будет отображаться в профиле сущности компьютера и компьютер учтен во всех обнаружениях на основе конфиденциальных учетных записей и путях бокового смещения.
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+## <a name="azure-atp-release-277"></a>Azure ATP, выпуск 2.77
+
+Выпущен 12 мая 2019 г.
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-276"></a>Azure ATP, выпуск 2.76
 

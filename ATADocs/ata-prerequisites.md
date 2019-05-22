@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 9/27/2018
+ms.date: 05/12/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ec1e15804aed63209b1cd675c902fc91dab376bd
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 153f53715bc33b735bb7cf2796dcb1f983d67915
+ms.sourcegitcommit: 5d93b0e59080c2d872672bf77a1a40c548c1016d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196705"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65760332"
 ---
 # <a name="ata-prerequisites"></a>Предварительные требования для ATA
 
@@ -67,7 +67,7 @@ ms.locfileid: "65196705"
 ## <a name="ata-center-requirements"></a>Требования для центра ATA
 В этом разделе перечислены требования для центра ATA.
 ### <a name="general"></a>Общие
-Центр ATA поддерживает установку на сервере под управлением Windows Server 2012 R2 или Windows Server 2016. 
+Центр ATA поддерживает установку на сервере под управлением Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019. 
 
  > [!NOTE]
  > Центр ADK не поддерживает Windows Server Core.
@@ -130,7 +130,7 @@ ms.locfileid: "65196705"
 Чтобы ускорить установку и развертывание ATA, можно сразу установить самозаверяющие сертификаты. Если вы решили использовать самозаверяющие сертификаты, после начального развертывания рекомендуется заменить их сертификатами из внутреннего центра сертификации для использования центром ATA.
 
 
-Убедитесь, что у центра и шлюзов ATA есть доступ к точке распространения списков отзыва сертификатов. Если у них нет доступа к Интернету, выполните [процедуру импорта списка отзыва сертификатов вручную](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), при этом не забудьте установить все точки распространения списков отзыва сертификатов для всей цепочки.
+Убедитесь, что у центра и шлюзов ATA есть доступ к точке распространения списков отзыва сертификатов. Если у них нет доступа к Интернету, [импортируйте список отзыва сертификатов вручную](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx), при этом не забудьте установить все точки распространения списков отзыва сертификатов для всей цепочки.
 
 Сертификат должен иметь:
 -   закрытый ключ;
@@ -152,7 +152,7 @@ ms.locfileid: "65196705"
 ## <a name="ata-gateway-requirements"></a>Требования к шлюзу ATA
 В этом разделе перечислены требования для шлюза ATA.
 ### <a name="general"></a>Общие
-Шлюз ATA поддерживает установку на сервере под управлением Windows Server 2012 R2 или Windows Server 2016 (в том числе Server Core).
+Шлюз ATA поддерживает установку на сервере под управлением Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019 (в том числе Server Core).
 Шлюз ATA можно установить на сервер, который входит в домен или рабочую группу.
 Шлюз ATA можно использовать для отслеживания контроллеров домена с режимом работы домена Windows 2003 и более поздних версий.
 
@@ -232,7 +232,7 @@ ms.locfileid: "65196705"
 ## <a name="ata-lightweight-gateway-requirements"></a>Требования к упрощенному шлюзу ATA
 В этом разделе перечислены требования к упрощенному шлюзу ATA.
 ### <a name="general"></a>Общие
-Упрощенный шлюз ATA поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2 или Windows Server 2016 (в том числе основные компоненты, но не Nano).
+Упрощенный шлюз ATA поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением Server Core), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019 (в том числе Core, но не Nano).
 
 Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 
