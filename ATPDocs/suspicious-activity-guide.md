@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0dd8d987472ef88108f2cb3541bd590d1a816726
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: e72e3e03d52f41eae1fe9823feae6dffd181b31f
+ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196660"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264943"
 ---
 # <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
 
@@ -48,7 +48,7 @@ ms.locfileid: "65196660"
 |[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|Средняя|Обнаружение|
 |[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|Средняя|Execution,<br> Persistence,<br> Privilege escalation,<br> Defense evasion,<br> Боковое смещение|
 |[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|Н/Д|2036|Средняя|Privilege escalation,<br> Боковое смещение|
-|[Разведывательная атака, направленная на участника безопасности (LDAP) — предварительная версия](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)|Н/Д|2038|Средняя|Credential access|
+|[Рекогносцировка, направленная на субъект безопасности (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|Н/Д|2038|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|Средняя|Боковое смещение|

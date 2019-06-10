@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: e7ad6563005d978637038592de6acf53240c5927
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 750d593e635df3921e27258943e778ce87b7ebcc
+ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196893"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264881"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -62,7 +62,7 @@ Azure ATP может пересылать события оповещений с
 |[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|Разведывательная атака с использованием DNS.|2007|Средняя|Обнаружение|
 |[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|Попытка удаленного выполнения кода|2019|Средняя|Execution,<br> Persistence,<br> Privilege escalation,<br> Defense evasion,<br> Боковое смещение|
 |[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|Н/Д|2036|Средняя|Privilege escalation,<br> Боковое смещение|
-|[Разведывательная атака, направленная на участника безопасности (LDAP) — предварительная версия](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)|Н/Д|2038|Средняя|Credential access|
+|[Рекогносцировка, направленная на субъект безопасности (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|Н/Д|2038|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (Kerberos, NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|Подозрительные неудачные попытки проверки подлинности|2023|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (протокол LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|Атака методом подбора с помощью простой привязки LDAP|2004|Средняя|Credential access|
 |[Предполагаемая атака методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|Нестандартная реализация протоколов (потенциальное использование вредоносных средств, таких как Hydra)|2033|Средняя|Боковое смещение|
@@ -170,7 +170,7 @@ Azure ATP может пересылать события оповещений с
 10-04-2018  14:49:38    Auth.Warning    192.168.0.202   1 2018-10-04T11:49:25.954059+00:00 DC3 CEF 3604 DnsSuspiciousCommunicationSecuri ï»¿0|Microsoft|Azure ATP|2.49.5589.58606|DnsSuspiciousCommunicationSecurityAlert|Suspicious Communication over DNS|5|start=2018-10-04T11:49:11.0822077Z app=DnsEvent dhost= suspiciousdomainname msg=Клиент CLIENT1 отправлял подозрительные запросы DNS на разрешение suspiciousdomainname externalId=2031 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/0fc77777-49ca-40b3-a7ba-7644f355539e cs2Label=trigger cs2=new
 
 ### <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)
-07-12-2018  11:18:07    Auth.Error  192.168.0.200    1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
+07-12-2018  11:18:07    Auth.Error  192.168.0.200    1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
 
 ### <a name="suspicious-modification-of-sensitive-groups"></a>Подозрительное изменение привилегированных групп
 10-29-2018  11:21:03    Auth.Warning    192.168.0.202   1 2018-10-29T09:20:49.667014+00:00 DC3 CEF 3908 AbnormalSensitiveGroupMembership ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|AbnormalSensitiveGroupMembershipChangeSecurityAlert|Подозрительное изменение конфиденциальных групп|5|start=2018-10-29T09:19:43.3013729Z app=GroupMembershipChangeEvent suser=user1 msg=Пользователь user1 нехарактерным образом изменил членство в конфиденциальных группах. externalId=2024 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6f7e677e-f068-41e5-bada-708cd5a322b9 cs2Label=trigger cs2=new
@@ -179,7 +179,7 @@ Azure ATP может пересылать события оповещений с
 02-21-2018  16:21:22    Auth.Error  192.168.0.220   1 2018-02-21T14:21:13.978554+00:00 CENTER CEF 6076 DirectoryServicesReplicationSecu ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|DirectoryServicesReplicationSecurityAlert|Подозрительная репликация служб каталогов|10|start=2018-02-21T14:19:03.9975656Z app=Drsr shost=CLIENT1 msg=Пользователь user1 успешно выполнил запросы на подозрительную репликацию с компьютера CLIENT1 на DC1. outcome=Success externalId=2006 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/cb95648e-1b6f-4d3b-81b9-7605532787d7 cs2Label=trigger cs2=new
 
 ### <a name="suspicious-replication-request-potential-dcshadow-attack"></a>Подозрительный запрос на репликацию (потенциальная атака DCShadow)
-07-12-2018  11:18:37    Auth.Error  192.168.0.200    1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
+07-12-2018  11:18:37    Auth.Error  192.168.0.200    1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
 
 ### <a name="suspicious-service-creation"></a>Создание подозрительной службы 
 10-29-2018  11:20:02    Auth.Warning    192.168.0.202   1 2018-10-29T09:19:59.164874+00:00 DC3 CEF 3908 MaliciousServiceCreationSecurity ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|MaliciousServiceCreationSecurityAlert|Создание подозрительной службы|5|start=2018-10-29T09:19:44.9471965Z app=ServiceInstalledEvent shost=CLIENT1 msg=Пользователь user1 создал вредоносную службу для выполнения потенциально опасных команд на клиенте CLIENT1. externalId=2026 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/118bbe3d-fe72-40de-80d0-2678b68aa027 cs2Label=trigger cs2=new

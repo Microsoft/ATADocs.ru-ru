@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bee49565645f463496c82f01d46e0aded6502b55
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 46778e0dcafca7fcff8b7f7611a50ca0e23140d8
+ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196496"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66403571"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>Общие сведения об оповещениях мониторинга датчика и автономного датчика Azure ATP
 
@@ -33,7 +33,7 @@ ms.locfileid: "65196496"
 
 |Оповещение|Описание|Решение|Статус|
 |----|----|----|----|
-|Датчик Azure ATP в настоящее время находится в автономном режиме из-за проблем с подключением ко всем настроенным контроллерам домена.|Это скажется на возможности обнаружения решением Azure ATP подозрительных действий, связанных с контроллерами домена, отслеживаемых этим датчиком Azure ATP.| Убедитесь в том, что контроллеры домена работают и что датчик Azure ATP может открывать подключения LDAP к ним.|Средняя|
+|Датчик Azure ATP в настоящее время находится в автономном режиме из-за проблем с подключением ко всем настроенным контроллерам домена.|Это скажется на возможности обнаружения решением Azure ATP подозрительных действий, связанных с контроллерами домена, отслеживаемых этим датчиком Azure ATP.| Убедитесь в том, что контроллеры домена работают и что датчик Azure ATP может открывать подключения LDAP к ним. Также в области **Параметры** обязательно настройте учетную запись службы каталогов для каждого развернутого леса.|Средняя|
 
 ## <a name="allsome-of-the-capture-network-adapters-on-a-sensor-are-not-available"></a>Недоступны все или некоторые сетевые адаптеры записи в датчике
 
