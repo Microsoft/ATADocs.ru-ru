@@ -5,21 +5,30 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/27/2019
+ms.date: 06/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 63a1dfa60d96e7f34cb406b0ccbc5a3584fbbb5b
-ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
+ms.openlocfilehash: b781b91196dad4556462d425cb5778bd0f3da26c
+ms.sourcegitcommit: 37b572e0e9e4bb874c7965f66de0ee8b6fbe5416
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264928"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500674"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-280"></a>Azure ATP, выпуск 2.80
+
+Выпущен 2 июня 2019 г.
+
+- **Расширение функциональности: предупреждение о подозрительном VPN-подключении**<br>
+   Теперь это предупреждение содержит подробное свидетельство и сведения для повышения удобства. Подробные сведения о функциях предупреждений и предлагаемые действия по исправлению и профилактике см. в разделе [Подозрительное VPN-подключение (внешний код 2025)](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025).
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-279"></a>Azure ATP, выпуск 2.79
 Выпущен 26 мая 2019 г.
