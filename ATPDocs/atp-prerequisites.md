@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/01/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 420c162e3dc5b7869b46453e3eeda67e1fdc692c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 515ab93de375f6ac286cb11e6394e868e095cf48
+ms.sourcegitcommit: 3e0a19e496bc7713bb227c501ca4dd7da223aac8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195569"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830403"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 
@@ -29,7 +29,7 @@ ms.locfileid: "65195569"
 
 В состав Azure ATP входит облачная служба Azure ATP, которая включает портал Azure ATP, датчик Azure ATP и (или) автономный датчик Azure ATP. Дополнительные сведения о каждом компоненте Azure ATP см. в статье [Архитектура Azure ATP](atp-architecture.md).
 
-Azure ATP защищает локальных и синхронизированных пользователей ваших служб Azure Active Directory. Сведения о защите среды, в которую входят только пользователи Azure Active Directory, см. в статье о защите идентификационных данных Azure Active Directory (https://docs.microsoft.com/azure/active-directory/identity-protection/overview). 
+Azure ATP защищает локальных и синхронизированных пользователей ваших служб Azure Active Directory. См. подробнее о среде, состоящей только из пользователей AAD в руководстве по [обеспечению защиты удостоверений AAD](https://docs.microsoft.com/azure/active-directory/identity-protection/overview). 
 
 Чтобы создать экземпляр Azure ATP, требуется клиент AAD, для которого определен как минимум один глобальный администратор или администратор безопасности. Каждый экземпляр Azure ATP поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий. 
 

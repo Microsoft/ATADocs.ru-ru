@@ -12,18 +12,18 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: 2590e877ba39fda2fee41d8e617690a2b8d4a892
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: e461aa7302ee515f33e2ad69f0f2c0c9f83ceaf8
+ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196574"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67155891"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>Использование журналов для устранения неполадок датчика Azure Advanced Threat Protection (ATP)
 Журналы ATP содержат полезные сведения о работе всех компонентов датчика Azure ATP в любой момент времени.
 
 
-Журналы Azure ATP размещаются в подкаталоге с именем **Logs** того каталога, где установлено решение ATA (по умолчанию это **C:\Program Files\Azure Advanced Threat Protection Sensor\\**). Расположение установки по умолчанию: **C:\Program Files\Azure Advanced Threat Protection Sensor\номер_версии\Logs**.
+Журналы Azure ATP размещаются в подкаталоге с именем **Logs** того каталога, где установлено решение ATA (по умолчанию это **C:\Program Files\Azure Advanced Threat Protection Sensor\\** ). Расположение установки по умолчанию: **C:\Program Files\Azure Advanced Threat Protection Sensor\номер_версии\Logs**.
 
 Датчик Azure ATP включает следующие журналы:
 
@@ -43,6 +43,8 @@ ms.locfileid: "65196574"
 Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
 
 Журналы развертывания датчика Azure ATP:
+
+-  **Azure Advanced Threat Protection Microsoft.Tri.Sensor.Deployment.Deployer_YYYYMMDDHHMMSS.log** — этот файл журнала регистрирует весь процесс развертывания датчика. Он доступен в упомянутой выше папке temp или в папке C:\Windows\Temp. 
 
 -   **Azure Advanced Threat Protection Sensor_ГГГГММДДЧЧММСС.log** — здесь перечислены действия процесса развертывания датчика Azure ATP. Основное назначение журнала — отслеживание этого процесса.
 

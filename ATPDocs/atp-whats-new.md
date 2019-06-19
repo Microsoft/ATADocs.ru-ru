@@ -5,21 +5,27 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/02/2019
+ms.date: 06/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b781b91196dad4556462d425cb5778bd0f3da26c
-ms.sourcegitcommit: 37b572e0e9e4bb874c7965f66de0ee8b6fbe5416
+ms.openlocfilehash: faf89ddb152e002a818d79a83b5447c65a143b32
+ms.sourcegitcommit: 3e0a19e496bc7713bb227c501ca4dd7da223aac8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500674"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830383"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-281"></a>Azure ATP, выпуск 2.81
+
+Выпущен 10 июня 2019 г.
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-280"></a>Azure ATP, выпуск 2.80
 
