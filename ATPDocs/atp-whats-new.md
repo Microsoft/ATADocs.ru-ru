@@ -5,21 +5,33 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: faf89ddb152e002a818d79a83b5447c65a143b32
-ms.sourcegitcommit: 3e0a19e496bc7713bb227c501ca4dd7da223aac8
+ms.openlocfilehash: 1fed88a774b1ffa88b52879a44de6697b1b615f6
+ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66830383"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67192788"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-282"></a>Azure ATP, выпуск 2.82
+
+Выпущен 18 июня 2019 г.
+
+- **Новая общедоступная предварительная версия**<br>
+Теперь предоставляется **общедоступная предварительная версия** интерфейса для исследования угроз Azure ATP. Она доступна для всех клиентов, защищенных Azure ATP. Дополнительные сведения см. в статье об [интерфейсе для исследования угроз Microsoft Cloud App Security в Azure ATP](atp-mcas-integration.md). 
+
+- **Общедоступная версия**<br>
+Поддержка Azure ATP в ненадежных лесах теперь общедоступна. Дополнительные сведения см. в разделе [Несколько лесов Azure ATP](atp-multi-forest.md). 
+
+- Эта версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-281"></a>Azure ATP, выпуск 2.81
 
