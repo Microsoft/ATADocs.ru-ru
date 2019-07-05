@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/18/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 5169dffc-75c4-4eb0-b997-b5359cecda97
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1e64ccfd3f559f59b0091e49a51e2016ef3f8745
-ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
+ms.openlocfilehash: edce75d46470c007a05c61d5ea1e0ea52033b8b2
+ms.sourcegitcommit: 0bb9a524508cc6bfd3d9f579fc51b33309fc66b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67193499"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67396625"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security 
 
@@ -43,7 +43,7 @@ ms.locfileid: "67193499"
 
 ## <a name="access-azure-atp"></a>Доступ к Azure ATP
 
-Продолжайте использовать Azure ATP на портале Azure ATP или просматривайте оповещения Azure ATP и оценку удостоверений на портале Microsoft Cloud App Security. В любом рабочем процессе задачи установки и настройки Azure ATP по-прежнему обрабатываются на портале Azure ATP. 
+Продолжайте использовать Azure ATP на портале Azure ATP или просматривайте оповещения Azure ATP и оценку удостоверений на портале Microsoft Cloud App Security. В любом рабочем процессе задачи установки и настройки Azure ATP по-прежнему обрабатываются на портале Azure ATP. 
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -54,7 +54,7 @@ ms.locfileid: "67193499"
 >[!NOTE]
 >Если у вас нет подписки на Cloud App Security, вы по-прежнему сможете использовать портал Cloud App Security для изучения оповещений Azure ATP и выполнять подробный обзор поведения пользователей и их локальных управляемых действий, но не получите связанные аналитические сведения из облачных приложений.
 
-Сведения о том, как быстро включить Azure ATP в Cloud App Security, см. в статье об [интеграции Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration/enable-azure-advanced-threat-protection).  
+Сведения о том, как быстро включить Azure ATP в Cloud App Security, см. в статье об [интеграции Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).  
  
 ## <a name="azure-atp-in-cloud-app-security"></a>Azure ATP в Cloud App Security 
 
