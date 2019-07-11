@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/25/2019
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 5169dffc-75c4-4eb0-b997-b5359cecda97
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edce75d46470c007a05c61d5ea1e0ea52033b8b2
-ms.sourcegitcommit: 0bb9a524508cc6bfd3d9f579fc51b33309fc66b8
+ms.openlocfilehash: b66b2f0a087bbaacc09eda54958824da693209b3
+ms.sourcegitcommit: f60835d655e68ffaa8ed8c43bd9fa20233d7e495
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67396625"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67506508"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security 
 
@@ -45,6 +45,8 @@ ms.locfileid: "67396625"
 
 Продолжайте использовать Azure ATP на портале Azure ATP или просматривайте оповещения Azure ATP и оценку удостоверений на портале Microsoft Cloud App Security. В любом рабочем процессе задачи установки и настройки Azure ATP по-прежнему обрабатываются на портале Azure ATP. 
 
+ 
+
 ## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы получить все возможности изучения поведения пользователей в гибридной среде, вам понадобится следующее:
@@ -64,8 +66,14 @@ ms.locfileid: "67396625"
 
 ## <a name="alerts"></a>Предупреждения
 
-Оповещения Azure ATP отображаются в очереди **Оповещения** Cloud App Security. Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. Оповещения Azure ATP отфильтровываются с помощью фильтра приложений, установленного для Azure ATP. 
+Оповещения Azure ATP отображаются в очереди **Оповещения** Cloud App Security. Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. Оповещения Azure ATP фильтруются через фильтр приложений **Active Directory**. 
 
+## <a name="alert-management"></a>Управление оповещениями
+При использовании Azure ATP с Cloud App Security закрытие предупреждений в одной службе не закрывает их автоматически в другой. Определите, где вы будете обрабатывать оповещения, чтобы не повторять одни и те же действия. 
+
+## <a name="siem-notification"></a>Уведомление SIEM
+
+Если обе службы (Azure ATP и Cloud App Security) сейчас настроены на отправку уведомлений об оповещениях в SIEM, то после включения интеграции Azure ATP в Cloud App Security вы начнете получать в SIEM повторяющиеся уведомления об одном оповещении. Каждая служба будет выдавать свое оповещение со своим идентификатором. Чтобы избежать дублирования и путаницы, решите, в какой службе вы хотите обрабатывать оповещения, и остановите отправку в SIEM уведомлений из другой службы.  
 
 ## <a name="activities"></a>Действия
 

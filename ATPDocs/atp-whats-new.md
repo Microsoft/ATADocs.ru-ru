@@ -5,21 +5,49 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 1fed88a774b1ffa88b52879a44de6697b1b615f6
-ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
+ms.openlocfilehash: d6fb2a51a47c97c52a3665c55522094fd5a856f1
+ms.sourcegitcommit: 52bc20dfa1f64ff3e8c16eb5edea2813d54ba308
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67192788"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67562195"
 ---
 # <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+
+## <a name="azure-atp-release-284"></a>Azure ATP, выпуск 2.84
+
+Выпущен 1 июля 2019 г.
+
+- **Поддержка нового региона: центр обработки данных Azure в Соединенном Королевстве**<br>
+    Экземпляры Azure ATP теперь поддерживаются в центре обработки данных Azure в Соединенном Королевстве. Дополнительные сведения о создании экземпляров Azure ATP и о соответствующих регионах центров обработки данных: [Установка Azure ATP. Шаг 1](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step10).
+
+- **Расширение функциональности: Новое имя и возможности для оповещения "Подозрительные добавления в привилегированные группы" (внешний код 2024)**<br> 
+    Оповещение **Подозрительные добавления в привилегированные группы** ранее называлось **Подозрительные изменения привилегированных групп**. Внешний код оповещения (2024) не изменился. Новое описательное имя более точно отражает цель оповещения о добавлениях в ваши **привилегированные** группы. Усовершенствованное оповещение также предоставляет новые свидетельства и улучшенные описания. Дополнительные сведения: [Подозрительные добавления в привилегированные группы](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-additions-to-sensitive-groups-external-id-2024).  
+
+- **Новая функция документации: Руководство по переходу с Advanced Threat Analytics на Azure ATP**<br>
+    Эта новая статья содержит предварительные требования, руководство по планированию, а также действия для настройки и проверки при переходе с ATA на службу Azure ATP. Дополнительные сведения: [Переход с ATA на Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/ata-atp-move-overview).   
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+## <a name="azure-atp-release-283"></a>Azure ATP, выпуск 2.83
+
+Выпущено 23 июня 2019 г.
+
+- **Расширение функциональности: Предупреждение "Создание подозрительной службы" (внешний код 2026)**<br> 
+    Это предупреждение теперь включает улучшенную страницу сведений с дополнительными свидетельствами и новым описанием. Дополнительные сведения: [Оповещение системы безопасности "Создание подозрительной службы"](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-service-creation-external-id-2026).
+
+-  **Поддержка именования экземпляров: Добавлена поддержка префиксов домена, состоящих только из цифр**<br>
+    Добавлена поддержка создания экземпляров Azure ATP с префиксами исходного домена, состоящими только из цифр. Например, теперь поддерживаются исключительно числовые префиксы исходного домена следующего вида: 123456.contoso.com. 
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 
 ## <a name="azure-atp-release-282"></a>Azure ATP, выпуск 2.82
 
