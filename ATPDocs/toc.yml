@@ -73,20 +73,22 @@
           href: atp-mcas-integration.md
         - name: Фильтрация действий и задание политик
           href: atp-activities-filtering-mcas.md
-        - name: "Оценки состояния безопасности удостоверений Azure\_ATP"
-          href: atp-ispm-overview.md
-        - name: Оценка предотвращения раскрытия учетных данных в виде открытого текста
-          href: atp-mcas-ispm-clear-text.md
-        - name: Оценка удаления неактивных сущностей из конфиденциальных групп
-          href: atp-mcas-ispm-dormant-entities.md
-        - name: Оценка предотвращения связи по устаревшим протоколам
-          href: atp-mcas-ispm-legacy-protocols.md
-        - name: Оценка отключения службы очереди печати принтера на контроллерах домена
-          href: atp-mcas-ispm-print-spooler.md
-        - name: Оценка предотвращения использования ненадежного шифра
-          href: atp-mcas-ispm-weak-cipher.md
-        - name: Оценка предотвращения неограниченного делегирования Kerberos
-          href: atp-mcas-ispm-unconstrained-kerberos.md
+        - name: Оценки состояния безопасности удостоверений
+          items:
+            - name: Основные сведения о состоянии безопасности удостоверений
+              href: atp-isp-overview.md
+            - name: Оценка предотвращения раскрытия учетных данных в виде открытого текста
+              href: atp-cas-isp-clear-text.md
+            - name: Оценка удаления неактивных сущностей из конфиденциальных групп
+              href: atp-cas-isp-dormant-entities.md
+            - name: Оценка предотвращения связи по устаревшим протоколам
+              href: atp-cas-isp-legacy-protocols.md
+            - name: Оценка отключения службы очереди печати принтера на контроллерах домена
+              href: atp-cas-isp-print-spooler.md
+            - name: Оценка предотвращения использования ненадежного шифра
+              href: atp-cas-isp-weak-cipher.md
+            - name: Оценка предотвращения неограниченного делегирования Kerberos
+              href: atp-cas-isp-unconstrained-kerberos.md
     - name: Занятие по оповещениям системы безопасности
       items:
         - name: Обзор лаборатории
