@@ -5,29 +5,23 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/29/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 46778e0dcafca7fcff8b7f7611a50ca0e23140d8
-ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
+ms.openlocfilehash: 65279895689e230a3a28871a61f4cffe36d6042c
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403571"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298759"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>Общие сведения об оповещениях мониторинга датчика и автономного датчика Azure ATP
 
 Центр обеспечения работоспособности Azure ATP сообщает о возникновении проблем с экземплярами Azure ATP, создавая оповещения мониторинга. В этой статье описываются все оповещения мониторинга для каждого компонента с указанием причины и действий, необходимых для устранения проблемы.
-
-## <a name="domain-synchronizer-not-assigned"></a>Синхронизатор домена не назначен
-
-|Оповещение|Описание|Решение|Статус|
-|----|----|----|----|
-|Ни одному из датчиков Azure ATP не назначен синхронизатор домена. Причиной может быть то, что ни один из датчиков Azure ATP не настроен как потенциальный синхронизатор домена.|Если домен не синхронизирован, внесение изменений в сущности может привести к тому, что сведения о них в Azure ATP могут устареть или отсутствовать, но на обнаружение это не влияет.|Настройте по крайней мере один датчик Azure ATP как [синхронизатор домена](install-atp-step5.md).|Низкая|
 
 ## <a name="all-domain-controllers-are-unreachable-by-a-sensor"></a>Все контроллеры домена недоступны для датчика
 
