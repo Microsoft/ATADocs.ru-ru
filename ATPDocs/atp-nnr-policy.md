@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0bf34a64f1140b0d2e3358196d23589de629588d
-ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
+ms.openlocfilehash: 0161c0f63e652bd62ee8ccf4a6677f2ec0d90f4d
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67155848"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298953"
 ---
 # <a name="what-is-network-name-resolution"></a>Разрешение сетевых имен
 
@@ -35,11 +35,12 @@ ms.locfileid: "67155848"
 > [!NOTE]
 >Ни на одном порте не выполняется проверка подлинности.
 
+Azure ATP оценивает и определяет операционную систему устройства на основе сетевого трафика. Получив имя компьютера, датчик Azure ATP проверяет в Active Directory наличие соответствующего объекта-компьютера с таким же именем с помощью отпечатков TCP. Использование отпечатков TCP помогает выявлять незарегистрированные устройства и устройства с ОС, отличной от Windows, содействуя вам в процессе анализа. Если датчик Azure ATP обнаруживает корреляцию, он связывает IP-адрес с этим объектом-компьютером. 
+
 Если имя не получено, создается соответствующий **неразрешенный профиль компьютера** с таким IP-адресом и связанным обнаруженным действием.
 
-Получив имя компьютера, датчик Azure ATP проверяет в Active Directory наличие объекта-компьютера, связанного с таким именем. Если датчик обнаруживает связь, он соотносит этот IP-адрес с этим объектом-компьютером. Если объект-компьютер с таким именем не найден, создается соответствующий **неразрешенный профиль компьютера** с таким именем и связанным обнаруженным действием. 
-
 ![Неразрешенный профиль компьютера](media/unresolved-computer-profile.png)
+
 
 Данные механизма разрешения сетевых имен крайне важны для обнаружения таких угроз:
 
