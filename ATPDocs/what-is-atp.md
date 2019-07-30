@@ -1,5 +1,5 @@
 ---
-title: Что такое Azure Advanced Threat Protection (Azure ATP)? | Документация Майкрософт
+title: Что такое Azure Advanced Threat Protection (Azure ATP)? | Microsoft Docs
 description: Описание решения Azure Advanced Threat Protection (Azure ATP) и подозрительных действий, которые оно может обнаруживать
 keywords: ''
 author: mlottner
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fe56aac6dae4b5f54134a3542c18495dbb44aacf
-ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
+ms.openlocfilehash: 1148e4644ac49da31f2ba62e7bb972f3f9cfbbdf
+ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226764"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68484962"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>Что такое Azure Advanced Threat Protection?
 Azure Advanced Threat Protection (ATP) или Расширенная защита от угроз Azure — это облачное решение безопасности, которое использует сигналы локальной службы Active Directory для обнаружения и анализа сложных угроз, скомпрометированных удостоверений и вредоносных действий внутренних пользователей, направленных на вашу организацию. Azure ATP позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:  
@@ -94,7 +94,7 @@ Azure ATP предоставляет только важные оповещен
 ### <a name="phase-2"></a>Этап 2
 
 1. Защитите все контроллеры домена и [леса](atp-multi-forest.md) в вашей организации.  
-2.  Отслеживайте все [оповещения](working-with-suspicious-activities.md) — изучайте оповещения о боковом смещении и перехвате контроля над доменом.  
+2. Отслеживайте все [оповещения](working-with-suspicious-activities.md) — изучайте оповещения о боковом смещении и перехвате контроля над доменом.  
 3. Обратитесь к [руководству по оповещениям системы безопасности](suspicious-activity-guide.md), чтобы научиться распознавать угрозы и потенциальные атаки.
 
 
