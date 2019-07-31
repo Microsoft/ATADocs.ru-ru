@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d60a2ecf2302e6db39baccbc394bf8db14fa87f6
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 6fca63fb488aef6fb26f4f501c4f6af896e223bd
+ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298810"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485062"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Коммутаторы и автоматическая установка Azure ATP
 Эта статья содержит рекомендации и инструкции по использованию коммутаторов Azure ATP и выполнению автоматической установки.
@@ -47,7 +47,7 @@ ms.locfileid: "68298810"
 Для полного автоматического удаления датчика Azure ATP используйте следующую команду:
 
 
-**Синтаксис**
+**Синтаксис**:
 
     "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 
@@ -81,16 +81,16 @@ ms.locfileid: "68298810"
 
 Для выполнения проверки подлинности на прокси-сервере используйте следующие команды:
 
-**Синтаксис**
+**Синтаксис**:
 
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
 > |-------------|----------|---------|---------|
-> |ProxyUrl|/quiet|Да|Указывает URL-адрес и номер порта прокси-сервера для датчика Azure ATP.|
-> |ProxyUserName|/help|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
-> |ProxyUserPassword|NetFrameworkCommandLineArguments="/q"|Да|Указывает пароль для имени пользователя прокси-сервера. * Учетные данные шифруются и хранятся локально датчиком Azure ATP.|
+> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|Нет|Указывает URL-адрес и номер порта прокси-сервера для датчика Azure ATP.|
+> |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|Нет|Указывает пароль для имени пользователя прокси-сервера. * Учетные данные шифруются и хранятся локально датчиком Azure ATP.|
 
 ## <a name="update-the-azure-atp-sensor"></a>Обновление датчика Azure ATP
 
@@ -118,7 +118,7 @@ ms.locfileid: "68298810"
 
 ## <a name="uninstall-the-azure-atp-sensor-silently"></a>Автоматическое удаление датчика Azure ATP
 
-Для автоматического удаления датчика Azure ATP используйте следующую команду: **Синтаксис**
+Для автоматического удаления датчика Azure ATP используйте следующую команду: **Синтаксис**:
 
     Azure ATP sensor Setup.exe [/quiet] [/Uninstall] [/Help]
 
