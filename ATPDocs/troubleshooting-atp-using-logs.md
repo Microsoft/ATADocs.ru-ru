@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 10/04/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: e461aa7302ee515f33e2ad69f0f2c0c9f83ceaf8
-ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
+ms.openlocfilehash: 0105630931c6cbebfe2b919946f305ba031bb755
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67155891"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781913"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>Использование журналов для устранения неполадок датчика Azure Advanced Threat Protection (ATP)
 Журналы ATP содержат полезные сведения о работе всех компонентов датчика Azure ATP в любой момент времени.
@@ -28,8 +28,6 @@ ms.locfileid: "67155891"
 Датчик Azure ATP включает следующие журналы:
 
 -   **Microsoft.Tri.Sensor.log** — содержит информацию обо всем, что происходит в датчике Azure ATP (включая разрешения и ошибки). Его основное назначение заключается в получении сведений о состоянии всех операций в хронологическом порядке.
-
--   **Microsoft.Tri.Sensor-Resolution.log** — содержит сведения о разрешении сущностей на основе трафика, отслеживаемого датчиком ATP. Его основное назначение — изучение событий разрешения сущностей.
 
 -   **Microsoft.Tri.Sensor-Errors.log** — содержит только ошибки, которые обнаруживает датчик ATP. Его основное назначение — проверка работоспособности и изучение событий, которые необходимо сопоставить с моментом времени.
 
