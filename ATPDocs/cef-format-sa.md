@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: eedc9c5ddae1947ace50b15efc6a8e0967af357a
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.openlocfilehash: 3b2df6ec2beddd276e1e4acdb0a38feb4a3511a3
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485085"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781887"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -53,7 +53,7 @@ Azure ATP может пересылать события оповещений с
 
 > [!div class="mx-tableFixed"] 
 
-|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|Уровень серьезности|MITRE ATT&CK Matrix™ |
+|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|Статус|MITRE ATT&CK Matrix™ |
 |---------|----------|---------|---------|---------|
 |[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|Средняя|Обнаружение|
 |[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| Н/Д| 2030|Высокий|Exfiltration,<br>Lateral movement,<br>Command and control|
@@ -76,7 +76,7 @@ Azure ATP может пересылать события оповещений с
 |[Предполагаемое использование Golden Ticket (аномальное время)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Атака Golden Ticket в Kerberos — аномальное время|2022|Высокий|Privilege Escalation,<br> Lateral movement,<br>Persistence|
 |[Предполагаемая кража удостоверения (Pass-the-Hash)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|Высокий|Боковое смещение|
 |[Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|Высокая или средняя|Боковое смещение|
-|[Предполагаемые незаконные изменения при проверке подлинности NTLM — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)|Н/Д|2039|Средняя|Privilege escalation,<br> Боковое смещение|
+|[Предполагаемые незаконные изменения при аутентификации NTLM](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|Н/Д|2039|Средняя|Privilege escalation,<br> Боковое смещение|
 |[Предполагаемая атака ретрансляции NTLM](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|Н/Д|2037|Средняя или низкая, если наблюдается при использовании протокола NTLM версии 2 с подписью|Privilege escalation, <br> Боковое смещение|
 |[Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|Средняя|Боковое смещение|
 |[Предполагаемая атака Overpass-the-Hash (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|Средняя|Боковое смещение|
@@ -125,7 +125,7 @@ Azure ATP может пересылать события оповещений с
 ### <a name="remote-code-execution-over-dns"></a>Удаленное выполнение кода через DNS
 1-17-2019   08:24:54    Auth.Warning    192.168.0.202   1 2019-01-17T08:24:54.100856+00:00 DC3 CEF 3908 DnsRemoteCodeExecutionSecurityAlert ï»¿0|Microsoft|Azure ATP|2.63.0.0|DnsRemoteCodeExecutionSecurityAlert|[PREVIEW] Remote code execution over DNS|5|start=2019-01-17T08:24:54.5293800Z app=Dns shost=CLIENT1 msg=An actor attempted to run commands remotely on CLIENT1 from DC1, over DNS protocol. externalId=2036 cs1Label=url cs1=https\:////contoso-corp.atp.azure.com:13000/securityAlert/591f9769-d904-40b1-89fa-c307c2ca814f cs2Label=trigger cs2=new
 
-### <a name="security-principal-reconnaissance-ldap---preview"></a>Разведывательная атака, направленная на участника безопасности (LDAP) — предварительная версия 
+### <a name="security-principal-reconnaissance-ldap"></a>Рекогносцировка, направленная на субъект безопасности (LDAP)
 02-18-2019  16:48:08 Auth.Warning  127.0.0.1  1 2019-02-18T14:48:02.912264+00:00 DC1 CEF 4656 LdapSearchReconnaissanceSecurity ï»¿0|Microsoft|Azure ATP|2.66.0.0|LdapSearchReconnaissanceSecurityAlert|[PREVIEW] Reconnaissance using LDAP Queries|5|start=2019-02-18T14:46:29.4644276Z app=LdapSearch shost=CLIENT1 msg=An actor on CLIENT1 sent suspicious LDAP queries to DC1, searching for 4 types of enumeration and Server Operators (Members can administer domain servers) in 2 domains externalId=2038 cs1Label=url cs1=https\://contoso-corp.atp.azure..com:13000/securityAlert/81ea99c4-ce1f-4581-ac8f-7440fbed7cd0 cs2Label=trigger cs2=new
 
 ### <a name="suspected-brute-force-attack-ldap"></a>Предполагаемая атака методом подбора (протокол LDAP)
@@ -158,7 +158,7 @@ Azure ATP может пересылать события оповещений с
 ### <a name="suspected-identity-theft-pass-the-ticket"></a>Предполагаемая кража удостоверения (Pass-the-Ticket) 
 02-21-2018  17:04:47    Auth.Error  192.168.0.220   1 2018-02-21T15:04:33.537583+00:00 CENTER CEF 6076 PassTheTicketSecurityAlert ï»¿0|Microsoft|Расширенная защита SQL от угроз|2.22.4228.22540|PassTheTicketSecurityAlert|Хищение удостоверения с помощью атаки Pass-the-Ticket|10|start=2018-02-21T15:02:22.2577465Z app=Kerberos suser=Eugene Jenkins msg=Были украдены билеты Kerberos, принадлежащие Eugene Jenkins (разработчику программного обеспечения), с компьютера Admin-PC на компьютер Victim-PC. Они использовались для доступа к krbtgt/DOMAIN1.TEST.LOCAL. externalId=2018 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/511f1487-2915-477d-be2e-04cfba702ccd cs2Label=trigger cs2=new
 
-### <a name="suspected-ntlm-authentication-tampering-preview"></a>Предполагаемые незаконные изменения при проверке подлинности NTLM (предварительная версия)
+### <a name="suspected-ntlm-authentication-tampering"></a>Предполагаемые незаконные изменения при аутентификации NTLM
 07-17-2019  18:18:44    Auth.Warning   192.168.0.77       1 2019-07-09T15:18:30.967118+00:00 CENTER CEF 7144 AbnormalNtlmSigningSecurityAlert ï»¿0|Microsoft|Azure ATP|2.86.0.0|AbnormalNtlmSigningSecurityAlert|[Предварительная версия] Предполагаемые незаконные изменения при проверке подлинности NTLM|5|start=2019-07-09T15:14:57.5280720Z app=Ntlm shost=CLIENT1 msg=Две учетные записи на узле CLIENT1 предпринимают подозрительные попытки пройти проверку подлинности на двух компьютерах с использованием протокола NTLM. externalId=2039 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/d4ce6252-2c0f-47f6-a534-47ee8ad983be cs2Label=trigger cs2=new
 
 ### <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования) 

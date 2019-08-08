@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/25/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ac458831e47db99c0b61d56cd390c5d01ed8ca1
-ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
+ms.openlocfilehash: 371a1227552d1d7dd8635e0a41492c69e66fe87c
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604350"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781935"
 ---
 # <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
 
@@ -39,7 +39,7 @@ ms.locfileid: "68604350"
 
 > [!div class="mx-tableFixed"] 
 
-|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|Уровень серьезности|MITRE ATT&CK Matrix™ |
+|Новое имя оповещения системы безопасности|Предыдущее имя оповещения системы безопасности|Уникальный внешний идентификатор|Статус|MITRE ATT&CK Matrix™ |
 |---------|----------|---------|---------|---------|
 |[Разведывательная атака путем перечисления учетных записей](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|Разведывательная атака с использованием перечисления учетных записей.|2003|Средняя|Обнаружение|
 |[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| Н/Д| 2030|Высокий|Exfiltration,<br>Lateral movement,<br>Command and control|
@@ -62,7 +62,7 @@ ms.locfileid: "68604350"
 |[Предполагаемое использование Golden Ticket (аномальное время)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Атака Golden Ticket в Kerberos — аномальное время|2022|Высокий|Privilege Escalation,<br> Lateral movement,<br>Persistence|
 |[Предполагаемая кража удостоверения (Pass-the-Hash)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|Кража удостоверения с помощью атаки Pass-the-Hash|2017|Высокий|Боковое смещение|
 |[Предполагаемая кража удостоверения (Pass-the-Ticket)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|Кража удостоверения с помощью атаки Pass-the-Ticket|2018|Высокая или средняя|Боковое смещение|
-|[Предполагаемые незаконные изменения при проверке подлинности NTLM — предварительная версия](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)|Н/Д|2039|Средняя|Privilege escalation, <br>Боковое смещение|
+|[Предполагаемые незаконные изменения при аутентификации NTLM](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|Н/Д|2039|Средняя|Privilege escalation, <br>Боковое смещение|
 |[Предполагаемая атака ретрансляции NTLM](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|Н/Д|2037|Средняя или низкая, если наблюдается при использовании протокола NTLM версии 2 с подписью|Privilege escalation, <br> Боковое смещение|
 |[Предполагаемая атака Overpass-the-Hash (понижение уровня шифрования)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|Понижение уровня шифрования (потенциальная атака Overpass-the-Hash)|2008|Средняя|Боковое смещение|
 |[Предполагаемая атака Overpass-the-Hash (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|Нестандартная реализация протокола Kerberos (потенциальная атака Overpass-the-Hash)|2002|Средняя|Боковое смещение|
