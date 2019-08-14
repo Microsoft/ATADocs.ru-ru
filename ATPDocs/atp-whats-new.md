@@ -1,31 +1,41 @@
 ---
 title: Новые возможности в Azure Advanced Threat Protection (Azure ATP) | Документация Майкрософт
-description: Описание последних выпусков Azure ATP и сведения о новых возможностях в каждой версии.
+description: В этой часто обновляемой статье можно узнать о новых возможностях последних выпусков Azure Advanced Threat Protection (Azure ATP).
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/05/2019
+ms.date: 08/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 23feedf3b48c3b21f594d764321f0e241e8408cb
-ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
+ms.openlocfilehash: b190258096e7e3ea0d42c52931f02c148a725f21
+ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68781900"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68951231"
 ---
-# <a name="whats-new-in-azure-atp"></a>Новые возможности Azure ATP
+# <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
-Выпущен 4 августа 2019 г.
+В этой часто обновляемой статье можно узнать о новых возможностях последних выпусков Azure ATP.
+
+RSS-канал. Получайте уведомления об обновлении этой страницы, скопировав и вставив следующую ссылку в средство чтения веб-каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+Выпущено 11 августа 2019 г.
+
+## <a name="azure-atp-release-290"></a>Azure ATP, выпуск 2.90
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+Выпущено 4 августа 2019 г.
 
 ## <a name="azure-atp-release-289"></a>Azure ATP, выпуск 2.89
 
-- **Улучшения метода обнаружения.**<br>Чтобы избежать избыточного создания трафика NTLM при выполнении точной оценки пути бокового смещения (LMP), в логику датчика Azure ATP внесены улучшения, которые позволяют снизить использование NTLM и повысить использование Kerberos.  
+- **Улучшенные методы датчиков**<br>Чтобы не создавать избыточный трафик NTLM при точной оценке путей горизонтального перемещения, улучшены методы датчиков Azure ATP: теперь они меньше опираются на NTLM и больше используют Kerberos.  
 
 - **Улучшение оповещений: предполагаемое использование Golden Ticket (несуществующая учетная запись).**<br>Для типов сопутствующих свидетельств, указанных в оповещении этого типа, изменены имена SAM. Дополнительные сведения об оповещении, в том числе о предотвращении действий такого типа и устранении их последствий, см. в разделе о [предполагаемом использовании Golden Ticket (несуществующая учетная запись)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027).
 
