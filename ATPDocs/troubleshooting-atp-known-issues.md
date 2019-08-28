@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 639dc38eeb9f4944cdd011074463953a13a49966
-ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
+ms.openlocfilehash: b78b7f39b7d5c94e2709e080677344919dd422cf
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "65196628"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629309"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP 
 
@@ -62,6 +62,14 @@ Deployment log entries: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:1
 3.  Удалите WinPcap.
 4.  Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
 5.  Переустановите пакет датчика.
+
+## <a name="multi-processor-group-mode"></a>Многопроцессорный групповой режим 
+В операционных системах Windows 2008 R2 и 2012 датчик Azure ATP не поддерживается в многопроцессорном групповом режиме.
+
+Возможные обходные пути:
+- Если технология Hyper-Threading включена, отключите ее. Это может сократить количество логических ядер, чтобы избежать необходимости запуска в **многопроцессорном групповом** режиме. 
+
+- Если у виртуальной машины менее 64 логических ядер и она выполняется на узле HP, для параметра BIOS **NUMA Group Size Optimization** (Оптимизация размера группы NUMA) можно изменить значение по умолчанию **Clustered** (Кластеризовано) значением **Flat** (Фиксировано). 
 
 ## <a name="windows-defender-atp-integration-issue"></a>Проблема интеграции ATP в Защитнике Windows
 

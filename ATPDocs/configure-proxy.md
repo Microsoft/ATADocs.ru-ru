@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/25/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 347f46b51267762760783fdc44b689e213ba29d8
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.openlocfilehash: ba1c8ac59dcf762103cd4d0e7a5a54c2b02e1e9a
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485043"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629299"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
@@ -73,7 +73,8 @@ ms.locfileid: "68485043"
 
  
 > [!NOTE]
-> Для выполнения проверки SSL сетевого трафика Azure ATP (между датчиком и службой Azure ATP) необходимо, чтобы проверка SSL поддерживала взаимную проверку.
+> Чтобы обеспечить максимальную безопасность и конфиденциальность данных, Azure ATP использует взаимную проверку подлинности на основе сертификатов между каждым датчиком Azure ATP и облачной серверной частью Azure ATP. Если в вашей среде используется проверка SSL, убедитесь, что она настроена для взаимной проверки подлинности и не препятствует процессу проверки подлинности.
+
 
 
 ## <a name="see-also"></a>См. также
