@@ -5,19 +5,19 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 3/21/2018
+ms.date: 8/27/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 307e7ff1e41b166088cb31822070116f134b36e3
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.openlocfilehash: cd4af40af83b060093b0b5822d0e9110a4ada4f0
+ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195619"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70076639"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>Устранение неполадок в ATA с помощью журналов событий ATA
 
@@ -28,7 +28,7 @@ ms.locfileid: "65195619"
 ## <a name="ata-gateway-logs"></a>Журналы событий шлюза ATA
 В этом разделе все справочные материалы о шлюзе ATA также относятся и к упрощенному шлюзу ATA. 
 
-Журналы шлюза ATA размещаются в подкаталоге с именем **Logs** того каталога, где установлено решение ATA (по умолчанию это **C:\Program Files\Microsoft Advanced Threat Analytics\\**). Расположение установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
+Журналы шлюза ATA размещаются в подкаталоге с именем **Logs** того каталога, где установлено решение ATA (по умолчанию это **C:\Program Files\Microsoft Advanced Threat Analytics\\** ). Расположение установки по умолчанию: **C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**.
 
 В шлюзе ATA ведутся такие журналы событий:
 
@@ -67,7 +67,7 @@ ms.locfileid: "65195619"
 
 
 ## <a name="ata-deployment-logs"></a>Журналы развертывания ATA
-Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: **C:\Users\Administrator\AppData\Local\Temp** (или на один каталог выше %temp%).
+Журналы развертывания ATA расположены во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: C:\Users, вошедший **в систему пользователь > \AppData\Local\Temp (или один каталог выше% TEMP%).\<**
 
 Журналы развертывания центра ATA:
 
