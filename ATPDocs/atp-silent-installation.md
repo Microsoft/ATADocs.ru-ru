@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6fca63fb488aef6fb26f4f501c4f6af896e223bd
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.openlocfilehash: d45d08cc2a059fa231194f7aa334d4f557996ba4
+ms.sourcegitcommit: f7c75bc5715c5bda0b3110364e2aebddddce8a13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485062"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70209184"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Коммутаторы и автоматическая установка Azure ATP
 Эта статья содержит рекомендации и инструкции по использованию коммутаторов Azure ATP и выполнению автоматической установки.
@@ -46,10 +46,16 @@ ms.locfileid: "68485062"
 
 Для полного автоматического удаления датчика Azure ATP используйте следующую команду:
 
-
-**Синтаксис**:
+**Синтаксис cmd.exe**:
 
     "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+
+**Синтаксис PowerShell**:
+
+    ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+
+> [!NOTE]
+> При использовании синтаксиса PowerShell пропуск префикса **./** приводит к ошибке, препятствующей автоматической установке.
 
 > [!NOTE]
 > Скопируйте ключ доступа с портала Azure ATP в разделе **Конфигурация** на странице **Датчик**.
@@ -81,12 +87,12 @@ ms.locfileid: "68485062"
 
 Для выполнения проверки подлинности на прокси-сервере используйте следующие команды:
 
-**Синтаксис**:
+**Синтаксис**
 
 
 > [!div class="mx-tableFixed"]
 > 
-> |Имя|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
 > |-------------|----------|---------|---------|
 > |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|Нет|Указывает URL-адрес и номер порта прокси-сервера для датчика Azure ATP.|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
@@ -118,7 +124,7 @@ ms.locfileid: "68485062"
 
 ## <a name="uninstall-the-azure-atp-sensor-silently"></a>Автоматическое удаление датчика Azure ATP
 
-Для автоматического удаления датчика Azure ATP используйте следующую команду: **Синтаксис**:
+Для автоматического удаления датчика Azure ATP используйте следующую команду: **Синтаксис**
 
     Azure ATP sensor Setup.exe [/quiet] [/Uninstall] [/Help]
 
