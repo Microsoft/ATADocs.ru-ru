@@ -13,8 +13,6 @@
 - name: Краткие руководства
   expanded: true
   items:
-    - name: "Планирование производительности Azure\_ATP"
-      href: atp-capacity-planning.md
     - name: создание экземпляра Azure ATP;
       href: install-atp-step1.md
     - name: Подключение к Active Directory
@@ -23,8 +21,6 @@
       href: install-atp-step3.md
     - name: "Установка датчика Azure\_ATP"
       href: install-atp-step4.md
-    - name: "Настройка датчика Azure\_ATP"
-      href: install-atp-step5.md
 - name: Учебники
   items:
     - name: Предупреждения о разведывательных атаках
@@ -87,7 +83,7 @@
               href: atp-cas-isp-print-spooler.md
             - name: Оценка предотвращения использования ненадежного шифра
               href: atp-cas-isp-weak-cipher.md
-            - name: Оценка предотвращения неограниченного делегирования Kerberos
+            - name: Оценка предотвращения незащищенного делегирования Kerberos
               href: atp-cas-isp-unconstrained-kerberos.md
     - name: Занятие по оповещениям системы безопасности
       items:
@@ -103,6 +99,8 @@
           href: atp-playbook-domain-dominance.md
     - name: Основные сведения об оповещениях безопасности
       href: understanding-security-alerts.md
+    - name: "Планирование производительности Azure\_ATP"
+      href: atp-capacity-planning.md
     - name: Работа с оповещениями безопасности
       href: working-with-suspicious-activities.md
     - name: Исключение сущностей из обнаружения
@@ -141,6 +139,8 @@
       href: ATP-silent-installation.md
     - name: Настройка датчиков Azure ATP
       items:
+        - name: "Настройка датчика Azure\_ATP"
+          href: install-atp-step5.md
         - name: настройки прокси-сервера;
           href: configure-proxy.md
         - name: Проверка расширенных политик аудита
