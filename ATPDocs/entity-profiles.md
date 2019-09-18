@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/02/2018
+ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 437339467e76cb60edd49bee179392eb152fe458
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 0bff9c9081951c234d2d0076d154a984898a0a31
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195187"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004481"
 ---
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 Профиль сущности является страницей с полными данными о сущности, предназначенной для всестороннего детального анализа пользователей, компьютеров, устройств и ресурсов, к которым они имеют доступ, а также их истории. На странице профиля используется новый преобразователь логических действий Azure ATP, который может просмотреть группу выполняющихся действий (объединенных до 1 минуты) и объединить их в одно логическое действие, чтобы помочь вам понять фактические действия пользователей.
 

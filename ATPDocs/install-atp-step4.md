@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 99045c4d8982c34d3defa681417a3b3963c563ac
-ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
+ms.openlocfilehash: f3af1034b73d1fc058a966c5d90eaf24dd282140
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57253935"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004879"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -81,11 +81,10 @@ ms.locfileid: "57253935"
     - Распространяемый пакет Microsoft Visual C++ 2013.
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
-> [!div class="step-by-step"]
-> ["Шаг 3. Скачивание файла установки датчика](install-atp-step3.md)
-> [Шаг 5. Настройка параметров датчика"](install-atp-step5.md)
+Датчик Azure ATP оказывает минимальное влияние на ресурсы контроллера домена и сетевую активность. Для создания оценки производительности см. [Планирование емкости для решения Azure ATP](install-atp-step5.md).
+
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 

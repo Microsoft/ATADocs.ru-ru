@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/3/2019
+ms.date: 09/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e11362c25d0d61925101db2f3f7f896f233931ca
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 3428a95fd77252bf7384c8e733842134bc8141d2
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196757"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004735"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>Руководство. Использование путей бокового смещения
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 Атаки путем бокового смещения обычно реализуются с помощью нескольких различных методов. Некоторые из наиболее популярных методов, используемых злоумышленниками, включают [кражу учетных данных](suspicious-activity-guide.md#) и атаку [Pass-the-Ticket](suspicious-activity-guide.md). В обоих методах с помощью неконфиденциальных учетных записей злоумышленники осуществляют боковые смещения, используя уязвимости неконфиденциальных компьютеров, которые используют сохраненные учетные данные для входа в учетных записях, группах и компьютерах совместно с конфиденциальными учетными записями.
 

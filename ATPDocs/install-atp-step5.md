@@ -1,24 +1,24 @@
 ---
-title: Краткое руководство по настройке параметров датчика Azure ATP | Документация Майкрософт
+title: Настройка параметров датчика Azure ATP — основные понятия | Документация Майкрософт
 description: На пятом шаге установки Azure ATP выполняется настройка параметров для автономного датчика Azure ATP.
 author: mlottner
 ms.author: mlottner
-ms.date: 07/17/2019
-ms.topic: quickstart
+ms.date: 09/15/2019
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1c9f8d0928e7439afe9eb0745c07fad2c515169a
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 8e39e37aa42aea40de024f53dd892da398984f5b
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298912"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004843"
 ---
-# <a name="quickstart-configure-azure-atp-sensor-settings"></a>Краткое руководство. Настройка параметров датчика Azure ATP
+# <a name="configure-azure-atp-sensor-settings"></a>Настройка параметров датчика Azure ATP
 
-В этом кратком руководстве вы настроите параметры датчика Azure ATP и начнете видеть данные. Для использования возможностей Azure ATP потребуется дополнительная настройка и интеграция.  
+В этой статье вы узнаете, как правильно настроить параметры датчика Azure ATP, чтобы начать получать данные. Потребуется дополнительная настройка и интеграция для использования всех возможностей Azure ATP.  
 
 ## <a name="prerequisites"></a>Предварительные условия
 

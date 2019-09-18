@@ -4,20 +4,23 @@ d|Description: This article explains how to use Azure ATP security alerts to inv
 keywords: ''
 author: mlottner
 ms.author: mlottner
-ms.date: 02/07/2019
+ms.date: 09/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 547fcb9173d8e51687124bac3f555a4eedc3634d
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 91fc13a9d85e8d3653965530a9f0f35debaa728f
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263511"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004783"
 ---
 # <a name="tutorial-investigate-a-computer"></a>Руководство. Анализ компьютера
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 Свидетельство оповещения Azure ATP четко указывает на участие компьютеров в подозрительных действиях или на их компрометацию. В этом руководстве вы сможете использовать предложения функций анализа, которые помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
 

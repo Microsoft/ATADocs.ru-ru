@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/10/2019
+ms.date: 09/15/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b9313f0a44916895948ed4896b2cb3896ded68fc
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: d8070102bf5136ef8918f6fca2e7571e969148a5
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196297"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004871"
 ---
 # <a name="working-with-security-alerts"></a>Обработка оповещений системы безопасности
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 В этой статье рассматриваются основы работы с предупреждениями системы безопасности Azure ATP.
 

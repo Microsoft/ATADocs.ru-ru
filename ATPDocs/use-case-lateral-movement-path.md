@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/22/2019
+ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad82a095d62de0c1d48abfa9d36fcf909dd68cd9
-ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
+ms.openlocfilehash: f7823fee5828df51b336428d810905e2672cc5a4
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264995"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004911"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 При боковом смещении злоумышленник использует неконфиденциальные учетные записи для доступа к конфиденциальным учетным записям в вашей сети. Боковое смещение используется злоумышленниками, чтобы определить конфиденциальные учетные записи и компьютеры в вашей сети, которые совместно используют сохраненные учетные данные для входа в учетных записях, группах и компьютерах. Если злоумышленнику удается успешно выполнить боковое смещение к ключевым целевым объектам, он также может получить доступ к контроллерам домена. Атаки, использующие боковое смещение, реализуются с помощью различных методов, описанных в [руководстве по подозрительным действиям](suspicious-activity-guide.md).
 

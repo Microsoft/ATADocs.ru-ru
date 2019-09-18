@@ -4,20 +4,23 @@ d|Description: This article explains how to user Azure ATP security alerts to in
 keywords: ''
 author: mlottner
 ms.author: mlottner
-ms.date: 02/07/2019
+ms.date: 09/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d130cc6c52f27052305ae012409363e8437db5f6
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: fdf0c4cc32137b23f7c2170a2c8dd0132b3b6462
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264092"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004758"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
+
+> [!NOTE]
+> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
 Свидетельства оповещений Azure ATP и пути бокового смещения обеспечивают четкое указание на выполнение пользователями подозрительных действий или компрометацию их учетных записей. В этом руководстве вы сможете использовать предложения функций анализа, которые помогают определить риск для организации, выбрать способ устранения и определить лучшую стратегию для предотвращения подобных атак в будущем.  
 
