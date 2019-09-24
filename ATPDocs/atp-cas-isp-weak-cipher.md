@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 784f381ef8209bef885bb2e8944a60a23d21ec8c
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: 97ea6d080d2aae84bcf0675da853f503fd10b314
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007408"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185519"
 ---
 # <a name="security-assessment-weak-cipher-usage---preview"></a>Оценка безопасности: использование ненадежного шифра — предварительная версия
 
 
 ## <a name="what-are-weak-ciphers"></a>Что такое слабые шифры? 
 
-Шифрование использует шифры для шифрования данных. Например, шифр RC4 (Rivest Cipher 4, также известен как ARC4 или ARCFOUR, то есть Alleged RC4) — это один из них.   Хотя RC4 отличается простотой и скоростью, с момента первоначального выпуска RC4 обнаружено несколько уязвимостей, что делает его небезопасным. Алгоритм RC4 особенно уязвим, если начало потока выходного ключа не отброшено или если используются неслучайные или связанные ключи. 
+Шифрование использует шифры для шифрования данных. Например, шифр RC4 (Rivest Cipher 4, также известен как ARC4 или ARCFOUR, то есть Alleged RC4) — это один из них. Хотя RC4 отличается простотой и скоростью, с момента первоначального выпуска RC4 обнаружено несколько уязвимостей, что делает его небезопасным. Алгоритм RC4 особенно уязвим, если начало потока выходного ключа не отброшено или если используются неслучайные или связанные ключи. 
 
 ## <a name="how-do-i-use-this-security-assessment-to-improve-my-organizational-security-posture"></a>Как использовать эту оценку безопасности для повышения безопасности организации? 
 

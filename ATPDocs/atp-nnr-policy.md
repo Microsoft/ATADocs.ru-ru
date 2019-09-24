@@ -12,16 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0161c0f63e652bd62ee8ccf4a6677f2ec0d90f4d
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 9cef9a1eb7035f1db61ab6c3c0b90d4e73278d36
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298953"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185657"
 ---
 # <a name="what-is-network-name-resolution"></a>Разрешение сетевых имен
 
-Разрешение сетевых имен (NNR) — главный компонент функций Azure ATP. В Azure ATP действия фиксируются на основе сетевого трафика, событий Windows и трассировки событий Windows. Все эти действия обычно содержат данные об IP-адресах.  
+Разрешение сетевых имен (NNR) — главный компонент функций Azure ATP. В Azure ATP действия фиксируются на основе сетевого трафика, событий Windows и трассировки событий Windows. Все эти действия обычно содержат данные об IP-адресах. 
 
 Благодаря механизму NNR Azure ATP может сопоставлять необработанные действия (содержащие IP-адреса) и соответствующие компьютеры, участвующие в каждом действии. На основе необработанных действий Azure ATP профилирует сущности, включая компьютеры, и создает оповещения системы безопасности о подозрительных действиях.
 

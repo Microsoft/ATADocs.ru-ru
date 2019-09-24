@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/20/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ba1c8ac59dcf762103cd4d0e7a5a54c2b02e1e9a
-ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
+ms.openlocfilehash: 27630e93db4e103454e6d0fec7756824988ec4a2
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629299"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185505"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
@@ -31,6 +31,21 @@ ms.locfileid: "69629299"
 ## <a name="configure-the-proxy"></a>Настройка прокси-сервера 
 
 Вы можете настроить параметры прокси-сервера во время установки датчика, используя параметры, определенные в руководстве по [автоматической установке и настройке параметров аутентификации прокси-сервера](https://docs.microsoft.com/azure-advanced-threat-protection/atp-silent-installation#proxy-authentication).
+
+### <a name="proxy-authentication"></a>Проверка подлинности прокси-сервера
+
+Для выполнения проверки подлинности на прокси-сервере используйте следующие команды:
+
+**Синтаксис**
+
+
+> [!div class="mx-tableFixed"]
+> 
+> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |-------------|----------|---------|---------|
+> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|Нет|Указывает URL-адрес и номер порта прокси-сервера для датчика Azure ATP.|
+> |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|Нет|Указывает пароль для имени пользователя прокси-сервера. * Учетные данные шифруются и хранятся локально датчиком Azure ATP.|
 
 Кроме того, если компьютер не имеет подключения к Интернету, настройте статическое подключение к прокси-серверу вручную через системный реестр, чтобы датчик Azure ATP мог передавать диагностические данные и взаимодействовать с облачной службой Azure ATP.
 
