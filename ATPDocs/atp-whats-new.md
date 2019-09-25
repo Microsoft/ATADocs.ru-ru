@@ -5,25 +5,37 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/08/2019
+ms.date: 09/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 56c517930f4001e9a6e8f4476210fe89b380aa3f
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 77d33b429cc728ef24341b53bb20974368a35235
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71004695"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185578"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
 В этой часто обновляемой статье можно узнать о новых возможностях последних выпусков Azure ATP.
 
 RSS-канал. Получайте уведомления об обновлении этой страницы, скопировав и вставив следующую ссылку в средство чтения веб-каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+Выпущен 22 сентября 2019 г.
+## <a name="azure-atp-release-296"></a>Azure ATP, выпуск 2.96
+
+- **Обогащение данных аутентификации NTLM с использованием события Windows 8004**<br>
+
+Теперь датчики Azure ATP могут автоматически считывать и обогащать данные действий аутентификации NTLM при доступе к данным сервера во время аудита NTLM с включенным событием Windows 8004. Azure ATP анализирует событие Windows 8004, выявляя операции аутентификации NTLM и обогащая их данные для анализа угроз и создания оповещений в Azure ATP. Эта улучшенная возможность обеспечивает доступ к ресурсам по протоколу NTLM. Кроме того, предоставляются обогащенные данные о неудачных попытках входа в систему, включая сведения о конечном компьютере, к которому пользователь пытался получить доступ.
+
+Ознакомьтесь с дополнительными сведениями о действиях аутентификации NTLM [с использованием события Windows 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004).
+
+- Эта версия также включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 
 Выпущено 15 сентября 2019 г.
 ## <a name="azure-atp-release-295"></a>Azure ATP, выпуск 2.95

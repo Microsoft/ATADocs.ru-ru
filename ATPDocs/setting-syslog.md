@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e36388fadd11df8a1e4b138481cb40c18b8990a5
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: ab96c0a17344d93c00f25ca5ca97a1fb2c0a22b7
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007581"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185739"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
 
 > [!NOTE]
 > Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
-Azure ATP может уведомлять вас об обнаружении подозрительных действий и отправлять оповещения о безопасности и работоспособности на ваш сервер Syslog. Оповещения отправляются с датчика, который обнаружил действие, прямо на сервер Syslog. 
+Azure ATP может уведомлять вас об обнаружении подозрительных действий и отправлять оповещения о безопасности и работоспособности на ваш сервер Syslog. Оповещения отправляются с датчика Azure ATP, который обнаружил действие, прямо на сервер Syslog. 
 
 
 При включении уведомлений Syslog вы можете настроить следующее:

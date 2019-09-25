@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 38a1790194d739ac31c66df60cf0d9c2911344c7
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: d1b0d9a5db7fe94170cedf274a36ec036c4910c4
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298886"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185666"
 ---
 # <a name="azure-atp-architecture"></a>Архитектура Azure ATP
 
@@ -84,7 +84,7 @@ Azure ATP включает в себя следующие компоненты.
 
 ### <a name="windows-events"></a>События Windows
 
-Чтобы расширить охват для обнаружения потенциальных атак кражи удостоверения (Pass-the-Hash), подозрительных сбоев проверки подлинности, изменений в привилегированных группах, создания подозрительных служб и действий с использованием учетной записи honeytoken, службе Azure ATP необходимо проанализировать журналы со следующими событиями Windows: 4776,4732,4733,4728,4729,4756,4757 и 7045. Эти события автоматически считываются датчиками Azure ATP, в которых [расширенная политика аудита](atp-advanced-audit-policy.md) настроена надлежащим образом. 
+Чтобы расширить охват для обнаружения угроз, связанных с аутентификацией NTLM, изменений в привилегированных группах и создания подозрительных служб, службе Azure ATP необходимо проанализировать журналы со следующими событиями Windows: 4776,4732,4733,4728,4729,4756,4757,7045 и 8004. Эти события автоматически считываются датчиками Azure ATP, в которых [расширенная политика аудита](atp-advanced-audit-policy.md) настроена надлежащим образом. Чтобы [обеспечить аудит события Windows 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004) в соответствии с требованиями службы, проверьте [параметры аудита NTLM](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/).
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
