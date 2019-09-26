@@ -137,14 +137,16 @@
       href: setting-syslog.md
     - name: Автоматическая установка
       href: ATP-silent-installation.md
-    - name: Настройка датчиков Azure ATP
+    - name: "Настройка датчика Azure\_ATP"
       items:
         - name: "Настройка датчика Azure\_ATP"
           href: install-atp-step5.md
-        - name: настройки прокси-сервера;
-          href: configure-proxy.md
         - name: Проверка расширенных политик аудита
           href: atp-advanced-audit-policy.md
+        - name: "Настройка сбора данных о событиях\_Windows"
+          href: configure-windows-event-collection.md
+        - name: настройки прокси-сервера;
+          href: configure-proxy.md
         - name: "Настройка Azure\_ATP для выполнения удаленных вызовов SAM"
           href: install-atp-step8-samr.md
     - name: "Настройка автономного датчика Azure\_ATP"
