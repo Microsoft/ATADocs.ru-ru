@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edc59ab0d8ec813b4f957e6391e37da18ba4dbb0
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.openlocfilehash: 763f27e9fb3e134f97b716306c747ecce7edf411
+ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185633"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71217669"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
 
@@ -148,7 +148,7 @@ Azure ATP защищает локальных и синхронизирован
 |
 
 ### <a name="windows-event-logs"></a>Журналы событий Windows
-Обнаружение в Azure ATP основано на журналах следующих доступных для анализа датчиком событий Windows из ваших контроллеров домена: 4776, 4732, 4733, 4728, 4729, 4756, 4757, 7045 и 8004. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Дополнительные сведения о настройке правильных политик см. в статье о [проверке расширенной политики аудита](atp-advanced-audit-policy.md). Чтобы [обеспечить аудит события Windows 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004) в соответствии с требованиями службы, проверьте [параметры аудита NTLM](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/).  
+Обнаружение в Azure ATP основано на журналах следующих доступных для анализа датчиком событий Windows из ваших контроллеров домена: 4776, 4732, 4733, 4728, 4729, 4756, 4757, 7045 и 8004. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Дополнительные сведения о настройке правильных политик см. в статье о [проверке расширенной политики аудита](atp-advanced-audit-policy.md). Чтобы [обеспечить аудит события Windows 8004](configure-windows-event-collection.md##ntlm-authentication-using-windows-event-8004) в соответствии с требованиями службы, проверьте [параметры аудита NTLM](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/).  
 
 
 > [!NOTE]
