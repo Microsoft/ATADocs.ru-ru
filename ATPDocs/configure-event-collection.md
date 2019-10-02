@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8416c2d6e3b12d15f52a0f27381d845fdb268cdd
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.openlocfilehash: f7ab5a51fc599280a9a21181efc72684230d3c3a
+ms.sourcegitcommit: ecf2d5e83f550a73dabed135d27b34edc15d57db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185529"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71682231"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
@@ -26,7 +26,7 @@ ms.locfileid: "71185529"
 > [!NOTE]
 > Очень важно выполнить скрипт аудита Azure ATP перед настройкой сбора данных о событиях, чтобы обеспечить правильность настройки контроллеров домена для записи необходимых событий. 
 
-Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, Azure ATP может использовать события Windows для улучшенного обнаружения. Azure ATP использует события Windows 4776 и 8004 для NTLM, чтобы улучшить обнаружение различных атак, а события 4732, 4733, 4728, 4729, 4756, 4757 и 7045 позволяют улучшить обнаружение изменения привилегированных групп и создание службы. Эти события можно получать из системы SIEM или путем настройки пересылки событий Windows с контроллера домена. Собранные события предоставляют Azure ATP дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
+Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, Azure ATP может использовать события Windows для улучшенного обнаружения. Azure ATP использует события Windows 4776 и 8004 для NTLM, чтобы улучшить обнаружение различных атак, а события 4732, 4733, 4728, 4729, 4756, 4757, 7045 и 8004 позволяют улучшить обнаружение изменения привилегированных групп и создание службы. Эти события можно получать из системы SIEM или путем настройки пересылки событий Windows с контроллера домена. Собранные события предоставляют Azure ATP дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
 
 ## <a name="ntlm-authentication-using-windows-event-8004"></a>Аутентификация NTLM с использованием события Windows 8004
 
@@ -166,7 +166,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 -   Для пар ключ=значение порядок представления неважен.
 
 ## <a name="qradar"></a>QRadar
-QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. на странице [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в разделе [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 

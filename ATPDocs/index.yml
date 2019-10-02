@@ -1,74 +1,107 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: "Документация по Azure Advanced Threat\_Protection"
+### YamlMime:Landing
+title: Документация по Azure Advanced Threat Protection
+summary: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
 metadata:
-  title: "Документация по Azure Advanced Threat\_Protection"
-  description: Защита гибридных сред организации от различных сложных целенаправленных электронных атак и внутренних угроз.
-  services: azure-advanced-threat-protection
-  author: msmbaldwin
-  manager: rkarlin
-  ms.prod: azure-advanced-threat-protection
-  ms.tgt_pltfrm: na
-  ms.devlang: na
+  title: Документация по Azure Advanced Threat Protection
+  description: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
+  services: service
+  ms.service: azure-advanced-threat-protection
+  ms.subservice: subservice
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
-  layout: LandingPage
-abstract:
-  description: "Azure Advanced Threat Protection\_(ATP)\_— это облачная служба, которая помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз."
-sections:
-  - title: Дополнительные сведения
-    items:
-      - type: list
-        style: cards
-        className: cardsFTitle
-        items:
-          - title: Дополнительные сведения о Расширенной защите от угроз Azure
-            href: what-is-atp.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-              href: what-is-atp.md
-          - title: "Архитектура Azure\_ATP"
-            href: atp-architecture.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-              href: atp-architecture.md
-          - title: Новые возможности Azure ATP
-            href: atp-whats-new.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              href: atp-whats-new.md
-          - title: "Ознакомьтесь с возможностями Microsoft\_365, полнофункционального решения, включающего Azure Advanced Threat Protection."
-            href: 'https://docs.microsoft.com/microsoft-365/'
-            image:
-              src: /office/media/icons/caret-right-blue.svg
-              href: 'https://docs.microsoft.com/microsoft-365/'
-  - title: Краткие руководства (5 мин)
-    items:
-      - type: paragraph
-        text: Получите общие сведения о Расширенной защите от угроз Azure с помощью этих кратких руководств.
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_design.svg'
-            text: Планирование производительности
-            href: atp-capacity-planning.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_event.svg'
-            text: Создание экземпляра Azure ATP
-            href: install-atp-step1.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            text: Подключение к Active Directory
-            href: install-atp-step2
-  - title: Пошаговые руководства
-    items:
-      - type: paragraph
-        text: 'Узнайте том, как работать с оповещениями, с помощью этих кратких руководств.'
-      - type: list
-        style: unordered
-        items:
-          - html: <a href="/azure-advanced-threat-protection/understanding-security-alerts">Сведения об оповещениях безопасности</a>
-          - html: <a href="/azure-advanced-threat-protection/investigate-a-user">Проверка пользователя</a>
-          - html: <a href="/azure-advanced-threat-protection/investigate-a-computer">Проверка компьютера</a>
+  ms.collection: M365-security-compliance
+  author: mlottner
+  ms.author: mlottner
+  ms.date: 09/23/2019
+  ms.openlocfilehash: 7a21cc57174fcc3342f9349c23a918b7a8cf3b07
+  ms.sourcegitcommit: ecf2d5e83f550a73dabed135d27b34edc15d57db
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71682206"
+landingContent:
+- title: Сведения об Azure Advanced Threat Protection (Azure ATP)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое Azure Advanced Threat Protection?
+      url: what-is-atp.md
+  - linkListType: architecture
+    links:
+    - text: Архитектура Azure ATP
+      url: atp-architecture.md
+    - text: Использование Azure ATP с Cloud App Security
+      url: atp-mcas-integration.md
+  - linkListType: video
+    links:
+    - text: Введение в Azure ATP
+      url: https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE
+    - text: Основы Azure ATP
+      url: https://www.youtube.com/watch?v=QXZIfH0wP3Q
+- title: Извлечение оповещений Azure ATP
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Предупреждения системы безопасности
+      url: understanding-security-alerts.md
+    - text: Оповещения о работоспособности
+      url: atp-health-center.md
+    - text: Мониторинг контроллеров домена
+      url: atp-sensor-monitoring.md
+- title: Изучите различные способы использования Azure ATP
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Оценки состояния безопасности удостоверений
+      url: atp-isp-overview.md
+    - text: Тестовая служба по оповещениям системы безопасности Azure ATP
+      url: atp-playbook-lab-overview.md
+    - text: Исключение сущностей из обнаружения
+      url: excluding-entities-from-detections.md
+    - text: Поиск и фильтрация отслеживаемых действий
+      url: atp-activities-search.md
+    - text: Исключения и учетные записи Honeytoken
+      url: install-atp-step7.md
+    - text: Перемещение с Advanced Threat Analytics (ATA) на Azure ATP
+      url: ata-atp-move-overview.md
+- title: Управление оповещениями системы безопасности и их исправление
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Изучение оповещений Azure ATP
+      url: suspicious-activity-guide.md
+    - text: Работа с оповещениями безопасности
+      url: working-with-suspicious-activities.md
+    - text: Настройка уведомлений Azure ATP
+      url: notifications.md
+- title: Исследование угроз
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Анализ пользователя
+      url: investigate-a-user.md
+    - text: Анализ компьютера
+      url: investigate-a-computer.md
+    - text: Анализ путей бокового смещения
+      url: investigate-lateral-movement-path.md
+    - text: Анализ сущностей
+      url: investigate-entity.md
+- title: Использование Microsoft Cloud App Security с Azure ATP
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Использование Azure ATP с Cloud App Security
+      url: atp-mcas-integration.md
+    - text: Фильтрация действий и задание политик
+      url: atp-activities-filtering-mcas.md
+- title: Ресурсы и поддержка
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Часто задаваемые вопросы
+      url: atp-technical-faq.md
+    - text: Поддержка и информация
+      url: atp-support.md
+    - text: План подготовки ATP к работе
+      url: atp-resources.md
+    - text: Безопасность и конфиденциальность данных в Azure ATP
+      url: atp-privacy-compliance.md
