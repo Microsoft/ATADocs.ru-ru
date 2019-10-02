@@ -1,79 +1,71 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Документация по Advanced Threat Analytics
+summary: Защитите предприятие, используя сведения из нескольких источников данных сети для изучения поведения пользователей и сущностей в Организации.
 metadata:
   title: Документация по Advanced Threat Analytics
-  description: 'Обеспечьте защиту организации, используя сведения из множества источников в вашей сети для изучения поведения пользователей и других лиц в организации'
-  services: advanced-threat-analytics
-  author: msmbaldwin
-  manager: rkarlin
-  ms.prod: advanced-threat-analytics
-  ms.tgt_pltfrm: na
-  ms.devlang: na
+  description: Защитите предприятие, используя сведения из нескольких источников данных сети для изучения поведения пользователей и сущностей в Организации.
+  services: service
+  ms.service: advanced-threat-analytics
+  ms.subservice: ms.subservice
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
-  layout: LandingPage
-abstract:
-  description: 'Обеспечьте защиту организации, используя сведения из множества источников в вашей сети для изучения поведения пользователей и других лиц в организации'
-sections:
-  - title: Дополнительные сведения
-    items:
-      - type: list
-        style: cards
-        className: cardsFTitle
-        items:
-          - title: Что такое Advanced Threat Analytics?
-            href: what-is-ata.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-              href: what-is-ata.md
-          - title: Новые возможности ATA
-            href: whats-new-version-1.9.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_quick-start.svg'
-              href: whats-new-version-1.9.md
-          - title: Часто задаваемые вопросы
-            href: ata-technical-faq.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              href: ata-technical-faq.md
-          - title: "Ознакомьтесь с возможностями Microsoft\_365, полнофункционального решения, включающего Advanced Threat Analytics"
-            href: 'https://docs.microsoft.com/microsoft-365/'
-            image:
-              src: /office/media/icons/caret-right-blue.svg
-              href: 'https://docs.microsoft.com/microsoft-365/'
-  - title: Начало работы
-    items:
-      - type: paragraph
-        text: 'Планирование, проектирование и начало работы с ATA'
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-            text: Архитектура Advanced Threat Analytics
-            href: ata-architecture.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            text: Планирование производительности ATA
-            href: ata-capacity-planning.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
-            text: Скачивание и установка
-            href: install-ata-step1.md
-  - title: Попробовать
-    items:
-      - type: paragraph
-        text: 'Планирование, проектирование и начало работы с ATA'
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            text: Оценка
-            href: 'https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics'
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_road-map.svg'
-            text: Сборник тренировочных заданий по моделированию атаки Advanced Threat Analytics
-            href: 'https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38'
+  ms.collection: M365-security-compliance
+  author: mlottner
+  ms.author: mlottner
+  ms.date: 10/01/2019
+  ms.openlocfilehash: 85fdb8c87afd48ce651983e4b52f3849b64d4454
+  ms.sourcegitcommit: 8f085179ea099a8000c982fbac39ca3f570520fb
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71721097"
+landingContent:
+- title: О Advanced Threat Analytics
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое Advanced Threat Analytics (ATA)?
+      url: what-is-ata.md
+  - linkListType: architecture
+    links:
+    - text: Архитектура Advanced Threat Analytics
+      url: ata-architecture.md
+    - text: Планирование емкости решения
+      url: ata-capacity-planning.md
+- title: Ознакомьтесь с оповещениями ATA
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Оповещения системы безопасности
+      url: working-with-suspicious-activities.md
+    - text: Оповещения о работоспособности
+      url: ata-health-center.md
+    - text: Мониторинг оповещений
+      url: monitoring-alerts.md
+- title: Управление и настройка ATA
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка оповещений ATA
+      url: setting-ata-alerts.md
+    - text: Пометка конфиденциальных учетных записей
+      url: tag-sensitive-accounts.md
+    - text: Пути перемещения бокового смещения (Лмпс)
+      url: use-case-lateral-movement-path.md
+    - text: Управление параметрами телеметрии
+      url: manage-telemetry-settings.md
+- title: Исследование угроз
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Рекомендации по подозрительным действиям
+      url: suspicious-activity-guide.md
+    - text: Сборник тренировочных заданий моделирования атак ATA
+      url: https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38
+- title: Дополнительные сведения о ATA
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Новые возможности ATA?
+      url: whats-new-version-1.9.md
+    - text: Часто задаваемые вопросы
+      url: ata-technical-faq.md
