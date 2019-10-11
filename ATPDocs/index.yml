@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Документация по Azure Advanced Threat Protection
+title: Документация по Расширенной защите от угроз Azure
 summary: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
 metadata:
-  title: Документация по Azure Advanced Threat Protection
+  title: Документация по Расширенной защите от угроз Azure
   description: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
   services: service
   ms.service: azure-advanced-threat-protection
@@ -12,12 +12,12 @@ metadata:
   author: mlottner
   ms.author: mlottner
   ms.date: 09/23/2019
-  ms.openlocfilehash: 7a21cc57174fcc3342f9349c23a918b7a8cf3b07
-  ms.sourcegitcommit: ecf2d5e83f550a73dabed135d27b34edc15d57db
+  ms.openlocfilehash: a379e4880203b1fc41d7a9b8dcda6cf020324513
+  ms.sourcegitcommit: 8f085179ea099a8000c982fbac39ca3f570520fb
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "71682206"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71721074"
 landingContent:
 - title: Сведения об Azure Advanced Threat Protection (Azure ATP)
   linkLists:

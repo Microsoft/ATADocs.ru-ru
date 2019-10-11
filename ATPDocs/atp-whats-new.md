@@ -12,18 +12,24 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 3b88aeca4d86ad527da6d966e766ee37126bf079
-ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
+ms.openlocfilehash: d322c9b0352319e8511414e042d340acbbccd371
+ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71217689"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997555"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
 В этой часто обновляемой статье можно узнать о новых возможностях последних выпусков Azure ATP.
 
 RSS-канал. Получайте уведомления об обновлении этой страницы, скопировав и вставив следующую ссылку в средство чтения веб-каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+Дата выпуска: 6 октября 2019 г.
+## <a name="azure-atp-release-297"></a>Azure ATP, выпуск 2.97
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 
 Выпущен 22 сентября 2019 г.
 ## <a name="azure-atp-release-296"></a>Azure ATP, выпуск 2.96

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/28/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b5709955763015870067490ab458c1e94cdf567b
-ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.openlocfilehash: 049d125e8d9cd458f2116c61770893d4b2d596e8
+ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70076663"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997579"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP 
 
@@ -91,9 +91,7 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
 Чтобы решить эту проблему, выполните указанные ниже действия.
 
-Установите следующие параметры равными **0** или **отключите** их в меню настройки сетевого адаптера виртуальной машины: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload.
-> [!NOTE]
-> Для датчиков Azure ATP в конфигурации сетевого адаптера нужно отключить только параметр **IPv4 TSO Offload**.
+Установите для следующего параметра значение **Disabled** (Отключено) в конфигурации сетевого адаптера виртуальной машины: **IPv4 TSO Offload**.
 
  ![Проблема с датчиком VMware](./media/vm-sensor-issue.png)
 
