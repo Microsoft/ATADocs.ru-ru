@@ -1,33 +1,33 @@
 ---
-title: Автоматическая установка Advanced Threat Analytics | Документация Майкрософт
-description: Здесь описывается автоматическая установка ATA.
+title: Автоматическая установка Advanced Threat Analytics | Документация Майкрософт
+description: В этой статье описывается автоматическая установка ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 08/28/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9778cfa171ca6f5bc9b7597af935d15456504c62
-ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.openlocfilehash: 51234265f30cb71c0421a9aa80a9288fe7a77b2e
+ms.sourcegitcommit: 91ab82b0813a5e7c6ec94f1766f909ef9a524d32
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70076680"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442157"
 ---
 # <a name="ata-silent-installation"></a>Автоматическая установка ATA
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 Эта статья содержит указания по автоматической установке ATA.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
-Для ATA версии 1.8 требуется установить платформу Microsoft .NET Framework 4.6.1. 
+Для ATA версии 1,9 требуется установка Microsoft .NET Framework 4.6.1. 
 
 При установке или обновлении ATA платформа .NET Framework 4.6.1 автоматически устанавливается в составе развертывания Microsoft ATA.
 
@@ -42,7 +42,7 @@ ms.locfileid: "70076680"
 
 Для установки центра ATA используйте приведенную ниже команду.
 
-**Синтаксис**
+**Синтаксис**:
 
     "Microsoft ATA Center Setup.exe" [/quiet] [/Help] [--LicenseAccepted] [NetFrameworkCommandLineArguments="/q"] [InstallationPath="<InstallPath>"] [DatabaseDataPath= "<DBPath>"] [CenterIpAddress=<CenterIPAddress>] [CenterPort=<CenterPort>] [CenterCertificateThumbprint="<CertThumbprint>"] 
     [ConsoleIpAddress=<ConsoleIPAddress>] [ConsoleCertificateThumbprint="<CertThumbprint >"]
@@ -51,28 +51,28 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Название|Синтаксис|Обязательно для автоматической установки?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
+> |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
 > |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|Да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
-> |LicenseAccepted|--LicenseAccepted|Да|Указывает, что лицензия прочитана и утверждена. Необходимо задать при автоматической установке.|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
+> |LicenseAccepted|--LicenseAccepted|да|Указывает, что лицензия прочитана и утверждена. Необходимо задать при автоматической установке.|
 
 **Параметры установки**
 
 > [!div class="mx-tableFixed"]
 > 
-> |             Название             |                      Синтаксис                      | Обязательно для автоматической установки? |                                                                                                        Описание                                                                                                         |
+> |             Название             |                      Синтаксис                      | Обязательно для автоматической установки? |                                                                                                        Description                                                                                                         |
 > |------------------------------|--------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 Нет                 |                                               Задает путь для установки двоичных файлов ATA. Путь по умолчанию: C:\Program Files\Microsoft Advanced Threat Analytics\Center.                                                |
-> |       DatabaseDataPath       |           DatabaseDataPath= "<DBPath>"           |                 Нет                 |                                         Задает путь к папке данных базы данных ATA. Путь по умолчанию: C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.                                         |
+> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 Нет                 |                                               Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.                                                |
+> |       DatabaseDataPath       |           DatabaseDataPath= "<DBPath>"           |                 Нет                 |                                         Задает путь к папке данных базы данных ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.                                         |
 > |       CenterIpAddress        |        CenterIpAddress=<CenterIPAddress>         |                да                 |                                                                                       Задает IP-адрес службы центра ATA.                                                                                        |
-> |          CenterPort          |             CenterPort=<CenterPort>              |                Да                 |                                                                                      Задает сетевой порт службы центра ATA.                                                                                       |
+> |          CenterPort          |             CenterPort=<CenterPort>              |                да                 |                                                                                      Задает сетевой порт службы центра ATA.                                                                                       |
 > | CenterCertificateThumbprint  |  CenterCertificateThumbprint="<CertThumbprint>"  |                 Нет                 | Задает отпечаток сертификата для службы центра ATA. Этот сертификат используется для безопасного обмена данными между центром ATA и шлюзом ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат. |
-> |       ConsoleIpAddress       |       ConsoleIpAddress=<ConsoleIPAddress>        |                Да                 |                                                                                           Задает IP-адрес консоли ATA.                                                                                           |
+> |       ConsoleIpAddress       |       ConsoleIpAddress=<ConsoleIPAddress>        |                да                 |                                                                                           Задает IP-адрес консоли ATA.                                                                                           |
 > | ConsoleCertificateThumbprint | ConsoleCertificateThumbprint="<CertThumbprint >" |                 Нет                 |       Задает отпечаток сертификата для консоли ATA. Этот сертификат используется для проверки подлинности на веб-сайте консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.       |
 
-**Примеры.** Установка центра ATA с использованием путей установки по умолчанию и одного IP-адреса.
+**Примеры**. Установка центра ATA с использованием путей установки по умолчанию и одного IP-адреса.
 
     "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments="/q" CenterIpAddress=192.168.0.10
     CenterPort=444 ConsoleIpAddress=192.168.0.10
@@ -86,7 +86,7 @@ ms.locfileid: "70076680"
 
 Для обновления центра ATA используйте приведенную ниже команду.
 
-**Синтаксис**
+**Синтаксис**:
 
     "Microsoft ATA Center Setup.exe" [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
 
@@ -95,22 +95,22 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Название|Синтаксис|Обязательно для автоматической установки?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
+> |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
 > |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|Да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
 
 
 При обновлении ATA установщик автоматически обнаруживает, что ATA уже установлена на сервере и что установка обновления не требуется.
 
-**Примеры.** Автоматическое обновление центра ATA. В больших средах обновление центра ATA может занять некоторое время. Просматривайте журналы ATA, чтобы отслеживать ход выполнения обновления.
+**Примеры**. Автоматическое обновление центра ATA. В больших средах обновление центра ATA может занять некоторое время. Просматривайте журналы ATA, чтобы отслеживать ход выполнения обновления.
 
         "Microsoft ATA Center Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 
 ## <a name="uninstall-the-ata-center-silently"></a>Автоматическое удаление центра ATA
 
-Для автоматического удаления центра ATA используйте приведенную ниже команду. **Синтаксис**
+Для автоматического удаления центра ATA используйте следующую команду: **Синтаксис**:
 
     Microsoft ATA Center Setup.exe [/quiet] [/Uninstall] [/Help]
      [--DeleteExistingDatabaseData]
@@ -119,21 +119,21 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматического удаления?|Описание|
+> |Название|Синтаксис|Обязательно для автоматического удаления?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
-> |Удаление|/uninstall|Да|Запускает автоматическое удаление центра ATA с сервера.|
-> |Help|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
+> |Quiet|/quiet|да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
+> |Uninstall|/uninstall|да|Запускает автоматическое удаление центра ATA с сервера.|
+> |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
 
 **Параметры установки**
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматического удаления?|Описание|
+> |Название|Синтаксис|Обязательно для автоматического удаления?|Description|
 > |-------------|----------|---------|---------|
 > |DeleteExistingDatabaseData|DeleteExistingDatabaseData|Нет|Удаляет все файлы в имеющейся базе данных.|
 
-**Примеры.** Автоматическое удаление центра ATA с сервера и всех имеющихся данных базы данных.
+**Примеры**. Автоматическое удаление центра ATA с сервера и всех имеющихся данных базы данных.
 
 
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
@@ -146,7 +146,7 @@ ms.locfileid: "70076680"
 
 Для автоматической установки шлюза ATA используйте приведенную ниже команду.
 
-**Синтаксис**
+**Синтаксис**:
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"] 
     [ConsoleAccountName="<AccountName>"] 
@@ -160,22 +160,23 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Название|Синтаксис|Обязательно для автоматической установки?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
+> |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
 > |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|Да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
 
 **Параметры установки**
 
 > [!div class="mx-tableFixed"]
 > 
-> |          Название          |                   Синтаксис                   | Обязательно для автоматической установки? |                                                      Описание                                                       |
+> |          Название          |                   Синтаксис                   | Обязательно для автоматической установки? |                                                      Description                                                       |
 > |------------------------|--------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-> |   ConsoleAccountName   |     ConsoleAccountName="<AccountName>"     |                Да                 |   Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.    |
-> | ConsoleAccountPassword | ConsoleAccountPassword="<AccountPassword>" |                Да                 | Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA. |
+> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 Нет                 |                                               Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.
+> |   ConsoleAccountName   |     ConsoleAccountName="<AccountName>"     |                да                 |   Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.    |
+> | ConsoleAccountPassword | ConsoleAccountPassword="<AccountPassword>" |                да                 | Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA. |
 
-**Примеры.** Чтобы автоматически установить шлюз ATA, выполните вход в присоединенный к домену компьютер с помощью учетных данных администратора ATA. При этом во время установки вводить учетные данные не потребуется. В противном случае необходимо выполнить регистрацию в центре ATA с помощью указанных учетных данных.
+**Примеры**. Чтобы автоматически установить шлюз ATA, выполните вход в присоединенный к домену компьютер с помощью учетных данных администратора ATA. При этом во время установки вводить учетные данные не потребуется. В противном случае необходимо выполнить регистрацию в центре ATA с помощью указанных учетных данных.
 
     "Microsoft ATA Gateway Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
@@ -185,7 +186,7 @@ ms.locfileid: "70076680"
 
 Для автоматического обновления шлюза ATA используйте приведенную ниже команду.
 
-**Синтаксис**
+**Синтаксис**:
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
 
@@ -194,20 +195,23 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматической установки?|Описание|
+> |Название|Синтаксис|Обязательно для автоматической установки?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
+> |Quiet|/quiet|да|Запускает установщик, не отображая пользовательский интерфейс и запросы.|
 > |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|Да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|да|Задает параметры для установки платформы .NET Framework. Необходимо задать, чтобы применить автоматическую установку платформы .NET Framework.|
 
 
-**Примеры.** Автоматическое обновление шлюза ATA.
+**Примеры**. Автоматическое обновление шлюза ATA.
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
 ## <a name="uninstall-the-ata-gateway-silently"></a>Автоматическое удаление шлюза ATA
 
-Для автоматического удаления шлюза ATA используйте приведенную ниже команду. **Синтаксис**
+Для автоматического удаления шлюза ATA используйте приведенную ниже команду.
+
+
+**Синтаксис**:
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Uninstall] [/Help]
 
@@ -215,13 +219,13 @@ ms.locfileid: "70076680"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Название|Синтаксис|Обязательно для автоматического удаления?|Описание|
+> |Название|Синтаксис|Обязательно для автоматического удаления?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
-> |Удаление|/uninstall|Да|Запускает автоматическое удаление шлюза ATA с сервера.|
+> |Quiet|/quiet|да|Запускает программу удаления, не отображая пользовательский интерфейс и подсказки.|
+> |Uninstall|/uninstall|да|Запускает автоматическое удаление шлюза ATA с сервера.|
 > |Справка|/help|Нет|Предоставляет справку и краткий справочник. Отображает правильное использование команды установки, включая все варианты и особенности использования.|
 
-**Примеры.** Автоматическое удаление шлюза ATA с сервера.
+**Примеры**. Автоматическое удаление шлюза ATA с сервера.
 
 
     Microsoft ATA Gateway Setup.exe /quiet /uninstall
@@ -235,7 +239,7 @@ ms.locfileid: "70076680"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
