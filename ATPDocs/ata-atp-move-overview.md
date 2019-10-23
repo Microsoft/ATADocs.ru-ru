@@ -5,24 +5,26 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/02/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: dbc177aea1c237150542684885bc58d23382bf5f
-ms.sourcegitcommit: 37299ed90b4bc7bf81f7065d0969bb8fb92622f0
+ms.openlocfilehash: f54c60f97c9489934f0ac0a40b3b27780e6a60d9
+ms.sourcegitcommit: dd8db49bc54acc5483a3fa889379230d144b0623
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518139"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690238"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP) 
 
 
 Это руководство поможет вам перейти с существующей установки ATA на службу "Расширенная защита от угроз Azure" (Azure ATP). В нем приведены предварительные и основные требования к Azure ATP и подробно описано планирование и выполнение перехода. Кроме того, здесь приведены необходимые действия по проверке, а также советы по использованию новейших решений безопасности и защиты от угроз в сочетании с Azure ATP после установки службы. 
+
+Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP] (https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp).
 
 В руководстве описаны следующие действия: 
 
@@ -71,7 +73,7 @@ ms.locfileid: "67518139"
 > [!NOTE]
 > Не удаляйте центр ATA, пока не будут удалены все шлюзы ATA. Если удалить центр ATA с еще работающими шлюзами ATA, то ваша организация останется без защиты от угроз.
 
-## <a name="move"></a>Переход 
+## <a name="move"></a>Переместить 
 
 Выполните переход на Azure ATP в два простых шага:
 
@@ -93,7 +95,7 @@ ms.locfileid: "67518139"
 >[!NOTE]
 > Некоторые задачи в следующем списке невозможно выполнить до установки датчиков Azure ATP и последующей начальной синхронизации, например, невозможно выбрать объекты и пометить их как **конфиденциальные** вручную. Запланируйте до двух часов времени на выполнение начальной синхронизации. 
 
-#### <a name="configuration"></a>Настройка
+#### <a name="configuration"></a>Конфигурация
 
 Войдите на портал Azure ATP и выполните следующие задачи по настройке.
 
