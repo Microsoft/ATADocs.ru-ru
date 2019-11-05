@@ -8,6 +8,8 @@
       href: atp-architecture.md
     - name: "Предварительные требования для Azure\_ATP"
       href: atp-prerequisites.md
+    - name: "Azure\_ATP для государственных организаций\_США"
+      href: atp-us-govt-gcc-high.md
     - name: "Новые возможности Azure\_ATP"
       href: atp-whats-new.md
 - name: Краткие руководства
