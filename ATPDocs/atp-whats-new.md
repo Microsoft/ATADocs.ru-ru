@@ -5,25 +5,44 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/22/2019
+ms.date: 10/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d322c9b0352319e8511414e042d340acbbccd371
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.openlocfilehash: 049f01e0cb4de7a2b308d293a4d36e0891a8e815
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997555"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462345"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
 В этой часто обновляемой статье можно узнать о новых возможностях последних выпусков Azure ATP.
 
-RSS-канал. Получайте уведомления об обновлении этой страницы, скопировав и вставив следующую ссылку в средство чтения веб-каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+RSS-канал. Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: <br>`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+
+Выпущен 3 ноября 2019 г.
+## <a name="azure-atp-release-299"></a>Azure ATP, выпуск 2.99
+
+- **Расширение функциональности:  В пользовательский интерфейс добавлено уведомление о доступности портала Cloud App Security на портале Azure ATP** <br> 
+    Чтобы гарантировать осведомленность всех пользователей о доступности улучшенных функций с использованием портала Cloud App Security, для портала было добавлено уведомление из существующей временной шкалы оповещений Azure ATP. 
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+
+Дата выпуска: 27 октября 2019 г.
+## <a name="azure-atp-release-298"></a>Azure ATP, выпуск 2.98
+
+- **Расширение функциональности: Оповещение о предполагаемой атаке методом подбора** <br> 
+    Улучшено оповещение о [предполагаемой атаке методом подбора (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) с применением дополнительного анализа. Также оптимизирована логика обнаружения, что позволило уменьшить количество **истинноположительных (B-TP)** и **ложноположительных (FP)** результатов оповещений. 
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 
 Дата выпуска: 6 октября 2019 г.
 ## <a name="azure-atp-release-297"></a>Azure ATP, выпуск 2.97

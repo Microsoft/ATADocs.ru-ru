@@ -3,18 +3,18 @@ title: Краткое руководство по установке датчи�
 description: На четвертом шаге установки Azure ATP выполняется установка датчика Azure ATP.
 author: mlottner
 ms.author: mlottner
-ms.date: 03/03/2019
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f3af1034b73d1fc058a966c5d90eaf24dd282140
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 7e2aed8b53f44ab2326e70cea02e9af384648500
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71004879"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462305"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -38,6 +38,8 @@ ms.locfileid: "71004879"
       - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
       - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
       - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+   - GCC High в США
+      - [https://triff1wcva1sensorapi.atp.azure.us](https://triff1wcva1sensorapi.atp.azure.us)
    - Азия
       - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)
 

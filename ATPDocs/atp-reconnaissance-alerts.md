@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 848922f0fb7d31a72d3dc2f8371a39be3b125ad0
-ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
+ms.openlocfilehash: 442bad8e2dc7c587e665a233083859e86185d3e7
+ms.sourcegitcommit: e25979884395e7143492d604b7d195649aff410c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403585"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73046925"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  
 
@@ -198,6 +198,8 @@ ms.locfileid: "66403585"
 2. Установите обязательное использование [длинных и сложных паролей для пользователей с учетными записями субъектов-служб](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length).  
 3. [Замените учетную запись пользователя на групповую управляемую учетную запись службы (gMSA)](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview). 
 
+> [!NOTE]
+> Оповещения рекогносцировки субъекта безопасности (LDAP) поддерживаются только датчиками ATP.
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>Разведывательная атака с использованием пользователя и IP-адреса (SMB) (внешний код 2012) 
 

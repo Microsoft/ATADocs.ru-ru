@@ -4,18 +4,18 @@ description: Краткое руководство по созданию экз�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-ms.date: 02/05/2019
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d1850a6b15366ab441f6a8528bf7b75dabb97aa
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 18a9feba8344ce88c4afb2ed3911b51aea0b9e07
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263988"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462333"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>Краткое руководство. создание экземпляра Azure ATP;
 
@@ -35,9 +35,11 @@ ms.locfileid: "56263988"
 
 После проверки сети на соответствие требованиям датчика можно приступить к созданию экземпляра Azure ATP.
 
-1. Перейдите на [портал Azure ATP](https://portal.atp.azure.com).
+1. Перейдите на [портал Azure ATP](https://portal.atp.azure.com)*.
 
 2. Войдите в систему по учетной записи пользователя Azure Active Directory.
+
+* Клиенты GCC High могут использовать портал [Azure ATP GCC High](http://portal.atp.azure.us).  
 
 ## <a name="create-your-instance"></a>Создание экземпляра
 
