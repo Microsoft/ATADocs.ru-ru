@@ -5,22 +5,31 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 10/07/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 049d125e8d9cd458f2116c61770893d4b2d596e8
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.openlocfilehash: d764d466e0981c673874386d7b28019f48d79827
+ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997579"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618421"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP 
 
+
+## <a name="sensor-failure-communication-error"></a>Ошибка связи из-за сбоя датчика
+Если вы получили следующую ошибку о сбое датчика, выполните описанные ниже действия: 
+
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Не удалось подключиться к удаленному серверу. ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+
+**Решение:**
+
+Убедитесь, что для localhost (TCP-порт 444) не заблокирован обмен данными. Дополнительные сведения о предварительных требованиях Azure ATP см. в разделе [Порты](atp-prerequisites.md#ports).
 
 ## <a name="deployment-log-location"></a>Расположение журнала развертывания
  

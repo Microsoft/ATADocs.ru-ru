@@ -5,21 +5,21 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/23/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 763f27e9fb3e134f97b716306c747ecce7edf411
-ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
+ms.openlocfilehash: 7c1dfa8cfda0bb6fb39770a58a7cc1b54dbc2298
+ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71217669"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618434"
 ---
-# <a name="azure-atp-prerequisites"></a>Предварительные требования к Azure ATP
+# <a name="azure-atp-prerequisites"></a>Предварительные требования для Azure ATP
 
 В этой статье описываются требования для успешного развертывания Azure ATP в среде.
 
@@ -140,6 +140,7 @@ Azure ATP защищает локальных и синхронизирован
 |------------|-------------|--------|-----------|-------------|
 |**Интернет-порты**|||||
 |SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
+|SSL (localhost)|TCP|444|localhost|Оба варианта|
 |**Внутренние порты**|||||
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Все устройства в сети|Исходящее|
@@ -230,7 +231,7 @@ Azure ATP защищает локальных и синхронизирован
 
 
 ## <a name="see-also"></a>См. также
-- [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
+- [Средство изменения размера Azure ATP](https://aka.ms/aatpsizingtool)
 - [Архитектура Azure ATP](atp-architecture.md)
 - [Установка Azure ATP](install-atp-step1.md)
 - [Разрешение сетевых имен (NNR)](atp-nnr-policy.md)
