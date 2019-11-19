@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 0d149b74724ecddcce88bc932626d6bd395d4202
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.openlocfilehash: b9fa681e61d7e723ca3c942e406ed61c837cfe44
+ms.sourcegitcommit: 814af2addf833d40d10f7594275a132f888eea9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73618491"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74153129"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>Краткое руководство. Планирование производительности для Azure ATP
 
@@ -77,8 +77,9 @@ ms.locfileid: "73618491"
 |10–20 тыс.|2,00|9,00|
 |20–50 тыс.|3,50|9,50|
 |50–75 тыс. |3,50|9,50|
-|75–100 тыс.|3,50 |9,50|
+|75–100 тыс.|3,50|9,50|
 |
+
 ** К ним относятся физические ядра, а не ядра с поддержкой технологии Hyper-Threading. 
 
 При определении размера, учитывайте следующие моменты: 
