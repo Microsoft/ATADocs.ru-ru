@@ -12,14 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 190cdecd8ec0835c84329157f2e3a7c76b8b9ebe
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 158f714602f3add5e23b12a2f3713e9feb4a4bc3
+ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71005009"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74206217"
 ---
-# <a name="security-assessment-dormant-entities-in-sensitive-groups---preview"></a>Оценка безопасности: неактивные сущности в **конфиденциальных** группах — предварительная версия
+# <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>Оценка безопасности: неактивные сущности из **конфиденциальных** групп 
 
 ## <a name="what-are-sensitive-dormant-entities"></a>Что такое **конфиденциальные** неактивные сущности? 
 Azure ATP обнаруживает **конфиденциальные** данные отдельных пользователей и предоставляет атрибуты, которые отображаются, если такие сущности неактивны, отключены или просрочены. 
