@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: b9fa681e61d7e723ca3c942e406ed61c837cfe44
-ms.sourcegitcommit: 814af2addf833d40d10f7594275a132f888eea9b
+ms.openlocfilehash: b07800cfc3b2df6fdb290fff27a9e807be15056f
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74153129"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540888"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>Краткое руководство. Планирование производительности для Azure ATP
 
@@ -31,7 +31,7 @@ ms.locfileid: "74153129"
 
 1. Запустите средство изменения размера Azure ATP **TriSizingTool.exe** из скачанного ZIP-файла. 
 2. Когда средство завершит работу, откройте файл Excel с результатами.
-3. В файле Excel найдите и щелкните лист **Azure ATP Summary** (Сводка Azure ATP). Другие листы не понадобятся, так как они используются при планировании ресурсов Azure ATA.
+3. В файле Excel найдите и щелкните лист **Azure ATP Summary** (Сводка Azure ATP). Другие листы не понадобятся, так как они используются при планировании ресурсов ATA.
    ![Пример средства планирования емкости](media/capacity-tool.png)
 
 4. В файле Excel с результатами найдите поле **Busy Packets/sec** (Кол-во занятых пакетов/с) в таблице датчика Azure ATP и запишите его значение.
