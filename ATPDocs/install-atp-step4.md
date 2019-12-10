@@ -10,10 +10,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 7e2aed8b53f44ab2326e70cea02e9af384648500
-ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73462305"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP

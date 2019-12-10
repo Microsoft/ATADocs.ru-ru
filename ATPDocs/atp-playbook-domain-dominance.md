@@ -8,10 +8,10 @@ ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "59745605"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>Руководство. Сборник схем захвата управления доменом

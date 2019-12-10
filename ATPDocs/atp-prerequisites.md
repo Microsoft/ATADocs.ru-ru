@@ -13,10 +13,10 @@ ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 7c1dfa8cfda0bb6fb39770a58a7cc1b54dbc2298
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73618434"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования для Azure ATP

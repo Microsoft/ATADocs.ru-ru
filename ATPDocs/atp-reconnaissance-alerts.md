@@ -13,10 +13,10 @@ ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: b19abab8774f79d18b9d82b4048625dd72b3af43
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206228"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках  

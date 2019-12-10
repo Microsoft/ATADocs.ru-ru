@@ -10,10 +10,10 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.openlocfilehash: 538053c1033c1e6fc04fd80a6d6a009a6fe5347f
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "59745785"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика Azure ATP

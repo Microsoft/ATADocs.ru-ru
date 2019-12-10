@@ -13,10 +13,10 @@ ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f7ab5a51fc599280a9a21181efc72684230d3c3a
-ms.sourcegitcommit: ecf2d5e83f550a73dabed135d27b34edc15d57db
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71682231"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях

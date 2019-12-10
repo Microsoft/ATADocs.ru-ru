@@ -11,10 +11,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 18a9feba8344ce88c4afb2ed3911b51aea0b9e07
-ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73462333"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>Краткое руководство. создание экземпляра Azure ATP;

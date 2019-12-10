@@ -13,10 +13,10 @@ ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 77c85c161ac3a62f67a1bc0983544f6dcef5e596
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196964"
 ---
 # <a name="excluding-entities-from-detections"></a>Исключение сущностей из результатов обнаружения

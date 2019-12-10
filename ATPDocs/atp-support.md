@@ -13,10 +13,10 @@ ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 2c4ffed61b490099f6d041c333e318c8d3286fb1
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196926"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 

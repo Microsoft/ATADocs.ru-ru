@@ -13,10 +13,10 @@ ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 158f714602f3add5e23b12a2f3713e9feb4a4bc3
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206217"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>Оценка безопасности: неактивные сущности из **конфиденциальных** групп 

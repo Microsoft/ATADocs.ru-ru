@@ -13,10 +13,10 @@ ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 704e372952d1b02fdcf6564bad26ebc4c7d184f2
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196878"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>Руководство. Предупреждения о краже данных  

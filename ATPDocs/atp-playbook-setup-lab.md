@@ -8,10 +8,10 @@ ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: 9ae630711b6ee7b7f84a233998d188e498af0a9e
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "59745604"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
@@ -128,7 +128,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![Теги сущностей Azure ATP](media/entity-tags.png)
 
-3. В разделе **Конфиденциально** введите имя Helpdesk для **конфиденциальных групп**,а затем щелкните значок **+**, чтобы добавить их.
+3. В разделе **Конфиденциально** введите имя Helpdesk для **конфиденциальных групп**,а затем щелкните значок **+** , чтобы добавить их.
 
     ![Отметьте Helpdesk в качестве привилегированной группы Azure ATP, чтобы включить графики бокового смещения и отчеты для этой группы.](media/playbook-labsetup-helpdesksensitivegroup.png)
 

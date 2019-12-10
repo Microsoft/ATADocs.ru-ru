@@ -13,10 +13,10 @@ ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e2e3b35373bdfaaa0d13c1c175deea12bf24a34d
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195455"
 ---
 # <a name="azure-atp-role-groups"></a>Группы ролей Azure ATP

@@ -13,10 +13,10 @@ ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d45d08cc2a059fa231194f7aa334d4f557996ba4
-ms.sourcegitcommit: f7c75bc5715c5bda0b3110364e2aebddddce8a13
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70209184"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Коммутаторы и автоматическая установка Azure ATP

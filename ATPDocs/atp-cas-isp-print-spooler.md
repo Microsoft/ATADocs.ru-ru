@@ -13,10 +13,10 @@ ms.assetid: 1a7d9525-8923-4dae-af51-02a68aa61644
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 73f876a047ed48526e26cd9b3758077331dca05d
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206238"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>Оценка безопасности: служба очереди печати принтера на контроллерах домена 

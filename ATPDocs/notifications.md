@@ -13,10 +13,10 @@ ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 5aaf4ad892944b81944639c1f401c0ea9e127bf6
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196694"
 ---
 # <a name="set-azure-atp-notifications"></a>Настройка уведомлений Azure ATP

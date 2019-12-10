@@ -13,10 +13,10 @@ ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 2342a10f932664568065d2ef906d863a875c8096
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196449"
 ---
 # <a name="working-with-sensitive-accounts"></a>Работа с конфиденциальными учетными записями
@@ -56,7 +56,7 @@ ms.locfileid: "65196449"
 
     ![Теги сущностей Azure ATP](media/entity-tags.png)
 
-3.  В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп**, а затем щелкните значок **+**, чтобы добавить их.
+3.  В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп**, а затем щелкните значок **+** , чтобы добавить их.
 
     ![Пример конфиденциальной учетной записи Azure ATP](media/sensitive-account-sample.png)
 

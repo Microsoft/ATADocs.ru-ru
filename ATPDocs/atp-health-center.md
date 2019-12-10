@@ -13,10 +13,10 @@ ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: b1ad4963e3863cd89a78834e8fc98cec3490b1b0
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195595"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>Работа с состоянием работоспособности и событиями Azure ATP

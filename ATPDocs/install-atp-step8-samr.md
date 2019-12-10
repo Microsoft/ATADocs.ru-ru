@@ -13,10 +13,10 @@ ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 95579a90534a04449edd08968948498c4d33bb64
-ms.sourcegitcommit: 5d93b0e59080c2d872672bf77a1a40c548c1016d
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65760309"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>Настройка Azure ATP для выполнения удаленных вызовов SAM

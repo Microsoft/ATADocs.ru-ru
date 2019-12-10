@@ -13,10 +13,10 @@ ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d51447eafcd6e267fef65798ff25e2f75fb71ec2
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196481"
 ---
 # <a name="azure-atp-reports"></a>Отчеты Azure ATP

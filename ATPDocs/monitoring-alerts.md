@@ -13,10 +13,10 @@ ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 65279895689e230a3a28871a61f4cffe36d6042c
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68298759"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>Общие сведения об оповещениях мониторинга датчика и автономного датчика Azure ATP

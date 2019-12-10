@@ -13,10 +13,10 @@ ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: d3eb36b75e9500920bdaea70864839a5de7e3de1
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196415"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов

@@ -13,10 +13,10 @@ ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 408c46d620f7b7f5da21d9dcfaf17097660dcc4c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196366"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
@@ -79,7 +79,7 @@ ms.locfileid: "65196366"
 3. Для датчиков без заданного **отложенного обновления** запускается процесс обновления.
    1. Служба обновления датчиков Azure ATP получает обновленную версию из облачной службы (в формате CAB-файла).
    2. Служба обновления датчиков Azure ATP проверяет сигнатуру файла.
-   3. Служба обновления датчиков Azure ATP извлекает CAB-файл в новую папку в каталоге установки датчика. По умолчанию это *C:\Program Files\Azure Advanced Threat Protection Sensor\<номер версии>*.
+   3. Служба обновления датчиков Azure ATP извлекает CAB-файл в новую папку в каталоге установки датчика. По умолчанию это *C:\Program Files\Azure Advanced Threat Protection Sensor\<номер версии>* .
    4. Служба датчиков Azure ATP указывает на новые файлы, извлеченные из CAB-файла.    
    5. Служба обновления датчиков Azure ATP перезапускает службу датчиков Azure ATP.
        > [!NOTE]
