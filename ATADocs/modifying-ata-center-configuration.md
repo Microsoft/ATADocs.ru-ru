@@ -12,10 +12,10 @@ ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 8a228463c422ac7f62d3fc18395aa0b61df0a731
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196019"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>Изменение конфигурации центра ATA
