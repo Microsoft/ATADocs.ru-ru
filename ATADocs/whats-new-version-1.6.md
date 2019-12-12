@@ -13,10 +13,10 @@ ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196972"
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
@@ -27,17 +27,17 @@ ms.locfileid: "65196972"
 
 -   новые обнаружения;
 
--   улучшения имеющихся обнаружений;
+-   улучшения имеющихся обнаружений.
 
--   упрощенный шлюз ATA;
+-   Упрощенный шлюз ATA.
 
--   автоматические обновления;
+-   Автоматические обновления
 
 -   улучшение производительности центра ATA;
 
 -   более низкие требования к хранению;
 
--   поддержка IBM QRadar;
+-   поддержка IBM QRadar.
 
 ### <a name="new-detections"></a>новые обнаружения;
 
@@ -58,7 +58,7 @@ ms.locfileid: "65196972"
 - **Необычная реализация протокола**. Обычно запросы на проверку подлинности (Kerberos или NTLM) выполняются с использованием набора стандартных протоколов и методов. Однако для успешной аутентификации запрос должен удовлетворять только определенным требованиям. Злоумышленники могут внедрить эти протоколы в среду, немного изменив их. По этим изменениям можно определить попытку атаки злоумышленника (Pass-The-Hash, атака методом подбора и т. д.).
 
 
-### <a name="improvements-to-existing-detections"></a>Улучшения имеющихся обнаружений.
+### <a name="improvements-to-existing-detections"></a>улучшения имеющихся обнаружений.
 В ATA 1.6 реализована улучшенная логика обнаружения, благодаря которой сокращается количество ложно-положительных и ложно-отрицательных результатов для имеющихся обнаружений, например при атаках Golden Ticket, атаках с использованием учетной записи honeytoken, атаках методом подбора и атаках с удаленным выполнением.
 
 ### <a name="the-ata-lightweight-gateway"></a>Упрощенный шлюз ATA.
@@ -70,13 +70,13 @@ ms.locfileid: "65196972"
 
 ### <a name="automatic-updates"></a>Автоматические обновления
 Начиная с версии 1.6, центр ATA можно обновить с помощью Центра обновления Майкрософт. Кроме того, теперь шлюзы ATA можно автоматически обновить с использованием стандартного коммуникационного канала в центре ATA.
-### <a name="improved-ata-center-performance"></a>Улучшение производительности центра ATA
+### <a name="improved-ata-center-performance"></a>улучшение производительности центра ATA;
 Благодаря сниженной нагрузке на базу данных и более эффективному способу выполнения обнаружения в этой версии в одном центре ATA можно выполнять мониторинг множества контроллеров домена.
 
-### <a name="lower-storage-requirements"></a>Более низкие требования к хранению
+### <a name="lower-storage-requirements"></a>более низкие требования к хранению;
 Для работы с базой данных ATA 1.6 необходимо существенно меньше места — всего лишь 20 % дискового пространства по сравнению с предыдущими версиями.
 
-### <a name="support-for-ibm-qradar"></a>Поддержка IBM QRadar
+### <a name="support-for-ibm-qradar"></a>поддержка IBM QRadar.
 Теперь ATA может получать события не только из поддерживаемых решений SIEM, но и из решения SIEM QRadar от IBM.
 
 ## <a name="known-issues"></a>Известные проблемы
@@ -99,11 +99,11 @@ ms.locfileid: "65196972"
 ### <a name="migration-failure-when-updating-from-ata-15"></a>Сбой миграции при обновлении ATA 1.5
 При обновлении ATA до версии 1.6 может произойти сбой и отобразится следующее сообщение об ошибке с кодом:
 
-![Ошибка обновления ATA до 1.6](http://i.imgur.com/QrLSApr.png). Если вы видите эту ошибку, просмотрите журнал развертывания в папке **C:\Users\<User>\AppData\Local\Temp** и найдите следующее исключение:
+![Ошибка обновления ATA до 1.6](http://i.imgur.com/QrLSApr.png) При возникновении этой ошибки откройте журнал развертывания в каталоге **C:\Users\<User>\AppData\Local\Temp** и найдите следующее исключение:
 
     System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MongoDB.Driver.MongoWriteException: A write operation resulted in an error. E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : "<guid>" } ---> MongoDB.Driver.MongoBulkWriteException`1: A bulk write operation resulted in one or more errors.  E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : " <guid> " }
 
-Вы можете также увидеть следующую ошибку: System.ArgumentNullException: значение не может быть равно NULL.
+Также может появиться следующая ошибка: System.ArgumentNullException: значение не может быть NULL.
     
 Если вы видите одну из этих ошибок, запустите следующий обходной путь:
 
@@ -121,9 +121,9 @@ ms.locfileid: "65196972"
     1.  MongoDB
     2.  центр Microsoft Advanced Threat Analytics;
 7.  Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
-8.  [Скачивание](http://aka.ms/ataremoveduplicateprofiles "Скачайте") инструмент RemoveDuplicateProfiles.exe и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center).
+8.  [Скачайте](http://aka.ms/ataremoveduplicateprofiles "Скачать") средство "его. exe" и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat analytics\center.).
 9.  Из командной строки с повышенными привилегиями запустите файл `RemoveDuplicateProfiles.exe` и дождитесь его успешного выполнения.
-10. В каталоге …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin **Mongo ATA** введите следующую команду:
+10. Здесь: каталог …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin: **Mongo ATA** введите следующую команду:
 
           db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
@@ -141,7 +141,7 @@ ms.locfileid: "65196972"
 Новый усовершенствованный механизм обнаружения использует внутреннюю технологию обнаружения, благодаря чему можно выявлять проблемы без обращения к сетевым операциям в журнале. Таким образом производительность центра ATA существенно повышается. Это также означает, что при обновлении не нужно переносить сетевые операции в журнале.
 При обновлении ATA данные экспортируются в `<Center Installation Path>\Migration` в качестве JSON-файла (если они понадобятся для изучения в будущем).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)

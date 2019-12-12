@@ -13,15 +13,15 @@ ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: e2e57f5816ff1f250ba04cddb65848b31673a71e
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196322"
 ---
 # <a name="ata-database-management"></a>Управление базой данных ATA
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 Из этой статьи вы узнаете, как перемещать и восстанавливать базу данных ATA, а также создавать ее резервные копии на примере MongoDB.
 
@@ -39,7 +39,7 @@ ms.locfileid: "65196322"
 
 2. Остановите службу **MongoDB**.
 
-3. Откройте файл конфигурации Mongo. Путь по умолчанию — C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg.
+3. Откройте файл конфигурации Mongo: C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg (расположение по умолчанию).
 
    Найдите параметр `storage: dbPath`.
 
@@ -53,7 +53,7 @@ ms.locfileid: "65196322"
 
 7. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Архитектура ATA](ata-architecture.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

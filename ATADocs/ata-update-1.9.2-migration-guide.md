@@ -12,10 +12,10 @@ ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 22420ea90bc922684a4e99ad303bba831f3a45e7
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196078"
 ---
 # <a name="ata-version-192"></a>ATA версии 1.9.2
@@ -45,7 +45,7 @@ ms.locfileid: "65196078"
 
 ## <a name="get-this-update"></a>Получение обновления
 
-Чтобы скачать автономный пакет с этим обновлением, перейдите на веб-сайт Центра загрузки Майкрософт: [Скачать пакет ATA 1.9.2](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
+Чтобы получить автономный пакет для этого обновления, перейдите на веб-сайт центра загрузки Майкрософт: [скачайте пакет ATA 1.9.2](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
 
 ### <a name="prerequisites"></a>Предварительные условия
 
@@ -64,7 +64,7 @@ ms.locfileid: "65196078"
 Это обновление заменяет ATA версии 1.9.1 (1.9.7412).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

@@ -1,5 +1,5 @@
 ---
-title: Какие угрозы обнаруживает решение Advanced Threat Analytics? | Документация Майкрософт
+title: Какие угрозы обнаруживает решение Advanced Threat Analytics? | Microsoft Docs
 description: Список угроз, которые обнаруживает Advanced Threat Analytics
 keywords: ''
 author: rkarlin
@@ -13,16 +13,16 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: f656ab40b55ab0abb226cac9f3a6818e5cadee89
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196514"
 ---
 # <a name="what-threats-does-ata-look-for"></a>Типы угроз, которые ищет ATA
 
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 ATA обнаруживает события на следующих этапах продвинутой атаки: разведка, компрометация учетных данных, боковое смещение, повышение привилегий, полное управление доменом и т. д. При этом продвинутые атаки и внутренние угрозы обнаруживаются, прежде чем они смогут нанести ущерб организации.
 На каждом этапе выявляется несколько подозрительных действий, которые относятся к проверяемому этапу. При этом каждое подозрительное действие сопоставляется с различными видами возможных атак.
@@ -36,10 +36,10 @@ ATA обнаруживает события на следующих этапах
 
 ## <a name="whats-next"></a>Дальнейшие действия
 
--   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md)
+-   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
 
--   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md)
+-   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

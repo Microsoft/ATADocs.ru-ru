@@ -13,10 +13,10 @@ ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: c0658b0d9320116bf8a752ce360994946300947a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195734"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
@@ -43,11 +43,11 @@ ms.locfileid: "65195734"
 В этой версии существуют следующие проблемы.
 
 ### <a name="new-ata-gateway-installation-fails"></a>Сбой установки нового шлюза ATA
-После обновления развертывания ATA до версии 1.5 возникает ошибка при установке нового шлюза ATA: Шлюз Microsoft Advanced Threat Analytics не установлен.
+После обновления развертывания ATA до версии 1.5 возникает ошибка при установке нового шлюза ATA: Microsoft Advanced Threat Analytics Gateway is not installed (Шлюз Microsoft Advanced Threat Analytics не установлен).
 
 ![Ошибка шлюза ATA](media/ata-install-error.png)
 
-<b>Обходной путь</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
+<b>Решение</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
 ### <a name="deployment"></a>Deployment (Развертывание)
 Папка, указанная в параметрах "Путь к данным базы данных" и "Путь к журналу базы данных", должна быть пустой (никаких файлов или подпапок).
 Если она не пустая, развертывание не выполнится.
@@ -59,12 +59,12 @@ ms.locfileid: "65195734"
 Когда конфигурация шлюза ATA настроена, при первом запуске шлюза ATA надпись "Не синхронизировано" будет отображаться до тех пор, пока служба полностью не запустится. При первом запуске службы это может занять до 10 минут.
 
 ### <a name="network-capture-software"></a>Программное обеспечение для записи сетевого трафика
-Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
+Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
 
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
 

@@ -13,15 +13,15 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: e4bd466a387906e6cedbee036f1123bfbbea3467
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195647"
 ---
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
 > [«Шаг 7](vpn-integration-install-step.md)
@@ -73,7 +73,7 @@ ms.locfileid: "65195647"
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
 - [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

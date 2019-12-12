@@ -13,15 +13,15 @@ ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 632724dd1df84e1764b5a382fce556c9d6baf43a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196313"
 ---
 # <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!NOTE] 
 > Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
@@ -70,6 +70,6 @@ ms.locfileid: "65196313"
 
 Прежде чем установить шлюз ATA, проверьте, что настроенное зеркальное отображение портов работает надлежащим образом.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Проверка зеркального отображения портов](validate-port-mirroring.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

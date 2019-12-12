@@ -13,10 +13,10 @@ metadata:
   ms.author: mlottner
   ms.date: 10/01/2019
   ms.openlocfilehash: 85fdb8c87afd48ce651983e4b52f3849b64d4454
-  ms.sourcegitcommit: 8f085179ea099a8000c982fbac39ca3f570520fb
+  ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/02/2019
+  ms.lasthandoff: 12/05/2019
   ms.locfileid: "71721097"
 landingContent:
 - title: О Advanced Threat Analytics
@@ -35,7 +35,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Оповещения системы безопасности
+    - text: Оповещения безопасности
       url: working-with-suspicious-activities.md
     - text: Оповещения о работоспособности
       url: ata-health-center.md
@@ -67,5 +67,5 @@ landingContent:
     links:
     - text: Новые возможности ATA?
       url: whats-new-version-1.9.md
-    - text: Часто задаваемые вопросы
+    - text: Вопросы и ответы
       url: ata-technical-faq.md

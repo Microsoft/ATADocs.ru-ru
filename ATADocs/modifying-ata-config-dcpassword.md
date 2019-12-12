@@ -13,15 +13,15 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 345d888047b10777239efaf96b789c477a62a81b
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197118"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>Изменение конфигурации ATA. Пароль для подключения к домену
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 
@@ -51,6 +51,6 @@ ms.locfileid: "65197118"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

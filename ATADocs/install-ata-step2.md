@@ -13,19 +13,19 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 313e0ceb9a0d49a708930dd020481262e7471404
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195934"
 ---
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 1](install-ata-step1.md)
-> [Шаг 3 »](install-ata-step3.md)
+> [Шаг 1](install-ata-step1.md)
+> [Шаг 3](install-ata-step3.md)
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>Шаг 2. Укажите имя пользователя и пароль для подключения к лесу Active Directory
 
@@ -37,9 +37,9 @@ ms.locfileid: "65195934"
 
     |Поле|Комментарии|
     |---------|------------|
-    |**Имя пользователя** (указывается обязательно)|Введите имя для пользователя с правами только на чтение, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя для имени пользователя.|
-    |**Пароль** (указывается обязательно)|Введите пароль для пользователя с правами только на чтение, например **Parolch1k**.|
-    |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание.** Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
+    |**Имя пользователя** (указывается обязательно)|Введите имя пользователя только для чтения, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя.|
+    |**Пароль** (указывается обязательно)|Введите пароль для имени пользователя только для чтения, например **Parolch1k**.|
+    |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
 
 2. Чтобы проверить подключение к домену и убедиться в том, что по указанным учетным данным можно получить доступ, можно нажать кнопку **Проверить подключение**. Работает, только если Центр ATA подключен к домену.    
 
@@ -49,17 +49,17 @@ ms.locfileid: "65195934"
 
 
 > [!div class="step-by-step"]
-> [« Шаг 1](install-ata-step1.md)
-> [Шаг 3 »](install-ata-step3.md)
+> [Шаг 1](install-ata-step1.md)
+> [Шаг 3](install-ata-step3.md)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 ## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
 - [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

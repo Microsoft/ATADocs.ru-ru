@@ -13,15 +13,15 @@ ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 6669e23e2948997c452a44bfbe4fc08d659b3e8b
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197172"
 ---
 # <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 ## <a name="troubleshooting-ata-center-service-startup"></a>Устранение неполадок при запуске службы центра ATA
 
@@ -48,7 +48,7 @@ ms.locfileid: "65197172"
 **Симптом**
 
 Шлюз ATA не запускается, и выводится следующее сообщение об ошибке:<br></br>
-*System.Net.Http.HttpRequestException: Код состояния ответа не указывает на успешное выполнение: 500 (Внутренняя ошибка сервера)*.
+*System.Net.Http.HttpRequestException: Код состояния ответа не указывает на успешное выполнение: 500 (внутренняя ошибка сервера)*
 
 **Описание**
 
@@ -62,7 +62,7 @@ ms.locfileid: "65197172"
 2. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

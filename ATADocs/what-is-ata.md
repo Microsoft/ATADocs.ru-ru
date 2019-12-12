@@ -1,5 +1,5 @@
 ---
-title: Основные сведения о решении Microsoft Advanced Threat Analytics (ATA) | Документация Майкрософт
+title: Основные сведения о решении Microsoft Advanced Threat Analytics (ATA) | Microsoft Docs
 description: Здесь описывается решение Microsoft Advanced Threat Analytics (ATA) и подозрительные действия, которые оно может обнаружить
 keywords: ''
 author: mlottner
@@ -13,15 +13,15 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 67e265c4785e5b2b3cc6fe267e72953e8817020f
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195990"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз.
 
@@ -104,15 +104,15 @@ ATA обнаруживает эти подозрительные действи�
 
 ## <a name="whats-next"></a>Дальнейшие действия
 
--   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md)
+-   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
 
--   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md)
+-   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
 
 ## <a name="related-videos"></a>Видео по теме
 - [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Сборник тренировочных заданий по реагированию на подозрительные действия ATA](http://aka.ms/ataplaybook)
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

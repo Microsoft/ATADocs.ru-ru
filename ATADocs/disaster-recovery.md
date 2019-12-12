@@ -13,15 +13,15 @@ ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: e42811432fe01e0eddcfe0acf5dc1c47a3f34379
-ms.sourcegitcommit: 4fdee32cea25e126db91ba89f09c40a3bbbc7b3b
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65044057"
 ---
 # <a name="ata-disaster-recovery"></a>Аварийное восстановление АТА
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 В этой статье описано, как быстро восстановить центр и функции ATA после сбоя, когда центр АТА отключен, а шлюзы АТА работают. 
 
@@ -51,7 +51,7 @@ ms.locfileid: "65044057"
 5. Импортируйте резервную конфигурацию центра ATA:
     1. Удалите из MongoDB документ с системным профилем центра ATA по умолчанию: 
         1. Перейдите в каталог **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**. 
-        2. Выполнить `mongo.exe ATA` 
+        2. Выполните команду `mongo.exe ATA`. 
         3. Выполните следующую команду, чтобы удалить системный профиль по умолчанию: `db.SystemProfile.remove({})`
         4. Выйдите из оболочки Mongo и вернитесь в командную строку с помощью команды `exit`
     2. Выполните команду `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`, используя файл резервной копии из шага 1.</br>
@@ -65,7 +65,7 @@ ms.locfileid: "65044057"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](install-ata-step6.md)

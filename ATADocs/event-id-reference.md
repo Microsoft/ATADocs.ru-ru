@@ -13,16 +13,16 @@ ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: a54c68f333cfc3eb47d47c66f1ded701fb855a80
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196285"
 ---
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
 
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 Средство просмотра событий центра ATA записывает события ATA в журнал. В этой статье приводится список идентификаторов событий и описание каждого из них.
 
@@ -96,7 +96,7 @@ ms.locfileid: "65196285"
 |3006|Изменение состояния действия работоспособности вручную|
 |3007|Изменение состояния подозрительного действия вручную|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

@@ -13,10 +13,10 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: d71cfd283d89f6b1d1413f4d9832fb4302504622
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196170"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.5
@@ -58,7 +58,7 @@ ms.locfileid: "65196170"
     > [!IMPORTANT]
     > Обновите все шлюзы ATA, чтобы решение ATA работало правильно.
 
-### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновите центр ATA.
+### <a name="step-1-update-the-ata-center"></a>Шаг 1. Обновление центра ATA
 
 1.  Создайте резервную копию базы данных (необязательно).
 
@@ -110,7 +110,7 @@ ZIP-файл содержит следующие файлы:
 
 -   файл конфигурации с данными для подключения к центру ATA.
 
-### <a name="step-3-update-the-ata-gateways"></a>Шаг 3 Обновите шлюзы АТА.
+### <a name="step-3-update-the-ata-gateways"></a>Шаг 3. Обновление шлюзов АТА
 
 1.  На каждом шлюзе ATA извлеките файлы из пакета шлюза ATA и запустите файл установки шлюза ATA Microsoft.
 
@@ -128,6 +128,6 @@ ZIP-файл содержит следующие файлы:
 
 ![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

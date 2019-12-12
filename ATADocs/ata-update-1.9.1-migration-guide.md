@@ -13,10 +13,10 @@ ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 42ed42e15ead2e14ed1bcf65ca449a92b0bdd12c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196146"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
@@ -47,7 +47,7 @@ ms.locfileid: "65196146"
 Это обновление доступно в Центре обновления Майкрософт. Дополнительные сведения о том, как использовать Центр обновления Майкрософт, см. в разделе [Как получить обновление из Центра обновления Windows](https://support.microsoft.com/help/3067639).
 
 ### <a name="manual-download"></a>Скачивание вручную
-Чтобы скачать автономный пакет с этим обновлением, перейдите на веб-сайт Центра загрузки Майкрософт: [Загрузить пакет ATA 1.9](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
+Чтобы получить автономный пакет для этого обновления, перейдите на веб-сайт центра загрузки Майкрософт: [скачайте пакет ATA 1,9](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
 
 ### <a name="prerequisites"></a>Предварительные условия
 Чтобы установить это обновление, требуется наличие ATA версии 1.9 (1.9.7312), обновления 1 для ATA версии 1.8 (1.8.6765) или ATA версии 1.8 (1.8.6645).
@@ -59,7 +59,7 @@ ms.locfileid: "65196146"
 Это обновление заменяет ATA версии 1.9 (1.9.7312).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

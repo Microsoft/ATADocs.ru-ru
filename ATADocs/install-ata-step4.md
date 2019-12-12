@@ -13,19 +13,19 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 55279f066b093e975d33d9d392530dc1a3238112
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195714"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 3](install-ata-step3.md)
-> [Шаг 5 »](install-ata-step5.md)
+> [Шаг 3](install-ata-step3.md)
+> [Шаг 5](install-ata-step5.md)
 
 ## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установите шлюз ATA.
 
@@ -65,7 +65,7 @@ ms.locfileid: "65195714"
    
     ![Указание учетных данных шлюза ATA](media/ata-install-credentials.png)
    
-    - Путь установки — это расположение для установки шлюза ATA. По умолчанию это папка %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Оставьте значение по умолчанию.
+    - Путь установки: это расположение для установки шлюза ATA. По умолчанию это папка %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Оставьте значение по умолчанию.
    
 6. Нажмите кнопку **Установить**. Во время установки шлюза ATA устанавливаются и настраиваются следующие компоненты.
     
@@ -83,15 +83,15 @@ ms.locfileid: "65195714"
 
 
 > [!div class="step-by-step"]
-> [« Шаг 3](install-ata-step3.md)
-> [Шаг 5 »](install-ata-step5.md)
+> [Шаг 3](install-ata-step3.md)
+> [Шаг 5](install-ata-step5.md)
 
 
 ## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
 - [Средство изменения размера ATA](http://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

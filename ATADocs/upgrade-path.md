@@ -13,22 +13,22 @@ ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 7168e8a073473bacd659e662d71ac7984ac2a45c
-ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66264979"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 
-*Область применения: Advanced Threat Analytics версии 1.9*
+*Применяется к: Advanced Threat Analytics версии 1.9*
 
 Эта статья содержит сведения о доступных версиях Advanced Threat Analytics и инструкции по обновлению в зависимости от используемой версии.
 
 
 ## <a name="ata-versions"></a>Версии ATA
 
-|Version|Номер сборки|
+|Версия|Номер сборки|
 |----|----|
 |1.6|1.6.4103|
 |1.6 с обновлением 1|1.6.4317|
@@ -41,13 +41,13 @@ ms.locfileid: "66264979"
 |1.9 с обновлением 1|1.9.7412|
 |1.9 с обновлением 2|1.9.7478|
 
-## <a name="upgrade-paths"></a>Варианты обновления
+## <a name="upgrade-paths"></a>Схемы обновления
 
-Ссылки на схему вариант обновления, чтобы определить правильный путь обновления для текущей установки. 
+Чтобы определить правильный путь обновления для текущей установки, см. схему "путь обновления". 
 
 ![Путь обновления версии ATA](./media/upgrade-path-ata.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
