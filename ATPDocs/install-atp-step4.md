@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7e2aed8b53f44ab2326e70cea02e9af384648500
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 124bc127242d97197239cb37fddda154c1bcb445
+ms.sourcegitcommit: 44ce78c9d7f156dd0c0798823bba53e092f5abdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462305"
+ms.lasthandoff: 12/16/2019
+ms.locfileid: "75034090"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -67,7 +67,7 @@ ms.locfileid: "73462305"
 
     ![Изображение конфигурации датчика Azure ATP](media/sensor-install-config.png)
 
-      - Путь установки — это расположение для установки датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
+      - Путь установки: это расположение для установки датчика Azure ATP. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
 
      - Ключ доступа — это ключ, полученный на портале Azure ATP на предыдущем шаге.
     
