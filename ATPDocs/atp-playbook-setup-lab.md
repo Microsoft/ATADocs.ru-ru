@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 9ae630711b6ee7b7f84a233998d188e498af0a9e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 8a968e290cd031d837b4edadab78c307e7fe0796
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "59745604"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544056"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
 
@@ -199,8 +199,8 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 |----|-----|
 | Mimikatz | [Mimikatz на сайте GitHub](https://github.com/gentilkiwi/mimikatz) |
 | PowerSploit | [PowerSploit на сайте GitHub](https://github.com/PowerShellMafia/PowerSploit) |
-| PsExec | [Документация Майкрософт](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) |
-| NetSess | [Средства JoeWare](http://www.joeware.net/freetools) |
+| PsExec | [Документация Майкрософт](https://docs.microsoft.com/sysinternals/downloads/psexec) |
+| NetSess | [Средства JoeWare](https://www.joeware.net/freetools) |
 
 Мы благодарим авторов этих средств исследования за то, что они дали пользователям возможность лучше понять риск и влияние кибератак.
 

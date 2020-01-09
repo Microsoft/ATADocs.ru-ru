@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f54c60f97c9489934f0ac0a40b3b27780e6a60d9
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0a5c01f665b167bb9eabc5a9e0a67b99bb6d56fa
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72690238"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543130"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP) 
 
 
 Это руководство поможет вам перейти с существующей установки ATA на службу "Расширенная защита от угроз Azure" (Azure ATP). В нем приведены предварительные и основные требования к Azure ATP и подробно описано планирование и выполнение перехода. Кроме того, здесь приведены необходимые действия по проверке, а также советы по использованию новейших решений безопасности и защиты от угроз в сочетании с Azure ATP после установки службы. 
 
-Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP] (https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp).
+Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP] (https://docs.microsoft.com/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp).
 
 В руководстве описаны следующие действия: 
 
@@ -77,7 +77,7 @@ ms.locfileid: "72690238"
 
 Выполните переход на Azure ATP в два простых шага:
 
-### <a name="step-1-create-and-install-azure-atp-instance-and-sensors"></a>Шаг 1. Создание и установка экземпляра и датчиков Azure ATP
+### <a name="step-1-create-and-install-azure-atp-instance-and-sensors"></a>Шаг 1. Создание и установка экземпляра и датчиков Azure ATP
 
 1. [Создайте экземпляр Azure ATP.](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)
 
@@ -88,7 +88,7 @@ ms.locfileid: "72690238"
      - [Получите ключ доступа Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step3#download-the-setup-package).
      - [Установите датчики Azure ATP на контроллерах домена](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4). 
 
-### <a name="step-2-configure-and-validate-azure-atp-instance"></a>Шаг 2. Настройка и проверка экземпляра Azure ATP  
+### <a name="step-2-configure-and-validate-azure-atp-instance"></a>Шаг 2. Настройка и проверка экземпляра Azure ATP  
 
 - [Настройте датчик](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5)
 
@@ -140,7 +140,7 @@ ms.locfileid: "72690238"
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
-См. дополнительные сведения о возможностях, функциях и [оповещениях системы безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts) [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).  
+См. дополнительные сведения о возможностях, функциях и [оповещениях системы безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts)[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).  
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
 Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)!

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/20/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 408c46d620f7b7f5da21d9dcfaf17097660dcc4c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 6c8edd2b48fbc10347bd77df06ae1f7c4ecacb52
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196366"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544008"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 
@@ -43,10 +43,6 @@ ms.locfileid: "65196366"
 > [!NOTE]
 >- Управляйте автоматической перезагрузкой датчика (для **основных** обновлений) на странице портала настройки Azure ATP. 
 > - Датчик Azure ATP всегда резервирует не менее 15 % памяти и ресурсов ЦП, доступных на контроллере домена, на котором он установлен. Если служба потребляет слишком много памяти, она автоматически останавливается и перезапускается службой обновления датчиков Azure ATP.
-
-### <a name="update-requirement"></a>Требования к обновлению
-
-Если не удается обновить датчики до более чем одной версии, такие они больше не смогут обмениваться данными с облачной службой Azure ATP, что может привести к потере доступа к службе Azure ATP, и ваша организация останется без защиты.  
 
 ## <a name="delayed-sensor-update"></a>Отложенное обновление датчиков
 

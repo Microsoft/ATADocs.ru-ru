@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d3eb36b75e9500920bdaea70864839a5de7e3de1
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 7dd8b77a3952c3de35ff8c1f2b2eebf4cc4219db
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196415"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543925"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 > [!NOTE] 
@@ -26,7 +26,8 @@ ms.locfileid: "65196415"
 Ниже описана последовательность проверки правильной настройки зеркального отображения портов. Для правильной работы службы Azure ATP автономный датчик Azure ATP должен отслеживать входящий и исходящий трафик контроллера домена. Основные сведения, требуемые для работы Azure ATP, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы служба Azure ATP могла отслеживать сетевой трафик, нужно настроить зеркальное отображение портов. Эта функция копирует трафик из одного порта (исходный порт) в другой порт (конечный порт).
 
 ## <a name="validate-port-mirroring-using-net-mon"></a>Проверка зеркального отображения портов с помощью сетевого монитора
-1.  Установите [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) на автономном датчике ATP, который нужно проверить.
+
+1.  Установите [Microsoft Network Monitor 3.4](https://www.microsoft.com/download/details.aspx?id=4865) на автономном датчике ATP, который нужно проверить.
 
     > [!IMPORTANT]
     > Если вы решили установить Wireshark для проверки зеркального отображения портов, перезапустите службу автономного датчика Azure ATP после проверки.

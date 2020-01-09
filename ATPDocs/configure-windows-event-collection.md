@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 34d75bfd53f9c119e685390bd933b6e642c45b6c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5ef3edfd830e7a88808dbb8ab895fde7206e9f55
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71997451"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544151"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
@@ -44,7 +44,7 @@ ms.locfileid: "71997451"
 
 
 ## <a name="see-also"></a>См. также
-- [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
+- [Средство изменения размера Azure ATP](https://aka.ms/aatpsizingtool)
 - [Справочник по журналу Azure ATP SIEM](cef-format-sa.md)
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

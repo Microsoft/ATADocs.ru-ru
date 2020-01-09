@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 87995b9162f787a05b82507e34cf3dbdaf4a3f07
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 221ace13505bd9eab33422358abb764e7a7485ff
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196720"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544390"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
 
@@ -95,7 +95,7 @@ Azure Advanced Threat Protection позволяет интегрировать A
 ## <a name="see-also"></a>См. также
 
 - [Анализ путей бокового смещения в Azure ATP](use-case-lateral-movement-path.md)
-- [Средство изменения размера Azure ATP](http://aka.ms/aatpsizingtool)
+- [Средство изменения размера Azure ATP](https://aka.ms/aatpsizingtool)
 - [Архитектура Azure ATP](atp-architecture.md)
 - [Установка ATP](install-atp-step1.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

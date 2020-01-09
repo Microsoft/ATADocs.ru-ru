@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 800b72e0bb06a95e10a0c52885d78ebe276e00b7
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "59745605"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543823"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>Руководство. Сборник схем захвата управления доменом
 
@@ -239,7 +239,7 @@ Azure ATP использует несколько методов для обна
 ![Атака Golden Ticket была обнаружена](media/playbook-dominance-golden_detected.png)
 
 > [!Important]
->Напоминание. До тех пор, пока полученный злоумышленником ключ KRBTGT остается допустимым в среде, созданные с его помощью билеты также остаются действительными. В этом случае злоумышленник достигает устойчивого захвата управления доменом, [пока KRBTGT не буде сброшен дважды](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password).
+>Напоминание. До тех пор, пока полученный злоумышленником ключ KRBTGT остается допустимым в среде, созданные с его помощью билеты также остаются действительными. В этом случае злоумышленник достигает устойчивого захвата управления доменом, [пока KRBTGT не буде сброшен дважды](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password).
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
