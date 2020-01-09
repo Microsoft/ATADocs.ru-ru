@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c0f15942dd3888d092d8236b78261de1645e5dc0
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0be6430a82752f51ed2660bb4053bb396b90e8b5
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195752"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544028"
 ---
 # <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
@@ -28,7 +28,7 @@ ms.locfileid: "65195752"
 > [Шаг 6 »](install-ata-step6.md)
 
 
-## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройка параметров шлюза ATA
+## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройте параметры шлюза ATA.
 
 После установки шлюза ATA выполните следующие шаги по его настройке.
 
@@ -94,9 +94,9 @@ ms.locfileid: "65195752"
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также:
-- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
