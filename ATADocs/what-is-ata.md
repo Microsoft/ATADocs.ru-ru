@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 67e265c4785e5b2b3cc6fe267e72953e8817020f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a17b6e5788f4250b824519ebd9b979936a46b999
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195990"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544231"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
 
@@ -113,6 +113,6 @@ ATA обнаруживает эти подозрительные действи�
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
-## <a name="see-also"></a>См. также:
-[Сборник тренировочных заданий по реагированию на подозрительные действия ATA](http://aka.ms/ataplaybook)
+## <a name="see-also"></a>См. также
+[Сборник тренировочных заданий по реагированию на подозрительные действия ATA](https://aka.ms/ataplaybook)
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -12,16 +12,16 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1f623642813c0474ddf3c7d050a91aebbd1b40b7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: deb170191a649c72eaae3d26ba34bea6358b27b0
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196909"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544284"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 
-Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=55536), а полную версию — в [Центре оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
+Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=55536), а полную версию — в [Центре оценки](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
 В этих заметках о выпуске содержатся сведения об обновлениях, новых функциях, исправлениях ошибок и известных проблемах в текущей версии Advanced Threat Analytics.
 
@@ -136,7 +136,7 @@ ms.locfileid: "65196909"
 **Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.8. Руководство по миграции](ata-update-1.8-migration-guide.md)

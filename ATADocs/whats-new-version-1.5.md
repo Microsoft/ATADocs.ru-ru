@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c0658b0d9320116bf8a752ce360994946300947a
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: c3cbce98ef0b0fa75dcc0df813582d4d46dac4fb
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195734"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544259"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -59,12 +59,12 @@ ms.locfileid: "65195734"
 Когда конфигурация шлюза ATA настроена, при первом запуске шлюза ATA надпись "Не синхронизировано" будет отображаться до тех пор, пока служба полностью не запустится. При первом запуске службы это может занять до 10 минут.
 
 ### <a name="network-capture-software"></a>Программное обеспечение для записи сетевого трафика
-Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
+Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](https://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
 
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
 

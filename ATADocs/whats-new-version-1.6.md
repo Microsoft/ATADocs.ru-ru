@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 21b7fda6747fdb2c2590afe148a5f883e22410a5
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196972"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544296"
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -33,11 +33,11 @@ ms.locfileid: "65196972"
 
 -   Автоматические обновления
 
--   улучшение производительности центра ATA;
+-   Улучшение производительности центра ATA
 
 -   более низкие требования к хранению;
 
--   поддержка IBM QRadar.
+-   поддержка IBM QRadar;
 
 ### <a name="new-detections"></a>новые обнаружения;
 
@@ -70,13 +70,13 @@ ms.locfileid: "65196972"
 
 ### <a name="automatic-updates"></a>Автоматические обновления
 Начиная с версии 1.6, центр ATA можно обновить с помощью Центра обновления Майкрософт. Кроме того, теперь шлюзы ATA можно автоматически обновить с использованием стандартного коммуникационного канала в центре ATA.
-### <a name="improved-ata-center-performance"></a>улучшение производительности центра ATA;
+### <a name="improved-ata-center-performance"></a>Улучшение производительности центра ATA
 Благодаря сниженной нагрузке на базу данных и более эффективному способу выполнения обнаружения в этой версии в одном центре ATA можно выполнять мониторинг множества контроллеров домена.
 
 ### <a name="lower-storage-requirements"></a>более низкие требования к хранению;
 Для работы с базой данных ATA 1.6 необходимо существенно меньше места — всего лишь 20 % дискового пространства по сравнению с предыдущими версиями.
 
-### <a name="support-for-ibm-qradar"></a>поддержка IBM QRadar.
+### <a name="support-for-ibm-qradar"></a>поддержка IBM QRadar;
 Теперь ATA может получать события не только из поддерживаемых решений SIEM, но и из решения SIEM QRadar от IBM.
 
 ## <a name="known-issues"></a>Известные проблемы
@@ -121,7 +121,7 @@ ms.locfileid: "65196972"
     1.  MongoDB
     2.  центр Microsoft Advanced Threat Analytics;
 7.  Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
-8.  [Скачайте](http://aka.ms/ataremoveduplicateprofiles "Скачать") средство "его. exe" и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat analytics\center.).
+8.  [Скачайте](https://aka.ms/ataremoveduplicateprofiles "Скачать") средство "его. exe" и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat analytics\center.).
 9.  Из командной строки с повышенными привилегиями запустите файл `RemoveDuplicateProfiles.exe` и дождитесь его успешного выполнения.
 10. Здесь: каталог …\Microsoft Advanced Threat Analytics\Center\MongoDB\bin: **Mongo ATA** введите следующую команду:
 
@@ -141,7 +141,7 @@ ms.locfileid: "65196972"
 Новый усовершенствованный механизм обнаружения использует внутреннюю технологию обнаружения, благодаря чему можно выявлять проблемы без обращения к сетевым операциям в журнале. Таким образом производительность центра ATA существенно повышается. Это также означает, что при обновлении не нужно переносить сетевые операции в журнале.
 При обновлении ATA данные экспортируются в `<Center Installation Path>\Migration` в качестве JSON-файла (если они понадобятся для изучения в будущем).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)

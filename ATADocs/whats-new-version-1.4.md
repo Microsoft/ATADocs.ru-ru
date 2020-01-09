@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e35ab552dfbe8adf17e408cda8c94178d08c1f93
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0515c9467889f7c83a52030b47a217b7bfb11732
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196991"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544213"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>Новые возможности ATA версии 1.4
 Данные заметки о выпуске содержат сведения об известных проблемах в версии 1.4 решения Advanced Threat Analytics.
@@ -58,7 +58,7 @@ ms.locfileid: "65196991"
 В этой версии существуют следующие проблемы.
 
 ### <a name="network-capture-software"></a>Программное обеспечение для записи сетевого трафика
-Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
+Единственное программное обеспечение для записи сетевого трафика, которое поддерживается в шлюзе ATA и которое можно установить, — это [Microsoft Network Monitor 3.4](https://www.microsoft.com/download/details.aspx?id=4865). Не устанавливайте Microsoft Message Analyzer или другие программы для записи сетевого трафика. Установка другого программного обеспечения приведет к неправильной работе шлюза ATA.
 
 ### <a name="installation-from-zip-file"></a>Установка из ZIP-файла
 Перед установкой шлюза ATA извлеките файлы из ZIP-файла в локальный каталог и установите шлюз из него. Не устанавливайте шлюз ATA непосредственно из ZIP-файла, иначе произойдет сбой установки.
@@ -94,7 +94,7 @@ ms.locfileid: "65196991"
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
