@@ -12,16 +12,16 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: b10c2814fcac064d50bce292e86397ea5a0da21e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 80d8e42b98c0c4cb57beae33ce238d4b466593b5
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196063"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544320"
 ---
 # <a name="whats-new-in-ata-version-19"></a>Новые возможности ATA версии 1.9
 
-Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=56725), а полную версию — в [Центре оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
+Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=56725), а полную версию — в [Центре оценки](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
 В этих заметках о выпуске содержатся сведения об обновлениях, новых функциях, исправлениях ошибок и известных проблемах в текущей версии Advanced Threat Analytics.
 
@@ -60,7 +60,7 @@ ms.locfileid: "65196063"
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.9. Руководство по миграции](ata-update-1.9-migration-guide.md)
