@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 15d1ea65e18f8557c4d36363a381d05c0f9421a7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5d9ebf49493ec474ec1093aef66786d38db0cd57
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195859"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543863"
 ---
 # <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
@@ -59,9 +59,9 @@ ZIP-файл содержит следующие файлы:
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также:
-- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

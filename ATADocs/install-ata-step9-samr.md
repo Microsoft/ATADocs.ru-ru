@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5d266de0344a699ed3c3934246311f21b1b00c09
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0d46ad26af75f56a2f85de863c4689307cda6493
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70803199"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543804"
 ---
 # <a name="install-ata---step-9"></a>Установка ATA. Шаг 9
 
@@ -54,9 +54,9 @@ ms.locfileid: "70803199"
 > [!div class="step-by-step"]
 > [«Шаг 8»](install-ata-step7.md)
 
-## <a name="see-also"></a>См. также:
-- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d35961d0ec70402fe27d0d418fd583d60b960464
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: b30527feafc7ee74f17f9f9600bbbc1e28a3dfa6
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196120"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543600"
 ---
 # <a name="updating-ata-to-version-18"></a>Обновление ATA до версии 1.8
 
@@ -31,7 +31,7 @@ ms.locfileid: "65196120"
 
 Чтобы выполнить обновление до ATA версии 1.8, выполните указанные ниже действия.
 
-1.  [Скачайте обновление до версии ATA 1.8 из Центра загрузки](https://www.microsoft.com/download/details.aspx?id=55536) или полную версию из [Центра оценки](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).<br>
+1.  [Скачайте обновление до версии ATA 1.8 из Центра загрузки](https://www.microsoft.com/download/details.aspx?id=55536) или полную версию из [Центра оценки](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).<br>
 Файл версии для миграции можно использовать только для обновления с версии ATA 1.7. В версии из Центра оценки файл установки (Setup.exe центра Microsoft ATA) используется как для установки нового развертывания ATA, так и для обновления имеющихся развертываний.
 
 2.  Обновите центр ATA.
@@ -82,6 +82,6 @@ ms.locfileid: "65196120"
 > Чтобы установить новые шлюзы ATA, перейдите на экран " **шлюзы** " и щелкните " **загрузить программу установки шлюза** ", чтобы получить пакет установки шлюза ATA 1,8, и следуйте инструкциям по установке нового шлюза, как описано в [шаге 4. Установите шлюз ATA](install-ata-step4.md).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

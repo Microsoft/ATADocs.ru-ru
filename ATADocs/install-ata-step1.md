@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 25ccbe5c1cd37a46e88335fc1e293b0e426ced4e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2a665450d68dd814931a3153a1b3cde4411cf20b
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196087"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543193"
 ---
 # <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
 
@@ -32,7 +32,7 @@ ms.locfileid: "65196087"
 > [!IMPORTANT] 
 > Если вы используете Windows 2012 R2, то, прежде чем устанавливать ATA, установите обновление KB2934520 на сервер центра ATA и серверы шлюза ATA. Иначе обновление, устанавливаемое вместе с ATA, потребует перезагрузки во время процесса установки.
 
-## <a name="step-1-download-and-install-the-ata-center"></a>Шаг 1. Скачивание и установка центра ATA
+## <a name="step-1-download-and-install-the-ata-center"></a>Шаг 1. Скачивание и установка центра ATA.
 Проверив соответствие сервера требованиям, можно приступить к установке центра ATA.
     
 > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "65196087"
 
 На сервере шлюза ATA сделайте следующее:
 
-1.  Скачайте ATA на веб-сайте [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), из [центра оценки TechNet](http://www.microsoft.com/evalcenter/) или на сайте [MSDN](https://msdn.microsoft.com/subscriptions/downloads).
+1.  Скачайте ATA на веб-сайте [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), из [центра оценки TechNet](https://www.microsoft.com/evalcenter/) или на сайте [MSDN](https://msdn.microsoft.com/subscriptions/downloads).
 
 2.  Войдите на компьютер, на котором вы устанавливаете центр ATA, как участник локальной группы администраторов.
 
@@ -63,7 +63,7 @@ ms.locfileid: "65196087"
 
 9. На странице **настройки центра** введите указанные ниже сведения с учетом используемой среды.
 
-   |Поле|Description|Комментарии|
+   |Поле|Описание:|Комментарии|
    |---------|---------------|------------|
    |Путь установки|Это расположение для установки центра ATA. По умолчанию этот путь — %programfiles%\Microsoft Advanced Threat Analytics\Center.|Оставьте значение по умолчанию.|
    |Путь к данным базы данных|Это расположение, в котором размещены файлы базы данных MongoDB. По умолчанию используется путь %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|Выберите расположение, где предусмотрено достаточно пространства для будущего роста данных с учетом требований к размеру. **Примечание**. <ul><li>В рабочих средах следует использовать диск, на котором достаточно свободного места с учетом планирования ресурсов.</li><li>При крупных развертываниях база данных должна находиться на отдельном физическом диске.</li></ul>Дополнительные сведения о размерах см. в статье [Планирование производительности ATA](ata-capacity-planning.md).|
@@ -121,9 +121,9 @@ ms.locfileid: "65196087"
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
-## <a name="see-also"></a>См. также:
-- [Руководство по развертыванию среды для подтверждения концепции ATA](http://aka.ms/atapoc)
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+## <a name="see-also"></a>См. также
+- [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)

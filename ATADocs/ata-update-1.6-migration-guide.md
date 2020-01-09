@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 17bc38ad4af1e0e185b1607a5d0002d5bfa613ea
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: ea37da339e5c78e4fbcb4cdd3351403cf0d4d49c
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196102"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543250"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.6
 При обновлении ATA до версии 1.6 появляются следующие улучшения:
@@ -30,11 +30,11 @@ ms.locfileid: "65196102"
 
 -   Автоматические обновления
 
--   улучшение производительности центра ATA;
+-   Улучшение производительности центра ATA
 
 -   более низкие требования к хранению;
 
--   поддержка IBM QRadar.
+-   поддержка IBM QRadar;
 
 ## <a name="updating-ata-to-version-16"></a>Обновление ATA до версии 1.6
 > [!NOTE] 
@@ -49,7 +49,7 @@ ms.locfileid: "65196102"
 
 1. Чтобы избежать проблем с обновлением, выполните шаги 8–10 раздела **Сбой миграции при обновлении ATA до версии 1.6** в статье [Новые возможности версии ATA 1.6](whats-new-version-1.6.md).
 2. Убедитесь, что у вас достаточно свободного места для обновления. Вы можете выполнить установку до проверки готовности, чтобы оценить, сколько свободного места требуется, а затем выделить место и перезапустить обновление.
-1.  [Скачайте обновление 1.6](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [Скачайте обновление 1.6](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 В этой версии файл установки (Setup.exe центра Microsoft ATA) используется как для установки развертывания ATA, так и для обновления имеющихся развертываний.
 
 2.  Обновите центр ATA.
@@ -136,6 +136,6 @@ ZIP-файл содержит следующие файлы:
 ![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9579108bd0bb2fa91e2e196ab90284f396025db1
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: f953a163be460184c7b585e71cd973bbdcc71e6f
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70803107"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543020"
 ---
 # <a name="ata-architecture"></a>Архитектура ATA
 
@@ -178,9 +178,9 @@ ATA отслеживает сетевой трафик контроллеров 
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)

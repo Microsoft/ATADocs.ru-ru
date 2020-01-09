@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 99d02aeb30cac449c4e9ac19c3824e8ebd97d0d5
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 4725be4c0254225d6ca92e11d62c283948ccfc46
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72690226"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543054"
 ---
 # <a name="ata-capacity-planning"></a>Планирование производительности ATA
 
@@ -28,7 +28,7 @@ ms.locfileid: "72690226"
 > Центр ATA можно развернуть в любом поставщике IaaS, если выполнены требования к производительности, описанные в этой статье.
 
 ## <a name="using-the-sizing-tool"></a>Использование средства изменения размера
-Рекомендуемый и самый простой способ определить емкость развертывания ATA — это использовать [средство изменения размера ATA](http://aka.ms/atasizingtool). Запустите средство изменения размера ATA и в файле Excel с результатами определите необходимую емкость с помощью следующих полей:
+Рекомендуемый и самый простой способ определить емкость развертывания ATA — это использовать [средство изменения размера ATA](https://aka.ms/atasizingtool). Запустите средство изменения размера ATA и в файле Excel с результатами определите необходимую емкость с помощью следующих полей:
 
 - ЦП и память центра ATA: сопоставьте поле **Busy Packets/sec** (Занятых пакетов/с) в таблице центра ATA в файле результатов с полем **PACKETS PER SECOND** (Пакетов в секунду) в [таблице центра ATA](#ata-center-sizing).
 
@@ -172,8 +172,8 @@ ms.locfileid: "72690226"
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также:
-- [Средство изменения размера ATA](http://aka.ms/atasizingtool)
+## <a name="see-also"></a>См. также
+- [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Архитектура ATA](ata-architecture.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

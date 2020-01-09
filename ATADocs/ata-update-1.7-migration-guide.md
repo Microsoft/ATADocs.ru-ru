@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 10c2cc0858ba2403fc16721437f39cdd6dd2cc7c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 8ef9bda4c3b1c3922744a4b292ee135b913e9306
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196156"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543226"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.7
 При обновлении ATA до версии 1.7 появляются следующие улучшения:
@@ -39,7 +39,7 @@ ms.locfileid: "65196156"
 
 Выполните следующие действия, чтобы обновить ATA до версии 1.7.
 
-1.  [Скачайте обновление 1.7](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [Скачайте обновление 1.7](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 В этой версии файл установки (Setup.exe центра Microsoft ATA) используется как для установки развертывания ATA, так и для обновления имеющихся развертываний.
 
 2.  Обновите центр ATA.
@@ -87,6 +87,6 @@ ms.locfileid: "65196156"
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
