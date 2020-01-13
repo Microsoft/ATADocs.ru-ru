@@ -2,8 +2,8 @@
 title: Справочник по журналу ATA SIEM | Документы Майкрософт
 description: Предоставляет примеры журналов оповещений системы безопасности, отправляемых из ATA в SIEM.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/20/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 4630e1df24c370bc15bc2872ca8b1087f5cf42fa
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: f11f304c4c157980711e5859cd0c391b2b5c93bf
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197014"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907683"
 ---
 # <a name="ata-siem-log-reference"></a>Справочник по журналу ATA SIEM
 
@@ -150,7 +150,7 @@ ATA может пересылать события оповещений сист
 > Все оповещения мониторинга отправляются с использованием одного шаблона, как описано выше.
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

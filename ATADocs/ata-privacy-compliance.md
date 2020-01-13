@@ -2,8 +2,8 @@
 title: Политика конфиденциальности персональных данных Advanced Threat Analytics | Документация Майкрософт
 description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из ATA.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 9/27/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 27f51d2b649f1a2bc3e1b6f2a36498fd73c0d77a
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: f6280764ca16ef3c29f22f7f91767aa6c3637a4f
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196192"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905541"
 ---
 # <a name="ata-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в ATA
 
@@ -49,7 +49,7 @@ ms.locfileid: "65196192"
 
 ### <a name="delete-entities"></a>Удаление сущностей
 
-Это действие окончательно удаляет сущность из базы данных ATA. Чтобы выполнить эту команду, укажите имя команды `deleteAccount` и `SamName`, `UpnName` или `GUID` компьютера либо имя пользователя, которое нужно удалить. Пример: 
+Это действие окончательно удаляет сущность из базы данных ATA. Чтобы выполнить эту команду, укажите имя команды `deleteAccount` и `SamName`, `UpnName` или `GUID` компьютера либо имя пользователя, которое нужно удалить. Пример. 
 
 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteAccount,admin1@contoso.com';" GDPR.js`
 
@@ -61,7 +61,7 @@ ms.locfileid: "65196192"
 
 Чтобы выполнить эту команду, укажите имя команды `deleteOldData` и число дней, в течение которых следует хранить базу данных. 
 
-Пример: 
+Пример. 
 
 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteOldData,30';" GDPR.js`
 

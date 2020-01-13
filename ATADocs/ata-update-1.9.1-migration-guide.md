@@ -2,8 +2,8 @@
 title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.9.1 | Документация Майкрософт
 description: Процедуры по обновлению ATA до версии 1.9.1
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 42ed42e15ead2e14ed1bcf65ca449a92b0bdd12c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 86566cbb893fc92f87fbd085e5087714d647f646
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196146"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907263"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
 

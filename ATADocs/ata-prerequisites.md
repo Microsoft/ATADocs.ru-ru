@@ -2,8 +2,8 @@
 title: Предварительные требования для Advanced Threat Analytics | Документация Майкрософт
 description: Описывает требования для успешного развертывания ATA в среде.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/05/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e84bbb84859d316d4900d0f09e71142627df1ae8
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 00a00492960d4535ce66c98aceb9b2d5daf3bdd7
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543180"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905603"
 ---
 # <a name="ata-prerequisites"></a>Предварительные требования для ATA
 

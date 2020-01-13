@@ -2,8 +2,8 @@
 title: Рекомендуемые варианты обновления Advanced Threat Analytics | Документация Майкрософт
 description: Инструкции по обновлению версии Advanced Threat Analytics (ATA).
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 05/26/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7168e8a073473bacd659e662d71ac7984ac2a45c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 591394f08412737528d05d6984560b792072f9ae
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66264979"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908134"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 
@@ -47,7 +47,7 @@ ms.locfileid: "66264979"
 
 ![Путь обновления версии ATA](./media/upgrade-path-ata.png)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

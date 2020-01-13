@@ -2,8 +2,8 @@
 title: Управление системными журналами Advanced Threat Analytics | Документация Майкрософт
 description: Описание данных, которые собирает решение ATA, и пошаговые инструкции по отключению сбора данных.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 8/19/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d39fef746d27871a5c45877edb33d64c2a3e4f19
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: ea4dcdeaedf4ba0a8b907acdc727a428a72aaa02
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195904"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908000"
 ---
 # <a name="manage-system-generated-logs"></a>Управление системными журналами
 
@@ -91,6 +91,6 @@ ms.locfileid: "65195904"
 
 2.  Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Устранение неполадок ATA с помощью журнала событий](troubleshooting-ata-using-logs.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

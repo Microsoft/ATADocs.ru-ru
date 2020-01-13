@@ -2,8 +2,8 @@
 title: Архитектура Advanced Threat Analytics | Документация Майкрософт
 description: Здесь описывается архитектура решения Microsoft Advance Threat Analytics
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/08/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f953a163be460184c7b585e71cd973bbdcc71e6f
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 179cf31a6f9c8c62670ea96d671f209712325f56
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543020"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905192"
 ---
 # <a name="ata-architecture"></a>Архитектура ATA
 

@@ -2,8 +2,8 @@
 title: Установка Advanced Threat Analytics. Шаг 6 | Документация Майкрософт
 description: На этом этапе установки ATA настраиваются источники данных.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/08/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3038b5064b3d8f611e970796d2962d50f604f64d
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: d95dc3755e5aaeadd979b9c71cbc09a9a01637b9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544051"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907933"
 ---
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 

@@ -2,8 +2,8 @@
 title: Аварийное восстановление в Advanced Threat Analytics | Документация Майкрософт
 description: Быстрое восстановление функций ATA после аварии
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 05/02/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: e42811432fe01e0eddcfe0acf5dc1c47a3f34379
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 69efa57478c6534d96ae4ce1e347cddc0c46896e
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65044057"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907691"
 ---
 # <a name="ata-disaster-recovery"></a>Аварийное восстановление АТА
 
@@ -65,7 +65,7 @@ ms.locfileid: "65044057"
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](install-ata-step6.md)
