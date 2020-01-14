@@ -2,8 +2,8 @@
 title: Оповещения системы безопасности этапа компрометации учетных данных в Azure ATP | Документация Майкрософт
 d|Description: This article explains the Azure ATP alerts issued when attacks typical of the compromised credentials phase are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/19/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e45be0e076f326910bf70becb4a109a020edf6a4
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: cc3f8ba536a251d07647e13ba776123eb7366bf5
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74206277"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905627"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>Руководство. Предупреждения о компрометации учетных данных  
 

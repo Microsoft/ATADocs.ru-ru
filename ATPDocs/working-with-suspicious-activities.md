@@ -2,8 +2,8 @@
 title: Обработка оповещений системы безопасности в Azure Advanced Threat Protection | Документы Майкрософт
 description: В этой статье описывается процесс анализа оповещений системы безопасности, создаваемых в Azure ATP
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d8070102bf5136ef8918f6fca2e7571e969148a5
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a1463d3aa397c42069ada0e540fd6e0eb9f846c9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004871"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907325"
 ---
 # <a name="working-with-security-alerts"></a>Обработка оповещений системы безопасности
 

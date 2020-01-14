@@ -2,8 +2,8 @@
 title: Оповещения системы безопасности о захвате управления доменом Azure ATP | Документация Майкрософт
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of domain dominance phase efforts are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 08/26/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1bfed94e29200a52eba6de8758e1241b14084264
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 6d8ebe9c02da763a3e84c8c8fd0730987f871eba
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70052392"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908480"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>Руководство. Предупреждения о захвате управления доменом  
 

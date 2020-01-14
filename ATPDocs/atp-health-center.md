@@ -2,8 +2,8 @@
 title: Наблюдение за работоспособностью системы и событиями Azure Advanced Threat Protection | Документы Майкрософт
 description: Центр работоспособности Расширенной защиты от угроз Azure (Azure ATP) позволяет следить за работой службы Azure ATP, получать предупреждения о возможных проблемах и пользоваться средством просмотра системных событий.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/3/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b1ad4963e3863cd89a78834e8fc98cec3490b1b0
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 9fbcdbd6434ed1fcaa91719547d1926adc0cbd51
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195595"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908297"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>Работа с состоянием работоспособности и событиями Azure ATP
 

@@ -2,8 +2,8 @@
 title: Основные сведения о путях бокового смещения и их использовании в Azure ATP | Документация Майкрософт
 description: В этой статье описываются потенциальные пути бокового смещения (LMP) в Azure Advanced Threat Protection (ATP).
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f7823fee5828df51b336428d810905e2672cc5a4
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0bc0272b51c0a8982d1c5134c68fba561d54db9b
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004911"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905929"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
 

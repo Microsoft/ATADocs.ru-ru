@@ -2,8 +2,8 @@
 title: Интеграция Azure Advanced Threat Protection с ATP в Защитнике Windows | Документы Майкрософт
 description: Сведения об интеграции Azure Advanced Threat Protection с ATP в Защитнике Windows для полной поддержки обнаружения угроз
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/18/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 221ace13505bd9eab33422358abb764e7a7485ff
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: de847403a509617a2c8dc6d8036633ff355f3492
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544390"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906546"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
 

@@ -2,8 +2,8 @@
 title: Поддержка Azure ATP | Microsoft Docs
 description: Описание процесса получения поддержки по Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2c4ffed61b490099f6d041c333e318c8d3286fb1
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 637f74a5eeac5520ff5f9cd7273e81a696aa0852
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196926"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907240"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 
 

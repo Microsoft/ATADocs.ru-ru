@@ -2,8 +2,8 @@
 title: Оценка состояния безопасности удостоверений расширенной защиты от угроз Azure с неактивными сущностями | Документация Майкрософт
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений с неактивными сущностями в конфиденциальных группах Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 07/08/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 158f714602f3add5e23b12a2f3713e9feb4a4bc3
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5a4e8ea1119387392f2588f3753390086a257b09
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74206217"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908423"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>Оценка безопасности: неактивные сущности из **конфиденциальных** групп 
 

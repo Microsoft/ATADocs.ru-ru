@@ -2,8 +2,8 @@
 title: Azure Advanced Threat Protection для US Government GCC High | Документация Майкрософт
 description: В этой статье приводится обзор предложения Azure ATP для US Government GCC High.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/31/2019
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 663be1fb9b58e7631e16d08592daedfbf9a8dccc
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a78527a99d95727daa67e8d5967d7b67c0374efc
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462597"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907122"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>Azure ATP для US Government GCC High
 

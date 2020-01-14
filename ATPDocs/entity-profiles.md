@@ -2,8 +2,8 @@
 title: Работа с профилями пользователей на портале Azure Advanced Threat Protection | Документация Майкрософт
 description: Сведения об анализе пользователей на экране профилей пользователей на портале Azure ATP
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0bff9c9081951c234d2d0076d154a984898a0a31
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 789e185638bef59847c7ba78b3fbbf3c7f962850
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004481"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906716"
 ---
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
 

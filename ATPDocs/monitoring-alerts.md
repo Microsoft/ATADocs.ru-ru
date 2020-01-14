@@ -2,8 +2,8 @@
 title: Сведения об оповещениях мониторинга Azure ATP | Документы Майкрософт
 description: В этой статье описывается, как использовать журналы Azure ATP для устранения неполадок.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/24/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4d6c54378f88422a419f1f67850b302087eb3195
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 22380f67b4a3f913bd80ded72f06db9ce57e0a11
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544396"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907833"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>Общие сведения об оповещениях мониторинга датчика и автономного датчика Azure ATP
 

@@ -2,8 +2,8 @@
 title: Поддержка нескольких лесов в службе "Расширенная защита от угроз Azure" | Документация Майкрософт
 description: Поддержка нескольких лесов Active Directory в службе Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 590977f36cae014d60ada6abe160b012bc7ebc35
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 039fd549d11796755e78a120801c81e909937637
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543877"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908332"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Поддержка нескольких лесов в службе Azure ATP
 

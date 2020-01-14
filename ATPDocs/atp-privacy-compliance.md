@@ -2,8 +2,8 @@
 title: Политика конфиденциальности персональных данных Azure Advanced Threat Protection | Документация Майкрософт
 description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/31/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 67a6525645cf04e4bd14f0a398d1ac9dd224d558
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 13035874f4d40376c93dbc39020277716fe37d1d
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462374"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908108"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в Azure ATP
 

@@ -2,8 +2,8 @@
 title: Проверка зеркального отображения портов в Azure Advanced Threat Protection | Документация Майкрософт
 description: В этой статье описано, как проверить, правильно ли настроено зеркальное отображение портов в Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7dd8b77a3952c3de35ff8c1f2b2eebf4cc4219db
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 875262885aae39cc34dcf3fc62332cbbe0d3ccb9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543925"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907302"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 > [!NOTE] 

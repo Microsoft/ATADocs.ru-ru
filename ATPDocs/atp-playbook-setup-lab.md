@@ -3,16 +3,16 @@ title: Руководство по настройке лаборатории о�
 description: В этом руководстве показано, как настроить тестовую лабораторию Azure ATP, чтобы имитировать угрозы, которые должно обнаружить решение Azure ATP.
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 8a968e290cd031d837b4edadab78c307e7fe0796
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 8c3238c07c05bf307c91753e6d69b35b376a3c21
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544056"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908516"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
 

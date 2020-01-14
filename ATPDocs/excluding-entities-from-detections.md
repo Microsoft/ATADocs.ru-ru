@@ -2,8 +2,8 @@
 title: Исключение сущностей из результатов обнаружения в Azure Advanced Threat Protection | Документы Майкрософт
 description: Сведения о том, как настроить Azure ATP не отмечать определенные действия сущностей как подозрительные.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/11/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 77c85c161ac3a62f67a1bc0983544f6dcef5e596
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 22bacd3b6fdc926e5a7d32e78125bca162e5ccba
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196964"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906701"
 ---
 # <a name="excluding-entities-from-detections"></a>Исключение сущностей из результатов обнаружения
 Эта статья рассказывает, как исключать сущности из активации оповещений. Чтобы свести к минимуму число оповещений об истинных, но неопасных срабатываниях, некоторые сущности можно исключать. Это упростит выявление истинных срабатываний, действительно связанных с угрозами. Azure ATP может не выдавать бесполезных уведомлений о пользовательских действиях, являющихся обычной частью ваших бизнес-процессов. Для этого вы можете отменить такие оповещения или исключить определенные сущности. Кроме того, некоторые часто используемые сущности исключены по умолчанию. 

@@ -2,8 +2,8 @@
 title: Настройка учетных записей Honeytoken и исключений из обнаружения в Azure Advanced Threat Protection | Документы Майкрософт
 description: Настройка учетных записей пользователей Honeytoken и исключений из обнаружения.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/22/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eeb9886c572d7c87038ce537b7e280d189255641
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 4035fbbb3a705cff541c5e07d6bbdce72d99d119
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544072"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905180"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>Настройка учетных записей Honeytoken и исключений из обнаружения
 
