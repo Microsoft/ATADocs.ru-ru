@@ -1,20 +1,20 @@
 ---
 title: Настройка параметров датчика Azure ATP — основные понятия | Документация Майкрософт
 description: На пятом шаге установки Azure ATP выполняется настройка параметров для автономного датчика Azure ATP.
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8e39e37aa42aea40de024f53dd892da398984f5b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: b50dc7247e17831c3b083090787b85c228c13a77
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004843"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907770"
 ---
 # <a name="configure-azure-atp-sensor-settings"></a>Настройка параметров датчика Azure ATP
 
@@ -40,7 +40,7 @@ ms.locfileid: "71004843"
 
    ![Изображение страницы настройки параметров датчика](media/atp-sensor-config-2.png)
 
-   - **Описание** — ведите описание датчика Azure ATP (необязательно).
+   - **Описание**. — ведите описание датчика Azure ATP (необязательно).
    - **Контроллеры домена (полное доменное имя)** (обязательный параметр для автономного датчика Azure ATP; недоступен для изменения). Введите FQDN контроллера домена и щелкните значок плюса, чтобы добавить его в список. Например, **dc01.contoso.com**.
 
      Сведения ниже относятся к серверам, которые указываются в списке **Контроллеры домена**.
@@ -70,10 +70,10 @@ ms.locfileid: "71004843"
 
 1. Проверьте соединение ATP на любом доменном устройстве, выполнив следующие действия:
     1. Откройте командную строку.
-    1. Type ```nslookup```
-    1. Введите **сервер**, затем полное доменное имя или IP-адрес контроллера домена, на котором установлен датчик ATP. Например, ```server contosodc.contoso.azure```
+    1. Введите ```nslookup```.
+    1. Введите **сервер**, затем полное доменное имя или IP-адрес контроллера домена, на котором установлен датчик ATP. Например, ```server contosodc.contoso.azure```.
         - Обязательно замените contosodc.contoso.azure и contoso.azure на полное доменное имя и доменное имя вашего датчика Azure ATP соответственно.
-    1. Type ```ls -d contoso.azure```
+    1. Введите ```ls -d contoso.azure```.
     1. Повторите шаги 3 и 4 для каждого датчика, который нужно протестировать.  
     1. С помощью консоли Azure ATP откройте профиль сущности для компьютера, с которого была запущена проверка соединения. 
     1. Проверьте связанные логические действия и убедитесь в наличии соединения. 

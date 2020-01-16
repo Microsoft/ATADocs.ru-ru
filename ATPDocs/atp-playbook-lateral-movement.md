@@ -3,16 +3,16 @@ title: Сборник схем бокового смещения для отпр
 description: В сборнике схем Azure ATP показано, как имитировать угрозы бокового смещения для обнаружения в службе Azure ATP.
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 03/03/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: d7243b74c14a1782b8902473cc6f098d0e12832f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1ac1a5652305d17f65fee7a4e5c7e0b73b0b1473
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "57318059"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908070"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>Руководство. Сборник схем бокового смещения
 
@@ -20,7 +20,7 @@ ms.locfileid: "57318059"
 
 В этом сборнике описаны некоторые службы обнаружения угроз путей бокового смещения и службы оповещений системы безопасности Azure ATP. Для этого мы имитируем атаки с использованием распространенных общедоступных средств взлома и атак.
 
-В этом руководстве вы:
+В этом руководстве описаны следующие задачи:
 > [!div class="checklist"]
 > * Соберете NTLM-хэши и смоделируете атаку Overpass-the-Hash для получения билета на получение билетов Kerberos (TGT).
 > * Замаскируетесь под другого пользователя, осуществите боковое смещение в сети и соберете больше учетных данных.

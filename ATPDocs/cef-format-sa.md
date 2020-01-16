@@ -2,8 +2,8 @@
 title: Справочник по журналу Azure ATP SIEM | Документы Майкрософт
 description: Примеры журналов подозрительных действий, отправляемых из Azure ATP в систему SIEM.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 07/25/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 3b2df6ec2beddd276e1e4acdb0a38feb4a3511a3
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 69810a11bbd924e9fcb2aa666490ad8761eabc17
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68781887"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907073"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 

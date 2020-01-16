@@ -2,8 +2,8 @@
 title: Проверка расширенной политики аудита Azure Advanced Threat Protection | Документация Майкрософт
 description: В этой статье содержатся общие сведения о проверке расширенной политики аудита Azure ATP.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cae5f5687c205c2128b652e674dce1531c57588b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 9f22034e3e8bb3e69836290a0cb11d79577a5bde
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195545"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908209"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Проверка расширенной политики аудита Azure ATP
 
@@ -40,7 +40,7 @@ ms.locfileid: "65195545"
 
     ![Изменение политики контроллера домена по умолчанию](media/atp-advanced-audit-policy-check-step-1.png)
 
-4. В открывшемся окне последовательно выберите **Конфигурация компьютера** > **Политики** > **Параметры Windows**  >  **Параметры безопасности** > **Конфигурация расширенной политики аудита**.
+4. В открывшемся окне последовательно выберите **Конфигурация компьютера** > **Политики** > **Параметры Windows** > **Параметры безопасности** > **Конфигурация расширенной политики аудита**.
 
     ![«Расширенная конфигурация политики аудита»](media/atp-advanced-audit-policy-check-step-2.png)
 

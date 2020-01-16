@@ -2,8 +2,8 @@
 title: Фильтрация действий и политики Расширенной защиты от угроз Azure в Microsoft Cloud App Security | Документация Майкрософт
 description: Общие сведения о фильтрации действий и политиках Azure ATP в Microsoft Cloud App Security.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 07/01/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1508cb558f16adf54f80cec0c13631059dbf45bf
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 97d13dc5780e9cf24955644a9e0493a8434f62cd
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67506517"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908049"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>Фильтрация действий и создание политик действий с помощью Azure ATP в Microsoft Cloud App Security 
 
@@ -30,7 +30,7 @@ ms.locfileid: "67506517"
 ## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы получить все возможности изучения поведения пользователей в гибридной среде, вам понадобится следующее:
-- Действительная лицензия Microsoft Cloud App Security
+- Действительная лицензия для Microsoft Cloud App Security
 - Действующая лицензия на Azure ATP, подключенную к вашему экземпляру Active Directory.
 
 >[!NOTE]
@@ -58,7 +58,7 @@ ms.locfileid: "67506517"
 1. На любой странице **Журнала действий** примените фильтр (например, приложение, имя пользователя, тип действия и т. д.). 
     - Для фильтрации действий из Azure ATP выберите **Active Directory** в фильтре приложений. 
     ![Создание политики действия](media/atp-mcas-create-new-policy.png)
-1. Нажмите кнопку **Новая политика из поиска**.    
+1. Нажмите кнопку **	Новая политика из поиска**.    
 1. Добавьте **имя политики**. 
     ![Создание политики действия — шаг 2](media/atp-mcas-create-policy.png)
 1. Добавьте **описание** политики.  

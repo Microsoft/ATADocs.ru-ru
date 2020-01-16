@@ -2,8 +2,8 @@
 title: Руководство по оповещениям системы безопасности Azure ATP | Документы Майкрософт
 d|Description: This article explains how to use and understand Azure ATP security alerts.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/13/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f215639ea72d0c767f32bd9628e1c404da23aaa0
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: baefea19a50cec6a6d14835ac3cb8754671ec85c
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196398"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907499"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности
 
@@ -84,7 +84,7 @@ ms.locfileid: "65196398"
 Каждый загружаемый Excel-отчет об оповещении Azure ATP содержит следующие сведения:   
 - Сводка — на первой вкладке приводятся основные сведения об оповещении. 
   - Название 
-  - Описание 
+  - Описание: 
   - Время начала (UTC) 
   - Время окончания (UTC) 
   - Уровень серьезности — низкий, средний, высокий.
@@ -94,7 +94,7 @@ ms.locfileid: "65196398"
 - Перечисляются все вовлеченные сущности (учетные записи, компьютеры и ресурсы) с разделением по ролям. 
     - Исходная, конечная или атакованная сущность в зависимости от оповещения. 
 - Большинство вкладок включают следующие данные в зависимости от сущности: 
-  - Название
+  - Имя
   - Подробные сведения 
   - Type 
   - Имя SAM  
