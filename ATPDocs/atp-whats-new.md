@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/12/2020
+ms.date: 01/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d683d447265e39daef227894acd3d756ebe6dfa6
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 1019591a3ad775a2cd3e54df99aa84ae55ac7e53
+ms.sourcegitcommit: 450295f4ee87db835c9921d2595ae9d291f727c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907104"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281769"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -25,6 +25,21 @@ ms.locfileid: "75907104"
 Дополнительные сведения о предыдущих выпусках Azure ATP до выпуска 2.55 (включительно) см. в [справочнике по выпускам Azure ATP](atp-release-reference.md).
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+<!-- Rollback
+## Azure ATP release 2.107
+
+Released Jan 26, 2020
+
+- **New monitored activity: SID history change**  
+SID history change is now a monitored and filterable activity. Learn more about which [activities Azure ATP monitors](monitored-activities.md), and how to [filter and search monitored activities](atp-activities-search.md) in the portal.
+-->
+
+## <a name="azure-atp-release-2106"></a>Azure ATP, выпуск 2.106
+
+Дата выпуска: 19 января 2020 г.
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-2105"></a>Azure ATP, выпуск 2.105
 
