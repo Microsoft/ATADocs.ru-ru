@@ -12,23 +12,23 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 67ffd16571af8dc298edcb3940560c155cee75b9
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 88d6c9fddc0a9e8db8d63a64618b7ab9c14a092f
+ms.sourcegitcommit: 1a0cc214568bf12041d11e037dfe56a8d9e707c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906805"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76706228"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
 Для успешной работы датчику Advanced Threat Protection (ATP) Azure требуется подключение через Интернет к облачной службе Azure ATP. В некоторых организациях контроллеры домена подключаются к Интернету не напрямую, а через веб-прокси. Для каждого датчика Azure ATP необходимо настроить параметры прокси-сервера Microsoft Windows Internet (WinINET) для передачи данных и взаимодействия со службой Azure ATP. Даже если вы используете для настройки прокси-сервера WinHTTP, необходимо отдельно настроить параметры прокси-сервера в браузере Windows Internet (WinINet) для взаимодействия между датчиком и облачной службой Azure ATP.
 
-При настройке прокси-сервера следует помнить, что внедренная служба датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalService**, а служба обновления датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalSystem**. 
+При настройке прокси-сервера следует помнить, что внедренная служба датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalService**, а служба обновления датчика Azure ATP выполняется в системном контексте от имени учетной записи **LocalSystem**.
 
 > [!NOTE]
 > Если в топологии сети используется прозрачный прокси или WPAD, настраивать WinINET для прокси-сервера не нужно.
 
-## <a name="configure-the-proxy"></a>Настройка прокси-сервера 
+## <a name="configure-the-proxy"></a>Настройка прокси-сервера
 
 Вы можете настроить параметры прокси-сервера во время установки датчика, используя параметры, определенные в руководстве по [автоматической установке и настройке параметров аутентификации прокси-сервера](https://docs.microsoft.com/azure-advanced-threat-protection/atp-silent-installation#proxy-authentication).
 
@@ -38,9 +38,8 @@ ms.locfileid: "75906805"
 
 **Синтаксис**
 
-
 > [!div class="mx-tableFixed"]
-> 
+>
 > |Имя|Синтаксис|Обязательно для автоматической установки?|Описание:|
 > |-------------|----------|---------|---------|
 > |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|Нет|Указывает URL-адрес и номер порта прокси-сервера для датчика Azure ATP.|
@@ -54,21 +53,20 @@ ms.locfileid: "75906805"
 
 Статическое подключение к прокси-серверу настраивается через реестр. Скопируйте настройки прокси-сервера, используемые в контексте пользователя, в ветви LocalService и LocalSystem. Чтобы скопировать параметры прокси-сервера из контекста пользователя, выполните следующее:
 
-1.   Обязательно создайте резервные копии разделов реестра перед внесением в их изменений.
+1. Обязательно создайте резервные копии разделов реестра перед внесением в их изменений.
 
-2. Выполните в разделе реестра `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings` поиск по значению `DefaultConnectionSettings` (REG_BINARY) и скопируйте результат.
- 
-2.  Если в LocalSystem отсутствуют допустимые параметры прокси-сервера (прокси не настроен или отличается от настроек в Current_User), скопируйте параметры прокси-сервера из Current_User в LocalSystem. Перейдите к разделу реестра `HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
+1. Выполните в разделе реестра `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings` поиск по значению `DefaultConnectionSettings` (REG_BINARY) и скопируйте результат.
 
-3.  Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
+1. Если в LocalSystem отсутствуют допустимые параметры прокси-сервера (прокси не настроен или отличается от настроек в Current_User), скопируйте параметры прокси-сервера из Current_User в LocalSystem. Перейдите к разделу реестра `HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
 
-4.  Если в LocalService отсутствуют допустимые параметры прокси-сервера, скопируйте эти параметры из Current_User в LocalService. Перейдите к разделу реестра `HKU\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
+1. Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
 
-5.  Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
+1. Если в LocalService отсутствуют допустимые параметры прокси-сервера, скопируйте эти параметры из Current_User в LocalService. Перейдите к разделу реестра `HKU\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings`.
+
+1. Вставьте значение из Current_User `DefaultConnectionSettings` в формате REG_BINARY.
 
 > [!NOTE]
 > Это повлияет на все приложения, включая службы Windows, которые используют WinINET в контексте LocalService или LocalSytem.
-
 
 ## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>Разрешение доступа прокси-сервера к URL-адресам служб Azure ATP
 
@@ -86,12 +84,12 @@ ms.locfileid: "75906805"
 |Европа|triprd1wceun1sensorapi.atp.azure.com<br>triprd1wceuw1sensorapi.atp.azure.com|
 |Азия|triprd1wcasse1sensorapi.atp.azure.com|
 
- 
 > [!NOTE]
-> Чтобы обеспечить максимальную безопасность и конфиденциальность данных, Azure ATP использует взаимную проверку подлинности на основе сертификатов между каждым датчиком Azure ATP и облачной серверной частью Azure ATP. Если в вашей среде используется проверка SSL, убедитесь, что она настроена для взаимной проверки подлинности и не препятствует процессу проверки подлинности.
-
-
+>
+> - Чтобы обеспечить максимальную безопасность и конфиденциальность данных, Azure ATP использует взаимную проверку подлинности на основе сертификатов между каждым датчиком Azure ATP и облачной серверной частью Azure ATP. Если в вашей среде используется проверка SSL, убедитесь, что она настроена для взаимной проверки подлинности и не препятствует процессу проверки подлинности.
+> - Также можно использовать тег службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к Azure ATP. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
 
 ## <a name="see-also"></a>См. также
+
 - [Настройка пересылки событий](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
