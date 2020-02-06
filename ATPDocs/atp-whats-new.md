@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/19/2020
+ms.date: 01/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 1019591a3ad775a2cd3e54df99aa84ae55ac7e53
-ms.sourcegitcommit: 450295f4ee87db835c9921d2595ae9d291f727c5
+ms.openlocfilehash: ef493165f939bd037e12361d7eec403ad397b0fc
+ms.sourcegitcommit: 409680586343ab7fdd46da96f343305d22eb8936
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281769"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818232"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -26,14 +26,15 @@ ms.locfileid: "76281769"
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
-<!-- Rollback
-## Azure ATP release 2.107
+## <a name="azure-atp-release-2107"></a>Azure ATP, выпуск 2.107
 
-Released Jan 26, 2020
+Дата выпуска: 26 января 2020 г.
 
-- **New monitored activity: SID history change**  
-SID history change is now a monitored and filterable activity. Learn more about which [activities Azure ATP monitors](monitored-activities.md), and how to [filter and search monitored activities](atp-activities-search.md) in the portal.
--->
+- **Новое отслеживаемое действие: изменение журнала ИД безопасности**  
+    Изменение журнала ИД безопасности теперь можно отслеживать и фильтровать. Узнайте о том, какие [действия отслеживает Azure ATP](monitored-activities.md) и как [отфильтровывать и искать отслеживаемые действия](atp-activities-search.md) на портале.
+
+- **Расширение функциональности: закрытые или заблокированные оповещения больше не открываются повторно**  
+    Если оповещение закрыто или заблокировано на портале Azure ATP, а аналогичное действие возникает еще раз в течение короткого периода времени, откроется новое оповещение. Ранее при выполнении тех же условий оповещение открывалось повторно.
 
 ## <a name="azure-atp-release-2106"></a>Azure ATP, выпуск 2.106
 
