@@ -23,7 +23,7 @@
       href: install-atp-step3.md
     - name: "Установка датчика Azure\_ATP"
       href: install-atp-step4.md
-- name: Учебники
+- name: Руководства
   items:
     - name: Предупреждения о разведывательных атаках
       href: atp-reconnaissance-alerts.md
@@ -57,7 +57,7 @@
       href: use-case-lateral-movement-path.md
     - name: Разрешение сетевых имен (NNR)
       href: atp-nnr-policy.md
-    - name: Reports
+    - name: Отчеты
       href: reports.md
     - name: Пользовательские роли
       href: atp-role-groups.md
@@ -77,16 +77,18 @@
               href: atp-isp-overview.md
             - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
               href: atp-cas-isp-clear-text.md
-            - name: Оценка наличия неактивных сущностей в конфиденциальных группах
-              href: atp-cas-isp-dormant-entities.md
             - name: Оценка использования устаревших протоколов
               href: atp-cas-isp-legacy-protocols.md
-            - name: Оценка доступности службы очереди печати принтера на контроллерах домена
-              href: atp-cas-isp-print-spooler.md
             - name: Оценка использования ненадежного шифра
               href: atp-cas-isp-weak-cipher.md
             - name: Оценка незащищенного делегирования Kerberos
               href: atp-cas-isp-unconstrained-kerberos.md
+            - name: Оценка доступности службы очереди печати принтера на контроллерах домена
+              href: atp-cas-isp-print-spooler.md
+            - name: Оценка наличия неактивных сущностей в конфиденциальных группах
+              href: atp-cas-isp-dormant-entities.md
+            - name: Неотслеживаемые контроллеры домена
+              href: atp-cas-isp-unmonitored-domain-controller.md
     - name: Занятие по оповещениям системы безопасности
       items:
         - name: Обзор лаборатории
@@ -165,7 +167,7 @@
       items:
         - name: Переход с Advanced Threat Analytics (ATA) на Azure ATP
           href: ata-atp-move-overview.md
-- name: Справочник
+- name: Справочные сведения
   items:
     - name: "Справочник по журналу\_SIEM"
       href: cef-format-sa.md
