@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/06/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d84102528e3423ed149cdc64c010a7f190a40f68
-ms.sourcegitcommit: 20cf564885aa01985524c9c995ae5ba282606fac
+ms.openlocfilehash: 671920475245e99c788a733e2d445947649c7def
+ms.sourcegitcommit: d9abce00e781d47009e317767698d1729f70dc35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77045129"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77478559"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -39,8 +39,12 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 Во время установки датчика возникает следующая ошибка:  **The sensor failed to register due to licensing issues** (Не удалось зарегистрировать датчик из-за проблем с лицензированием).
 
-Deployment log entries: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
+**Записи журнала развертывания:**
 
+[1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]]  
+[1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]]  
+[1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [deploymentResultStatus=1602 isRestartRequired=False]]  
+[1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
 
 **Причина**.
 
@@ -54,13 +58,15 @@ Deployment log entries: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:1
 
 Во время автоматической установки датчика при попытке использовать PowerShell может произойти следующая ошибка:
 
-    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ...           Unexpected token '"/quiet"' in expression or statement."
+    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
 
 **Причина**. Эту ошибку вызывает отсутствие префикса ./, необходимого для установки при использовании PowerShell.
 
 **Решение:** Для успешной установки используйте полную команду.
 
-    ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```powershell
+./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```
 
 ## Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт <a name="nic-teaming"></a>
 
@@ -86,9 +92,11 @@ Deployment log entries: [1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:1
 1. Переустановите пакет датчика.
 
 ## <a name="multi-processor-group-mode"></a>Многопроцессорный групповой режим
+
 В операционных системах Windows 2008 R2 и 2012 датчик Azure ATP не поддерживается в многопроцессорном групповом режиме.
 
 Возможные обходные пути:
+
 - Если технология Hyper-Threading включена, отключите ее. Это может сократить количество логических ядер, чтобы избежать необходимости запуска в **многопроцессорном групповом** режиме.
 
 - Если у виртуальной машины менее 64 логических ядер и она выполняется на узле HP, для параметра BIOS **NUMA Group Size Optimization** (Оптимизация размера группы NUMA) можно изменить значение по умолчанию **Clustered** (Кластеризовано) значением **Flat** (Фиксировано).
@@ -119,8 +127,29 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
 ![Состояние отключения LSO](./media/disable-lso-vmware.png)
 
+## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>Датчику не удалось получить учетные данные групповой управляемой учетной записи службы (gMSA)
+
+Если вы получаете следующее оповещение мониторинга: **Неправильные учетные данные пользователя служб каталогов**
+
+**Записи журнала датчика:**
+
+2020-02-17 14:01:36.5315 Info ImpersonationManager CreateImpersonatorAsync started [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True]  
+2020-02-17 14:01:36.5750 Info ImpersonationManager CreateImpersonatorAsync finished [UserName=account_name Domain=domain1.test.local IsSuccess=False]
+
+**Записи журнала обновления датчика:**
+
+2020-02-17 14:02:19.6258 Warn GroupManagedServiceAccountImpersonationHelper GetGroupManagedServiceAccountAccessTokenAsync failed GMSA password could not be retrieved [errorCode=AccessDenied AccountName=account_name DomainDnsName=domain1.test.local]
+
+**Причина**.
+
+Датчику не удалось получить назначенную учетную запись gMSA с портала Azure ATP.
+
+**Решение:**
+
+Убедитесь, что учетные данные учетной записи gMSA верны и что датчик предоставил разрешения на получение учетных данных учетной записи.
 
 ## <a name="see-also"></a>См. также
+
 - [Предварительные требования к Azure ATP](atp-prerequisites.md)
 - [Планирование производительности Azure ATP](atp-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
