@@ -5,28 +5,27 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 12/02/2018
+ms.date: 02/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c482ce154817418ad3843e6329a8660cc75f1b98
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: f18a2a1a4a3cd7b9e5dec5dacdce3c88ffe296a8
+ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907875"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590596"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
 
-
-
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
+
 Если необходимо изменить пароль для подключения к домену, указывайте правильный пароль. В противном случае служба датчика Azure ATP будет остановлена для всех развернутых датчиков.
 
-В таком случае откройте на автономном датчике Azure ATP файл Microsoft.Tri.sensor-Errors.log и найдите в нем следующие ошибки: `The supplied credential is invalid.`.
+В таком случае посмотрите, есть ли в файле Microsoft.Tri.sensor-Errors.log следующие ошибки: `The supplied credential is invalid.`
 
 Чтобы изменить пароль для подключения к домену на портале Azure ATP, выполните описанную ниже процедуру:
 
@@ -35,24 +34,22 @@ ms.locfileid: "75907875"
 
 1. Откройте портал Azure ATP, воспользовавшись его URL-адресом.
 
-2. На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
+1. На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-   ![Значок параметров конфигурации Azure ATP](media/atp-config-menu.png)
+    ![Значок параметров конфигурации Azure ATP](media/atp-config-menu.png)
 
-3. Выберите **Directory Services** (Службы каталогов).
+1. Выберите **Directory Services** (Службы каталогов).
 
-   ![Изображение: изменение пароля автономного датчика Azure ATP](media/directory-services.png)
+    ![Изображение: изменение пароля автономного датчика Azure ATP](media/directory-services.png)
 
-4. В разделе **Password** (Пароль) измените пароль.
+1. В разделе **Password** (Пароль) измените пароль.
 
-   > [!NOTE]
-   > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
+    > [!NOTE]
+    > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
 
-5. Нажмите кнопку **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
-6. После изменения пароля вручную проверьте, что служба автономного датчика Azure ATP запущена на серверах автономного датчика Azure ATP.
-
-7. На портале Azure ATP в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
+1. На портале Azure ATP в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
 
 ## <a name="see-also"></a>См. также
 
