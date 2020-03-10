@@ -13,11 +13,11 @@ ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 39fbd3f42cfccd60a007b8640421a8af1c178243
-ms.sourcegitcommit: 8bb80eaef3c2a1085834b98839564c5d37334f56
+ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76515686"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78926518"
 ---
 # <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
 
@@ -40,7 +40,7 @@ ms.locfileid: "76515686"
 
 В следующей таблице приведено сопоставление между именами оповещений, их уникальными внешними идентификаторами и идентификаторами оповещений Microsoft Cloud App Security. Для сценариев и автоматизации специалисты Майкрософт рекомендуют использовать для оповещений внешние коды, а не имена, поскольку только внешние коды оповещений безопасности являются постоянными и не подлежат изменению.
 
-# <a name="external-idstabexternal"></a>[Внешние идентификаторы](#tab/external)
+# <a name="external-ids"></a>[Внешние идентификаторы](#tab/external)
 
 > [!div class="mx-tdBreakAll"]
 > |Новое имя оповещения системы безопасности|Уникальный внешний идентификатор|Статус|MITRE ATT&CK Matrix™|
@@ -80,7 +80,7 @@ ms.locfileid: "76515686"
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|Средняя|Обнаружение|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|Средняя|Обнаружение|
 
-# <a name="cloud-app-security-idstabcloud-app-security"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
+# <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
 
 > [!div class="mx-tdBreakAll"]
 > |Новое имя оповещения системы безопасности|Идентификатор оповещения Cloud App Security|

@@ -13,11 +13,11 @@ ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 01899ea7c6cae155dc1cc9e559a2cc27cc74c9d8
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590630"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78926575"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>Интеграция Azure ATP с ATP в Защитнике Windows
 

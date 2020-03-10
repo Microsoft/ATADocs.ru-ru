@@ -13,11 +13,11 @@ ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 54a1d8311c0c0a717ad5a205248d366c65fc010a
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590528"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78926381"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
