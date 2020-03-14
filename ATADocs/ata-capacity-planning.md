@@ -12,11 +12,11 @@ ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 0ec953c4311c12a44686cbbf4f4394492f74dd7f
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905486"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319157"
 ---
 # <a name="ata-capacity-planning"></a>Планирование производительности ATA
 
@@ -168,7 +168,7 @@ ms.locfileid: "75905486"
 
 
 
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 

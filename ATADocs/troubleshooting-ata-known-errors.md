@@ -13,11 +13,11 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: e7b0a5c83926c1d730d8de6467fa692a27f4d50d
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908129"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319217"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
@@ -30,7 +30,7 @@ ms.locfileid: "75908129"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Error|Описание:|Разрешение|
+> |Ошибка|Описание|Решение|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException: произошла локальная ошибка|Шлюзу ATA не удалось выполнить аутентификацию в контроллере домена.|1. Убедитесь, что запись DNS контроллера домена правильно настроена на DNS-сервере. <br>2. Убедитесь, что время шлюза ATA синхронизировано с временем контроллера домена.|
 > |System.IdentityModel.Tokens.SecurityTokenValidationException: не удалось проверить цепочку сертификатов|Шлюзу ATA не удалось проверить сертификат центра ATA.|1. Убедитесь, что сертификат корневого ЦС установлен в хранилище сертификатов доверенного центра сертификации на шлюзе ATA. <br>2. Убедитесь, что список отзыва сертификатов (CRL) доступен и что можно выполнить проверку отзыва сертификата.|
@@ -46,7 +46,7 @@ ms.locfileid: "75908129"
 > |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/kb/281884).|
 > |System.InvalidOperationException: Category does not exist (System.InvalidOperationException: категория не существует).|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/kb/2554336).|
 > |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
-> |System. IO. IOException: не удалось выполнить проверку подлинности, так как удаленная сторона закрыла транспортный поток или не смог создать защищенный канал SSL/TLS.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Выберите один из следующих вариантов. </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+> |System. IO. IOException: не удалось выполнить проверку подлинности, так как удаленная сторона закрыла транспортный поток или не смог создать защищенный канал SSL/TLS.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Используйте один из следующих вариантов: </br> Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS: </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |System.TypeLoadException: не удалось загрузить тип "Microsoft.Opn.Runtime.Values.BinaryValueBufferManager" из сборки "Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"|Шлюзу ATA не удалось загрузить необходимые файлы анализа.|Проверьте, установлен ли анализатор сообщений Майкрософт. Установка анализатора сообщений вместе со шлюзом ATA или упрощенным шлюзом ATA не поддерживается. Удалите анализатор сообщений и перезапустите службу шлюза.|
 > |System.Net.WebException: удаленный сервер вернул ошибку: требуется проверка подлинности прокси-сервера (407)|Связь шлюза ATA с центром ATA прерывается прокси-сервером.|Отключите прокси-сервер на компьютере со шлюзом ATA. <br></br>Обратите внимание, что параметры прокси-сервера могут применяться к отдельным учетным записям.|
 > |System.IO.DirectoryNotFoundException: система не может найти указанный путь. (Исключение из HRESULT: 0x80070003)|Не запущена одна или несколько служб, необходимых для работы ATA.|Запустите следующие службы: <br></br>Журналы и оповещения производительности (PLA), планировщик задач (расписание).|
@@ -57,12 +57,12 @@ ms.locfileid: "75908129"
 ## <a name="deployment-errors"></a>Ошибки развертывания
 > [!div class="mx-tableFixed"]
 > 
-> |Error|Описание:|Разрешение|
+> |Ошибка|Описание|Решение|
 > |-------------|----------|---------|
 > |Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 > |System.Threading.Tasks.TaskCanceledException: отменена задача|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1. Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу. <br></br>2. Проверьте конфигурацию прокси-сервера или брандмауэра.|
 > |System.Net.Http.HttpRequestException: произошла ошибка при отправке запроса. ---> System.Net.WebException: удаленный сервер возвратил ошибку: (407) Требуется проверка подлинности прокси.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
-> |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Выберите один из следующих вариантов. </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+> |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Используйте один из следующих вариантов: </br>Включите TLS 1.0 в шлюзе ATA. </br>Чтобы включить TLS 1.2 в .NET, настройте в разделах реестра использование значений операционной системы по умолчанию для SSL и TLS:</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>возможные проблемы с сетью;</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
 > | Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.|Сбой проверки сертификата центра.|Для проверки сертификата центра может потребоваться подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
 
@@ -70,7 +70,7 @@ ms.locfileid: "75908129"
 ## <a name="ata-center-errors"></a>Ошибки центра ATA
 > [!div class="mx-tableFixed"]
 > 
-> |Error|Описание:|Разрешение|
+> |Ошибка|Описание|Решение|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException: отказано в доступе.|Центру ATA не удалось использовать выданный сертификат для расшифровки. Скорее всего, это произошло из-за использования сертификата, в котором для KeySpec (KeyNumber) задано значение Signature (AT\\_SIGNATURE), что не поддерживается для расшифровки, вместо использования KeyExchange (AT\\_KEYEXCHANGE).|1. останавливает службу центра ATA. <br></br>2. Удалите сертификат центра ATA из хранилища сертификатов центра. (Перед удалением убедитесь, что у вас есть сертификат с копией закрытого ключа в PFX-файле.) <br></br>3. Откройте командную строку с повышенными привилегиями и выполните команду certutil-importpfx "Центерцертификате. pfx" в\\_KEYEXCHANGE <br></br>4. Запустите службу центра ATA. <br></br>5. Убедитесь, что все работает правильно.|
 
@@ -79,7 +79,7 @@ ms.locfileid: "75908129"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Проблема|Описание:|Разрешение|
+> |Проблема|Описание|Решение|
 > |-------------|----------|---------|
 > |От контроллера домена не поступает трафик, но оповещения мониторинга выводятся|    От контроллера домена не поступает трафик с использованием зеркального отображения портов через шлюз ATA|В сетевом адаптере захвата в шлюзе ATA отключите следующие функции в разделе **Дополнительные параметры**:<br></br>объединение полученных сегментов (IPv4);<br></br>объединение полученных сегментов (IPv6).|
 > |Отображается следующее предупреждение системы мониторинга: "Часть сетевого трафика не анализируется".|Вы можете получить это предупреждение, если у вас есть шлюз ATA или упрощенный шлюз на виртуальных машинах VMware. Это происходит из-за несоответствия конфигураций в VMware.|Задайте в конфигурации сетевого адаптера виртуальной машины значения "0" или "Отключено" для следующих параметров: TsoEnable, LargeSendOffload, TSO Offload, Giant TSO Offload. Протокол TLS 1.0 отключен в шлюзе ATA, а для .Net установлено значение TLS 1.2.|
