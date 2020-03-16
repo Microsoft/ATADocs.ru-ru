@@ -1,5 +1,5 @@
 ---
-title: Новые возможности Advanced Threat Analytics версии 1.4 | Документация Майкрософт
+title: Новые возможности Advanced Threat Analytics версии 1,4
 description: В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.4
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0515c9467889f7c83a52030b47a217b7bfb11732
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 9a06773002de2b0b830ba179899373543b2bfbff
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544213"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414205"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>Новые возможности ATA версии 1.4
 Данные заметки о выпуске содержат сведения об известных проблемах в версии 1.4 решения Advanced Threat Analytics.

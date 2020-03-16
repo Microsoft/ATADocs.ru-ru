@@ -1,5 +1,5 @@
 ---
-title: Политика конфиденциальности персональных данных Advanced Threat Analytics | Документация Майкрософт
+title: Политика персональных данных Advanced Threat Analytics
 description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из ATA.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: f6280764ca16ef3c29f22f7f91767aa6c3637a4f
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: da4b81d0a812a9fe8c1f86982445ce017f5e290f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905541"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412114"
 ---
 # <a name="ata-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в ATA
 
@@ -49,7 +49,7 @@ ms.locfileid: "75905541"
 
 ### <a name="delete-entities"></a>Удаление сущностей
 
-Это действие окончательно удаляет сущность из базы данных ATA. Чтобы выполнить эту команду, укажите имя команды `deleteAccount` и `SamName`, `UpnName` или `GUID` компьютера либо имя пользователя, которое нужно удалить. Пример. 
+Это действие окончательно удаляет сущность из базы данных ATA. Чтобы выполнить эту команду, укажите имя команды `deleteAccount` и `SamName`, `UpnName` или `GUID` компьютера либо имя пользователя, которое нужно удалить. Например: 
 
 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteAccount,admin1@contoso.com';" GDPR.js`
 
@@ -61,7 +61,7 @@ ms.locfileid: "75905541"
 
 Чтобы выполнить эту команду, укажите имя команды `deleteOldData` и число дней, в течение которых следует хранить базу данных. 
 
-Пример. 
+Например: 
 
 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteOldData,30';" GDPR.js`
 

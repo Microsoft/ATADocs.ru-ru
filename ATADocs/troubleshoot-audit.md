@@ -1,5 +1,5 @@
 ---
-title: Работа с журналами аудита ATA | Документы Майкрософт
+title: Работа с журналами аудита ATA
 description: В этой статье описывается работа с журналами аудита ATA в журнале событий Windows.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3fb9303f33342349d72d1d30e69b87c8d4e003bb
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1cec90e620591cd51f572e87f4d5e0296ee16d69
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197061"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414120"
 ---
 # <a name="working-with-ata-audit-logs"></a>Работа с журналами аудита ATA
 
@@ -40,6 +40,6 @@ ms.locfileid: "65197061"
 \* Журнал аудита изменений конфигурации содержит сведения как о прежней, так и о новой конфигурации.
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -1,5 +1,5 @@
 ---
-title: Новые возможности ATA версии 1.8 | Документация Майкрософт
+title: Новые возможности ATA версии 1.8
 description: В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.8.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: deb170191a649c72eaae3d26ba34bea6358b27b0
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: f13c603b25a58b81b8786734b0c11bf3f8da8f9c
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544284"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414290"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 
@@ -27,7 +27,7 @@ ms.locfileid: "75544284"
 
 
 
-## <a name="new--updated-detections"></a>новые и обновленные обнаружения;
+## <a name="new--updated-detections"></a>Новые и обновленные обнаружения
 
 - Функция определения внедрения нестандартных протоколов была улучшена для обнаружения вредоносного ПО WannaCry.
 

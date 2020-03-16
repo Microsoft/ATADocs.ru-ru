@@ -1,5 +1,5 @@
 ---
-title: Установка Advanced Threat Analytics. Шаг 8 | Документация Майкрософт
+title: Установка Advanced Threat Analytics. шаг 8
 description: На заключительном этапе установки ATA нужно настроить пользователя Honeytoken.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ef51590c3d4e2bf07f839e4dc6a60e2f84d19a50
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 367d40e57590ace725700de947f3c1fd31b9db5e
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543039"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411213"
 ---
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
@@ -68,7 +68,7 @@ ms.locfileid: "75543039"
 > [Шаг 9»](install-ata-step9-samr.md)
 
 
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 

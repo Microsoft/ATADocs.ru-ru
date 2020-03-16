@@ -1,5 +1,5 @@
 ---
-title: Работа с отчетами ATA | Документы Майкрософт
+title: Работа с отчетами ATA
 description: Описывается создание отчетов в ATA для мониторинга сети.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 279c8cc8f44e0c2803966709511d3089bce5d3a8
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: e14a0ffa795f16fe2f5cd4a9cef06b98bb90bc74
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197096"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412920"
 ---
 # <a name="ata-reports"></a>Отчеты ATA
 
@@ -64,7 +64,7 @@ ms.locfileid: "65197096"
 > Запланированные отчеты доставляются по электронной почте. Их отправка возможна, только если вы уже настроили почтовый сервер. Для этого на странице **Конфигурация** в разделе **Уведомления и отчеты** выберите пункт **Почтовый сервер**.
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

@@ -1,5 +1,5 @@
 ---
-title: Управление базой данных Advanced Threat Analytics | Документация Майкрософт
+title: Управление базой данных Advanced Threat Analytics
 description: Процедуры перемещения, резервного копирования и восстановления базы данных ATA.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e2e57f5816ff1f250ba04cddb65848b31673a71e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 868e946587b61fb3a571281944cca2a09225aa47
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196322"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411961"
 ---
 # <a name="ata-database-management"></a>Управление базой данных ATA
 
@@ -53,7 +53,7 @@ ms.locfileid: "65196322"
 
 7. Запустите службу **центра Microsoft Advanced Threat Analytics**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Архитектура ATA](ata-architecture.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

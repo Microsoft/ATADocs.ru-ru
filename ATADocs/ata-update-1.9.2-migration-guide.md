@@ -1,5 +1,5 @@
 ---
-title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.9.2 | Документация Майкрософт
+title: Руководством по миграции с обновлением Advanced Threat Analytics в 1.9.2
 description: Процедуры по обновлению ATA до версии 1.9.2
 keywords: ''
 author: shsagir
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d7149197933800697d26b42196dcc4c9121ea593
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 07c193422140eb2b9a19c587ff93103be70e0edc
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907545"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411417"
 ---
 # <a name="ata-version-192"></a>ATA версии 1.9.2
 
@@ -47,7 +47,7 @@ ms.locfileid: "75907545"
 
 Чтобы получить автономный пакет для этого обновления, перейдите на веб-сайт центра загрузки Майкрософт: [скачайте пакет ATA 1.9.2](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Для установки этого обновление требуется, чтобы в вашей системе была установлена одна из следующих версий ATA: 
 - обновление 1 для ATA 1.9 (версия 1.9.7412);
@@ -55,7 +55,7 @@ ms.locfileid: "75907545"
 - обновление 1 для ATA 1.8 (версия 1.8.6765);
 - ATA 1.8 (версия 1.8.6645).
 
-### <a name="restart-requirement"></a>Необходимость перезапуска
+### <a name="restart-requirement"></a>Требование перезагрузки
 
 После установки этого обновления, возможно, потребуется перезапустить компьютер.
 
@@ -64,7 +64,7 @@ ms.locfileid: "75907545"
 Это обновление заменяет ATA версии 1.9.1 (1.9.7412).
 
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также:
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

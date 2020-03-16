@@ -1,5 +1,5 @@
 ---
-title: Установка Advanced Threat Analytics. Шаг 5 | Документация Майкрософт
+title: Установка Advanced Threat Analytics. шаг 5
 description: Шаг 5 установки ATA предусматривает настройку параметров шлюза ATA.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0be6430a82752f51ed2660bb4053bb396b90e8b5
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 2b784d34e505e39b9333bb0642de8a7bd061f6a1
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544028"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413950"
 ---
 # <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
@@ -28,7 +28,7 @@ ms.locfileid: "75544028"
 > [Шаг 6 »](install-ata-step6.md)
 
 
-## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройте параметры шлюза ATA.
+## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройка параметров шлюза ATA
 
 После установки шлюза ATA выполните следующие шаги по его настройке.
 
@@ -78,7 +78,7 @@ ms.locfileid: "75544028"
 
 4.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
 5.  В консоли на панели поиска выполните поиск какой-либо сущности, например пользователя или группы в домене.
-6.  Откройте системный монитор. В дереве "Производительность" выберите **Системный монитор**, а затем щелкните значок плюса, чтобы **добавить счетчик**. Разверните раздел **Microsoft ATA Gateway** (Шлюз Microsoft ATA), а затем прокрутите список вниз до пункта **Network Listener PEF Captured Messages/Sec** (Счетчик производительности. Количество сообщений, фиксируемых прослушивателем сети в секунду) и добавьте его. Затем убедитесь, что на графе отображаются выполняемые действия.
+6.  Откройте Системный монитор. В дереве "Производительность" выберите **Системный монитор**, а затем щелкните значок плюса, чтобы **добавить счетчик**. Разверните раздел **Microsoft ATA Gateway** (Шлюз Microsoft ATA), а затем прокрутите список вниз до пункта **Network Listener PEF Captured Messages/Sec** (Счетчик производительности. Количество сообщений, фиксируемых прослушивателем сети в секунду) и добавьте его. Затем убедитесь, что на графе отображаются выполняемые действия.
 
     ![Изображение окна добавления счетчиков производительности](media/ATA-performance-monitoring-add-counters.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "75544028"
 
 
 
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 

@@ -1,5 +1,5 @@
 ---
-title: Часто задаваемые вопросы об Advanced Threat Analytics | Документация Майкрософт
+title: Часто задаваемые вопросы по Advanced Threat Analytics
 description: Здесь содержатся ответы на часто задаваемые вопросы о решении ATA
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9c8a16cbd49f653425b27fe50d18d7de155dab12
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 06b0aa757e2c5a85da276964faacfdf8090ccd74
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905713"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412471"
 ---
 # <a name="ata-frequently-asked-questions"></a>Часто задаваемые вопросы об ATA
 

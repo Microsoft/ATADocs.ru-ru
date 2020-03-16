@@ -1,5 +1,5 @@
 ---
-title: Установка Advanced Threat Analytics. Шаг 4 | Документация Майкрософт
+title: Установка Advanced Threat Analytics. шаг 4
 description: На четвертом этапе установки ATA вы установите шлюз ATA.
 keywords: ''
 author: rkarlin
@@ -12,22 +12,22 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 83234808b39c8c2e92ca4268c2ad64474f3462be
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 6c36bc1778c267e01ea98a916d17370a62d905d2
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543886"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410635"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 3](install-ata-step3.md)
-> [Шаг 5 »](install-ata-step5.md)
+> [Шаг 3](install-ata-step3.md)
+> [Шаг 5](install-ata-step5.md)
 
-## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установка шлюза ATA.
+## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установка шлюза ATA
 
 Прежде чем устанавливать шлюз ATA на выделенном сервере, убедитесь, что зеркальное отображение портов настроено правильно и что шлюз ATA может просматривать входящий и исходящий трафик на контроллерах домена. Дополнительную информацию см. в статье [Проверка зеркального отображения портов](validate-port-mirroring.md).
 
@@ -77,17 +77,17 @@ ms.locfileid: "75543886"
     
     -   Служба шлюзов ATA.
     -   Распространяемый пакет Microsoft Visual C++ 2013.
-    -   пользовательский набор сбора данных системного монитора;
+    -   Пользовательский набор сбора данных системного монитора.
     
 7. После завершения установки для шлюза ATA нажмите кнопку **Запустить**, чтобы открыть браузер и войти в консоль ATA, а для упрощенного шлюза ATA нажмите кнопку **Готово**.
 
 
 > [!div class="step-by-step"]
-> [« Шаг 3](install-ata-step3.md)
-> [Шаг 5 »](install-ata-step5.md)
+> [Шаг 3](install-ata-step3.md)
+> [Шаг 5](install-ata-step5.md)
 
 
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 

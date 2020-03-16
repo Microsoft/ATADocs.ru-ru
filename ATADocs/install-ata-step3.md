@@ -1,5 +1,5 @@
 ---
-title: Установка Advanced Threat Analytics. Шаг 3 | Документация Майкрософт
+title: Установка Advanced Threat Analytics. шаг 3
 description: На третьем этапе установки ATA вам нужно скачать пакет установки шлюза ATA.
 keywords: ''
 author: rkarlin
@@ -12,20 +12,20 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5d9ebf49493ec474ec1093aef66786d38db0cd57
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: eebbac33dbc339ec3558ab7458197cf8bdf92b3a
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543863"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410503"
 ---
 # <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 2](install-ata-step2.md)
-> [Шаг 4 »](install-ata-step4.md)
+> [Шаг 2](install-ata-step2.md)
+> [Шаг 4](install-ata-step4.md)
 
 ## <a name="step-3-download-the-ata-gateway-setup-package"></a>Шаг 3. Скачивание пакета установки шлюза ATA
 
@@ -51,11 +51,11 @@ ZIP-файл содержит следующие файлы:
 
 
 > [!div class="step-by-step"]
-> [« Шаг 2](install-ata-step2.md)
-> [Шаг 4 »](install-ata-step4.md)
+> [Шаг 2](install-ata-step2.md)
+> [Шаг 4](install-ata-step4.md)
 
 
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 

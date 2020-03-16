@@ -1,5 +1,5 @@
 ---
-title: Новые возможности Advanced Threat Analytics версии 1.5 | Документация Майкрософт
+title: Новые возможности Advanced Threat Analytics версии 1,5
 description: В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c3cbce98ef0b0fa75dcc0df813582d4d46dac4fb
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: f7e65f1da222de3b7a4cb05541bd2359e3046901
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544259"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414239"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -48,7 +48,7 @@ ms.locfileid: "75544259"
 ![Ошибка шлюза ATA](media/ata-install-error.png)
 
 <b>Решение</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
-### <a name="deployment"></a>Deployment (Развертывание)
+### <a name="deployment"></a>Развертывание
 Папка, указанная в параметрах "Путь к данным базы данных" и "Путь к журналу базы данных", должна быть пустой (никаких файлов или подпапок).
 Если она не пустая, развертывание не выполнится.
 

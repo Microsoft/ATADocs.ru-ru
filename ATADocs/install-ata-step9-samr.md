@@ -1,5 +1,5 @@
 ---
-title: Настройка SAM-R для включения обнаружения пути бокового смещения в Advanced Threat Analytics | Документация Майкрософт
+title: Настройка SAM-R для включения обнаружения пути перемещения бокового смещения в Advanced Threat Analytics
 description: Сведения о настройке SAM-R для включения обнаружения пути бокового смещения в Advanced Threat Analytics (ATA)
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1b8e8924fe0cd00985252c04edfb92ec51759b48
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: fa47a151ae8131039a5f7822acc5b541deb5c621
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907966"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413984"
 ---
 # <a name="install-ata---step-9"></a>Установка ATA. Шаг 9
 

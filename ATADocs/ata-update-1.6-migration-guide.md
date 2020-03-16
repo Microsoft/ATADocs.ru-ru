@@ -1,5 +1,5 @@
 ---
-title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.6 | Документация Майкрософт
+title: Руководством по миграции с обновлением Advanced Threat Analytics до 1,6
 description: Процедуры по обновлению ATA до версии 1.6
 keywords: ''
 author: rkarlin
@@ -12,29 +12,29 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ea37da339e5c78e4fbcb4cdd3351403cf0d4d49c
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: ca0a71a9af5c65fada34043f5d63ce11a8987ac9
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543250"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412760"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.6
 При обновлении ATA до версии 1.6 появляются следующие улучшения:
 
--   новые обнаружения;
+-   Новые обнаружения
 
--   улучшения имеющихся обнаружений.
+-   улучшения имеющихся обнаружений;
 
--   Упрощенный шлюз ATA.
+-   упрощенный шлюз ATA;
 
 -   Автоматические обновления
 
--   Улучшение производительности центра ATA
+-   улучшение производительности центра ATA;
 
--   более низкие требования к хранению;
+-   Более низкие требования к хранению
 
--   поддержка IBM QRadar;
+-   Поддержка IBM QRadar
 
 ## <a name="updating-ata-to-version-16"></a>Обновление ATA до версии 1.6
 > [!NOTE] 

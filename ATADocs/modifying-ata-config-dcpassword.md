@@ -1,5 +1,5 @@
 ---
-title: Изменение конфигурации Advanced Threat Analytics с использованием пароля для подключения к домену | Документация Майкрософт
+title: Изменение конфигурации Advanced Threat Analytics — пароль для подключения к домену
 description: Процедура изменения пароля для подключения к домену на шлюзе ATA.
 keywords: ''
 author: rkarlin
@@ -12,18 +12,18 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 345d888047b10777239efaf96b789c477a62a81b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: fa89acd842632c4a23d34f73aa6fe21abbc7878f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197118"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414103"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>Изменение конфигурации ATA. Пароль для подключения к домену
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
-## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
+## <a name="change-the-domain-connectivity-password"></a>Как изменить пароль для подключения к домену.
 
 Изменяя пароль для подключения к домену, указывайте правильный пароль. Если указать неправильный пароль, служба ATA на шлюзах ATA перестанет работать.
 
@@ -51,6 +51,6 @@ ms.locfileid: "65197118"
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Работа с консолью ATA](working-with-ata-console.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

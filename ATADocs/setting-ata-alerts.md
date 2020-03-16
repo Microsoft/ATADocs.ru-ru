@@ -1,5 +1,5 @@
 ---
-title: Настройка уведомлений Advanced Threat Analytics | Документация Майкрософт
+title: Настройка уведомлений Advanced Threat Analytics
 description: В этой статье описано, как настроить оповещения ATA, чтобы получать уведомления при обнаружении подозрительных действий.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7dbc98d61319c40a3d3691ace28e1300bce72b73
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2c1ae942edbd904715b1ebb76f3b3ecd0720bc05
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197075"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412879"
 ---
 # <a name="set-ata-notifications"></a>Настройка уведомлений ATA
 
@@ -51,5 +51,5 @@ ms.locfileid: "65197075"
 
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

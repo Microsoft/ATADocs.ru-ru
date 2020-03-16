@@ -1,5 +1,5 @@
 ---
-title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.5 | Документация Майкрософт
+title: Руководством по миграции с обновлением Advanced Threat Analytics до 1,5
 description: Процедуры по обновлению АТА до версии 1.5
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d71cfd283d89f6b1d1413f4d9832fb4302504622
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a008a345eb2c3a214f0f4f2352328ad60472e3ec
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196170"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412726"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.5
 Обновление до версии ATA 1.5 привносит следующие улучшения:
@@ -128,6 +128,6 @@ ZIP-файл содержит следующие файлы:
 
 ![Изображение обновленных шлюзов](media/ATA-gw-updated.png)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

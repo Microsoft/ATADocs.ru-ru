@@ -1,5 +1,5 @@
 ---
-title: Пометка конфиденциальных учетных записей с помощью ATA | Документация Майкрософт
+title: Пометка учетных записей с учетными записями ATA
 description: Сведения о пометке конфиденциальных учетных записей с помощью Advanced Threat Analytics (ATA)
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 39ad944d4517cbfe73cc7ac95f0cf7ceb6a3f213
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 4897bee445099b21dabac7ffbbbf3e607254b237
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196033"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414171"
 ---
 # <a name="tag-sensitive-accounts"></a>Пометка конфиденциальных учетных записей
 
@@ -56,12 +56,12 @@ ms.locfileid: "65196033"
 -   Операторы настройки сети 
 -   Создатели входящего доверия леса
 -   Администраторы домена
--   .
+-   Контроллеры домена
 -   Владельцы-создатели групповой политики 
 -   Контроллеры домена только для чтения 
 -   Корпоративные контроллеры домена только для чтения 
 -   Администраторы схемы 
 -   Администраторы предприятия
      
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также:
 [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

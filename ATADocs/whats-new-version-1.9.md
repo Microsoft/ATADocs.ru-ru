@@ -1,5 +1,5 @@
 ---
-title: Новые возможности ATA версии 1.9 | Документация Майкрософт
+title: Новые возможности ATA версии 1.9
 description: В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.9.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 80d8e42b98c0c4cb57beae33ce238d4b466593b5
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 40193c0aa8c0ee10dd129d4153dd63df9f8eb926
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544320"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412811"
 ---
 # <a name="whats-new-in-ata-version-19"></a>Новые возможности ATA версии 1.9
 
@@ -25,7 +25,7 @@ ms.locfileid: "75544320"
 
 В этих заметках о выпуске содержатся сведения об обновлениях, новых функциях, исправлениях ошибок и известных проблемах в текущей версии Advanced Threat Analytics.
 
-## <a name="new--updated-detections"></a>новые и обновленные обнаружения;
+## <a name="new--updated-detections"></a>Новые и обновленные обнаружения
 
 -  **Создание подозрительной службы**. Злоумышленники пытаются запускать подозрительные службы в вашей сети. Теперь ATA выдает предупреждение, когда обнаруживает запуск на определенном компьютере новой службы, которая вызывает подозрения. Это обнаружение основано на событиях (не на сетевом трафике). Дополнительные сведения см. в [руководстве по подозрительным действиям](suspicious-activity-guide.md#suspicious-service-creation).
 

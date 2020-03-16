@@ -1,5 +1,5 @@
 ---
-title: Настройка пересылки событий Windows в Advanced Threat Analytics | Документы Майкрософт
+title: Настройка пересылки событий Windows в Advanced Threat Analytics
 description: Описываются параметры настройки пересылки событий Windows в ATA.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 825185a2aaf792e6b9c1fe58e022174c2f98bb0c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 84ce1bed4203ff7344d1e28dc4765ba5cfe79843
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196816"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411859"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -94,6 +94,6 @@ ms.locfileid: "65196816"
 
 Подробности см. в статье [Настройка компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Установка ATA](install-ata-step1.md)
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

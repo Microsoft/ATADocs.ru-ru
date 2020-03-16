@@ -1,5 +1,5 @@
 ---
-title: Установка Advanced Threat Analytics. Шаг 2 | Документация Майкрософт
+title: Установка Advanced Threat Analytics. шаг 2
 description: На втором этапе установки ATA вы настроите параметры подключения к домену на сервере центра ATA.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 68ad769851926eed137108ff65663666cbf4fad0
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: ff20bf7da1586090d2728015f08cf94d432df38f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907898"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410465"
 ---
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
@@ -35,7 +35,7 @@ ms.locfileid: "75907898"
 
 1.  Введите следующие сведения и нажмите кнопку **Save** (Сохранить).
 
-    |Поле|Комментарии|
+    |Поле|Comments|
     |---------|------------|
     |**Имя пользователя** (указывается обязательно)|Введите имя пользователя только для чтения, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя.|
     |**Пароль** (указывается обязательно)|Введите пароль для имени пользователя только для чтения, например **Parolch1k**.|
@@ -54,7 +54,7 @@ ms.locfileid: "75907898"
 
 
 ## <a name="see-also"></a>См. также
-## <a name="related-videos"></a>Видео по теме
+## <a name="related-videos"></a>Связанные видео
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 

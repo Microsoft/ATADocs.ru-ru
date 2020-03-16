@@ -1,5 +1,5 @@
 ---
-title: Руководство по миграции на обновленную версию Advanced Threat Analytics 1.9.1 | Документация Майкрософт
+title: Руководством по миграции с обновлением Advanced Threat Analytics в 1.9.1
 description: Процедуры по обновлению ATA до версии 1.9.1
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 86566cbb893fc92f87fbd085e5087714d647f646
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: fdaf1e8e8a96e0f96098235d818f738528a7ab0e
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907263"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412318"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
 
@@ -49,17 +49,17 @@ ms.locfileid: "75907263"
 ### <a name="manual-download"></a>Скачивание вручную
 Чтобы получить автономный пакет для этого обновления, перейдите на веб-сайт центра загрузки Майкрософт: [скачайте пакет ATA 1,9](https://www.microsoft.com/en-us/download/details.aspx?id=56725).
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 Чтобы установить это обновление, требуется наличие ATA версии 1.9 (1.9.7312), обновления 1 для ATA версии 1.8 (1.8.6765) или ATA версии 1.8 (1.8.6645).
 
-### <a name="restart-requirement"></a>Необходимость перезапуска
+### <a name="restart-requirement"></a>Требование перезагрузки
 Может потребоваться перезапуск компьютера после установки этого обновления.
 
 ### <a name="update-replacement-information"></a>Информация о замене версий
 Это обновление заменяет ATA версии 1.9 (1.9.7312).
 
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также:
 
 - [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

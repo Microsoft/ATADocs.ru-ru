@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок в Advanced Threat Analytics с использованием базы данных | Документация Майкрософт
+title: Устранение неполадок в Advanced Threat Analytics с использованием базы данных
 description: В данной статье рассказывается о том, как устранять неполадки с помощью базы данных ATA.
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fd929ff7c2a11997997b2c5107e66f9e8a1d2038
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1efc5aee15527212a6f2eb53c147fe8fa1d62ea3
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195809"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414222"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 
@@ -35,7 +35,7 @@ ms.locfileid: "65195809"
 
 > [!div class="mx-tableFixed"]
 > 
-> |Как...|Синтаксис|"Заметки"|
+> |Инструкции...|Синтаксис|Примечания|
 > |-------------|----------|---------|
 > |проверить наличие коллекций в базе данных.|`show collections`|Полезно использовать в качестве полной проверки, чтобы убедиться, что трафик записывается в базу данных и что АТА получает сведения о событии 4776.|
 > |получить сведения о пользователе, компьютере или группе (UniqueEntity). Это, например, могут быть сведения об идентификаторе пользователя.|`db.UniqueEntity.find({CompleteSearchNames: "<name of entity in lower case>"})`||
@@ -48,7 +48,7 @@ ms.locfileid: "65195809"
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

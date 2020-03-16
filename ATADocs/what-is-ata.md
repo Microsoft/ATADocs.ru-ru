@@ -1,5 +1,5 @@
 ---
-title: Основные сведения о решении Microsoft Advanced Threat Analytics (ATA) | Microsoft Docs
+title: Основные сведения о решении Microsoft Advanced Threat Analytics (ATA)
 description: Здесь описывается решение Microsoft Advanced Threat Analytics (ATA) и подозрительные действия, которые оно может обнаружить
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bb6af26ba5e77ab66009ae3330f36a30e9d9d880
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: b88ca23b2d01d08357b3decb1e8e91c07848f5d8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908311"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410602"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
 
@@ -63,7 +63,7 @@ ATA выявляет три основных вида угроз: атака з�
 -   Вредоносные запросы на репликацию
 -   Разведывательная атака
 -   Атака методом подбора
--   Удаленное выполнение.
+-   Удаленное выполнение
 
 Полный список и описания выявляемых действий можно изучить в статье [Типы угроз, которые ищет ATA](ata-threats.md). 
 
@@ -108,8 +108,8 @@ ATA обнаруживает эти подозрительные действи�
 
 -   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
 
-## <a name="related-videos"></a>Видео по теме
-- [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
+## <a name="related-videos"></a>Связанные видео
+- [Присоединение к сообществу безопасности](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
