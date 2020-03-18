@@ -1,5 +1,5 @@
 ---
-title: Анализ атак, использующих пути бокового смещения, в Azure ATP | Документация Майкрософт
+title: Анализ путей бокового смещения в Azure ATP
 description: В этой статье описываются действия по обнаружению и анализу атак, использующих пути бокового смещения, в Azure Advanced Threat Protection (ATP).
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: febc71a649a9f1ab15f47bd67f2f6b1098b5dce5
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: b3f28e223f2a477d7cb205ac836fc8692c1472d6
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906257"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413474"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>Руководство. Использование путей бокового смещения
 

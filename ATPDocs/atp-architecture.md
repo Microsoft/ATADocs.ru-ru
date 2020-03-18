@@ -1,5 +1,5 @@
 ---
-title: Архитектура Azure Advanced Threat Protection | Документы Майкрософт
+title: Архитектура Azure Advanced Threat Protection
 description: В этой статье описывается архитектура Azure Advanced Threat Protection (ATP).
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4100fb806bc7d13b7608b2036b15133809ed7d34
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 0d737adb2c4d03fbeedb2277573f40d4a29b5de9
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907714"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413287"
 ---
 # <a name="azure-atp-architecture"></a>Архитектура Azure ATP
 

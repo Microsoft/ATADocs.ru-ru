@@ -1,5 +1,5 @@
 ---
-title: Изменение конфигурации центра Advanced Threat Analytics | Документация Майкрософт
+title: Изменение конфигурации центра Advanced Threat Analytics
 description: Описывается изменение IP-адреса, порта, URL-адреса консоли и сертификата центра ATA.
 keywords: ''
 author: rkarlin
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8a228463c422ac7f62d3fc18395aa0b61df0a731
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 498eea7cfe1393bd0b616fc5cfbb11bd18334f8f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196019"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414018"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>Изменение конфигурации центра ATA
 
