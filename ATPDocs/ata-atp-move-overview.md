@@ -1,5 +1,5 @@
 ---
-title: Переход с Advanced Threat Analytics на Расширенную защиту от угроз Azure | Документация Майкрософт
+title: Переход с Advanced Threat Analytics на Расширенную защиту от угроз Azure
 description: Узнайте, как перевести существующую установку Advanced Threat Analytics на Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5c784226b8cf9ee19797103d3e0b9cfe23a629bd
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 5a32bf8f614019f15cfe0740aeaf59956ce94909
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908341"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411078"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP) 
 

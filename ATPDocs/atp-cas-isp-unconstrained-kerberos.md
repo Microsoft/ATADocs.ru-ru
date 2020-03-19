@@ -1,5 +1,5 @@
 ---
-title: Оценка состояния безопасности удостоверений расширенной защиты от угроз Azure с неограниченным использованием Kerberos | Документация Майкрософт
+title: Оценка состояния безопасности удостоверений Расширенной защиты от угроз Azure с неограниченным использованием Kerberos
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений Azure ATP с неограниченным использованием Kerberos.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7249c8a5c320720bad7e8f90ab49fbdaaabcf279
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 4938c5a222e6a8c20444ca73e3e119636ed59e83
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905554"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413916"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>Оценка безопасности: небезопасное делегирование Kerberos
 

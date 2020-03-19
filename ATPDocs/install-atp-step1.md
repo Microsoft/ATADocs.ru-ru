@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство по созданию экземпляра Azure ATP | Документация Майкрософт
+title: Краткое руководство. Создание экземпляра Azure ATP
 description: Краткое руководство по созданию экземпляра для развертывания Azure ATP — первого шага установки Azure ATP.
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d50774470dba20f523959da04f370ff34bcd87bb
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 5638e10a23ae9ddec744d7730283c17be5fab322
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905164"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413763"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>Краткое руководство. создание экземпляра Azure ATP;
 

@@ -1,5 +1,5 @@
 ---
-title: Настройка уведомлений Advanced Threat Protection | Документы Майкрософт
+title: Настройка уведомлений Расширенной защиты от угроз Azure
 description: В этой статье описано, как настроить оповещения системы безопасности Azure ATP, чтобы получать уведомления при обнаружении подозрительных действий.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 39b1c0835402ff4ff688a28451fd7505f2cd364c
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 8d74d2542008dfdf471991ed2de99c989bfdaf8c
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906141"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411033"
 ---
 # <a name="set-azure-atp-notifications"></a>Настройка уведомлений Azure ATP
 

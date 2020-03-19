@@ -1,5 +1,5 @@
 ---
-title: Руководство по настройке лаборатории оповещений системы безопасности Azure ATP | Документация Майкрософт
+title: Руководство по настройке лаборатории оповещений системы безопасности Azure ATP
 description: В этом руководстве показано, как настроить тестовую лабораторию Azure ATP, чтобы имитировать угрозы, которые должно обнаружить решение Azure ATP.
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 8c3238c07c05bf307c91753e6d69b35b376a3c21
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 4a846962645d978fc7419650781624e7c5f4bf0b
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908516"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414528"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
 
@@ -53,8 +53,8 @@ ms.locfileid: "75908516"
 |  полное доменное имя; | ОС | IP | Назначение |
 |------|-------|---------|--------------|
 | ContosoDC.contoso.azure | Windows Server 2012 R2 | 10.0.24.4 | Контроллер домена с установленным локально датчиком Azure ATP |
-| VictimPC.contoso.azure | Windows 10 | 10.0.24.5 |Компьютер атакуемого |
-| AdminPC.contoso.azure | Windows 10  | 10.0.24.6 | Компьютер администратора домена (иногда называется "Защищенная рабочая станция администратора" или "Привилегированная рабочая станция администратора") |
+| VictimPC.contoso.azure | быть под управлением ОС Windows 10; | 10.0.24.5 |Компьютер атакуемого |
+| AdminPC.contoso.azure | быть под управлением ОС Windows 10;  | 10.0.24.6 | Компьютер администратора домена (иногда называется "Защищенная рабочая станция администратора" или "Привилегированная рабочая станция администратора") |
 
 ### <a name="active-directory-users-and-groups"></a>Пользователи и группы в Active Directory
 

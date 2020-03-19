@@ -1,5 +1,5 @@
 ---
-title: Пометка конфиденциальных учетных записей с помощью Azure ATP | Документы Майкрософт
+title: Пометка конфиденциальных учетных записей с помощью Azure ATP
 description: Сведения о пометке конфиденциальных учетных записей с помощью с помощью Azure Advanced Threat Protection (ATP)
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cf29a41139973742d6a1be96643104e1cfad0703
-ms.sourcegitcommit: 173b9fc26592efec2113c6ee585b04311ddfdbf1
+ms.openlocfilehash: 465879661322a7e71412570ad052c18575df3ade
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422019"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410975"
 ---
 # <a name="working-with-sensitive-accounts"></a>Работа с конфиденциальными учетными записями
 

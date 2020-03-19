@@ -1,5 +1,5 @@
 ---
-title: Устранение известных неполадок Azure ATP | Документация Майкрософт
+title: Устранение известных неполадок с Azure ATP
 description: В этой статье описываются способы устранения неполадок в службе Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 671920475245e99c788a733e2d445947649c7def
-ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
+ms.openlocfilehash: 61415f1a5f74a216dd0c505b6e92419601e08941
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78926552"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414647"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 

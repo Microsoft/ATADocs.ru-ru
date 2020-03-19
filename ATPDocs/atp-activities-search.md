@@ -1,5 +1,5 @@
 ---
-title: Фильтрация и поиск отслеживаемых действий Расширенной защиты от угроз Azure | Документация Майкрософт
+title: Фильтрация и поиск отслеживаемых действий Расширенной защиты от угроз Azure
 description: В этой статье приводятся общие сведения о фильтрации и поиске отслеживаемых действий с помощью Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 51da2bb933d1130fd6769d152b55bac5ff77ffc9
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 46d4d847a4145475989b28b02e638c7324dc4bb5
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908409"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414358"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Поиск и фильтрация отслеживаемых действий Azure ATP 
 

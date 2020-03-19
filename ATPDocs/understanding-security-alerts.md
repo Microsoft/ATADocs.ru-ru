@@ -1,5 +1,5 @@
 ---
-title: Руководство по оповещениям системы безопасности Azure ATP | Документы Майкрософт
+title: Руководство. Оповещения системы безопасности в Azure ATP
 d|Description: This article explains how to use and understand Azure ATP security alerts.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: baefea19a50cec6a6d14835ac3cb8754671ec85c
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 863211852883cc2db2192abd1dffbe87ab3d52f9
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907499"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414630"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности
 
@@ -95,7 +95,7 @@ ms.locfileid: "75907499"
     - Исходная, конечная или атакованная сущность в зависимости от оповещения. 
 - Большинство вкладок включают следующие данные в зависимости от сущности: 
   - Имя
-  - Подробные сведения 
+  - Сведения 
   - Type 
   - Имя SAM  
   - Исходный компьютер

@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство по подключению Azure ATP к Active Directory | Документация Майкрософт
+title: Краткое руководство. Подключение Azure ATP к Active Directory
 description: На втором этапе установки Azure ATP выполняется настройка параметров подключения к домену в облачной службе Azure ATP.
 author: shsagir
 ms.author: shsagir
@@ -7,12 +7,12 @@ ms.date: 01/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 397dcd16313aba5ae2513633905f2f91d02ae0fa
-ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
+ms.openlocfilehash: 4d3e65aaafea7cefd4ef564c0ee0a82b8d2fdfe4
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78926435"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413746"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>Краткое руководство. Подключение к лесу Active Directory
 

@@ -1,5 +1,5 @@
 ---
-title: Оценка состояния безопасности удостоверений расширенной защиты от угроз Azure | Документация Майкрософт
+title: Оценка состояния безопасности удостоверений Расширенной защиты от угроз Azure
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7109196ef5c3e5d330d0d0b82f9e8bd753fe70fc
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 27e6a0c474b06e21942e4e07211c608f7cdfd1fd
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907651"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414086"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Оценки состояния безопасности удостоверений Azure ATP
  

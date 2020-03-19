@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство по установке датчика Azure ATP | Документация Майкрософт
+title: Краткое руководство. Установка датчика Azure ATP
 description: На четвертом шаге установки Azure ATP выполняется установка датчика Azure ATP.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 56c74fbacac2bb0bc9affa5b3443be7c7900316e
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 6a38a61e5028003ba10ad6929e24e63e81418f7b
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908564"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413712"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 

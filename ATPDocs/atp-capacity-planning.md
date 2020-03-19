@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство. Планирование развертывания Azure ATP | Документация Майкрософт
+title: Краткое руководство. Планирование развертывания Расширенной защиты от угроз Azure
 description: В этой статье содержатся сведения, которые помогут запланировать развертывание и определить, сколько серверов Azure ATP потребуется для поддержки сети.
 author: shsagir
 ms.author: shsagir
@@ -7,12 +7,12 @@ ms.date: 02/19/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: dafaeda31b59f8779958a9566fe748e8c86bb3fd
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: e13dc696046ca095438297ad0aeb82e7f98a58d2
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590647"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414494"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>Краткое руководство. Планирование производительности для Azure ATP
 

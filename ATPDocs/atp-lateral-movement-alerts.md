@@ -1,5 +1,5 @@
 ---
-title: Оповещения системы безопасности о боковом смещении в Azure ATP | Документация Майкрософт
+title: Оповещения системы безопасности о боковом смещении в Azure ATP
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of lateral movement phase efforts are detected against your organization.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b815ea0cb5e9276f280ce2164cf97b4fe3daadbf
-ms.sourcegitcommit: 4381148c0487b473e23fe9b425b133c42acde881
+ms.openlocfilehash: 544d1708bb86372f7271b4d398f3aebaa74c790e
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78208029"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413032"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>Руководство. Предупреждения об атаках бокового смещения
 

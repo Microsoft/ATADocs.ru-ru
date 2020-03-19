@@ -1,5 +1,5 @@
 ---
-title: Краткое руководство по скачиванию пакета установки датчика Azure ATP | Документация Майкрософт
+title: Краткое руководство. Скачивание пакета установки датчика Azure ATP
 description: На третьем шаге установки Azure ATP выполняется скачивание пакета установки датчика Azure ATP.
 keywords: ''
 author: shsagir
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
-ms.openlocfilehash: d698432aa8955fb46ed25940bacce39026a543e4
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 5c8065ee0c4358b25597879881f1cc1f063d5c2f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590545"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413729"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика Azure ATP
 

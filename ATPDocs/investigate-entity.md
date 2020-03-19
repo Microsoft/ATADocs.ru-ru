@@ -1,5 +1,5 @@
 ---
-title: Анализ пользователей и компьютеров с помощью Azure ATP | Документация Майкрософт
+title: Анализ пользователей и компьютеров с помощью Azure ATP
 description: Использование Azure Advanced Threat Protection (ATP) для исследования подозрительных действий, выполняемых пользователями, сущностями, компьютерами или устройствами
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e4102f40c2440357798fa3d079d51380da0b2cde
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: e9ceae703f76a437ddf187e7037e119ff6601743
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906296"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413457"
 ---
 # <a name="tutorial-investigate-an-entity"></a>Руководство. Анализ сущностей
 

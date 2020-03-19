@@ -1,5 +1,5 @@
 ---
-title: Изменение конфигурации Azure Advanced Threat Protection с использованием пароля для подключения к домену | Документы Майкрософт
+title: Изменение конфигурации Расширенной защиты от угроз Azure с использованием пароля для подключения к домену
 description: Процедура изменения пароля для подключения к домену на автономном датчике Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f18a2a1a4a3cd7b9e5dec5dacdce3c88ffe296a8
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 294d76a0455ac11866196919caa1bd830617420b
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590596"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414715"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
 

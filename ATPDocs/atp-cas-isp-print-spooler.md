@@ -1,5 +1,5 @@
 ---
-title: Оценка состояния безопасности удостоверений расширенной защиты от угроз Azure с очередью печати принтера | Документация Майкрософт
+title: Оценка состояния безопасности удостоверений Расширенной защиты от угроз Azure с очередью печати принтера
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений Azure ATP для очереди печати принтера.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1a7d9525-8923-4dae-af51-02a68aa61644
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 24077c21a6709d357a0b5b570f0d083fcd21dea8
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: e5293dd937cf81bad992443373e4696dc8bc4a13
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907920"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414307"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>Оценка безопасности: служба очереди печати принтера на контроллерах домена 
 

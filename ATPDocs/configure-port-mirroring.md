@@ -1,5 +1,5 @@
 ---
-title: Настройка зеркального отображения портов при развертывании Azure Advanced Threat Protection | Документы Майкрософт
+title: Настройка зеркального отображения портов при развертывании Расширенной защиты от угроз Azure
 description: В этой статье описываются варианты зеркального отображения портов и их настройка для Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d6c5cf1619a88e55db2968977d4fd3ee0aebc8e3
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 70c122d4983d4b5b32899d13ff81b81d38d65af8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590664"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413848"
 ---
 # <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
 

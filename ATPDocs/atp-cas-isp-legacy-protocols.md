@@ -1,5 +1,5 @@
 ---
-title: Оценка состояния безопасности удостоверений расширенной защиты от угроз Azure с устаревшими протоколами | Документация Майкрософт
+title: Оценка состояния безопасности удостоверений Расширенной защиты от угроз Azure с устаревшими протоколами
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений в устаревших протоколах Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7a5f3b92114b27c7c2df11d5c2aa629317415a8c
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: e1cd5eef793a801944f61c1fe2484bfc9a02b900
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908092"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414511"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов 
  

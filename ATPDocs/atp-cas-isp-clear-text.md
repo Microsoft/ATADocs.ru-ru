@@ -1,5 +1,5 @@
 ---
-title: Проверка раскрытия простого текста в расширенной защите от угроз Azure | Документация Майкрософт
+title: Проверка раскрытия простого текста в Расширенной защите от угроз Azure
 description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений с раскрытием простого текста Azure ATP.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6b4663f71c0d30acd0fdc696650d359ec33b1227
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 6993c0caf30c1ea783cf47304219f1203648e3c5
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908466"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411332"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>Оценка безопасности: раскрытие сущностями учетных данных в виде открытого текста 
 

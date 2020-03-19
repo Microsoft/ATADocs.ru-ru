@@ -1,5 +1,5 @@
 ---
-title: Работа с отчетами Azure ATP | Документы Майкрософт
+title: Работа с отчетами Azure ATP
 description: Сведения о создания отчетов в Azure ATP для мониторинга сети.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 76db7841745c7da555caa356808464d9d45b8107
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 74739e03bf4fdeb92175f9699701d47d6281d108
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907854"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414698"
 ---
 # <a name="azure-atp-reports"></a>Отчеты Azure ATP
 

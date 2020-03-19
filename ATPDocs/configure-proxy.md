@@ -1,5 +1,5 @@
 ---
-title: Настройка прокси-сервера или брандмауэра для взаимодействия Azure ATP с датчиком | Документы Майкрософт
+title: Настройка прокси-сервера или брандмауэра для включения обмена данными между Azure ATP и датчиком
 description: Сведения о настройке брандмауэра или прокси-сервера для взаимодействия облачной службы Azure ATP и датчиков Azure ATP
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 88d6c9fddc0a9e8db8d63a64618b7ab9c14a092f
-ms.sourcegitcommit: 1a0cc214568bf12041d11e037dfe56a8d9e707c2
+ms.openlocfilehash: a1e8065f5a1898301439c160c2a877cabe750928
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76706228"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413831"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 

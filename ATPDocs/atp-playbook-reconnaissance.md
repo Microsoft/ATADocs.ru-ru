@@ -1,5 +1,5 @@
 ---
-title: Руководство. Сборник схем рекогносцировки в Azure ATP | Документация Майкрософт
+title: Руководство. Сборник схем рекогносцировки в Azure ATP
 description: В сборнике схем рекогносцировки в Azure ATP показано, как смоделировать угрозы рекогносцировки для их обнаружения с помощью Azure ATP.
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 53ff08105d688275dad6b2283e3d30e0db8df002
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 50aeef3f54285b24de308269f41be54aeb379067
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908185"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411927"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>Руководство. Сборник схем рекогносцировки
 
