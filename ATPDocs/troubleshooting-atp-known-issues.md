@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/18/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 61415f1a5f74a216dd0c505b6e92419601e08941
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: c40efc27e1740ef6e7b0aa9a98784631072f2c3b
+ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414647"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79504232"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -68,7 +68,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт <a name="nic-teaming"></a>
+## <a name="azure-atp-sensor-nic-teaming-issue"></a>Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт <a name="nic-teaming"></a>
 
 При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, следуйте приведенным ниже инструкциям:
 
@@ -147,6 +147,18 @@ Azure Advanced Threat Protection позволяет интегрировать A
 **Решение:**
 
 Убедитесь, что учетные данные учетной записи gMSA верны и что датчик предоставил разрешения на получение учетных данных учетной записи.
+
+## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>Скачиваемые отчеты не могут содержать больше 300 000 записей
+
+Azure ATP не поддерживает скачивание отчетов, содержащих больше 300 000 записей. Отчеты, в которых больше 300 000 записей, будут отображаться неполными.
+
+**Причина**.
+
+Это инженерное ограничение.
+
+**Решение:**
+
+Известного решения не существует.
 
 ## <a name="see-also"></a>См. также
 

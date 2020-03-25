@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/01/2020
+ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 0b0805a634466d1ef8e53c187ef674edc529eda4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 3529bee9f7ebaf13b541109375845fedcac2bfa8
+ms.sourcegitcommit: 7b80b2eff4331f8e1e1403e4b5c751f406915624
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412692"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79989825"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -25,6 +25,24 @@ ms.locfileid: "79412692"
 Дополнительные сведения о предыдущих выпусках Azure ATP до выпуска 2.55 (включительно) см. в [справочнике по выпускам Azure ATP](atp-release-reference.md).
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2112"></a>Azure ATP, выпуск 2.112
+
+Дата выпуска: 15 марта 2020 г.
+
+- **Новые экземпляры Azure ATP автоматически интегрируются с Microsoft Cloud App Security**  
+При создании экземпляра Azure ATP (прежнее название — рабочая область) интеграция с Microsoft Cloud App Security включена по умолчанию. Дополнительные сведения об интеграции см. в статье об [использовании Azure ATP с Microsoft Cloud App Security](atp-mcas-integration.md).
+
+- **Новые отслеживаемые действия**  
+Теперь доступны следующие мониторы активности:
+  - интерактивный вход с сертификатом;
+  - сбой входа с сертификатом;
+  - делегированный доступ к ресурсам.
+
+    Узнайте о том, какие [действия отслеживает Azure ATP](monitored-activities.md) и как [отфильтровывать и искать отслеживаемые действия](atp-activities-search.md) на портале.
+
+- **Расширение функциональности: расширенное действие доступа к ресурсам**  
+Начиная с этой версии, Azure ATP теперь предоставляет сведения о действиях доступа к ресурсам. Это позволяет определить, является ли ресурс доверенным для неограниченного делегирования. Такая конфигурация ресурсов небезопасна. Она создает риск того, что злоумышленники могут использовать приложение в своих интересах. Дополнительные сведения о риске см. в статье [Оценка безопасности: небезопасное делегирование Kerberos](atp-cas-isp-unconstrained-kerberos.md).
 
 ## <a name="azure-atp-release-2111"></a>Azure ATP, выпуск 2.111
 
@@ -127,7 +145,7 @@ Azure ATP теперь поддерживает использование гр
 
 Выпущен 3 ноября 2019 г.
 
-- **Расширение функциональности:  В пользовательский интерфейс добавлено уведомление о доступности портала Cloud App Security на портале Azure ATP**  
+- **Расширение функциональности:  В пользовательский интерфейс добавлено уведомление о доступности портала Cloud App Security на портале Azure ATP **  
 Чтобы гарантировать осведомленность всех пользователей о доступности улучшенных функций с использованием портала Cloud App Security, для портала было добавлено уведомление из существующей временной шкалы оповещений Azure ATP.
 
 - Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
