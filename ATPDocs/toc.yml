@@ -126,14 +126,14 @@
         - name: "Работа с центром работоспособности Azure\_ATP"
           href: atp-health-center.md
         - name: "Оповещения о работоспособности Azure\_ATP"
-          href: monitoring-alerts.md
+          href: health-alerts.md
     - name: "Отложенное обновление датчика Azure\_ATP"
       href: sensor-update.md
     - name: Устранение известных неполадок
       href: troubleshooting-atp-known-issues.md
     - name: Устранение неполадок с помощью журналов
       href: troubleshooting-atp-using-logs.md
-    - name: "Интеграция с ATP в Защитнике\_Windows"
+    - name: "Интеграция с\_Microsoft Defender ATP"
       href: integrate-wd-atp.md
     - name: "Интеграция\_VPN"
       href: install-atp-step6-vpn.md
