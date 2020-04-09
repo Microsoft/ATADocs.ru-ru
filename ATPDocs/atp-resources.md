@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7d4d14b8f2710879833b8aca5310f939c784f2b3
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: a4d4d9cf6bcd0fb6c8f321ab2388ed5a455c36f5
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411749"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669665"
 ---
 # <a name="azure-atp-readiness-guide"></a>План подготовки Azure ATP к работе
 
@@ -46,7 +46,7 @@ Azure ATP состоит из облачной службы, размещенн
 
 - [Попробуйте решение ATP Azure (часть EMS E5)](https://aka.ms/aatptrial) — пробная версия действительна в течение 90 дней.
 - [Настройка Azure ATP](install-atp-step1.md) — выполните приведенные инструкции, чтобы развернуть Azure ATP в своей среде.
-- [Интеграция Azure ATP с ATP в Защитнике Windows](integrate-wd-atp.md)
+- [Интеграция Расширенной защиты от угроз Azure с ATP в Microsoft Defender](integrate-wd-atp.md)
 
 ## <a name="azure-atp-settings"></a>Параметры Azure ATP
 

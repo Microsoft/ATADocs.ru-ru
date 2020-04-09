@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c40efc27e1740ef6e7b0aa9a98784631072f2c3b
-ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
+ms.openlocfilehash: bb738a45889bbb2c509f6cf2b2d7e47f0782bd7a
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79504232"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669724"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -101,13 +101,13 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 - Если у виртуальной машины менее 64 логических ядер и она выполняется на узле HP, для параметра BIOS **NUMA Group Size Optimization** (Оптимизация размера группы NUMA) можно изменить значение по умолчанию **Clustered** (Кластеризовано) значением **Flat** (Фиксировано).
 
-## <a name="windows-defender-atp-integration-issue"></a>Проблема интеграции ATP в Защитнике Windows
+## <a name="microsoft-defender-atp-integration-issue"></a>Проблема с интеграцией ATP в Microsoft Defender
 
-Azure Advanced Threat Protection позволяет интегрировать Azure ATP с ATP в Защитнике Windows. Дополнительные сведения см. в статье [Интеграция Azure ATP с ATP в Защитнике Windows](integrate-wd-atp.md).
+Службу "Расширенная защита от угроз Azure" можно интегрировать с ATP в Microsoft Defender. Дополнительные сведения см. в статье [Интеграция Расширенной защиты от угроз Azure с ATP в Microsoft Defender](integrate-wd-atp.md).
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>Проблема с датчиком виртуальной машины VMware
 
-Если на виртуальных машинах VMware установлен датчик Azure ATP, может появиться предупреждение системы мониторинга **Some network traffic is not being analyzed** (Часть сетевого трафика не анализируется). Это может происходить из-за несоответствия конфигураций в VMware.
+Если на виртуальных машинах VMware установлен датчик Azure ATP, может появиться оповещение о работоспособности **Some network traffic is not being analyzed** (Часть сетевого трафика не анализируется). Это может происходить из-за несоответствия конфигураций в VMware.
 
 Чтобы решить эту проблему, выполните указанные ниже действия.
 
@@ -129,7 +129,7 @@ Azure Advanced Threat Protection позволяет интегрировать A
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>Датчику не удалось получить учетные данные групповой управляемой учетной записи службы (gMSA)
 
-Если вы получаете следующее оповещение мониторинга: **Неправильные учетные данные пользователя служб каталогов**
+Если вы получаете следующее оповещение о работоспособности: **Неправильные учетные данные пользователя служб каталогов**
 
 **Записи журнала датчика:**
 

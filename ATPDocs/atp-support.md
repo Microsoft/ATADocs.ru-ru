@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6193d8db3bb457be44508589f7ba89764d525e85
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 81405d38badbd9fedda1ff54a9e0b09368689b83
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414579"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669501"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 
 
@@ -50,7 +50,7 @@ ms.locfileid: "79414579"
 | Channels|Инструкции|
 |------|-----|
 |Использование портала Azure|1. Создайте **Запрос в службу поддержки** в разделе **Справка и поддержка** на портале Azure. <br>2. При появлении запроса в колонке **Основное** в поле **Тип проблемы** выберите **Техническая**, в поле **Служба** в разделе "Безопасность и идентификация" выберите **Azure Advanced Threat Protection**. <br>3. Убедитесь, что выбран один из следующих вариантов.<br>— Подписка с включенной технической поддержкой. Вы увидите этот вариант, если у вас платная или пробная подписка Azure.<br>— Техническая поддержка включена. Вы увидите этот вариант, если у вас нет подписки Azure.|
-|Использование портала Azure Advanced Threat Protection| 1. Щелкните значок "?" в верхней панели навигации на портале Azure Advanced Threat Protection<br>2. Выполните поиск Azure Advanced Threat Protection.<br>3. Откройте запрос с инцидентом.<br>— Выберите "Поддержка"<br>4. Откройте запрос с инцидентом. Если вы войдете на портал Azure Advanced Threat Protection, вы можете перейти на интернет-портал поддержки [Online Assisted Support (OAS)](https://support.microsoft.com/assistedsupportproducts). |
+|Использование портала Azure Advanced Threat Protection| 1. На портале Расширенной защиты от угроз Azure на панели навигации сверху нажмите на значок с вопросительным знаком.<br>2. Выполните поиск Azure Advanced Threat Protection.<br>3. Откройте запрос с инцидентом.<br>— Выберите пункт "поддержка".<br>4. Откройте запрос с инцидентом. Если вы войдете на портал Azure Advanced Threat Protection, вы можете перейти на интернет-портал поддержки [Online Assisted Support (OAS)](https://support.microsoft.com/assistedsupportproducts). |
 
 Чтобы узнать о других вариантах поддержки, обратитесь к представителю Майкрософт.
 
@@ -70,7 +70,7 @@ ms.locfileid: "79414579"
 
 - Если у вас есть вопрос о предварительных требованиях к Azure Advanced Threat Protection, см. [Предварительные требования к ATP](atp-prerequisites.md).
 
-- Если в вашей среде развернута служба ATP в Защитнике Windows и вы хотите интегрировать ее с Azure Advanced Threat Protection, см. [Интеграция с ATP в Защитнике Windows](integrate-wd-atp.md).
+- Если в вашей среде развернута служба ATP в Microsoft Defender и вы хотите интегрировать ее с Расширенной защитой от угроз Azure, см. статью [Интеграция Расширенной защиты от угроз Azure с ATP в Microsoft Defender](integrate-wd-atp.md).
 
 - Дополнительные сведения об анализе оповещений системы безопасности см. в  [руководстве по оповещениям системы безопасности](suspicious-activity-guide.md).
 

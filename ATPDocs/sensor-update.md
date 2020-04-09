@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 209202957877edf07de5309ae3e07143fc653452
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 92c17776623beb3d03e37bb81ce12b433e5dc35e
+ms.sourcegitcommit: 8d5cd330564eeaf4bc9560db7814c85e71e0fb60
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414664"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666183"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 
@@ -25,7 +25,7 @@ ms.locfileid: "79414664"
 
 Как правило, служба Azure ATP обновляется несколько раз в месяц, предлагая новые типы обнаружения, функции и улучшения производительности. Обычно эти обновления включают соответствующие незначительные обновления датчиков. Датчики Azure ATP и соответствующие обновления никогда не имеют прав на запись в контроллеры домена. Пакеты обновления датчиков влияют только на датчики Azure ATP и их функции обнаружения. 
 
-### <a name="azure-atp-sensor-update-types"></a>Типы обновлений датчиков Azure ATP   
+### <a name="azure-atp-sensor-update-types"></a>Типы обновлений датчиков Azure ATP    
 
 Датчики Azure ATP поддерживают два типа обновлений.
 - Обновления дополнительной версии 
@@ -89,7 +89,7 @@ ms.locfileid: "79414664"
 ![Обновление датчиков](./media/sensor-update.png)
 
 
-Если обновление датчиков не удается завершить, активируется соответствующее предупреждение системы мониторинга, которое отправляется в виде уведомления.
+Если обновление датчиков не удается завершить, создается оповещение о работоспособности, которое отправляется в виде уведомления.
 
 ![Сбой обновления датчиков](./media/sensor-outdated.png)
 

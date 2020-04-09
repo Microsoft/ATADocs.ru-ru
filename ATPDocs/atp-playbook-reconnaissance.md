@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 50aeef3f54285b24de308269f41be54aeb379067
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: e3a7f4553635ec2af2aec6bda10802f776b7e543
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411927"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669620"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>Руководство. Сборник схем рекогносцировки
 
@@ -157,7 +157,7 @@ ls -d contoso.azure
 
 ![Временная шкала логических действий пользователя JeffL](media/playbook-recon-dsenumeration-jeffvlogicalactivity.png)
 
-Многие действия регистрируются на временной шкале логических действий, давая возможность проводить цифровые расследования и реагировать на инциденты (DFIR). Вы можете также просматривать действия, изначально обнаруженные не с помощью Azure ATP, а из ATP в Защитнике Windows, Office 365 и других продуктов.
+Многие действия регистрируются на временной шкале логических действий, давая возможность проводить цифровые расследования и реагировать на инциденты (DFIR). Вы можете также просматривать действия, изначально обнаруженные не с помощью Azure ATP, а посредством ATP в Microsoft Defender, Office 365 и других продуктов.
 
 Рассмотрим страницу **ContosoDC**, на которой также отображаются компьютеры, в систему которых вошел пользователь JeffL.
 
@@ -177,7 +177,7 @@ ls -d contoso.azure
 
 ### <a name="use-joewares-netsessexe-from-victimpc"></a>Использование файла NetSess.exe JoeWare из VictimPC
 
-Запустите средство **NetSess** JoeWare для ContosoDC в контексте пользователя, прошедшего проверку подлинности. В этом случае, ContosoDC:
+Запустите средство **NetSess** JoeWare для ContosoDC в контексте пользователя, прошедшего проверку подлинности. В нашем случае это ContosoDC.
 
 ``` cmd
 NetSess.exe ContosoDC

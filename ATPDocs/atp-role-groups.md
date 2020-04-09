@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ea04be4c3a069822009a0602dab425123821e3e4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1d325797ee7bce5dd5dca8b5c14987c73a4eab72
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413236"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669336"
 ---
 # <a name="azure-atp-role-groups"></a>Группы ролей Azure ATP
 
@@ -43,7 +43,7 @@ Azure ATP обеспечивает безопасность на основе р
 
 |Действие |Администраторы *(имя экземпляра)* Azure ATP|Пользователи *(имя экземпляра)* Azure ATP|Читатели *(имя экземпляра)* Azure ATP|
 |----|----|----|----|
-|Изменение состояния предупреждений мониторинга|Доступно|Недоступно|Недоступно|
+|Изменение состояния оповещений о работоспособности|Доступно|Недоступно|Недоступно|
 |Изменение состояния оповещений системы безопасности (открыть повторно, закрыть, исключить, игнорировать)|Доступно|Доступно|Недоступно|
 |Удаление экземпляра|Доступно|Недоступно|Недоступно|
 |Загрузка отчета|Доступно|Доступно|Доступно|
