@@ -13,15 +13,15 @@ ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 77ec242769d15eb3681f9e511709a0e6953878e8
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669516"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
 
-## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
+## <a name="change-the-domain-connectivity-password"></a>Как изменить пароль для подключения к домену.
 
 Если необходимо изменить пароль для подключения к домену, указывайте правильный пароль. В противном случае служба датчика Azure ATP будет остановлена для всех развернутых датчиков.
 

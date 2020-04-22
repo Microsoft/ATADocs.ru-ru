@@ -13,10 +13,10 @@ ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: bb738a45889bbb2c509f6cf2b2d7e47f0782bd7a
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669724"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP

@@ -13,10 +13,10 @@ ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 863211852883cc2db2192abd1dffbe87ab3d52f9
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414630"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности

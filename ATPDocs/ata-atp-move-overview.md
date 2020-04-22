@@ -13,10 +13,10 @@ ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 4a26195a6ceba0a32e9cf2d698574ca0acc7ef15
-ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79504224"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)

@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e8705fe48bf7ff32a59e33808d66de474d1b306d
-ms.sourcegitcommit: a7e3fdd7bf0f1d8f269cdbfe3931c937a436392b
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75663868"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security
@@ -28,7 +28,7 @@ ms.locfileid: "75663868"
 
 > [!div class="checklist"]
 >
-> - обзор службы;
+> - Обзор службы
 > - новые способы доступа к Azure ATP;
 > - лицензирование необходимых компонентов;
 > - где найти отслеживаемые действия Azure ATP в Cloud App Security.
@@ -65,7 +65,7 @@ ms.locfileid: "75663868"
 
 Получайте доступ к данным и новым гибридным возможностям Azure ATP в оповещениях, действиях и на страницах пользователей Cloud App Security.
 
-## <a name="alerts"></a>Предупреждения
+## <a name="alerts"></a>Alerts
 
 Оповещения Azure ATP отображаются в очереди **Оповещения** Cloud App Security. Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. Оповещения Azure ATP фильтруются через фильтр приложений **Active Directory**.
 
@@ -96,7 +96,7 @@ ms.locfileid: "75663868"
 
     ![Журнал действий](media/atp-mcas-activity-filter.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-activities-filtering-mcas).
 

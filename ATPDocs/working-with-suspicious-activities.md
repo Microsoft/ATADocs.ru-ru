@@ -13,10 +13,10 @@ ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 98ea2a517f5cc223086ca448c8b532dd29257d78
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79410568"
 ---
 # <a name="working-with-security-alerts"></a>Обработка оповещений системы безопасности
@@ -26,7 +26,7 @@ ms.locfileid: "79410568"
 
 В этой статье рассматриваются основы работы с предупреждениями системы безопасности Azure ATP.
 
-## Анализ предупреждений системы безопасности на временной шкале атак <a name="review-suspicious-activities-on-the-attack-time-line"></a>
+## <a name="review-security-alerts-on-the-attack-timeline"></a>Анализ предупреждений системы безопасности на временной шкале атак <a name="review-suspicious-activities-on-the-attack-time-line"></a>
 
 Войдя на портал Azure ATP, вы автоматически попадаете на **временную шкалу предупреждений системы безопасности**. Предупреждения перечислены в хронологическом порядке, при этом самое новое приводится сверху.
 
@@ -63,7 +63,7 @@ ms.locfileid: "79410568"
 - [Оповещения о захвате управления доменом](atp-domain-dominance-alerts.md)
 - [Оповещения о краже данных](atp-exfiltration-alerts.md)
 
-## Обнаружения предварительной версии <a name="preview-detections"></a>
+## <a name="preview-detections"></a>Обнаружения предварительной версии <a name="preview-detections"></a>
 
 Команда разработчиков Azure ATP постоянно разрабатывает новые обнаружения для новых типов атак. Поскольку Azure ATP является облачной службой, новые обнаружения выходят очень быстро, чтобы как можно скорее защитить среды клиентов Azure ATP от потенциальных атак.
 

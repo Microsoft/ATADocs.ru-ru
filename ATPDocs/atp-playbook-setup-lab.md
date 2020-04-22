@@ -8,10 +8,10 @@ ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: 4a846962645d978fc7419650781624e7c5f4bf0b
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414528"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
@@ -73,7 +73,7 @@ ms.locfileid: "79414528"
 
 Чтобы настроить базовую лабораторию, мы добавим пользователей и группы в Active Directory, изменим политику SAM и добавим привилегированную группу в Azure ATP.
 
-### <a name="bkmk_hydrate"></a> Расконсервация службы Active Directory для добавления в нее пользователей ContosoDC
+### <a name="hydrate-active-directory-users-on-contosodc"></a><a name="bkmk_hydrate"></a> Расконсервация службы Active Directory для добавления в нее пользователей ContosoDC
 
 Чтобы упростить лабораторию, мы автоматизировали процесс создания фиктивных пользователей и групп в Active Directory. Этот сценарий будет выполнен как предварительное условие для этого руководства. Вы можете использовать готовый сценарий или изменить его для расконсервации среды Active Directory в вашей лаборатории. Если вы не хотите использовать сценарий, выполните эту операцию вручную.
 
@@ -166,7 +166,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 ![Helpdesk и JeffV в качестве членов в группе локальных администраторов для VictimPC](media/playbook-labsetup-localgrouppolicies2.png)
 
-### <a name="helpdesk-simulation"></a> Имитация работы службы технической поддержки на компьютере VictimPC
+### <a name="simulate-helpdesk-support-on-victimpc"></a><a name="helpdesk-simulation"></a> Имитация работы службы технической поддержки на компьютере VictimPC
 
 Для имитации рабочей управляемой сети создайте запланированную задачу на компьютере **VictimPC**, чтобы запустить процесс cmd.exe от имени пользователя **RonHD**.
 
