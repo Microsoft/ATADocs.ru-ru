@@ -1,6 +1,6 @@
 ---
-title: Включить имя файла
-description: Включить имя файла
+title: включить файл
+description: включить файл
 services: active-directory
 author: eross-msft
 ms.service: active-directory
@@ -9,11 +9,11 @@ ms.date: 04/24/2018
 ms.author: lizross
 ms.custom: include file
 ms.openlocfilehash: b049b3651f12b1a73a3511d030bbdbbfaceb2480
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "68862446"
 ---
 >[!Note] 
-> В этой статье описано, как удалить личные данные с устройства или из службы и как обеспечить соответствие требованиям GDPR. См. дополнительные сведения [о GDPR на портале Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> В этой статье приведены пошаговые инструкции по удалению персональных данных с устройства или из службы. Эти сведения можно использовать для соблюдения обязательств согласно Общему регламенту по защите данных (GDPR). Если вы ищете общие сведения о GDPR, см. [раздел о GDPR на Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
