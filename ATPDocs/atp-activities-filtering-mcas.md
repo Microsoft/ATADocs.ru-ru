@@ -13,10 +13,10 @@ ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: bffad5454cbc1f9216333f44af9a7cfd39ce5433
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414477"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>Фильтрация действий и создание политик действий с помощью Azure ATP в Microsoft Cloud App Security 
@@ -69,7 +69,7 @@ ms.locfileid: "79414477"
 1. Сохраните и примените новую политику.  
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Узнайте больше об оценке приоритета для изучения и дополнительных возможностях функций [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
   

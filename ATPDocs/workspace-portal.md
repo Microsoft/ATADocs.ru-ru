@@ -13,10 +13,10 @@ ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 5d6bd4b4c8bcceff9d06d98f2fe8125fe1f3d769
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669739"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>Работа с порталом Azure ATP
@@ -93,7 +93,7 @@ C помощью портала Azure ATP можно отслеживать о�
 
 ![Изображение мини-профиля Azure ATP](media/atp-mini-profile.png)
 
-- Имя
+- Название
 - Название
 - Отдел
 - Теги AD

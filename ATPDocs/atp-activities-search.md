@@ -13,10 +13,10 @@ ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 39e9d4c6656d2e55389720ab86690cfcd705423f
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669540"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Поиск и фильтрация отслеживаемых действий Azure ATP 

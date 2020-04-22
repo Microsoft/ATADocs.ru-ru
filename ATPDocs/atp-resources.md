@@ -13,10 +13,10 @@ ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: a4d4d9cf6bcd0fb6c8f321ab2388ed5a455c36f5
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669665"
 ---
 # <a name="azure-atp-readiness-guide"></a>План подготовки Azure ATP к работе
@@ -70,13 +70,13 @@ Azure ATP состоит из облачной службы, размещенн
 
 ## <a name="community-resources"></a>Ресурсы сообщества
 
-Блог: [блог об Azure ATP](https://aka.ms/aatpblog).
+Блог: [блог по Azure ATP](https://aka.ms/aatpblog)
 
-Открытое сообщество: [Azure ATP Tech Community](https://aka.ms/AatpCom).
+Публичное сообщество: [Azure ATP Tech Community](https://aka.ms/AatpCom)
 
-Закрытое сообщество: [Azure ATP Yammer Group](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all).
+Частное сообщество: [группа ATP Azure в Yammer](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all)
 
-Channel 9: [Страница по безопасности Майкрософт на портале Channel 9](https://channel9.msdn.com/Shows/Microsoft-Security/)
+Channel 9: [страница по безопасности Майкрософт на портале Channel 9](https://channel9.msdn.com/Shows/Microsoft-Security/)
 
 ## <a name="see-also"></a>См. также
 

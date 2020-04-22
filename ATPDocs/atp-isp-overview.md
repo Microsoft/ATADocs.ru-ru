@@ -13,10 +13,10 @@ ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 27e6a0c474b06e21942e4e07211c608f7cdfd1fd
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414086"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Оценки состояния безопасности удостоверений Azure ATP
@@ -32,7 +32,7 @@ ms.locfileid: "79414086"
 
 ## <a name="how-do-i-get-started"></a>С чего начать? 
 
-### <a name="access"></a>Access
+### <a name="access"></a>Доступ
 
 Оценка безопасности Azure ATP доступна на портале Microsoft Cloud App Security после включения интеграции с Azure ATP. Сведения о том, как интегрировать Azure ATP с Cloud App Security, см. в статье об [интеграции Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration). 
 
@@ -63,7 +63,7 @@ ms.locfileid: "79414086"
 1. В открывшемся списке **Отчеты об оценке безопасности** выберите оценку уровня безопасности удостоверений, которую вы хотите просмотреть.  
 
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 - [Дополнительные сведения об использовании Cloud App Security с Azure ATP](atp-activities-filtering-mcas.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
 

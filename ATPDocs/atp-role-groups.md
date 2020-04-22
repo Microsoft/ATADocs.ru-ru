@@ -13,10 +13,10 @@ ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 1d325797ee7bce5dd5dca8b5c14987c73a4eab72
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669336"
 ---
 # <a name="azure-atp-role-groups"></a>Группы ролей Azure ATP
@@ -39,7 +39,7 @@ Azure ATP обеспечивает безопасность на основе р
 
 ## <a name="types-of-azure-atp-security-groups"></a>Типы групп безопасности Azure ATP
 
-В Azure ATP есть три типа групп безопасности: администраторы *(имя экземпляра)* Azure ATP, пользователи *(имя экземпляра)* Azure ATP и читатели *(имя экземпляра)* Azure ATP. В следующей таблице описывается тип доступа на портал Azure ATP для каждой из ролей. В зависимости от назначенной роли некоторые экраны и пункты меню на портале Azure ATP могут быть недоступны пользователям, как описано в таблице:
+В Azure ATP существует три типа групп безопасности: администраторы *(имя экземпляра)* Azure ATP, пользователи *(имя экземпляра)* Azure ATP и читатели *(имя экземпляра)* Azure ATP. В следующей таблице описывается тип доступа на портал Azure ATP для каждой из ролей. В зависимости от назначенной роли некоторые экраны и пункты меню на портале Azure ATP могут быть недоступны пользователям, как описано в таблице:
 
 |Действие |Администраторы *(имя экземпляра)* Azure ATP|Пользователи *(имя экземпляра)* Azure ATP|Читатели *(имя экземпляра)* Azure ATP|
 |----|----|----|----|

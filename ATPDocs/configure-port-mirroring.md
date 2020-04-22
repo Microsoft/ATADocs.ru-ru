@@ -13,10 +13,10 @@ ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 70c122d4983d4b5b32899d13ff81b81d38d65af8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413848"
 ---
 # <a name="configure-port-mirroring"></a>Настройка зеркального отображения портов
@@ -45,7 +45,7 @@ ms.locfileid: "79413848"
 
 ## <a name="supported-port-mirroring-options"></a>Поддерживаемые варианты зеркального отображения портов
 
-|Автономный датчик Azure ATP|Контроллер домена|Рекомендации|
+|Автономный датчик Azure ATP|Контроллер домена|Особенности|
 |---------------|---------------------|------------------|
 |Виртуальная|Виртуальный на том же узле|Виртуальный коммутатор должен поддерживать зеркальное отображение портов.<br /><br />Перемещение одной из виртуальных машин на другой узел может нарушить зеркальное отображение портов.|
 |Виртуальная|Виртуальный на других узлах|Убедитесь, что виртуальный коммутатор поддерживает такой сценарий.|
