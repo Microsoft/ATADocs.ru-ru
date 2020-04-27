@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5638e10a23ae9ddec744d7730283c17be5fab322
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 22e37d606ca5f6057408c59a7384082737fa0029
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413763"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81436130"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>Краткое руководство. создание экземпляра Azure ATP;
 
@@ -58,7 +58,7 @@ ms.locfileid: "79413763"
 
     ![Управление группами ролей](media/creation-manage-role-groups.png)
 
-- Хранение данных — ранее удаленные экземпляры Azure ATP не отображаются в пользовательском интерфейсе. Дополнительные сведения о хранении данных в Azure ATP см. в разделе [Безопасность и конфиденциальность данных в Azure ATP](atp-privacy-compliance.md).
+- Хранение данных — ранее удаленные экземпляры Azure ATP не отображаются в пользовательском интерфейсе. См. сведения о хранении данных в Azure ATP в руководстве по [обеспечению безопасности и конфиденциальности данных в Azure ATP](atp-privacy-compliance.md).
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
