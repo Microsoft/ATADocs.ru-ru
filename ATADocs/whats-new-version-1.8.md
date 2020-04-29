@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f13c603b25a58b81b8786734b0c11bf3f8da8f9c
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: dfc1266fd3687b6134ca79f083b2777083723798
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414290"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524707"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 
@@ -27,7 +27,7 @@ ms.locfileid: "79414290"
 
 
 
-## <a name="new--updated-detections"></a>Новые и обновленные обнаружения
+## <a name="new--updated-detections"></a>новые и обновленные обнаружения;
 
 - Функция определения внедрения нестандартных протоколов была улучшена для обнаружения вредоносного ПО WannaCry.
 
@@ -63,7 +63,7 @@ ms.locfileid: "79414290"
 
 -   Повышена производительность центра ATA. В версии ATA 1.8 центр ATA может обрабатывать более одного миллиона пакетов в секунду.
 -   Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
--   Теперь можно настроить электронную почту отдельно для оповещений мониторинга и сообщений о подозрительных действиях.
+-   Теперь можно отдельно настроить электронную почту для оповещений о работоспособности и подозрительных действий.
 
 ## <a name="security-improvements"></a>Усовершенствования системы безопасности
 
@@ -136,8 +136,8 @@ ms.locfileid: "79414290"
 **Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
 
-## <a name="see-also"></a>См. также
-[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## <a name="see-also"></a>См. также:
+[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.8. Руководство по миграции](ata-update-1.8-migration-guide.md)
 

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1cec90e620591cd51f572e87f4d5e0296ee16d69
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: b1498ebf6cd11fad1eaec9d0f6c95dc4fc1f849c
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414120"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524809"
 ---
 # <a name="working-with-ata-audit-logs"></a>Работа с журналами аудита ATA
 
@@ -28,7 +28,7 @@ ms.locfileid: "79414120"
 
 Журнал аудита центра ATA содержит следующие сведения:
 -   сведения о подозрительных действиях;
--   оповещения мониторинга (страница работоспособности);
+-   Оповещения о работоспособности (страница работоспособности)
 -   сведения о входе в консоль ATA;
 -   сведения о всех изменениях конфигурации. *
 
@@ -37,9 +37,9 @@ ms.locfileid: "79414120"
 
 (Все изменения в конфигурации шлюза ATA настраиваются в центре ATA, но их аудит проводится на компьютере шлюза.)
 
-\* Журнал аудита изменений конфигурации содержит сведения как о прежней, так и о новой конфигурации.
+* Журнал аудита изменений конфигурации содержит сведения как о прежней, так и о новой конфигурации.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

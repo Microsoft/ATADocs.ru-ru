@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f7e65f1da222de3b7a4cb05541bd2359e3046901
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 76f6c7dcd083d1e84443fefcaff4c753ea6bf272
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414239"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524724"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
@@ -35,7 +35,7 @@ ms.locfileid: "79414239"
 
 -   более быстрая реакция пользовательского интерфейса на подозрительные действия, в которых задействованы тысячи сущностей;
 
--   улучшенное автоматическое разрешение для оповещений системы мониторинга;
+-   Улучшенное автоматическое разрешение оповещений о работоспособности
 
 -   дополнительные счетчики производительности для улучшения процессов мониторинга и устранения неполадок.
 
@@ -48,7 +48,7 @@ ms.locfileid: "79414239"
 ![Ошибка шлюза ATA](media/ata-install-error.png)
 
 <b>Решение</b>. Отправьте сообщение по адресу <ataeval@microsoft.com> с просьбой сообщить о вариантах решения проблемы.
-### <a name="deployment"></a>Развертывание
+### <a name="deployment"></a>Deployment (Развертывание)
 Папка, указанная в параметрах "Путь к данным базы данных" и "Путь к журналу базы данных", должна быть пустой (никаких файлов или подпапок).
 Если она не пустая, развертывание не выполнится.
 
@@ -64,10 +64,10 @@ ms.locfileid: "79414239"
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
-[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

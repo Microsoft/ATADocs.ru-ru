@@ -12,19 +12,19 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: f11f304c4c157980711e5859cd0c391b2b5c93bf
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 12885e07707e458009025a551248af5ec68849d0
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907683"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524843"
 ---
 # <a name="ata-siem-log-reference"></a>Справочник по журналу ATA SIEM
 
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
-ATA может пересылать события оповещений системы безопасности и мониторинга в SIEM. Оповещения переадресовываются в формате CEF. Ниже приведен пример каждого типа журнала оповещений системы безопасности для отправления в SIEM.
+ATA может пересылать события оповещений о безопасности и работоспособности в SIEM. Оповещения переадресовываются в формате CEF. Ниже приведен пример каждого типа журнала оповещений системы безопасности для отправления в SIEM.
 
 ## <a name="sample-ata-security-alerts-in-cef-format"></a>Пример оповещений системы безопасности ATA в формате CEF
 В систему SIEM пересылаются следующие поля и их значения:
@@ -50,7 +50,7 @@ ATA может пересылать события оповещений сист
 |2003|Разведывательная атака с использованием перечисления учетных записей.|
 |2004|Атака методом подбора с помощью простой привязки LDAP|
 |2006|Вредоносная репликация служб каталогов|
-|2007|Разведывательная атака с использованием DNS.|
+|2007 г.|Разведывательная атака с использованием DNS.|
 |2008|Переход на более слабое шифрование|
 |2009|Действие понижения уровня шифрования (потенциальная атака Golden Ticket)|
 |2010|Действие понижения уровня шифрования (потенциальная атака Overpass-the-Hash)|
@@ -71,7 +71,7 @@ ATA может пересылать события оповещений сист
 
 
 
-## <a name="sample-logs"></a>Образцы журналов
+## <a name="sample-logs"></a>Примеры журналов
 
 Приоритеты: 3=низкий; 5=средний; 10=высокий.
 
@@ -138,7 +138,7 @@ ATA может пересылать события оповещений сист
 ### <a name="suspicious-service-creation"></a>Создание подозрительной службы
 12-12-2018  19:53:49    Auth.Warning    192.168.0.222   1 2018-12-12T17:53:49.913034+00:00 CENTER ATA 4688 MaliciousServiceCreationSuspicio ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|MaliciousServiceCreationSuspiciousActivity|Создание подозрительной службы|5|start=2018-12-12T19:53:49.0000000Z app=ServiceInstalledEvent shost=W2012R2-000000-Server msg=triservice создал FakeService для выполнения потенциально вредоносных команд на сервере W2012R2-000000-Server. externalId=2026 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114b2d8ca1ec1250caf577
 
-## <a name="monitoring-alerts"></a>Предупреждения наблюдения
+## <a name="health-alerts"></a>Оповещения о работоспособности
 
 ### <a name="gatewaydisconnectedmonitoringalert"></a>GatewayDisconnectedMonitoringAlert
 1 2018-12-12T16:52:41.520759+00:00 CENTER ATA 4688 GatewayDisconnectedMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayDisconnectedMonitoringAlert|GatewayDisconnectedMonitoringAlert|5|externalId=1011 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=На протяжении 5 минут отсутствовал обмен данными в Gateway CENTER. Последний обмен данными был 12 декабря 2018 г. в 16:47:03 UTC.
@@ -147,12 +147,12 @@ ATA может пересылать события оповещений сист
 1 2018-12-12T15:36:59.701097+00:00 CENTER ATA 1372 GatewayStartFailureMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayStartFailureMonitoringAlert|GatewayStartFailureMonitoringAlert|5|externalId=1018 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=Не удалось запустить службу шлюзов на DC1. Последний раз она была запущена 12 декабря 2018 г. в 15:04:12 UTC.
 
 > [!NOTE]
-> Все оповещения мониторинга отправляются с использованием одного шаблона, как описано выше.
+> Все оповещения о работоспособности отправляются с тем же шаблоном, что и выше.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
