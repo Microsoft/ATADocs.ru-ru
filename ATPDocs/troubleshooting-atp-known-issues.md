@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bb738a45889bbb2c509f6cf2b2d7e47f0782bd7a
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 6e0d99b0a93fc11825b3acc29a5c03e984dd4bb8
+ms.sourcegitcommit: 7308663627a517d840264a6071cf9eb8f980c742
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669724"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82198375"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -146,7 +146,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Решение:**
 
-Убедитесь, что учетные данные учетной записи gMSA верны и что датчик предоставил разрешения на получение учетных данных учетной записи.
+Убедитесь, что учетные данные учетной записи gMSA правильные и что датчик предоставил разрешение на получение учетных данных учетной записи. В примененной политике может потребоваться добавить учетную запись gMSA в назначения прав пользователя **Вход в качестве службы**.
 
 ## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>Скачиваемые отчеты не могут содержать больше 300 000 записей
 
