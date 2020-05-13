@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6ec95a6c9522710f31fc7e55c58a664f5b590914
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 7f2d68c4fea2916a1b95353cc90b2eb59e113707
+ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79510901"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852308"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -28,7 +28,7 @@ ms.locfileid: "79510901"
 
 > [!NOTE]
 >
-> - Автономные датчики Azure ATP поддерживают не все типы источников данных, что приводит к пропуску обнаружений. Для полного охвата среды рекомендуется развернуть датчик Azure ATP.
+> - Автономные датчики Azure ATP не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик Azure ATP.
 > - Убедитесь, что контроллер домена правильно настроен для записи требуемых событий.
 
 ## <a name="wef-configuration-for-azure-atp-standalone-sensors-with-port-mirroring"></a>Конфигурация WEF для автономного датчика Azure ATP с зеркальным отображением портов
