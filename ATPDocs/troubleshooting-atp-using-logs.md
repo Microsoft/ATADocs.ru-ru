@@ -23,7 +23,7 @@ ms.locfileid: "79410890"
 Журналы ATP содержат полезные сведения о работе всех компонентов датчика Azure ATP в любой момент времени.
 
 
-Эти журналы размещаются в каталоге установки ATP (по умолчанию **C:\Program Files\Azure Advanced Threat Protection Sensor** **) в подпапке \\Logs**. В каталоге установки по умолчанию журналы находятся по следующему пути: **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs**.
+Эти журналы размещаются в каталоге установки ATP (по умолчанию **C:\Program Files\Azure Advanced Threat Protection Sensor\\**) в подпапке **Logs**. В каталоге установки по умолчанию журналы находятся по следующему пути: **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs**.
 
 Датчик Azure ATP включает следующие журналы:
 
