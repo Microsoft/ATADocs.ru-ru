@@ -75,20 +75,24 @@
           items:
             - name: Основные сведения о состоянии безопасности удостоверений
               href: atp-isp-overview.md
-            - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
-              href: atp-cas-isp-clear-text.md
-            - name: Оценка использования устаревших протоколов
-              href: atp-cas-isp-legacy-protocols.md
-            - name: Оценка использования ненадежного шифра
-              href: atp-cas-isp-weak-cipher.md
-            - name: Оценка незащищенного делегирования Kerberos
-              href: atp-cas-isp-unconstrained-kerberos.md
             - name: Оценка доступности службы очереди печати принтера на контроллерах домена
               href: atp-cas-isp-print-spooler.md
             - name: Оценка наличия неактивных сущностей в конфиденциальных группах
               href: atp-cas-isp-dormant-entities.md
+            - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
+              href: atp-cas-isp-clear-text.md
+            - name: Оценка использования LAPS
+              href: atp-cas-isp-laps.md
+            - name: Оценка использования устаревших протоколов
+              href: atp-cas-isp-legacy-protocols.md
             - name: Неотслеживаемые контроллеры домена
               href: atp-cas-isp-unmonitored-domain-controller.md
+            - name: Оценка незащищенного делегирования Kerberos
+              href: atp-cas-isp-unconstrained-kerberos.md
+            - name: Небезопасные атрибуты журнала ИД безопасности
+              href: atp-cas-isp-unsecure-sid-history-attribute.md
+            - name: Оценка использования ненадежного шифра
+              href: atp-cas-isp-weak-cipher.md
     - name: Занятие по оповещениям системы безопасности
       items:
         - name: Обзор лаборатории
