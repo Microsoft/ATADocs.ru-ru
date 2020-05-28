@@ -1,6 +1,6 @@
 ---
 title: Оповещения системы безопасности этапа рекогносцировки в Azure ATP
-d|Description: This article explains the Azure ATP alerts issued when attacks typically part of reconnaissance phase efforts are detected against your organization.
+description: В этой статье рассматриваются оповещения Azure ATP, которые выдаются, когда атаки, как правило, являются частью обнаруженного этапа рекогносцировки, направленного против вашей организации.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 45cf86c6e497276143ba698bac031f5e90c09440
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 800cb9aea336c09d3e3591062faa420546822914
+ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414137"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825274"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках
 
