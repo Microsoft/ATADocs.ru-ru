@@ -4,19 +4,19 @@ description: Описание данных, которые собирает ре
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 8/19/2018
 ms.topic: article
 ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: eef3aa45b9563a4fea09e5cebc0f4ece7c39d734
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: c17405cd1f3da619ad6942e082420e58c4e9c430
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413967"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775137"
 ---
 # <a name="manage-system-generated-logs"></a>Управление системными журналами
 
@@ -49,11 +49,11 @@ ms.locfileid: "79413967"
 
     -   количество сайтов;
 
-    -   количество компьютеров;
+    -   Количество компьютеров
 
     -   количество групп;
 
-    -   количество пользователей.
+    -   Число пользователей
 
 -   Подозрительные действия. Для каждого подозрительного действия собираются такие анонимные данные:
 
@@ -91,6 +91,6 @@ ms.locfileid: "79413967"
 
 2.  Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Устранение неполадок ATA с помощью журнала событий](troubleshooting-ata-using-logs.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

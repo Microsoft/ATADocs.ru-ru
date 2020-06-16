@@ -2,9 +2,9 @@
 title: Проверка зеркального отображения портов в Advanced Threat Analytics
 description: Описание проверки правильной настройки зеркального отображения портов.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,19 +12,19 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 635c6b82dd983eb33a6238a3a9d14f63ffc9dacd
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 022cb5fb51d7269a4dc33727d0b949a5ab2dcc88
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414341"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774814"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!NOTE] 
-> Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, см. раздел о [выборе правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
+> Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, ознакомьтесь со статьей [Выбор правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
  
 Ниже описана последовательность проверки правильной настройки зеркального отображения портов. Для правильной работы решения ATA шлюз ATA должен видеть входящий и исходящий трафик контроллера домена. Основные сведения, требуемые для работы ATA, решение получает посредством тщательного анализа пакетов входящего и исходящего сетевого трафика контроллеров домена. Чтобы решение ATA могло видеть сетевой трафик, нужно настроить зеркальное отображение портов. Эта функция копирует трафик из одного порта (исходный порт) в другой порт (конечный порт).
 
@@ -191,7 +191,7 @@ ms.locfileid: "79414341"
     
     
 ## <a name="validate-port-mirroring-using-net-mon"></a>Проверка зеркального отображения портов с помощью сетевого монитора
-1.  Установите [Microsoft Network Monitor 3.4](https://www.microsoft.com/download/details.aspx?id=4865) в шлюзе ATA, который нужно проверить.
+1.  Установите [Microsoft Network Monitor 3,4](https://www.microsoft.com/download/details.aspx?id=4865) на шлюз ATA, который требуется проверить.
 
     > [!IMPORTANT]
     > Не устанавливайте на шлюз ATA анализатор сообщений Microsoft Message Analyzer или другое программное обеспечение для записи сетевого трафика.
@@ -220,7 +220,7 @@ ms.locfileid: "79414341"
 
 5.  Если вы видите только входящий или исходящий трафик, обратитесь за помощью к специалистам по сетям или виртуализации. Они помогут вам устранить ошибки в настройках зеркального отображения портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Настройка зеркального отображения портов](configure-port-mirroring.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -2,9 +2,9 @@
 title: Новые возможности Advanced Threat Analytics версии 1,4
 description: В этой статье перечисляются новые возможности и известные проблемы ATA версии 1.4
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9a06773002de2b0b830ba179899373543b2bfbff
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1ad136c9f028140d76fd42f62eeb7a11366af286
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414205"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774763"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>Новые возможности ATA версии 1.4
 Данные заметки о выпуске содержат сведения об известных проблемах в версии 1.4 решения Advanced Threat Analytics.
@@ -94,8 +94,8 @@ ms.locfileid: "79414205"
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
 
-[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

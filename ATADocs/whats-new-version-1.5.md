@@ -2,9 +2,9 @@
 title: Новые возможности Advanced Threat Analytics версии 1,5
 description: В этой статье перечислены новые возможности и известные проблемы в ATA версии 1.5.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 76f6c7dcd083d1e84443fefcaff4c753ea6bf272
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: 87f0ee5e13e5b6c85a210d4b63a78b27f249888d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524724"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774729"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.

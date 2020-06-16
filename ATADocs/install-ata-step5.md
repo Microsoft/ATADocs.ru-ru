@@ -2,9 +2,9 @@
 title: Установка Advanced Threat Analytics. шаг 5
 description: Шаг 5 установки ATA предусматривает настройку параметров шлюза ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,20 +12,20 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2b784d34e505e39b9333bb0642de8a7bd061f6a1
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: de26eca5f9824b59dddffc9ad8856e03fdb08e2a
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413950"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775188"
 ---
 # <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 4](install-ata-step4.md)
-> [Шаг 6 »](install-ata-step6.md)
+> [«Шаг 4](install-ata-step4.md) 
+>  [Шаг 6»](install-ata-step6.md)
 
 
 ## <a name="step-5-configure-the-ata-gateway-settings"></a>Шаг 5. Настройка параметров шлюза ATA
@@ -55,7 +55,7 @@ ms.locfileid: "79413950"
   
    - **Синхронизатор домена-кандидат**: за синхронизацию между ATA и доменом Active Directory может отвечать любой шлюз ATA, настроенный в качестве кандидата для синхронизатора домена. В зависимости от размера домена начальная синхронизация может занять существенное время и потреблять много ресурсов. По умолчанию только шлюзы ATA указываются в качестве потенциальных синхронизаторов домена.
    Рекомендуется отключить настройку шлюзов ATA на удаленных площадках в качестве потенциальных синхронизаторов домена.
-   Если контроллер домена предназначен только для чтения, не указывайте его в качестве потенциального синхронизатора домена. Дополнительные сведения см. в статье [Архитектура ATA](ata-architecture.md#ata-lightweight-gateway-features).
+   Если контроллер домена предназначен только для чтения, не указывайте его в качестве потенциального синхронизатора домена. Дополнительные сведения см. в статье [архитектура ATA](ata-architecture.md#ata-lightweight-gateway-features).
 
    > [!NOTE] 
    > Первый запуск службы шлюза ATA после установки может занять несколько минут, так как при этом создается кэш средств синтаксического анализа сетевого трафика.
@@ -76,28 +76,28 @@ ms.locfileid: "79413950"
 
 3.  Если это первый установленный шлюз ATA, войдите в консоль ATA через несколько минут и откройте панель уведомлений, проведя в правой части открывшегося экрана. Вы увидите список **Недавно изученные сущности** в панели уведомлений в правой части консоли.
 
-4.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics**, чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
+4.  На рабочем столе щелкните ярлык **Microsoft Advanced Threat Analytics** , чтобы подключиться к консоли ATA. Войдите под теми же учетными данными пользователя, которые использовалась для установки центра ATA.
 5.  В консоли на панели поиска выполните поиск какой-либо сущности, например пользователя или группы в домене.
-6.  Откройте Системный монитор. В дереве "Производительность" выберите **Системный монитор**, а затем щелкните значок плюса, чтобы **добавить счетчик**. Разверните раздел **Microsoft ATA Gateway** (Шлюз Microsoft ATA), а затем прокрутите список вниз до пункта **Network Listener PEF Captured Messages/Sec** (Счетчик производительности. Количество сообщений, фиксируемых прослушивателем сети в секунду) и добавьте его. Затем убедитесь, что на графе отображаются выполняемые действия.
+6.  Откройте системный монитор. В дереве "Производительность" выберите **Системный монитор**, а затем щелкните значок плюса, чтобы **добавить счетчик**. Разверните раздел **Microsoft ATA Gateway** (Шлюз Microsoft ATA), а затем прокрутите список вниз до пункта **Network Listener PEF Captured Messages/Sec** (Счетчик производительности. Количество сообщений, фиксируемых прослушивателем сети в секунду) и добавьте его. Затем убедитесь, что на графе отображаются выполняемые действия.
 
     ![Изображение окна добавления счетчиков производительности](media/ATA-performance-monitoring-add-counters.png)
 
 
 > [!div class="step-by-step"]
-> [« Шаг 4](install-ata-step4.md)
-> [Шаг 6 »](install-ata-step6.md)
+> [«Шаг 4](install-ata-step4.md) 
+>  [Шаг 6»](install-ata-step6.md)
 
 
 
-## <a name="related-videos"></a>Связанные видео
+## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 

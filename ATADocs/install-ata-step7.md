@@ -2,9 +2,9 @@
 title: Установка Advanced Threat Analytics. шаг 8
 description: На заключительном этапе установки ATA нужно настроить пользователя Honeytoken.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,20 +12,20 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 367d40e57590ace725700de947f3c1fd31b9db5e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 9482053a183dfd41f20028d00c15c171cea725c7
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411213"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775154"
 ---
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [«Шаг 7](vpn-integration-install-step.md)
-> [Шаг 9»](install-ata-step9-samr.md)
+> [«Шаг 7](vpn-integration-install-step.md) 
+>  [Шаг 9](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>Шаг 8. Настройка исключений IP-адресов и пользователя Honeytoken
 
@@ -37,11 +37,11 @@ ms.locfileid: "79411213"
 
 Чтобы настроить ATA, сделайте следующее:
 
-1.  В консоли ATA щелкните значок параметров и выберите пункт **Конфигурация**.
+1.  В консоли ATA щелкните значок параметров и выберите **Конфигурация**.
 
     ![Параметры конфигурации ATA](media/ATA-config-icon.png)
 
-2.  В разделе **Обнаружение** выберите пункт **Теги сущности**.
+2.  В разделе **Обнаружение**щелкните **теги сущностей**.
 
 2. В разделе **Учетные записи Honeytoken** введите имя учетной записи Honeytoken. Поле "Учетные записи Honeytoken" поддерживает поиск, и в нем автоматически отображаются сущности, имеющиеся в вашей сети.
 
@@ -64,19 +64,19 @@ ms.locfileid: "79411213"
 
 
 > [!div class="step-by-step"]
-> [«Шаг 7](vpn-integration-install-step.md)
-> [Шаг 9»](install-ata-step9-samr.md)
+> [«Шаг 7](vpn-integration-install-step.md) 
+>  [Шаг 9](install-ata-step9-samr.md)
 
 
-## <a name="related-videos"></a>Связанные видео
+## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 

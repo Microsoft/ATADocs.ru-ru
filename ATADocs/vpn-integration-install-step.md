@@ -2,9 +2,9 @@
 title: Установка Advanced Threat Analytics. шаг 7
 description: На этом этапе установки ATA интегрируется VPN.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 11/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,20 +12,20 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d8ebc54fc2c82bbe99b79f1c736f17e15629fc6a
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: c36d312518a21664892293fc38c4c41a23614c5d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79410431"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774797"
 ---
 # <a name="install-ata---step-7"></a>Установка ATA. Шаг 7
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [« Шаг 5](install-ata-step5.md)
-> [Шаг 8 »](install-ata-step7.md)
+> [«Шаг 5](install-ata-step5.md) 
+>  [Шаг 8»](install-ata-step7.md)
 
 ## <a name="step-7-integrate-vpn"></a>Шаг 7. Интеграция VPN
 
@@ -57,8 +57,8 @@ ATA интегрируется с решением VPN путем прослуш
 Выполните следующие действия на RRAS-сервере.
  
 1.  Откройте консоль маршрутизации и удаленного доступа.
-2.  Щелкните правой кнопкой мыши имя сервера и выберите **Свойства**.
-3.  На вкладке **Безопасность** в разделе **Поставщик учета**  выберите **Учет RADIUS** и щелкните **Настроить**.
+2.  Щелкните правой кнопкой мыши имя сервера и выберите пункт **Свойства**.
+3.  На вкладке **Безопасность** в разделе **Поставщик учета ** выберите **Учет RADIUS** и щелкните **Настроить**.
 
     ![Настройка RADIUS](./media/radius-setup.png)
 
@@ -94,20 +94,20 @@ ATA собирает данные VPN и определяет, когда и г�
 
 
 > [!div class="step-by-step"]
-> [« Шаг 6](install-ata-step5.md)
-> [Шаг 8 »](install-ata-step7.md)
+> [«Шаг 6](install-ata-step5.md) 
+>  [Шаг 8»](install-ata-step7.md)
 
 
 
-## <a name="related-videos"></a>Связанные видео
+## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/aatpsizingtool)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 

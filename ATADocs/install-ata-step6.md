@@ -4,7 +4,7 @@ description: На этом этапе установки ATA настраива�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,20 +12,20 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 63ed171d5eb7142cdf9d8bc3587c9134321b6d98
-ms.sourcegitcommit: 40f9a460c5b771dfd1e62098d7744162a7214d54
+ms.openlocfilehash: 06b7e42789b58a6da01479917b0e1277b651a8bd
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82590503"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775171"
 ---
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [«Шаг 5](install-ata-step5.md)
-> [Шаг 7»](vpn-integration-install-step.md)
+> [«Шаг 5](install-ata-step5.md) 
+>  [Шаг 7»](vpn-integration-install-step.md)
 
 ## <a name="step-6-configure-event-collection"></a>Шаг 6. Настройка сбора данных о событиях
 
@@ -78,7 +78,7 @@ ATA поддерживает события SIEM в следующих форм�
 - Поля в порядке очередности:
   1. Постоянное значение RsaSA (должно появиться).
   2. Метка времени фактического события (убедитесь, что он не является отметкой времени прибытия к EM или отправке на ATA). Важно! Значение желательно представлять в миллисекундах.
-  3. Код события Windows
+  3. код события Windows.
   4. Имя поставщика событий Windows
   5. Имя журнала событий Windows
   6. Имя компьютера, получающего событие (в данном случае контроллера домена)
@@ -88,7 +88,7 @@ ATA поддерживает события SIEM в следующих форм�
 
 - Поскольку порядок важен, в сообщении не должно быть ничего другого.
 
-#### <a name="microfocus-arcsight"></a>ArcSight по микрофокусу
+#### <a name="microfocus-arcsight"></a>MicroFocus ArcSight
 
 CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Контроллер домена попытался проверить учетные данные для учетной записи.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
 
@@ -116,7 +116,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 Пакет проверки подлинности: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-Учетная запись входа: администратор
+Учетная запись входа: Администратор
 
 Исходная рабочая станция: SIEM
 
@@ -138,7 +138,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 #### <a name="qradar"></a>QRadar
 
-QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как ATA требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. на веб-сайте [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: сбор событий Windows без агента с помощью протокола MSRPC").
+QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как ATA требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в разделе [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
@@ -149,7 +149,7 @@ QRadar активирует сбор данных о событиях через
 - имя поставщика журнала событий Windows;
 - источник журнала событий Windows;
 - полное доменное имя контроллера домена;
-- Код события Windows
+- код события Windows.
 
 TimeGenerated — это метка времени фактического события (необходимо убедиться в том, что это значение не является меткой времени поступления на SIEM или отправки на ATA). Важно! Значение должно быть представлено в формате yyyyMMddHHmmss.FFFFFF, желательно в миллисекундах.
 
@@ -161,15 +161,15 @@ Message — это исходный текст события Windows.
 > Использование WinCollect для сбора данных о событиях Windows не поддерживается.
 
 > [!div class="step-by-step"]
-> [«Шаг 5](install-ata-step5.md)
-> [Шаг 7»](vpn-integration-install-step.md)
+> [«Шаг 5](install-ata-step5.md) 
+>  [Шаг 7»](vpn-integration-install-step.md)
 
 ## <a name="related-videos"></a>Видео по теме
 
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)

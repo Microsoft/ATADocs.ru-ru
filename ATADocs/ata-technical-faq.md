@@ -4,7 +4,7 @@ description: Здесь содержатся ответы на часто зад
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 06b0aa757e2c5a85da276964faacfdf8090ccd74
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: ff52ded2e6b4e238e84ec79e67dac6d1b3c577a8
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412471"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775562"
 ---
 # <a name="ata-frequently-asked-questions"></a>Часто задаваемые вопросы об ATA
 
@@ -158,10 +158,10 @@ Microsoft Advanced Threat Analytics поддерживает многодоме�
 Да, вы можете проверить общую работоспособность развертывания, а также узнать о конкретных проблемах, связанных с конфигурацией, подключением и т. п. Кроме того, вы будете получать оповещения в случае их возникновения.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

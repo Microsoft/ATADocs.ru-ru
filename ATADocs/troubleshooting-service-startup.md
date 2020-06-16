@@ -2,9 +2,9 @@
 title: Устранение неполадок при запуске службы Advanced Threat Analytics
 description: В этой статье описываются способы устранения неполадок при запуске службы ATA
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97450fd93a8c881d5722365deab8b237df489091
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 57f023a557bafff4653e00926fa0d0f813b5d041
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413865"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774865"
 ---
 # <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
 
@@ -62,9 +62,9 @@ ms.locfileid: "79413865"
 2. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
