@@ -2,9 +2,9 @@
 title: Пометка учетных записей с учетными записями ATA
 description: Сведения о пометке конфиденциальных учетных записей с помощью Advanced Threat Analytics (ATA)
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4897bee445099b21dabac7ffbbbf3e607254b237
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 81924146012b02464f435904593c930eda9f77b9
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414171"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775001"
 ---
 # <a name="tag-sensitive-accounts"></a>Пометка конфиденциальных учетных записей
 
@@ -32,7 +32,7 @@ ms.locfileid: "79414171"
 
     ![Теги сущности ATA](media/entity-tags.png)
 
-3.  В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп**, а затем щелкните значок **+** , чтобы добавить их.
+3.  В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп**, а затем щелкните значок **+**, чтобы добавить их.
 
     ![Пример конфиденциальной учетной записи ATA](media/sensitive-account-sample.png)
 
@@ -56,12 +56,12 @@ ms.locfileid: "79414171"
 -   Операторы настройки сети 
 -   Создатели входящего доверия леса
 -   Администраторы домена
--   Контроллеры домена
+-   .
 -   Владельцы-создатели групповой политики 
 -   Контроллеры домена только для чтения 
 -   Корпоративные контроллеры домена только для чтения 
 -   Администраторы схемы 
 -   Администраторы предприятия
      
-## <a name="see-also"></a>См. также:
-[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## <a name="see-also"></a>Дополнительно
+[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

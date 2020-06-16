@@ -2,9 +2,9 @@
 title: Группы ролей Advanced Threat Analytics для управления доступом
 description: Руководство по работе с группами ролей ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f50c6158031bfcc6215b33e9890fa42a35fe1487
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: 36bc03cb5d558f77daf39cff5df1c1cb3817ef84
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524690"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775545"
 ---
 # <a name="ata-role-groups"></a>Группы ролей ATA
 
@@ -35,7 +35,7 @@ ATA предлагает три типа групп ролей: админист
 
 |Действие |Администраторы Microsoft Advanced Threat Analytics|Пользователи Microsoft Advanced Threat Analytics|Наблюдатели Microsoft Advanced Threat Analytics|
 |----|----|----|----|
-|Имя входа|Доступно|Доступно|Доступно|
+|Вход|Доступно|Доступно|Доступно|
 |Ввод данных о подозрительных действиях|Доступно|Доступно|Недоступно|
 |Изменение состояния подозрительных действий|Доступно|Доступно|Недоступно|
 |Эскалация или экспорт подозрительных действий через электронную почту или ссылку для просмотра|Доступно|Доступно|Недоступно|

@@ -2,9 +2,9 @@
 title: Руководством по миграции с обновлением Advanced Threat Analytics до 1,8
 description: Процедуры по обновлению ATA до версии 1.8
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 07/20/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 51f9be6f5c2073070bbddb6669c0dda084c0e150
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 2cedddd5df1da95507d366e6e0c01e1eff0f00d9
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412998"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775443"
 ---
 # <a name="updating-ata-to-version-18"></a>Обновление ATA до версии 1.8
 
@@ -53,7 +53,7 @@ ms.locfileid: "79412998"
 
    - На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
 
-   - Если вы не включали автоматическое обновление в версии 1.7, вам будет предложено настроить для ATA использование Центра обновления Майкрософт для поддержания актуального состояния ATA.  На странице Центра обновления Майкрософт установите флажок **Использовать Центр обновления Майкрософт при проверке наличия обновлений (рекомендуется)** .
+   - Если вы не включали автоматическое обновление в версии 1.7, вам будет предложено настроить для ATA использование Центра обновления Майкрософт для поддержания актуального состояния ATA.  На странице Центр обновления Майкрософт выберите **использовать центр обновления Майкрософт при проверке наличия обновлений (рекомендуется)**.
      ![Изображение. Поддержка актуальности ATA](media/ata_ms_update.png)
      
      Это позволяет настроить параметры Windows, чтобы включить обновления для ATA. 
@@ -82,6 +82,6 @@ ms.locfileid: "79412998"
 > Чтобы установить новые шлюзы ATA, перейдите на экран " **шлюзы** " и щелкните " **загрузить программу установки шлюза** ", чтобы получить пакет установки шлюза ATA 1,8, и следуйте инструкциям по установке нового шлюза, как описано в [шаге 4. Установите шлюз ATA](install-ata-step4.md).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

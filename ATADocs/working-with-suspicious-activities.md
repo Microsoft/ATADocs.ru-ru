@@ -2,9 +2,9 @@
 title: Работа с подозрительными действиями в Advanced Threat Analytics
 description: В данной статье рассказывается о том, как проверять подозрительные действия, выявленные АТА.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 4/29/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 377f7243a26821f07852805ce73f8d5860023dbd
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: f4f697e32d3c89c77f1564d0b9b43cb04ed8ab30
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414409"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774644"
 ---
 # <a name="working-with-suspicious-activities"></a>Обработка подозрительных действий
 
@@ -35,7 +35,7 @@ ms.locfileid: "79414409"
 
 -   степень серьезности подозрительных действий: высокая, средняя или низкая;
 
--   состояние: открыто, закрыто или заблокировано;
+-   Состояние: открыто, закрыто или заблокировано;
 
 -   возможности:
 
@@ -54,7 +54,7 @@ ms.locfileid: "79414409"
 
 1.  В области **Фильтрация по** в левой части экрана выберите один из следующих вариантов: **Все**, **Открыто**, **Закрыто** или **Заблокировано**.
 
-2.  Чтобы еще глубже отфильтровать список, выберите один из вариантов: **Высокая**, **Средняя** или **Низкая**.
+2.  Для дальнейшей фильтрации списка выберите значение **высокий**, **средний**или **низкий**.
 
 **Степень серьезности подозрительного действия**
 
@@ -95,11 +95,11 @@ ms.locfileid: "79414409"
   > Изменения на странице "Конфигурация" могут вносить только администраторы ATA.
 
 
-## <a name="related-videos"></a>Связанные видео
-- [Присоединение к сообществу безопасности](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+## <a name="related-videos"></a>Видео по теме
+- [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Сборник тренировочных заданий по реагированию на подозрительные действия ATA](https://aka.ms/ataplaybook)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Изменение конфигурации ATA](modifying-ata-center-configuration.md)

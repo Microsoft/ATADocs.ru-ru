@@ -4,19 +4,19 @@ description: Процедуры по обновлению ATA до версии�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 04/02/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 07c193422140eb2b9a19c587ff93103be70e0edc
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 703d03feef815ddbea5393c8e576faa174426474
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411417"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775287"
 ---
 # <a name="ata-version-192"></a>ATA версии 1.9.2
 
@@ -55,7 +55,7 @@ ms.locfileid: "79411417"
 - обновление 1 для ATA 1.8 (версия 1.8.6765);
 - ATA 1.8 (версия 1.8.6645).
 
-### <a name="restart-requirement"></a>Требование перезагрузки
+### <a name="restart-requirement"></a>Требуется ли перезагрузка?
 
 После установки этого обновления, возможно, потребуется перезапустить компьютер.
 
@@ -64,7 +64,7 @@ ms.locfileid: "79411417"
 Это обновление заменяет ATA версии 1.9.1 (1.9.7412).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

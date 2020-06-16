@@ -2,9 +2,9 @@
 title: Устранение неполадок в Advanced Threat Analytics с использованием базы данных
 description: В данной статье рассказывается о том, как устранять неполадки с помощью базы данных ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1efc5aee15527212a6f2eb53c147fe8fa1d62ea3
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 269646c7547b0a9a3538405a4180d063e27e0455
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414222"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774916"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 
@@ -31,7 +31,7 @@ ms.locfileid: "79414222"
 
 1.  Откройте окно командной строки и измените путь к папке Bin службы MongoDB. По умолчанию задан путь **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**.
 
-2.  Запустите `mongo.exe ATA`. Убедитесь, что значение ATA указано прописными буквами.
+2.  Выполните команду `mongo.exe ATA`. Убедитесь, что значение ATA указано прописными буквами.
 
 > [!div class="mx-tableFixed"]
 > 
@@ -48,9 +48,9 @@ ms.locfileid: "79414222"
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

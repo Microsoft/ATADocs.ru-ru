@@ -2,9 +2,9 @@
 title: Основные сведения о консоли Advanced Threat Analytics
 description: В этой статье описывается процедура входа в консоль ATA и ее компоненты
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a1db61a38cf87e6c1d8989e5ee591a0741f25f4e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 115b20058d5828ed9c7cc04f7b27cd77ee839566
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414375"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774661"
 ---
 # <a name="working-with-the-ata-console"></a>Работа с консолью ATA
 
@@ -36,7 +36,7 @@ C помощью консоли можно отслеживать обнаруж
 >[!NOTE]
  > Начиная с ATA 1.8, процесс входа в консоль ATA выполняется с использованием единого входа.
 
-1. На рабочем столе сервера центра ATA щелкните значок **консоли Microsoft ATA** или откройте браузер и перейдите к консоли ATA.
+1. На сервере центра ATA щелкните значок **консоли Microsoft ATA** на рабочем столе или откройте браузер и перейдите к консоли ATA.
 
     ![Значок сервера ATA](media/ata-server-icon.png)
 
@@ -104,7 +104,7 @@ C помощью консоли можно отслеживать обнаруж
 
 - Контроллеры домена предприятия — только чтение 
 - Администраторы домена 
-- Контроллеры домена 
+- . 
 - Администраторы схемы
 - Администраторы предприятия 
 - Владельцы-создатели групповой политики 
@@ -130,15 +130,15 @@ C помощью консоли можно отслеживать обнаруж
 
 -   Имя
 
--   Изображение
+-   Рисунок
 
--   Электронная почта
+-   Адрес электронной почты
 
--   Телефон
+-   Телефонные консультации
 
 -   Сведения о количестве подозрительных действий по уровню серьезности
 
 
 
-## <a name="see-also"></a>См. также
-[Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+## <a name="see-also"></a>См. также:
+[Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

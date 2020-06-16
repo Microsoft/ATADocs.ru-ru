@@ -4,7 +4,7 @@ description: Как выполнять экспорт и импорт конфи
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 9/04/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f9e6c68fa0adcfa44707a42f7cd798ad7d3d8345
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: b6704b7c16e985280f7ae90ae953419d16c0ee73
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411485"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84771890"
 ---
 # <a name="export-and-import-the-ata-configuration"></a>Экспорт и импорт конфигурации ATA
 
@@ -33,8 +33,8 @@ ms.locfileid: "79411485"
 
 `mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Архитектура ATA](ata-architecture.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

@@ -2,9 +2,9 @@
 title: Установка Advanced Threat Analytics. шаг 4
 description: На четвертом этапе установки ATA вы установите шлюз ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,22 +12,22 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6c36bc1778c267e01ea98a916d17370a62d905d2
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1b66474219101f9d5c7f9ce38b3a7e3ff34b6f50
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79410635"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775205"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
 *Применяется к: Advanced Threat Analytics версии 1.9*
 
 > [!div class="step-by-step"]
-> [Шаг 3](install-ata-step3.md)
-> [Шаг 5](install-ata-step5.md)
+> [« Шаг 3](install-ata-step3.md)
+> [Шаг 5 »](install-ata-step5.md)
 
-## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установка шлюза ATA
+## <a name="step-4-install-the-ata-gateway"></a>Шаг 4. Установка шлюза ATA.
 
 Прежде чем устанавливать шлюз ATA на выделенном сервере, убедитесь, что зеркальное отображение портов настроено правильно и что шлюз ATA может просматривать входящий и исходящий трафик на контроллерах домена. Дополнительную информацию см. в статье [Проверка зеркального отображения портов](validate-port-mirroring.md).
 
@@ -79,22 +79,22 @@ ms.locfileid: "79410635"
     -   Распространяемый пакет Microsoft Visual C++ 2013.
     -   Пользовательский набор сбора данных системного монитора.
     
-7. После завершения установки для шлюза ATA нажмите кнопку **Запустить**, чтобы открыть браузер и войти в консоль ATA, а для упрощенного шлюза ATA нажмите кнопку **Готово**.
+7. После завершения установки для шлюза ATA нажмите кнопку **запустить** , чтобы открыть браузер и войти в консоль ATA для упрощенного шлюза ATA, нажмите кнопку **Готово**.
 
 
 > [!div class="step-by-step"]
-> [Шаг 3](install-ata-step3.md)
-> [Шаг 5](install-ata-step5.md)
+> [« Шаг 3](install-ata-step3.md)
+> [Шаг 5 »](install-ata-step5.md)
 
 
-## <a name="related-videos"></a>Связанные видео
+## <a name="related-videos"></a>Видео по теме
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Предварительные требования ATA](ata-prerequisites.md)
 

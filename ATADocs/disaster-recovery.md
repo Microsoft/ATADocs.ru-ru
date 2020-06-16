@@ -4,7 +4,7 @@ description: Быстрое восстановление функций ATA по
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 05/02/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5bf0654f951466f6cb33e9c71c522fbf582179c9
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 41abda99939f1152cd21f8de6034cf42f435bbf4
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413304"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775351"
 ---
 # <a name="ata-disaster-recovery"></a>Аварийное восстановление АТА
 
@@ -32,7 +32,7 @@ ms.locfileid: "79413304"
 
 1. Резервная копия конфигурации центра ATA записывается в файл каждые четыре часа. Найдите последнюю резервную копию конфигурации центра ATA и сохраните ее на отдельном компьютере. Полное описание того, как найти эти файлы, см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md). 
 2. Экспортируйте сертификат центра ATA.
-    1. В диспетчере сертификатов щелкните **Сертификаты — локальный компьютер** -> **Личные** ->**Сертификаты** и выберите **Центр ATA**.
+    1. В диспетчере сертификатов перейдите к разделу **Сертификаты (локальный компьютер)**  ->  **Личные**  -> **Сертификаты**и выберите **центр ATA**.
     2. Щелкните правой кнопкой мыши **Центр ATA**, а затем выберите **Все задачи** и **Экспорт**. 
      ![Сертификат центра ATA](media/ata-center-cert.png)
     3. Следуйте инструкциям, чтобы экспортировать сертификат и (обязательно) закрытый ключ.
@@ -65,9 +65,9 @@ ms.locfileid: "79413304"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](install-ata-step6.md)
 - [Настройка пересылки событий Windows](configure-event-collection.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

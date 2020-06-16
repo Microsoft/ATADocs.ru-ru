@@ -2,9 +2,9 @@
 title: Настройка пересылки событий Windows в Advanced Threat Analytics
 description: Описываются параметры настройки пересылки событий Windows в ATA.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 84ce1bed4203ff7344d1e28dc4765ba5cfe79843
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 31e1b1923d6cef2b0bc4c34349be8b6516aceb0b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411859"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775392"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -35,7 +35,7 @@ ms.locfileid: "79411859"
 
 После настройки зеркалирования портов от контроллеров домена на шлюз ATA выполните следующие инструкции, чтобы настроить пересылку событий Windows с помощью конфигурации "инициировано источником". Это один из возможных способов пересылки событий Windows. 
 
-**Шаг 1. Добавление учетной записи сетевой службы в группу читателей журнала событий для домена** 
+**Шаг 1. Добавление учетной записи сетевой службы в группу читателей журнала событий для домена** 
 
 В этом сценарии предполагается, что шлюз ATA входит в домен.
 
@@ -45,7 +45,7 @@ ms.locfileid: "79411859"
 
 После добавления **сетевой службы** в группу **Читатели журнала событий** перезагрузите контроллеры домена, чтобы изменения вступили в силу.
 
-**Шаг 2. Создание на контроллерах домена политики для изменения параметра "Настроить конечный диспетчер подписки"** 
+**Шаг 2. Создание на контроллерах домена политики для изменения параметра "Настроить конечный диспетчер подписки"** 
 > [!Note] 
 > Вы можете настроить групповую политику для этих параметров, а затем применять ее к каждому контроллеру домена, контролируемому шлюзом ATA. Описанные ниже действия изменяют локальную политику контроллера домена.     
 
@@ -57,7 +57,7 @@ ms.locfileid: "79411859"
 
 4. Дважды щелкните **Настроить конечный диспетчер подписки**.
    
-   1.  Выберите **Включено**.
+   1.  Выберите значение **Включено**.
    2.  В разделе **Параметры** щелкните **Показать**.
 
    3.  В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**: *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
@@ -92,8 +92,8 @@ ms.locfileid: "79411859"
     6.  Через несколько минут убедитесь в том, что события, для которых настроена пересылка, отображаются в списке пересланных событий в шлюзе ATA.
 
 
-Подробности см. в статье [Настройка компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890)
+Дополнительные сведения см. на странице [Настройка компьютеров для пересылки и сбора событий](https://technet.microsoft.com/library/cc748890)
 
 ## <a name="see-also"></a>См. также
 - [Установка ATA](install-ata-step1.md)
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

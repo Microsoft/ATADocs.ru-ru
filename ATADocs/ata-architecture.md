@@ -4,7 +4,7 @@ description: Здесь описывается архитектура решен
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b47f32a99d7257daed2f942346ac87dca4fccdcb
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: f820d54000078290b618082b642547dd9fad9260
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524758"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84771839"
 ---
 # <a name="ata-architecture"></a>Архитектура ATA
 
@@ -46,7 +46,7 @@ ATA отслеживает сетевой трафик контроллеров 
 Развертывание ATA может состоять из одного центра ATA, подключенного ко всем шлюзам ATA, всем упрощенным шлюзам ATA или и к тем и к другим одновременно.
 
 
-## <a name="deployment-options"></a>Варианты развертывания
+## <a name="deployment-options"></a>Параметры развертывания
 При развертывании ATA можно использовать следующие сочетания шлюзов:
 
 -   **Только шлюзы ATA** <br>
@@ -153,7 +153,7 @@ ATA отслеживает сетевой трафик контроллеров 
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Выполняется ли сброс шлюза|
-|60%|15 %|10 %|15 %|Да|
+|60 %|15 %|10 %|15 %|Да|
 
 
 ## <a name="your-network-components"></a>Компоненты сети

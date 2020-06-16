@@ -4,7 +4,7 @@ description: Процедуры по обновлению ATA до версии 
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: fdaf1e8e8a96e0f96098235d818f738528a7ab0e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: beecba26ccb15392953e9a57e3a005b7c6b17668
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412318"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775307"
 ---
 # <a name="ata-version-191"></a>ATA версии 1.9.1
 
@@ -52,14 +52,14 @@ ms.locfileid: "79412318"
 ### <a name="prerequisites"></a>Предварительные требования
 Чтобы установить это обновление, требуется наличие ATA версии 1.9 (1.9.7312), обновления 1 для ATA версии 1.8 (1.8.6765) или ATA версии 1.8 (1.8.6645).
 
-### <a name="restart-requirement"></a>Требование перезагрузки
+### <a name="restart-requirement"></a>Требуется ли перезагрузка?
 Может потребоваться перезапуск компьютера после установки этого обновления.
 
 ### <a name="update-replacement-information"></a>Информация о замене версий
 Это обновление заменяет ATA версии 1.9 (1.9.7312).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)
