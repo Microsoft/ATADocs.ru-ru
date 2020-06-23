@@ -4,7 +4,7 @@ description: В этой статье представлен обзор отче
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 07/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e1cd5eef793a801944f61c1fe2484bfc9a02b900
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 6a8caaa3d1e2aaf1d89f9671df07774229e79a9a
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414511"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774270"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов 
  

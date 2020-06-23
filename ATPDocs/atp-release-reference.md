@@ -4,19 +4,19 @@ description: Эта статья представляет собой справ�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 11/17/2019
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 347af29a8748446345455442741e8c7eb599ac5b
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 9ed14e3b9ad04dab89dcbe9d2755ebfbdbe6f7ac
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669763"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84771856"
 ---
 # <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Справочник по выпускам службы "Расширенная защита от угроз Azure" 
 

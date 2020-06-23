@@ -4,7 +4,7 @@ description: В этой статье представлен обзор отче
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 05/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e0781a82d74b4e0d816d734faeaaf2616934ccbf
-ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
+ms.openlocfilehash: a8829ed9f1cb13ba86f940ceff0c60428bea5210
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825491"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774355"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>Оценка безопасности: Использование Microsoft LAPS
 

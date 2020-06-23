@@ -4,7 +4,7 @@ description: Сведения об анализе пользователей н�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0f3467388454fa45b1b6e370c96e012c9b2af34
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 83868094e84813d1d7d1bd4044122a2d33651c65
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413797"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772655"
 ---
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
 

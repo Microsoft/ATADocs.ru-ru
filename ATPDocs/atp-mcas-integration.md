@@ -4,19 +4,19 @@ description: Обзор возможностей Azure ATP в Microsoft Cloud A
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 01/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e8705fe48bf7ff32a59e33808d66de474d1b306d
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 021953b0b5fbd972686cc3743c796a5bbefdcab5
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75663868"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84773454"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security
 

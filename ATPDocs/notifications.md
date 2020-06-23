@@ -4,7 +4,7 @@ description: В этой статье описано, как настроить 
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d74d2542008dfdf471991ed2de99c989bfdaf8c
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: c7aba5743fa23db516b328c5a615aefa204a2103
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79411033"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775970"
 ---
 # <a name="set-azure-atp-notifications"></a>Настройка уведомлений Azure ATP
 
