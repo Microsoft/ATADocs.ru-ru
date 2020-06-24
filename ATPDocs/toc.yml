@@ -85,8 +85,12 @@
               href: atp-cas-isp-laps.md
             - name: Оценка использования устаревших протоколов
               href: atp-cas-isp-legacy-protocols.md
+            - name: Пути бокового движения с максимальным риском
+              href: atp-cas-isp-riskiest-lmp.md
             - name: Неотслеживаемые контроллеры домена
               href: atp-cas-isp-unmonitored-domain-controller.md
+            - name: Небезопасные атрибуты учетной записи
+              href: atp-cas-isp-unsecure-account-attributes.md
             - name: Оценка незащищенного делегирования Kerberos
               href: atp-cas-isp-unconstrained-kerberos.md
             - name: Небезопасные атрибуты журнала ИД безопасности
