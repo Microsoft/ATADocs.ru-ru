@@ -4,20 +4,20 @@ description: Примеры журналов подозрительных дей
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 03/05/2020
+manager: shsagir
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0f24d69946fbbaa1824eb7b38ac431a3be638fa9
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 0d7d6ffbc52b1b5c1d662d3d6c14a1dcf0ab0084
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80666213"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772876"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -29,16 +29,16 @@ Azure ATP может пересылать события оповещений с
 
 |Сведения|Описание|
 |---------|---------------|
-|start|Время возникновения оповещения.|
+|start|Время начала оповещения.|
 |suser|Учетная запись (обычно пользовательская), связанная с оповещением.|
-|Учетная запись компьютера|Учетная запись (обычно пользовательская), связанная с оповещением.|
-|outcome|Если это актуально, показывает успешность выполнения подозрительного действия, о котором сообщает оповещение.|
+|shost|Учетная запись (обычно учетная запись компьютера), связанная с оповещением.|
+|outcome|Показывает, выполнено ли успешно подозрительное действие из оповещения (если актуально).|
 |msg|Описание оповещения.|
-|cnt|Число выполнений подозрительного действия (например, число угаданных паролей при атаке методом подбора).|
-|app |Протокол, используемый в оповещении.|
-|externalId|Идентификатор типа события, который Azure ATP записывает в журнал событий по каждому из типов оповещений. При пересылке оповещений в Microsoft Cloud App Security это поле заполняется соответствующим идентификатором предупреждения Cloud App Security.|
-|cs#label|Пользовательские строки, разрешенные форматом CEF. Cs#label — это имя нового поля. |
-|cs#|Пользовательские строки, разрешенные форматом CEF. Cs# — это значение.|
+|cnt|Число выполнений действия в оповещениях со счетчиком (например, число угаданных паролей при атаке методом подбора).|
+|app |Используемый в оповещении протокол.|
+|externalId|Идентификатор события, который Azure ATP записывает в журнал событий по каждому типу оповещения. При пересылке оповещений в Microsoft Cloud App Security это поле заполняется соответствующим идентификатором предупреждения Cloud App Security.|
+|cs#label|Пользовательские строки, разрешенные форматом CEF, где cs#label — это имя нового поля. |
+|cs#|Пользовательские строки, разрешенные форматом CEF, где cs# — это значение.|
 
 - Пример: `cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa`  
 Поле cs1 является URL-адресом оповещения.
@@ -157,7 +157,7 @@ Azure ATP может пересылать события оповещений с
 
 ### <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)
 
-07-12-2018 11:18:07 Auth.Error 192.168.0.200 1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
+07-12-2018 11:18:07 Auth.Error 192.168.0.200 1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
 
 ### <a name="suspicious-additions-to-sensitive-groups"></a>Подозрительные добавления в привилегированные группы
 
@@ -169,7 +169,7 @@ Azure ATP может пересылать события оповещений с
 
 ### <a name="suspicious-replication-request-potential-dcshadow-attack"></a>Подозрительный запрос на репликацию (потенциальная атака DCShadow)
 
-07-12-2018 11:18:37 Auth.Error 192.168.0.200 1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
+07-12-2018 11:18:37 Auth.Error 192.168.0.200 1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
 
 ### <a name="suspicious-service-creation"></a>Создание подозрительной службы
 

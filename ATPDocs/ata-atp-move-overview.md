@@ -4,7 +4,7 @@ description: Узнайте, как перевести существующую 
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4a26195a6ceba0a32e9cf2d698574ca0acc7ef15
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: eb37bf60d0de0ee09afa74e6a23c54ca40ee32c3
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79504224"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774627"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)
 
@@ -43,7 +43,7 @@ ms.locfileid: "79504224"
 
 - Для создания экземпляра Azure ATP требуется клиент Azure Active Directory с хотя бы одним глобальным администратором или администратором безопасности. Каждый экземпляр Azure ATP поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
-- Для Azure ATP требуется .NET Framework 4.7 и может потребоваться домен контроллера (с перезагрузкой), если текущая версия .NET Framework отличается от 4.7.
+- Azure ATP требует наличия .NET Framework 4.7 или более поздней версии и может потребовать контроллер домена (с перезагрузкой), если вы используете .NET Framework версии ниже 4.7.
 
 - Убедитесь, что контроллеры домена отвечают всем [требованиям датчиков Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites#azure-atp-sensor-requirements) и ваша среда удовлетворяет всем [требованиям Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 

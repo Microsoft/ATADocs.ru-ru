@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5e2a9a05c4f8dbbeb83562266e3564d023cef79a
-ms.sourcegitcommit: 7be507dc6b6016ff9aa9df4b52a3542246e98209
+ms.openlocfilehash: 8efa1ecf511285d38266c6701e16872e833bdccd
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "82736432"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772383"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -24,7 +24,7 @@ ms.locfileid: "82736432"
 
 - [Экземпляр Azure ATP](install-atp-step1.md), [подключенный к Active Directory](install-atp-step2.md).
 - Скачанная копия [пакета установки датчика ATP](install-atp-step3.md) и ключ доступа.
-- На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7. Если она не установлена, пакет установки датчика Azure ATP установит ее, что может потребовать перезагрузку сервера.
+- На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7 или более поздняя версия. Если она не установлена, пакет установки датчика Azure ATP установит ее, что может потребовать перезагрузку сервера.
 
 ## <a name="install-the-sensor"></a>Установка датчика
 

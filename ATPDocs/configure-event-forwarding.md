@@ -4,7 +4,7 @@ description: Сведения о параметрах настройки пер�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7f2d68c4fea2916a1b95353cc90b2eb59e113707
-ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
+ms.openlocfilehash: 78dfdfa8c862cba8cfabafdffe19f17e970b55df
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852308"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772893"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -60,7 +60,7 @@ ms.locfileid: "82852308"
 
     1. Выберите значение **Включено**.
     1. В разделе **Параметры** щелкните **Показать**.
-    1. В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**:  Server= http\://\<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (For example: Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    1. В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**:  Server= http\://\<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (Например: Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
 
     ![Изображение настройки целевой подписки](media/wef%202%20config%20target%20sub%20manager.png)
 

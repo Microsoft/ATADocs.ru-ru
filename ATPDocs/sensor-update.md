@@ -4,7 +4,7 @@ description: Описывается обновление и задержка о�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 92c17776623beb3d03e37bb81ce12b433e5dc35e
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: ec9fa3c2190e0538cbecaa78131e5c42cdde4d7d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80666183"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775902"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 
@@ -75,7 +75,7 @@ ms.locfileid: "80666183"
 3. Для датчиков без заданного **отложенного обновления** запускается процесс обновления.
    1. Служба обновления датчиков Azure ATP получает обновленную версию из облачной службы (в формате CAB-файла).
    2. Служба обновления датчиков Azure ATP проверяет сигнатуру файла.
-   3. Служба обновления датчиков Azure ATP извлекает CAB-файл в новую папку в каталоге установки датчика. По умолчанию это *C:\Program Files\Azure Advanced Threat Protection Sensor\<номер версии>* .
+   3. Служба обновления датчиков Azure ATP извлекает CAB-файл в новую папку в каталоге установки датчика. По умолчанию это *C:\Program Files\Azure Advanced Threat Protection Sensor\<version number>* .
    4. Служба датчиков Azure ATP указывает на новые файлы, извлеченные из CAB-файла.    
    5. Служба обновления датчиков Azure ATP перезапускает службу датчиков Azure ATP.
        > [!NOTE]

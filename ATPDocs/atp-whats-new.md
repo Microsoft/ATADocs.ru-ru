@@ -4,19 +4,19 @@ description: В этой часто обновляемой статье можн
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 04/23/2020
+manager: shsagir
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 77a0c0bb4470894aa7998c852a63fd5bade72433
-ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
+ms.openlocfilehash: da3b41bd39b4ebae88eff1196ebf6715f217a522
+ms.sourcegitcommit: 83a2c0bd87a024ab2cf9fb6240a5da25c916ad95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825308"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800378"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -26,9 +26,31 @@ ms.locfileid: "83825308"
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+## <a name="azure-atp-release-2117"></a>Azure ATP, выпуск 2.117
+
+Дата выпуска: 14 июня 2020 г.
+
+- **Расширение функциональности: дополнительные сведения о действиях в объединенном интерфейсе SecOps**  
+Мы расширили сведения об устройствах, отправляемые в Cloud App Security, включая имена устройств, IP-адреса, имена субъекта-пользователя для учетных записей и используемый порт. Дополнительные сведения об интеграции с Cloud App Security: [Использование Azure ATP с Microsoft Cloud App Security](atp-mcas-integration.md).
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
+## <a name="azure-atp-release-2116"></a>Azure ATP, выпуск 2.116
+
+Дата выпуска: 7 июня 2020 г.
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
+
 ## <a name="azure-atp-release-2115"></a>Azure ATP, выпуск 2.115
 
-Дата выпуска: 24 мая 2020 г.
+Дата выпуска: 31 мая 2020 г
+
+- **Новые оценки безопасности**  
+Azure ATP теперь включает следующие новые оценки безопасности:
+  - **Небезопасные атрибуты журнала ИД безопасности**  
+    Эта оценка сообщает об атрибутах журнала ИД безопасности, которые злоумышленники могут использовать для получения доступа к вашей среде. Дополнительные сведения см. в статье [Оценка безопасности: Небезопасные атрибуты журнала ИД безопасности](atp-cas-isp-unsecure-sid-history-attribute.md).
+  - **Использование Microsoft LAPS**  
+    Эта оценка сообщает об учетных записях локального администратора, не использующих диспетчер паролей локальных администраторов (LAPS) от Майкрософт для защиты своих паролей. Использование LAPS упрощает управление паролями, а также помогает защититься от кибератак. Дополнительные сведения см. в статье [Оценка безопасности: Использование Microsoft LAPS](atp-cas-isp-laps.md).
 
 - Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 

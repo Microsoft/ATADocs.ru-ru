@@ -4,7 +4,7 @@ description: Сведения о настройке брандмауэра ил�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 484d3bba9ebb4c648e78413472b84100aa76d482
-ms.sourcegitcommit: 31fd8256f38cf69c51a9ba9cf8d38140b72a5ed7
+ms.openlocfilehash: 787f5c29395c6356e8b1502fb6984a3d81b7974b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82588400"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772686"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
@@ -72,9 +72,9 @@ ms.locfileid: "82588400"
 
 Чтобы разрешить доступ к Azure ATP, разрешите трафик для следующих URL-адресов:
 
-- \<имя_экземпляра>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
+- \<your-instance-name>.atp.azure.com — для подключения консоли. Например, "Contoso-corp.atp.azure.com"
 
-- \<иvя_экземпляра>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
+- \<your-instance-name>sensorapi.atp.azure.com — для подключения датчиков. Например, "contoso-corpsensorapi.atp.azure.com"
 
 Предыдущие URL-адреса автоматически сопоставляются с корректным расположением служб для вашего экземпляра Azure ATP. Если требуется более детальный контроль, попробуйте разрешить трафик к нужным конечным точкам из следующей таблицы:
 
