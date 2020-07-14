@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/16/2019
+ms.date: 07/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eb37bf60d0de0ee09afa74e6a23c54ca40ee32c3
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 43cc53fc4de948b4f95c716f0f1bbcd7094a412e
+ms.sourcegitcommit: 0edb9162b28c7e672e8bd04a026dbf561ace246b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774627"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86280995"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)
 
@@ -68,8 +68,6 @@ ms.locfileid: "84774627"
 1. Полный список всех объектов (компьютеров, групп, пользователей), которые вы хотите вручную пометить как конфиденциальные.
     - См. дополнительные сведения о важности [конфиденциальных объектов](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts) в Azure ATP.
 1. [Сведения](https://docs.microsoft.com/azure-advanced-threat-protection/reports) о планировании отчетов (список отчетов и запланированное время).
-1. Наименование и данные каждого упрощенного шлюза ATA, являющегося потенциальным синхронизатором домена Azure ATP.
-    - См. дополнительные сведения о важности [потенциальных синхронизаторов домена](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5#configure-sensor-settings) в Azure ATP.
 
 > [!NOTE]
 > Не удаляйте центр ATA, пока не будут удалены все шлюзы ATA. Если удалить центр ATA с еще работающими шлюзами ATA, то ваша организация останется без защиты от угроз.
@@ -104,16 +102,15 @@ ms.locfileid: "84774627"
 |--------------|------------|------------------|
 | 1  | Установка [отложенных обновлений на выбранных контроллерах домена](https://docs.microsoft.com/azure-advanced-threat-protection/sensor-update) | — [ ] |
 | 2  | Данные учетных записей [службы каталогов](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step2)| — [ ] |
-| 3  | Настройка [потенциальных синхронизаторов домена](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5#configure-sensor-settings) | — [ ] |
-| 4  | Настройка [уведомлений системного журнала](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) | — [ ] |
-| 5  | Сведения об [интеграции VPN](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step6-vpn)| — [ ] |
-| 6  | Настройка [интеграции WDATP](https://docs.microsoft.com/azure-advanced-threat-protection/integrate-wd-atp)| — [ ] |
-| 7  | Настройка учетных записей [HoneyTokens](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7)| — [ ] |
-| 8  | Указание [конфиденциальных объектов](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts)| — [ ] |
-| 9  | Создание [исключений для оповещений безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections)| — [ ] |
-| 10 | [Включение уведомлений по электронной почте](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) | — [ ] |
-| 11  | [Настройка расписания отчетов](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (список отчетов и запланированное время)| — [ ] |
-| 12  | Настройка [разрешений на основе ролей](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups) | — [ ] |
+| 3  | Настройка [уведомлений системного журнала](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) | — [ ] |
+| 4  | Сведения об [интеграции VPN](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step6-vpn)| — [ ] |
+| 5  | Настройка [интеграции WDATP](https://docs.microsoft.com/azure-advanced-threat-protection/integrate-wd-atp)| — [ ] |
+| 6  | Настройка учетных записей [HoneyTokens](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7)| — [ ] |
+| 7  | Указание [конфиденциальных объектов](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts)| — [ ] |
+| 8  | Создание [исключений для оповещений безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections)| — [ ] |
+| 9 | [Включение уведомлений по электронной почте](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) | — [ ] |
+| 10  | [Настройка расписания отчетов](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (список отчетов и запланированное время)| — [ ] |
+| 11  | Настройка [разрешений на основе ролей](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups) | — [ ] |
 | 12  | [Настройка уведомлений SIEM (IP-адрес)](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection#siemsyslog)| — [ ] |
 
 #### <a name="validation"></a>Проверка
