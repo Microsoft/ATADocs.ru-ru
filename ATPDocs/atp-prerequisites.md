@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/15/2020
+ms.date: 07/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad4d13efbe37abbb68e05e3a396bc3c101239ace
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: d1f05e45e69bc78c4e2934cfe3c243ff77964732
+ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775698"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86175722"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования для Azure ATP
 
@@ -161,16 +161,16 @@ Azure ATP защищает локальных и синхронизирован
 
 В следующей таблице перечислены порты, необходимые для работы датчика Azure ATP.
 
-|Протокол|Транспорт|Port|В/Из|Direction|
+|Протокол|Транспорт|Port|От|Кому|Direction|
 |------------|-------------|--------|-----------|-------------|
-|**Интернет-порты**|||||
-|SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
-|SSL (localhost)|TCP|444|localhost|Оба варианта|
-|**Внутренние порты**|||||
-|DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Все устройства в сети|Исходящее|
-|Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Входящие|
-|RADIUS|UDP|1813|RADIUS|Входящие|
+|**Интернет-порты**||||||
+|SSL (*.atp.azure.com)|TCP|443|Датчик Azure ATP|Облачная служба Azure ATP|Исходящее|
+|SSL (localhost)|TCP|444|Датчик Azure ATP|localhost|Оба варианта|
+|**Внутренние порты**||||||
+|DNS|TCP и UDP|53|Датчик Azure ATP|DNS-серверы|Исходящее|
+|Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Датчик Azure ATP|Все устройства в сети|Исходящее|
+|Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Датчик Azure ATP|Входящие|
+|RADIUS|UDP|1813|RADIUS|Датчик Azure ATP|Входящие|
 
 ### <a name="windows-event-logs"></a>Журналы событий Windows
 
@@ -242,21 +242,21 @@ Azure ATP защищает локальных и синхронизирован
 
 В следующей таблице перечислены порты, которые необходимо настроить на адаптере управления для работы автономного датчика Azure ATP.
 
-|Протокол|Транспорт|Port|В/Из|Direction|
+|Протокол|Транспорт|Port|От|Кому|Direction|
 |------------|-------------|--------|-----------|-------------|
 |**Интернет-порты**|||||
-|SSL (*.atp.azure.com)|TCP|443|Облачная служба Azure ATP|Исходящее|
+|SSL (*.atp.azure.com)|TCP|443|Датчик Azure ATP|Облачная служба Azure ATP|Исходящее|
 |**Внутренние порты**|||||
-|LDAP|TCP и UDP|389|Контроллеры домена|Исходящее|
-|Защищенный LDAP (LDAPS)|TCP|636|Контроллеры домена|Исходящее|
-|LDAP для глобального каталога|TCP|3268|Контроллеры домена|Исходящее|
-|LDAPS для глобального каталога|TCP|3269|Контроллеры домена|Исходящее|
-|Kerberos|TCP и UDP|88|Контроллеры домена|Исходящее|
-|Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Все устройства в сети|Исходящее|
-|Служба времени Windows|UDP|123|Контроллеры домена|Исходящее|
-|DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Входящие|
-|RADIUS|UDP|1813|RADIUS|Входящие|
+|LDAP|TCP и UDP|389|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|Защищенный LDAP (LDAPS)|TCP|636|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|LDAP для глобального каталога|TCP|3268|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|LDAPS для глобального каталога|TCP|3269|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|Kerberos|TCP и UDP|88|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Датчик Azure ATP|Все устройства в сети|Исходящее|
+|Служба времени Windows|UDP|123|Датчик Azure ATP|Контроллеры домена|Исходящее|
+|DNS|TCP и UDP|53|Датчик Azure ATP|DNS-серверы|Исходящее|
+|Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Датчик Azure ATP|Входящие|
+|RADIUS|UDP|1813|RADIUS|Датчик Azure ATP|Входящие|
 
 > [!NOTE]
 >
