@@ -9,16 +9,3 @@
         - name: Advanced Threat Analytics
           tocHref: /advanced-threat-analytics/
           topicHref: /advanced-threat-analytics
-          items:
-            - name: Общие сведения и знакомство с возможностями
-              tocHref: /advanced-threat-analytics/understand-explore/
-              topicHref: /advanced-threat-analytics/understand/ata-understand-and-explore
-            - name: Планирование и проектирование
-              tocHref: /advanced-threat-analytics/plan-design/
-              topicHref: /advanced-threat-analytics/plandesign/ata-plan-and-design
-            - name: Развертывание и использование
-              tocHref: /advanced-threat-analytics/deploy-use/
-              topicHref: /advanced-threat-analytics/deployuse/configure-port-mirroring
-            - name: Устранение неполадок
-              tocHref: /advanced-threat-analytics/troubleshoot/
-              topicHref: /advanced-threat-analytics/troubleshoot/ata-troubleshooting
