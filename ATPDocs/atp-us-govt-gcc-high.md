@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 01d20b1d1f8a26375add6aa023af1669e1191167
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 84d995e82cb6b3a5f0536e9587a19613d62a576e
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84771907"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472487"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>Azure ATP для US Government GCC High
 
@@ -28,5 +28,5 @@ ms.locfileid: "84771907"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Дополнительные сведения о Government GCC High](/enterprise-mobility-security/solutions/ems-security-govt-description)
+- [Дополнительные сведения о Government GCC High](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
