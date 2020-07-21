@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7aef6beb7c763ac4e4393288a4c4f7b1dc35ac31
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: cda124f5178717181105dff33fc1344da9141661
+ms.sourcegitcommit: dadf9e656fd362f037f15c7a4b52685b5b3bd154
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774950"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865396"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
@@ -29,20 +29,20 @@ ms.locfileid: "84774950"
 
 > [!div class="mx-tableFixed"]
 >
-> |Ошибка|Описание:|Решение|
+> |Error|Описание:|Решение|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException: произошла локальная ошибка|Шлюзу ATA не удалось выполнить аутентификацию в контроллере домена.|1. Убедитесь, что запись DNS контроллера домена правильно настроена на DNS-сервере. <br>2. Убедитесь, что время шлюза ATA синхронизировано с временем контроллера домена.|
-> |System.IdentityModel.Tokens.SecurityTokenValidationException: не удалось проверить цепочку сертификатов|Шлюзу ATA не удалось проверить сертификат центра ATA.|1. Убедитесь, что сертификат корневого ЦС установлен в хранилище сертификатов доверенного центра сертификации на шлюзе ATA. <br>2. Убедитесь, что список отзыва сертификатов (CRL) доступен и что можно выполнить проверку отзыва сертификата.|
+> |System.IdentityModel.Tokens.SecurityTokenValidationException: не удалось проверить цепочку сертификатов|Шлюзу ATA не удалось проверить сертификат центра ATA.|1. Убедитесь, что сертификат корневого ЦС установлен в хранилище сертификатов доверенного центра сертификации на шлюзе ATA.<br>2. Убедитесь, что список отзыва сертификатов (CRL) доступен и что можно выполнить проверку отзыва сертификата.|
 > |Microsoft.Common.ExtendedException: не удалось проанализировать время создания|Шлюзу ATA не удалось проанализировать сообщения системного журнала, пересланные с SIEM.|Убедитесь, что SIEM настроен для пересылки сообщений в одном из форматов, поддерживаемых ATA.|
 > |System.ServiceModel.FaultException: ошибка при проверке безопасности сообщения.|Шлюзу ATA не удалось выполнить аутентификацию в центре ATA.|Убедитесь, что время шлюза ATA синхронизировано с временем центра ATA.|
 > |System.ServiceModel.EndpointNotFoundException: не удалось подключиться к net.tcp://center.ip.addr:443/IEntityReceiver|Шлюзу ATA не удалось установить подключение к центру ATA.|Убедитесь, что параметры сети правильные, а сетевое подключение между шлюзом ATA и центром ATA активно.|
-> |System.DirectoryServices.Protocols.LdapException: LDAP-сервер недоступен.|Шлюзу ATA не удалось выполнить запрос к контроллеру домена, используя протокол LDAP.|1. Убедитесь, что учетная запись пользователя, используемая ATA для подключения к домену Active Directory, имеет доступ на чтение для всех объектов в дереве Active Directory. <br>2. Убедитесь, что контроллер домена не защищен, чтобы предотвратить запросы LDAP от учетной записи пользователя, используемой ATA.|
+> |System.DirectoryServices.Protocols.LdapException: LDAP-сервер недоступен.|Шлюзу ATA не удалось выполнить запрос к контроллеру домена, используя протокол LDAP.|1. Убедитесь, что учетная запись пользователя, используемая ATA для подключения к домену Active Directory, имеет доступ на чтение для всех объектов в дереве Active Directory.<br>2. Убедитесь, что контроллер домена не защищен, чтобы предотвратить запросы LDAP от учетной записи пользователя, используемой ATA.|
 > |Microsoft.Tri.Infrastructure.ContractException: исключение контракта|Шлюзу ATA не удалось синхронизировать конфигурацию из центра ATA.|Завершите настройку шлюза ATA в консоли ATA.|
 > |System.Reflection.ReflectionTypeLoadException: не удалось загрузить один из запрошенных типов или несколько. Для получения дополнительных сведений извлеките свойство LoaderExceptions.|Анализатор сообщений устанавливается в шлюзе ATA.| Удалите анализатор сообщений.|
 > |Ошибка [Layout] System.OutOfMemoryException: возникло исключение типа "System.OutOfMemoryException".|В шлюзе ATA недостаточно памяти.|Увеличьте объем памяти в контроллере домена.|
 > |Не удалось запустить динамический потребитель ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: поставщик события PEFNDIS не готов|PEF (анализатор сообщений) неправильно установлен.|Если вы используете Hyper-V, попробуйте обновить службы интеграции Hyper-V по-другому. Чтобы найти временное решение, обратитесь в службу поддержки.|
 > |Сбой установки с ошибкой: 0x80070652|На компьютере есть другие незавершенные установки.|Дождитесь завершения других установок и при необходимости перезагрузите компьютер.|
-> |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|Чтобы отключить их, ознакомьтесь со статьей [KB281884](https://support.microsoft.com/kb/281884).|
+> |System.InvalidOperationException: Instance 'Microsoft.Tri.Gateway' does not exist in the specified Category (System.InvalidOperationException: экземпляр "Microsoft.Tri.Gateway" не существует в указанной категории).|Идентификаторы процессов включены для имен процессов в шлюзе ATA.|См. раздел [Обработка повторяющихся имен экземпляров](/windows/win32/perfctrs/handling-duplicate-instance-names) для отключения PID в именах процессов.|
 > System. InvalidOperationException: Категория не существует.|Счетчики, возможно, отключены в реестре.|Чтобы перестроить счетчики производительности, ознакомьтесь со статьей [KB2554336](https://support.microsoft.com/kb/2554336).|
 > |System.ApplicationException: Unable to start ETW session MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329 (System.ApplicationException: не удается запустить сеанс ETW MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329)|Файл HOSTS, указывающий на имя компьютера, содержит запись узла.|Удалите запись узла из файла C:\Windows\System32\drivers\etc\HOSTS или сделайте ее полным доменным именем.|
 > |System. IO. IOException: не удалось выполнить проверку подлинности, так как удаленная сторона закрыла транспортный поток или не смог создать защищенный канал SSL/TLS.|Протокол TLS 1.0 отключен в шлюзе ATA, но для .NET настроено использование TLS 1.2|Включите TLS 1,2 для .NET, установив для разделов реестра параметры по умолчанию для SSL и TLS, как описано ниже.<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
@@ -57,20 +57,20 @@ ms.locfileid: "84774950"
 
 > [!div class="mx-tableFixed"]
 >
-> |Ошибка|Описание:|Решение|
+> |Error|Описание:|Решение|
 > |-------------|----------|---------|
 > |Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 > |System.Threading.Tasks.TaskCanceledException: отменена задача|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1. Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу. <br></br>2. Проверьте конфигурацию прокси-сервера или брандмауэра.|
 > |System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: удаленный сервер возвратил ошибку: (407) Требуется проверка подлинности прокси.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
 > |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Включите TLS 1,2 для .NET, установив для разделов реестра параметры по умолчанию для SSL и TLS, как описано ниже.<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-> |Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>Проблемы с сетью</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
+> |Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>Конфигурация прокси-сервера</br>Проблемы с сетью</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
 > | Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.|Сбой проверки сертификата центра.|Для проверки сертификата центра может потребоваться подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
 
 ## <a name="ata-center-errors"></a>Ошибки центра ATA
 
 > [!div class="mx-tableFixed"]
 >
-> |Ошибка|Описание:|Решение|
+> |Error|Описание:|Решение|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException: отказано в доступе.|Центру ATA не удалось использовать выданный сертификат для расшифровки. Скорее всего, это произошло из-за использования сертификата, в котором для KeySpec (KeyNumber) задано значение Signature (AT\\_SIGNATURE), что не поддерживается для расшифровки, вместо использования KeyExchange (AT\\_KEYEXCHANGE).|1. останавливает службу центра ATA. <br></br>2. Удалите сертификат центра ATA из хранилища сертификатов центра. (Перед удалением убедитесь, что у вас есть сертификат с копией закрытого ключа в PFX-файле.) <br></br>3. Откройте командную строку с повышенными привилегиями и выполните команду certutil-importpfx "Центерцертификате. pfx" по адресу \\ _KEYEXCHANGE <br></br>4. Запустите службу центра ATA. <br></br>5. Убедитесь, что все работает правильно.|
 
