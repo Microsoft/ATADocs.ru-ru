@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8efa1ecf511285d38266c6701e16872e833bdccd
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 6bf9e552877c18b6b6f70461f265ef2b57dccfc6
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772383"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472303"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
 
@@ -32,16 +32,16 @@ ms.locfileid: "84772383"
 
 1. Проверьте подключение компьютера к необходимым конечным точкам облачной службы Azure ATP:
    - Европа
-      - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com)
-      - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
+      - `https://triprd1wceuw1sensorapi.atp.azure.com`
+      - `https://triprd1wceun1sensorapi.atp.azure.com`
    - США
-      - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
-      - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
-      - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+      - `https://triprd1wcuse1sensorapi.atp.azure.com`
+      - `https://triprd1wcusw1sensorapi.atp.azure.com`
+      - `https://triprd1wcuswb1sensorapi.atp.azure.com`
    - GCC High в США
-      - [https://triff1wcva1sensorapi.atp.azure.us](https://triff1wcva1sensorapi.atp.azure.us)
+      - `https://triff1wcva1sensorapi.atp.azure.us`
    - Азия
-      - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)
+      - `https://triprd1wcasse1sensorapi.atp.azure.com`
 
 2. Извлеките файлы установки из ZIP-файла. При установке непосредственно из ZIP-файла произойдет сбой.
 
@@ -50,7 +50,6 @@ ms.locfileid: "84772383"
 4. На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
 
     ![Язык установки автономного датчика Azure ATP](media/sensor-install-language.png)
-
 
 5. Мастер установки автоматически проверит, является ли сервер контроллером домена или выделенным сервером. Если это контроллер домена, будет установлен датчик Azure ATP. Если это выделенный сервер, будет установлен автономный датчик Azure ATP.
 
@@ -61,7 +60,7 @@ ms.locfileid: "84772383"
    Нажмите кнопку **Далее**.
 
     > [!NOTE]
-    > Если контроллер домена или выделенный сервер не удовлетворяет минимальным требованиям к оборудованию для установки, выдается предупреждение. Тем не менее вы сможете продолжить установку, нажав кнопку **Далее**. Это может быть удобно, если вы устанавливаете Azure ATP в небольшой тестовой среде, где для хранения данных требуется меньше места. Для установки в рабочей среде настоятельно рекомендуется изучить [руководство по планированию ресурсов](atp-capacity-planning.md) для Azure ATP и обеспечить выполнение всех требований для контроллера домена или выделенного сервера.
+    > Если контроллер домена или выделенный сервер не удовлетворяет минимальным требованиям к оборудованию для установки, выдается предупреждение. Несмотря на предупреждение, вы можете щелкнуть **Далее** и продолжить установку. Такой вариант все равно может подойти для установки Azure ATP в небольшой лабораторной среде тестирования, требующей меньше места для хранения данных. Для установки в рабочей среде настоятельно рекомендуется изучить [руководство по планированию ресурсов](atp-capacity-planning.md) для Azure ATP и обеспечить выполнение всех требований для контроллера домена или выделенного сервера.
 
 6. В разделе **Настройка датчика** введите путь установки и ключ доступа, скопированный на предыдущем шаге, в зависимости от вашей среды:
 
@@ -76,6 +75,7 @@ ms.locfileid: "84772383"
     - KB 3047154 (только для Windows Server 2012 R2)
 
         > [!IMPORTANT]
+        >
         > - Не устанавливайте исправление KB 3047154 на узел виртуализации. (Узел, на котором выполняется виртуализация. Ее можно запустить на виртуальной машине.) Это может привести к неправильному зеркальному отображению портов.
         > - Если Wireshark устанавливается на компьютере с датчиком ATP, после запуска Wireshark необходимо перезапустить датчик ATP, так как он использует те же драйверы.
 
