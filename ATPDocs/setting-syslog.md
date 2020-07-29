@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5a7d5fbaf2313b6876c2fbdcc6bde84aaa89cbd5
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 2d2c6e47cdc385a42a441290d432aa01f91e0939
+ms.sourcegitcommit: 7136b50eaffc9a0e0e7eb9e2db6d5396ef4e996f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775885"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929301"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
 
@@ -50,7 +50,7 @@ Azure ATP может уведомлять вас об обнаружении п
 1. Введите URL-адрес **конечной точки службы**.
 1. Выберите **транспортный** протокол (TCP или UDP).
 1. Выберите формат (RFC 3164 или RFC 5424).
-1. Выберите **Send text Syslog message** (Отправить текстовое сообщение в Syslog) и проверьте получение сообщения в своем решении инфраструктуры Syslog.
+1. Выберите **Send test Syslog message** (Отправить тестовое сообщение системного журнала) и проверьте получение сообщения в своем решении инфраструктуры системного журнала.
 1. Нажмите кнопку **Сохранить**.
 
 Для просмотра или изменения ваших параметров Syslog сделайте следующее.
