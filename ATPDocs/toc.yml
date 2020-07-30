@@ -91,7 +91,7 @@
               href: atp-cas-isp-unmonitored-domain-controller.md
             - name: Небезопасные атрибуты учетной записи
               href: atp-cas-isp-unsecure-account-attributes.md
-            - name: Оценка незащищенного делегирования Kerberos
+            - name: Оценка риска небезопасного делегирования Kerberos
               href: atp-cas-isp-unconstrained-kerberos.md
             - name: Небезопасные атрибуты журнала ИД безопасности
               href: atp-cas-isp-unsecure-sid-history-attribute.md
