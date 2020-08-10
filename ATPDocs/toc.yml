@@ -153,8 +153,6 @@
       items:
         - name: "Настройка датчика Azure\_ATP"
           href: install-atp-step5.md
-        - name: Проверка расширенных политик аудита
-          href: atp-advanced-audit-policy.md
         - name: "Настройка сбора данных о событиях\_Windows"
           href: configure-windows-event-collection.md
         - name: настройки прокси-сервера;
