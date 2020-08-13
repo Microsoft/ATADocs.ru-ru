@@ -12,23 +12,23 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c9bd8bb8c4805d79abba3454510f37600c9e01a6
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 8c95335f50988eba7d3d18e9d0550e33647c9389
+ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772859"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027182"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
-Чтобы оптимизировать возможности обнаружения вторжений, Azure ATP требуется доступ к следующим событиям Windows: 4726, 4728, 4729, 4730, 4732, 4733, 4743, 4753, 4756, 4757, 4758, 4763, 4776, 7045 и 8004. Эти события может автоматически считывать датчик Azure ATP. Если датчик Azure ATP не развернут, они передаются в автономный датчик Azure ATP. Для этого в автономном датчике Azure ATP настраивается ожидание передачи событий SIEM или [пересылка событий Windows](configure-event-forwarding.md).
+Для расширения возможностей обнаружения службе Azure ATP необходим доступ к событиям Windows, приведенным в разделе [Настройка сбора данных о событиях](configure-windows-event-collection.md#configure-event-collection). Эти события может автоматически считывать датчик Azure ATP. Если датчик Azure ATP не развернут, они передаются в автономный датчик Azure ATP. Для этого в автономном датчике Azure ATP настраивается ожидание передачи событий SIEM или [пересылка событий Windows](configure-event-forwarding.md).
 
 > [!NOTE]
 >
 > - Автономные датчики Azure ATP не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик Azure ATP.
 > - Очень важно выполнить скрипт аудита Azure ATP перед настройкой сбора данных о событиях, чтобы обеспечить правильность настройки контроллеров домена для записи необходимых событий.
 
-Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, Azure ATP может использовать события Windows для улучшенного обнаружения. Azure ATP использует события Windows 4776 и 8004 для NTLM, чтобы улучшить обнаружение различных атак. Кроме того, события 4726, 4728, 4729, 4730, 4732, 4733, 4743, 4753, 4756, 4757, 4758, 4763, 4776, 7045 и 8004 позволяют улучшить обнаружение изменения привилегированных групп и создание службы. Эти события можно получать из системы SIEM или путем настройки пересылки событий Windows с контроллера домена. Собранные события предоставляют Azure ATP дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
+Помимо сбора и анализа входящего и исходящего сетевого трафика с контроллеров домена, Azure ATP может использовать события Windows для улучшенного обнаружения. Эти события можно получать из системы SIEM или путем настройки пересылки событий Windows с контроллера домена. Собранные события предоставляют Azure ATP дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
 
 ## <a name="ntlm-authentication-using-windows-event-8004"></a>Аутентификация NTLM с использованием события Windows 8004
 
@@ -136,7 +136,9 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 QRadar активирует сбор данных о событиях через агента. Если сбор данных происходит с помощью агента, то формат времени представляется без указания миллисекунд. Так как Azure ATP требуются данные о миллисекундах, необходимо настроить в QRadar сбор данных о событиях Windows без агента. Дополнительные сведения см. в разделе [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: безагентный сбор данных о событиях Windows с помощью протокола MSRPC").
 
-    <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```text
+<13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```
 
 Необходимо задать следующие сведения в полях:
 

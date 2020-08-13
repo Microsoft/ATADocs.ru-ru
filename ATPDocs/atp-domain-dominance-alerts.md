@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 662ded6bef3e38079173181c41920b2f57e6407d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: c4d21a4065176db1f90e73edb7fdc8192c81d950
+ms.sourcegitcommit: 42f1da0c498bd145daff4df20b3e53069b55ecd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773573"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87856399"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>Руководство. Предупреждения о захвате управления доменом
 
@@ -298,6 +298,10 @@ API защиты данных (DPAPI) используется Windows для з
 
 В оповещении Golden Ticket указывается, что было обнаружено понижение уровня метода шифрования поля TGT в сообщении TGS_REQ (запрос на обслуживание) с компьютера-источника в сравнении с ранее установленным режимом. Это никоим образом не связано с временными аномалиями (как в других случаях обнаружения Golden Ticket). Кроме того, вывод этого оповещения указывает на отсутствие запроса на проверку подлинности Kerberos, связанного с предыдущим запросом на обслуживание, обнаруженным Azure ATP.
 
+**Период обучения**
+
+Период обучения для этого оповещения составляет пять дней с момента запуска мониторинга контроллеров домена.
+
 **TP, B-TP или FP**
 
 Некоторые правомерные ресурсы не поддерживают шифры стойкого шифрования, что может приводить к поступлению этого оповещения.
@@ -343,7 +347,7 @@ API защиты данных (DPAPI) используется Windows для з
 
 ## <a name="suspected-golden-ticket-usage-forged-authorization-data-external-id-2013"></a>Предполагаемое использование Golden Ticket (поддельные данные авторизации) (внешний код 2013)
 
-Предыдущее название. Атака, направленная на повышение привилегий с использованием поддельных данных авторизации
+Предыдущее имя: атака, направленная на повышение привилегий с использованием поддельных данных авторизации
 
 **Описание**
 
@@ -380,7 +384,7 @@ API защиты данных (DPAPI) используется Windows для з
 
 ## <a name="suspected-golden-ticket-usage-nonexistent-account-external-id-2027"></a>Предполагаемое использование Golden Ticket (несуществующая учетная запись) (внешний код 2027)
 
-Предыдущее название. Golden Ticket в Kerberos
+Предыдущее имя: Kerberos Golden Ticket
 
 **Описание**
 
@@ -440,7 +444,7 @@ API защиты данных (DPAPI) используется Windows для з
 
 ## <a name="suspected-golden-ticket-usage-time-anomaly-external-id-2022"></a>Предполагаемое использование Golden Ticket (аномалия времени) (внешний код 2022)
 
-Предыдущее название. Golden Ticket в Kerberos
+Предыдущее имя: Kerberos Golden Ticket
 
 **Описание**
 
@@ -540,7 +544,7 @@ API защиты данных (DPAPI) используется Windows для з
 
 ## <a name="suspicious-service-creation-external-id-2026"></a>Создание подозрительной службы (внешний код 2026)
 
-*Предыдущее название.* Создание подозрительной службы
+*Предыдущее имя*: создание подозрительной службы
 
 **Описание**
 

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e28dfdb4683d56f9ef33c138acf2c90bc305b9f5
-ms.sourcegitcommit: fcee078841aa6503fd1bdfb2097850d8209b82c0
+ms.openlocfilehash: a7d0ea7c8cc0eec8952cba17386045d9ee7529be
+ms.sourcegitcommit: 032132b54c905d08a24d15028782c66cc0620f20
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87528367"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "88023299"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов
 
@@ -45,7 +45,9 @@ ms.locfileid: "87528367"
 1. Используйте таблицу отчета, чтобы определить, какие из основных обнаруженных сущностей используют устаревшие протоколы.
 
     ![Запрет использования устаревших протоколов](media/atp-cas-isp-legacy-protocols-2.png)
-1. Выполните соответствующие действия с этими сущностями, чтобы обнаружить зависимости, запретить использование устаревших протоколов и, наконец, [полностью отключить эти протоколы](https://blogs.technet.microsoft.com/miriamxyra/2017/11/07/stop-using-lan-manager-and-ntlmv1/), [удалить MIC 2 и использовать клиенты LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
+1. Выполните с этими сущностями необходимые действия для обнаружения зависимостей.
+1. Прекратите использование устаревших протоколов и со временем [отключите их полностью](https://blogs.technet.microsoft.com/miriamxyra/2017/11/07/stop-using-lan-manager-and-ntlmv1/).
+1. [Устраните уязвимость MIC 2 и прекратите использование клиентов LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
