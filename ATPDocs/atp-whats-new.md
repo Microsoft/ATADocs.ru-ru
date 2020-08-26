@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d3528711a17c2be18dd615b0399f82a1a5c770a5
-ms.sourcegitcommit: dd7071f173709139611ba0f963f7101f590de711
+ms.openlocfilehash: 04dc432ebdee36b80b995ed1f19c5e1b0ee91dca
+ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261476"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88793355"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -25,6 +25,12 @@ ms.locfileid: "88261476"
 Дополнительные сведения о предыдущих выпусках Azure ATP до выпуска 2.55 (включительно) см. в [справочнике по выпускам Azure ATP](atp-release-reference.md).
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2123"></a>Azure ATP, выпуск 2.123
+
+Дата выпуска: 23 августа 2020 г.
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-2122"></a>Azure ATP, выпуск 2.122
 

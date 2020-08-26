@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d3347151b490af645802aa759bf9379ee60162ba
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: e0694e13a731c1c8146f733ee8e49a3a2888d52c
+ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775851"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88793381"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -41,10 +41,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Записи журнала развертывания:**
 
-[1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]]  
-[1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]]  
-[1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [deploymentResultStatus=1602 isRestartRequired=False]]  
-[1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
+[1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [validateCreateSensorResult=LicenseInvalid]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [deploymentResultStatus=1602 isRestartRequired=False]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
 
 **Причина**.
 
@@ -54,15 +51,56 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 Датчик должен обращаться по адресу *.atp.azure.com через настроенный прокси-сервер без аутентификации. См. дополнительные сведения о [настройке прокси-сервера для включения обмена данными](configure-proxy.md).
 
+## <a name="proxy-authentication-problem-presents-as-a-connection-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка подключения
+
+Во время установки датчика возникает следующая ошибка:  **Датчику не удалось подключиться к службе.**
+
+**Причина.**
+
+Проблема может возникать из-за ошибки конфигурации прозрачного прокси-сервера в Server Core, например когда требуемые Azure ATP корневые сертификаты не актуальны или отсутствуют.
+
+**Решение:**
+
+Выполните следующий командлет PowerShell, чтобы проверить существование доверенного корневого сертификата службы Azure ATP в системе Server Core. В следующем примере используется сертификат DigiCert Baltimore Root.
+
+```powershell
+Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"}
+```
+
+```Output
+Subject      : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+Issuer       : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+Thumbprint   : D4DE20D05E66FC53FE1A50882C78DB2852CAE474
+FriendlyName : DigiCert Baltimore Root
+NotBefore    : 5/12/2000 11:46:00 AM
+NotAfter     : 5/12/2025 4:59:00 PM
+Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
+
+Если ожидаемые выходные данные не отобразятся, выполните следующие действия:
+
+1. Скачайте [корневой сертификат Baltimore CyberTrust](https://cacert.omniroot.com/bc2025.crt) на компьютер с Server Core.
+1. Запустите следующий командлет PowerShell, чтобы установить сертификат.
+
+    ```powershell
+    Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\bc2025.crt" -CertStoreLocation Cert:\LocalMachine\Root
+    ```
+
 ## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>Ошибка автоматической установки при попытке использовать PowerShell
 
 Во время автоматической установки датчика при попытке использовать PowerShell может произойти следующая ошибка:
 
-    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
+```powershell
+"Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
+```
 
-**Причина**. Эту ошибку вызывает отсутствие префикса ./, необходимого для установки при использовании PowerShell.
+**Причина.**
 
-**Решение:** Для успешной установки используйте полную команду.
+Эту ошибку вызывает отсутствие префикса ./, необходимого для установки при использовании PowerShell.
+
+**Решение:**
+
+Для успешной установки используйте полную команду.
 
 ```powershell
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
@@ -133,8 +171,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Записи журнала датчика:**
 
-2020-02-17 14:01:36.5315 Info ImpersonationManager CreateImpersonatorAsync started [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True]  
-2020-02-17 14:01:36.5750 Info ImpersonationManager CreateImpersonatorAsync finished [UserName=account_name Domain=domain1.test.local IsSuccess=False]
+2020-02-17 14:01:36.5315 Info ImpersonationManager CreateImpersonatorAsync started [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True] 2020-02-17 14:01:36.5750 Info ImpersonationManager CreateImpersonatorAsync finished [UserName=account_name Domain=domain1.test.local IsSuccess=False]
 
 **Записи журнала обновления датчика:**
 
