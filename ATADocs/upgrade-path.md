@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1bdf5a33efb00fd592b6da9fc8696df3bcfe281b
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 31ab0d74020ae446d0739ed2b9e79c19b5ffb60c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774848"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956352"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 
@@ -32,12 +32,12 @@ ms.locfileid: "84774848"
 |----|----|
 |1.6|1.6.4103|
 |1.6 с обновлением 1|1.6.4317|
-|1.7|1.7.5402| 
+|1,7|1.7.5402| 
 |1.7 с обновлением 1|1.7.5647|
 |1.7 с обновлением 2|1.7.5757|
 |1.8|1.8.6645|
 |1.8 с обновлением 1|1.8.6765|
-|1.9|1.9.7312|
+|1,9|1.9.7312|
 |1.9 с обновлением 1|1.9.7412|
 |1.9 с обновлением 2|1.9.7478|
 
@@ -45,9 +45,9 @@ ms.locfileid: "84774848"
 
 Чтобы определить правильный путь обновления для текущей установки, см. схему "путь обновления". 
 
-![Путь обновления версии ATA](./media/upgrade-path-ata.png)
+![Путь обновления версии ATA](media/upgrade-path-ata.png)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

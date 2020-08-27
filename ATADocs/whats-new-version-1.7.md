@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 14fd7b13b61005ef215c6ba80920572ebcdf0b64
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 5a23b551b1f05513c242e9779f51f68c7bab2d4a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774712"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956267"
 ---
 # <a name="whats-new-in-ata-version-17"></a>Новые возможности ATA версии 1.7
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии Advanced Threat Analytics.
@@ -25,15 +25,15 @@ ms.locfileid: "84774712"
 ## <a name="whats-new-in-the-ata-17-update"></a>Что нового в обновлении ATA 1.7
 При обновлении ATA до версии 1.7 появляются следующие улучшения:
 
--   новые и обновленные обнаружения;
+- новые и обновленные обнаружения;
 
--   Управление доступом на основе ролей
+- Управление доступом на основе ролей
 
--   Поддержка Windows Server 2016 и Windows Server 2016 Базовая
+- Поддержка Windows Server 2016 и Windows Server 2016 Базовая
 
--   улучшенное взаимодействие с пользователем;
+- улучшенное взаимодействие с пользователем;
 
--   Незначительные изменения
+- Незначительные изменения
 
 
 ### <a name="new--updated-detections"></a>новые и обновленные обнаружения;
@@ -97,16 +97,16 @@ ms.locfileid: "84774712"
 
 1. Mongo.exe ATA ("ATA" следует написать прописными буквами) 
 
-2. CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;
+1. CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;
 
-3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
+1. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
 ### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>Экспорт сведений о подозрительной активности в Excel может завершиться ошибкой.
 При попытке экспортировать сведения о подозрительной активности в файл Excel операция может завершиться следующей ошибкой: *Ошибка [BsonClassMapSerializer`1] System.FormatException: произошла ошибка при десериализации свойства Activity класса Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity: Element "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent. ---> System.FormatException: элемент "ResourceIdentifier" не соответствует какому-либо полю или свойству класса Microsoft.Tri.Common.Data.EventActivities.NtlmEvent.*
 
 Чтобы устранить эту проблему, в командной строке с повышенными привилегиями перейдите в папку **%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** и выполните следующую команду:
-1.  `Mongo.exe ATA` (ATA следует указать прописными буквами).
-2.  `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
+1. `Mongo.exe ATA` (ATA следует указать прописными буквами).
+2. `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
 
 ## <a name="minor-changes"></a>Незначительные изменения
 
@@ -114,7 +114,7 @@ ms.locfileid: "84774712"
 - Если служба центра ATA не работает, вы не сможете получить доступ к консоли ATA.
 - Из-за изменений в механизме разрешения сетевых имен ATA подсети с краткосрочной арендой больше не требуются.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Руководство по миграции на обновленную версию ATA 1.7](ata-update-1.7-migration-guide.md)

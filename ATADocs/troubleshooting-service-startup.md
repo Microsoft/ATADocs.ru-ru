@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 57f023a557bafff4653e00926fa0d0f813b5d041
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 0a4a9a5de29e2579776096154e6158b02e58c087
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774865"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956386"
 ---
 # <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
 
@@ -27,21 +27,23 @@ ms.locfileid: "84774865"
 
 Если центр ATA не запускается, выполните описанную ниже процедуру устранения неполадок:
 
-1.  Выполните следующую команду Windows PowerShell: `Get-Service Pla | Select Status`,
-    чтобы убедиться в том, что служба счетчиков производительности запущена. Если она не запущена, это неполадка платформы и эту службу необходимо снова запустить.
-2.  Если она была запущена, попробуйте перезапустить ее, чтобы проверить, не исчезнет ли проблема: `Restart-Service Pla`
-3.  Попробуйте создать новый сборщик данных вручную (достаточно любого сборщика, например, для сбора данных по ЦП компьютера).
+1. Выполните следующую команду Windows PowerShell: `Get-Service Pla | Select Status`,
+   чтобы убедиться в том, что служба счетчиков производительности запущена. Если она не запущена, это неполадка платформы и эту службу необходимо снова запустить.
+1. Если он был запущен, попробуйте перезапустить его и проверьте, разрешает ли он проблему:  `Restart-Service Pla`
+1. Попробуйте создать новый сборщик данных вручную (достаточно любого сборщика, например, для сбора данных по ЦП компьютера).
 Если он запускается, скорее всего, платформа исправна. В противном случае имеется неполадка платформы.
 
-4.  Попробуйте повторно создать сборщик данных ATA вручную, выполнив следующие команды в командной строке с повышенными привилегиями:
+1. Попробуйте повторно создать сборщик данных ATA вручную, выполнив следующие команды в командной строке с повышенными привилегиями:
 
-        sc stop ATACenter
-        logman stop "Microsoft ATA Center"
-        logman export "Microsoft ATA Center" -xml c:\center.xml
-        logman delete "Microsoft ATA Center"
-        logman import "Microsoft ATA Center" -xml c:\center.xml
-        logman start "Microsoft ATA Center"
-        sc start ATACenter
+```dos
+sc stop ATACenter
+logman stop "Microsoft ATA Center"
+logman export "Microsoft ATA Center" -xml c:\center.xml
+logman delete "Microsoft ATA Center"
+logman import "Microsoft ATA Center" -xml c:\center.xml
+logman start "Microsoft ATA Center"
+sc start ATACenter
+```
 
 ## <a name="troubleshooting-ata-lightweight-gateway-startup"></a>Устранение неполадок при запуске упрощенного шлюза ATA
 
@@ -54,15 +56,19 @@ ms.locfileid: "84774865"
 
 Это происходит, поскольку в ходе процесса установки упрощенного шлюза служба ATA выделяет пороговое значение ЦП, позволяющее упрощенному шлюзу использовать ЦП с буфером 15 %. Если пороговое значение было задано независимо с помощью раздела реестра, этот конфликт будет препятствовать запуску упрощенного шлюза. 
 
-**Решение**
+**Способы устранения:**
 
-1. Если в разделах реестра имеется значение DWORD **Отключить счетчики производительности**, задайте его равным **0**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\`.
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
- 
-2. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
+1. В разделах реестра, если имеется значение DWORD с именем **Отключить счетчики производительности** , убедитесь, что оно равно **0**.
 
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance
+```
 
-## <a name="see-also"></a>См. также:
+1. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
+
+## <a name="see-also"></a>См. также
+
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
