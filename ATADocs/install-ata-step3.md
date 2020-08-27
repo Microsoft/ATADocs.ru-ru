@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2649e5ece9a1613c8c0f396c7fc906219c178046
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 5b7b60910975ce1f8922a32b799b997917542257
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775222"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954550"
 ---
 # <a name="install-ata---step-3"></a>Установка ATA. Шаг 3
 
@@ -38,16 +38,16 @@ ms.locfileid: "84775222"
 > [!NOTE] 
 > Чтобы открыть окно настройки шлюза позже, щелкните **значок параметров** (правый верхний угол), выберите **Конфигурация**, а затем в разделе **Система** щелкните **Шлюзы**.  
 
-1.  Щелкните **Установка шлюза**.
+1. Щелкните **Установка шлюза**.
   ![Скачивание программы установки шлюза ATA](media/download-gateway-setup.png)
-2.  Сохраните пакет на локальном компьютере.
-3.  Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается шлюз ATA. Кроме того, можно открыть консоль ATA с выделенного сервера или контроллера домена и пропустить этот шаг.
+1. Сохраните пакет на локальном компьютере.
+1. Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается шлюз ATA. Кроме того, можно открыть консоль ATA с выделенного сервера или контроллера домена и пропустить этот шаг.
 
 ZIP-файл содержит следующие файлы:
 
--   установщик шлюза ATA;
+- установщик шлюза ATA;
 
--   файл конфигурации с данными для подключения к центру ATA.
+- файл конфигурации с данными для подключения к центру ATA.
 
 
 > [!div class="step-by-step"]
@@ -59,7 +59,7 @@ ZIP-файл содержит следующие файлы:
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

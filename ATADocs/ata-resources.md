@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 864a5f0a9c521aad24673ef3e22ffe7bbc62436f
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: c5af70847f4ca8fc61ec332aa8c6e3a9c2f6f35c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472404"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954006"
 ---
 # <a name="ata-readiness-roadmap"></a>План подготовки к работе ATA
 
@@ -39,7 +39,7 @@ Advanced Threat Analytics (ATA) — это локальная платформа
 
 Advanced Threat Analytics состоит из центра ATA, который можно установить на сервере, и шлюзов ATA, которые можно устанавливать на отдельных компьютерах или с помощью упрощенного шлюза непосредственно на контроллерах домена. Прежде чем вы сможете использовать систему, примите следующие важные решения по развертыванию.
 
-|Параметр Configuration | Решение |
+|Конфигурация | Решение |
 |----|----|
 |Тип оборудования|Физическое, виртуальное, виртуальная машина Azure|
 |Рабочая группа или домен|Рабочая группа, домен|
@@ -68,7 +68,7 @@ Advanced Threat Analytics состоит из центра ATA, который
 
 [Параметры аудита](https://aka.ms/ataauditingblog) — проводите аудит работоспособности контроллера домена до и после развертывания ATA.
 
-[Общая документация по ATA](https://docs.microsoft.com/advanced-threat-analytics/)
+[Общая документация по ATA](index.yml)
 
 ## <a name="work-with-ata"></a>Работа с ATA
 
@@ -78,7 +78,7 @@ Advanced Threat Analytics состоит из центра ATA, который
 
 [Руководство по работе с подозрительными действиями в ATA](suspicious-activity-guide.md)
 
-## <a name="security-best-practices"></a>Рекомендации по безопасности
+## <a name="security-best-practices"></a>Лучшие методики обеспечения безопасности
 
 [Рекомендации по ATA](https://aka.ms/atasecbestpractices) — рекомендации по защите ATA.
 

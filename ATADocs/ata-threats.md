@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dcc7e65cbe7fee4d743ce1abd1d81d30a5406a7d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 4c1f0442492759be26bab474a1cc3cd39347e1f0
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775494"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953768"
 ---
 # <a name="what-threats-does-ata-look-for"></a>Типы угроз, которые ищет ATA
 
@@ -34,12 +34,12 @@ ATA обнаруживает события на следующих этапах
 Дополнительные сведения см. в статье [Обработка подозрительных действий](working-with-suspicious-activities.md) и [Введение](suspicious-activity-guide.md).
 
 
-## <a name="whats-next"></a>Что дальше?
+## <a name="whats-next"></a>Дальнейшие действия
 
--   Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
+- Дополнительные сведения о месте ATA в сети см. в статье [Архитектура ATA](ata-architecture.md).
 
--   Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
+- Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
 
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

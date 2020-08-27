@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9abfbe15f83aabf7a8879e117cb884d624cbbee8
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: fe99921e1193f79f7031c04156a79fd8fa55dc9e
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775239"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954567"
 ---
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
@@ -33,33 +33,31 @@ ms.locfileid: "84775239"
 
 ![Этап приветствия ATA 1](media/ATA_1.7-welcome-provide-username.png)
 
-1.  Введите следующие сведения и нажмите кнопку **Save** (Сохранить).
+1. Введите следующие сведения и нажмите кнопку **Save** (Сохранить).
 
     |Поле|Комментарии|
     |---------|------------|
     |**Имя пользователя** (обязательно)|Введите имя пользователя только для чтения, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя.|
     |**Пароль** (обязательно)|Введите пароль для имени пользователя только для чтения, например **Parolch1k**.|
-    |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
+    |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com` not contoso.com|
 
-2. Чтобы проверить подключение к домену и убедиться в том, что по указанным учетным данным можно получить доступ, можно нажать кнопку **Проверить подключение**. Работает, только если Центр ATA подключен к домену.    
+1. Чтобы проверить подключение к домену и убедиться в том, что по указанным учетным данным можно получить доступ, можно нажать кнопку **Проверить подключение**. Работает, только если Центр ATA подключен к домену.
 
     После сохранения приветственное сообщение в консоли изменится на следующее: ![Этап приветствия 1 в ATA завершен](media/ATA_1.7-welcome-provide-username-finished.png).
 
-3. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
-
+1. Чтобы продолжить, щелкните в консоли **Download Gateway setup and install the first Gateway** (Скачать средство установки шлюза и установить первый шлюз).
 
 > [!div class="step-by-step"]
 > [«Шаг 1](install-ata-step1.md) 
 >  [Шаг 3»](install-ata-step3.md)
 
-
-## <a name="see-also"></a>См. также:
 ## <a name="related-videos"></a>Видео по теме
+
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+## <a name="see-also"></a>См. также
 
-## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

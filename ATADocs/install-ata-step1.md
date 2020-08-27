@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 77f384ecd4ded0e47737013a138cdf1bdbf167cf
-ms.sourcegitcommit: 954f5e64a8a25075ce663b9fd63810cf4c032987
+ms.openlocfilehash: 2b61069662100ec9c0c66620a26c740c7d1d2471
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85129873"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954686"
 ---
 # <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
 
@@ -40,7 +40,7 @@ ms.locfileid: "85129873"
 
 На сервере шлюза ATA сделайте следующее:
 
-1. Скачайте ATA из [центра поддержки корпоративных лицензий Майкрософт](https://www.microsoft.com/Licensing/servicecenter/default.aspx) или из [центра оценки TechNet](https://www.microsoft.com/evalcenter/) или с сайта [MSDN](https://msdn.microsoft.com/subscriptions/downloads).
+1. Скачайте ATA из [центра поддержки корпоративных лицензий Майкрософт](https://www.microsoft.com/Licensing/servicecenter/default.aspx) или из [центра оценки TechNet](https://www.microsoft.com/evalcenter/) или с сайта [MSDN](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget).
 
 1. Войдите на компьютер, на котором вы устанавливаете центр ATA, как участник локальной группы администраторов.
 
@@ -121,7 +121,7 @@ Microsoft.Tri.Center.exe
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)

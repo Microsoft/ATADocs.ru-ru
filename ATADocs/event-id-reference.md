@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5a48993ecf5b4384b5b7826ee72862798790a5fb
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: a0a2abcf78c19180b841b9f2ec9186b19beea7c5
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775324"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954669"
 ---
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
 
@@ -28,11 +28,11 @@ ms.locfileid: "84775324"
 
 События можно найти здесь:
 
-![расположение идентификатора события](./media/event-id-location.png)
+![расположение идентификатора события](media/event-id-location.png)
 
 ## <a name="ata-health-events"></a>События работоспособности ATA
 
-|Код события|Имя оповещения|
+|Идентификатор события|Имя оповещения|
 |---------|---------------|
 |1001|Нехватка места на диске для центра|
 |1003|Центр перегружен|
@@ -58,7 +58,7 @@ ms.locfileid: "84775324"
  
 ## <a name="ata-security-alert-events"></a>Оповещения системы безопасности ATA
 
-|Код события|Имя оповещения|
+|Идентификатор события|Имя оповещения|
 |---------|---------------|
 |2001|Подозрение на кражу идентификационных данных на основе аномального поведения|
 |2002|Внедрение нестандартных протоколов.|
@@ -86,7 +86,7 @@ ms.locfileid: "84775324"
 
 ## <a name="ata-auditing-events"></a>События аудита ATA
 
-|Код события|Имя оповещения|
+|Идентификатор события|Имя оповещения|
 |---------|---------------|
 |3001|Изменение конфигурации ATA|
 |3002|Добавление шлюза ATA|
@@ -96,7 +96,7 @@ ms.locfileid: "84775324"
 |3006|Изменение состояния действия работоспособности вручную|
 |3007|Изменение состояния подозрительного действия вручную|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
