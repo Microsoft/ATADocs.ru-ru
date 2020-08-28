@@ -178,7 +178,7 @@
     - name: "Справочник по журналу\_SIEM"
       href: cef-format-sa.md
     - name: "Известные проблемы с Azure\_ATP"
-      href: known-issues.md
+      href: ./troubleshooting-atp-known-issues.md
     - name: "Справочник по выпуску Azure\_ATP"
       href: atp-release-reference.md
 - name: Ресурсы
