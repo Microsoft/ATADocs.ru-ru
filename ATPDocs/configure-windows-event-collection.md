@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 07136153ab0909f6de9089b0f748d4ed123e1458
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: aa86397e76cafabe4c45dd5b394996225d758633
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027230"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956879"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
@@ -96,7 +96,7 @@ ms.locfileid: "88027230"
         ![Аудит исходящего трафика NTLM к удаленным серверам](media/atp-advanced-audit-policy-check-step-3.png)
 
     > [!NOTE]
-    > Если вместо групповой политики выбрана локальная политика безопасности, добавьте в нее журналы аудита **Вход учетной записи**, **Управление учетными записями** и **Параметры безопасности**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
+    > Если вместо групповой политики выбрана локальная политика безопасности, добавьте в нее журналы аудита **Вход учетной записи**, **Управление учетными записями** и **Параметры безопасности**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
 
 1. Новые события, примененные с помощью объекта групповой политики, отображаются в **журналах событий Windows**.
 
@@ -120,7 +120,7 @@ Advanced Security Audit Policy is enabled via **Default Domain Controllers Polic
 > [!NOTE]
 >
 > - Автономные датчики Azure ATP не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик Azure ATP.
-> - Важно просмотреть и проверить [политики аудита](atp-advanced-audit-policy.md) перед включением сбора данных о событиях, чтобы убедиться, что контроллеры доменов настроены правильно для записи необходимых событий.
+> - Важно просмотреть и проверить [политики аудита]() перед включением сбора данных о событиях, чтобы убедиться, что контроллеры доменов настроены правильно для записи необходимых событий.
 
 ## <a name="see-also"></a>См. также
 

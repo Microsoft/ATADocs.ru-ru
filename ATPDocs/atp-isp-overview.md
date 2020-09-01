@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b8717625c70559c465daa90019d01c8709459cf
-ms.sourcegitcommit: c3680d6de51d13bb4aeae02a79e74c4a66d9d268
+ms.openlocfilehash: 914a5051eea5d68a26fced0be871ea6c436bfb8e
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85311603"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953513"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Оценки состояния безопасности удостоверений Azure ATP
 
@@ -35,7 +35,7 @@ ms.locfileid: "85311603"
 
 ### <a name="access"></a>Access
 
-Оценка безопасности Azure ATP доступна на портале Microsoft Cloud App Security после включения интеграции с Azure ATP. Сведения о том, как интегрировать Azure ATP с Cloud App Security, см. в статье об [интеграции Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
+Оценка безопасности Azure ATP доступна на портале Microsoft Cloud App Security после включения интеграции с Azure ATP. Сведения о том, как интегрировать Azure ATP с Cloud App Security, см. в статье об [интеграции Azure ATP](/cloud-app-security/aatp-integration).
 
 ### <a name="licensing"></a>Лицензирование
 
@@ -43,7 +43,7 @@ ms.locfileid: "85311603"
 
 ## <a name="access-azure-atp-using-cloud-app-security"></a>Доступ к Azure ATP через Cloud App Security
 
-Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
+Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
 
 **Оценки состояния безопасности удостоверений**
 

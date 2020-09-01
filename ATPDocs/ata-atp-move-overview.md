@@ -6,24 +6,24 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 43cc53fc4de948b4f95c716f0f1bbcd7094a412e
-ms.sourcegitcommit: 0edb9162b28c7e672e8bd04a026dbf561ace246b
+ms.openlocfilehash: 217f961a0c063d75ec73d2aa1b45c028ed5fbad3
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86280995"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956488"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)
 
 Это руководство поможет вам перейти с существующей установки ATA на службу "Расширенная защита от угроз Azure" (Azure ATP). В нем приведены предварительные и основные требования к Azure ATP и подробно описано планирование и выполнение перехода. Кроме того, здесь приведены необходимые действия по проверке, а также советы по использованию новейших решений безопасности и защиты от угроз в сочетании с Azure ATP после установки службы.
 
-Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp).
+Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP](atp-technical-faq.md#what-is-azure-atp).
 
 В руководстве описаны следующие действия:
 
@@ -45,29 +45,29 @@ ms.locfileid: "86280995"
 
 - Azure ATP требует наличия .NET Framework 4.7 или более поздней версии и может потребовать контроллер домена (с перезагрузкой), если вы используете .NET Framework версии ниже 4.7.
 
-- Убедитесь, что контроллеры домена отвечают всем [требованиям датчиков Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites#azure-atp-sensor-requirements) и ваша среда удовлетворяет всем [требованиям Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
+- Убедитесь, что контроллеры домена отвечают всем [требованиям датчиков Azure ATP](atp-prerequisites.md#azure-atp-sensor-requirements) и ваша среда удовлетворяет всем [требованиям Azure ATP](atp-prerequisites.md).
 
-- Все контроллеры домена, которые вы планируете использовать, должны иметь необходимое подключение к Интернету для работы со службой Azure ATP. Проверьте и подтвердите соответствие контроллеров домена [требованиям конфигурации прокси-сервера Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/configure-proxy).
+- Все контроллеры домена, которые вы планируете использовать, должны иметь необходимое подключение к Интернету для работы со службой Azure ATP. Проверьте и подтвердите соответствие контроллеров домена [требованиям конфигурации прокси-сервера Azure ATP](configure-proxy.md).
 
 > [!NOTE]
-> Это руководство по миграции предназначено только для датчиков Azure ATP. Дополнительные сведения см. в разделе [Выбор правильного типа датчика для развертывания](https://docs.microsoft.com/azure-advanced-threat-protection/atp-capacity-planning#choosing-the-right-sensor-type-for-your-deployment).
+> Это руководство по миграции предназначено только для датчиков Azure ATP.
 
 ## <a name="plan"></a>План
 
 Перед началом перехода подготовьте следующую информацию:
 
-1. Данные учетной записи вашей [службы каталогов](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step2).
-1. [Параметры](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) уведомлений системного журнала.
-1. [Параметры уведомлений](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) по электронной почте.
+1. Данные учетной записи вашей [службы каталогов](install-atp-step2.md).
+1. [Параметры](setting-syslog.md) уведомлений системного журнала.
+1. [Параметры уведомлений](notifications.md) по электронной почте.
 1. Членство в группах ролей ATA
 1. Интеграция VPN
 1. Исключения оповещений
-    - Исключения не переносятся из ATA в Azure ATP, поэтому необходимы сведения о каждом исключении для [репликации исключений в Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections).
+    - Исключения не переносятся из ATA в Azure ATP, поэтому необходимы сведения о каждом исключении для [репликации исключений в Azure ATP](excluding-entities-from-detections.md).
 1. Данные учетных записей HoneyToken.
-    - Если у вас нет выделенных учетных записей HoneyToken, то прочтите о [HoneyToken в Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7) и создайте новые учетные записи для текущей задачи.
+    - Если у вас нет выделенных учетных записей HoneyToken, то прочтите о [HoneyToken в Azure ATP](install-atp-step7.md) и создайте новые учетные записи для текущей задачи.
 1. Полный список всех объектов (компьютеров, групп, пользователей), которые вы хотите вручную пометить как конфиденциальные.
-    - См. дополнительные сведения о важности [конфиденциальных объектов](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts) в Azure ATP.
-1. [Сведения](https://docs.microsoft.com/azure-advanced-threat-protection/reports) о планировании отчетов (список отчетов и запланированное время).
+    - См. дополнительные сведения о важности [конфиденциальных объектов](sensitive-accounts.md) в Azure ATP.
+1. [Сведения](reports.md) о планировании отчетов (список отчетов и запланированное время).
 
 > [!NOTE]
 > Не удаляйте центр ATA, пока не будут удалены все шлюзы ATA. Если удалить центр ATA с еще работающими шлюзами ATA, то ваша организация останется без защиты от угроз.
@@ -78,18 +78,18 @@ ms.locfileid: "86280995"
 
 ### <a name="step-1-create-and-install-azure-atp-instance-and-sensors"></a>Шаг 1. Создание и установка экземпляра и датчиков Azure ATP
 
-1. [Создайте экземпляр Azure ATP.](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)
+1. [Создайте экземпляр Azure ATP.](install-atp-step1.md)
 
-2. Удалите упрощенный шлюз ATA на всех контроллерах домена.
+1. Удалите упрощенный шлюз ATA на всех контроллерах домена.
 
-3. Установите датчик Azure ATP на всех контроллерах домена:
-    - [Скачайте файлы датчика Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step3).
-    - [Получите ключ доступа Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step3#download-the-setup-package).
-    - [Установите датчики Azure ATP на контроллерах домена](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4).
+1. Установите датчик Azure ATP на всех контроллерах домена:
+    - [Скачайте файлы датчика Azure ATP](install-atp-step3.md).
+    - [Получите ключ доступа Azure ATP](install-atp-step3.md#download-the-setup-package).
+    - [Установите датчики Azure ATP на контроллерах домена](install-atp-step4.md).
 
 ### <a name="step-2-configure-and-validate-azure-atp-instance"></a>Шаг 2. Настройка и проверка экземпляра Azure ATP
 
-- [Настройте датчик](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5)
+- [Настройте датчик](install-atp-step5.md)
 
 > [!NOTE]
 > Некоторые задачи в следующем списке невозможно выполнить до установки датчиков Azure ATP и последующей начальной синхронизации, например, невозможно выбрать объекты и пометить их как **конфиденциальные** вручную. Запланируйте до двух часов времени на выполнение начальной синхронизации.
@@ -100,25 +100,25 @@ ms.locfileid: "86280995"
 
 | Шаг    | Действие | Состояние |
 |--------------|------------|------------------|
-| 1  | Установка [отложенных обновлений на выбранных контроллерах домена](https://docs.microsoft.com/azure-advanced-threat-protection/sensor-update) | — [ ] |
-| 2  | Данные учетных записей [службы каталогов](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step2)| — [ ] |
-| 3  | Настройка [уведомлений системного журнала](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) | — [ ] |
-| 4  | Сведения об [интеграции VPN](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step6-vpn)| — [ ] |
-| 5  | Настройка [интеграции WDATP](https://docs.microsoft.com/azure-advanced-threat-protection/integrate-wd-atp)| — [ ] |
-| 6  | Настройка учетных записей [HoneyTokens](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7)| — [ ] |
-| 7  | Указание [конфиденциальных объектов](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts)| — [ ] |
-| 8  | Создание [исключений для оповещений безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections)| — [ ] |
-| 9 | [Включение уведомлений по электронной почте](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) | — [ ] |
-| 10  | [Настройка расписания отчетов](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (список отчетов и запланированное время)| — [ ] |
-| 11  | Настройка [разрешений на основе ролей](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups) | — [ ] |
-| 12  | [Настройка уведомлений SIEM (IP-адрес)](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection#siemsyslog)| — [ ] |
+| 1  | Установка [отложенных обновлений на выбранных контроллерах домена](sensor-update.md) | - [ ] |
+| 2  | Данные учетных записей [службы каталогов](install-atp-step2.md)| - [ ] |
+| 3  | Настройка [уведомлений системного журнала](setting-syslog.md) | - [ ] |
+| 4  | Сведения об [интеграции VPN](install-atp-step6-vpn.md)| - [ ] |
+| 5  | Настройка [интеграции WDATP](integrate-wd-atp.md)| - [ ] |
+| 6  | Настройка учетных записей [HoneyTokens](install-atp-step7.md)| - [ ] |
+| 7  | Указание [конфиденциальных объектов](sensitive-accounts.md)| - [ ] |
+| 8  | Создание [исключений для оповещений безопасности](excluding-entities-from-detections.md)| - [ ] |
+| 9 | [Включение уведомлений по электронной почте](notifications.md) | - [ ] |
+| 10  | [Настройка расписания отчетов](reports.md) (список отчетов и запланированное время)| - [ ] |
+| 11  | Настройка [разрешений на основе ролей](atp-role-groups.md) | - [ ] |
+| 12  | [Настройка уведомлений SIEM (IP-адрес)](configure-event-collection.md#siemsyslog)| - [ ] |
 
 #### <a name="validation"></a>Проверка
 
 На портале Azure ATP:
 
-- Просмотрите все [оповещения о работоспособности](https://docs.microsoft.com/azure-advanced-threat-protection/atp-health-center) на предмет возможных проблем со службой.
-- Проверьте [журналы ошибок датчика](https://docs.microsoft.com/azure-advanced-threat-protection/troubleshooting-atp-using-logs) Azure ATP на наличие необычных ошибок.
+- Просмотрите все [оповещения о работоспособности](atp-health-center.md) на предмет возможных проблем со службой.
+- Проверьте [журналы ошибок датчика](troubleshooting-atp-using-logs.md) Azure ATP на наличие необычных ошибок.
 
 ## <a name="after-the-move"></a>После перехода
 
@@ -131,7 +131,7 @@ ms.locfileid: "86280995"
   - Для доступа к данным центра ATA после перехода рекомендуется некоторое время сохранять его данные в работе. После вывода центра ATA из эксплуатации количество ресурсов обычно можно уменьшить, особенно если они являются виртуальными машинами.
 
 - **Создайте резервную копию Mongo DB**  
-  - Если вы хотите сохранить данные ATA на неопределенный срок, [выполните резервное копирование Mongo DB](https://docs.microsoft.com/advanced-threat-analytics/ata-database-management#backing-up-the-ata-database).
+  - Если вы хотите сохранить данные ATA на неопределенный срок, [выполните резервное копирование Mongo DB](/advanced-threat-analytics/ata-database-management#backing-up-the-ata-database).
 
 ## <a name="mission-accomplished"></a>Все готово
 
@@ -139,7 +139,7 @@ ms.locfileid: "86280995"
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
-См. дополнительные сведения о возможностях, функциях и [оповещениях системы безопасности](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts)[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+См. дополнительные сведения о возможностях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md)[Azure ATP](what-is-atp.md).
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 

@@ -2,17 +2,17 @@
 title: Руководство по настройке лаборатории оповещений системы безопасности Azure ATP
 description: В этом руководстве показано, как настроить тестовую лабораторию Azure ATP, чтобы имитировать угрозы, которые должно обнаружить решение Azure ATP.
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 4a846962645d978fc7419650781624e7c5f4bf0b
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: c6b1a309d86562082121806e1c81897e9632e95c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414528"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955111"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности ATP 
 
@@ -34,7 +34,7 @@ ms.locfileid: "79414528"
    - Выполните [расконсервацию Active Directory (AD) для добавления пользователей](#bkmk_hydrate).
 1. [Экземпляр Azure ATP](install-atp-step1.md), [подключенный к Active Directory](install-atp-step2.md).
 1. [Скачайте](install-atp-step3.md) и [установите последнюю версию датчика Azure ATP](install-atp-step4.md) на контроллере домена в лаборатории.
-1. Ознакомьтесь [со сведениями о рабочих станциях с привилегированным доступом](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) и [политикой SAMR](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls).
+1. Ознакомьтесь [со сведениями о рабочих станциях с привилегированным доступом](/windows-server/identity/securing-privileged-access/privileged-access-workstations) и [политикой SAMR](/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls).
 
 ## <a name="recommendations"></a>Рекомендации
 
@@ -114,9 +114,9 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![Измените групповую политику, разрешив Azure ATP использовать возможности пути бокового смещения.](media/playbook-labsetup-localgrouppolicies3.png)
 
-2. Добавьте учетную запись службы Azure ATP (AATPService) в список утвержденных учетных записей, которые могут выполнять это действие в современных системах Windows.
+1. Добавьте учетную запись службы Azure ATP (AATPService) в список утвержденных учетных записей, которые могут выполнять это действие в современных системах Windows.
 
-    ![Добавление службы](./media/samr-add-service.png)
+    ![Добавление службы](media/samr-add-service.png)
 
 ### <a name="add-sensitive-group-to-azure-atp"></a>Добавление привилегированной группы в Azure ATP
 
@@ -124,15 +124,15 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
 1. На портале Azure ATP в строке меню щелкните значок шестеренки **Настройка**.
 
-2. В разделе **Обнаружение** выберите пункт **Теги сущности**.
+1. В разделе **Обнаружение** выберите пункт **Теги сущности**.
 
     ![Теги сущностей Azure ATP](media/entity-tags.png)
 
-3. В разделе **Конфиденциально** введите имя Helpdesk для **конфиденциальных групп**,а затем щелкните значок **+** , чтобы добавить их.
+1. В разделе **Конфиденциально** введите имя Helpdesk для **конфиденциальных групп**,а затем щелкните значок **+** , чтобы добавить их.
 
     ![Отметьте Helpdesk в качестве привилегированной группы Azure ATP, чтобы включить графики бокового смещения и отчеты для этой группы.](media/playbook-labsetup-helpdesksensitivegroup.png)
 
-4. Нажмите кнопку **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 ### <a name="azure-atp-lab-base-setup-checklist"></a>Контрольный список для настройки базовой лаборатории Azure ATP
 
@@ -180,7 +180,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
     Register-ScheduledTask -TaskName "RonHD Cmd.exe - AATP SA Playbook" -Trigger $trigger -User $runAs -Password $ronHHDPass -Action $action
     ```
 
-2. Войдите в систему компьютера от имени пользователя **JeffL**. Процесс cmd.exe запускается в контексте пользователя RonHD после входа в систему, имитируя службу технической поддержки, управляющую компьютером.
+1. Войдите в систему компьютера от имени пользователя **JeffL**. Процесс cmd.exe запускается в контексте пользователя RonHD после входа в систему, имитируя службу технической поддержки, управляющую компьютером.
 
 ### <a name="turn-off-antivirus-on-victimpc"></a>Отключение антивирусной программы на компьютере VictimPC
 
@@ -199,7 +199,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 |----|-----|
 | Mimikatz | [Mimikatz на сайте GitHub](https://github.com/gentilkiwi/mimikatz) |
 | PowerSploit | [PowerSploit на сайте GitHub](https://github.com/PowerShellMafia/PowerSploit) |
-| PsExec | [Документация Майкрософт](https://docs.microsoft.com/sysinternals/downloads/psexec) |
+| PsExec | [Документация Майкрософт](/sysinternals/downloads/psexec) |
 | NetSess | [Средства JoeWare](https://www.joeware.net/freetools) |
 
 Мы благодарим авторов этих средств исследования за то, что они дали пользователям возможность лучше понять риск и влияние кибератак.
@@ -218,7 +218,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
    ```
 
-2. После запуска сценария **Helpdesk** переместится в локальный список в разделе **Администраторы** > **Члены группы** на компьютере **AdminPC**.
+1. После запуска сценария **Helpdesk** переместится в локальный список в разделе **Администраторы** > **Члены группы** на компьютере **AdminPC**.
 ![Helpdesk в группе локальных администраторов для AdminPC](media/playbook-labsetup-localgrouppolicies1.png)
 
 ### <a name="simulate-domain-activities-from-adminpc"></a>Имитация действий домена из AdminPC
@@ -273,4 +273,3 @@ while ($true)
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
 Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)!
-

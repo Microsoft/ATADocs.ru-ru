@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b82959c378ef4150bfc9204ccf8d4202792d0547
-ms.sourcegitcommit: 9bf5ddd9636ce1bc99d6e4308ef2d70b7abdc836
+ms.openlocfilehash: 24fab947687183f40d5043678b24e12792d98233
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87386033"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956845"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>Настройка конечной точки прокси-сервера и подключения к Интернету для датчика ATP в Azure
 
@@ -91,7 +91,7 @@ ms.locfileid: "87386033"
 
 - `<your-instance-name>sensorapi.atp.azure.com` — для подключения датчиков. Например, `contoso-corpsensorapi.atp.azure.com`
 
-Также можно использовать диапазоны IP-адресов в нашем теге службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к Azure ATP. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
+Также можно использовать диапазоны IP-адресов в нашем теге службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к Azure ATP. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
 
 Если же требуется более детальный контроль, попробуйте разрешить трафик к нужным конечным точкам из следующей таблицы:
 

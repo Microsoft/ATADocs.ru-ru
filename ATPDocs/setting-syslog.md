@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2d2c6e47cdc385a42a441290d432aa01f91e0939
-ms.sourcegitcommit: 7136b50eaffc9a0e0e7eb9e2db6d5396ef4e996f
+ms.openlocfilehash: 4e7f9e3a5c2bf9e0cdfdd21c3d8f8a9f831ff4b0
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929301"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955672"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
 
@@ -57,7 +57,7 @@ Azure ATP может уведомлять вас об обнаружении п
 
 1. Щелкните **Уведомления**, а затем на вкладке **Уведомления системного журнала** нажмите **Настроить** и введите следующие сведения:
 
-   ![Изображение: параметры сервера системного журнала Azure ATP](media/atp-syslog.png)
+    ![Изображение: параметры сервера системного журнала Azure ATP](media/atp-syslog.png)
 
 1. Можно выбрать, какие события будут отправляться на сервер системного журнала. В разделе **Уведомления системного журнала** укажите, какие уведомления должны отправляться на сервер системного журнала. Доступны новые оповещения системы безопасности, уведомления об обновленных подозрительных действиях и новых проблемах с работоспособностью.
 

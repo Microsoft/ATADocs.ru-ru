@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/27/2020
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 22e0d88d46d8f3751316148600349ca99382339a
-ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
+ms.openlocfilehash: e0c6e9826b734e9e94e787ba62cd782eb5ef8dd6
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88793359"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956641"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования для Azure ATP
 
@@ -28,7 +28,7 @@ ms.locfileid: "88793359"
 
 В состав Azure ATP входит облачная служба Azure ATP, которая включает портал Azure ATP и датчик Azure ATP. Дополнительные сведения о каждом компоненте Azure ATP см. в статье [Архитектура Azure ATP](atp-architecture.md).
 
-Azure ATP защищает локальных и синхронизированных пользователей ваших служб Azure Active Directory. См. подробнее о среде, состоящей только из пользователей AAD в руководстве по [обеспечению защиты удостоверений AAD](https://docs.microsoft.com/azure/active-directory/identity-protection/overview).
+Azure ATP защищает локальных и синхронизированных пользователей ваших служб Azure Active Directory. См. подробнее о среде, состоящей только из пользователей AAD в руководстве по [обеспечению защиты удостоверений AAD](/azure/active-directory/identity-protection/overview).
 
 Чтобы создать экземпляр Azure ATP, требуется клиент AAD, для которого определен как минимум один глобальный администратор или администратор безопасности. Каждый экземпляр Azure ATP поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
@@ -76,7 +76,7 @@ Azure ATP защищает локальных и синхронизирован
 
 - При попытке установить датчик Azure ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик Azure ATP на компьютере с функцией объединения сетевых карт, ознакомьтесь с [соответствующей проблемой](troubleshooting-atp-known-issues.md#nic-teaming).
 
-- Рекомендация по контейнеру **Удаленные объекты**: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Разрешения только для чтения в этом контейнере позволяют Azure ATP обнаруживать удаление пользователей из вашего каталога Active Directory. Дополнительные сведения о настройке разрешений только для чтения в контейнере удаленных объектов см. в разделе **Changing permissions on a deleted object container** (Изменение разрешений для контейнера удаленных объектов) статьи [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (Просмотр или установка разрешений для объекта каталога).
+- Рекомендация по контейнеру **Удаленные объекты**: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Разрешения только для чтения в этом контейнере позволяют Azure ATP обнаруживать удаление пользователей из вашего каталога Active Directory. Дополнительные сведения о настройке разрешений только для чтения в контейнере удаленных объектов см. в разделе **Changing permissions on a deleted object container** (Изменение разрешений для контейнера удаленных объектов) статьи [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (Просмотр или установка разрешений для объекта каталога).
 
 - **Токен-приманка** (необязательно): Учетная запись пользователя, не совершавшего операции в сети. Эта учетная запись будет настроена как пользователь Honeytoken Azure ATP. Дополнительные сведения об использовании токенов-приманок: [Настройка учетных записей Honeytoken и исключений из обнаружения](install-atp-step7.md).
 
@@ -94,7 +94,7 @@ Azure ATP защищает локальных и синхронизирован
 - Открытый порт брандмауэра или прокси-сервера — чтобы контроллеры домена могли обмениваться данными с облачной службой Azure ATP, откройте порт 443 *.atp.azure.com в брандмауэре или на прокси-сервере.
 
     > [!NOTE]
-    > Также можно использовать тег службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к Azure ATP. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
+    > Также можно использовать тег службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к Azure ATP. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
 
  ![Диаграмма архитектуры Azure ATP](media/azure-atp-architecture.png)
 
@@ -141,7 +141,7 @@ Azure ATP защищает локальных и синхронизирован
 
 Датчик Azure ATP можно развернуть на контроллерах домена с различной нагрузкой и различных размеров в зависимости от объема входящего и исходящего трафика, а также установленных ресурсов.
 
-В операционных системах Windows 2008 R2 и 2012 датчик Azure ATP не поддерживается в [многопроцессорном групповом](https://docs.microsoft.com/windows/win32/procthread/processor-groups) режиме. Дополнительные сведения о многопроцессорном групповом режиме см. в статье об [устранении неполадок](troubleshooting-atp-known-issues.md#multi-processor-group-mode).
+В операционных системах Windows 2008 R2 и 2012 датчик Azure ATP не поддерживается в [многопроцессорном групповом](/windows/win32/procthread/processor-groups) режиме. Дополнительные сведения о многопроцессорном групповом режиме см. в статье об [устранении неполадок](troubleshooting-atp-known-issues.md#multi-processor-group-mode).
 
 >[!NOTE]
 > При запуске в качестве динамической памяти виртуальной машины или любой другой памяти функция воздушного шага не поддерживается.
@@ -182,7 +182,7 @@ Azure ATP защищает локальных и синхронизирован
 
 ### <a name="windows-event-logs"></a>Журналы событий Windows
 
-Обнаружение Azure ATP основано на определенных [журналах событий Windows](configure-windows-event-collection.md#configure-event-collection), анализируемых датчиком и получаемых с контроллеров домена. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Дополнительные сведения о настройке правильных политик см. в статье о [проверке расширенной политики аудита](atp-advanced-audit-policy.md). Чтобы [обеспечить аудит события Windows 8004](configure-windows-event-collection.md#configure-audit-policies) в соответствии с требованиями службы, проверьте [параметры аудита NTLM](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/).
+Обнаружение Azure ATP основано на определенных [журналах событий Windows](configure-windows-event-collection.md#configure-event-collection), анализируемых датчиком и получаемых с контроллеров домена. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Дополнительные сведения о настройке правильных политик см. в статье о [проверке расширенной политики аудита](configure-windows-event-collection.md). Чтобы [обеспечить аудит события Windows 8004](configure-windows-event-collection.md#configure-audit-policies) в соответствии с требованиями службы, проверьте [параметры аудита NTLM](/archive/blogs/askds/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7).
 
 > [!NOTE]
 >

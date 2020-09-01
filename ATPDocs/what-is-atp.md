@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/05/2020
-ms.topic: article
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 41aec3f7189e659e3ad7d2d529574b90788d1e61
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: e4391f788e525891aff050ad591b2f5063442ebe
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775732"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954278"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>Что такое Azure Advanced Threat Protection?
 
@@ -107,14 +107,14 @@ Azure ATP предоставляет только важные оповещен
 ### <a name="phase-1"></a>Этап 1
 
 1. Настройте в Azure ATP защиту основных сред. Модель быстрого развертывания Azure ATP позволяет немедленно защитить организацию. [Установка Azure ATP](install-atp-step1.md)
-2. Настройте [конфиденциальные учетные записи](sensitive-accounts.md) и [учетные записи honeytoken](install-atp-step7.md).
-3. Просматривайте отчеты и [пути бокового смещения](use-case-lateral-movement-path.md).
+1. Настройте [конфиденциальные учетные записи](sensitive-accounts.md) и [учетные записи honeytoken](install-atp-step7.md).
+1. Просматривайте отчеты и [пути бокового смещения](use-case-lateral-movement-path.md).
 
 ### <a name="phase-2"></a>Этап 2
 
 1. Защитите все контроллеры домена и [леса](atp-multi-forest.md) в вашей организации.
-2. Отслеживайте все [оповещения](working-with-suspicious-activities.md) — изучайте оповещения о боковом смещении и перехвате контроля над доменом.
-3. Обратитесь к [руководству по оповещениям системы безопасности](suspicious-activity-guide.md), чтобы научиться распознавать угрозы и потенциальные атаки.
+1. Отслеживайте все [оповещения](working-with-suspicious-activities.md) — изучайте оповещения о боковом смещении и перехвате контроля над доменом.
+1. Обратитесь к [руководству по оповещениям системы безопасности](suspicious-activity-guide.md), чтобы научиться распознавать угрозы и потенциальные атаки.
 
 ### <a name="phase-3"></a>Этап 3
 

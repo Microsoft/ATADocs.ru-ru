@@ -6,17 +6,17 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 021953b0b5fbd972686cc3743c796a5bbefdcab5
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: cc76b68971ae780e90260f198d0745a29719ca45
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773454"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955366"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security
 
@@ -55,13 +55,13 @@ ms.locfileid: "84773454"
 >[!NOTE]
 >
 > - Если у вас нет подписки на Cloud App Security, вы по-прежнему сможете использовать портал Cloud App Security для изучения оповещений Azure ATP и выполнять подробный обзор поведения пользователей и их локальных управляемых действий, но не получите связанные аналитические сведения из облачных приложений.
-> - Администраторам Azure ATP могут потребоваться новые разрешения для доступа к Cloud App Security. Дополнительные сведения о назначении разрешений Cloud App Security см. в разделе [Управление доступом администратора](https://docs.microsoft.com/cloud-app-security/manage-admins).
+> - Администраторам Azure ATP могут потребоваться новые разрешения для доступа к Cloud App Security. Дополнительные сведения о назначении разрешений Cloud App Security см. в разделе [Управление доступом администратора](/cloud-app-security/manage-admins).
 
-Сведения о том, как быстро включить Azure ATP в Cloud App Security, см. в статье об [интеграции Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
+Сведения о том, как быстро включить Azure ATP в Cloud App Security, см. в статье об [интеграции Azure ATP](/cloud-app-security/aatp-integration).
 
 ## <a name="azure-atp-in-cloud-app-security"></a>Azure ATP в Cloud App Security
 
-Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
+Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
 
 Получайте доступ к данным и новым гибридным возможностям Azure ATP в оповещениях, действиях и на страницах пользователей Cloud App Security.
 
@@ -79,11 +79,11 @@ ms.locfileid: "84773454"
 
 ## <a name="activities"></a>Действия
 
-Оповещения Azure ATP отображаются в **журнале действий** Cloud App Security. Дополнительные параметры и возможности фильтрации действий доступны только при просмотре оповещений в Cloud App Security. Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-activities-filtering-mcas).
+Оповещения Azure ATP отображаются в **журнале действий** Cloud App Security. Дополнительные параметры и возможности фильтрации действий доступны только при просмотре оповещений в Cloud App Security. Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](atp-activities-filtering-mcas.md).
 
 ## <a name="user-pages"></a>Страницы пользователя
 
-Страницы пользователя содержат [оценку приоритета для изучения](https://docs.microsoft.com/cloud-app-security/tutorial-ueba) по каждому пользователю и журнал всех действий.
+Страницы пользователя содержат [оценку приоритета для изучения](/cloud-app-security/tutorial-ueba) по каждому пользователю и журнал всех действий.
 
 Чтобы получить доступ к странице системного пользователя:
 1. Откройте **Оповещения** в главном меню.
@@ -98,7 +98,7 @@ ms.locfileid: "84773454"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-activities-filtering-mcas).
+Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](atp-activities-filtering-mcas.md).
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 

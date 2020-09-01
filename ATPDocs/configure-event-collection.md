@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/19/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8c95335f50988eba7d3d18e9d0550e33647c9389
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: 0057f2627139e8803aa04c693b0fe051bf8d118a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027182"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956896"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
@@ -35,7 +35,7 @@ ms.locfileid: "88027182"
 Чтобы настроить сбор событий Windows 8004, выполните следующие действия:
 
 1. Перейдите к расположению "Конфигурация компьютера" \ "Параметры Windows" \ "Параметры безопасности" \ "Локальные политики" \ "Параметры безопасности".
-2. Настройте **групповую политику домена** следующим образом:
+1. Настройте **групповую политику домена** следующим образом:
     - Сетевая безопасность: Ограничение NTLM: Исходящий трафик NTLM к удаленным серверам = **Аудит всего**
     - Сетевая безопасность: Ограничение NTLM: Аудит аутентификации NTLM в этом домене = **Включить все**
     - Сетевая безопасность: Ограничение NTLM: Аудит входящего трафика NTLM = **Включить аудит для всех учетных записей**

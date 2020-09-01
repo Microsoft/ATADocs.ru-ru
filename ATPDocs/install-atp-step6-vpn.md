@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9ad0662a0b468bbe67bb8b699b57358c0c512348
-ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
+ms.openlocfilehash: 3afbf9c925d4f4683fa56fff4adea3d999ed2eab
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86175741"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956828"
 ---
 # <a name="integrate-vpn"></a>Интеграция VPN
 
@@ -51,11 +51,11 @@ Azure ATP интегрируется с решением VPN путем прос
 1. Щелкните правой кнопкой мыши имя сервера и выберите **Свойства**.
 1. На вкладке **Безопасность** в разделе **Поставщик учета**  выберите **Учет RADIUS** и щелкните **Настроить**.
 
-    ![Настройка RADIUS](./media/radius-setup.png)
+    ![Настройка RADIUS](media/radius-setup.png)
 
 1. В окне **Добавление RADIUS-сервера** введите **имя сервера** ближайшего автономного датчика Azure ATP с возможностью сетевого подключения. Для обеспечения высокой доступности можно добавить дополнительные датчики Azure ATP в качестве RADIUS-серверов. В поле **порт** должно быть указано значение по умолчанию: 1813. Щелкните **Изменить** и введите новую строку общего секрета из букв и цифр. Запишите новую строку общего секрета: она потребуется позднее во время настройки Azure ATP. Установите флажок **Отправлять сообщения о включении и отключении учета RADIUS** и нажмите кнопку **ОК** во всех открывшихся диалоговых окнах.
 
-    ![Настройка VPN](./media/vpn-set-accounting.png)
+    ![Настройка VPN](media/vpn-set-accounting.png)
 
 ### <a name="configure-vpn-in-atp"></a>Настройка VPN в ATP
 
@@ -66,7 +66,7 @@ Azure ATP собирает данные VPN. Они помогают профи
 1. На портале Azure ATP щелкните значок шестеренки настройки, а затем — **VPN**.
 1. Включите **Учет Radius** и введите **общий секрет**, настроенный ранее на VPN-сервере RRAS. Затем нажмите кнопку **Сохранить**.
 
-    ![Настройка VPN Azure ATP](./media/atp-vpn-radius.png)
+    ![Настройка VPN Azure ATP](media/atp-vpn-radius.png)
 
 Когда эта функция будет включена, все датчики Azure ATP начнут прослушивать порт 1813 на предмет событий учета RADIUS. На этом настройка VPN будет завершена.
 

