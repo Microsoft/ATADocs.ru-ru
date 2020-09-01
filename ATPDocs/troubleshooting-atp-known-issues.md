@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e0694e13a731c1c8146f733ee8e49a3a2888d52c
-ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
+ms.openlocfilehash: 4de688b3ea1c80f8ed0e517baf9da3b469a8d82a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88793381"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956726"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
 
@@ -53,7 +53,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 ## <a name="proxy-authentication-problem-presents-as-a-connection-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка подключения
 
-Во время установки датчика возникает следующая ошибка:  **Датчику не удалось подключиться к службе.**
+Во время установки датчика возникает следующая ошибка: **Датчику не удалось подключиться к службе.**
 
 **Причина.**
 
@@ -151,19 +151,19 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 Установите для следующего параметра значение **Disabled** (Отключено) в конфигурации сетевого адаптера виртуальной машины: **IPv4 TSO Offload**.
 
- ![Проблема с датчиком VMware](./media/vm-sensor-issue.png)
+ ![Проблема с датчиком VMware](media/vm-sensor-issue.png)
 
 Используйте следующую команду, чтобы проверить, включена или отключена ли Разгрузка большой отправки (LSO).
 
 `Get-NetAdapterAdvancedProperty | Where-Object DisplayName -Match "^Large*"`
 
-![Проверка состояния LSO](./media/missing-network-traffic-health-alert.png)
+![Проверка состояния LSO](media/missing-network-traffic-health-alert.png)
 
 Если параметр LSO включен, отключите его с помощью следующей команды:
 
 `Disable-NetAdapterLso -Name {name of adapter}`
 
-![Состояние отключения LSO](./media/disable-lso-vmware.png)
+![Состояние отключения LSO](media/disable-lso-vmware.png)
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>Датчику не удалось получить учетные данные групповой управляемой учетной записи службы (gMSA)
 
