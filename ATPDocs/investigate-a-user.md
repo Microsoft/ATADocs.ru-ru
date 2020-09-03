@@ -1,6 +1,6 @@
 ---
 title: Руководство. Анализ пользователей в Azure ATP
-d|Description: This article explains how to user Azure ATP security alerts to investigate a suspicious user.
+description: В этой статье объясняется, как использовать оповещения системы безопасности Azure ATP для изучения подозрительного пользователя.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2bec6fbb12d78bbfd8dd04046f63df267391b1d1
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: cc9c825eb86e69caf3bef17a24194b8c8dfa0cf7
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413423"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956709"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
 
@@ -39,7 +39,7 @@ ms.locfileid: "79413423"
      2. Какова его роль в организации?
      3. Занимает ли он важное место в организационном дереве?
 
-2. Подозрительные действия для [анализа](investigate-entity.md)
+1. Подозрительные действия для [анализа](investigate-entity.md)
      1. Есть ли для пользователя другое открытое оповещение в Azure ATP или в других средствах обеспечения безопасности, таких как ATP в Защитнике Windows, Центр безопасности Azure и (или) центры сертификации Майкрософт?
      2. Были ли у пользователя неудачные попытки входа?
      3. К каким ресурсам пользователь получает доступ?  

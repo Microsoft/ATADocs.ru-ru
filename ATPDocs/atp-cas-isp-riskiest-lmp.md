@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 06/23/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 85e14135fed9a36279fbf615618f614e71ef9c18
-ms.sourcegitcommit: 2b8b727b11227aa6b665ba9e02ffa700a2dc33c6
+ms.openlocfilehash: 301dc36032950733784b928198fa5b092ccd6f10
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85516916"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88809096"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>Оценка безопасности: пути бокового смещения с максимальным риском
 
@@ -48,6 +48,9 @@ Azure ATP постоянно отслеживает вашу среду, что
 
     > [!NOTE]
     > Подождите 24 часа и убедитесь, что эта рекомендация больше не отображается в списке.
+
+> [!NOTE]
+> Эта оценка обновляется каждые 24 часа.
 
 ## <a name="see-also"></a>См. также
 

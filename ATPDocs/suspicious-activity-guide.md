@@ -1,6 +1,6 @@
 ---
 title: Руководство по оповещениям системы безопасности Azure ATP
-d|Description: This article provides a list of the security alerts issued by Azure ATP.
+description: В этой статье приводится список оповещений системы безопасности, выдаваемых Azure ATP.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f28a1fc6cd3fb4797f25dae5d26c6a3ed5adfeae
-ms.sourcegitcommit: 42f1da0c498bd145daff4df20b3e53069b55ecd5
+ms.openlocfilehash: 110ebc82412f9a0831c325d8cb8ffee6b91115ee
+ms.sourcegitcommit: af91810bb220ff8ba90569d87c718a63bdc52d94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87856416"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88807520"
 ---
 # <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
 
@@ -49,7 +49,7 @@ ms.locfileid: "87856416"
 > |[Кража данных по SMB](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|2030|Высокий|Exfiltration,<br>Lateral movement,<br>Команды и управление|
 > |[Действие Honeytoken](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|2014|Средняя|Credential access,<br>Обнаружение|
 > |[Вредоносный запрос главного ключа API защиты данных](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|2020|Высокий|Credential access|
-> |[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|2007|Средняя|Обнаружение|
+> |[Рекогносцировка путем сетевого сопоставления (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|2007 г.|Средняя|Обнаружение|
 > |[Попытка удаленного выполнения кода](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|2019|Средняя|Execution,<br>Persistence,<br>Privilege escalation,<br>Defense evasion,<br>Путешествие по компьютерам|
 > |[Удаленное выполнение кода через DNS](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|2036|Средняя|Privilege escalation,<br>Путешествие по компьютерам|
 > |[Разведывательная атака, направленная на субъект безопасности (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|2038|Средняя|Credential access|

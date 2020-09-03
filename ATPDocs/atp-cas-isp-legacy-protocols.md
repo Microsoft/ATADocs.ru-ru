@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/03/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a7d0ea7c8cc0eec8952cba17386045d9ee7529be
-ms.sourcegitcommit: 032132b54c905d08a24d15028782c66cc0620f20
+ms.openlocfilehash: 3b4146f4e50d8112be66c1e0a33df80c2de28257
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88023299"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956658"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов
 
@@ -38,7 +38,7 @@ ms.locfileid: "88023299"
 - LanMan (LM) и NTLMv1
 - Дайджест-проверка подлинности
 
-Чтобы прекратить использование устаревших протоколов, организация должна сначала определить, какие внутренние сущности и приложения полагаются на них. В таблице отчета **Оценка использования устаревших протоколов** находятся основные обнаруженные сущности, использующие устаревшие протоколы (пока это NTLMv1). С помощью отчета можно немедленно просмотреть все затронутые сущности и предпринять необходимые действия, прекратить использование этих протоколов и со временем отключить их. Дополнительные сведения об угрозах при использовании устаревших протоколов см. в статьях [Отключение LAN Manager и NTLMv1](https://blogs.technet.microsoft.com/miriamxyra/2017/11/07/stop-using-lan-manager-and-ntlmv1/) и [Удаление MIC 2 и использование клиентов LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
+Чтобы прекратить использование устаревших протоколов, организация должна сначала определить, какие внутренние сущности и приложения полагаются на них. В таблице отчета **Оценка использования устаревших протоколов** находятся основные обнаруженные сущности, использующие устаревшие протоколы (пока это NTLMv1). С помощью отчета можно немедленно просмотреть все затронутые сущности и предпринять необходимые действия, прекратить использование этих протоколов и со временем отключить их. Дополнительные сведения об угрозах при использовании устаревших протоколов см. в статьях [Отключение LAN Manager и NTLMv1](/archive/blogs/miriamxyra/stop-using-lan-manager-and-ntlmv1) и [Удаление MIC 2 и использование клиентов LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
 
 ## <a name="how-do-i-use-this-security-assessment"></a>Как использовать эту оценку безопасности?
 
@@ -46,8 +46,11 @@ ms.locfileid: "88023299"
 
     ![Запрет использования устаревших протоколов](media/atp-cas-isp-legacy-protocols-2.png)
 1. Выполните с этими сущностями необходимые действия для обнаружения зависимостей.
-1. Прекратите использование устаревших протоколов и со временем [отключите их полностью](https://blogs.technet.microsoft.com/miriamxyra/2017/11/07/stop-using-lan-manager-and-ntlmv1/).
+1. Прекратите использование устаревших протоколов и со временем [отключите их полностью](/archive/blogs/miriamxyra/stop-using-lan-manager-and-ntlmv1).
 1. [Устраните уязвимость MIC 2 и прекратите использование клиентов LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
+
+> [!NOTE]
+> Эта оценка обновляется практически в реальном времени.
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 

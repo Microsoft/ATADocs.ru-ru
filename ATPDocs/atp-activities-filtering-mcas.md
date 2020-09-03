@@ -6,24 +6,24 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ef0bf221024e13269881206d732d45ef8a6e3828
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: fc3032c9964a4e4e887dfedf01e57649d3bf2358
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472354"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955978"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>Фильтрация действий и создание политик действий с помощью Azure ATP в Microsoft Cloud App Security
 
 Эта статья призвана помочь вам понять, как фильтровать действия Azure ATP и создавать для них политики с помощью Microsoft Cloud App Security.
 
-Дополнительные сведения о том, как выполнить интеграцию, см. в статье об [интеграции Azure ATP в Cloud App Security](https://docs.microsoft.com/cloud-app-security/aatp-integration).
+Дополнительные сведения о том, как выполнить интеграцию, см. в статье об [интеграции Azure ATP в Cloud App Security](/cloud-app-security/aatp-integration).
 
 Использование Azure ATP с Microsoft Cloud App Security позволяет анализировать действия и получать оповещения на основе User and Entity Behavior Analytics (UEBA) — аналитики поведения пользователей и сущностей. С таким решением вы можете обнаруживать в своей компании самые рискованные действия, использовать комплексную оценку приоритета для изучения, а также фильтровать действия и настраивать политики действий.
 
@@ -44,11 +44,11 @@ ms.locfileid: "86472354"
 Чтобы получить доступ к действиям Azure ATP по пользователям:
 
 1. Отфильтруйте очередь **Оповещения** с использованием поля "Имя пользователя".
-    ![Очередь "Оповещения"](media/atp-mcas-alerts-queue.png)
+    ![Фильтрация оповещений по имени пользователя](media/atp-mcas-alerts-queue.png)
 1. Щелкните имя пользователя для какого-либо оповещения в полученном списке, чтобы открыть **страницу пользователя**, поведение которого нужно изучить.
 
 1. Отфильтруйте действия пользователя, используя доступные поля, или добавьте новое правило фильтра с помощью кнопки +.
-    ![Очередь "Оповещения"](media/atp-mcas-activity-filter.png)
+    ![Фильтрация действий пользователя](media/atp-mcas-activity-filter.png)
 
 ## <a name="create-activity-policies-in-cloud-app-security"></a>Создание политик действий в Cloud App Security
 
@@ -71,7 +71,7 @@ ms.locfileid: "86472354"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте больше об оценке приоритета для изучения и дополнительных возможностях функций [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
+Узнайте больше об оценке приоритета для изучения и дополнительных возможностях функций [Microsoft Cloud App Security](/cloud-app-security/).
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 

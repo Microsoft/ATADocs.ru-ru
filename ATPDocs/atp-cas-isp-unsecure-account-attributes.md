@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 06/23/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 59f3f8a201b78667ef5c8d6d20da177104dc3a38
-ms.sourcegitcommit: 073154998f5fdfbefe276888ffb034dfce368662
+ms.openlocfilehash: 7ac819d4d1f388ea632505cbd3394101020419bc
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256885"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88808994"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>Оценка безопасности: небезопасные атрибуты учетной записи
 
@@ -38,6 +38,9 @@ Azure ATP постоянно отслеживает вашу среду, что
 1. Узнать, какие из ваших учетных записей имеют небезопасные атрибуты, можно в таблице отчета.
     ![Обзор наиболее затронутых сущностей и создание плана действий](media/atp-cas-isp-unsecure-account-attributes-1.png)
 1. Примите для этих пользовательских учетных записей необходимые меры, изменив или удалив соответствующие атрибуты.
+
+> [!NOTE]
+> Эта оценка обновляется практически в реальном времени.
 
 ## <a name="remediation"></a>Исправление
 

@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/17/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b0494ca5dfbc4f5dde2c31423b3e17fdd2ef33df
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 878f251c1f2936a9207dc351adc9ae5680abe3c4
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774134"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88809062"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>Оценка безопасности: Неотслеживаемые контроллеры домена
 
@@ -36,6 +36,9 @@ ms.locfileid: "84774134"
 1. Используйте таблицу отчета, чтобы определить, какие контроллеры домена не отслеживаются.
     ![Устранение неотслеживаемых контроллеров домена](media/atp-cas-isp-unmonitored-domain-controller-1.png)
 1. Выполните необходимые действия на этих контроллерах домена, [установив и настроив датчики мониторинга](atp-sensor-monitoring.md#domain-controller-status).
+
+> [!NOTE]
+> Эта оценка обновляется практически в реальном времени.
 
 ## <a name="see-also"></a>См. также
 

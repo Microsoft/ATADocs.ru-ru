@@ -1,6 +1,6 @@
 ---
 title: Руководство. Анализ компьютеров в Azure ATP
-d|Description: This article explains how to use Azure ATP security alerts to investigate a suspicious computer.
+description: В этой статье объясняется, как использовать оповещения системы безопасности Azure ATP для изучения подозрительного компьютера.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 038b31aa221f2807a149998e657065289a82c4a3
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 26549610e7a9dc2ec81a785e3900259ba7cfa563
+ms.sourcegitcommit: af91810bb220ff8ba90569d87c718a63bdc52d94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669484"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88807561"
 ---
 # <a name="tutorial-investigate-a-computer"></a>Руководство. Анализ компьютера
 
@@ -53,7 +53,7 @@ ms.locfileid: "80669484"
 - Если включена интеграция ATP в Microsoft Defender, щелкните эмблему ATP в Microsoft Defender для дальнейшего исследования компьютера. ATP в Microsoft Defender предоставляет информацию о том, какие процессы выполнялись и какие оповещения появлялись на момент создания оповещения.
     1. Были ли развернуты или установлены какие-либо новые программы?
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Проверка пользователя](investigate-a-user.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
