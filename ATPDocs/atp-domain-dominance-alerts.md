@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8dfe48699b25b94e7d0a1acc4d0c5ef59ecf5407
-ms.sourcegitcommit: 275e2b084fd7dd7cac2e0d07b0b244318aac7475
+ms.openlocfilehash: d73ae09d7855640d465dcb215007745673e0064b
+ms.sourcegitcommit: 01bf13ab92084ef4d2fbd6ff7537667fa07a0e21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89245834"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471516"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>Руководство. Предупреждения о захвате управления доменом
 
@@ -495,7 +495,7 @@ API защиты данных (DPAPI) используется Windows для з
     1. Все ли пользователи, которые вошли в систему компьютера, должны были это делать?
     1. Эти разрешения подходят для этой учетной записи?
 1. Должны ли пользователи, которые входили в систему, иметь доступ к этим ресурсам?
-    - Если включена интеграция ATP в Windows Defender, щелкните значок ATP для дальнейшего исследования.
+    - Если включена интеграция платформы ATP в Защитнике Microsoft, щелкните ее значок для дальнейшего анализа.
 
 Если ответ на приведенные выше вопросы — да, закройте оповещение как действие **FP**.
 
