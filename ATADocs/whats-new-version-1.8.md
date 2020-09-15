@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 496613b744f156d0a5333ebc641d1d721a1bf234
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 1a5fe233cbfb5abea822f692a376293f2586e166
+ms.sourcegitcommit: 45003b424140350e03128ac5325e1f28c52e6e1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956250"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535147"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
 
@@ -122,6 +122,7 @@ $ATADaclEntry = "(A;;0x1;;;S-1-5-80-1717699148-1527177629-2874996750-2971184233-
 
 $EventLogConfiguration = New-Object -TypeName System.Diagnostics.Eventing.Reader.EventLogConfiguration("Security")
 $EventLogConfiguration.SecurityDescriptor = $EventLogConfiguration.SecurityDescriptor + $ATADaclEntry
+$EventLogConfiguration.SaveChanges()
 ```
 
 ### <a name="proxy-interference"></a>Конфликт прокси-сервера
@@ -140,7 +141,7 @@ $EventLogConfiguration.SecurityDescriptor = $EventLogConfiguration.SecurityDescr
 
 **Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
