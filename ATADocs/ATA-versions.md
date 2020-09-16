@@ -4,19 +4,19 @@ description: Описание разных вариантов поддержки
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/26/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ad00cf100fdd7496e3c2339c08bdd6f99ae57056
-ms.sourcegitcommit: 77d43b683c4588edc84aacf220d1daac00e47c6c
+ms.openlocfilehash: f98d6ca3f01ede7cb52d3caa742623e80a06e7d3
+ms.sourcegitcommit: 51997dca429877cbe5a74c9051c1ef2084b8dd44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90523136"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680242"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Поддержка версий Microsoft Advanced Threat Analytics (ATA)
 
@@ -24,7 +24,7 @@ ms.locfileid: "90523136"
 
 Поддержка Microsoft ATA определяется политикой жизненного цикла Майкрософт для [ATA 1. x](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics%201.X), а основная поддержка заканчивается 12 января 2021 г.
 
-ATA обновляется несколько раз в год, если каждая версия обновления поддерживается в течение 12 месяцев с даты выпуска общедоступной версии или через 6 месяцев после выпуска нового обновления.
+Обновления ATA поддерживаются в течение 12 месяцев с даты выпуска общедоступной версии или через 6 месяцев после выпуска нового обновления.
 
 > [!NOTE]
 > **Жизненный цикл поддержки**
@@ -49,6 +49,6 @@ ATA обновляется несколько раз в год, если каж�
 |1.9.2|1.9.7478|28 марта 2019 г.|14-МАР-2021|
 |1.9.3|1.9.7561|14-СЕН-2020||
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
