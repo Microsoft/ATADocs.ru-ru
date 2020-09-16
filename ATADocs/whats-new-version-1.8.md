@@ -141,7 +141,7 @@ $EventLogConfiguration.SaveChanges()
 
 **Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

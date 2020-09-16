@@ -47,7 +47,7 @@ ms.locfileid: "90535127"
 
 ![Путь обновления версии ATA](media/upgrade-path-ata.png)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
