@@ -3,26 +3,27 @@
 ## [Какие угрозы обнаруживает ATA?](ata-threats.md)
 ## Новые возможности ATA?
 ### [Новые возможности ATA версии 1.9](whats-new-version-1.9.md)
+#### [Обновление до ATA 1.9.3. Руководство по миграции](ata-update-1.9.3-migration-guide.md)
 #### [Обновление до ATA 1.9.2. Руководство по миграции](ata-update-1.9.2-migration-guide.md)
 #### [Обновление до ATA 1.9.1. Руководство по миграции](ata-update-1.9.1-migration-guide.md)
 #### [Обновление до ATA 1.9. Руководство по миграции](ata-update-1.9-migration-guide.md)
 ### [Новые возможности в ATA версии 1.8](whats-new-version-1.8.md)
 #### [Обновление до ATA 1.8. Руководство по миграции](ata-update-1.8-migration-guide.md)
-### [Новые возможности в ATA версии 1.7](whats-new-version-1.7.md)
-#### [Обновление до ATA 1.7. Руководство по миграции](ata-update-1.7-migration-guide.md)
-### [Новые возможности в ATA версии 1.6](whats-new-version-1.6.md)
-#### [Обновление до ATA 1.6. Руководство по миграции](ata-update-1.6-migration-guide.md)
-### [Новые возможности в ATA версии 1.5](whats-new-version-1.5.md)
-#### [Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
+### [Новые возможности ATA версии 1.7](whats-new-version-1.7.md)
+#### [Руководство по миграции на обновленную версию ATA 1.7](ata-update-1.7-migration-guide.md)
+### [Новые возможности ATA версии 1.6](whats-new-version-1.6.md)
+#### [Руководство по миграции на обновленную версию ATA 1.6](ata-update-1.6-migration-guide.md)
+### [Новые возможности ATA версии 1.5](whats-new-version-1.5.md)
+#### [Руководство по миграции на обновленную версию ATA 1.5](ata-update-1.5-migration-guide.md)
 ### [Новые возможности в ATA версии 1.4](whats-new-version-1.4.md)
 ## [Часто задаваемые вопросы по Аналитике компьютеров](ata-technical-faq.md)
 ## [Безопасность и конфиденциальность данных в ATA](ata-privacy-compliance.md)
-# План и проект
+# Планирование и разработка
 ## [Архитектура ATA](ata-architecture.md)
 ## [Планирование производительности ATA](ata-capacity-planning.md)
 ## [Предварительные требования ATA](ata-prerequisites.md)
 ## [Рекомендуемые варианты обновления](upgrade-path.md)
-# Развернуть
+# Развертывание
 ## [1. Скачивание и установка центра](install-ata-step1.md)
 ## [2. Подключение к AD](install-ata-step2.md)
 ## [3. Скачивание пакета шлюза ATA](install-ata-step3.md)
@@ -32,7 +33,7 @@
 ## [7. Интеграция с VPN](vpn-integration-install-step.md)
 ## [8. Исключения и Honeytoken](install-ata-step7.md)
 ## [9. Настройка SAM-R](install-ata-step9-samr.md)
-## [Автоматическая установка](ata-silent-installation.md)
+## [автоматическая установка](ata-silent-installation.md);
 ## Дополнительные шаги для шлюза ATA
 ### [1. Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [2. Проверка зеркального отображения портов](validate-port-mirroring.md)
@@ -46,7 +47,7 @@
 ## [Изменение пароля для подключения к домену](modifying-ata-config-dcpassword.md)
 ## [Исключение сущностей из результатов обнаружения](excluding-entities-from-detections.md)
 ## [Экспорт и импорт конфигурации ATA](ata-configuration-file.md)
-## [Управление создаваемыми системой журналами](manage-telemetry-settings.md)
+## [Управление системными журналами](manage-telemetry-settings.md)
 ## [Настройка уведомлений ATA](setting-ata-alerts.md)
 ## [Настройка параметров почтового сервера и системного журнала](setting-syslog-email-server-settings.md)
 ## [Пометка конфиденциальных учетных записей](tag-sensitive-accounts.md)
@@ -55,16 +56,16 @@
 ### [Профили сущностей](entity-profiles.md)
 ## [Предотвращение путей бокового смещения](use-case-lateral-movement-path.md)
 ## ATA cправочные сведения
-### [Справочник по журналу ATA SIEM](cef-format-sa.md)
+### [Справочник по журналу SIEM](cef-format-sa.md)
 ### [Ссылка код события](event-id-reference.md)
 # Анализ
 ## [Порядок действий при обнаружении подозрительной активности](suspicious-activity-guide.md)
-# Устранение неполадок
+# Диагностика
 ## [Работа с журналами аудита](troubleshoot-audit.md)
-## [Устранение известных проблем](troubleshooting-ata-known-errors.md)
+## [Устранение известных неполадок](troubleshooting-ata-known-errors.md)
 ## [Устранение неполадок с помощью журналов](troubleshooting-ata-using-logs.md)
 ## [Устранение проблем при помощи счетчиков производительности](troubleshooting-ata-using-perf-counters.md)
 ## [Устранение проблем при помощи базы данных](troubleshooting-ata-using-ata-database.md)
 ## [Устранение неполадок при запуске службы](troubleshooting-service-startup.md)
 ## [Аварийное восстановление](disaster-recovery.md)
-# [Схема подготовки к работе с ATA](ata-resources.md)
+# [План подготовки к работе ATA](ata-resources.md)
