@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 860f856acd1a34e52032217b137b6350a0988365
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 0e2a5c24b2dac7675f55e2279ccaa11897e154ef
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956590"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826640"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
 
@@ -97,5 +97,5 @@ ms.locfileid: "88956590"
 ## <a name="see-also"></a>См. также
 
 - [Настройка пересылки событий](configure-event-forwarding.md)
-- [Предварительные требования к Azure ATP](atp-prerequisites.md)
+- [Предварительные требования к Azure ATP](prerequisites.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

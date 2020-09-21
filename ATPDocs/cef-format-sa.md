@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0d7d6ffbc52b1b5c1d662d3d6c14a1dcf0ab0084
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 9f85a52c2e71517fca45417e0399a2d453dc7963
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772876"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826487"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
 
@@ -201,8 +201,8 @@ Azure ATP может пересылать события оповещений с
 
 ## <a name="see-also"></a>См. также
 
-- [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Планирование производительности Azure ATP](atp-capacity-planning.md)
+- [Предварительные требования к Azure ATP](prerequisites.md)
+- [Планирование производительности Azure ATP](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

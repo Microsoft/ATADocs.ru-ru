@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 331f709c19008e1f11aacc50678893158528042d
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 522e6dc26cd20ea6030017e7c05592599dd196fb
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955570"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826207"
 ---
 # <a name="working-with-security-alerts"></a>Обработка оповещений системы безопасности
 
@@ -57,11 +57,11 @@ ms.locfileid: "88955570"
 
 Предупреждения системы безопасности Azure ATP можно разделить на следующие категории или этапы (соответствующие этапам в стандартной цепочке устранения кибератак).
 
-- [Оповещения о разведывательных атаках](atp-reconnaissance-alerts.md)
-- [Оповещения о компрометации учетных данных](atp-compromised-credentials-alerts.md)
-- [Оповещения об атаках бокового смещения](atp-lateral-movement-alerts.md)
-- [Оповещения о захвате управления доменом](atp-domain-dominance-alerts.md)
-- [Оповещения о краже данных](atp-exfiltration-alerts.md)
+- [Оповещения о разведывательных атаках](reconnaissance-alerts.md)
+- [Оповещения о компрометации учетных данных](compromised-credentials-alerts.md)
+- [Оповещения об атаках бокового смещения](lateral-movement-alerts.md)
+- [Оповещения о захвате управления доменом](domain-dominance-alerts.md)
+- [Оповещения о краже данных](exfiltration-alerts.md)
 
 ## <a name="preview-detections"></a>Обнаружения предварительной версии <a name="preview-detections"></a>
 

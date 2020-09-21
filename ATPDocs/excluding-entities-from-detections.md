@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: aa497d9a04aa36538b0e5d6642ce2942a4c6d827
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 8424acd769b24407f1d4fc57e6549ca2ea1e0edf
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956862"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826538"
 ---
 # <a name="excluding-entities-from-detections"></a>Исключение сущностей из результатов обнаружения
 Эта статья рассказывает, как исключать сущности из активации оповещений. Чтобы свести к минимуму число оповещений об истинных, но неопасных срабатываниях, некоторые сущности можно исключать. Это упростит выявление истинных срабатываний, действительно связанных с угрозами. Azure ATP может не выдавать бесполезных уведомлений о пользовательских действиях, являющихся обычной частью ваших бизнес-процессов. Для этого вы можете отменить такие оповещения или исключить определенные сущности. Кроме того, некоторые часто используемые сущности исключены по умолчанию. 
@@ -64,5 +64,5 @@ ms.locfileid: "88956862"
 ## <a name="see-also"></a>См. также
 
 - [Руководство по оповещениям системы безопасности Azure ATP](suspicious-activity-guide.md)
-- [Интеграция Azure ATP с ATP в Microsoft Defender](integrate-wd-atp.md)
+- [Интеграция Azure ATP с ATP в Microsoft Defender](integrate-msde.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

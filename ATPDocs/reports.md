@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: babb82354c79681bb708f46012c9f53ba09dd348
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: b9fd8c81ffe9c779304f07dca230963f1131318a
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955179"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826657"
 ---
 # <a name="azure-atp-reports"></a>Отчеты Azure ATP
 
@@ -58,8 +58,8 @@ ms.locfileid: "88955179"
 
 ## <a name="see-also"></a>См. также
 
-- [Предварительные требования к Azure ATP](atp-prerequisites.md)
-- [Планирование производительности Azure ATP](atp-capacity-planning.md)
+- [Предварительные требования к Azure ATP](prerequisites.md)
+- [Планирование производительности Azure ATP](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

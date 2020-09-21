@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edb37833ac44e3f04f9daf7ee57a8e1f41ca5d38
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3528909977c744cce604e60fe779050e4ec356dd
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955637"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826249"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Пути бокового смещения Azure ATP (LMP) 
 
@@ -76,7 +76,7 @@ ms.locfileid: "88955637"
 
 **Совет**. Если для сущности за последние 48 часов не обнаружены потенциальные пути бокового смещения, выберите **Просмотреть другую дату** и найдите предыдущие потенциальные пути бокового смещения. **Отчет о путях бокового смещения к конфиденциальным учетным записям** доступен, если обнаружены пути бокового смещения. В нем можно просмотреть сведения об обнаруженных потенциальных путях бокового смещения к конфиденциальным учетным записям. 
 
-**Совет.** Чтобы узнать, как настраивать клиенты и серверы, а также разрешить службе Azure ATP выполнять операции SAM-R, требуемые для обнаружения пути бокового смещения, ознакомьтесь с руководством по [настройке SAM-R](install-atp-step8-samr.md).
+**Совет.** Чтобы узнать, как настраивать клиенты и серверы, а также разрешить службе Azure ATP выполнять операции SAM-R, требуемые для обнаружения пути бокового смещения, ознакомьтесь с руководством по [настройке SAM-R](install-step8-samr.md).
 
 
 ## <a name="investigating-lmps"></a>Анализ путей бокового смещения
@@ -85,6 +85,6 @@ ms.locfileid: "88955637"
 
 ## <a name="see-also"></a>См. также
 - [Анализ путей бокового смещения в Azure ATP](investigate-lateral-movement-path.md)
-- [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-atp-step8-samr.md)
+- [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-step8-samr.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
