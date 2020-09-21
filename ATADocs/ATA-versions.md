@@ -4,19 +4,18 @@ description: Описание разных вариантов поддержки
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/16/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
-ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f98d6ca3f01ede7cb52d3caa742623e80a06e7d3
-ms.sourcegitcommit: 51997dca429877cbe5a74c9051c1ef2084b8dd44
+ms.openlocfilehash: 3fda8403d8dd49761e5860f48ceb1d9ca7bc9175
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90680242"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90829380"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Поддержка версий Microsoft Advanced Threat Analytics (ATA)
 
@@ -29,7 +28,7 @@ ms.locfileid: "90680242"
 > [!NOTE]
 > **Жизненный цикл поддержки**
 >
-> [Основная поддержка](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics) Microsoft Advanced Threat Analytics (ATA) будет прекращена 12 января 2021, а Расширенная поддержка будет продолжаться до 13 января 2026 г.
+> Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
 
 ## <a name="version-history"></a>Журнал версий
 
@@ -49,6 +48,6 @@ ms.locfileid: "90680242"
 |1.9.2|1.9.7478|28 марта 2019 г.|14-МАР-2021|
 |1.9.3|1.9.7561|14-СЕН-2020||
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

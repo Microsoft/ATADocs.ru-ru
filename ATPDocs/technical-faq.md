@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/15/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 524fec2722bb31aaffe1629bece5b0381ec98566
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: ed16e9acc876d6ffe5ac36b1dc793f03b300d8d5
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828668"
+ms.locfileid: "90829363"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure ATP
 
@@ -69,6 +69,8 @@ Azure ATP собирает и сохраняет данные с настрое�
 ATA — это автономное локальное решение, включающее несколько компонентов, например, центр ATA, для которого требуется специальное оборудование в локальной среде.
 
 Azure ATP — это облачное решение для обеспечения безопасности, которое использует сигналы локального каталога Active Directory (Azure AD). Решение обладает высокой степенью масштабируемости и часто обновляется.
+
+Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
 
 В отличие от датчика ATA, датчик Azure ATP также использует источники данных, такие как трассировка событий Windows (ETW), что позволяет Azure ATP расширить спектр обнаружения.
 

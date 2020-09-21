@@ -5,21 +5,24 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/13/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cb9a6c8e560b6e52a6385cf4e926aae8cc723ca8
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 31cd302575da078ce4030f982d69c9e9ad5a3138
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828593"
+ms.locfileid: "90829397"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)
+
+> [!NOTE]
+> Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
 
 Это руководство поможет вам перейти с существующей установки ATA на службу "Расширенная защита от угроз Azure" (Azure ATP). В нем приведены предварительные и основные требования к Azure ATP и подробно описано планирование и выполнение перехода. Кроме того, здесь приведены необходимые действия по проверке, а также советы по использованию новейших решений безопасности и защиты от угроз в сочетании с Azure ATP после установки службы.
 
