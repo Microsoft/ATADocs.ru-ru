@@ -33,7 +33,7 @@
 ## [7. Интеграция с VPN](vpn-integration-install-step.md)
 ## [8. Исключения и Honeytoken](install-ata-step7.md)
 ## [9. Настройка SAM-R](install-ata-step9-samr.md)
-## [автоматическая установка](ata-silent-installation.md);
+## [автоматическая установка](ata-silent-installation.md)
 ## Дополнительные шаги для шлюза ATA
 ### [1. Настройка зеркального отображения портов](configure-port-mirroring.md)
 ### [2. Проверка зеркального отображения портов](validate-port-mirroring.md)
