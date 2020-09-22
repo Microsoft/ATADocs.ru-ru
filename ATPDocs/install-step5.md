@@ -9,14 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 39e5b5d0a1c7e637b4d070cdc93d493fff5e634e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 912b9ec8d7ff9f89bda80b6d1d3515cf93d9b9cd
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828641"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913009"
 ---
 # <a name="configure-azure-atp-sensor-settings"></a>Настройка параметров датчика Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье вы узнаете, как правильно настроить параметры датчика Azure ATP, чтобы начать получать данные. Потребуется дополнительная настройка и интеграция для использования всех возможностей Azure ATP.
 

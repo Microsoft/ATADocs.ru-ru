@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 83868094e84813d1d7d1bd4044122a2d33651c65
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 2a967a058d7bc16ee7fd78a278180a17e4b245ee
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772655"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913126"
 ---
 # <a name="understanding-entity-profiles"></a>Общие сведения о профилях сущностей
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).

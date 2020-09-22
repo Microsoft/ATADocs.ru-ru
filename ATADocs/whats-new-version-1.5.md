@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7bdd3bf22f2b87c34ac45614c9c8f3ebeab2e87b
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 110632e0d2f2b14f57f7e7fbb63136dc8e8df1fa
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956675"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913322"
 ---
 # <a name="whats-new-in-ata-version-15"></a>Новые возможности ATA версии 1.5
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
 ## <a name="whats-new-in-the-ata-15-update"></a>Что нового в обновлении ATA 1.5
@@ -64,7 +66,7 @@ ms.locfileid: "88956675"
 ### <a name="kb-on-virtualization-host"></a>Установка исправлений на узел виртуализации
 Не устанавливайте исправление KB3047154 на узел виртуализации. Это может привести к неправильному зеркальному отображению портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обновление до ATA 1.5. Руководство по миграции](ata-update-1.5-migration-guide.md)
 

@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1a5fe233cbfb5abea822f692a376293f2586e166
-ms.sourcegitcommit: 45003b424140350e03128ac5325e1f28c52e6e1c
+ms.openlocfilehash: 6bacbf74ffc38809458cc2448c5162279ea89016
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90535147"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913283"
 ---
 # <a name="whats-new-in-ata-version-18"></a>Новые возможности ATA версии 1.8
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=55536), а полную версию — в [Центре оценки](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
@@ -141,7 +143,7 @@ $EventLogConfiguration.SaveChanges()
 
 **Обходной путь.** Перед обновлением до версии 1.8 с обновлением 1 создайте копию параметров отчета и введите их повторно. Это действие можно также выполнить с помощью скрипта. Дополнительные сведения см. в статье [Экспорт и импорт конфигурации ATA](ata-configuration-file.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

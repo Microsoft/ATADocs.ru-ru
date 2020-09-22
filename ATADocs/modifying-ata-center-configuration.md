@@ -11,18 +11,20 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b3cde73d13874fbcab338ef2ab4bae4c4fb4c21d
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 97ef7f3ba88cc0ce034413ce3dae40a7840db58f
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956811"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912874"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>Изменение конфигурации центра ATA
 
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 После первоначального развертывания необходимо аккуратно внести изменения в центр ATA. При обновлении URL-адреса консоли и сертификата используйте описанную ниже процедуру.
 
@@ -68,7 +70,7 @@ URL-адрес используется в следующих сценариях
 
 Чтобы заменить сертификат, выполните следующие действия:
 
-1. До истечения срока действия текущего сертификата создайте новый сертификат и установите его на сервер центра ATA. <br></br>Мы рекомендуем выбрать сертификат из внутреннего центра сертификации, но также можно создать самозаверяющий сертификат. Дополнительные сведения: [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps).
+1. До истечения срока действия текущего сертификата создайте новый сертификат и установите его на сервер центра ATA. <br></br>Мы рекомендуем выбрать сертификат из внутреннего центра сертификации, но также можно создать самозаверяющий сертификат. Дополнительные сведения: [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserve-view=true).
 
 1. В настройках ATA в разделе **Центр** выберите новый сертификат. На этом этапе служба центра ATA все еще будет привязана к исходному сертификату. 
 

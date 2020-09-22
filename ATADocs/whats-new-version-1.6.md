@@ -12,15 +12,16 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 86317f0ec8efa5b2e8198ff7e62e9f7702623eec
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3436f675a6e1dfb9afec9bb40098e7fa51a65500
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956284"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913295"
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
 ## <a name="whats-new-in-the-ata-16-update"></a>Новые возможности в обновлении ATA 1.6
@@ -153,7 +154,7 @@ db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "De
 Новый усовершенствованный механизм обнаружения использует внутреннюю технологию обнаружения, благодаря чему можно выявлять проблемы без обращения к сетевым операциям в журнале. Таким образом производительность центра ATA существенно повышается. Это также означает, что при обновлении не нужно переносить сетевые операции в журнале.
 При обновлении ATA данные экспортируются в `<Center Installation Path>\Migration` в качестве JSON-файла (если они понадобятся для изучения в будущем).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 Посетите [форум ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata) 
  [Обновление ATA до версии 1,6 — руководством по миграции](ata-update-1.6-migration-guide.md)

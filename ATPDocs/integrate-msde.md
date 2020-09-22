@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 324e7b7243b44ec8c1b6699e0424e504e376ae43
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 0f718f6334b21d951fbe487142234fc229d615ef
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912965"
 ---
 # <a name="integrate-azure-atp-with-microsoft-defender-atp"></a>Интеграция Расширенной защиты от угроз Azure с ATP в Microsoft Defender
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Службу "Расширенная защита от угроз Azure" (Azure ATP) можно интегрировать с ATP в Microsoft Defender, чтобы получить более полное решение для защиты от угроз. Azure ATP наблюдает за трафиком на контроллерах домена, ATP в Microsoft Defender отслеживает конечные точки, а вместе эти службы формируют единый интерфейс для защиты среды.
 

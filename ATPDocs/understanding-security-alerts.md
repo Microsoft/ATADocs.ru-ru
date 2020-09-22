@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50288d379bf78f6d6601616597cbac2f1699b042
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 2c871c3a504fc7f79cc3627b077d1bebc1814a82
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826674"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912309"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>Руководство. Основные сведения об оповещениях безопасности
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В оповещениях системы безопасности Azure ATP с помощью понятного языка и рисунков рассказывается о том, какие подозрительные действия были обнаружены в вашей сети и какие субъекты и компьютеры были вовлечены в угрозы. Оповещения сгруппированы по уровню серьезности. Кроме того, к ним применяется цветовая кодировка по этапам угроз, чтобы упростить визуальную фильтрацию. Оповещения помогают вам быстро понять, что именно происходит в вашей сети. Списки свидетельств оповещений содержат прямые ссылки на связанных пользователей и компьютеры, упрощая анализ.
 

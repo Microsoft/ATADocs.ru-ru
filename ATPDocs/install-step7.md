@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fa4f487c2b5a60f1bb8900ae36aef2d34a5193f3
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 23b7fa2a6deea68b1567b8275fccd61f9822bf78
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828633"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912985"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>Настройка учетных записей Honeytoken и исключений из обнаружения
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В Azure ATP можно исключать из обнаружения определенные IP-адреса или пользователей.
 

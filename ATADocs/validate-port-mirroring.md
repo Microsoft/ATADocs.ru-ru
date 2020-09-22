@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 78f8f287721af62e2d7992b48ebb5f91421cd571
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: c2cff7a140de26f36e91770619926543e7d623c2
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956318"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912861"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Эта статья имеет отношение только к развертыванию шлюзов ATA, а не упрощенных шлюзов ATA. Чтобы определить, нужно ли использовать шлюзы ATA, ознакомьтесь со статьей [Выбор правильных шлюзов для развертывания](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment).
@@ -208,7 +210,7 @@ Write-Host "Press any key to continue..." -ForegroundColor Red
 
 1. Если вы видите только входящий или исходящий трафик, обратитесь за помощью к специалистам по сетям или виртуализации. Они помогут вам устранить ошибки в настройках зеркального отображения портов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Настройка зеркального отображения портов](configure-port-mirroring.md)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

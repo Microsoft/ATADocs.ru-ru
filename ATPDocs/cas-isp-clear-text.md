@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4bebb0e1f67525b998d6ab237ecda96e7c7bf0b6
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 413e7482900f34428056401085f04195ccb4e720
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828508"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913237"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>Оценка безопасности: раскрытие сущностями учетных данных в виде открытого текста
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ![Оценка предотвращения раскрытия учетных данных в виде открытого текста в Cloud App Security](media/atp-cas-isp-clear-text-1.png)
 

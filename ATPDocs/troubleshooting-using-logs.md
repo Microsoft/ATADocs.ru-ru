@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: 5495bf07b8d8f12ba5bb1dc61f58d8e5f4475614
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 7839a19cef4543685c548dc3c1f386d46384d214
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828450"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912335"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>Использование журналов для устранения неполадок датчика Azure Advanced Threat Protection (ATP)
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Журналы ATP содержат полезные сведения о работе всех компонентов датчика Azure ATP в любой момент времени.
 

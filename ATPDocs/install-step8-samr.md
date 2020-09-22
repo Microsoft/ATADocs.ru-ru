@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 19434f1cd5cea3d8491b622b09680e5f93fb4d89
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: d752b23fb339bfdcbd1b202716c97a027f5b86dc
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828625"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912934"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>Настройка Azure ATP для выполнения удаленных вызовов SAM
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Обнаружение [пути бокового движения](use-case-lateral-movement-path.md) в Azure ATP основано на запросах, определяющих локальных администраторов на конкретных компьютерах. Эти запросы выполняются с протоколом SAM-R с использованием учетной записи службы Azure ATP, созданной на [шаге 2 в процессе установки Azure ATP. Подключение к AD](install-step2.md).
 

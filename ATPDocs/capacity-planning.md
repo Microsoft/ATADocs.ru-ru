@@ -7,14 +7,16 @@ ms.date: 05/20/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: c14b5d3c138bf6f1cac482a818ab9173f25a4636
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 6955ea798cc138142f0b3f4443df777ed2d07cac
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828516"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913243"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>Краткое руководство. Планирование производительности для Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом кратком руководстве описано, как определить необходимое количество датчиков Azure ATP.
 

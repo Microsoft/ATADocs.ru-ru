@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7022a25061c3b0f2243d4fb51fa5276310fe38bd
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 869143d0a0c953bb3151908ceec59f1cbf0dfdf3
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913345"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>Устранение неполадок в ATA с помощью журналов событий ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Журналы ATA содержат сведения о работе компонентов ATA в любой момент времени.
 
@@ -88,7 +90,7 @@ ms.locfileid: "88956420"
 > Помимо журналов развертывания, упомянутых здесь, есть и другие журналы, которые начинаются с "Microsoft Advanced Threat Analytics" и могут также содержать дополнительные сведения о процессе развертывания.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

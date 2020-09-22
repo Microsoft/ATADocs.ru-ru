@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4153df2c2811217fcff813b333bdaf13fbe46858
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: f0136b432a170a5e45b71d189d77d7e007ca7a53
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828453"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912357"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="sensor-failure-communication-error"></a>Ошибка связи из-за сбоя датчика
 
