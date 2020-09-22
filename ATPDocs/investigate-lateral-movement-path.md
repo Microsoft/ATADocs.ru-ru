@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4d27ca218eceb42f379680e9f2fae1b5e17e237f
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 95e4c2602ad012f717788e4bf0ade7c33c91f303
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956624"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826589"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>Руководство. Использование путей бокового смещения
 
@@ -85,6 +85,6 @@ ms.locfileid: "88956624"
 ## <a name="see-also"></a>См. также
 
 - [Общие сведения о путях бокового смещения Azure ATP](use-case-lateral-movement-path.md)
-- [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-atp-step8-samr.md)
+- [Настройка Azure ATP для выполнения удаленных вызовов SAM](install-step8-samr.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

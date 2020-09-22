@@ -3,38 +3,38 @@
 - name: Обзор
   items:
     - name: "Что такое Azure Advanced Threat\_Protection?"
-      href: what-is-atp.md
+      href: what-is.md
     - name: "Архитектура Azure\_ATP"
-      href: atp-architecture.md
+      href: architecture.md
     - name: "Предварительные требования для Azure\_ATP"
-      href: atp-prerequisites.md
+      href: prerequisites.md
     - name: "Azure\_ATP для государственных организаций\_США"
-      href: atp-us-govt-gcc-high.md
+      href: us-govt-gcc-high.md
     - name: "Новые возможности Azure\_ATP"
-      href: atp-whats-new.md
+      href: whats-new.md
 - name: Краткие руководства
   expanded: true
   items:
     - name: создание экземпляра Azure ATP;
-      href: install-atp-step1.md
+      href: install-step1.md
     - name: Подключение к Active Directory
-      href: install-atp-step2.md
+      href: install-step2.md
     - name: "Скачивание пакета датчика Azure\_ATP"
-      href: install-atp-step3.md
+      href: install-step3.md
     - name: "Установка датчика Azure\_ATP"
-      href: install-atp-step4.md
+      href: install-step4.md
 - name: Руководства
   items:
     - name: Предупреждения о разведывательных атаках
-      href: atp-reconnaissance-alerts.md
+      href: reconnaissance-alerts.md
     - name: Предупреждения о компрометации учетных данных
-      href: atp-compromised-credentials-alerts.md
+      href: compromised-credentials-alerts.md
     - name: Предупреждения об атаках бокового смещения
-      href: atp-lateral-movement-alerts.md
+      href: lateral-movement-alerts.md
     - name: Предупреждения о захвате управления доменом
-      href: atp-domain-dominance-alerts.md
+      href: domain-dominance-alerts.md
     - name: Предупреждения о краже данных
-      href: atp-exfiltration-alerts.md
+      href: exfiltration-alerts.md
     - name: Анализ пользователя
       href: investigate-a-user.md
     - name: Анализ компьютера
@@ -56,63 +56,63 @@
     - name: Пути бокового смещения
       href: use-case-lateral-movement-path.md
     - name: Разрешение сетевых имен (NNR)
-      href: atp-nnr-policy.md
+      href: nnr-policy.md
     - name: Отчеты
       href: reports.md
     - name: Пользовательские роли
-      href: atp-role-groups.md
+      href: role-groups.md
     - name: "Поддержка нескольких лесов в Azure\_ATP"
-      href: atp-multi-forest.md
+      href: multi-forest.md
 - name: Практические руководства
   items:
     - name: "Использование\_Microsoft Cloud App\_Security с Azure ATP"
       items:
         - name: "Использование\_Azure ATP с Cloud App\_Security"
-          href: atp-mcas-integration.md
+          href: mcas-integration.md
         - name: Фильтрация действий и задание политик
-          href: atp-activities-filtering-mcas.md
+          href: activities-filtering-mcas.md
         - name: Оценки состояния безопасности удостоверений
           items:
             - name: Основные сведения о состоянии безопасности удостоверений
-              href: atp-isp-overview.md
+              href: isp-overview.md
             - name: Оценка доступности службы очереди печати принтера на контроллерах домена
-              href: atp-cas-isp-print-spooler.md
+              href: cas-isp-print-spooler.md
             - name: Оценка наличия неактивных сущностей в конфиденциальных группах
-              href: atp-cas-isp-dormant-entities.md
+              href: cas-isp-dormant-entities.md
             - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
-              href: atp-cas-isp-clear-text.md
+              href: cas-isp-clear-text.md
             - name: Оценка использования LAPS
-              href: atp-cas-isp-laps.md
+              href: cas-isp-laps.md
             - name: Оценка использования устаревших протоколов
-              href: atp-cas-isp-legacy-protocols.md
+              href: cas-isp-legacy-protocols.md
             - name: Пути бокового движения с максимальным риском
-              href: atp-cas-isp-riskiest-lmp.md
+              href: cas-isp-riskiest-lmp.md
             - name: Неотслеживаемые контроллеры домена
-              href: atp-cas-isp-unmonitored-domain-controller.md
+              href: cas-isp-unmonitored-domain-controller.md
             - name: Небезопасные атрибуты учетной записи
-              href: atp-cas-isp-unsecure-account-attributes.md
+              href: cas-isp-unsecure-account-attributes.md
             - name: Оценка риска небезопасного делегирования Kerberos
-              href: atp-cas-isp-unconstrained-kerberos.md
+              href: cas-isp-unconstrained-kerberos.md
             - name: Небезопасные атрибуты журнала ИД безопасности
-              href: atp-cas-isp-unsecure-sid-history-attribute.md
+              href: cas-isp-unsecure-sid-history-attribute.md
             - name: Оценка использования ненадежного шифра
-              href: atp-cas-isp-weak-cipher.md
+              href: cas-isp-weak-cipher.md
     - name: Занятие по оповещениям системы безопасности
       items:
         - name: Обзор лаборатории
-          href: atp-playbook-lab-overview.md
+          href: playbook-lab-overview.md
         - name: 1. Настройка лаборатории
-          href: atp-playbook-setup-lab.md
+          href: playbook-setup-lab.md
         - name: 2. Сборник схем рекогносцировки
-          href: atp-playbook-reconnaissance.md
+          href: playbook-reconnaissance.md
         - name: 3. Сборник схем бокового смещения
-          href: atp-playbook-lateral-movement.md
+          href: playbook-lateral-movement.md
         - name: 4. Сборник схем захвата управления доменом
-          href: atp-playbook-domain-dominance.md
+          href: playbook-domain-dominance.md
     - name: Основные сведения об оповещениях безопасности
       href: understanding-security-alerts.md
     - name: "Планирование производительности Azure\_ATP"
-      href: atp-capacity-planning.md
+      href: capacity-planning.md
     - name: Работа с оповещениями безопасности
       href: working-with-suspicious-activities.md
     - name: Исключение сущностей из обнаружения
@@ -120,45 +120,45 @@
     - name: Работа с конфиденциальными учетными записями
       href: sensitive-accounts.md
     - name: Поиск и фильтрация отслеживаемых действий
-      href: atp-activities-search.md
+      href: activities-search.md
     - name: "Исключения и учетные записи\_Honeytoken"
-      href: install-atp-step7.md
+      href: install-step7.md
     - name: Мониторинг контроллеров домена
-      href: atp-sensor-monitoring.md
+      href: sensor-monitoring.md
     - name: Изменение пароля для подключения к домену
-      href: modifying-atp-config-dcpassword.md
+      href: modifying-config-dcpassword.md
     - name: "Настройка уведомлений Azure\_ATP"
       href: notifications.md
     - name: Оповещения о работоспособности
       items:
         - name: "Работа с центром работоспособности Azure\_ATP"
-          href: atp-health-center.md
+          href: health-center.md
         - name: "Оповещения о работоспособности Azure\_ATP"
           href: health-alerts.md
     - name: "Отложенное обновление датчика Azure\_ATP"
       href: sensor-update.md
     - name: Устранение известных неполадок
-      href: troubleshooting-atp-known-issues.md
+      href: troubleshooting-known-issues.md
     - name: Устранение неполадок с помощью журналов
-      href: troubleshooting-atp-using-logs.md
+      href: troubleshooting-using-logs.md
     - name: "Интеграция с\_Microsoft Defender ATP"
-      href: integrate-wd-atp.md
+      href: integrate-msde.md
     - name: "Интеграция\_VPN"
-      href: install-atp-step6-vpn.md
+      href: install-step6-vpn.md
     - name: "Интеграция с\_Syslog"
       href: setting-syslog.md
     - name: Автоматическая установка
-      href: ATP-silent-installation.md
+      href: silent-installation.md
     - name: "Настройка датчика Azure\_ATP"
       items:
         - name: "Настройка датчика Azure\_ATP"
-          href: install-atp-step5.md
+          href: install-step5.md
         - name: "Настройка сбора данных о событиях\_Windows"
           href: configure-windows-event-collection.md
         - name: настройки прокси-сервера;
           href: configure-proxy.md
         - name: "Настройка Azure\_ATP для выполнения удаленных вызовов SAM"
-          href: install-atp-step8-samr.md
+          href: install-step8-samr.md
     - name: "Настройка автономного датчика Azure\_ATP"
       items:
         - name: Настройка зеркального отображения портов
@@ -172,22 +172,22 @@
     - name: Переход с ATA на Azure ATP
       items:
         - name: Переход с Advanced Threat Analytics (ATA) на Azure ATP
-          href: ata-atp-move-overview.md
+          href: migrate-from-ata-overview.md
 - name: Справочные сведения
   items:
     - name: "Справочник по журналу\_SIEM"
       href: cef-format-sa.md
     - name: "Известные проблемы с Azure\_ATP"
-      href: ./troubleshooting-atp-known-issues.md
+      href: ./troubleshooting-known-issues.md
     - name: "Справочник по выпуску Azure\_ATP"
-      href: atp-release-reference.md
+      href: release-reference.md
 - name: Ресурсы
   items:
     - name: Поддержка и информация
-      href: atp-support.md
+      href: support.md
     - name: Часто задаваемые вопросы
-      href: atp-technical-faq.md
+      href: technical-faq.md
     - name: "План подготовки Azure\_ATP к работе"
-      href: atp-resources.md
+      href: resources.md
     - name: Безопасность и конфиденциальность данных в Azure ATP
-      href: atp-privacy-compliance.md
+      href: privacy-compliance.md

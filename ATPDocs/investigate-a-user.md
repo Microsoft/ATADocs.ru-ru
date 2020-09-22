@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cc9c825eb86e69caf3bef17a24194b8c8dfa0cf7
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 0c4912f430f0acb6c36b3e4cb36e7764d50420c1
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956709"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826555"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
 
@@ -55,9 +55,9 @@ ms.locfileid: "88956709"
 - [Проверка компьютера](investigate-a-computer.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Работа с путями бокового смещения](use-case-lateral-movement-path.md)
-- [Оповещения о разведывательных атаках](atp-reconnaissance-alerts.md)
-- [Оповещения о компрометации учетных данных](atp-compromised-credentials-alerts.md)
-- [Оповещения об атаках бокового смещения](atp-lateral-movement-alerts.md)
-- [Оповещения о захвате управления доменом](atp-domain-dominance-alerts.md)
-- [Оповещения о краже данных](atp-exfiltration-alerts.md)
+- [Оповещения о разведывательных атаках](reconnaissance-alerts.md)
+- [Оповещения о компрометации учетных данных](compromised-credentials-alerts.md)
+- [Оповещения об атаках бокового смещения](lateral-movement-alerts.md)
+- [Оповещения о захвате управления доменом](domain-dominance-alerts.md)
+- [Оповещения о краже данных](exfiltration-alerts.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
