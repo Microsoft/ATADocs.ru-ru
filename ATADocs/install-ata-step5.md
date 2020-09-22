@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f8c2750061bc464bcd1f78c46aeeafc4c5f181e
-ms.sourcegitcommit: 954f5e64a8a25075ce663b9fd63810cf4c032987
+ms.openlocfilehash: 49a8301b1d13bbd6032b34b893b5a86e4cdd3739
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85129839"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911417"
 ---
 # <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«Шаг 4](install-ata-step4.md) 
@@ -33,11 +35,11 @@ ms.locfileid: "85129839"
 
 1. В консоли ATA перейдите к **конфигурации** и в разделе **Системы** выберите **Шлюзы**.
 
-    ![Изображение страницы настройки параметров шлюза](media/ata-gw-config-1.png)
+    ![Настройка параметров шлюза, этап 1](media/ata-gw-config-1.png)
 
 1. Выберите шлюз, который требуется настроить, а затем введите указанные ниже сведения.
 
-    ![Изображение страницы настройки параметров шлюза](media/ATA-Gateways-config-2.png)
+    ![Настройка параметров шлюза, этап 2](media/ATA-Gateways-config-2.png)
 
     - **Описание**: введите описание шлюза ATA (необязательно).
     - **Контроллеры домена с зеркалированием портов (полное доменное имя)** (обязательный параметр для шлюза ATA; не доступен для изменения в упрощенном шлюзе ATA): введите полное доменное имя контроллера домена и нажмите кнопку "плюс", чтобы добавить его в список. Например, **dc01.contoso.com**.
@@ -62,7 +64,7 @@ ms.locfileid: "85129839"
 1. При необходимости можно настроить [прослушиватель системного журнала и сбор данных пересылки событий Windows](configure-event-collection.md).
 1. Включите параметр **Update ATA Gateway automatically** (Автоматическое обновление шлюза ATA), чтобы в ближайшей версии выпусков при обновлении центра ATA шлюз ATA обновлялся автоматически.
 
-1. Выберите команду **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 ## <a name="validate-installations"></a>Проверка установки
 

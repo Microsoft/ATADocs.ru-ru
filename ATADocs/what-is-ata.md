@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e2896882e3eb8bb0e0ae1627c2afa37d1b58c45e
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 1b8deb682418774e5fc0a1c2bb514b80d6e6b19f
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910706"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>Что такое Advanced Threat Analytics?
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Advanced Threat Analytics (ATA) представляет собой платформу для локальной сети, которая помогает защитить организацию от многих типов современных целевых кибератак и внутренних угроз.
 
@@ -113,6 +115,6 @@ ATA обнаруживает эти подозрительные действи�
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 Сборник тренировочных заданий подозрительных [действий ATA](https://aka.ms/ataplaybook) 
  Посетите [форум ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

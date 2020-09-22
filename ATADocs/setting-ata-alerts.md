@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e61436868e1d7bd441ab11e8f5d6b01869df4ed6
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 4823ab40e271c0cc34a7aa602878211561896473
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956029"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912046"
 ---
 # <a name="set-ata-notifications"></a>Настройка уведомлений ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Существует три способа получения уведомлений ATA о подозрительной активности: по электронной почте, при помощи пересылки событий ATA и пересылки событий на сервер SIEM или сервер системного журнала. Перед выбором уведомлений, которые вы хотите получать, необходимо [настроить почтовый сервер и сервер системного журнала](setting-syslog-email-server-settings.md).
 
@@ -44,12 +46,12 @@ ms.locfileid: "88956029"
     > Электронные оповещения ATA о подозрительной активности отправляются только в случае ее обнаружения.
 
 1. В разделе **Уведомления системного журнала** укажите, какие уведомления должны отправляться на сервер системного журнала. Доступны уведомления о новых подозрительных действиях, обновленных подозрительных действиях и новых проблемах с работоспособностью.
-1. Выберите команду **Сохранить**.
+1. Щелкните **Сохранить**.
     
     ![Изображение. Параметры почтовых уведомлений ATA](media/ata-mail-notification-settings.png)
 
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

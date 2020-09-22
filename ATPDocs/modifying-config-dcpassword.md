@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3d35651f0741caa6189ae8ef79e14e8b0db78eff
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 810268ea0661bac47ee7735f0508ed4295d2cc3b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828588"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912056"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>Изменение конфигурации портала Azure ATP с использованием пароля для подключения к домену
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 
@@ -47,11 +49,11 @@ ms.locfileid: "90828588"
     > [!NOTE]
     > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
 
-1. Выберите команду **Сохранить**.
+1. Щелкните **Сохранить**.
 
 1. На портале Azure ATP в разделе **Конфигурация** откройте страницу **Датчик** и проверьте состояние датчиков.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Интеграция Azure ATP с ATP в Microsoft Defender](integrate-msde.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 52c20174b431da000ecba922462d0c6af112b005
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 380c24fad44cc8af83a98aa5da61cd835bbe7653
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828553"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912622"
 ---
 # <a name="tutorial-overview-atp-security-alert-lab"></a>Обзор учебника: Лаборатория оповещений системы безопасности ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Руководство по лаборатории для оповещений системы безопасности **Azure ATP** позволяет продемонстрировать возможности Azure ATP по определению и обнаружению подозрительных действий и потенциальных атак в сети. В этой серии из 4 руководств объясняется, как установить и настроить рабочую среду для тестирования некоторых *дискретных* обнаружений в Azure ATP. В лаборатории основное внимание уделяется использованию возможностей Azure ATP на основе *сигнатур*. Эта лаборатория не предусматривает обнаружения на основе поведения пользователей или сущностей с использованием расширенных возможностей машинного обучения, так как для их применения изучаемый период с реальным сетевым трафиком должен составлять до 30 дней.
 

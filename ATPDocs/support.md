@@ -12,15 +12,17 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f80b73562a5939a801ba3c3104c420d9d93354f0
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 1c7ae55cf1225f434b086ff3998c0104c2b13f8b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828673"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909999"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Информация и поддержка для Azure Advanced Threat Protection 
 
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Следующие ресурсы помогут вам в изучении, развертывании и поддержке службы Azure Advanced Threat Protection для вашей организации.
 

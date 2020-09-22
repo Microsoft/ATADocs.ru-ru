@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bd5a9cf3ffe32bb522d1096e089fdad263b3fcb4
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: d66d5c5af5721d94cb834307bb5a5ebee28848fc
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828692"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910026"
 ---
 # <a name="azure-atp-role-groups"></a>Группы ролей Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP обеспечивает безопасность на основе ролей для защиты данных в соответствии с конкретными требованиями безопасности и соответствия требованиям организации. Azure ATP поддерживает три отдельные роли: администраторы, пользователи и наблюдатели.
 
@@ -66,7 +68,7 @@ Azure ATP обеспечивает безопасность на основе р
 
 В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Управление группами ролей осуществляется из [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups) . Добавлять в группы безопасности или удалять из этих групп можно только пользователей Azure Active Directory.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средство изменения размера ATP](https://aka.ms/aatpsizingtool)
 - [Архитектура ATP](architecture.md)

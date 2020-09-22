@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4c1f0442492759be26bab474a1cc3cd39347e1f0
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: ca7311f3590d8da5e035f881b2156c4b41d8c05c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908737"
 ---
 # <a name="what-threats-does-ata-look-for"></a>Типы угроз, которые ищет ATA
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA обнаруживает события на следующих этапах продвинутой атаки: разведка, компрометация учетных данных, боковое смещение, повышение привилегий, полное управление доменом и т. д. При этом продвинутые атаки и внутренние угрозы обнаруживаются, прежде чем они смогут нанести ущерб организации.
 На каждом этапе выявляется несколько подозрительных действий, которые относятся к проверяемому этапу. При этом каждое подозрительное действие сопоставляется с различными видами возможных атак.
@@ -41,5 +43,5 @@ ATA обнаруживает события на следующих этапах
 - Дополнительные сведения о развертывании ATA см. в статье [Установка ATA](install-ata-step1.md).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

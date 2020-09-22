@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 02cd26323be6ae79524d4912674380af23d2c3af
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3ab1881d397875be6a70ba78846f0855b53bf608
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954805"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909504"
 ---
 # <a name="investigating-entity-profiles"></a>Анализ профилей сущностей
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Профиль сущности является панелью мониторинга, предназначенной для всестороннего детального анализа пользователей, компьютеров, устройств и ресурсов, к которым они имеют доступ, а также их истории. На странице профиля используется новый преобразователь логических действий ATA, который может просмотреть группу выполняющихся действий (объединенных за срок до минуты) и объединить их в одно логическое действие, чтобы помочь вам понять фактические действия пользователей.
 
@@ -75,6 +77,6 @@ ms.locfileid: "88954805"
  ![пути бокового смещения в профиле пользователя](media/user-profile-lateral-movement-paths.png)
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
       

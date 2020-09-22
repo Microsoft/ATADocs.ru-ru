@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b83a98ddf052416ffee0cd7dc521b9412b466d99
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 0cf77c09c09062a3a2983e36646f06c603a2ef45
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954125"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908881"
 ---
 # <a name="ata-prerequisites"></a>Предварительные требования для ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье описываются требования для успешного развертывания ATA в среде.
 
@@ -65,7 +67,7 @@ ms.locfileid: "88954125"
 
 В этом разделе перечислены требования для центра ATA.
 
-### <a name="general"></a>Общие
+### <a name="general"></a>Общие сведения
 
 Центр ATA поддерживает установку на сервере под управлением Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019.
 
@@ -152,7 +154,7 @@ ms.locfileid: "88954125"
 
 В этом разделе перечислены требования для шлюза ATA.
 
-### <a name="general"></a>Общие
+### <a name="general"></a>Общие сведения
 
 Шлюз ATA поддерживает установку на сервере под управлением Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019 (в том числе Server Core).
 Шлюз ATA можно установить на сервер, который входит в домен или рабочую группу.
@@ -215,8 +217,8 @@ ms.locfileid: "88954125"
 |Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Все устройства в сети|Исходящее|
 |Служба времени Windows|UDP|123|Контроллеры домена|Исходящее|
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|HTML через RPC|TCP|135|Все устройства в сети|Оба варианта|
-|NetBIOS|UDP|137|Все устройства в сети|Оба варианта|
+|HTML через RPC|TCP|135|Все устройства в сети|Оба|
+|NetBIOS|UDP|137|Все устройства в сети|Оба|
 |SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 
@@ -234,7 +236,7 @@ ms.locfileid: "88954125"
 
 В этом разделе перечислены требования к упрощенному шлюзу ATA.
 
-### <a name="general"></a>Общие
+### <a name="general"></a>Общие сведения
 
 Упрощенный шлюз ATA поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением Server Core), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 и Windows Server 2019 (в том числе Core, но не Nano).
 
@@ -283,8 +285,8 @@ ms.locfileid: "88954125"
 |Протокол|Транспорт|Port|В/Из|Direction|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP и UDP|53|DNS-серверы|Исходящее|
-|HTML через RPC|TCP|135|Все устройства в сети|Оба варианта|
-|NetBIOS|UDP|137|Все устройства в сети|Оба варианта|
+|HTML через RPC|TCP|135|Все устройства в сети|Оба|
+|NetBIOS|UDP|137|Все устройства в сети|Оба|
 |SSL|TCP|443|Центр АТА|Исходящее|
 |Syslog (необязательно)|UDP|514|Сервер SIEM|Входящие|
 |Netlogon (SMB, CIFS, SAM-R)|TCP и UDP|445|Все устройства в сети|Исходящее|
@@ -328,7 +330,7 @@ ms.locfileid: "88954125"
 
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Архитектура ATA](ata-architecture.md)

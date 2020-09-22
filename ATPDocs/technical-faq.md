@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ed16e9acc876d6ffe5ac36b1dc793f03b300d8d5
-ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
+ms.openlocfilehash: 8ef149c7792d8fce3ffbe1bc3303d1937827aa4c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90829363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909776"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Часто задаваемые вопросы об Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье содержатся ответы на часто задаваемые вопросы о решении Azure ATP, разделенные на следующие категории.
 

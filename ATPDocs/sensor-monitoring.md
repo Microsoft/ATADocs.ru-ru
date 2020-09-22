@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: db8ae461e7f7a0e8781904d5e0e47f99464dddb5
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: ac4c0b9bd4e8a99d5edaaec2746f3ce7d413005c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912549"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>Мониторинг покрытия контроллеров домена
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Как только первый датчик Azure ATP будет установлен и настроен в любом контроллере домена в сети, Azure ATP начнет наблюдение за средой для контроллеров домена.
 
@@ -39,7 +41,7 @@ Azure ATP осуществляет постоянный мониторинг с�
 
 |Заголовок|Описание|
 |----|----|
-|Hostname (Имя узла)|Имя компьютера|
+|Имя узла|Имя компьютера|
 |Имя домена|Имя домена|
 |Monitored|Состояние мониторинга Azure ATP|
 |Тип датчика|Датчик Azure ATP или автономный датчик Azure ATP|
@@ -60,9 +62,9 @@ Azure ATP осуществляет постоянный мониторинг с�
 > [!NOTE]
 > Изменения на страницах конфигурации портала Azure ATP могут вносить только администраторы Azure ATP.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
-- [Архитектура Azure ATP](architecture.md)
+- [Архитектура Azure ATP](architecture.md)
 - [Настройка датчиков Azure ATP](install-step5.md)
 - [Поддержка нескольких лесов](multi-forest.md)
 - [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)

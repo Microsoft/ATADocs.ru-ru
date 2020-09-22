@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fe99921e1193f79f7031c04156a79fd8fa55dc9e
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: ef365ec03aebcc5c35f93fa1a34cc0fb243957a6
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954567"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911461"
 ---
 # <a name="install-ata---step-2"></a>Установка ATA. Шаг 2
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«Шаг 1](install-ata-step1.md) 
@@ -37,7 +39,7 @@ ms.locfileid: "88954567"
 
     |Поле|Комментарии|
     |---------|------------|
-    |**Имя пользователя** (обязательно)|Введите имя пользователя только для чтения, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя.|
+    |**Имя пользователя** (указывается обязательно)|Введите имя пользователя только для чтения, например **ATAuser**. **Примечание.** **Не** используйте формат имени участника-пользователя.|
     |**Пароль** (обязательно)|Введите пароль для имени пользователя только для чтения, например **Parolch1k**.|
     |**Домен** (указывается обязательно)|Введите домен для имени пользователя только для чтения, например **contoso.com**. **Примечание**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com` not contoso.com|
 
@@ -56,7 +58,7 @@ ms.locfileid: "88954567"
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)

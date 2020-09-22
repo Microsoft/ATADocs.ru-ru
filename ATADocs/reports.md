@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ade040ef22e471119fd68867af286073af97345f
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 05553e65edc787a9e039f763b2a0a021386d81de
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956556"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911017"
 ---
 # <a name="ata-reports"></a>Отчеты ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Раздел отчетов в консоли ATA позволяет создавать отчеты, которые содержат сведения о состоянии системы (ее работоспособности и подозрительных действиях, обнаруженных в среде).
 
@@ -61,7 +63,7 @@ ms.locfileid: "88956556"
 > [!NOTE]
 > Запланированные отчеты доставляются по электронной почте. Их отправка возможна, только если вы уже настроили почтовый сервер. Для этого на странице **Конфигурация** в разделе **Уведомления и отчеты** выберите пункт **Почтовый сервер**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)

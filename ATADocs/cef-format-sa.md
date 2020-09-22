@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 315fade1334f5ebf3d0d50e8c167b3b00889c2d8
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d8e83ad51970e4add2e703182e9ad466f113a44e
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955060"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909732"
 ---
 # <a name="ata-siem-log-reference"></a>Справочник по журналу ATA SIEM
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA может пересылать события оповещений о безопасности и работоспособности в SIEM. Оповещения переадресовываются в формате CEF. Ниже приведен пример каждого типа журнала оповещений системы безопасности для отправления в SIEM.
 
@@ -150,7 +152,7 @@ ATA может пересылать события оповещений о бе�
 > Все оповещения о работоспособности отправляются с тем же шаблоном, что и выше.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

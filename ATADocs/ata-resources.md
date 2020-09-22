@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5af70847f4ca8fc61ec332aa8c6e3a9c2f6f35c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: b37b08c401be6a6c01649051b1800597f4e11a9d
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954006"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908863"
 ---
 # <a name="ata-readiness-roadmap"></a>План подготовки к работе ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье предложен план подготовки, который поможет вам начать работу с Advanced Threat Analytics.
 

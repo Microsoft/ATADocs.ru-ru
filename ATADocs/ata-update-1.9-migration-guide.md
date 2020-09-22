@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9fb89568d92070fa69a632bed5da535b0897cf6c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 2277e8eb6cbfb9c61dd0e814d6f2170599ff9c86
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953717"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911831"
 ---
 # <a name="updating-ata-to-version-19"></a>Обновление ATA до версии 1.9
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE] 
 > Если в вашей среде решение ATA не установлено, скачайте его полную версию, включая версию 1.9, и проведите стандартную процедуру установки, описанную в статье [Установка ATA](install-ata-step1.md).
@@ -80,6 +82,6 @@ ms.locfileid: "88953717"
 > Чтобы установить новые шлюзы ATA, перейдите на экран " **шлюзы** " и щелкните " **загрузить программу установки шлюза** ", чтобы получить пакет установки шлюза ATA 1,9, и следуйте инструкциям по установке нового шлюза, как описано в [шаге 4. Установите шлюз ATA](install-ata-step4.md).
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

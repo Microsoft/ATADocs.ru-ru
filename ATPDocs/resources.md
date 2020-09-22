@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 20341bb46ed5c7b1deaf3d7dd79e2934007fda2d
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 4afff7abad10684c362afd789a896b721165e6eb
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828705"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912572"
 ---
 # <a name="azure-atp-readiness-guide"></a>План подготовки Azure ATP к работе
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье описывается стратегия подготовки и приводится список ресурсов для начала работы со службой расширенной защиты от угроз Azure Advanced Threat Protection.
 

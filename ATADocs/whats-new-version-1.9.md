@@ -12,15 +12,16 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: abe3a716c7a85ba435eec18eab94e514222e6803
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 01c8d55654ed4e1b425f8a043628e425496da4cb
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956165"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912808"
 ---
 # <a name="whats-new-in-ata-version-19"></a>Новые возможности ATA версии 1.9
 
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 Последнюю обновленную версию ATA можно скачать в [Центре загрузки](https://www.microsoft.com/download/details.aspx?id=56725), а полную версию — в [Центре оценки](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics).
 
 В этих заметках о выпуске содержатся сведения об обновлениях, новых функциях, исправлениях ошибок и известных проблемах в текущей версии Advanced Threat Analytics.
@@ -42,7 +43,7 @@ ms.locfileid: "88956165"
 
 - В ATA 1.9 можно вручную [пометить группы или учетные записи как конфиденциальные](tag-sensitive-accounts.md) для повышения эффективности операций обнаружения. Пометка имеет значение для многих операций обнаружения ATA, например обнаружения изменений привилегированной группы и путей бокового смещения, которые зависят от того, какие группы и учетные записи считаются конфиденциальными.
 
-## <a name="performance-improvements"></a>Усовершенствования в области производительности
+## <a name="performance-improvements"></a>Повышение производительности
 
 - Улучшена производительность центра ATA: сводное представление трафика позволяет оптимизировать использование ЦП и конвейера пакетов, а также многократно использовать сокеты на контроллерах домена, чтобы свести к минимуму SSL-сеансы с этими контроллерами.
 
@@ -60,7 +61,7 @@ ms.locfileid: "88956165"
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [Обновление до ATA 1.9. Руководство по миграции](ata-update-1.9-migration-guide.md)

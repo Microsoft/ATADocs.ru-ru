@@ -11,16 +11,18 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 608a606c8ef93e46b36658c2344a66d73eb5d8ec
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d2db03d8b4074465795ce3ba9113aac78647ad2c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954210"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909239"
 ---
 # <a name="ata-capacity-planning"></a>Планирование производительности ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье содержится информация, которая поможет определить, сколько серверов ATA потребуется для мониторинга сети. Он помогает оценить, сколько шлюзов ATA и/или упрощенных шлюзов ATA, а также емкость сервера для центра ATA и шлюзов ATA.
 
@@ -83,7 +85,7 @@ ms.locfileid: "88954210"
 
 При выборе типа развертывания шлюза необходимо учитывать указанные ниже преимущества.
 
-|Тип шлюза|Преимущества|Стоимость|Топология развертывания|Использование контроллера домена|
+|Тип шлюза|Преимущества|Cost|Топология развертывания|Использование контроллера домена|
 |----|----|----|----|-----|
 |Шлюз ATA|Внешнее развертывание усложняет обнаружение ATA для злоумышленников|Выше|Устанавливается вместе с контроллером домена (внешняя установка)|Поддерживает до 50 000 пакетов в секунду|
 |Упрощенный шлюз ATA|Не требует выделенного сервера и настройки зеркального отражения портов|Ниже|Устанавливается на контроллере домена|Поддерживает до 10 000 пакетов в секунду|
@@ -157,7 +159,7 @@ ms.locfileid: "88954210"
 
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Предварительные требования ATA](ata-prerequisites.md)

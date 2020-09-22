@@ -11,14 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d93c1c56457002d6039cbc0d6162ee6c22ccb657
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 494faf68f394d9bdbb2af583c4eec3135fd67ee3
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911990"
 ---
 # <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Справочник по выпускам службы "Расширенная защита от угроз Azure"
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья представляет собой справочник по выпускам Azure ATP, предшествующим выпуску 2.55. Обзор последних обновлений выпусков Azure ATP (2.56 и более поздних) см. в статье [Новые возможности в Azure ATP](whats-new.md).
 

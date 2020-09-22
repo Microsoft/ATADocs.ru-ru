@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a23a590357a7c4fc6f04ccd33c747586d571a447
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 1ebd10c417e1454e135d851270a6cd64fc4243b2
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954890"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909697"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > В версии ATA 1.8 и более поздних настройка сбора событий для упрощенных шлюзов ATA больше не требуется. Упрощенный шлюз ATA теперь может считывать события локально — настраивать переадресацию событий не требуется.
@@ -81,7 +83,7 @@ ms.locfileid: "88954890"
         1. Щелкните **Добавить компьютер в домен**.
         2. Введите имя контроллера домена в поле **Введите имена выбираемых объектов**. Щелкните **Проверить имена** и нажмите кнопку **ОК**.  
           ![Изображение средства просмотра событий](media/wef3%20event%20viewer.png)  
-        3. Нажмите кнопку **OK**.
+        3. Нажмите кнопку **ОК**.
     4. Щелкните **Выбрать события**.
         1. Щелкните **По журналу** и выберите **Журнал безопасности**.
         2. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. Например, введите 4776, как в следующем примере.

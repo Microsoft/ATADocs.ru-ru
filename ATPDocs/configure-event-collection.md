@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b3a8e59017c5b356cee7e66b6e81151bd13997a
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 94ef8fc1514d979982c6ea7bcef398720268fe1e
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910469"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Для расширения возможностей обнаружения службе Azure ATP необходим доступ к событиям Windows, приведенным в разделе [Настройка сбора данных о событиях](configure-windows-event-collection.md#configure-event-collection). Эти события может автоматически считывать датчик Azure ATP. Если датчик Azure ATP не развернут, они передаются в автономный датчик Azure ATP. Для этого в автономном датчике Azure ATP настраивается ожидание передачи событий SIEM или [пересылка событий Windows](configure-event-forwarding.md).
 

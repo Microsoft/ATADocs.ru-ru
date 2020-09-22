@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1df0644b5649e2e1694e6e6560a49662689b2d32
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 294e9a8e3640111d6117789cc05302cbe5a3c332
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956539"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912838"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>Изменение конфигурации ATA. Пароль для подключения к домену
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 
@@ -45,7 +47,7 @@ ms.locfileid: "88956539"
 
     Если у центра ATA есть подключение к домену, то, чтобы проверить учетные данные, нажмите кнопку **Проверить подключение**.
 
-1. Выберите команду **Сохранить**.
+1. Щелкните **Сохранить**.
 
 1. После изменения пароля убедитесь, что служба шлюза ATA работает на всех шлюзах ATA.
 

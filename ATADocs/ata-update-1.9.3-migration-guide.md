@@ -11,15 +11,16 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 69765ea4a8bda1de8d6315be3349c72f344d68e0
-ms.sourcegitcommit: 77d43b683c4588edc84aacf220d1daac00e47c6c
+ms.openlocfilehash: 58866e849b15a36a3f9be843a3195d4e5b248635
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90523459"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909746"
 ---
 # <a name="ata-version-193"></a>Версия ATA 1.9.3
 
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 Мы рады сообщить о доступности Microsoft Advanced Threat Analytics 1,9 с обновлением 3.
 
 В этой статье описаны проблемы, исправленные в обновлении 3 для Microsoft Advanced Threat Analytics (ATA) версии 1,9. Номер сборки этого обновления — 1.9.7561.
@@ -54,7 +55,7 @@ ms.locfileid: "90523459"
 
 Чтобы получить автономный пакет для этого обновления, перейдите на веб-сайт центра загрузки Майкрософт: [скачайте пакет ATA 1.9.3](https://www.microsoft.com/download/details.aspx?id=56725).
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Для установки этого обновление требуется, чтобы в вашей системе была установлена одна из следующих версий ATA:
 

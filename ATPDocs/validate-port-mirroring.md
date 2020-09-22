@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f711689edc3cf2cd4a3d01c8764c8bb719ac5c64
-ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
+ms.openlocfilehash: 35598f9ea3cdee1ede33b1770471108493ea13c6
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88809623"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912243"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Сведения в этой статье относятся только к развертыванию автономного датчика Azure ATP, а не датчика Azure ATP.
 

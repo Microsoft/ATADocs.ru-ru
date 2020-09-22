@@ -11,14 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c049b9ebed102ab8fc27c006eef95ef94269466f
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: c1c3b18606b38902217a320663ef91191e34f185
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828740"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910154"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья призвана помочь вам узнать о возможностях расширенного изучения и переходить по ним при использовании портала Microsoft Cloud App Security с Azure ATP.
 
@@ -65,7 +67,7 @@ ms.locfileid: "90828740"
 
 Получайте доступ к данным и новым гибридным возможностям Azure ATP в оповещениях, действиях и на страницах пользователей Cloud App Security.
 
-## <a name="alerts"></a>Предупреждения
+## <a name="alerts"></a>видны узлы
 
 Оповещения Azure ATP отображаются в очереди **Оповещения** Cloud App Security. Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. Оповещения Azure ATP фильтруются через фильтр приложений **Active Directory**.
 
@@ -89,7 +91,7 @@ ms.locfileid: "90828740"
 1. Откройте **Оповещения** в главном меню.
 1. Выберите и отфильтруйте очередь оповещений для конкретного пользователя с помощью поля **Имя пользователя**.
 
- or
+ или диспетчер конфигурации служб
 
 1. Из меню **Исследовать** выберите **Журнал действий**.
 1. Отфильтруйте очередь журнала действий по пользователям.

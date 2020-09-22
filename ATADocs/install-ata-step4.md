@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8bd8347e3ac37b9cd3b3c94dddfeb3e1a3b59112
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 87f8442010a7132de7e76479353acfa7753d10dc
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954584"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911478"
 ---
 # <a name="install-ata---step-4"></a>Установка ATA. Шаг 4
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [« Шаг 3](install-ata-step3.md)
@@ -67,7 +69,7 @@ ms.locfileid: "88954584"
    
     - Путь установки: это расположение для установки шлюза ATA. По умолчанию это папка %programfiles%\Microsoft Advanced Threat Analytics\Gateway. Оставьте значение по умолчанию.
    
-1. Щелкните **Install**(Установить). Во время установки шлюза ATA устанавливаются и настраиваются следующие компоненты.
+1. Нажмите кнопку **Установить**. Во время установки шлюза ATA устанавливаются и настраиваются следующие компоненты.
     
     - KB 3047154 (только для Windows Server 2012 R2)
     
@@ -91,7 +93,7 @@ ms.locfileid: "88954584"
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 55e5962ed3d9e9a1a922b47daf46bdb0c2b0d91d
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 8a7c22c2ea752b0443fac2b4e74b2ff4813bfee8
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910475"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Функции обнаружения в Azure Advanced Threat Protection (Azure ATP) анализируют определенные записи журнала событий Windows для расширения своих возможностей и предоставления дополнительных сведений о том, кто именно выполняет определенные действия, например вход через NTLM, изменение групп безопасности и действия при аналогичных событиях. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Неверные параметры расширенной политики аудита могут привести к тому, что требуемые события не будут записываться в журнал и охват Azure ATP будет неполным.
 

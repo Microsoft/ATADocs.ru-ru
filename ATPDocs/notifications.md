@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b54f609074c7e2a17eec51629682bade14e40cfa
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 4b0fd3c0ff5702d382a2232a896a82495cce16be
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953411"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912632"
 ---
 # <a name="set-azure-atp-notifications"></a>Настройка уведомлений Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP может по электронной почте отправлять уведомления при обнаружении подозрительных действий, а также оповещения системы безопасности и оповещения о проблемах с работоспособностью. 
 

@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0a4a9a5de29e2579776096154e6158b02e58c087
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d4e5dda205aba4737e074853f22659c6e74a98d5
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956386"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910728"
 ---
 # <a name="troubleshooting-service-startup"></a>Устранение неполадок при запуске службы
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="troubleshooting-ata-center-service-startup"></a>Устранение неполадок при запуске службы центра ATA
 
@@ -56,7 +58,7 @@ sc start ATACenter
 
 Это происходит, поскольку в ходе процесса установки упрощенного шлюза служба ATA выделяет пороговое значение ЦП, позволяющее упрощенному шлюзу использовать ЦП с буфером 15 %. Если пороговое значение было задано независимо с помощью раздела реестра, этот конфликт будет препятствовать запуску упрощенного шлюза. 
 
-**Способы устранения:**
+**Решение**
 
 1. В разделах реестра, если имеется значение DWORD с именем **Отключить счетчики производительности** , убедитесь, что оно равно **0**.
 
@@ -67,7 +69,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance
 
 1. Затем перезапустите службу Pla. Упрощенный шлюз ATA автоматически обнаружит изменение и перезапустит службу.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)

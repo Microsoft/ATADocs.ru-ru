@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 763c2102ab0634c7ef307921cabef55e734a5141
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: cf3eb1dcc1d66caccfefda837804f771b3882e7a
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828577"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912698"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Поддержка нескольких лесов в службе Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="multi-forest-support-set-up"></a>Настройка поддержки нескольких лесов
 

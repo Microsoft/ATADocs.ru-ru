@@ -11,16 +11,18 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 175132fa85f95717987f074f0185bc94bfe187ba
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 2e1983e6d4184f113c13b1a992a2c91a15c4dbfb
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955417"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911038"
 ---
 # <a name="manage-system-generated-logs"></a>Управление системными журналами
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -63,7 +65,7 @@ ms.locfileid: "88955417"
 
     - идентификатор подозрительного действия;
 
-    - Состояние
+    - Status
 
     - время начала и окончания;
 
@@ -77,7 +79,7 @@ ms.locfileid: "88955417"
 
     - идентификатор проблемы работоспособности;
 
-    - Состояние
+    - Status
 
     - время начала и окончания;
 
@@ -91,6 +93,6 @@ ms.locfileid: "88955417"
 
 1. Снимите флажок **Отправлять сведения об использовании для улучшения качества программного обеспечения**.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Устранение неполадок ATA с помощью журнала событий](troubleshooting-ata-using-logs.md)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

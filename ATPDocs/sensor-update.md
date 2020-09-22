@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e2a5c24b2dac7675f55e2279ccaa11897e154ef
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: fd9428b64aa9f5d1776cef495359c433ae355f7c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826640"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912536"
 ---
 # <a name="update-azure-atp-sensors"></a>Обновление датчиков Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Чтобы обеспечить наилучшую защиту для вашей организации, постоянно обновляйте датчики Расширенной защиты от угроз Azure.
 

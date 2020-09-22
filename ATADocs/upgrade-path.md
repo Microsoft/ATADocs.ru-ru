@@ -12,22 +12,24 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e7680149498c496943ebf9359117895016ed6ca3
-ms.sourcegitcommit: d33e38a6a6b61e7dda4ca778862644f2282ac78f
+ms.openlocfilehash: 4e6e5f538c0da98e82d4664f0dff265988ee8423
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828953"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910756"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья содержит сведения о доступных версиях Advanced Threat Analytics и инструкции по обновлению в зависимости от используемой версии.
 
 ## <a name="ata-versions"></a>Версии ATA
 
-|Version|Номер сборки|
+|Версия|Номер сборки|
 |----|----|
 |1.6|1.6.4103|
 |1.6 с обновлением 1|1.6.4317|
@@ -47,7 +49,7 @@ ms.locfileid: "90828953"
 
 ![Путь обновления версии ATA](media/upgrade-path-ata.png)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)

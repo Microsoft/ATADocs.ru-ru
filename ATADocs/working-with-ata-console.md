@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1532d110daf23562c768a7b145bcff9326f73223
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: e5b9c8f908cc0d9fbbabcc0cf11feebdf1decb7b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955128"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912202"
 ---
 # <a name="working-with-the-ata-console"></a>Работа с консолью ATA
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 C помощью консоли можно отслеживать обнаруженные решением ATA подозрительные действия и принимать соответствующие меры.
 
@@ -130,7 +132,7 @@ C помощью консоли можно отслеживать обнаруж
 
 - Имя
 
-- Рисунок
+- Picture
 
 - Электронная почта
 
@@ -140,5 +142,5 @@ C помощью консоли можно отслеживать обнаруж
 
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 5b7bc09b0327260504900c6a0b075b243c02f70e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 4dbc5a6eb70bb9bc531ed54a9162554bd15d9dc9
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910248"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>Учебник. Настройка лаборатории оповещений системы безопасности ATP 
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
  В лаборатории оповещений системы безопасности Azure ATP можно продемонстрировать возможности **Azure ATP**в определении и обнаружении подозрительных действий и потенциальных атак для сети. В этом первом руководстве из четырех в этой серии приводятся сведения о создании лабораторной среды для тестирования *дискретных* обнаружений Azure ATP. Лаборатория оповещений системы безопасности в первую очередь использует возможности Azure ATP *по работе с сигнатурами*. Эта лаборатория не охватывает обнаружения на основе поведения пользователей или сущностей с использованием расширенных возможностей машинного обучения, так как для их применения изучаемый период с реальным сетевым трафиком должен составлять до 30 дней. Дополнительные сведения по каждому руководству из этой серии о лаборатории для оповещений системы безопасности ATP см. в [этой статье](playbook-lab-overview.md). 
 
@@ -132,7 +134,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![Отметьте Helpdesk в качестве привилегированной группы Azure ATP, чтобы включить графики бокового смещения и отчеты для этой группы.](media/playbook-labsetup-helpdesksensitivegroup.png)
 
-1. Выберите команду **Сохранить**.
+1. Щелкните **Сохранить**.
 
 ### <a name="azure-atp-lab-base-setup-checklist"></a>Контрольный список для настройки базовой лаборатории Azure ATP
 

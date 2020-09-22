@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d0f1e528b011119a89286cd66e797317bf8d9f21
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 14f818e8149e239f8c7b88487b4fb388ad557458
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956454"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910817"
 ---
 # <a name="working-with-ata-audit-logs"></a>Работа с журналами аудита ATA
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Журналы аудита ATA хранятся в журналах событий Windows в разделе **Приложения и службы** > **Microsoft ATA** как на компьютере центра ATA, так и на компьютерах шлюзов ATA.
 
@@ -40,6 +42,6 @@ ms.locfileid: "88956454"
 * Журнал аудита изменений конфигурации содержит сведения как о прежней, так и о новой конфигурации.
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Обработка подозрительных действий](working-with-suspicious-activities.md)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

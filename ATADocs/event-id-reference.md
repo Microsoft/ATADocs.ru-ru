@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: a0a2abcf78c19180b841b9f2ec9186b19beea7c5
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: c89b37f3fda698af907cb4e74886e0b65e6df7e9
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954669"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909402"
 ---
 # <a name="ata-event-id-reference"></a>Справочник по идентификаторам событий ATA
 
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Средство просмотра событий центра ATA записывает события ATA в журнал. В этой статье приводится список идентификаторов событий и описание каждого из них.
 
@@ -96,7 +98,7 @@ ms.locfileid: "88954669"
 |3006|Изменение состояния действия работоспособности вручную|
 |3007|Изменение состояния подозрительного действия вручную|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 - [Предварительные требования ATA](ata-prerequisites.md)
 - [Планирование производительности ATA](ata-capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

@@ -13,16 +13,18 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: 8569e26786c36f08fdcf98dcd11452cdef5736b6
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 456538f0b68f1eec0474f4579908a1dc2c42ee67
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955995"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912014"
 ---
 # <a name="understanding-ata-health-alerts"></a>Основные сведения об оповещениях о работоспособности ATA
 
-*Применяется к: Advanced Threat Analytics версии 1.9*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Центр работоспособности ATA позволяет получить сведения о проблемах с развертыванием ATA, вызывая оповещение о работоспособности.
 В этой статье описаны все оповещения о работоспособности для каждого компонента с указанием причины и действий, необходимых для устранения проблемы.
