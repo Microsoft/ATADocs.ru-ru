@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e410e37e9d19a7ed806095a3c554e53b26c9362e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: aee16031c1682dc51b4c4da8fb3b123a8de93918
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826841"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913266"
 ---
 # <a name="azure-atp-architecture"></a>Архитектура Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP отслеживает контроллеры домена, регистрируя и анализируя сетевой трафик, а также используя события Windows (которые пересылаются непосредственно из контроллеров домена) и анализируя данные, связанные с атаками и угрозами. С помощью профилирования, детерминированного обнаружения и алгоритмов машинного обучения и анализа поведения Azure ATP получает сведения о сети, выявляет аномалии и сообщает о подозрительных действиях.
 

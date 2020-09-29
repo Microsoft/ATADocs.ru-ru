@@ -7,14 +7,16 @@ ms.date: 01/15/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: a7dd89dbd62d5ab02d33d656b011edefaa9f7f13
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 39721343f150969a501b58842c616386dbfb49c2
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826875"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913023"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>Краткое руководство. Подключение к лесу Active Directory
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом кратком руководстве вы подключите Azure ATP к Active Directory (AD), чтобы получить данные о пользователях и компьютерах. Если вы подключаете несколько лесов, см. статью [Поддержка нескольких лесов](multi-forest.md).
 

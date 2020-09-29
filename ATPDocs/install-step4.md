@@ -9,14 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d82468ef075c61de9709ce251a04e9d19fb797cb
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 4cea27bea83a8b68ca81b5a706ea4a7c9ff95413
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826865"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913048"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>Краткое руководство. Установка датчика Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Из этого краткого руководства вы узнаете, как установить датчик Azure ATP на контроллере домена. Если вы предпочитаете автоматическую установку, прочтите статью [Автоматическая установка](silent-installation.md).
 

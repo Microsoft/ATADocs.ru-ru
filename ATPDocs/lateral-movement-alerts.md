@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9bcdf2d4b4bdaf609197551d4b72c34ec5a12f35
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: c822bef5de097a426c298471c84beb012a349d09
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826818"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912415"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>Руководство. Предупреждения об атаках бокового смещения
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Как правило, атаки изначально направлены на доступные объекты, например пользователей с низким уровнем прав, а затем быстро распространяются по горизонтали, пока злоумышленник не получит доступ к ценным ресурсам, например важным учетным записям, в том числе с правами администратора домена, или конфиденциальным данным. Azure ATP позволяет устанавливать источники таких современных угроз, прослеживая всю цепочку атаки, и классифицировать их по следующим этапам:
 

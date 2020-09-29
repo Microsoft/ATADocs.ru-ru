@@ -10,14 +10,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0fd44a4ea1b2bae549c71c957551482ba651d58f
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 5c07d5bb568394cdb5c989279434445f88d0f7ea
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826878"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910284"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>Краткое руководство. создание экземпляра Azure ATP;
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом кратком руководстве вы создадите экземпляр Azure ATP на портале Azure ATP. В Azure ATP в вашем распоряжении будет один экземпляр, который раньше назывался рабочей областью. Он позволяет управлять несколькими лесами на одной панели.
 
