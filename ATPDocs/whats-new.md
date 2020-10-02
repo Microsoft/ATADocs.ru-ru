@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 642d018862a73fd609d44e5e6304533196ad729c
-ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
+ms.openlocfilehash: dda07ccfe2578975517e9e219fa95e0094e751cf
+ms.sourcegitcommit: 3740dcb048065962eb09ed31e077d7f8ff77a165
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90829414"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91145926"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -26,10 +26,16 @@ ms.locfileid: "90829414"
 
 RSS-канал: Получите уведомление об обновлении этой страницы, скопировав и вставив следующий URL-адрес в программу чтения каналов: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+> [!IMPORTANT]
+>
+> Изменяются названия продуктов Майкрософт для защиты от угроз. Дополнительные сведения об этом и других обновлениях см. [здесь](https://www.microsoft.com/security/blog/?p=91813). В последующих выпусках будут использоваться новые названия.
+
 ## <a name="azure-atp-release-2127"></a>Azure ATP, выпуск 2.127
 
 Дата выпуска: 20 сентября 2020 г.
 
+- **Новое оповещение системы безопасности: предполагаемая попытка повышения прав доступа к службе Netlogon (внешний идентификатор: 2411)**  
+Доступно оповещение системы безопасности Azure ATP *Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472) (внешний идентификатор: 2411)* . Оповещение системы безопасности Azure ATP активируется при обнаружении этой уязвимости (также известной как *повышение прав доступа к службе Netlogon*), когда злоумышленник устанавливает уязвимое подключение по безопасному каналу Netlogon к контроллеру домена по протоколу Netlogon Remote Protocol ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f)). Дополнительные сведения см. в разделе [Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472) (внешний идентификатор: 2411)](compromised-credentials-alerts.md#suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitation external id 2411).
 - Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-2126"></a>Azure ATP, выпуск 2.126

@@ -5,21 +5,23 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/27/2020
+ms.date: 09/22/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f90c9a8423567d672544dd62bc1bdb3ba60d8a34
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 274a345c68f3ac021d4407d00b2b3e7225a780f4
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912610"
 ---
 # <a name="azure-atp-prerequisites"></a>Предварительные требования для Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье описываются требования для успешного развертывания Azure ATP в среде.
 
@@ -120,14 +122,21 @@ Azure ATP защищает локальных и синхронизирован
 
 ### <a name="general"></a>Общие
 
-> [!NOTE]
-> При использовании Windows Server 2019 убедитесь, что установлено исправление [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044). Датчики Azure ATP, установленные на компьютерах под управлением Windows Server 2019 без этого обновления, будут автоматически отключены.
+Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением Server Core), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе Server Core, но не Nano Server), Windows Server 2019\* (в том числе Server Core, но не Nano Server).
 
-Датчик Azure ATP поддерживает установку на контроллере домена под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением основных серверных компонентов), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе основные компоненты Windows Server, но не Windows Nano Server), Windows Server 2019 (в том числе основные компоненты Windows, но не Windows Nano Server).
+| Версия операционной системы   | Сервер с возможностями рабочего стола | Основные серверные компоненты | Nano Server    |
+| -------------------------- | ------------------------------ | ----------- | -------------- |
+| Windows Server 2008 R2 с пакетом обновления 1 (SP1) | &#10004;                       | &#10060;    | Неприменимо |
+| Windows Server 2012        | &#10004;                       | &#10004;    | Неприменимо |
+| Windows Server 2012 R2     | &#10004;                       | &#10004;    | Неприменимо |
+| Windows Server 2016        | &#10004;                       | &#10004;    | &#10060;       |
+| Windows Server 2019\*      | &#10004;                       | &#10004;    | &#10060;       |
+
+\* Требуется обновление [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044). Датчики, установленные на компьютерах под управлением Windows Server 2019 без этого обновления, будут автоматически отключены.
 
 Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 
-Чтобы контроллеры домена могли обмениваться данными с облачной службой, откройте порт 443 *.atp.azure.com в брандмауэре или на прокси-сервере.
+Чтобы контроллеры домена могли обмениваться данными с облачной службой, откройте порт 443 для \*.atp.azure.com в брандмауэре или на прокси-сервере.
 
 Во время установки будет установлена платформа .NET Framework 4.7, если эта платформа или ее более поздняя версия отсутствует. При этом может потребоваться перезагрузка контроллера домена. Перезагрузка также может произойти, если она уже запланирована.
 
