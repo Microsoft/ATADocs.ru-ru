@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 48744b2ef9485ad9bc2a54feacfe2b328dd4dfeb
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 6eb8484ba49d4ae56a1baafce9ea3b76d0760165
+ms.sourcegitcommit: cd13e58303372d01463ae2ccf1e093d4f6d85fb5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912371"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91754397"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>Руководство. Предупреждения о разведывательных атаках
 
@@ -242,8 +242,8 @@ ms.locfileid: "90912371"
 **Специальные рекомендации от Kerberoasting для предотвращения и устранения последствий атак**
 
 1. Сбросьте пароли скомпрометированных пользователей и включите MFA или, если вы настроили соответствующие политики пользователей с высоким риском в Защите идентификации Azure Active Directory, вы можете использовать действие [**Подтвердить компрометацию пользователя**](/cloud-app-security/accounts#governance-actions) на портале Cloud App Security.
-1. Установите обязательное использование [длинных и сложных паролей для пользователей с учетными записями субъектов-служб](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length).
-1. [Замените учетную запись пользователя на групповую управляемую учетную запись службы (gMSA)](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+1. Установите обязательное использование [длинных и сложных паролей для пользователей с учетными записями субъектов-служб](/windows/security/threat-protection/security-policy-settings/minimum-password-length).
+1. [Замените учетную запись пользователя на групповую управляемую учетную запись службы (gMSA)](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 > [!NOTE]
 > Оповещения рекогносцировки субъекта безопасности (LDAP) поддерживаются только датчиками ATP.
