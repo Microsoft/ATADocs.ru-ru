@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cfcbf4af7c8b0733869c6d55d1c72dd628c68ca7
-ms.sourcegitcommit: 786d88b4b829167b52d2664b77252a4c2dc55877
+ms.openlocfilehash: 5ba78ddacfed1993a4c5f4b6c4407e4af45826f8
+ms.sourcegitcommit: dd8435ba20f76a6fc4590980c040c6fc7ec6c62b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057562"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451791"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>Руководство. Предупреждения о компрометации учетных данных
 
@@ -205,6 +205,7 @@ ms.locfileid: "91057562"
 1. Настройте принудительное применение [длинных и сложных паролей](/windows/security/threat-protection/security-policy-settings/password-policy) в организации. Длинные и сложные пароли обеспечивают необходимый первый уровень защиты от атак методом подбора.
 1. [Удалите SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/).
 
+<a name="suspected-netlogon-priv-elev-2411"></a>
 ## <a name="suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitationexternalid2411"></a>Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472) (внешний идентификатор: 2411)
 
 Корпорация Майкрософт опубликовала уведомление о том, что существует новая уязвимость [CVE-2020-1472](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1472), которая позволяет повысить привилегии для доступа к контроллеру домена.
