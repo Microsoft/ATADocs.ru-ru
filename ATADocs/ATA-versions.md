@@ -10,12 +10,12 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9d9c2c027b5d7c35a02d8751a5d56585ecf0fdb0
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 42fe265978c1cd1ed326e20c2c283853d1b70281
+ms.sourcegitcommit: c12340e58a724fb833403e4fb38810b36e1454f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909256"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941183"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Поддержка версий Microsoft Advanced Threat Analytics (ATA)
 
@@ -40,7 +40,7 @@ ms.locfileid: "90909256"
 |1.5|1.5.2946|17 декабря 2015 г.|16 декабря 2016 г.|
 |1.6|1.6.4103|5 мая 2016 г.|4 мая 2017 г.|
 |1.6.1|1.6.4317|15 июня 2016 г.|14 июня 2017 г.|
-|1,7|1.7.5402|31 августа 2016 г.|30 августа 2017 г.|
+|1.7|1.7.5402|31 августа 2016 г.|30 августа 2017 г.|
 |1.7.1|1.7.5647|6 октября 2016 г.|5 октября 2017 г.|
 |1.7.2|1.7.5757|15 ноября 2016 г.|14 ноября 2017 г.|
 |1.8|1.8.6645|30 июня 2017 г.|30 июня 2018 г.|
@@ -48,7 +48,7 @@ ms.locfileid: "90909256"
 |1,9|1.9.7312|21 марта 2018 г.|21 марта 2019 г.|
 |1.9.1|1.9.7412|1 июля 2018 Г.|1 июля 2019 Г.|
 |1.9.2|1.9.7478|28 марта 2019 г.|14-МАР-2021|
-|1.9.3|1.9.7561|14-СЕН-2020||
+|1.9.3|1.9.7576|14-СЕН-2020||
 
 ## <a name="see-also"></a>См. также:
 

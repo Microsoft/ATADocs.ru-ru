@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4e6e5f538c0da98e82d4664f0dff265988ee8423
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 00c6d785da9d8685b32b55e689f4d40d9e6fb193
+ms.sourcegitcommit: c12340e58a724fb833403e4fb38810b36e1454f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910756"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941230"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>Рекомендуемые варианты обновления ATA
 
@@ -33,7 +33,7 @@ ms.locfileid: "90910756"
 |----|----|
 |1.6|1.6.4103|
 |1.6 с обновлением 1|1.6.4317|
-|1,7|1.7.5402|
+|1.7|1.7.5402|
 |1.7 с обновлением 1|1.7.5647|
 |1.7 с обновлением 2|1.7.5757|
 |1.8|1.8.6645|
@@ -41,7 +41,7 @@ ms.locfileid: "90910756"
 |1,9|1.9.7312|
 |1.9 с обновлением 1|1.9.7412|
 |1.9 с обновлением 2|1.9.7478|
-|Обновление 3 для 1,9|1.9.7561|
+|Обновление 3 для 1,9|1.9.7576|
 
 ## <a name="upgrade-paths"></a>Варианты обновления
 
