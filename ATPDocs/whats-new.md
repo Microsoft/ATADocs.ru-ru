@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/13/2020
+ms.date: 10/18/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 84deb65f7f1d6d20fe6913a7fd02b743295db1ef
-ms.sourcegitcommit: dd8435ba20f76a6fc4590980c040c6fc7ec6c62b
+ms.openlocfilehash: 26b4abc16ced7707d586f8049c82b30e86acbd0c
+ms.sourcegitcommit: 3ef87e970ca495edb995e0ea32e14f7e364045ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91451808"
+ms.lasthandoff: 10/18/2020
+ms.locfileid: "92163672"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Новые возможности в Azure Advanced Threat Protection (Azure ATP)
 
@@ -29,6 +29,12 @@ RSS-канал: Получите уведомление об обновлени�
 > [!IMPORTANT]
 >
 > Изменяются названия продуктов Майкрософт для защиты от угроз. Дополнительные сведения об этом и других обновлениях см. [здесь](https://www.microsoft.com/security/blog/?p=91813). Начиная с выпуска 2.127 мы будет использовать новые имена.
+
+## <a name="azure-atp-release-2129"></a>Azure ATP, выпуск 2.129
+
+Дата выпуска: 18 октября 2020 г.
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="azure-atp-release-2128"></a>Azure ATP, выпуск 2.128
 
