@@ -1,61 +1,60 @@
 ---
-title: Переход с Advanced Threat Analytics на Расширенную защиту от угроз Azure
-description: Узнайте, как перевести существующую установку Advanced Threat Analytics на Azure ATP.
+title: Advanced Threat Analytics в защитнике Майкрософт для перемещения удостоверений
+description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/21/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e959e6c0134cf23355b7c1bc89c7e35166230fb9
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 032a5f289657485b744ad335dc51777a8ba72602
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912179"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275037"
 ---
-# <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Переход с Advanced Threat Analytics (ATA) на Расширенную защиту от угроз Azure (Azure ATP)
+# <a name="advanced-threat-analytics-ata-to-product-long"></a>Advanced Threat Analytics (ATA) для [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
 
-Это руководство поможет вам перейти с существующей установки ATA на службу "Расширенная защита от угроз Azure" (Azure ATP). В нем приведены предварительные и основные требования к Azure ATP и подробно описано планирование и выполнение перехода. Кроме того, здесь приведены необходимые действия по проверке, а также советы по использованию новейших решений безопасности и защиты от угроз в сочетании с Azure ATP после установки службы.
+Воспользуйтесь этим руководством, чтобы перейти с существующей установки ATA на службу ( [!INCLUDE [Product long](includes/product-long.md)] ). В этом руководство описаны [!INCLUDE [Product short](includes/product-short.md)] необходимые условия и требования, а также сведения о планировании и завершении перемещения. Также включены этапы проверки и советы по использованию новейших решений для защиты от угроз и безопасности [!INCLUDE [Product short](includes/product-short.md)] после установки.
 
-Дополнительные сведения о различиях между ATA и Azure ATP см. в статье [Часто задаваемые вопросы об Azure ATP](technical-faq.md#what-is-azure-atp).
+Дополнительные сведения о различиях между ATA и [!INCLUDE [Product short](includes/product-short.md)] см. в [ [!INCLUDE [Product short](includes/product-short.md)] часто задаваемых вопросах](technical-faq.md#what-is-azure-atp).
 
 В руководстве описаны следующие действия:
 
 > [!div class="checklist"]
 >
-> - Просмотр и проверка предварительных требований для службы Azure ATP
+> - Проверка и подтверждение [!INCLUDE [Product short](includes/product-short.md)] предварительных требований к службе
 > - Документирование существующей конфигурации ATA
 > - Планирование перехода
-> - Установка и настройка службы Azure ATP
+> - Настройка и настройка [!INCLUDE [Product short](includes/product-short.md)]  службы
 > - Выполнение проверок после перехода
 > - Вывод ATA из эксплуатации после перехода
 
 > [!NOTE]
-> Переход на Azure ATP возможен с любой версии ATA. Однако поскольку перенести данные из ATA в Azure ATP невозможно, рекомендуется не удалять ваши данные и оповещения центра ATA, необходимые для текущего анализа, пока не будут закрыты все оповещения или устранены соответствующие проблемы.
+> Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- Для создания экземпляра Azure ATP требуется клиент Azure Active Directory с хотя бы одним глобальным администратором или администратором безопасности. Каждый экземпляр Azure ATP поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
+- Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый [!INCLUDE [Product short](includes/product-short.md)] экземпляр поддерживает несколько Active Directory границы леса и функционального уровня леса (FFL) для Windows 2003 и более поздних версий.
 
-- Azure ATP требует наличия .NET Framework 4.7 или более поздней версии и может потребовать контроллер домена (с перезагрузкой), если вы используете .NET Framework версии ниже 4.7.
+- [!INCLUDE [Product short](includes/product-short.md)] требуется платформа .NET Framework 4,7 или более поздней версии, и может потребоваться контроллер домена (перезапуск), если текущая версия .NET Framework не 4,7 или более поздняя.
 
-- Убедитесь, что контроллеры домена отвечают всем [требованиям датчиков Azure ATP](prerequisites.md#azure-atp-sensor-requirements) и ваша среда удовлетворяет всем [требованиям Azure ATP](prerequisites.md).
+- Убедитесь, что контроллеры домена соответствуют всем требованиям [ [!INCLUDE [Product short](includes/product-short.md)] к датчикам](prerequisites.md#azure-atp-sensor-requirements) и ваша среда соответствует всем [ [!INCLUDE [Product short](includes/product-short.md)] требованиям](prerequisites.md).
 
-- Все контроллеры домена, которые вы планируете использовать, должны иметь необходимое подключение к Интернету для работы со службой Azure ATP. Проверьте и подтвердите соответствие контроллеров домена [требованиям конфигурации прокси-сервера Azure ATP](configure-proxy.md).
+- Убедитесь, что все контроллеры домена, которые планируется использовать, имеют достаточный доступ к службе через Интернет [!INCLUDE [Product short](includes/product-short.md)] . Проверьте и убедитесь, что контроллеры домена соответствуют [ [!INCLUDE [Product short](includes/product-short.md)] требованиям конфигурации прокси-сервера](configure-proxy.md).
 
 > [!NOTE]
-> Это руководство по миграции предназначено только для датчиков Azure ATP.
+> Это руководством по миграции предназначено [!INCLUDE [Product short](includes/product-short.md)] только для датчиков.
 
 ## <a name="plan"></a>План
 
@@ -67,11 +66,11 @@ ms.locfileid: "90912179"
 1. Членство в группах ролей ATA
 1. Интеграция VPN
 1. Исключения оповещений
-    - Исключения не переносятся из ATA в Azure ATP, поэтому необходимы сведения о каждом исключении для [репликации исключений в Azure ATP](excluding-entities-from-detections.md).
+    - Исключения передаются из ATA в [!INCLUDE [Product short](includes/product-short.md)] , поэтому сведения о каждом исключении необходимы для [репликации исключений в [!INCLUDE [Product short](includes/product-short.md)] ](excluding-entities-from-detections.md).
 1. Данные учетных записей HoneyToken.
-    - Если у вас нет выделенных учетных записей HoneyToken, то прочтите о [HoneyToken в Azure ATP](install-step7.md) и создайте новые учетные записи для текущей задачи.
+    - Если у вас еще нет выделенных учетных записей HoneyToken, Узнайте больше о [хонэйтокенс в [!INCLUDE [Product short](includes/product-short.md)] ](install-step7.md) и создайте новые учетные записи, которые будут использоваться для этой цели.
 1. Полный список всех объектов (компьютеров, групп, пользователей), которые вы хотите вручную пометить как конфиденциальные.
-    - См. дополнительные сведения о важности [конфиденциальных объектов](sensitive-accounts.md) в Azure ATP.
+    - Дополнительные сведения о важности [конфиденциальных сущностей](sensitive-accounts.md) см. в статье [!INCLUDE [Product short](includes/product-short.md)] .
 1. [Сведения](reports.md) о планировании отчетов (список отчетов и запланированное время).
 
 > [!NOTE]
@@ -79,29 +78,29 @@ ms.locfileid: "90912179"
 
 ## <a name="move"></a>Переместить
 
-Выполните переход на Azure ATP в два простых шага:
+Выполните переход на [!INCLUDE [Product short](includes/product-short.md)] два простых шага.
 
-### <a name="step-1-create-and-install-azure-atp-instance-and-sensors"></a>Шаг 1. Создание и установка экземпляра и датчиков Azure ATP
+### <a name="step-1-create-and-install-product-short-instance-and-sensors"></a>Шаг 1. Создание и установка [!INCLUDE [Product short](includes/product-short.md)] экземпляров и датчиков
 
-1. [Создайте экземпляр Azure ATP.](install-step1.md)
+1. [Создание нового [!INCLUDE [Product short](includes/product-short.md)] экземпляра](install-step1.md)
 
 1. Удалите упрощенный шлюз ATA на всех контроллерах домена.
 
-1. Установите датчик Azure ATP на всех контроллерах домена:
-    - [Скачайте файлы датчика Azure ATP](install-step3.md).
-    - [Получите ключ доступа Azure ATP](install-step3.md#download-the-setup-package).
-    - [Установите датчики Azure ATP на контроллерах домена](install-step4.md).
+1. Установите [!INCLUDE [Product short](includes/product-short.md)] датчик на всех контроллерах домена:
+    - [Скачайте [!INCLUDE [Product short](includes/product-short.md)] файлы датчиков](install-step3.md).
+    - [Получите [!INCLUDE [Product short](includes/product-short.md)] Ключ доступа](install-step3.md#download-the-setup-package).
+    - [Установите [!INCLUDE [Product short](includes/product-short.md)] датчики на контроллерах домена](install-step4.md).
 
-### <a name="step-2-configure-and-validate-azure-atp-instance"></a>Шаг 2. Настройка и проверка экземпляра Azure ATP
+### <a name="step-2-configure-and-validate-product-short-instance"></a>Шаг 2. Настройка и проверка [!INCLUDE [Product short](includes/product-short.md)] экземпляра
 
 - [Настройте датчик](install-step5.md)
 
 > [!NOTE]
-> Некоторые задачи в следующем списке невозможно выполнить до установки датчиков Azure ATP и последующей начальной синхронизации, например, невозможно выбрать объекты и пометить их как **конфиденциальные** вручную. Запланируйте до двух часов времени на выполнение начальной синхронизации.
+> Некоторые задачи в следующем списке невозможно завершить перед установкой [!INCLUDE [Product short](includes/product-short.md)] датчиков, а затем выполнить начальную синхронизацию, например выбрать сущности для постановки тегов, **учитывающих** ручную маркировку. Запланируйте до двух часов времени на выполнение начальной синхронизации.
 
 #### <a name="configuration"></a>Конфигурация
 
-Войдите на портал Azure ATP и выполните следующие задачи по настройке.
+Войдите на [!INCLUDE [Product short](includes/product-short.md)] портал и выполните следующие задачи настройки.
 
 | Шаг    | Действие | Состояние |
 |--------------|------------|------------------|
@@ -109,7 +108,7 @@ ms.locfileid: "90912179"
 | 2  | Данные учетных записей [службы каталогов](install-step2.md)| - [ ] |
 | 3  | Настройка [уведомлений системного журнала](setting-syslog.md) | - [ ] |
 | 4  | Сведения об [интеграции VPN](install-step6-vpn.md)| - [ ] |
-| 5  | Настройка [интеграции WDATP](integrate-msde.md)| - [ ] |
+| 5  | Настройка [интеграции WDATP](integrate-mde.md)| - [ ] |
 | 6  | Настройка учетных записей [HoneyTokens](install-step7.md)| - [ ] |
 | 7  | Указание [конфиденциальных объектов](sensitive-accounts.md)| - [ ] |
 | 8  | Создание [исключений для оповещений безопасности](excluding-entities-from-detections.md)| - [ ] |
@@ -120,17 +119,17 @@ ms.locfileid: "90912179"
 
 #### <a name="validation"></a>Проверка
 
-На портале Azure ATP:
+На [!INCLUDE [Product short](includes/product-short.md)] портале:
 
 - Просмотрите все [оповещения о работоспособности](health-center.md) на предмет возможных проблем со службой.
-- Проверьте [журналы ошибок датчика](troubleshooting-using-logs.md) Azure ATP на наличие необычных ошибок.
+- Проверьте [!INCLUDE [Product short](includes/product-short.md)] [журналы ошибок датчика](troubleshooting-using-logs.md) на наличие необычных ошибок.
 
 ## <a name="after-the-move"></a>После перехода
 
 В этом разделе руководства описаны действия, которые можно выполнить после завершения перехода.
 
 > [!NOTE]
-> Импорт существующих оповещений системы безопасности из ATA в ATP не поддерживается. Обязательно запишите все существующие оповещения ATA или устраните соответствующие проблемы, прежде чем выводить центр ATA из эксплуатации.
+> Импорт существующих предупреждений системы безопасности из ATA в [!INCLUDE [Product short](includes/product-short.md)] не поддерживается. Обязательно запишите все существующие оповещения ATA или устраните соответствующие проблемы, прежде чем выводить центр ATA из эксплуатации.
 
 - **Выведите центр ATA из эксплуатации**  
   - Для доступа к данным центра ATA после перехода рекомендуется некоторое время сохранять его данные в работе. После вывода центра ATA из эксплуатации количество ресурсов обычно можно уменьшить, особенно если они являются виртуальными машинами.
@@ -140,12 +139,12 @@ ms.locfileid: "90912179"
 
 ## <a name="mission-accomplished"></a>Все готово
 
-Поздравляем! Переход с ATA на Azure ATP завершен.
+Поздравляем! Переход с ATA на [!INCLUDE [Product short](includes/product-short.md)] завершен.
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
-См. дополнительные сведения о возможностях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md)[Azure ATP](what-is.md).
+Дополнительные сведения о [[!INCLUDE [Product short](includes/product-short.md)]](what-is.md) функциях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md).
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)!
+У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!

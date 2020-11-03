@@ -1,62 +1,61 @@
 ---
-title: Устранение неполадок с помощью журналов Azure Advanced Threat protection
-description: В этой статье описывается, как использовать журналы Azure ATP для устранения неполадок.
+title: Устранение неполадок защитника Майкрософт для идентификации с помощью журналов
+description: В этой статье описывается, как можно использовать защитник Майкрософт для журналов удостоверений для устранения неполадок.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/05/2019
+ms.date: 10/27/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: 7839a19cef4543685c548dc3c1f386d46384d214
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: ea19abd7497d0d925e764a80666dc595862566f9
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912335"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275007"
 ---
-# <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>Использование журналов для устранения неполадок датчика Azure Advanced Threat Protection (ATP)
+# <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>Устранение неполадок [!INCLUDE [Product long](includes/product-long.md)] датчика с помощью [!INCLUDE [Product short](includes/product-short.md)] журналов
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Журналы ATP содержат полезные сведения о работе всех компонентов датчика Azure ATP в любой момент времени.
+В [!INCLUDE [Product short](includes/product-short.md)] журналах представлены сведения о том, что делает каждый компонент [!INCLUDE [Product long](includes/product-long.md)] датчика в любой определенный момент времени.
 
-Эти журналы размещаются в каталоге установки ATP (по умолчанию **C:\Program Files\Azure Advanced Threat Protection Sensor\\**) в подпапке **Logs**. В каталоге установки по умолчанию журналы находятся по следующему пути: **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs**.
+[!INCLUDE [Product short](includes/product-short.md)]Журналы находятся во вложенной папке Logs ( **журналы** ) [!INCLUDE [Product short](includes/product-short.md)] , где установлен; расположение по умолчанию: **C:\Program files\azure Multi Advanced Threat Protection \\ Sensor**. В каталоге установки по умолчанию журналы находятся по следующему пути: **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs**.
 
-Датчик Azure ATP включает следующие журналы:
+[!INCLUDE [Product short](includes/product-short.md)]Датчик имеет следующие журналы:
 
-- **Microsoft.Tri.Sensor.log** — содержит информацию обо всем, что происходит в датчике Azure ATP (включая разрешения и ошибки). Его основное назначение заключается в получении сведений о состоянии всех операций в хронологическом порядке.
+- **Microsoft. Тройн. датчик. log** — этот журнал содержит все, что происходит в [!INCLUDE [Product short](includes/product-short.md)] датчике (включая разрешение и ошибки). Его основное назначение заключается в получении сведений о состоянии всех операций в хронологическом порядке.
 
-- **Microsoft.Tri.Sensor-Errors.log** — содержит только ошибки, которые обнаруживает датчик ATP. Его основное назначение — проверка работоспособности и изучение событий, которые необходимо сопоставить с моментом времени.
+- **Microsoft. Тройн. Sensor-Errors. log** — этот журнал содержит только ошибки, перехваченные [!INCLUDE [Product short](includes/product-short.md)] датчиком. Его основное назначение — проверка работоспособности и изучение событий, которые необходимо сопоставить с моментом времени.
 
-- **Microsoft.Tri.Sensor.Updater.log** — этот журнал используется для процесса автоматического обновления датчика ATP, если оно настроено.
+- **Microsoft. Тройн. датчик. обновление. log** — этот журнал используется для процесса обновления датчика, который отвечает за обновление [!INCLUDE [Product short](includes/product-short.md)] датчика, если он настроен для автоматического выполнения.
 
 > [!NOTE]
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
-## <a name="azure-atp-deployment-logs"></a>Журналы развертывания Azure ATP
+## <a name="product-short-deployment-logs"></a>[!INCLUDE [Product short](includes/product-short.md)] Журналы развертывания
 
-Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. В папке установки по умолчанию ее можно найти по адресу: **C:\Users\Administrator\AppData\Local\Temp** (или по одному каталогу выше% TEMP%).
+[!INCLUDE [Product short](includes/product-short.md)]Журналы развертывания находятся во временном каталоге для пользователя, установившего продукт. В папке установки по умолчанию ее можно найти по адресу: **C:\Users\Administrator\AppData\Local\Temp** (или по одному каталогу выше% TEMP%).
 
-Журналы развертывания датчика Azure ATP:
+[!INCLUDE [Product short](includes/product-short.md)] журналы развертывания датчика:
 
-- **Azure Advanced Threat Protection Microsoft.Tri.Sensor.Deployment.Deployer_YYYYMMDDHHMMSS.log** — этот файл журнала регистрирует весь процесс развертывания датчика. Он доступен в упомянутой выше папке temp или в папке C:\Windows\Temp.
+- **Azure Advanced Threat Protection Microsoft.Tri.Sensor.Deployment.Deployer_YYYYMMDDHHMMSS.log**  — этот файл журнала регистрирует весь процесс развертывания датчика. Он доступен в упомянутой выше папке temp или в папке C:\Windows\Temp.
 
-- **Azure Advanced Threat Protection Sensor_ГГГГММДДЧЧММСС.log** — здесь перечислены действия процесса развертывания датчика Azure ATP. Основное назначение журнала — отслеживание этого процесса.
+- **Azure Advanced Threat Protection Sensor_YYYYMMDDHHMMSS. log** — в этом журнале перечислены этапы процесса развертывания [!INCLUDE [Product short](includes/product-short.md)] датчика. Его основное использование — отслеживание [!INCLUDE [Product short](includes/product-short.md)] процесса развертывания датчика.
 
-- **Azure Advanced Threat Protection Sensor_ГГГГММДДЧЧММСС_001_MsiPackage.log** — в этом файле журнала перечислены действия процесса развертывания двоичных файлов датчика Azure ATP. Его основное назначение — отслеживание развертывания этих двоичных файлов.
+- **Azure Advanced Threat Protection Sensor_YYYYMMDDHHMMSS_001_MsiPackage. log.** в этом файле журнала перечислены этапы процесса развертывания [!INCLUDE [Product short](includes/product-short.md)] двоичных файлов датчика. Его основное использование заключается в отслеживании развертывания [!INCLUDE [Product short](includes/product-short.md)] двоичных файлов датчика.
 
 > [!NOTE]
 > Помимо упомянутых здесь журналов развертывания, есть и другие журналы, имя которых начинается с "Azure Advanced Threat Protection", которые могут содержать дополнительные сведения о процессе развертывания.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также:
 
-- [Предварительные требования к Azure ATP](prerequisites.md)
-- [Планирование производительности Azure ATP](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] Планирование ресурсов](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

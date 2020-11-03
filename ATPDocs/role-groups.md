@@ -1,6 +1,6 @@
 ---
-title: Группы ролей Azure Advanced Threat Protection для управления доступом
-description: Руководство по работе с группами ролей Azure ATP.
+title: Защитник Майкрософт для групп ролей удостоверений для управления доступом
+description: Руководство по работе с защитником Майкрософт для групп ролей удостоверений.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -9,39 +9,38 @@ ms.date: 02/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d66d5c5af5721d94cb834307bb5a5ebee28848fc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 269343e6cdc5ceba875d5b6de1c740415a862eca
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910026"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275301"
 ---
-# <a name="azure-atp-role-groups"></a>Группы ролей Azure ATP
+# <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] группы ролей
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP обеспечивает безопасность на основе ролей для защиты данных в соответствии с конкретными требованиями безопасности и соответствия требованиям организации. Azure ATP поддерживает три отдельные роли: администраторы, пользователи и наблюдатели.
+[!INCLUDE [Product long](includes/product-long.md)] обеспечивает безопасность на основе ролей для защиты данных в соответствии с потребностями Организации в обеспечении безопасности и соответствия требованиям. [!INCLUDE [Product short](includes/product-short.md)] Поддержка трех отдельных ролей: Администраторы, пользователи и средства просмотра.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-Группы ролей позволяют управлять доступом к Azure ATP. С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье описано, как управлять доступом и выполнять авторизацию ролей Azure ATP, что поможет вам начать использовать группы ролей в Azure ATP.
+Группы ролей включают управление доступом для [!INCLUDE [Product short](includes/product-short.md)] . С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье объясняется управление доступом, авторизация ролей и приводятся сведения о [!INCLUDE [Product short](includes/product-short.md)] работе с группами ролей в [!INCLUDE [Product short](includes/product-short.md)] .
 
 > [!NOTE]
-> Любой глобальный администратор или администратор безопасности в Azure Active Directory клиента автоматически является администратором Azure ATP.
+> Любой глобальный администратор или администратор безопасности на Azure Active Directory клиента автоматически является [!INCLUDE [Product short](includes/product-short.md)] администратором.
 
-## <a name="accessing-the-azure-atp-portal"></a>Доступ к порталу Azure ATP
+## <a name="accessing-the-product-short-portal"></a>Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу
 
-Доступ к порталу Azure ATP (portal.atp.azure.com) имеет только пользователь Azure AD с ролью глобального администратора или администратора безопасности. После входа на портал с необходимой ролью можно создать свой экземпляр Azure ATP. Служба Azure ATP создает три группы безопасности в клиенте Azure Active Directory: администраторы, пользователи и читатели.
+Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу (Portal.ATP.Azure.com) может осуществлять только пользователь Azure AD, имеющий роль каталога глобального администратора или администратора безопасности. После ввода на портале требуемой роли можно создать [!INCLUDE [Product short](includes/product-short.md)] экземпляр. [!INCLUDE [Product short](includes/product-short.md)] служба создает три группы безопасности в клиенте Azure Active Directory: Администраторы, пользователи и зрители.
 
 > [!NOTE]
-> Доступ к порталу Azure ATP предоставляется только пользователям, входящим в группы безопасности Azure ATP в Azure Active Directory, а также глобальным администраторам и администраторам безопасности клиента.
+> Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу предоставляется только пользователям в пределах [!INCLUDE [Product short](includes/product-short.md)] группы безопасности в пределах Azure Active Directory, а также глобальным администраторам и администраторов безопасности пользователи клиента.
 
-## <a name="types-of-azure-atp-security-groups"></a>Типы групп безопасности Azure ATP
+## <a name="types-of-product-short-security-groups"></a>Типы [!INCLUDE [Product short](includes/product-short.md)] групп безопасности
 
-В Azure ATP существует три типа групп безопасности: администраторы *(имя экземпляра)* Azure ATP, пользователи *(имя экземпляра)* Azure ATP и читатели *(имя экземпляра)* Azure ATP. В следующей таблице описывается тип доступа на портал Azure ATP для каждой из ролей. В зависимости от назначенной роли некоторые экраны и пункты меню на портале Azure ATP могут быть недоступны пользователям, как описано в таблице:
+[!INCLUDE [Product short](includes/product-short.md)] предоставляет три типа групп безопасности: "Администраторы Azure ATP *(имя экземпляра)* ", "Пользователи Azure ATP *(имя экземпляра)"* и "средства просмотра Azure ATP *(имя экземпляра)* ". В следующей таблице описывается тип доступа на [!INCLUDE [Product short](includes/product-short.md)] портале, доступный для каждой роли. В зависимости от назначенной роли различные экраны и параметры меню на [!INCLUDE [Product short](includes/product-short.md)] портале недоступны для этих пользователей следующим образом.
 
 |Действие |Администраторы Azure ATP *(имя экземпляра)*|Пользователи Azure ATP *(имя экземпляра)*|Средства просмотра Azure ATP *(имя экземпляра)*|
 |----|----|----|----|
@@ -49,28 +48,28 @@ Azure ATP обеспечивает безопасность на основе р
 |Изменение состояния оповещений системы безопасности (открыть повторно, закрыть, исключить, игнорировать)|Доступно|Доступно|Недоступно|
 |Удалить экземпляр|Доступно|Недоступно|Недоступно|
 |Загрузка отчета|Доступно|Доступно|Доступно|
-|Вход|Доступно|Доступно|Доступно|
+|Имя входа|Доступно|Доступно|Доступно|
 |Передача или экспорт оповещений системы безопасности (по электронной почте, посредством ссылки или путем предоставления сведений для скачивания)|Доступно|Доступно|Доступно|
-|Обновление конфигурации ATP для обновлений|Доступно|Недоступно|Недоступно|
-|Обновление конфигурации ATP для тегов сущностей (конфиденциальный и Honeytoken)|Доступно|Доступно|Недоступно|
-|Обновление конфигурации ATP для исключений|Доступно|Доступно|Недоступно|
-|Обновление конфигурации ATP для языка|Доступно|Доступно|Недоступно|
-|Обновление конфигурации ATP для уведомлений (адрес электронной почты и системный журнал)|Доступно|Доступно|Недоступно|
-|Обновление конфигурации ATP для обнаружения предварительной версии|Доступно|Доступно|Недоступно|
-|Обновление конфигурации ATP для запланированных отчетов|Доступно|Доступно|Недоступно|
-|Обновление конфигурации Azure ATP для источников данных (службы каталога, SIEM, VPN WD-ATP)|Доступно|Недоступно|Недоступно|
-|Обновление конфигурации Azure ATP для датчиков (скачать, повторно создать ключ, настроить, удалить)|Доступно|Недоступно|Недоступно|
+|Обновление [!INCLUDE [Product short](includes/product-short.md)] конфигурации — обновления|Доступно|Недоступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — Теги сущностей (конфиденциальные и honeytoken)|Доступно|Доступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — исключения|Доступно|Доступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — язык|Доступно|Доступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — уведомления (электронная почта и системный журнал)|Доступно|Доступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — определения предварительной версии|Доступно|Доступно|Недоступно|
+|Обновление [!INCLUDE [Product short](includes/product-short.md)] конфигурации — запланированные отчеты|Доступно|Доступно|Недоступно|
+|[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — источники данных (службы каталогов, SIEM, VPN WD-ATP)|Доступно|Недоступно|Недоступно|
+|Обновление [!INCLUDE [Product short](includes/product-short.md)] конфигурации. датчики (скачивание, повторное создание ключа, Настройка, удаление)|Доступно|Недоступно|Недоступно|
 |Просмотр профилей сущностей и оповещений системы безопасности|Доступно|Доступно|Доступно|
 
-Если пользователь обращается к странице, недоступной для его группы, Azure ATP перенаправляет его на страницу неавторизованного доступа.
+Когда пользователи пытаются получить доступ к странице, недоступной для их группы ролей, они перенаправляются на [!INCLUDE [Product short](includes/product-short.md)] несанкционированную страницу.
 
 ## <a name="add-and-remove-users"></a>Добавление и удаление пользователей
 
-В качестве основы для групп ролей Azure ATP использует группы безопасности Azure AD. Управление группами ролей осуществляется из [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups) . Добавлять в группы безопасности или удалять из этих групп можно только пользователей Azure Active Directory.
+[!INCLUDE [Product short](includes/product-short.md)] использует группы безопасности Azure AD в качестве базиса для групп ролей. Управлять группами ролей можно на [странице Управление группами](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups). Добавлять в группы безопасности или удалять из этих групп можно только пользователей Azure Active Directory.
 
 ## <a name="see-also"></a>См. также:
 
-- [Средство изменения размера ATP](https://aka.ms/aatpsizingtool)
-- [Архитектура ATP](architecture.md)
-- [Установка Azure ATP](install-step1.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
+- [[!INCLUDE [Product short](includes/product-short.md)] AHA](architecture.md)
+- [Взнос [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

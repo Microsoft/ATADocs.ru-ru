@@ -1,23 +1,22 @@
 ---
-title: Оценка путей бокового смещения с наибольшим риском в Расширенной защите от угроз Azure
-description: В этой статье представлен обзор отчета об оценке состояния безопасности удостоверений Azure ATP, который сообщает о конфиденциальных сущностях с путями бокового смещения, несущими наибольший риск.
+title: Оценки угрожаемый бокового смещения в защитнике Майкрософт для проверки путей перемещения
+description: В этой статье приводится обзор защитника Майкрософт для конфиденциальных сущностей с учетом угрожаемый бокового смещения перемещение путей для оценки безопасности.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 04b1cefbb1c03d3dfe38c743b2a910a97664d01e
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: df369b2a718b1aa2cb552bb42712a6b36275e2ee
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913154"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276683"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>Оценка безопасности: пути бокового смещения с максимальным риском
 
@@ -25,11 +24,11 @@ ms.locfileid: "90913154"
 
 ## <a name="what-are-risky-lateral-movement-paths"></a>Что такое рискованные пути бокового смещения?
 
-Azure ATP постоянно отслеживает вашу среду, чтобы выявлять **конфиденциальные** учетные записи с путями бокового смещения, создающими максимальный риск для безопасности, и сообщает об этих учетных записях, помогая вам держать среду под контролем. Пути считаются рискованными, если они затрагивают как минимум три неконфиденциальные учетные записи, создающие возможность кражи учетных данных **конфиденциальной** записи злоумышленниками.
+[!INCLUDE [Product long](includes/product-long.md)] Постоянное отслеживание среды для определения **конфиденциальных** учетных записей с путями перемещения угрожаемый бокового смещения, которые представляют угрозу безопасности, и отчеты об этих учетных записях для помощи в управлении средой. Пути считаются рискованными, если они затрагивают как минимум три неконфиденциальные учетные записи, создающие возможность кражи учетных данных **конфиденциальной** записи злоумышленниками.
 
 Дополнительные сведения о путях бокового смещения:
 
-- [Пути бокового смещения Azure ATP](use-case-lateral-movement-path.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] Пути перемещения бокового смещения (Лмпс)](use-case-lateral-movement-path.md)
 - [Боковое смещение на сайте MITRE ATT&CK](https://attack.mitre.org/tactics/TA0008/)
 
 ## <a name="what-risk-do-risky-lateral-movement-paths-pose"></a>Какой риск несут пути бокового смещения?
@@ -43,7 +42,7 @@ Azure ATP постоянно отслеживает вашу среду, что
 ## <a name="how-do-i-use-this-security-assessment"></a>Как использовать эту оценку безопасности?
 
 1. Узнать, какие из ваших **конфиденциальных** учетных записей имеют рискованные пути бокового движения, можно в таблице отчета.
-    ![Обзор наиболее затронутых сущностей и создание плана действий](media/atp-cas-isp-riskiest-lmp-1.png)
+    ![Обзор наиболее затронутых сущностей и создание плана действий](media/cas-isp-riskiest-lmp-1.png)
 1. Примите необходимые меры:
     - Удалите сущность из группы, как указано в рекомендации.
     - Удалите разрешения локального администратора для сущности с устройства, указанного в рекомендации.
@@ -56,5 +55,5 @@ Azure ATP постоянно отслеживает вашу среду, что
 
 ## <a name="see-also"></a>См. также
 
-- [Фильтрация действий Azure ATP в Cloud App Security](activities-filtering-mcas.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

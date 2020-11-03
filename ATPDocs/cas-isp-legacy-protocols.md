@@ -1,23 +1,22 @@
 ---
-title: Оценка состояния безопасности удостоверений Расширенной защиты от угроз Azure с устаревшими протоколами
-description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений в устаревших протоколах Azure ATP.
+title: Microsoft Defender для удостоверения устаревших протоколов Identity Оценка безопасности
+description: В этой статье приводятся общие сведения о защитнике Майкрософт для устаревшего отчета об оценке уровня безопасности для идентификации устаревших протоколов.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3465df4f9d932bd1b278971848ca59a592abed71
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 223ae21d15ecc15523c3670062aa6a2502281738
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913200"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276704"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов
 
@@ -46,7 +45,7 @@ ms.locfileid: "90913200"
 
 1. Используйте таблицу отчета, чтобы определить, какие из основных обнаруженных сущностей используют устаревшие протоколы.
 
-    ![Запрет использования устаревших протоколов](media/atp-cas-isp-legacy-protocols-2.png)
+    ![Запрет использования устаревших протоколов](media/cas-isp-legacy-protocols-2.png)
 1. Выполните с этими сущностями необходимые действия для обнаружения зависимостей.
 1. Прекратите использование устаревших протоколов и со временем [отключите их полностью](/archive/blogs/miriamxyra/stop-using-lan-manager-and-ntlmv1).
 1. [Устраните уязвимость MIC 2 и прекратите использование клиентов LMv2](https://www.preempt.com/blog/active-directory-ntlm-attacks/).
@@ -56,5 +55,5 @@ ms.locfileid: "90913200"
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
-- [Фильтрация действий Azure ATP в Cloud App Security](activities-filtering-mcas.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

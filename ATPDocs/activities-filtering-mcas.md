@@ -1,56 +1,55 @@
 ---
-title: Фильтрация действий и политики Расширенной защиты от угроз Azure в Microsoft Cloud App Security
-description: Общие сведения о фильтрации действий и политиках Azure ATP в Microsoft Cloud App Security.
+title: Фильтрация и политики в защитнике Майкрософт для действий с удостоверениями в Microsoft Cloud App Security
+description: Обзор защитника Майкрософт для фильтрации и политик действий идентификации с помощью Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/01/2019
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cd30fac510bd291c78eb668d9540cd6733efc704
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: e20bbb73e916c9ea7139ac17a59cd7de2f1a08a4
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912111"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276927"
 ---
-# <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>Фильтрация действий и создание политик действий с помощью Azure ATP в Microsoft Cloud App Security
+# <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>Использование фильтров действий и создание политик действий с помощью [!INCLUDE [Product long](includes/product-long.md)] в Microsoft Cloud App Security
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Эта статья призвана помочь вам понять, как фильтровать действия Azure ATP и создавать для них политики с помощью Microsoft Cloud App Security.
+Эта статья поможет вам понять, как фильтровать и создавать политики действий [!INCLUDE [Product short](includes/product-short.md)] с помощью Microsoft Cloud App Security.
 
-Дополнительные сведения о том, как выполнить интеграцию, см. в статье об [интеграции Azure ATP в Cloud App Security](/cloud-app-security/aatp-integration).
+Дополнительные сведения о том, как выполнить интеграцию, см. [ [!INCLUDE [Product short](includes/product-short.md)] в разделе интеграция с Cloud App Security](/cloud-app-security/aatp-integration).
 
-Использование Azure ATP с Microsoft Cloud App Security позволяет анализировать действия и получать оповещения на основе User and Entity Behavior Analytics (UEBA) — аналитики поведения пользователей и сущностей. С таким решением вы можете обнаруживать в своей компании самые рискованные действия, использовать комплексную оценку приоритета для изучения, а также фильтровать действия и настраивать политики действий.
+Использование [!INCLUDE [Product short](includes/product-short.md)] с Microsoft Cloud App Security предлагает анализ действий и оповещения на основе анализа поведения пользователей и сущностей (уеба), определение поведения угрожаемый на предприятии, предоставление комплексной оценки приоритета расследования, а также фильтрацию действий и настраиваемые политики действий.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы получить все возможности изучения поведения пользователей в гибридной среде, вам понадобится следующее:
 
 - Действительная лицензия для Microsoft Cloud App Security
-- Действующая лицензия на Azure ATP, подключенную к вашему экземпляру Active Directory.
+- Действительная лицензия для [!INCLUDE [Product long](includes/product-long.md)] подключения к экземпляру Active Directory
 
 >[!NOTE]
->Если у вас нет подписки на Cloud App Security, вы все еще можете изучать оповещения Azure ATP и выполнять подробный обзор поведения пользователей и их локальных управляемых действий на портале Cloud App Security, тем не менее аналитические сведения, связанные с облачными приложениями, останутся недоступными.
+>Если у вас нет подписки на Cloud App Security, вы можете использовать портал Cloud App Security для изучения [!INCLUDE [Product short](includes/product-short.md)] оповещений и глубокого исследования пользователей и их локальных управляемых действий, однако аналитические данные, связанные с облачными приложениями, останутся недоступными.
 
-## <a name="filter-azure-atp-activities-in-cloud-app-security"></a>Фильтрация действий Azure ATP в Cloud App Security
+## <a name="filter-product-short-activities-in-cloud-app-security"></a>Фильтрация [!INCLUDE [Product short](includes/product-short.md)] действий в Cloud App Security
 
-Доступ к действиям Azure ATP можно получить из основного меню **Исследовать** Cloud App Security, выбрав подменю **Журнал действий**, или из меню **Оповещения**, где действия можно посмотреть по состоянию, категории, уровню серьезности, приложению, имени пользователя или политике.
+[!INCLUDE [Product short](includes/product-short.md)] доступ к действиям можно получить из главного меню Cloud App Security **исследовать** , выбрав подменю **журнала действий** или меню **оповещения** , указав состояние, категорию, серьезность, приложение, имя пользователя или политика.
 
-Чтобы получить доступ к действиям Azure ATP по пользователям:
+Для доступа к [!INCLUDE [Product short](includes/product-short.md)] действиям по пользователям:
 
 1. Отфильтруйте очередь **Оповещения** с использованием поля "Имя пользователя".
-    ![Фильтрация оповещений по имени пользователя](media/atp-mcas-alerts-queue.png)
-1. Щелкните имя пользователя для какого-либо оповещения в полученном списке, чтобы открыть **страницу пользователя**, поведение которого нужно изучить.
+    ![Фильтрация оповещений по имени пользователя](media/mcas-alerts-queue.png)
+1. Щелкните имя пользователя для какого-либо оповещения в полученном списке, чтобы открыть **страницу пользователя** , поведение которого нужно изучить.
 
 1. Отфильтруйте действия пользователя, используя доступные поля, или добавьте новое правило фильтра с помощью кнопки +.
-    ![Фильтрация действий пользователя](media/atp-mcas-activity-filter.png)
+    ![Фильтрация действий пользователя](media/mcas-activity-filter.png)
 
 ## <a name="create-activity-policies-in-cloud-app-security"></a>Создание политик действий в Cloud App Security
 
@@ -59,11 +58,11 @@ ms.locfileid: "90912111"
 Чтобы создать политику действия:
 
 1. На любой странице **Журнала действий** примените фильтр (например, приложение, имя пользователя, тип действия и т. д.).
-    - Для фильтрации действий из Azure ATP выберите **Active Directory** в фильтре приложений.
-    ![Создание политики действия](media/atp-mcas-create-new-policy.png)
+    - Чтобы выполнить фильтрацию по действиям [!INCLUDE [Product short](includes/product-short.md)] , выберите параметр **Active Directory** в фильтре приложения.
+    ![Создание политики действия](media/mcas-create-new-policy.png)
 1. Нажмите кнопку **Новая политика из поиска**.
 1. Добавьте **имя политики**.
-    ![Создание политики действия — шаг 2](media/atp-mcas-create-policy.png)
+    ![Создание политики действия — шаг 2](media/mcas-create-policy.png)
 1. Добавьте **описание** политики.
 1. Назначьте **серьезность** политики.
 1. Выберите **категорию** политики.
@@ -77,4 +76,4 @@ ms.locfileid: "90912111"
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)!
+У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!

@@ -1,6 +1,6 @@
 ---
-title: Расширенная защита от угроз Azure в Microsoft Cloud App Security
-description: Обзор возможностей Azure ATP в Microsoft Cloud App Security.
+title: Защитник Майкрософт для идентификации в Microsoft Cloud App Security
+description: Обзор защитника Майкрософт для функций идентификации в Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -11,97 +11,98 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c1c3b18606b38902217a320663ef91191e34f185
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 5051900ef8eb21f85a4f31723f455d3ae18ff36e
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910154"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275072"
 ---
-# <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>Использование Azure ATP с Microsoft Cloud App Security
+# <a name="using-product-long-with-microsoft-cloud-app-security"></a>Использование [!INCLUDE [Product long](includes/product-long.md)] с Microsoft Cloud App Security
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Эта статья призвана помочь вам узнать о возможностях расширенного изучения и переходить по ним при использовании портала Microsoft Cloud App Security с Azure ATP.
+Эта статья поможет вам понять и проанализировать улучшенное исследование при использовании Microsoft Cloud App Security портала с [!INCLUDE [Product long](includes/product-long.md)] .
 
-Получая доступ к Azure ATP с помощью портала Microsoft Cloud App Security при использовании имеющихся локальных обнаружений и анализов аномального поведения, вы получаете дополнительную возможность выявлять утечку конфиденциальных данных в предприятии и отправлять оповещения об этом, а также отфильтровывать действия и создавать ценные политики. Это гибридное предложение анализирует действия и оповещения на основе анализа поведения пользователей и сущностей, чтобы выявить схемы опасного поведения, и предоставляет оценку приоритета для изучения, чтобы оптимизировать реагирование на инциденты для скомпрометированных удостоверений.
+Благодаря использованию существующих локальных обнаружений и анализа аномальных поведений доступ [!INCLUDE [Product short](includes/product-short.md)] с помощью Microsoft Cloud App Security портала обеспечивает возможность обнаружения и оповещения о конфиденциальных данных, утечканых на предприятии, а также действия фильтров и создание политик с поддержкой действий. Это гибридное предложение анализирует действия и оповещения на основе анализа поведения пользователей и сущностей, чтобы выявить схемы опасного поведения, и предоставляет оценку приоритета для изучения, чтобы оптимизировать реагирование на инциденты для скомпрометированных удостоверений.
 
 В этой статье рассматриваются следующие темы:
 
 > [!div class="checklist"]
 >
 > - Обзор службы
-> - новые способы доступа к Azure ATP;
+> - Новые способы доступа [!INCLUDE [Product short](includes/product-short.md)]
 > - лицензирование необходимых компонентов;
-> - где найти отслеживаемые действия Azure ATP в Cloud App Security.
+> - Где найти [!INCLUDE [Product short](includes/product-short.md)] Отслеживание действий в Cloud App Security
 
 ## <a name="service-overview"></a>Обзор службы
 
-При интеграции с Azure ATP на портале Cloud App Security предоставляются оповещения и рекомендации от:
+При интеграции с [!INCLUDE [Product short](includes/product-short.md)] портал Cloud App Security предоставляет оповещения и аналитические сведения из:
 
 - Решение Microsoft Cloud App Security, идентифицирующее атаки при работе в облаке, поддерживает не только продукты Майкрософт, но и сторонние приложения.
-- Решение "Расширенная защита от угроз Azure", использующее машинное обучение и поведенческую аналитику для обнаружения атак в локальных сетях.
+- [!INCLUDE [Product long](includes/product-long.md)], которая использует машинное обучение и аналитику поведения для обнаружения атак по локальной сети.
 - Защита идентификации Azure Active Directory позволяет выявить и предотвратить риски идентификации, связанные с пользователями и их учетными данными, при работе в облачных приложениях.
 
-## <a name="access-azure-atp"></a>Доступ к Azure ATP
+## <a name="access-product-short"></a>Имеет [!INCLUDE [Product short](includes/product-short.md)]
 
-Продолжайте использовать Azure ATP на портале Azure ATP или просматривайте оповещения Azure ATP и оценку удостоверений на портале Microsoft Cloud App Security. В любом рабочем процессе задачи установки и настройки Azure ATP по-прежнему обрабатываются на портале Azure ATP.
+Нажмите, чтобы продолжить использование на [!INCLUDE [Product short](includes/product-short.md)] [!INCLUDE [Product short](includes/product-short.md)] портале, или можно получить доступ к [!INCLUDE [Product short](includes/product-short.md)] оповещениям и оценкам удостоверений с помощью портала Microsoft Cloud App Security. В любом рабочем процессе [!INCLUDE [Product short](includes/product-short.md)] задачи настройки и настройки продолжают обрабатываться на [!INCLUDE [Product short](includes/product-short.md)] портале.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы получить все возможности изучения поведения пользователей в гибридной среде, вам понадобится следующее:
 
 - Действительная лицензия для Microsoft Cloud App Security
-- Действующая лицензия на Azure ATP, подключенную к вашему экземпляру Active Directory.
+- Действительная лицензия для [!INCLUDE [Product long](includes/product-long.md)] подключения к экземпляру Active Directory
 
 >[!NOTE]
 >
-> - Если у вас нет подписки на Cloud App Security, вы по-прежнему сможете использовать портал Cloud App Security для изучения оповещений Azure ATP и выполнять подробный обзор поведения пользователей и их локальных управляемых действий, но не получите связанные аналитические сведения из облачных приложений.
-> - Администраторам Azure ATP могут потребоваться новые разрешения для доступа к Cloud App Security. Дополнительные сведения о назначении разрешений Cloud App Security см. в разделе [Управление доступом администратора](/cloud-app-security/manage-admins).
+> - Если у вас нет подписки на Cloud App Security, вы по-прежнему сможете использовать портал Cloud App Security для изучения [!INCLUDE [Product short](includes/product-short.md)] оповещений и углубленного исследования пользователей и их локальных управляемых действий, но вы не будете получать связанные данные из облачных приложений.
+> - [!INCLUDE [Product short](includes/product-short.md)] администраторам могут потребоваться новые разрешения для доступа к Cloud App Security. Дополнительные сведения о назначении разрешений Cloud App Security см. в разделе [Управление доступом администратора](/cloud-app-security/manage-admins).
 
-Сведения о том, как быстро включить Azure ATP в Cloud App Security, см. в статье об [интеграции Azure ATP](/cloud-app-security/aatp-integration).
+Дополнительные [ [!INCLUDE [Product short](includes/product-short.md)] ](/cloud-app-security/aatp-integration) сведения о том, как быстро включить [!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security, см. в разделе Интеграция.
 
-## <a name="azure-atp-in-cloud-app-security"></a>Azure ATP в Cloud App Security
+## <a name="product-short-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security
 
 Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
 
-Получайте доступ к данным и новым гибридным возможностям Azure ATP в оповещениях, действиях и на страницах пользователей Cloud App Security.
+Получите доступ к [!INCLUDE [Product short](includes/product-short.md)] данным и новым гибридным функциям в Cloud App Security оповещениях, действиях и страницах пользователей.
 
 ## <a name="alerts"></a>видны узлы
 
-Оповещения Azure ATP отображаются в очереди **Оповещения** Cloud App Security. Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. Оповещения Azure ATP фильтруются через фильтр приложений **Active Directory**.
+[!INCLUDE [Product short](includes/product-short.md)] оповещения отображаются в очереди Cloud App Security **предупреждения** . Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. [!INCLUDE [Product short](includes/product-short.md)] оповещения фильтруются с помощью фильтра приложений для **Active Directory**.
 
 ## <a name="alert-management"></a>Управление оповещениями
 
-При использовании Azure ATP с Cloud App Security закрытие предупреждений в одной службе не закрывает их автоматически в другой. Определите, где вы будете обрабатывать оповещения, чтобы не повторять одни и те же действия.
+При использовании [!INCLUDE [Product short](includes/product-short.md)] с Cloud App Security Закрытие оповещений в одной службе не будет автоматически закрыто в другой службе. Определите, где вы будете обрабатывать оповещения, чтобы не повторять одни и те же действия.
 
 ## <a name="siem-notification"></a>Уведомление SIEM
 
-Если обе службы (Azure ATP и Cloud App Security) сейчас настроены на отправку уведомлений об оповещениях в SIEM, то после включения интеграции Azure ATP в Cloud App Security вы начнете получать в SIEM повторяющиеся уведомления об одном оповещении. Каждая служба будет выдавать свое оповещение со своим идентификатором. Чтобы избежать дублирования и путаницы, решите, в какой службе вы хотите обрабатывать оповещения, и остановите отправку в SIEM уведомлений из другой службы.
+Если в [!INCLUDE [Product short](includes/product-short.md)] настоящее время службы (и Cloud App Security) настроены для отправки уведомлений о предупреждениях в SIEM, то после включения [!INCLUDE [Product short](includes/product-short.md)] интеграции в Cloud App Security вы начнете получать дублирующиеся SIEM уведомления для одного и того же оповещения. Каждая служба будет выдавать свое оповещение со своим идентификатором. Чтобы избежать дублирования и путаницы, решите, в какой службе вы хотите обрабатывать оповещения, и остановите отправку в SIEM уведомлений из другой службы.
 
 ## <a name="activities"></a>Действия
 
-Оповещения Azure ATP отображаются в **журнале действий** Cloud App Security. Дополнительные параметры и возможности фильтрации действий доступны только при просмотре оповещений в Cloud App Security. Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](activities-filtering-mcas.md).
+[!INCLUDE [Product short](includes/product-short.md)] оповещения отображаются в **журнале действий** Cloud App Security. Дополнительные параметры и возможности фильтрации действий доступны только при просмотре оповещений в Cloud App Security. Сведения о том, как фильтровать и создавать новые политики действий, см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] действия, использующие Microsoft Cloud App Security](activities-filtering-mcas.md) .
 
 ## <a name="user-pages"></a>Страницы пользователя
 
 Страницы пользователя содержат [оценку приоритета для изучения](/cloud-app-security/tutorial-ueba) по каждому пользователю и журнал всех действий.
 
 Чтобы получить доступ к странице системного пользователя:
+
 1. Откройте **Оповещения** в главном меню.
 1. Выберите и отфильтруйте очередь оповещений для конкретного пользователя с помощью поля **Имя пользователя**.
 
- или диспетчер конфигурации служб
+ or
 
 1. Из меню **Исследовать** выберите **Журнал действий**.
 1. Отфильтруйте очередь журнала действий по пользователям.
 
-    ![Журнал действий](media/atp-mcas-activity-filter.png)
+    ![Журнал действий](media/mcas-activity-filter.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
-Дополнительные сведения о фильтрации и создании новых политик действий см. в статье о [действиях Azure ATP с использованием Microsoft Cloud App Security](activities-filtering-mcas.md).
+Сведения о том, как фильтровать и создавать новые политики действий, см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] действия, использующие Microsoft Cloud App Security](activities-filtering-mcas.md) .
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)!
+У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!

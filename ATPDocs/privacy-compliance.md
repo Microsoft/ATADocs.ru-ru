@@ -1,25 +1,23 @@
 ---
-title: Политика конфиденциальности персональных данных Расширенной защиты от угроз Azure
-description: В этой статье содержатся ссылки на сведения о том, как удалить персональные данные из Azure ATP.
-keywords: ''
+title: Политика Microsoft Defender для личных данных удостоверения
+description: Ссылки на сведения об удалении частной информации и персональных данных из защитника Майкрософт для идентификации.
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 06/21/2020
+manager: shsagir
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
-ms.reviewer: ophirp
+ms.reviewer: ophir
 ms.suite: ems
-ms.openlocfilehash: 8cfd442e05827811c929f5d6e89ab03dad8a3367
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 2ed900554e78f9792acf11972f519d2b5edae3a8
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912404"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274582"
 ---
-# <a name="azure-atp-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в Azure ATP
+# <a name="product-long-data-security-and-privacy"></a>[!INCLUDE [Product long](includes/product-long.md)] безопасность и конфиденциальность данных
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
@@ -27,34 +25,34 @@ ms.locfileid: "90912404"
 
 ## <a name="search-for-and-identify-personal-data"></a>Поиск и идентификация персональных данных
 
-В Azure Advanced Threat Protection вы можете просмотреть идентифицируемые персональные данные на [портале Azure ATP](workspace-portal.md), используя [панель поиска](workspace-portal.md#search-bar).
+С [!INCLUDE [Product short](includes/product-short.md)] помощью [панели поиска](workspace-portal.md#search-bar)можно просматривать идентифицируемые персональные данные с [ [!INCLUDE [Product long](includes/product-long.md)] портала](workspace-portal.md) .
 
 Вы можете выполнить поиск конкретного пользователя или компьютера. Щелкнув сущность, вы попадете на [страницу профиля](entity-profiles.md) пользователя или компьютера. В профиле содержатся подробные сведения о сущности из Active Directory, включая сетевую активность, связанную с этой сущностью, и ее историю.
 
-Персональные данные Azure ATP собираются из Active Directory через датчик Azure ATP и сохраняются в серверной базе данных.
+[!INCLUDE [Product short](includes/product-short.md)] личные данные собираются из Active Directory с помощью [!INCLUDE [Product short](includes/product-short.md)] датчика и хранятся в серверной базе данных.
 
 ## <a name="update-personal-data"></a>Обновление персональных данных
 
-Персональные данные пользователя Azure ATP являются производными от объекта пользователя в корпоративном каталоге Active Directory. По этой причине все изменения, внесенные в профиль пользователя в корпоративном каталоге AD, отражаются в Azure ATP.
-
+[!INCLUDE [Product short](includes/product-short.md)]личные данные пользователя получаются из объекта пользователя в Active Directory организации. Поэтому изменения, вносимые в профиль пользователя в AD, отражаются в [!INCLUDE [Product short](includes/product-short.md)] .
 
 ## <a name="delete-personal-data"></a>Удаление персональных данных
 
-- После удаления пользователя из Active Directory организации Azure ATP автоматически удаляет профиль пользователя и любую связанную с ним сетевую активность за последний год. Вы также можете [удалить](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) любые предупреждения безопасности, содержащие персональные данные.
+- После удаления пользователя из Active Directory организации [!INCLUDE [Product short](includes/product-short.md)] автоматически удаляет профиль пользователя и все связанные действия сети в течение года. Вы также можете [удалить](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) любые предупреждения безопасности, содержащие персональные данные.
 
-- Рекомендуется задать разрешения **только для чтения** в контейнере **Удаленные объекты**. Дополнительные сведения о том, как служба Azure ATP использует разрешения для контейнера **удаленных объектов, см. в соответствующих рекомендациях статьи [Предварительные требования к Azure ATP](prerequisites.md#before-you-start).
+- Рекомендуется задать разрешения **только для чтения** в контейнере **Удаленные объекты**. Дополнительные сведения о том, как служба разрешает доступ к контейнеру "удаленные объекты" [!INCLUDE [Product short](includes/product-short.md)] , см. в статье рекомендации по использованию контейнера удаленных объектов в [ [!INCLUDE [Product short](includes/product-short.md)] предварительных требованиях](prerequisites.md#before-you-start).
 
 ## <a name="export-personal-data"></a>Экспорт персональных данных
 
-Azure ATP поддерживает [экспорт](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) данных, содержащихся в оповещениях системы безопасности, в Excel. Эта функция также экспортирует персональные данные.
+В [!INCLUDE [Product short](includes/product-short.md)] вы можете [экспортировать](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line) сведения об оповещениях безопасности в Excel. Эта функция также экспортирует персональные данные.
 
 ## <a name="audit-personal-data"></a>Аудит персональных данных
 
-Azure ATP реализует аудит изменений персональных данных, включая удаление и экспорт записей с персональными данными. Срок хранения журнала аудита составляет 90 дней. Аудит в Azure ATP является функцией серверной части, недоступной для клиентов.
+[!INCLUDE [Product short](includes/product-short.md)] реализует аудит изменений персональных данных, включая удаление и экспорт записей персональных данных. Срок хранения журнала аудита составляет 90 дней. Аудит в [!INCLUDE [Product short](includes/product-short.md)] — это серверная функция, которая недоступна клиентам.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- Сведения о надежности и соответствии требованиям Azure ATP см. на портале [Service Trust](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) и на сайте [соответствия GDPR Microsoft 365 Enterprise](/microsoft-365/compliance/gdpr?view=o365-worldwide&preserve-view=true).
+- Сведения о [!INCLUDE [Product short](includes/product-short.md)] доверии и соответствии требованиям см. на [портале доверия службы](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) и на [сайте соответствия Microsoft 365 корпоративный GDPR](/microsoft-365/compliance/gdpr?view=o365-worldwide&preserve-view=true).
 
-## <a name="security-and-privacy-for-azure-atp-us-government-gcc-high-customers"></a>Безопасность и конфиденциальность для клиентов US Government GCC High Azure ATP
-Дополнительные сведения о стандартах соответствия требованиям Azure ATP и расположении данных клиентов US Government GCC High см. в статье [Описание службы Enterprise Mobility + Security для государственных организаций США](/enterprise-mobility-security/solutions/ems-govt-service-description).
+## <a name="security-and-privacy-for-product-short-us-government-gcc-high-customers"></a>Безопасность и конфиденциальность для [!INCLUDE [Product short](includes/product-short.md)] государственных организаций США — GCC High
+
+Дополнительные сведения о [!INCLUDE [Product short](includes/product-short.md)] стандартах соответствия и расположении данных о клиентах для государственных организаций США от версии GCC High см. в [описании Enterprise Mobility + Security для службы США для государственных организаций](/enterprise-mobility-security/solutions/ems-govt-service-description).

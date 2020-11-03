@@ -1,23 +1,22 @@
 ---
-title: Расширенная защита от угроз Azure — оценка небезопасных атрибутов журнала ИД безопасности
-description: В этой статье представлен обзор отчетов об оценке состояния безопасности удостоверений сущностей Azure ATP с небезопасными атрибутами журнала ИД безопасности.
+title: Оценка атрибутов журнала незащищенных идентификаторов SID в защитнике Майкрософт
+description: В этой статье приводятся общие сведения о защитнике Майкрософт для сущностей Identity с небезопасными атрибутами журнала идентификаторов SID отчет об оценке уровня безопасности.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7819bf79ca70068be21f0aae0b08ff920d7a1605
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 851a0c0db49a59b96a8f239a3b9a08f9e51819c5
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912747"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276606"
 ---
 # <a name="security-assessment-unsecure-sid-history-attributes"></a>Оценка безопасности: Небезопасные атрибуты журнала ИД безопасности
 
@@ -27,7 +26,7 @@ ms.locfileid: "90912747"
 
 Журнал ИД безопасности — это атрибут, поддерживающий [сценарии миграции](/previous-versions/windows/it-pro/windows-server-2003/cc779590(v=ws.10)). С каждой учетной записью пользователя связан [ИД безопасности (SID)](/windows/win32/secauthz/security-identifiers), который используется для отслеживания субъекта безопасности и доступа, предоставляемого учетной записи при ее подключении к ресурсам. Журнал ИД безопасности позволяет эффективно клонировать доступ для другой учетной записи, и его исключительно удобно использовать для обеспечения доступа пользователей при их перемещении (миграции) из одного домена в другой.
 
-Оценка проверяет учетные записи с атрибутами журнала ИД безопасности, профили Azure ATP которых подвержены риску.
+Оценка проверяет учетные записи с атрибутами журнала SID, какие [!INCLUDE [Product long](includes/product-long.md)] Профили должны быть опасными.
 
 ## <a name="what-risk-does-unsecure-sid-history-attribute-pose"></a>Какому риску подвержен небезопасный атрибут журнала ИД безопасности?
 
@@ -40,7 +39,7 @@ ms.locfileid: "90912747"
 ## <a name="how-do-i-use-this-security-assessment"></a>Как использовать эту оценку безопасности?
 
 1. С помощью таблицы отчета можно определить, какие из ваших учетных записей имеют небезопасный атрибут журнала ИД безопасности.
-    ![Обзор затронутых сущностей и создание плана действий](media/atp-cas-isp-unsecure-sid-history-attribute-1.png)
+    ![Обзор затронутых сущностей и создание плана действий](media/cas-isp-unsecure-sid-history-attribute-1.png)
 1. Выполните соответствующие действия, чтобы удалить атрибут журнала ИД безопасности из учетных записей с помощью PowerShell.
 
     1. Определите ИД безопасности в атрибуте SIDHistory учетной записи.
@@ -60,5 +59,5 @@ ms.locfileid: "90912747"
 
 ## <a name="see-also"></a>См. также
 
-- [Фильтрация действий Azure ATP в Cloud App Security](activities-filtering-mcas.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

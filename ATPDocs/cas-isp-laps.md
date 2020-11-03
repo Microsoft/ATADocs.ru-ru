@@ -1,23 +1,22 @@
 ---
-title: Расширенная защита от угроз Azure — оценка использования Microsoft LAPS
-description: В этой статье представлен обзор отчетов об оценке состояния безопасности идентификации при использовании Microsoft LAPS Azure ATP.
+title: Microsoft Defender для идентификации оценки использования Microsoft Lap
+description: В этой статье приводятся общие сведения о защитнике Майкрософт в отчете об оценке уровня безопасности для идентификации Microsoft Lap Usage.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fdc5ace86a48b78041e1a7fc8927ae24d64b00ff
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 44731f9d987eda3d87339b1502de609de9d222ed
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913210"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277559"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>Оценка безопасности: Использование Microsoft LAPS
 
@@ -37,13 +36,13 @@ LAPS упрощает управление паролями, в то же вре
 
 1. С помощью таблицы отчета можно определить, в каких из ваших доменов имеются совместимые устройства Windows, не защищенные LAPS, или пароли которых, управляемые LAPS, не изменялись за последние 60 дней.
 1. Для частично защищенных доменов выберите соответствующую строку, чтобы просмотреть список не защищенных LAPS устройств в этом домене.
-    ![Выбор домена с устройствами LAPS](media/atp-cas-isp-laps-1.png)
+    ![Выбор домена с устройствами LAPS](media/cas-isp-laps-1.png)
 1. Выполните необходимые действия на этих устройствах — загрузите, установите и настройте [Microsoft LAPS](https://go.microsoft.com/fwlink/?linkid=2104282) или устраните неполадки, используя документацию, представленную в загружаемом файле.
-    ![Исправление устройства LAPS](media/atp-cas-isp-laps-2.png)
+    ![Исправление устройства LAPS](media/cas-isp-laps-2.png)
 
 > [!NOTE]
 > Эта оценка обновляется каждые 24 часа.
 
 ## <a name="see-also"></a>См. также
 
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
