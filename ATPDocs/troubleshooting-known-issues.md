@@ -1,6 +1,6 @@
 ---
-title: Устранение известных неполадок с Azure ATP
-description: В этой статье описываются способы устранения неполадок в службе Azure ATP.
+title: Устранение известных проблем в защитнике Майкрософт
+description: В этой статье описывается, как устранять неполадки в защитнике Майкрософт для идентификации.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -9,17 +9,16 @@ ms.date: 09/07/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0136b432a170a5e45b71d189d77d7e007ca7a53
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 0cd22cad42d8933ebb36a7a7aea32d0a4cb7cdd4
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912357"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277830"
 ---
-# <a name="troubleshooting-azure-atp-known-issues"></a>Устранение известных неполадок Azure ATP
+# <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
@@ -31,11 +30,11 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Решение:**
 
-Убедитесь, что для localhost (TCP-порт 444) не заблокирован обмен данными. Дополнительные сведения о предварительных требованиях Azure ATP см. в разделе [Порты](prerequisites.md#ports).
+Убедитесь, что для localhost (TCP-порт 444) не заблокирован обмен данными. Дополнительные сведения о [!INCLUDE [Product long](includes/product-long.md)] предварительных требованиях см. в разделе [порты](prerequisites.md#ports).
 
 ## <a name="deployment-log-location"></a>Расположение журнала развертывания
 
-Журналы развертывания Azure ATP расположены во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (или на один каталог выше %temp%). См. дополнительные сведения об [устранении неполадок с ATP при использовании журналов](troubleshooting-using-logs.md).
+[!INCLUDE [Product short](includes/product-short.md)]Журналы развертывания находятся во временном каталоге пользователя, установившего продукт. Расположение установки по умолчанию: C:\Users\Administrator\AppData\Local\Temp (или на один каталог выше %temp%). Дополнительные сведения см. в разделе [Устранение неполадок [!INCLUDE [Product short](includes/product-short.md)] с помощью журналов](troubleshooting-using-logs.md) .
 
 ## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Проблема с аутентификацией прокси-сервера отображается как ошибка лицензирования
 
@@ -47,7 +46,7 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Причина**.
 
-Когда обмен данными выполняется через прокси-сервер, во время аутентификации он может отвечать на обращение датчика Azure ATP, возвращая ошибку 401 или 403 вместо ошибки 407. Датчик Azure ATP будет интерпретировать ошибку 401 или 403 как проблему с лицензированием, а не с аутентификацией прокси-сервера.
+В некоторых случаях при обмене данными через прокси-сервер во время проверки подлинности он может ответить на [!INCLUDE [Product short](includes/product-short.md)] датчик с ошибкой 401 или 403 вместо ошибки 407. [!INCLUDE [Product short](includes/product-short.md)]Датчик будет интерпретировать ошибку 401 или 403 в качестве проблемы с лицензией и не является проблемой проверки подлинности прокси-сервера.
 
 **Решение:**
 
@@ -59,11 +58,11 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Причина.**
 
-Проблема может возникать из-за ошибки конфигурации прозрачного прокси-сервера в Server Core, например когда требуемые Azure ATP корневые сертификаты не актуальны или отсутствуют.
+Эта неполадка может быть вызвана ошибкой конфигурации прозрачного прокси-сервера в Server Core, например, если корневые сертификаты, необходимые для, [!INCLUDE [Product short](includes/product-short.md)] не являются актуальными или отсутствуют.
 
 **Решение:**
 
-Выполните следующий командлет PowerShell, чтобы проверить существование доверенного корневого сертификата службы Azure ATP в системе Server Core. В следующем примере используется сертификат DigiCert Baltimore Root и DigiCert Global Root.
+Выполните следующий командлет PowerShell, чтобы убедиться, что [!INCLUDE [Product short](includes/product-short.md)] доверенный корневой сертификат службы существует на сервере Core. В следующем примере используется сертификат DigiCert Baltimore Root и DigiCert Global Root.
 
 ```powershell
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"} | fl
@@ -118,19 +117,19 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## <a name="azure-atp-sensor-nic-teaming-issue"></a>Проблема с датчиком ATP на компьютере с функцией объединения сетевых карт <a name="nic-teaming"></a>
+## <a name="product-short-sensor-nic-teaming-issue"></a>[!INCLUDE [Product short](includes/product-short.md)] проблемы с объединением сетевых адаптеров датчика <a name="nic-teaming"></a>
 
-При попытке установить датчик ATP на компьютере, настроенном с функцией объединения сетевых карт, возникает ошибка установки. Чтобы установить датчик ATP на компьютере с функцией объединения сетевых карт, следуйте приведенным ниже инструкциям:
+При попытке установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, настроенном с помощью адаптера объединения сетевых карт, возникает ошибка установки. Если вы хотите установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, где настроено объединение сетевых карт, выполните следующие действия:
 
 1. Скачайте установщик Npcap версии 0.9984 по адресу [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe).
     - Кроме того, запросите в службе техподдержки OEM-версию драйвера Npcap (который поддерживает автоматическую установку).
-    - Копии Npcap не учитываются в лицензионных ограничениях на пять копий, пять компьютеров или пять пользователей, если они установлены и используются исключительно совместно с Azure ATP. Дополнительные сведения см. в разделе [Лицензирование NPCAP](https://github.com/nmap/npcap/blob/master/LICENSE).
+    - Копии Npcap не учитываются с пятью, пятью компьютерами или пятью ограничениями на лицензирование пользователей, если они установлены и используются исключительно вместе с [!INCLUDE [Product short](includes/product-short.md)] . Дополнительные сведения см. в разделе [Лицензирование NPCAP](https://github.com/nmap/npcap/blob/master/LICENSE).
 
 Если вы еще не установили датчик:
 
 1. Удалите библиотеку WinPcap, если она установлена.
 1. Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
-    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя**, а затем выберите режим **WinPcap**.
+    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя** , а затем выберите режим **WinPcap**.
 1. Установите пакет датчика.
 
 Если вы уже установили датчик, сделайте следующее:
@@ -138,12 +137,12 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 1. Удалите датчик.
 1. Удалите WinPcap.
 1. Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
-    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя**, а затем выберите режим **WinPcap**.
+    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя** , а затем выберите режим **WinPcap**.
 1. Переустановите пакет датчика.
 
 ## <a name="multi-processor-group-mode"></a>Многопроцессорный групповой режим
 
-В операционных системах Windows 2008 R2 и 2012 датчик Azure ATP не поддерживается в многопроцессорном групповом режиме.
+Для операционных систем Windows 2008R2 и 2012 [!INCLUDE [Product short](includes/product-short.md)] датчик не поддерживается в многопроцессорном режиме группы.
 
 Возможные обходные пути:
 
@@ -151,13 +150,13 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 - Если у виртуальной машины менее 64 логических ядер и она выполняется на узле HP, для параметра BIOS **NUMA Group Size Optimization** (Оптимизация размера группы NUMA) можно изменить значение по умолчанию **Clustered** (Кластеризовано) значением **Flat** (Фиксировано).
 
-## <a name="microsoft-defender-atp-integration-issue"></a>Проблема с интеграцией ATP в Microsoft Defender
+## <a name="microsoft-defender-for-endpoint-integration-issue"></a>Проблемы с интеграцией конечных точек в защитнике Майкрософт
 
-Службу "Расширенная защита от угроз Azure" можно интегрировать с ATP в Microsoft Defender. Дополнительные сведения см. в статье [Интеграция Расширенной защиты от угроз Azure с ATP в Microsoft Defender](integrate-msde.md).
+[!INCLUDE [Product short](includes/product-short.md)] позволяет интегрироваться [!INCLUDE [Product short](includes/product-short.md)] с защитником Майкрософт для конечной точки. Дополнительные сведения см. [в разделе Интеграция [!INCLUDE [Product short](includes/product-short.md)] с защитником Майкрософт для конечных точек](integrate-mde.md) .
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>Проблема с датчиком виртуальной машины VMware
 
-Если на виртуальных машинах VMware установлен датчик Azure ATP, может появиться оповещение о работоспособности **Some network traffic is not being analyzed** (Часть сетевого трафика не анализируется). Это может происходить из-за несоответствия конфигураций в VMware.
+Если у вас есть [!INCLUDE [Product short](includes/product-short.md)] датчик на виртуальных машинах VMware, вы можете получить оповещение о работоспособности, которое **не анализирует сетевой трафик**. Это может происходить из-за несоответствия конфигураций в VMware.
 
 Чтобы решить эту проблему, выполните указанные ниже действия.
 
@@ -191,7 +190,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 **Причина**.
 
-Датчику не удалось получить назначенную учетную запись gMSA с портала Azure ATP.
+Датчику не удалось получить назначенную учетную запись gMSA с [!INCLUDE [Product short](includes/product-short.md)] портала.
 
 **Решение:**
 
@@ -199,7 +198,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>Скачиваемые отчеты не могут содержать больше 300 000 записей
 
-Azure ATP не поддерживает скачивание отчетов, содержащих больше 300 000 записей. Отчеты, в которых больше 300 000 записей, будут отображаться неполными.
+[!INCLUDE [Product short](includes/product-short.md)] не поддерживает загрузку отчетов, содержащих более 300 000 записей по каждому отчету. Отчеты, в которых больше 300 000 записей, будут отображаться неполными.
 
 **Причина**.
 
@@ -211,8 +210,8 @@ Azure ATP не поддерживает скачивание отчетов, с
 
 ## <a name="see-also"></a>См. также
 
-- [Предварительные требования к Azure ATP](prerequisites.md)
-- [Планирование производительности Azure ATP](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] Планирование ресурсов](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 35641a589571586da495c8fb28332c5d736ad67b
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: bd5facbf0cc6616a8467d0eb1b33c7603debabc8
+ms.sourcegitcommit: 8cb9839a67fce42921f7a24564fddf15e503bdea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276735"
+ms.locfileid: "93278594"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>Оценка безопасности: неактивные сущности из **конфиденциальных** групп
 
@@ -39,6 +39,7 @@ ms.locfileid: "93276735"
 ## <a name="how-do-i-use-this-security-assessment"></a>Как использовать эту оценку безопасности?
 
 1. Используйте таблицу отчета, чтобы узнать, какие из ваших конфиденциальных учетных записей неактивны.
+    ![Исправлять неактивные сущности, конфиденциально, с учетом групп](media/cas-isp-dormant-entities-sensitive-groups-1.png)
 1. Выполните необходимые действия с этими учетными записями пользователей, удалив права привилегированного доступа или саму учетную запись.
 
 > [!NOTE]
