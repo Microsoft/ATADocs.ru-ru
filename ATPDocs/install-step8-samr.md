@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e46d6b794386e21654d578f6273de8c7c8b89f2
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 9e1bfe428a466e4870613798e4af116f27d63647
+ms.sourcegitcommit: 218ba562a2a109ff456b011004530f503a4e82c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276118"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93342510"
 ---
 # <a name="configure-product-long-to-make-remote-calls-to-sam"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] для выполнения удаленных вызовов SAM
 
@@ -26,7 +26,7 @@ ms.locfileid: "93276118"
 
 ## <a name="configure-sam-r-required-permissions"></a>Настройка необходимых разрешений для SAM-R
 
-Чтобы клиенты и серверы Windows позволяли вашей [!INCLUDE [Product short](includes/product-short.md)] учетной записи выполнять действия SAM-R, необходимо внести изменения в **Групповая политика** , чтобы добавить [!INCLUDE [Product short](includes/product-short.md)] учетную запись службы в дополнение к настроенным учетным записям, перечисленным в политике **сетевого доступа** . Обязательно примените групповые политики ко всем компьютерам, кроме контроллеров домена.
+Чтобы клиенты и серверы Windows позволяли вашей [!INCLUDE [Product short](includes/product-short.md)] учетной записи выполнять действия SAM-R, необходимо внести изменения в **Групповая политика** , чтобы добавить [!INCLUDE [Product short](includes/product-short.md)] учетную запись службы в дополнение к настроенным учетным записям, перечисленным в политике **сетевого доступа** . Не забудьте применить групповые политики ко всем компьютерам, **Кроме контроллеров домена**.
 
 > [!Note]
 > Перед применением новых политик, таких как эта, важно убедиться, что среда останется защищенной и никакие изменения не затронут совместимость приложений. Для этого активируйте предлагаемые изменения и проверьте их на совместимость в режиме аудита, прежде чем вносить их в рабочую среду.
