@@ -1,27 +1,27 @@
-- name: "Документация по Azure Advanced Threat\_Protection"
+- name: "Документация по Microsoft\_Defender для удостоверений"
   href: index.yml
 - name: Обзор
   items:
-    - name: "Что такое Azure Advanced Threat\_Protection?"
+    - name: "Что такое Microsoft\_Defender для удостоверений?"
       href: what-is.md
-    - name: "Архитектура Azure\_ATP"
+    - name: Архитектура Defender для удостоверений
       href: architecture.md
-    - name: "Предварительные требования для Azure\_ATP"
+    - name: Предварительные требования для Defender для удостоверений
       href: prerequisites.md
-    - name: "Azure\_ATP для государственных организаций\_США"
+    - name: "Defender для удостоверений в государственных организациях\_США"
       href: us-govt-gcc-high.md
-    - name: "Новые возможности Azure\_ATP"
+    - name: Новые возможности Defender для удостоверений
       href: whats-new.md
 - name: Краткие руководства
   expanded: true
   items:
-    - name: создание экземпляра Azure ATP;
+    - name: Создание экземпляра Defender для удостоверений
       href: install-step1.md
     - name: Подключение к Active Directory
       href: install-step2.md
-    - name: "Скачивание пакета датчика Azure\_ATP"
+    - name: Скачивание пакета датчика Defender для удостоверений
       href: install-step3.md
-    - name: "Установка датчика Azure\_ATP"
+    - name: Установка датчика Defender для удостоверений
       href: install-step4.md
 - name: Руководства
   items:
@@ -45,9 +45,9 @@
       href: investigate-entity.md
 - name: Основные понятия
   items:
-    - name: Портал Azure ATP
+    - name: Портал Defender для удостоверений
       href: workspace-portal.md
-    - name: "Оповещения системы безопасности Azure\_ATP"
+    - name: Оповещения безопасности Defender для удостоверений
       href: suspicious-activity-guide.md
     - name: Отслеживаемые действия
       href: monitored-activities.md
@@ -61,13 +61,13 @@
       href: reports.md
     - name: Пользовательские роли
       href: role-groups.md
-    - name: "Поддержка нескольких лесов в Azure\_ATP"
+    - name: Поддержка множества лесов в Defender для удостоверений
       href: multi-forest.md
 - name: Практические руководства
   items:
-    - name: "Использование\_Microsoft Cloud App\_Security с Azure ATP"
+    - name: "Defender для удостоверений и Microsoft\_Cloud App\_Security"
       items:
-        - name: "Использование\_Azure ATP с Cloud App\_Security"
+        - name: "Использование Defender для удостоверений с Cloud\_App\_Security"
           href: mcas-integration.md
         - name: Фильтрация действий и задание политик
           href: activities-filtering-mcas.md
@@ -111,7 +111,7 @@
           href: playbook-domain-dominance.md
     - name: Основные сведения об оповещениях безопасности
       href: understanding-security-alerts.md
-    - name: "Планирование производительности Azure\_ATP"
+    - name: Планирование емкости Defender для удостоверений
       href: capacity-planning.md
     - name: Работа с оповещениями безопасности
       href: working-with-suspicious-activities.md
@@ -127,39 +127,39 @@
       href: sensor-monitoring.md
     - name: Изменение пароля для подключения к домену
       href: modifying-config-dcpassword.md
-    - name: "Настройка уведомлений Azure\_ATP"
+    - name: Настройка уведомлений Defender для удостоверений
       href: notifications.md
     - name: Оповещения о работоспособности
       items:
-        - name: "Работа с центром работоспособности Azure\_ATP"
+        - name: Центр работоспособности Defender для удостоверений
           href: health-center.md
-        - name: "Оповещения о работоспособности Azure\_ATP"
+        - name: Оповещения о работоспособности Defender для удостоверений
           href: health-alerts.md
-    - name: "Отложенное обновление датчика Azure\_ATP"
+    - name: Отложенное обновление датчика Defender для удостоверений
       href: sensor-update.md
     - name: Устранение известных неполадок
       href: troubleshooting-known-issues.md
     - name: Устранение неполадок с помощью журналов
       href: troubleshooting-using-logs.md
-    - name: "Интеграция с\_Microsoft Defender ATP"
-      href: integrate-msde.md
+    - name: "Интеграция с Microsoft\_Defender для конечной точки"
+      href: integrate-mde.md
     - name: "Интеграция\_VPN"
       href: install-step6-vpn.md
     - name: "Интеграция с\_Syslog"
       href: setting-syslog.md
     - name: Автоматическая установка
       href: silent-installation.md
-    - name: "Настройка датчика Azure\_ATP"
+    - name: Настройка датчика Defender для удостоверений
       items:
-        - name: "Настройка датчика Azure\_ATP"
+        - name: Настройка датчика Defender для удостоверений
           href: install-step5.md
         - name: "Настройка сбора данных о событиях\_Windows"
           href: configure-windows-event-collection.md
         - name: настройки прокси-сервера;
           href: configure-proxy.md
-        - name: "Настройка Azure\_ATP для выполнения удаленных вызовов SAM"
+        - name: "Настройка Defender для удостоверений на удаленные вызовы\_SAM"
           href: install-step8-samr.md
-    - name: "Настройка автономного датчика Azure\_ATP"
+    - name: Настройка автономного датчика Defender для удостоверений
       items:
         - name: Настройка зеркального отображения портов
           href: configure-port-mirroring.md
@@ -169,17 +169,17 @@
           href: configure-event-collection.md
         - name: Настройка пересылки событий Windows
           href: configure-event-forwarding.md
-    - name: Переход с ATA на Azure ATP
+    - name: "Переход на Defender для удостоверений с\_ATA"
       items:
-        - name: Переход с Advanced Threat Analytics (ATA) на Azure ATP
+        - name: "Переход с Advanced\_Threat Analytics\_(ATA) на Defender для удостоверений"
           href: migrate-from-ata-overview.md
 - name: Справочные сведения
   items:
     - name: "Справочник по журналу\_SIEM"
       href: cef-format-sa.md
-    - name: "Известные проблемы с Azure\_ATP"
+    - name: Известные проблемы с Defender для удостоверений
       href: ./troubleshooting-known-issues.md
-    - name: "Справочник по выпуску Azure\_ATP"
+    - name: Справочник по выпускам Defender для удостоверений
       href: release-reference.md
 - name: Ресурсы
   items:
@@ -187,7 +187,7 @@
       href: support.md
     - name: Часто задаваемые вопросы
       href: technical-faq.md
-    - name: "План подготовки Azure\_ATP к работе"
+    - name: Схема подготовки Defender для удостоверений
       href: resources.md
-    - name: Безопасность и конфиденциальность данных в Azure ATP
+    - name: Безопасность и конфиденциальность данных Defender для удостоверений
       href: privacy-compliance.md

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Документация по Расширенной защите от угроз Azure
-summary: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
+title: Документация по Microsoft Defender для удостоверений
+summary: Облачная служба Microsoft Defender для удостоверений помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
 metadata:
-  title: Документация по Расширенной защите от угроз Azure
-  description: Облачная служба Azure Advanced Threat Protection (ATP) помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
+  title: Документация по Microsoft Defender для удостоверений
+  description: Облачная служба Microsoft Defender для удостоверений помогает защитить гибридные корпоративные среды от разнообразных типов изощренных целевых кибератак и внутренних угроз.
   services: service
   ms.service: azure-advanced-threat-protection
   ms.subservice: subservice
@@ -12,32 +12,32 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/23/2019
-  ms.openlocfilehash: 2c6de3d806f80ef8d05b4e25d8101c71c35207b5
-  ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+  ms.openlocfilehash: 791e24e1460ce6a2a50caea0d05eb9461ab34654
+  ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/21/2020
-  ms.locfileid: "90826606"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "93276179"
 landingContent:
-- title: Сведения об Azure Advanced Threat Protection (Azure ATP)
+- title: Сведения о Microsoft Defender для удостоверений
   linkLists:
   - linkListType: overview
     links:
-    - text: Что такое Azure Advanced Threat Protection?
+    - text: Что такое Microsoft Defender для удостоверений?
       url: what-is.md
   - linkListType: architecture
     links:
-    - text: Архитектура Azure ATP
+    - text: Архитектура Defender для удостоверений
       url: architecture.md
-    - text: Использование Azure ATP с Cloud App Security
+    - text: Defender для удостоверений и Cloud App Security
       url: mcas-integration.md
   - linkListType: video
     links:
-    - text: Введение в Azure ATP
+    - text: Знакомство с Defender для удостоверений
       url: https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE
-    - text: Основы Azure ATP
+    - text: Основы Defender для удостоверений
       url: https://www.youtube.com/watch?v=QXZIfH0wP3Q
-- title: Извлечение оповещений Azure ATP
+- title: Оповещения Defender для удостоверений
   linkLists:
   - linkListType: get-started
     links:
@@ -47,13 +47,13 @@ landingContent:
       url: health-center.md
     - text: Мониторинг контроллеров домена
       url: sensor-monitoring.md
-- title: Изучите различные способы использования Azure ATP
+- title: Возможности использования Defender для удостоверений
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Оценки состояния безопасности удостоверений
       url: isp-overview.md
-    - text: Тестовая служба по оповещениям системы безопасности Azure ATP
+    - text: Урок по оповещениям безопасности Defender для удостоверений
       url: playbook-lab-overview.md
     - text: Исключение сущностей из обнаружения
       url: excluding-entities-from-detections.md
@@ -61,17 +61,17 @@ landingContent:
       url: activities-search.md
     - text: Исключения и учетные записи Honeytoken
       url: install-step7.md
-    - text: Перемещение с Advanced Threat Analytics (ATA) на Azure ATP
+    - text: Переход на Defender для удостоверений с Advanced Threat Analytics (ATA)
       url: migrate-from-ata-overview.md
 - title: Управление оповещениями системы безопасности и их исправление
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Изучение оповещений Azure ATP
+    - text: Анализ оповещений Defender для удостоверений
       url: suspicious-activity-guide.md
     - text: Управление оповещениями системы безопасности
       url: working-with-suspicious-activities.md
-    - text: Настройка уведомлений Azure ATP
+    - text: Настройка уведомлений Defender для удостоверений
       url: notifications.md
 - title: Изучение угроз безопасности
   linkLists:
@@ -85,11 +85,11 @@ landingContent:
       url: investigate-lateral-movement-path.md
     - text: Анализ сущностей
       url: investigate-entity.md
-- title: Использование Microsoft Cloud App Security с Azure ATP
+- title: Defender для удостоверений и Microsoft Cloud App Security
   linkLists:
   - linkListType: deploy
     links:
-    - text: Использование Azure ATP с Cloud App Security
+    - text: Использование Defender для удостоверений с Cloud App Security
       url: mcas-integration.md
     - text: Фильтрация действий и задание политик
       url: activities-filtering-mcas.md
@@ -97,11 +97,11 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Вопросы и ответы
+    - text: Часто задаваемые вопросы
       url: technical-faq.md
     - text: Поддержка и информация
       url: support.md
-    - text: План подготовки ATP к работе
+    - text: Схема подготовки Defender для удостоверений
       url: resources.md
-    - text: Безопасность и конфиденциальность данных в Azure ATP
+    - text: Безопасность и конфиденциальность данных Defender для удостоверений
       url: privacy-compliance.md
