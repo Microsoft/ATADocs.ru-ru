@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0cd22cad42d8933ebb36a7a7aea32d0a4cb7cdd4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: d0c4bcc61c2b15ded71063f3b8c4058ce6dfcce7
+ms.sourcegitcommit: ac582a240e848ca12c80ac6104125a0f733b469e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277830"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375562"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
 
@@ -121,7 +121,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 При попытке установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, настроенном с помощью адаптера объединения сетевых карт, возникает ошибка установки. Если вы хотите установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, где настроено объединение сетевых карт, выполните следующие действия:
 
-1. Скачайте установщик Npcap версии 0.9984 по адресу [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe).
+1. Скачайте установщик Npcap версии 1,0 из  [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-1.00.exe) .
     - Кроме того, запросите в службе техподдержки OEM-версию драйвера Npcap (который поддерживает автоматическую установку).
     - Копии Npcap не учитываются с пятью, пятью компьютерами или пятью ограничениями на лицензирование пользователей, если они установлены и используются исключительно вместе с [!INCLUDE [Product short](includes/product-short.md)] . Дополнительные сведения см. в разделе [Лицензирование NPCAP](https://github.com/nmap/npcap/blob/master/LICENSE).
 
