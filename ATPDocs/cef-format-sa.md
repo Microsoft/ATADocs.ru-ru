@@ -1,31 +1,30 @@
 ---
-title: Справочник по журналу Azure ATP SIEM
-description: Примеры журналов подозрительных действий, отправляемых из Azure ATP в систему SIEM.
+title: Справочник по журналу SIEM Microsoft Defender для удостоверений
+description: Примеры журналов подозрительных действий, отправляемых из Microsoft Defender для удостоверений в систему SIEM.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/08/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 681b0fc541956c4a778310e78d79234c0fdd7495
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: e2ac1109454e3bef9baec2197d4db7f73698ed6c
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911865"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276492"
 ---
-# <a name="azure-atp-siem-log-reference"></a>Справочник по журналу Azure ATP SIEM
+# <a name="product-long-siem-log-reference"></a>Справочник по журналу SIEM [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP может пересылать события оповещений системы безопасности и оповещений о работоспособности в систему SIEM. Оповещения и события передаются в формате CEF. В этой справочной статье приводятся примеры журналов, пересылаемых в систему SIEM.
+[!INCLUDE [Product short](includes/product-short.md)] может пересылать события оповещений системы безопасности и оповещений о работоспособности в систему SIEM. Оповещения и события передаются в формате CEF. В этой справочной статье приводятся примеры журналов, пересылаемых в систему SIEM.
 
-## <a name="sample-azure-atp-security-alerts-in-cef-format"></a>Пример оповещения системы безопасности Azure ATP в формате CEF
+## <a name="sample-product-short-security-alerts-in-cef-format"></a>Пример оповещений системы безопасности [!INCLUDE [Product short](includes/product-short.md)] в формате CEF
 
 В систему SIEM пересылаются следующие поля и их значения:
 
@@ -38,7 +37,7 @@ Azure ATP может пересылать события оповещений с
 |msg|Описание оповещения.|
 |cnt|Число выполнений действия в оповещениях со счетчиком (например, число угаданных паролей при атаке методом подбора).|
 |app |Используемый в оповещении протокол.|
-|externalId|Идентификатор события, который Azure ATP записывает в журнал событий по каждому типу оповещения. При пересылке оповещений в Microsoft Cloud App Security это поле заполняется соответствующим идентификатором предупреждения Cloud App Security.|
+|externalId|Идентификатор события, который [!INCLUDE [Product short](includes/product-short.md)] записывает в журнал событий по каждому типу оповещения. При пересылке оповещений в Microsoft Cloud App Security это поле заполняется соответствующим идентификатором предупреждения Cloud App Security.|
 |cs#label|Пользовательские строки, разрешенные форматом CEF, где cs#label — это имя нового поля. |
 |cs#|Пользовательские строки, разрешенные форматом CEF, где cs# — это значение.|
 
@@ -49,11 +48,11 @@ Azure ATP может пересылать события оповещений с
 Поле cs2 определяет, является оповещение новым или обновленным.
 
 > [!NOTE]
-> Если вы планируете создавать автоматические действия или сценарии для журналов SIEM в Azure ATP, рекомендуем для идентификации типа оповещения использовать не имя, а поле **externalId**. Имена оповещений иногда могут меняться, а **externalId** остается неизменным. Список внешних идентификаторов: [Сопоставление имен оповещений безопасности и уникальные внешние идентификаторы](suspicious-activity-guide.md#security-alert-name-mapping-and-unique-external-ids).
+> Если вы планируете создавать автоматические действия или скрипты для журналов SIEM в [!INCLUDE [Product short](includes/product-short.md)], рекомендуем для идентификации типа оповещения использовать не имя оповещения, а поле **externalId**. Имена оповещений иногда могут меняться, а **externalId** остается неизменным. Список внешних идентификаторов: [Сопоставление имен оповещений безопасности и уникальные внешние идентификаторы](suspicious-activity-guide.md#security-alert-name-mapping-and-unique-external-ids).
 
 ## <a name="sample-logs"></a>Образцы журналов
 
-Примеры журналов соответствуют требованиям RFC 5424, но Azure ATP также поддерживает RFC 3164.
+Примеры журналов соответствуют требованиям RFC 5424, но [!INCLUDE [Product short](includes/product-short.md)] также поддерживает RFC 3164.
 
 Уровни приоритета:
 
@@ -159,7 +158,7 @@ Azure ATP может пересылать события оповещений с
 
 ### <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)
 
-07-12-2018 11:18:07 Auth.Error 192.168.0.200 1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
+07-12-2018 11:18:07 Auth.Error 192.168.0.200 1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **Подозрительное повышение роли контроллера домена (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1, который является компьютером в domain1.test.local, зарегистрирован как контроллер домена в DC1. externalId=2028 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update
 
 ### <a name="suspicious-additions-to-sensitive-groups"></a>Подозрительные добавления в привилегированные группы
 
@@ -171,7 +170,7 @@ Azure ATP может пересылать события оповещений с
 
 ### <a name="suspicious-replication-request-potential-dcshadow-attack"></a>Подозрительный запрос на репликацию (потенциальная атака DCShadow)
 
-07-12-2018 11:18:37 Auth.Error 192.168.0.200 1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)**|10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
+07-12-2018 11:18:37 Auth.Error 192.168.0.200 1 2018-07-12T08:18:32.265989+00:00 DC1 CEF 3868 DirectoryServicesRogueReplicatio ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRogueReplicationSecurityAlert| **Подозрительный запрос на репликацию (потенциальная атака DCShadow)** |10|start=2018-07-12T08:17:55.3816102Z **app=Replication Activity** shost=CLIENT1 msg=CLIENT1, который не является допустимым контроллером домена в domain1.test.local, отправил изменения в объекты каталога в DC1. externalId=2029 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/1d5d1444-12cf-4db9-be48-39ebc2f51515 cs2Label=trigger cs2=new
 
 ### <a name="suspicious-service-creation"></a>Создание подозрительной службы
 
@@ -203,8 +202,8 @@ Azure ATP может пересылать события оповещений с
 
 ## <a name="see-also"></a>См. также
 
-- [Предварительные требования к Azure ATP](prerequisites.md)
-- [Планирование производительности Azure ATP](capacity-planning.md)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Планирование ресурсов [!INCLUDE [Product short](includes/product-short.md)]](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

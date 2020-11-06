@@ -1,42 +1,41 @@
 ---
-title: Руководство по оповещениям системы безопасности Azure ATP
-description: В этой статье приводится список оповещений системы безопасности, выдаваемых Azure ATP.
+title: Руководство. Оповещения системы безопасности в Microsoft Defender для удостоверений
+description: В этой статье приводится список оповещений системы безопасности, отправляемых Microsoft Defender для удостоверений.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/23/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0c39f6ec4d47136324ba25c5c9bd29e0409854c
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 254c6e6d5130936b32c859ceb96ee2995461cf3c
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909966"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274157"
 ---
-# <a name="azure-atp-security-alerts"></a>Оповещения системы безопасности Azure ATP
+# <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
-> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
+> Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
-Оповещения системы безопасности Azure ATP сообщают о подозрительных действиях, обнаруженных датчиками Azure ATP в сети, а также о субъектах и компьютерах, вовлеченных в угрозы. Списки свидетельств оповещений содержат прямые ссылки на связанных пользователей и компьютеры, упрощая анализ.
+В оповещениях системы безопасности [!INCLUDE [Product long](includes/product-long.md)] сообщается о подозрительных действиях, обнаруженных датчиками [!INCLUDE [Product short](includes/product-short.md)] в сети, а также о субъектах и компьютерах, вовлеченных в угрозы. Списки свидетельств оповещений содержат прямые ссылки на связанных пользователей и компьютеры, упрощая анализ.
 
-Предупреждения системы безопасности Azure ATP можно разделить на следующие категории или этапы (соответствующие этапам в стандартной цепочке устранения кибератак). Ниже приведены ссылки на дополнительные сведения о каждом этапе, оповещениях, предназначенных для выявления разных типов атак, а также сведения об использовании этих оповещений для защиты сети.
+Оповещения системы безопасности [!INCLUDE [Product short](includes/product-short.md)] можно разделить на следующие категории или этапы (соответствующие этапам в стандартной цепочке устранения кибератак). Ниже приведены ссылки на дополнительные сведения о каждом этапе, оповещениях, предназначенных для выявления разных типов атак, а также сведения об использовании этих оповещений для защиты сети.
 
-  1. [Оповещения этапа разведывательной атаки](reconnaissance-alerts.md)
-  2. [Оповещения этапа компрометации учетных данных](compromised-credentials-alerts.md)
-  3. [Оповещения этапа бокового смещения](lateral-movement-alerts.md)
-  4. [Оповещения этапа захвата управления доменом](domain-dominance-alerts.md)
-  5. [Оповещения этапа кражи данных](exfiltration-alerts.md)
+1. [Оповещения этапа разведывательной атаки](reconnaissance-alerts.md)
+1. [Оповещения этапа компрометации учетных данных](compromised-credentials-alerts.md)
+1. [Оповещения этапа бокового смещения](lateral-movement-alerts.md)
+1. [Оповещения этапа захвата управления доменом](domain-dominance-alerts.md)
+1. [Оповещения этапа кражи данных](exfiltration-alerts.md)
 
-Дополнительные сведения о структуре и общих компонентах всех оповещений системы безопасности Azure ATP см. в разделе [Основные сведения об оповещениях безопасности](understanding-security-alerts.md).
+Дополнительные сведения о структуре и общих компонентах всех оповещений системы безопасности [!INCLUDE [Product short](includes/product-short.md)] см. в руководстве [Основные сведения об оповещениях безопасности](understanding-security-alerts.md).
 
 ## <a name="security-alert-name-mapping-and-unique-external-ids"></a>Сопоставление имен оповещений безопасности и уникальные внешние коды
 
@@ -81,7 +80,6 @@ ms.locfileid: "90909966"
 > |[Подозрительные VPN-подключения](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|2025|Средняя|Persistence,<br>Defense evasion|
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|Средняя|Обнаружение|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|Средняя|Обнаружение|
-
 
 # <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
 
@@ -133,4 +131,4 @@ ms.locfileid: "90909966"
 
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Основные сведения об оповещениях безопасности](understanding-security-alerts.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

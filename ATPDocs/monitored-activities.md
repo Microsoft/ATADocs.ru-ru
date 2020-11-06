@@ -1,41 +1,40 @@
 ---
-title: Отслеживаемые действия домена Azure ATP
-description: Описание всех типов действий, отслеживаемых Расширенной защитой от угроз Azure
+title: Отслеживаемые действия домена в Microsoft Defender для удостоверений
+description: Описание всех типов действий, отслеживаемых Microsoft Defender для удостоверений
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/19/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 662fd074ef76207257721883b0223cc1ecc108b3
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: d69fef506f2f1e787039a3b2af1b35b81a3504fc
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912730"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274854"
 ---
-# <a name="azure-atp-monitored-activities"></a>Отслеживаемые действия Azure ATP
+# <a name="product-long-monitored-activities"></a>Отслеживаемые действия в [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
-> Функции Azure ATP, описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
+> Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
 
-Расширенная защита от угроз Azure отслеживает сведения из Active Directory, сетевые действия и события в вашей организации и проверяет наличие в них подозрительных действий. Эти сведения позволяют Azure ATP определять валидность всех потенциальных угроз, классифицировать их и реагировать должным образом.
+[!INCLUDE [Product long](includes/product-long.md)] отслеживает сведения из Active Directory, сетевые действия и события в вашей организации и проверяет наличие среди них подозрительных действий. Эти сведения позволяют [!INCLUDE [Product short](includes/product-short.md)] определять валидность всех потенциальных угроз, классифицировать их и реагировать на них должным образом.
 
-В случае реальной угрозы или **истинного положительного результата** Azure ATP позволяет вам оценить масштаб инцидента, выявить затронутые сущности и определить меры противодействия.
+В случае реальной угрозы или **истинноположительного результата** [!INCLUDE [Product short](includes/product-short.md)] позволяет вам оценить масштаб инцидента, выявить затронутые сущности и определить меры противодействия.
 
-Сведения, отслеживаемые Azure ATP, представлены в виде действий. Azure ATP сейчас поддерживает мониторинг следующих типов действий:
+Сведения, отслеживаемые [!INCLUDE [Product short](includes/product-short.md)], представлены в виде действий. [!INCLUDE [Product short](includes/product-short.md)] сейчас поддерживает мониторинг приведенных ниже типов действий.
 
 > [!NOTE]
 >
-> - Эта статья актуальна для всех типов датчиков Azure ATP.
-> - Отслеживаемые действия Azure ATP отображаются на страницах профиля пользователей и компьютеров.
+> - Эта статья актуальна для всех типов датчиков [!INCLUDE [Product short](includes/product-short.md)].
+> - Действия, отслеживаемые [!INCLUDE [Product short](includes/product-short.md)], отображаются на страницах профилей пользователей и компьютеров.
 
 ## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>Отслеживаемые действия пользователя: изменения атрибута AD в учетной записи пользователя
 
@@ -80,7 +79,7 @@ ms.locfileid: "90912730"
 |Отслеживаемое действие|Описание:|
 |---------------------|------------------|
 |Репликация службы каталогов|Пользователь пытался реплицировать службу каталогов.|
-|DNS-запрос|Тип запроса, который пользователь выполнил на контроллере домена (**AXFR**,**TXT**, **MX**, **NS**, **SRV**, **ANY**, **DNSKEY**).|
+|DNS-запрос|Тип запроса, который пользователь выполнил на контроллере домена ( **AXFR** , **TXT** , **MX** , **NS** , **SRV** , **ANY** , **DNSKEY** ).|
 |Получение закрытых данных|Пользователь запросил или попытался запросить закрытые данные по протоколу LSARPC.|
 |Создание службы|Пользователь попытался создать определенную службу на удаленном компьютере.|
 |перечисление сеансов SMB;|Пользователь попытался перечислить всех пользователей с открытыми сеансами SMB на контроллерах домена.|
@@ -115,4 +114,4 @@ ms.locfileid: "90912730"
 - [Управление оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Руководство по оповещениям системы безопасности](suspicious-activity-guide.md)
 - [Анализ сущностей](investigate-entity.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
