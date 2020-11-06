@@ -1,31 +1,30 @@
 ---
-title: Настройка сбора данных событий Windows с помощью Расширенной защиты от угроз Azure
-description: На этом этапе установки ATP настраивается сбор данных событий Windows.
+title: Настройка сбора данных о событиях Windows в Microsoft Defender для удостоверений
+description: На этом этапе установки Microsoft Defender для удостоверений настраивается сбор данных о событиях Windows.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/04/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8a7c22c2ea752b0443fac2b4e74b2ff4813bfee8
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 4dfaba62df29bb97009bad2440bb420f2c1477e9
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910475"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276566"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Функции обнаружения в Azure Advanced Threat Protection (Azure ATP) анализируют определенные записи журнала событий Windows для расширения своих возможностей и предоставления дополнительных сведений о том, кто именно выполняет определенные действия, например вход через NTLM, изменение групп безопасности и действия при аналогичных событиях. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Неверные параметры расширенной политики аудита могут привести к тому, что требуемые события не будут записываться в журнал и охват Azure ATP будет неполным.
+Функции обнаружения [!INCLUDE [Product long](includes/product-long.md)] анализируют определенные записи журнала событий Windows для расширения своих возможностей и предоставления дополнительных сведений о том, кто именно выполняет определенные действия, например вход через NTLM, изменение групп безопасности и действия при аналогичных событиях. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Неверные параметры расширенной политики аудита могут привести к тому, что требуемые события не будут записываться в журнал и охват [!INCLUDE [Product short](includes/product-short.md)] будет неполным.
 
-Чтобы расширить возможности обнаружения угроз, необходимо [настроить](#configure-audit-policies) следующие события Windows и обеспечить их [сбор](#configure-event-collection) в Azure ATP:
+Чтобы расширить возможности обнаружения угроз, необходимо [настроить](#configure-audit-policies) следующие события Windows и обеспечить их [сбор](#configure-event-collection) в [!INCLUDE [Product short](includes/product-short.md)]:
 
 - 4726 — удаление учетной записи пользователя
 - 4728 — добавление участника в глобальную группу безопасности
@@ -49,19 +48,19 @@ ms.locfileid: "90910475"
 
 1. Войдите на сервер с правами **администратора домена**.
 1. Загрузите редактор управления групповыми политиками из соответствующего раздела, последовательно выбрав **Диспетчер сервера** > **Средства** > **Управление групповой политикой**.
-1. Разверните узел **Подразделения контроллеров домена**, щелкните правой кнопкой мыши элемент **Политика контроллеров домена по умолчанию** и выберите **Изменить**.
+1. Разверните узел **Подразделения контроллеров домена** , щелкните правой кнопкой мыши элемент **Политика контроллеров домена по умолчанию** и выберите **Изменить**.
 
     > [!NOTE]
     > Для задания этих политик можно использовать политику контроллеров домена по умолчанию или выделенный объект групповой политики (GPO).
 
-    ![Изменение политики контроллера домена по умолчанию](media/atp-advanced-audit-policy-check-step-1.png)
+    ![Изменение политики контроллера домена по умолчанию](media/advanced-audit-policy-check-step-1.png)
 
 1. В открывшемся окне последовательно выберите **Конфигурация компьютера** > **Политики** > **Параметры Windows** > **Параметры безопасности** и в зависимости от включаемой политики выполните следующие действия.
 
     **Для конфигурации расширенной политики аудита**
 
     1. Перейдите в раздел **Конфигурация расширенной политики аудита** > **Политики аудита**.
-        ![Конфигурация расширенной политики аудита](media/atp-advanced-audit-policy-check-step-2.png)
+        ![Конфигурация расширенной политики аудита](media/advanced-audit-policy-check-step-2.png)
     1. В разделе **Политики аудита** измените каждую из следующих политик и выберите **Настроить следующие события аудита** как для **выполненных** событий, так и для событий со **сбоем**.
 
         | Политика аудита | Подкатегория | ИД активируемых событий |
@@ -73,16 +72,16 @@ ms.locfileid: "90910475"
         | Управление учетными записями | Аудит управления учетными записями пользователей | 4726 |
         | Система | Аудит расширения системы безопасности | 7045 |
 
-        Например, чтобы настроить **Аудит управления группами безопасности**, в разделе **Управление учетными записями** дважды щелкните **Аудит управления группами безопасности** и выберите **Настроить следующие события аудита** как для **выполненных** событий, так и для событий со **сбоем**.
+        Например, чтобы настроить **Аудит управления группами безопасности** , в разделе **Управление учетными записями** дважды щелкните **Аудит управления группами безопасности** и выберите **Настроить следующие события аудита** как для **выполненных** событий, так и для событий со **сбоем**.
 
-        ![Аудит управления группами безопасности](media/atp-advanced-audit-policy-check-step-4.png)
+        ![Аудит управления группами безопасности](media/advanced-audit-policy-check-step-4.png)
 
     <a name="ntlm-authentication-using-windows-event-8004"></a> **Для локальных политик (ИД события: 8004)**
 
     > [!NOTE]
     >
     > - Групповые политики домена для получения событий 8004 в Windows должны применяться **только** к контроллерам домена.
-    > - При анализировании датчиком Azure ATP события Windows 8004 действия аутентификации NTLM Azure ATP обогащаются данными, к которым получает доступ сервер.
+    > - Когда датчик [!INCLUDE [Product short](includes/product-short.md)] анализирует события Windows 8004, действия аутентификации NTLM [!INCLUDE [Product short](includes/product-short.md)] обогащаются данными, к которым получает доступ сервер.
 
     1. Перейдите в раздел **Локальные политики** > **Параметры безопасности**.
     1. В разделе **Параметры безопасности** настройте указанные политики безопасности следующим образом.
@@ -93,41 +92,41 @@ ms.locfileid: "90910475"
         | Сетевая безопасность: ограничения NTLM — аудит проверки подлинности NTLM на этом домене | Включить все |
         | Сетевая безопасность: Ограничение NTLM: Аудит входящего трафика NTLM | Включить аудит для всех учетных записей |
 
-        Например, чтобы настроить **Исходящий трафик NTLM к удаленным серверам**, в разделе **Параметры безопасности** дважды щелкните **Сетевая безопасность: ограничения NTLM: исходящий трафик NTLM к удаленным серверам** и выберите **Аудит всего**.
+        Например, чтобы настроить **Исходящий трафик NTLM к удаленным серверам** , в разделе **Параметры безопасности** дважды щелкните **Сетевая безопасность: ограничения NTLM: исходящий трафик NTLM к удаленным серверам** и выберите **Аудит всего**.
 
-        ![Аудит исходящего трафика NTLM к удаленным серверам](media/atp-advanced-audit-policy-check-step-3.png)
+        ![Аудит исходящего трафика NTLM к удаленным серверам](media/advanced-audit-policy-check-step-3.png)
 
     > [!NOTE]
-    > Если вместо групповой политики выбрана локальная политика безопасности, добавьте в нее журналы аудита **Вход учетной записи**, **Управление учетными записями** и **Параметры безопасности**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
+    > Если вместо групповой политики выбрана локальная политика безопасности, добавьте в нее журналы аудита **Вход учетной записи** , **Управление учетными записями** и **Параметры безопасности**. При настройке расширенной политики аудита следует принудительно применить [подкатегорию политики аудита](/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override).
 
 1. Новые события, примененные с помощью объекта групповой политики, отображаются в **журналах событий Windows**.
 
 <!--
-## Azure ATP Advanced Audit Policy check
+## [!INCLUDE [Product short](includes/product-short.md)] Advanced Audit Policy check
 
-To make it easier to verify the current status of each of your domain controller's Advanced Audit Policies, Azure ATP automatically checks your existing Advanced Audit Policies and issues health alerts for policy settings that require modification. Each health alert provides specific details of the domain controller, the problematic policy as well as remediation suggestions.
+To make it easier to verify the current status of each of your domain controller's Advanced Audit Policies, [!INCLUDE [Product short](includes/product-short.md)] automatically checks your existing Advanced Audit Policies and issues health alerts for policy settings that require modification. Each health alert provides specific details of the domain controller, the problematic policy as well as remediation suggestions.
 
-![Advanced Audit Policy Health Alert](media/atp-health-alert-audit.png)
+![Advanced Audit Policy Health Alert](media/health-alert-audit.png)
 
 Advanced Security Audit Policy is enabled via **Default Domain Controllers Policy** GPO. These audit events are recorded on the domain controller's Windows Events.
 -->
 
 ## <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
-Данные об этих событиях могут автоматически собираться датчиком Azure ATP или, если этот датчик не развернут, перенаправляться автономному датчику Azure ATP одним из следующих способов:
+В датчике [!INCLUDE [Product short](includes/product-short.md)] сбор этих данных может происходить автоматически. Если датчик [!INCLUDE [Product short](includes/product-short.md)] не развернут, события могут перенаправляться автономному датчику [!INCLUDE [Product short](includes/product-short.md)] одним из следующих способов:
 
-- [Настройка автономного датчика Azure ATP](configure-event-forwarding.md) на ожидание передачи данных по событиям SIEM
-- [Настройка пересылки событий Windows](configure-event-forwarding.md)
+- [настройка автономного датчика [!INCLUDE [Product short](includes/product-short.md)]](configure-event-forwarding.md) на прослушивание событий SIEM;
+- [настройка пересылки событий Windows.](configure-event-forwarding.md)
 
 > [!NOTE]
 >
-> - Автономные датчики Azure ATP не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик Azure ATP.
+> - Автономные датчики [!INCLUDE [Product short](includes/product-short.md)] не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик [!INCLUDE [Product short](includes/product-short.md)].
 > - Важно просмотреть и проверить [политики аудита]() перед включением сбора данных о событиях, чтобы убедиться, что контроллеры доменов настроены правильно для записи необходимых событий.
 
 ## <a name="see-also"></a>См. также
 
-- [Средство изменения размера Azure ATP](https://aka.ms/aatpsizingtool)
-- [Предварительные требования к Azure ATP](prerequisites.md)
-- [Справочник по журналу Azure ATP SIEM](cef-format-sa.md)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Справочник по журналу SIEM [!INCLUDE [Product short](includes/product-short.md)]](cef-format-sa.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
