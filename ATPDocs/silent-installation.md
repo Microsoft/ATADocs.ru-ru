@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d78282a4580159e0b20374e3c3acbd2b5008aab6
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: edb9f414055a7d106913d1d394af44ef84ef4223
+ms.sourcegitcommit: 2b57f438c2902d5258aff8999b374c2f1808ceb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274188"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94430691"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] параметры и автоматическая установка
 
@@ -24,7 +24,7 @@ ms.locfileid: "93274188"
 
 Эта статья содержит инструкции и инструкции по [!INCLUDE [Product long](includes/product-long.md)] параметрам и автоматической установке.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [!INCLUDE [Product short](includes/product-short.md)] требуется установка платформы Microsoft .NET Framework 4,7 или более поздней версии.
 
@@ -53,7 +53,7 @@ ms.locfileid: "93274188"
 **Синтаксис PowerShell** :
 
 ```powershell
-./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+.\"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
 > [!NOTE]
@@ -99,9 +99,9 @@ ms.locfileid: "93274188"
 >
 > |Имя|Синтаксис|Обязательно для автоматической установки?|Описание:|
 > |-------------|----------|---------|---------|
-> |ProxyUrl|ProxyUrl="http\://proxy.contoso.com:8080"|Нет|Указывает прокси и номер порта для [!INCLUDE [Product short](includes/product-short.md)] датчика.|
+> |ProxyUrl|ProxyUrl="http\://proxy.contoso.com:8080"|Нет|Определяет URL-адрес и номер порта прокси-сервера для датчика [!INCLUDE [Product short](includes/product-short.md)].|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
-> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|Нет|Указывает пароль для имени пользователя прокси-сервера. * Учетные данные шифруются и хранятся локально [!INCLUDE [Product short](includes/product-short.md)] датчиком.|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|Нет|Указывает пароль для имени пользователя прокси-сервера. * Датчик [!INCLUDE [Product short](includes/product-short.md)] шифрует учетные данные и сохраняет их локально.|
 
 ## <a name="update-the-product-short-sensor"></a>Обновление [!INCLUDE [Product short](includes/product-short.md)] датчика
 
@@ -159,9 +159,9 @@ ms.locfileid: "93274188"
 "Azure ATP sensor Setup.exe" /quiet /uninstall
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
 - [Установка [!INCLUDE [Product short](includes/product-short.md)] датчика](install-step4.md)
 - [Настройка [!INCLUDE [Product short](includes/product-short.md)] датчика](install-step5.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
