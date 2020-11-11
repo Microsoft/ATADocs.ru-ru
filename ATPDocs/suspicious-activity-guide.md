@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 254c6e6d5130936b32c859ceb96ee2995461cf3c
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8b79365410e6f8d0c612ceef54277003a1d95b98
+ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274157"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93343575"
 ---
 # <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -47,6 +47,7 @@ ms.locfileid: "93274157"
 > |Имя оповещения системы безопасности|Уникальный внешний идентификатор|Статус|MITRE ATT&CK Matrix&trade;|
 > |---|---|---|---|
 > |[Разведывательная атака путем перечисления учетных записей](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|2003|Средняя|Обнаружение|
+> |[Рекогносцировка атрибутов Active Directory (протокол LDAP)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210)|2210|Средняя|Обнаружение|
 > |[Кража данных по SMB](exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|2030|Высокий|Exfiltration,<br>Lateral movement,<br>Команды и управление|
 > |[Действие Honeytoken](compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|2014|Средняя|Credential access,<br>Обнаружение|
 > |[Вредоносный запрос главного ключа API защиты данных](domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|2020|Высокий|Credential access|
@@ -55,7 +56,7 @@ ms.locfileid: "93274157"
 > |[Удаленное выполнение кода через DNS](lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|2036|Средняя|Privilege escalation,<br>Путешествие по компьютерам|
 > |[Разведывательная атака, направленная на субъект безопасности (LDAP)](reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|2038|Средняя|Credential access|
 > |[Предполагаемая атака методом подбора (Kerberos, NTLM)](compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|2023|Средняя|Credential access|
-> |[Предполагаемая атака методом подбора (протокол LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|2004|Средняя|Credential access|
+> |[Предполагаемая атака методом подбора (протокол LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|2004|Средняя|Credential access|
 > |[Предполагаемая атака методом подбора (SMB)](compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|2033|Средняя|Путешествие по компьютерам|
 > |[Предполагаемая атака DCShadow (повышение роли контроллера домена)](domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|2028|Высокий|Defense evasion|
 > |[Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)](domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|2029|Высокий|Defense evasion|
@@ -64,12 +65,15 @@ ms.locfileid: "93274157"
 > |[Предполагаемое использование Golden Ticket (поддельные данные авторизации)](domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|2013|Высокий|Privilege escalation,<br>Lateral movement,<br>Persistence|
 > |[Предполагаемое использование Golden Ticket (несуществующая учетная запись)](domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|2027|Высокий|Privilege Escalation,<br>Lateral movement,<br>Persistence|
 > |[Предполагаемое использование Golden Ticket (аномалия билета)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|2032|Высокий|Privilege Escalation,<br>Lateral movement,<br>Persistence|
+> |[Предполагаемое использование Golden Ticket (аномалия билета с использованием RBCD)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-using-rbcd-external-id-2040)|2040|Высокий|Persistence|
 > |[Предполагаемое использование Golden Ticket (аномальное время)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|2022|Высокий|Privilege Escalation,<br>Lateral movement,<br>Persistence|
 > |[Предполагаемая кража удостоверения (Pass-the-Hash)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|2017|Высокий|Боковое смещение|
 > |[Предполагаемая кража удостоверения (Pass-the-Ticket)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|2018|Высокая или средняя|Путешествие по компьютерам|
+> |[Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|2411|Высокий|Повышение привилегий|
 > |[Предполагаемые незаконные изменения при аутентификации NTLM](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|2039|Средняя|Privilege escalation, <br>Путешествие по компьютерам|
 > |[Предполагаемая атака ретрансляции NTLM](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|2037|Средняя или низкая, если наблюдается при использовании протокола NTLM версии 2 с подписью|Privilege escalation, <br>Путешествие по компьютерам|
 > |[Предполагаемая атака Overpass-the-Hash (Kerberos)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|2002|Средняя|Путешествие по компьютерам|
+> |[Подозрение на использование незаконного сертификата Kerberos](lateral-movement-alerts.md#suspected-rogue-kerberos-certificate-usage-external-id-2047)|2047|Высокий|Боковое смещение|
 > |[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|2010|Средняя|Lateral movement,<br>Persistence|
 > |[Возможная манипуляция с пакетами SMB (использование уязвимости CVE-2020-0796) — (предварительная версия)](lateral-movement-alerts.md#suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406)|2406|Высокий|Боковое смещение|
 > |[Предполагаемое использование платформы взлома Metasploit](compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|2034|Средняя|Боковое смещение|
@@ -81,12 +85,17 @@ ms.locfileid: "93274157"
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|Средняя|Обнаружение|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|Средняя|Обнаружение|
 
+<!--
+> |[Suspected Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2410|High|Credential access|
+-->
+
 # <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
 
 > [!div class="mx-tdBreakAll"]
 > |Имя оповещения системы безопасности|Идентификатор оповещения Cloud App Security|
 > |---|---|
 > |[Разведывательная атака путем перечисления учетных записей](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|ALERT_EXTERNAL_AATP_ACCOUNT_ENUMERATION_SECURITY_ALERT|
+> |[Рекогносцировка атрибутов Active Directory (протокол LDAP)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210)|ALERT_EXTERNAL_AATP_LDAP_SENSITIVE_ATTRIBUTE_RECONNAISSANCE_SECURITY_ALERT|
 > |[Кража данных по SMB](exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|ALERT_EXTERNAL_AATP_SMB_DATA_EXFILTRATION_SECURITY_ALERT|
 > |[Действие Honeytoken](compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|ALERT_EXTERNAL_AATP_HONEYTOKEN_ACTIVITY_SECURITY_ALERT|
 > |[Вредоносный запрос главного ключа API защиты данных](domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|ALERT_EXTERNAL_AATP_RETRIEVE_DATA_PROTECTION_BACKUP_KEY_SECURITY_ALERT|
@@ -95,7 +104,7 @@ ms.locfileid: "93274157"
 > |[Удаленное выполнение кода через DNS](lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|ALERT_EXTERNAL_AATP_DNS_REMOTE_CODE_EXECUTION_SECURITY_ALERT|
 > |[Разведывательная атака, направленная на субъект безопасности (LDAP)](reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|ALERT_EXTERNAL_AATP_LDAP_SEARCH_RECONNAISSANCE_SECURITY_ALERT|
 > |[Предполагаемая атака методом подбора (Kerberos, NTLM)](compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|ALERT_EXTERNAL_AATP_BRUTE_FORCE_SECURITY_ALERT|
-> |[Предполагаемая атака методом подбора (протокол LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|ALERT_EXTERNAL_AATP_LDAP_BRUTE_FORCE_SECURITY_ALERT|
+> |[Предполагаемая атака методом подбора (протокол LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|ALERT_EXTERNAL_AATP_LDAP_BRUTE_FORCE_SECURITY_ALERT|
 > |[Предполагаемая атака методом подбора (SMB)](compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_BRUTE_FORCE_SECURITY_ALERT|
 > |[Предполагаемая атака DCShadow (повышение роли контроллера домена)](domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|ALERT_EXTERNAL_AATP_DIRECTORY_SERVICES_ROGUE_PROMOTION_SECURITY_ALERT|
 > |[Предполагаемая атака DCShadow (запрос на репликацию контроллера домена)](domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|ALERT_EXTERNAL_AATP_DIRECTORY_SERVICES_ROGUE_REPLICATION_SECURITY_ALERT|
@@ -104,12 +113,15 @@ ms.locfileid: "93274157"
 > |[Предполагаемое использование Golden Ticket (поддельные данные авторизации)](domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|ALERT_EXTERNAL_AATP_FORGED_PAC_SECURITY_ALERT|
 > |[Предполагаемое использование Golden Ticket (несуществующая учетная запись)](domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|ALERT_EXTERNAL_AATP_FORGED_PRINCIPAL_SECURITY_ALERT|
 > |[Предполагаемое использование Golden Ticket (аномалия билета)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SIZE_ANOMALY_SECURITY_ALERT|
+> |[Предполагаемое использование Golden Ticket (аномалия билета с использованием RBCD)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-using-rbcd-external-id-2040)|ALERT_EXTERNAL_AATP_RESOURCE_BASED_CONSTRAINED_DELEGATION_GOLDEN_TICKET_SECURITY_ALERT|
 > |[Предполагаемое использование Golden Ticket (аномальное время)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SECURITY_ALERT|
 > |[Предполагаемая кража удостоверения (Pass-the-Hash)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|ALERT_EXTERNAL_AATP_PASS_THE_HASH_SECURITY_ALERT|
 > |[Предполагаемая кража удостоверения (Pass-the-Ticket)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|ALERT_EXTERNAL_AATP_PASS_THE_TICKET_SECURITY_ALERT|
+> |[Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|ALERT_EXTERNAL_AATP_NETLOGON_BYPASS_SECURITY_ALERT|
 > |[Предполагаемые незаконные изменения при аутентификации NTLM](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|ALERT_EXTERNAL_AATP_ABNORMAL_NTLM_SIGNING_SECURITY_ALERT|
 > |[Предполагаемая атака ретрансляции NTLM](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|ALERT_EXTERNAL_AATP_NTLM_RELAY_SECURITY_ALERT|
 > |[Предполагаемая атака Overpass-the-Hash (Kerberos)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|ALERT_EXTERNAL_AATP_ABNORMAL_KERBEROS_OVERPASS_THE_HASH_SECURITY_ALERT|
+> |[Подозрение на использование незаконного сертификата Kerberos](lateral-movement-alerts.md#suspected-rogue-kerberos-certificate-usage-external-id-2047)|ALERT_EXTERNAL_AATP_ROGUE_CERTIFICATE_USAGE_SECURITY_ALERT|
 > |[Предполагаемая атака путем использования мастер-ключа (понижение уровня шифрования)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|ALERT_EXTERNAL_AATP_SKELETON_KEY_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
 > |[Возможная манипуляция с пакетами SMB (использование уязвимости CVE-2020-0796) — (предварительная версия)](lateral-movement-alerts.md#suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406)|ALERT_EXTERNAL_AATP_SMB_GHOST_SECURITY_ALERT|
 > |[Предполагаемое использование платформы взлома Metasploit](compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_METASPLOIT_SECURITY_ALERT|
@@ -120,6 +132,10 @@ ms.locfileid: "93274157"
 > |[Подозрительные VPN-подключения](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|ALERT_EXTERNAL_AATP_ABNORMAL_VPN_SECURITY_ALERT|
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|ALERT_EXTERNAL_AATP_ENUMERATE_SESSIONS_SECURITY_ALERT|
+
+<!--
+> |[Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
+-->
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->
