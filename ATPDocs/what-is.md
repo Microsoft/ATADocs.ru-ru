@@ -1,31 +1,30 @@
 ---
-title: Что такое Azure Advanced Threat Protection (Azure ATP)?
-description: Описание решения Azure Advanced Threat Protection (Azure ATP) и подозрительных действий, которые оно может обнаруживать
+title: Что такое Microsoft Defender для удостоверений?
+description: Здесь описывается решение Microsoft Defender для удостоверений и подозрительные действия, которые оно может обнаружить
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/05/2020
+ms.date: 10/27/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 44ff93cc53feb69d83d347a019540a6e302271ee
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 6bd5e8677a37555db09925d98d242334e1e4967c
+ms.sourcegitcommit: 13d1ba61abae691d38d8e210b3adad71285d5c26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912478"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93380630"
 ---
-# <a name="what-is-azure-advanced-threat-protection"></a>Что такое Azure Advanced Threat Protection?
+# <a name="what-is-product-long"></a>Что такое [!INCLUDE [Product long](includes/product-long.md)]?
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure Advanced Threat Protection (ATP) или Расширенная защита от угроз Azure — это облачное решение безопасности, которое использует сигналы локальной службы Active Directory для обнаружения и анализа сложных угроз, скомпрометированных удостоверений и вредоносных действий внутренних пользователей, направленных на вашу организацию.
+[!INCLUDE [Product long](includes/product-long.md)] (ранее Расширенная защита от угроз Azure или Azure ATP) — это облачное решение безопасности, которое использует сигналы локальной службы Active Directory для обнаружения и анализа сложных угроз, скомпрометированных удостоверений и вредоносных действий внутренних пользователей, направленных на вашу организацию.
 
-Azure ATP позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:
+[!INCLUDE [Product short](includes/product-short.md)] позволяет аналитикам и специалистам службы безопасности, занимающимся выявлением современных угроз в гибридных средах, решать следующие задачи:
 
 - отслеживать пользователей, поведение сущностей и действия с помощью аналитики на основе обучения;
 - защищать удостоверения и учетные данные пользователей, хранящиеся в Active Directory;
@@ -34,15 +33,15 @@ Azure ATP позволяет аналитикам и специалистам с
 
 ## <a name="monitor-and-profile-user-behavior-and-activities"></a>Отслеживание и профилирование поведения и действий пользователей
 
-Azure ATP отслеживает и анализирует действия пользователей в сети и информацию о них, такую как разрешения и членство в группах, формируя базовые показатели для каждого пользователя. Затем Azure ATP определяет аномалии с помощью встроенных адаптивных интеллектуальных функций, предоставляя вам информацию о подозрительных действиях и событиях и выявляя современные угрозы, скомпрометированные учетные записи и внутренние угрозы, направленные на организацию. Собственные датчики Azure ATP отслеживают контроллеры домена организации, что позволяет получать подробное представление обо всех действиях пользователей на каждом устройстве.
+[!INCLUDE [Product short](includes/product-short.md)] отслеживает и анализирует действия пользователей в сети и информацию о них, такую как разрешения и членство в группах, формируя базовые показатели для каждого пользователя. Затем [!INCLUDE [Product short](includes/product-short.md)] определяет аномалии с помощью встроенных адаптивных интеллектуальных функций, предоставляя вам информацию о подозрительных действиях и событиях и выявляя современные угрозы, скомпрометированные учетные записи и внутренние угрозы, направленные на организацию. Собственные датчики [!INCLUDE [Product short](includes/product-short.md)] отслеживают контроллеры домена организации, что позволяет получать подробное представление обо всех действиях пользователей на каждом устройстве.
 
 ## <a name="protect-user-identities-and-reduce-the-attack-surface"></a>Защита удостоверений пользователей и сокращение уязвимой зоны
 
-Azure ATP предоставляет бесценную информацию о конфигурациях удостоверений и рекомендации по обеспечению безопасности. Благодаря отчетам о безопасности и аналитике пользовательских профилей Azure ATP помогает существенно сократить число направлений атак, угрожающих вашей организации, усложняя взлом учетных данных пользователей и затрудняя проведение атак. С помощью визуальных путей бокового смещения в Azure ATP можно быстро узнать, как злоумышленник может перемещаться по сети вашей организации с целью взлома важных учетных записей, и заранее предотвратить эти риски. Отчеты о безопасности Azure ATP помогают выявлять пользователей и устройства, которые проходят проверку подлинности с помощью открытых паролей. Они также предоставляют дополнительную информацию для оптимизации корпоративной защиты и ваших политик.
+[!INCLUDE [Product short](includes/product-short.md)] предоставляет бесценную информацию о конфигурациях удостоверений и рекомендации по обеспечению безопасности. Благодаря отчетам о безопасности и аналитике пользовательских профилей [!INCLUDE [Product short](includes/product-short.md)] помогает существенно сократить число направлений атак, угрожающих вашей организации, усложняя взлом учетных данных пользователей и затрудняя проведение атак. С помощью визуальных путей бокового смещения в [!INCLUDE [Product short](includes/product-short.md)] можно быстро узнать, как злоумышленник может перемещаться по сети вашей организации с целью взлома важных учетных записей, и заранее предотвратить эти риски. Отчеты о безопасности [!INCLUDE [Product short](includes/product-short.md)] помогают выявлять пользователей и устройства, которые проходят проверку подлинности с помощью открытых паролей. Они также предоставляют дополнительную информацию для оптимизации корпоративной защиты и ваших политик.
 
 ## <a name="identify-suspicious-activities-and-advanced-attacks-across-the-cyber-attack-kill-chain"></a>Выявление подозрительных действий и современных кибератак на основе модели цепочки атаки
 
-Как правило, атаки изначально направлены на доступные объекты, например пользователей с низким уровнем прав, а затем быстро распространяются по горизонтали, пока злоумышленник не получит доступ к ценным ресурсам, например важным учетным записям, в том числе с правами администратора домена, или конфиденциальным данным. Azure ATP позволяет устанавливать источники таких современных угроз, прослеживая всю цепочку кибератаки.
+Как правило, атаки изначально направлены на доступные объекты, например пользователей с низким уровнем прав, а затем быстро распространяются по горизонтали, пока злоумышленник не получит доступ к ценным ресурсам, например важным учетным записям, в том числе с правами администратора домена, или конфиденциальным данным. [!INCLUDE [Product short](includes/product-short.md)] позволяет устанавливать источники таких современных угроз, прослеживая всю цепочку кибератаки.
 
 ### <a name="reconnaissance"></a>Разведывательная атака
 
@@ -62,53 +61,43 @@ Azure ATP позволяет обнаруживать перехват конт
 
 ## <a name="investigate-alerts-and-user-activities"></a>Изучайте оповещения и действия пользователей
 
-Azure ATP предоставляет только важные оповещения системы безопасности в режиме реального времени, что позволяет не отвлекаться на ненужную информацию. Представление временной шкалы атак Azure ATP позволяет сосредоточиться на том, что действительно имеет значение, и использовать интеллектуальные аналитические функции. Azure ATP позволяет быстро анализировать угрозы и получать информацию о пользователях, устройствах и сетевых ресурсах в масштабе всей организации. Тесная интеграция с ATP в Microsoft Defender обеспечивает дополнительный уровень безопасности благодаря обнаружению современных постоянных угроз в операционной системе и защите от них.
+[!INCLUDE [Product short](includes/product-short.md)] предоставляет только важные оповещения системы безопасности в режиме реального времени, что позволяет не отвлекаться на ненужную информацию. Представление временной шкалы атак [!INCLUDE [Product short](includes/product-short.md)] позволяет сосредоточиться на том, что действительно имеет значение, и использовать интеллектуальные аналитические функции. [!INCLUDE [Product short](includes/product-short.md)] позволяет быстро анализировать угрозы и получать информацию о пользователях, устройствах и сетевых ресурсах в масштабе всей организации. Тесная интеграция с Microsoft Defender для конечных точек обеспечивает дополнительный уровень безопасности благодаря обнаружению современных постоянных угроз в операционной системе и защите от них.
 
-## <a name="additional-resources-for-azure-atp"></a>Дополнительные ресурсы по Azure ATP
+## <a name="additional-resources-for-product-short"></a>Дополнительные ресурсы о [!INCLUDE [Product short](includes/product-short.md)]
 
 ### <a name="start-a-free-trial"></a>Запустите бесплатную пробную версию
 
 [https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
 
-### <a name="follow-azure-atp-on-microsoft-tech-community"></a>Следите за Azure ATP в Microsoft Tech Community
+### <a name="follow-product-short-on-microsoft-tech-community"></a>Подпишитесь на [!INCLUDE [Product short](includes/product-short.md)] в Microsoft Tech Community
 
-[https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection "Azure ATP on Microsoft Tech Community")
+[https://aka.ms/MDIcommunity](https://aka.ms/MDIcommunity "[!INCLUDE [Product short](includes/product-short.md)] on Microsoft Tech Community")
 
-### <a name="join-the-azure-atp-yammer-community"></a>Присоединяйтесь к сообществу Yammer по Azure ATP
+### <a name="join-the-product-short-yammer-community"></a>Вступите в сообщество Yammer по [!INCLUDE [Product short](includes/product-short.md)]
 
-[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "Azure ATP Yammer community")
+[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "[!INCLUDE [Product short](includes/product-short.md)] Yammer community")
 
-### <a name="visit-the-azure-atp-product-page"></a>Посетите страницу продукта Azure ATP
+### <a name="visit-the-product-short-product-page"></a>Посетите страницу продукта [!INCLUDE [Product short](includes/product-short.md)]
 
-[https://azure.microsoft.com/features/azure-advanced-threat-protection/](https://azure.microsoft.com/features/azure-advanced-threat-protection/ "Azure ATP product page")
+[https://www.microsoft.com/microsoft-365/security/identity-defender](https://www.microsoft.com/microsoft-365/security/identity-defender "[!INCLUDE [Product short](includes/product-short.md)] product page")
 
-### <a name="learn-more-about-azure-atp-architecture"></a>Дополнительные сведения об архитектуре Azure ATP
+### <a name="learn-more-about-product-short-architecture"></a>Изучите архитектуру [!INCLUDE [Product short](includes/product-short.md)]
 
- [Архитектура Azure ATP](architecture.md)
+[Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
 
-## <a name="microsoft-ignite"></a>Microsoft Ignite
+### <a name="watch-our-videos"></a>Просмотрите наши видеоролики
 
-На Microsoft Ignite 2018 прошло несколько мероприятий, посвященных [Расширенной защите от угроз Azure](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Advanced%2520Threat%2520Protection&t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D). Если вы на них не были, рекомендуем посмотреть записи:
+[Повысьте уровень безопасности с помощью [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/video-hub/bolster-your-security-posture-with-microsoft-defender-for/m-p/1698841). Выявляйте и заранее устраняйте известные ошибки конфигурации, делая свою среду более работоспособной и устойчивой к действиям злоумышленников. Посмотрите [видео на YouTube](https://youtu.be/nx5rrxVuRTk).
 
-### <a name="azure-atp"></a>Azure ATP
+[Анализ инцидентов с помощью [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/video-hub/incident-investigation-with-microsoft-defender-for-identity/m-p/1698840). Узнайте, как с помощью [!INCLUDE [Product short](includes/product-short.md)] обнаруживать, анализировать и реагировать на расширенные угрозы, нацеленные на удостоверения и контроллеры домена. Начиная с предупреждения в [!INCLUDE [Product short](includes/product-short.md)] мы продемонстрируем, как эти сведения соотносятся с инцидентом, как отслеживать угрозы с помощью информации, полученной [!INCLUDE [Product short](includes/product-short.md)], и как можно инициировать автоматическое реагирование на инцидент для его устранения, прежде чем он перерастет в более крупную проблему. Посмотрите [видео YouTube](https://youtu.be/geWU4It6S48).
 
-[BRK3117](https://myignite.techcommunity.microsoft.com/videos/65780). Меры безопасности и устранение инцидентов с Azure ATP: [видео на YouTube](https://www.youtube.com/watch?v=QXZIfH0wP3Q)
+## <a name="whats-next"></a>Что дальше?
 
-### <a name="azure-atp-and-azure-ad-ip-active-directory-identity-protection"></a>Azure ATP и Защита идентификации Azure Active Directory
-
-[BRK3237](https://myignite.techcommunity.microsoft.com/videos/64523). Защита гибридной облачной среды с помощью Защиты идентификации Azure AD и Azure ATP: [видео на YouTube](https://www.youtube.com/watch?v=X7CXaok6GbM)
-
-[BRK2157](https://myignite.techcommunity.microsoft.com/videos/65776). Ускорение развертывания и внедрения решений Microsoft Information Protection: [видео на YouTube](https://www.youtube.com/watch?v=Foh-XDVbPog)
-
-Сводку новостей об Azure ATP с мероприятия Ignite 2018 см. в записи блога [Azure Advanced Threat Protection Expands Integrations, Detections, and Forensic Capabilities](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Azure-Advanced-Threat-Protection-Expands-Integrations-Detections/ba-p/262409) (Расширенная защита от угроз Azure получает новые возможности интеграции, обнаружения и анализа).
-
-## <a name="whats-next"></a>Дальнейшие действия
-
-Развертывать Azure ATP рекомендуется в три этапа:
+Развертывать [!INCLUDE [Product short](includes/product-short.md)] рекомендуется в три этапа:
 
 ### <a name="phase-1"></a>Этап 1
 
-1. Настройте в Azure ATP защиту основных сред. Модель быстрого развертывания Azure ATP позволяет немедленно защитить организацию. [Установка Azure ATP](install-step1.md)
+1. Настройте в [!INCLUDE [Product short](includes/product-short.md)] защиту основных сред. Модель быстрого развертывания [!INCLUDE [Product short](includes/product-short.md)] позволяет немедленно защитить организацию. [Установка [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
 1. Настройте [конфиденциальные учетные записи](sensitive-accounts.md) и [учетные записи honeytoken](install-step7.md).
 1. Просматривайте отчеты и [пути бокового смещения](use-case-lateral-movement-path.md).
 
@@ -120,10 +109,10 @@ Azure ATP предоставляет только важные оповещен
 
 ### <a name="phase-3"></a>Этап 3
 
-1. Интегрируйте оповещения Azure ATP в рабочие процессы службы безопасности.
+1. Интегрируйте оповещения [!INCLUDE [Product short](includes/product-short.md)] в рабочие процессы службы безопасности.
 
 ## <a name="see-also"></a>См. также:
 
-- [Часто задаваемые вопросы об Azure ATP](technical-faq.md)
+- [Часто задаваемые вопросы по [!INCLUDE [Product short](includes/product-short.md)]](technical-faq.md)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
-- [Загляните на форум Azure ATP!](https://aka.ms/azureatpcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

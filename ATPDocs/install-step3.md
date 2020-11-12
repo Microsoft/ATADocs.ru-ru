@@ -1,58 +1,58 @@
 ---
-title: Краткое руководство. Скачивание пакета установки датчика Azure ATP
-description: На третьем шаге установки Azure ATP выполняется скачивание пакета установки датчика Azure ATP.
+title: Краткое руководство по скачиванию пакета установки датчика Microsoft Defender для удостоверений
+description: На третьем шаге установки Microsoft Defender для удостоверений происходит скачивание пакета установки датчика Defender для удостоверений.
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 02/19/2020
+ms.date: 10/26/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
-ms.openlocfilehash: 04e1df3e375d48c17a42590521b9de06373f4799
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.reviewer: itargoet
+ms.suite: ems
+ms.openlocfilehash: f971bf0ccadf2eba52b40c95591abaff0c963e0e
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910217"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277082"
 ---
-# <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика Azure ATP
+# <a name="quickstart-download-the-product-long-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-В этом кратком руководстве вы скачаете пакет установки датчика Azure ATP с портала.
+В этом кратком руководстве вы скачаете пакет установки датчика [!INCLUDE [Product long](includes/product-long.md)] с портала.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- [Экземпляр Azure ATP](install-step1.md), [подключенный к Active Directory](install-step2.md).
+- [Экземпляр [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md), [подключенный к Active Directory](install-step2.md).
 
 ## <a name="download-the-setup-package"></a>Скачивание пакета установки
 
-Настроив параметры подключения к домену, скачайте пакет установки датчика Azure ATP. Дополнительные сведения о датчике Azure ATP см. в статье [Архитектура Azure ATP](architecture.md).
+Настроив параметры подключения к домену, скачайте пакет установки датчика [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о датчике [!INCLUDE [Product short](includes/product-short.md)] см. в статье [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md).
 
-В списке действий в верхней части страницы щелкните **Скачать**, чтобы перейти на страницу **Датчик**.
+В списке действий в верхней части страницы щелкните **Скачать** , чтобы перейти на страницу **Датчики**.
 
-![Параметры конфигурации датчика Azure ATP](media/atp-sensor-config.png)
+![[!INCLUDE [Product short](includes/product-short.md)]: параметры конфигурации датчика](media/sensor-config.png)
 
- Чтобы открыть окно конфигурации позже, щелкните **значок параметров** (правый верхний угол), выберите **Конфигурация**, а затем в разделе **Система** щелкните **Датчик**.  
+Чтобы открыть окно конфигурации позже, выберите **Конфигурация** , а затем в разделе **Система** щелкните **Датчики**.  
 
-1. Щелкните **Датчик**.
-1. Сохраните пакет на локальном компьютере.
-1. Скопируйте **ключ** **доступа**. Ключ доступа требуется для подключения датчика Azure ATP к экземпляру Azure ATP. Ключ доступа представляет собой одноразовый пароль для развертывания датчика, после чего осуществляется полный обмен данными с использованием сертификатов для проверки подлинности и шифрования по протоколу TLS. Нажмите кнопку **Повторно создать**, если вам потребуется повторно создать новый ключ доступа. Он не повлияет на ранее развернутые датчики, так как используется только для первоначальной регистрации датчика.
-1. Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается датчик Azure ATP. Кроме того, можно открыть портал экземпляра Azure ATP с выделенного сервера или контроллера домена и пропустить этот шаг.
+1. Нажмите кнопку **Скачать** , чтобы сохранить пакет локально.
+1. Скопируйте **ключ** **доступа**. Ключ доступа требуется для подключения датчика [!INCLUDE [Product short](includes/product-short.md)] к экземпляру [!INCLUDE [Product short](includes/product-short.md)]. Ключ доступа представляет собой одноразовый пароль для развертывания датчика, после чего осуществляется полный обмен данными с использованием сертификатов для проверки подлинности и шифрования по протоколу TLS. Нажмите кнопку **Повторно создать** , если вам потребуется повторно создать новый ключ доступа. Он не повлияет на ранее развернутые датчики, так как используется только для первоначальной регистрации датчика.
+1. Скопируйте пакет на выделенный сервер или контроллер домена, на который устанавливается датчик [!INCLUDE [Product short](includes/product-short.md)]. Кроме того, можно открыть портал [!INCLUDE [Product short](includes/product-short.md)] с выделенного сервера или контроллера домена и пропустить этот шаг.
 
 ZIP-файл содержит следующие файлы:
 
-- установщик датчика Azure ATP;
+- установщик датчика [!INCLUDE [Product short](includes/product-short.md)];
 
-- файл параметров конфигурации с данными для подключения к облачной службе Azure ATP.
+- файл параметров конфигурации с данными для подключения к облачной службе [!INCLUDE [Product short](includes/product-short.md)].
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 > [!div class="step-by-step"]
 > ["Шаг 2. Подключение к Active Directory](install-step2.md)
-> [Шаг 4. Установка датчика Azure ATP"](install-step4.md)
+> [Шаг 4. Установка датчика [!INCLUDE [Product short](includes/product-short.md)]"](install-step4.md)
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-Возникли дополнительные вопросы или желание обсудить с другими пользователями службу Azure ATP и связанные с ней вопросы безопасности? Присоединяйтесь к [сообществу Azure ATP](https://aka.ms/azureatpcommunity)!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/MDIcommunity).
