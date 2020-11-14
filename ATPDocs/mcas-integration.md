@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5051900ef8eb21f85a4f31723f455d3ae18ff36e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: eff9b785cb23db649615f11be6e713eed49f3b5d
+ms.sourcegitcommit: 931d463e793cd5710e7bc2bca13cd4ef669eb190
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275072"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94580896"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>Использование [!INCLUDE [Product long](includes/product-long.md)] с Microsoft Cloud App Security
 
@@ -59,7 +59,7 @@ ms.locfileid: "93275072"
 > - Если у вас нет подписки на Cloud App Security, вы по-прежнему сможете использовать портал Cloud App Security для изучения [!INCLUDE [Product short](includes/product-short.md)] оповещений и углубленного исследования пользователей и их локальных управляемых действий, но вы не будете получать связанные данные из облачных приложений.
 > - [!INCLUDE [Product short](includes/product-short.md)] администраторам могут потребоваться новые разрешения для доступа к Cloud App Security. Дополнительные сведения о назначении разрешений Cloud App Security см. в разделе [Управление доступом администратора](/cloud-app-security/manage-admins).
 
-Дополнительные [ [!INCLUDE [Product short](includes/product-short.md)] ](/cloud-app-security/aatp-integration) сведения о том, как быстро включить [!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security, см. в разделе Интеграция.
+Дополнительные [ [!INCLUDE [Product short](includes/product-short.md)] ](/cloud-app-security/mdi-integration) сведения о том, как быстро включить [!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security, см. в разделе Интеграция.
 
 ## <a name="product-short-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security
 
@@ -92,17 +92,17 @@ ms.locfileid: "93275072"
 1. Откройте **Оповещения** в главном меню.
 1. Выберите и отфильтруйте очередь оповещений для конкретного пользователя с помощью поля **Имя пользователя**.
 
- or
+ или
 
 1. Из меню **Исследовать** выберите **Журнал действий**.
 1. Отфильтруйте очередь журнала действий по пользователям.
 
     ![Журнал действий](media/mcas-activity-filter.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Сведения о том, как фильтровать и создавать новые политики действий, см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] действия, использующие Microsoft Cloud App Security](activities-filtering-mcas.md) .
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection).

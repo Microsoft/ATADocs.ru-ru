@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 41ee2095939182a23a5f10088580113f1f0fdcd7
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 567fb2beb08425a69964932ca6807ff03a6b6549
+ms.sourcegitcommit: 69c55503b8b3f7ca99dbea872b17d81124831fad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911333"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94567929"
 ---
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 
@@ -62,7 +62,7 @@ ms.locfileid: "90911333"
 
 #### <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>Настройка прослушивания событий SIEM в шлюзе ATA
 
-1. В разделе настройки ATA на вкладке **Источники данных** щелкните **SIEM**, включите **Системный журнал** и нажмите кнопку **Сохранить**.
+1. В разделе настройки ATA на вкладке **Источники данных** щелкните **SIEM** , включите **Системный журнал** и нажмите кнопку **Сохранить**.
 
     ![Разрешите использование образа UDP для прослушивания системного журнала](media/ATA-enable-siem-forward-events.png)
 
@@ -126,7 +126,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|Ко
 
 - Заголовок системного журнала необязателен.
 
-- Между всеми обязательными полями должен стоять символ-разделитель \r\n.
+- Между всеми обязательными полями должен стоять символ-разделитель \r\n. Обратите внимание, что это управляющие символы CRLF (0D0A в шестнадцатеричном формате), а не литеральные символы.
 - Поля имеют формат ключ = значение.
 - Наличие следующих ключей и их значений обязательно:
   - EventCode = код события Windows

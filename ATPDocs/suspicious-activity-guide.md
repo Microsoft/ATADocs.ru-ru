@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8b79365410e6f8d0c612ceef54277003a1d95b98
-ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
+ms.openlocfilehash: 6c4206029aa35029097e074934e23d57b02fcfd3
+ms.sourcegitcommit: 00142fc07a81b10922ae26418a4104a0ef4b366d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93343575"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371507"
 ---
 # <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -69,6 +69,7 @@ ms.locfileid: "93343575"
 > |[Предполагаемое использование Golden Ticket (аномальное время)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|2022|Высокий|Privilege Escalation,<br>Lateral movement,<br>Persistence|
 > |[Предполагаемая кража удостоверения (Pass-the-Hash)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|2017|Высокий|Боковое смещение|
 > |[Предполагаемая кража удостоверения (Pass-the-Ticket)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|2018|Высокая или средняя|Путешествие по компьютерам|
+> |[Подозрение на раскрытие имени субъекта-службы Kerberos (внешний идентификатор 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2 410|Высокий|Credential access|
 > |[Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|2411|Высокий|Повышение привилегий|
 > |[Предполагаемые незаконные изменения при аутентификации NTLM](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|2039|Средняя|Privilege escalation, <br>Путешествие по компьютерам|
 > |[Предполагаемая атака ретрансляции NTLM](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|2037|Средняя или низкая, если наблюдается при использовании протокола NTLM версии 2 с подписью|Privilege escalation, <br>Путешествие по компьютерам|
@@ -85,9 +86,6 @@ ms.locfileid: "93343575"
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|Средняя|Обнаружение|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|Средняя|Обнаружение|
 
-<!--
-> |[Suspected Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2410|High|Credential access|
--->
 
 # <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
 
@@ -117,6 +115,7 @@ ms.locfileid: "93343575"
 > |[Предполагаемое использование Golden Ticket (аномальное время)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SECURITY_ALERT|
 > |[Предполагаемая кража удостоверения (Pass-the-Hash)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|ALERT_EXTERNAL_AATP_PASS_THE_HASH_SECURITY_ALERT|
 > |[Предполагаемая кража удостоверения (Pass-the-Ticket)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|ALERT_EXTERNAL_AATP_PASS_THE_TICKET_SECURITY_ALERT|
+> |[Подозрение на раскрытие имени субъекта-службы Kerberos (внешний идентификатор 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
 > |[Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|ALERT_EXTERNAL_AATP_NETLOGON_BYPASS_SECURITY_ALERT|
 > |[Предполагаемые незаконные изменения при аутентификации NTLM](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|ALERT_EXTERNAL_AATP_ABNORMAL_NTLM_SIGNING_SECURITY_ALERT|
 > |[Предполагаемая атака ретрансляции NTLM](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|ALERT_EXTERNAL_AATP_NTLM_RELAY_SECURITY_ALERT|
@@ -132,10 +131,6 @@ ms.locfileid: "93343575"
 > |[Подозрительные VPN-подключения](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|ALERT_EXTERNAL_AATP_ABNORMAL_VPN_SECURITY_ALERT|
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|ALERT_EXTERNAL_AATP_ENUMERATE_SESSIONS_SECURITY_ALERT|
-
-<!--
-> |[Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
--->
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->
