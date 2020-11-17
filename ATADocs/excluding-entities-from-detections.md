@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 344c0f33-45e1-42e2-a051-f722a4504531
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f806d6749c43535b3ca94c035370b3106cefb09a
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: b9589c431b787d1cc5af85102925616bc092f7d9
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911573"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690726"
 ---
 # <a name="excluding-entities-from-detections"></a>Исключение сущностей из результатов обнаружения
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье описывается, как исключать сущности из активируемых предупреждений, чтобы минимизировать появление не представляющих опасность истинно положительных результатов и в то же время отслеживать такие результаты. Чтобы настроить ATA на работу без навязчивого информирования о некоторых пользовательских действиях, которые могут быть частью ваших бизнес-процессов, можно исключить определенные сущности из вызываемых предупреждений.
 

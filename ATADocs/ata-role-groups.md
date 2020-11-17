@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cdb1d66513f785b71b73b21aaf096ab5b5d3ad81
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 2cc8e3f9b5010e5ef70edf69082b3a692392de28
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908751"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690998"
 ---
 # <a name="ata-role-groups"></a>Группы ролей ATA
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Группы ролей позволяют управлять доступом к ATA. С помощью групп ролей вы можете разделить обязанности сотрудников безопасности, предоставив каждому только такой объем доступа, который требуется для их работы. В этой статье объясняется управление доступом и авторизация ролей ATA, что поможет вам начать использовать группы ролей в ATA.
 

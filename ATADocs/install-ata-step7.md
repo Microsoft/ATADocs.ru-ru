@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 81145cd89246e4274b90a9524c995a32690f18c1
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: cd3906dca902416a096106808036864422f82548
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690607"
 ---
 # <a name="install-ata---step-8"></a>Установка ATA. Шаг 8
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«Шаг 7](vpn-integration-install-step.md) 
@@ -53,7 +51,7 @@ ms.locfileid: "90911258"
 
     ![Снимок экрана, показывающий исключение сущностей из обнаружения](media/exclusions.png)
 
-1. Щелкните **Сохранить**.
+1. Выберите команду **Сохранить**.
 
 На этом развертывание Microsoft Advanced Threat Analytics завершено.
 

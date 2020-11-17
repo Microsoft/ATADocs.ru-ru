@@ -10,18 +10,16 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 42fe265978c1cd1ed326e20c2c283853d1b70281
-ms.sourcegitcommit: c12340e58a724fb833403e4fb38810b36e1454f5
+ms.openlocfilehash: fa174cc61a550077989b7ecdb9473c3297b45a1b
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2020
-ms.locfileid: "91941183"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689689"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Поддержка версий Microsoft Advanced Threat Analytics (ATA)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Поддержка Microsoft ATA определяется политикой жизненного цикла Майкрософт для [ATA 1. x](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics%201.X), а основная поддержка заканчивается 12 января 2021 г.
 

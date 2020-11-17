@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8fe6d1eb34fc651791a84227f64ddee868c2fb97
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 833b5604a957ff5910598bfcf8b12c86027ee638
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912023"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690335"
 ---
 # <a name="provide-ata-with-your-email-server-settings"></a>Указание параметров почтового сервера в ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Вы можете настроить получение уведомлений ATA в случае обнаружения подозрительной активности. Для отправки уведомлений ATA по почте требуется настроить **параметры почтового сервера**.
 

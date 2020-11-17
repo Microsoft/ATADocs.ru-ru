@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 05553e65edc787a9e039f763b2a0a021386d81de
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 4565c55a754cbbd650fff0e100e727c9c2720fc7
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911017"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690403"
 ---
 # <a name="ata-reports"></a>Отчеты ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Раздел отчетов в консоли ATA позволяет создавать отчеты, которые содержат сведения о состоянии системы (ее работоспособности и подозрительных действиях, обнаруженных в среде).
 

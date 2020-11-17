@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dae94f42ee4b4be200a3cf2ac299561efe0ddbb1
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: c60cff74d6f8393ab6c9be2d5b1733e6b13fd544
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908785"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690930"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.5
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 Обновление до версии ATA 1.5 привносит следующие улучшения:
 
 - сокращение времени обнаружения;

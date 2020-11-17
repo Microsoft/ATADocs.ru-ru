@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e5b9c8f908cc0d9fbbabcc0cf11feebdf1decb7b
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 831b3cec06a943136c19b706d1b68063ec578dfa
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912202"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689468"
 ---
 # <a name="working-with-the-ata-console"></a>Работа с консолью ATA
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 C помощью консоли можно отслеживать обнаруженные решением ATA подозрительные действия и принимать соответствующие меры.
 
@@ -106,7 +104,7 @@ C помощью консоли можно отслеживать обнаруж
 
 - Контроллеры домена предприятия — только чтение 
 - Администраторы домена 
-- . 
+- Контроллеры домена 
 - Администраторы схемы
 - Администраторы предприятия 
 - Владельцы-создатели групповой политики 
@@ -134,7 +132,7 @@ C помощью консоли можно отслеживать обнаруж
 
 - Picture
 
-- Электронная почта
+- Email
 
 - Telephone
 

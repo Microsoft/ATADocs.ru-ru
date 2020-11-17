@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3f04798ef39299dfa5b31d4a5679d6f68afaeef0
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 1d7700e4ae0f5c686ea8a5def7d4f4fb9aceee09
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909270"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689553"
 ---
 # <a name="ata-architecture"></a>Архитектура ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Архитектура решения Microsoft Advanced Threat Analytics (ATA) подробно представлена на следующей схеме:
 
@@ -95,7 +93,7 @@ ATA отслеживает сетевой трафик контроллеров 
 
 ### <a name="gateway-core-functionality"></a>Основные функции шлюза
 
-**Шлюз ATA ** и **упрощенный шлюз ATA** выполняют одинаковые основные функции:
+**Шлюз ATA** и **упрощенный шлюз ATA** выполняют одинаковые основные функции:
 
 - фиксация и проверка сетевого трафика контроллеров домена (трафик на зеркально отображенных портах для шлюзов ATA и локальный трафик контроллера домена для упрощенных шлюзов ATA);
 
@@ -145,7 +143,7 @@ ATA отслеживает сетевой трафик контроллеров 
 
 |Active Directory (Lsass.exe)|Упрощенный шлюз ATA (Microsoft.Tri.Gateway.exe)|Разное (другие процессы) |Квота упрощенного шлюза ATA|Сброс шлюза|
 |-|-|-|-|-|
-|30 %|20 %|10 %|45 %|Нет|
+|30 %|20 %|10 %|45 %|нет|
 
 Если Active Directory требуются дополнительные вычислительные ресурсы, квота для упрощенного шлюза ATA сокращается. В следующем примере упрощенному шлюзу ATA требуется больше ресурсов, чем выделено квотой. Поэтому он сбрасывает некоторый трафик (выполняется мониторинг только части трафика):
 

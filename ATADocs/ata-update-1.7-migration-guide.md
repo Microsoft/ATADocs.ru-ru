@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4772e9cbb1e00e4bb1a4bebd5cc6e2b7821766dc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 360c71bebc700918c8bcd67f444c8a4ae2eb3894
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909893"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690896"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>Руководство по миграции на обновленную версию ATA 1.7
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 При обновлении ATA до версии 1.7 появляются следующие улучшения:
 
 - Новые обнаружения

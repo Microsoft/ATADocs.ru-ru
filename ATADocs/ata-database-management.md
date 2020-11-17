@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c1d26afbb9121e9c8516ded5d50ad08accea8f17
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: f6f39619aa3ba960384b646f2b4237118cabf725
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909223"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691083"
 ---
 # <a name="ata-database-management"></a>Управление базой данных ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Из этой статьи вы узнаете, как перемещать и восстанавливать базу данных ATA, а также создавать ее резервные копии на примере MongoDB.
 

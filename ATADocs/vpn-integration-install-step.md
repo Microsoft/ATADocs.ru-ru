@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ab9203edf49031e749a1d814fda08c52845345a5
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 5f571f6c9d357860cf295198ac7d614ec20874f2
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908668"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689655"
 ---
 # <a name="install-ata---step-7"></a>Установка ATA. Шаг 7
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«Шаг 5](install-ata-step5.md) 

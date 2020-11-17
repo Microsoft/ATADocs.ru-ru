@@ -11,18 +11,16 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2e1983e6d4184f113c13b1a992a2c91a15c4dbfb
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 592b64fb1d929a2f84a6aac3207c4107d704cc7f
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911038"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690488"
 ---
 # <a name="manage-system-generated-logs"></a>Управление системными журналами
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -65,7 +63,7 @@ ms.locfileid: "90911038"
 
     - идентификатор подозрительного действия;
 
-    - Status
+    - Состояние
 
     - время начала и окончания;
 
@@ -79,7 +77,7 @@ ms.locfileid: "90911038"
 
     - идентификатор проблемы работоспособности;
 
-    - Status
+    - Состояние
 
     - время начала и окончания;
 

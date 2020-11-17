@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 567fb2beb08425a69964932ca6807ff03a6b6549
-ms.sourcegitcommit: 69c55503b8b3f7ca99dbea872b17d81124831fad
+ms.openlocfilehash: 23831562f266a338cdc4cba2f3448a44b441dd35
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94567929"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690624"
 ---
 # <a name="install-ata---step-6"></a>Установка ATA. Шаг 6
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«Шаг 5](install-ata-step5.md) 
@@ -62,7 +60,7 @@ ms.locfileid: "94567929"
 
 #### <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>Настройка прослушивания событий SIEM в шлюзе ATA
 
-1. В разделе настройки ATA на вкладке **Источники данных** щелкните **SIEM** , включите **Системный журнал** и нажмите кнопку **Сохранить**.
+1. В разделе настройки ATA на вкладке **Источники данных** щелкните **SIEM**, включите **Системный журнал** и нажмите кнопку **Сохранить**.
 
     ![Разрешите использование образа UDP для прослушивания системного журнала](media/ATA-enable-siem-forward-events.png)
 

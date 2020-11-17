@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 121cc11ead51447a7806489a27ea01852bfbba1d
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: caac51c76334b62250c86e78dbdb5d9193f47f6d
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908913"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691066"
 ---
 # <a name="working-with-ata-system-health-and-events"></a>Работа со сведениями о работоспособности системы и событиями ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="ata-health-center"></a>Центр работоспособности ATA
 
@@ -48,7 +46,7 @@ ms.locfileid: "90908913"
 
 -   **Заблокировать**: блокировка действия означает, что в настоящее время оно игнорируется и что оповещение о нем выводится снова, только если оно обнаружено повторно. Если имеется схожее оповещение, ATA не откроет его еще раз. Но если оповещение отсутствует в течение семи дней, а затем снова возникает, оно будет выведено повторно.
 
-- **Удалить**: если вы удаляете оповещение, оно будет удалено из системы и из базы данных. Восстановить его невозможно. Щелкнув "Удалить", можно удалить все подозрительные действия одного типа.
+- **Удалить**: оповещение удаляется из системы и из базы данных. Восстановить его невозможно. Щелкнув "Удалить", можно удалить все подозрительные действия одного типа.
 
 
 

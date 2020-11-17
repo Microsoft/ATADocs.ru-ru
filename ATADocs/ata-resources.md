@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b37b08c401be6a6c01649051b1800597f4e11a9d
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 61b2a3dcc2249f41ce6dfdceb9ccd823885a95a7
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908863"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691015"
 ---
 # <a name="ata-readiness-roadmap"></a>План подготовки к работе ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье предложен план подготовки, который поможет вам начать работу с Advanced Threat Analytics.
 
@@ -45,7 +43,7 @@ Advanced Threat Analytics состоит из центра ATA, который
 |----|----|
 |Тип оборудования|Физическое, виртуальное, виртуальная машина Azure|
 |Рабочая группа или домен|Рабочая группа, домен|
-|Размеры шлюза|Полный шлюз, упрощенный шлюз|
+|Выбор размера шлюза|Полный шлюз, упрощенный шлюз|
 |Сертификаты|PKI, самозаверяющий|
 
 Если вы используете физические серверы, необходимо планирование емкости. Выделить место вам поможет средство определения размера ATA.

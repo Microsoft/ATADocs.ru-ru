@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ca7311f3590d8da5e035f881b2156c4b41d8c05c
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: f4bdad22b0a557d576946f90541cb7d82e6cf7b3
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908737"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690947"
 ---
 # <a name="what-threats-does-ata-look-for"></a>Типы угроз, которые ищет ATA
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA обнаруживает события на следующих этапах продвинутой атаки: разведка, компрометация учетных данных, боковое смещение, повышение привилегий, полное управление доменом и т. д. При этом продвинутые атаки и внутренние угрозы обнаруживаются, прежде чем они смогут нанести ущерб организации.
 На каждом этапе выявляется несколько подозрительных действий, которые относятся к проверяемому этапу. При этом каждое подозрительное действие сопоставляется с различными видами возможных атак.

@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bdbe13b9a85e8ab8f02c67b59b78141d46ba3df3
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 6178593296c56bbe622aa9ac7763ffab50fbd66c
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911963"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690148"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>Устранение неполадок в ATA с помощью базы данных ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В качестве своей базы данных ATA использует MongoDB.
 Для взаимодействия с базой данных можно использовать заданную по умолчанию командную строку или инструмент пользовательского интерфейса для выполнения дополнительных задач и устранения неполадок.

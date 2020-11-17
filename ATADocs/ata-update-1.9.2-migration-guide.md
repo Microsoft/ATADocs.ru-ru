@@ -11,16 +11,14 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b2aa29f2818216b13116173f0872d9108e168c19
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 053924ae47dcdefe4629451741cfe27b64a9f13e
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910989"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690879"
 ---
 # <a name="ata-version-192"></a>ATA версии 1.9.2
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Мы рады сообщить о выпуске Microsoft Advanced Threat Analytics 1.9 с обновлением 2.
 
@@ -65,7 +63,7 @@ ms.locfileid: "90910989"
 Это обновление заменяет ATA версии 1.9.1 (1.9.7412).
 
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также:
 
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Версии ATA](ata-versions.md)

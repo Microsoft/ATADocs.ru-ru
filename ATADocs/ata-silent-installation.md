@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 74d610899023eba93da568360a99505119d13e70
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 55c12920020a0cbcda0b38e7b9d0cae083423a4e
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908847"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690981"
 ---
 # <a name="ata-silent-installation"></a>Автоматическая установка ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья содержит указания по автоматической установке ATA.
 
@@ -65,9 +63,9 @@ ms.locfileid: "90908847"
 >
 > |Имя|Синтаксис|Обязательно для автоматической установки?|Описание:|
 > |---|---|---|---|
->|InstallationPath|InstallationPath="<InstallPath>"|Нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.|
->|DatabaseDataPath|DatabaseDataPath= "<DBPath>"|Нет|Задает путь к папке данных базы данных ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|
->|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|Нет|Задает отпечаток сертификата для центра ATA. Этот сертификат используется для защиты обмена данными между шлюзом ATA и центром ATA, а также для проверки подлинности веб-сайта консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
+>|InstallationPath|InstallationPath="<InstallPath>"|нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.|
+>|DatabaseDataPath|DatabaseDataPath= "<DBPath>"|нет|Задает путь к папке данных базы данных ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data.|
+>|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|нет|Задает отпечаток сертификата для центра ATA. Этот сертификат используется для защиты обмена данными между шлюзом ATA и центром ATA, а также для проверки подлинности веб-сайта консоли ATA. Если этот параметр не задан, при установке будет создан самозаверяющий сертификат.|
 
 **Пример**:
 
@@ -133,7 +131,7 @@ ms.locfileid: "90908847"
 >
 > |Имя|Синтаксис|Обязательно для автоматического удаления?|Описание:|
 > |---|---|---|---|
-> |DeleteExistingDatabaseData|DeleteExistingDatabaseData|Нет|Удаляет все файлы в имеющейся базе данных.|
+> |DeleteExistingDatabaseData|DeleteExistingDatabaseData|нет|Удаляет все файлы в имеющейся базе данных.|
 
 **Примеры**:
 
@@ -175,7 +173,7 @@ ms.locfileid: "90908847"
 >
 > |Имя|Синтаксис|Обязательно для автоматической установки?|Описание:|
 > |---|---|---|---|
->|InstallationPath|InstallationPath="<InstallPath>"|Нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.
+>|InstallationPath|InstallationPath="<InstallPath>"|нет|Задает путь для установки двоичных файлов ATA. По умолчанию задан путь C:\Program Files\Microsoft Advanced Threat Analytics\Center.
 >|ConsoleAccountName|ConsoleAccountName="<AccountName>"|Да|Задает имя учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
 >|ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Да|Задает пароль учетной записи пользователя (user@domain.com), используемой для регистрации шлюза ATA в центре ATA.|
 

@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: e6122fec646e7b1428862f729762dfcb08edb352
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: c61632b7f3ea3f769066ee802dced77d821f3e93
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908943"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691032"
 ---
 # <a name="ata-data-security-and-privacy"></a>Безопасность и конфиденциальность данных в ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

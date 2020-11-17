@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7424525fa3b5e2e9cd06ad410d7965229885ab35
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 024ca22c366e98c0c09a0c13152c453ce33363c0
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912214"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690046"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом разделе подробно описываются возможные ошибки в развертываниях ATA и действия, необходимые для их устранения.
 
