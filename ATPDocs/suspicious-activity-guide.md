@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b343d5a708791de4658389985423f104e3f57762
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 11184c7bea435ae1168deb810ec54ec163d990f5
+ms.sourcegitcommit: 38266d01b28ea6b084687b9bc3c4aa18e2dbb3b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846703"
+ms.locfileid: "94851232"
 ---
 # <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "94846703"
 
 В следующей таблице приведено сопоставление между именами оповещений, их уникальными внешними идентификаторами и идентификаторами оповещений Microsoft Cloud App Security. Для сценариев и автоматизации специалисты Майкрософт рекомендуют использовать для оповещений внешние коды, а не имена, поскольку только внешние коды оповещений безопасности являются постоянными и не подлежат изменению.
 
-# <a name="external-ids"></a>[Внешние идентификаторы](#tab/external)
+### <a name="external-ids"></a>[Внешние идентификаторы](#tab/external)
 
 > [!div class="mx-tdBreakAll"]
 > |Имя оповещения системы безопасности|Уникальный внешний идентификатор|Статус|MITRE ATT&CK Matrix&trade;|
@@ -84,8 +84,7 @@ ms.locfileid: "94846703"
 > |[Разведывательная атака с использованием пользователей и членства в группах (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|Средняя|Обнаружение|
 > |[Разведывательная атака с применением данных пользователя и IP-адреса (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|Средняя|Обнаружение|
 
-
-# <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
+### <a name="cloud-app-security-ids"></a>[Идентификаторы Cloud App Security](#tab/cloud-app-security)
 
 > [!div class="mx-tdBreakAll"]
 > |Имя оповещения системы безопасности|Идентификатор оповещения Cloud App Security|
@@ -132,6 +131,8 @@ ms.locfileid: "94846703"
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->
+
+---
 
 > [!NOTE]
 > Чтобы отключить оповещение системы безопасности, обратитесь в службу поддержки.
