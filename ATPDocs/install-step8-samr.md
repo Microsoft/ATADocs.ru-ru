@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9e1bfe428a466e4870613798e4af116f27d63647
-ms.sourcegitcommit: 218ba562a2a109ff456b011004530f503a4e82c6
+ms.openlocfilehash: fb97959f9cffe0e80cb0d273e061a13e6b809f83
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342510"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847774"
 ---
 # <a name="configure-product-long-to-make-remote-calls-to-sam"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] для выполнения удаленных вызовов SAM
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)]Обнаружение [пути перемещения бокового смещения](use-case-lateral-movement-path.md) зависит от запросов, которые указывают локальных администраторов на конкретных компьютерах. Эти запросы выполняются с помощью протокола SAM-R с использованием [!INCLUDE [Product short](includes/product-short.md)] учетной записи службы, созданной во время [!INCLUDE [Product short](includes/product-short.md)] установки на  [шаге 2. Подключитесь к AD](install-step2.md).
 
@@ -49,4 +47,4 @@ ms.locfileid: "93342510"
 ## <a name="see-also"></a>См. также
 
 - [Исследование атак с использованием пути перемещения бокового смещения с помощью [!INCLUDE [Product short](includes/product-short.md)]](use-case-lateral-movement-path.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

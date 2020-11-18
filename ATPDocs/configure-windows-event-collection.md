@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad6604b3502cde05b88598a286407778a2e03787
-ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
+ms.openlocfilehash: fd2d06ad49756a0a1b78cd055546b5db64bb0940
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94558259"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848182"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Функции обнаружения [!INCLUDE [Product long](includes/product-long.md)] анализируют определенные записи журнала событий Windows для расширения своих возможностей и предоставления дополнительных сведений о том, кто именно выполняет определенные действия, например вход через NTLM, изменение групп безопасности и действия при аналогичных событиях. Чтобы проводить аудит и включать в журнал событий Windows нужные события, контроллерам домена требуются точные параметры расширенной политики аудита. Неверные параметры расширенной политики аудита могут привести к тому, что требуемые события не будут записываться в журнал и охват [!INCLUDE [Product short](includes/product-short.md)] будет неполным.
 

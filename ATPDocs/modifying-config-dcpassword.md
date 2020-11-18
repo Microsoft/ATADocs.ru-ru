@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b9dcd871fecd855a35a530f57c020fba5f3d1347
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: ef931c90558ffaea1a24d8682cc8091a845aeea8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275886"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847417"
 ---
 # <a name="change-product-long-portal-configuration---domain-connectivity-password"></a>Изменение [!INCLUDE [Product long](includes/product-long.md)] конфигурации портала — пароль для подключения к домену
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>Изменение пароля для подключения к домену
 
@@ -37,7 +35,7 @@ ms.locfileid: "93275886"
 
 1. На панели инструментов щелкните значок параметров и выберите пункт **Конфигурация**.
 
-    ![[! ВКЛЮЧИТЬ [продукт Short] (включая/Product-Short. md)] значок параметров конфигурации](media/config-menu.png)
+    ![[!INCLUDE [Product short](includes/product-short.md)]: значок параметров конфигурации](media/config-menu.png)
 
 1. Выберите **Directory Services** (Службы каталогов).
 
@@ -48,12 +46,12 @@ ms.locfileid: "93275886"
     > [!NOTE]
     > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
 
-1. Выберите команду **Сохранить**.
+1. Щелкните **Сохранить**.
 
-1. На [!INCLUDE [Product short](includes/product-short.md)] портале выберите **Конфигурация**.
+1. На портале [!INCLUDE [Product short](includes/product-short.md)] выберите пункт **Конфигурация**.
 1. В разделе **система** выберите страницу **датчиков** и проверьте состояние датчиков.
 
 ## <a name="see-also"></a>См. также:
 
-- [Интеграция с защитником Майкрософт для конечной точки](integrate-mde.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Интеграция с Microsoft Defender для конечной точки](integrate-mde.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

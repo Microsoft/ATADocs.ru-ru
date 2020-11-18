@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d55f682b8056900ea19fb2684fa322fdb100df3
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 5bdaec29f2b8eb6d9d62105d48a59fde7c578f05
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276199"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847791"
 ---
 # <a name="integrate-vpn"></a>Интеграция VPN
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] может получать данные учета из решений VPN. Если настроить эту функцию, страница профиля пользователя будет включать сведения из VPN-подключений, в том числе IP-адреса и расположения, из которых осуществлялись подключения. Дополнительные данные о действиях пользователей помогут в процессе анализа, а также при обнаружении неправильных VPN-подключений. Вызов для разрешения внешних IP-адресов в расположении является анонимным. Личный идентификатор в этом вызове не отправляется.
 
@@ -65,7 +63,7 @@ ms.locfileid: "93276199"
 Чтобы настроить данные VPN в, [!INCLUDE [Product short](includes/product-short.md)] выполните следующие действия.
 
 1. На [!INCLUDE [Product short](includes/product-short.md)] портале щелкните конфигурацию шестеренки, а затем — **VPN**.
-1. Включите **Учет Radius** и введите **общий секрет** , настроенный ранее на VPN-сервере RRAS. Затем нажмите кнопку **Сохранить**.
+1. Включите **Учет Radius** и введите **общий секрет**, настроенный ранее на VPN-сервере RRAS. Затем нажмите кнопку **Сохранить**.
 
     ![Настройка [! ВКЛЮЧИТЬ [продукт Short] (включая/Product-Short. md)] VPN](media/vpn-radius.png)
 
@@ -73,9 +71,9 @@ ms.locfileid: "93276199"
 
  После того как [!INCLUDE [Product short](includes/product-short.md)] датчик получит события VPN и отправит их в [!INCLUDE [Product short](includes/product-short.md)] облачную службу для обработки, профиль сущности будет указывать на различные доступные расположения VPN, а действия в профиле будут указывать на расположения.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

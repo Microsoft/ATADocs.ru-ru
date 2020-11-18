@@ -11,22 +11,20 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bd5facbf0cc6616a8467d0eb1b33c7603debabc8
-ms.sourcegitcommit: 8cb9839a67fce42921f7a24564fddf15e503bdea
+ms.openlocfilehash: afadc7b031a71d5441bda1bd186bfd6aa66fe629
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278594"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848454"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>Оценка безопасности: неактивные сущности из **конфиденциальных** групп
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-sensitive-dormant-entities"></a>Что такое **конфиденциальные** неактивные сущности?
 
 [!INCLUDE [Product long](includes/product-long.md)] обнаруживает, что определенные пользователи чувствительны к **конфиденциальным** данным, и предоставляют атрибуты, которые отображаются, если они неактивны, отключены или устарели.
 
-Однако **конфиденциальные** учетные записи также могут стать *неактивными* , если они не используются в течение 180 дней. Неактивные [конфиденциальные](sensitive-accounts.md) сущности — это объекты, позволяющие злонамеренным субъектам получить конфиденциальный доступ к вашей организации.
+Однако **конфиденциальные** учетные записи также могут стать *неактивными*, если они не используются в течение 180 дней. Неактивные [конфиденциальные](sensitive-accounts.md) сущности — это объекты, позволяющие злонамеренным субъектам получить конфиденциальный доступ к вашей организации.
 
 ## <a name="what-risk-do-dormant-entities-create-in-sensitive-groups"></a>Какой риск создают неактивные сущности в **конфиденциальных** группах?
 
@@ -48,4 +46,4 @@ ms.locfileid: "93278594"
 ## <a name="see-also"></a>См. также
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

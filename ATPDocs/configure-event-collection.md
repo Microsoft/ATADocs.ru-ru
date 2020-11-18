@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 627c30146e2543501da9d5970c9c8a087e3320bf
-ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
+ms.openlocfilehash: 7624f2d959e37b2bf88d4b14c31c5a6f1ddd6853
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94558242"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848233"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Для расширения возможностей обнаружения службе "[!INCLUDE [Product long](includes/product-long.md)]" требуется доступ к событиям Windows, приведенным в статье [Настройка сбора данных о событиях Windows](configure-windows-event-collection.md#configure-event-collection). Эти события может автоматически считывать датчик [!INCLUDE [Product short](includes/product-short.md)]. Если датчик [!INCLUDE [Product short](includes/product-short.md)] не развернут, они передаются в автономный датчик [!INCLUDE [Product short](includes/product-short.md)]. Для этого в автономном датчике [!INCLUDE [Product short](includes/product-short.md)] настраивается ожидание передачи событий SIEM или [пересылка событий Windows](configure-event-forwarding.md).
 

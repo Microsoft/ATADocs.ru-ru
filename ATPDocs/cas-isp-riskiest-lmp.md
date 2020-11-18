@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df369b2a718b1aa2cb552bb42712a6b36275e2ee
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 40175ace8046ae7b0edb77f4cac6e036eed997e7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276683"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848352"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>Оценка безопасности: пути бокового смещения с максимальным риском
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-risky-lateral-movement-paths"></a>Что такое рискованные пути бокового смещения?
 
@@ -56,4 +54,4 @@ ms.locfileid: "93276683"
 ## <a name="see-also"></a>См. также
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

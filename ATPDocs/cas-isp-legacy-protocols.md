@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 223ae21d15ecc15523c3670062aa6a2502281738
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: ec015caaf138b436238a79a257189882929e22a8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276704"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848420"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-legacy-protocols"></a>Что такое устаревшие протоколы?
 
@@ -56,4 +54,4 @@ ms.locfileid: "93276704"
 ## <a name="next-steps"></a>Дальнейшие шаги
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

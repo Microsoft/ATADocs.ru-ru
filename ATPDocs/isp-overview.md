@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c5f6eed2ee9220555bbd870f66e2cacbbb82ed1c
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 58e079764c2e59623b94b78f29f0ad00d6219dcc
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275100"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847434"
 ---
 # <a name="product-longs-identity-security-posture-assessments"></a>[!INCLUDE [Product long](includes/product-long.md)]Оценка уровня безопасности удостоверений
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Как правило, организации всех размеров имеют ограниченную видимость относительно того, могут ли их локальные приложения и службы представлять уязвимость для организации. Проблема ограниченной видимости особенно актуальна для неподдерживаемых или устаревших компонентов.
 
@@ -74,4 +72,4 @@ ms.locfileid: "93275100"
 ## <a name="next-steps"></a>Дальнейшие шаги
 
 - [Дополнительные сведения об использовании Cloud App Security с [!INCLUDE [Product short](includes/product-short.md)]](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
