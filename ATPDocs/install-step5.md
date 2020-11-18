@@ -9,23 +9,21 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 06df6ebb9c5baa3ba2a568c78dd1ab175cdae9a8
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 27431aca85e794ecd31029b6286e3146f01fa7ec
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276983"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848505"
 ---
 # <a name="configure-product-long-sensor-settings"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] параметров датчика
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье вы узнаете, как правильно настроить [!INCLUDE [Product long](includes/product-long.md)] параметры датчика для начала просмотра данных. Вам потребуется дополнительная настройка и интеграция, чтобы воспользоваться всеми [!INCLUDE [Product short](includes/product-short.md)] возможностями.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- [ [!INCLUDE [Product short](includes/product-short.md)] Экземпляр](install-step1.md) , [подключенный к Active Directory](install-step2.md).
-- Скачанная копия [ [!INCLUDE [Product short](includes/product-short.md)] пакета установки датчика](install-step3.md) и ключа доступа.
+- [Экземпляр [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md), [подключенный к Active Directory](install-step2.md).
+- Скачанная копия [пакета установки датчика [!INCLUDE [Product short](includes/product-short.md)]](install-step3.md) и ключ доступа.
 
 ## <a name="configure-sensor-settings"></a>Настройка параметров датчика
 
@@ -41,11 +39,11 @@ ms.locfileid: "93276983"
 
     ![Настройка параметров датчика](media/sensor-config-2.png)
 
-    - **Описание** : введите описание [!INCLUDE [Product short](includes/product-short.md)] датчика (необязательно).
+    - **Описание**: введите описание [!INCLUDE [Product short](includes/product-short.md)] датчика (необязательно).
     - **Контроллеры домена (FQDN)** (требуется для [!INCLUDE [Product short](includes/product-short.md)] автономного датчика, это невозможно изменить для [!INCLUDE [Product short](includes/product-short.md)] датчика). Введите полное доменное имя контроллера домена и щелкните знак "плюс", чтобы добавить его в список. Например, **dc01.contoso.com**.
 
     Сведения ниже относятся к серверам, которые указываются в списке **Контроллеры домена**.
-    - Все контроллеры домена, трафик которых отслеживается через зеркальное отображение портов, [!INCLUDE [Product short](includes/product-short.md)] должны быть перечислены в списке **контроллеры домена** . Если контроллер домена не указан в списке **Контроллеры домена** , обнаружение подозрительных действий может выполняться не так, как ожидается.
+    - Все контроллеры домена, трафик которых отслеживается через зеркальное отображение портов, [!INCLUDE [Product short](includes/product-short.md)] должны быть перечислены в списке **контроллеры домена** . Если контроллер домена не указан в списке **Контроллеры домена**, обнаружение подозрительных действий может выполняться не так, как ожидается.
     - По крайней мере один контроллер домена из списка должен быть глобальным каталогом. Это позволяет [!INCLUDE [Product short](includes/product-short.md)] разрешать объекты компьютеров и пользователей в других доменах леса.
 
     - **Сетевые адаптеры для записи** (обязательно)
@@ -71,7 +69,7 @@ ms.locfileid: "93276983"
 1. Проверьте [!INCLUDE [Product short](includes/product-short.md)] подключение на любом устройстве домена, выполнив следующие действия.
     1. Откройте командную строку.
     1. Введите `nslookup`.
-    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. Например `server contosodc.contoso.azure`.
+    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. Например, `server contosodc.contoso.azure`
         - Обязательно замените ContosoDC. contoso. Azure и contoso. Azure полным доменным [!INCLUDE [Product short](includes/product-short.md)] именем датчика и имени домена соответственно.
     1. Введите `ls -d contoso.azure`.
     1. Повторите шаги 3 и 4 для каждого датчика, который нужно протестировать.
@@ -89,4 +87,4 @@ ms.locfileid: "93276983"
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://aka.ms/MDIcommunity) уже сегодня!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/MDIcommunity).

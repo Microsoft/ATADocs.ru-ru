@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1cb2ea1c5f853f6f3a56d4bcccd84b5958078329
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 3eb687b716ce69bb4be0aabc2b128b1cf46242ff
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275573"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847145"
 ---
 # <a name="set-product-long-notifications"></a>Настройка уведомлений [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] может по электронной почте отправлять уведомления при обнаружении подозрительных действий, а также оповещения системы безопасности и оповещения о проблемах с работоспособностью.
 

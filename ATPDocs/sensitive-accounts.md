@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 74e97750d25f48522d38246337682e0399d24c4d
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 3f32d974b9dcfb946279b14eebc116ca74b5b3f5
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274495"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846924"
 ---
 # <a name="working-with-sensitive-accounts"></a>Работа с конфиденциальными учетными записями
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="sensitive-entities"></a>Конфиденциальные объекты
 
@@ -47,7 +45,7 @@ ms.locfileid: "93274495"
   > [!NOTE]
   > До сентября 2018 г. пользователи удаленного рабочего стола также автоматически рассматривались в [!INCLUDE [Product short](includes/product-short.md)] как привилегированные. Сущности или группы удаленного рабочего стола, добавляемые после этой даты, больше не помечаются автоматически как привилегированные. Добавленные до этой даты сущности или группы удаленного рабочего стола могут быть по-прежнему помечены как привилегированные. Параметр привилегированности теперь можно изменять вручную.
 
-Наряду с этими группами [!INCLUDE [Product short](includes/product-short.md)] определяет следующие серверы ресурсов с высокой важностью и автоматически отмечает их как **конфиденциальные** :
+Наряду с этими группами [!INCLUDE [Product short](includes/product-short.md)] определяет следующие серверы ресурсов с высокой важностью и автоматически отмечает их как **конфиденциальные**:
 
 - Сервер центра сертификации
 - DHCP-сервер
@@ -64,7 +62,7 @@ ms.locfileid: "93274495"
 
     ![[!INCLUDE [Product short](includes/product-short.md)]: теги сущности](media/entity-tags.png)
 
-1. В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп** , а затем щелкните значок **+** , чтобы добавить их.
+1. В разделе **Конфиденциально** введите имена **конфиденциальных учетных записей** и **конфиденциальных групп**, а затем щелкните значок **+** , чтобы добавить их.
 
     ![[!INCLUDE [Product short](includes/product-short.md)]: пример конфиденциальной учетной записи](media/sensitive-account-sample.png)
 

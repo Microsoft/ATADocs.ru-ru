@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 032a5f289657485b744ad335dc51777a8ba72602
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 368b328cb6863074bd47f0785aafccf7f491fa54
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275037"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847349"
 ---
 # <a name="advanced-threat-analytics-ata-to-product-long"></a>Advanced Threat Analytics (ATA) для [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
@@ -43,9 +41,9 @@ ms.locfileid: "93275037"
 > [!NOTE]
 > Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
-- Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый [!INCLUDE [Product short](includes/product-short.md)] экземпляр поддерживает несколько Active Directory границы леса и функционального уровня леса (FFL) для Windows 2003 и более поздних версий.
+- Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый экземпляр [!INCLUDE [Product short](includes/product-short.md)] поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
 - [!INCLUDE [Product short](includes/product-short.md)] требуется платформа .NET Framework 4,7 или более поздней версии, и может потребоваться контроллер домена (перезапуск), если текущая версия .NET Framework не 4,7 или более поздняя.
 
@@ -141,10 +139,10 @@ ms.locfileid: "93275037"
 
 Поздравляем! Переход с ATA на [!INCLUDE [Product short](includes/product-short.md)] завершен.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о [[!INCLUDE [Product short](includes/product-short.md)]](what-is.md) функциях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md).
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection).

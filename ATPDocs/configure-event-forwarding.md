@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6addbfe12b8c7bf56274cea0e185e2b45d2149aa
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8f30530929793bb338c7202eeedebc47b883e6c0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277337"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848692"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Датчик [!INCLUDE [Product long](includes/product-long.md)] автоматически считывает события локально — настраивать пересылку событий не требуется.
@@ -42,7 +40,7 @@ ms.locfileid: "93277337"
 
 1. Откройте раздел "Пользователи и компьютеры Active Directory", перейдите в папку **Builtin** и дважды щелкните группу **Читатели журнала событий**.
 1. Выберите пункт **Участники**.
-1. Если в этом списке нет элемента **Сетевая служба** , нажмите кнопку **Добавить** и введите имя **Сетевая служба** в поле **Введите имена выбираемых объектов**. Щелкните **Проверить имена** и дважды нажмите **ОК**.
+1. Если в этом списке нет элемента **Сетевая служба**, нажмите кнопку **Добавить** и введите имя **Сетевая служба** в поле **Введите имена выбираемых объектов**. Щелкните **Проверить имена** и дважды нажмите **ОК**.
 
 После добавления **сетевой службы** в группу **Читатели журнала событий** перезагрузите контроллеры домена, чтобы изменения вступили в силу.
 
@@ -61,7 +59,7 @@ ms.locfileid: "93277337"
 
     1. Выберите значение **Включено**.
     1. В разделе **Параметры** щелкните **Показать**.
-    1. В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК** :  `Server=http\://\<fqdnMicrosoftDefenderForIdentitySensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (Пример: `Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
+    1. В поле **SubscriptionManagers** введите следующее значение и нажмите кнопку **ОК**:  `Server=http\://\<fqdnMicrosoftDefenderForIdentitySensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (Пример: `Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
 
     ![Изображение настройки целевой подписки](media/wef-2-config-target-sub-manager.png)
 
@@ -85,7 +83,7 @@ ms.locfileid: "93277337"
         1. Щелкните **По журналу** и выберите **Журнал безопасности**.
         1. В поле **Включить/исключить идентификаторы событий** введите номер события и нажмите кнопку **OK**. Например, введите 4776, как в следующем примере.<br/>
         ![Изображение фильтра запросов](media/wef-4-query-filter.png)
-    1. Щелкните созданную подписку правой кнопкой мыши и выберите **Состояние выполнения** , чтобы проверить, есть ли проблемы с состоянием.
+    1. Щелкните созданную подписку правой кнопкой мыши и выберите **Состояние выполнения**, чтобы проверить, есть ли проблемы с состоянием.
     1. Через несколько минут проверьте, отображаются ли события, для которых настроена пересылка, в списке перенаправленных событий в автономном датчике [!INCLUDE [Product short](includes/product-short.md)].
 
 Дополнительные сведения см. на странице [Настройка компьютеров для пересылки и сбора событий](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))

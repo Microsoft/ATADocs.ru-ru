@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ccb3ee9afe32615246f8e6dc63e181475094a8b7
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: b677512817fc910c5845fa7e1544003bfec60593
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274378"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848947"
 ---
 # <a name="product-long-frequently-asked-questions"></a>[!INCLUDE [Product long](includes/product-long.md)] часто задаваемые вопросы
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье содержится список часто задаваемых вопросов и ответов на [!INCLUDE [Product long](includes/product-long.md)] следующие категории:
 
@@ -85,9 +83,9 @@ ATA — это автономное локальное решение, вклю
 
 - **[Возможности UEBA](/cloud-app-security/tutorial-ueba)** : Получение ценных сведений о рисках для отдельных пользователей благодаря оценке приоритета исследования для пользователей. Оценка может помочь специалистам по безопасности (SecOps) в проведении исследований, а также может помочь аналитикам в анализе необычных действий для пользователя и организации.
 
-- **Встроенная интеграция** : Интеграция с Microsoft Cloud App Security и Защитой идентификации Azure AD для получения гибридного представления событий, происходящих как в локальных, так и в гибридных средах.
+- **Встроенная интеграция**: Интеграция с Microsoft Cloud App Security и Защитой идентификации Azure AD для получения гибридного представления событий, происходящих как в локальных, так и в гибридных средах.
 
-- **Участие в защитнике Microsoft 365** : вносит данные оповещений и угроз в Microsoft 365 Defender. Защитник Microsoft 365 использует портфолио безопасности Microsoft 365 (удостоверения, конечные точки, данные и приложения) для автоматического анализа данных об угрозах между доменами, создание полной картины каждой атаки на одной панели мониторинга. Благодаря этой простоте, средства защиты могут сосредоточиться на критически важных угрозах и поиске сложных нарушений, а также доверять Microsoft 365 мощной автоматизации защитника, в любом месте в цепочке уничтожения и возвращающей организацию в безопасном состоянии.
+- **Участие в защитнике Microsoft 365**: вносит данные оповещений и угроз в Microsoft 365 Defender. Защитник Microsoft 365 использует портфолио безопасности Microsoft 365 (удостоверения, конечные точки, данные и приложения) для автоматического анализа данных об угрозах между доменами, создание полной картины каждой атаки на одной панели мониторинга. Благодаря этой простоте, средства защиты могут сосредоточиться на критически важных угрозах и поиске сложных нарушений, а также доверять Microsoft 365 мощной автоматизации защитника, в любом месте в цепочке уничтожения и возвращающей организацию в безопасном состоянии.
 
 ## <a name="licensing-and-privacy"></a>Лицензирование и конфиденциальность
 
@@ -212,11 +210,11 @@ ATA — это автономное локальное решение, вклю
 
 Просмотрите последнюю ошибку в текущем [журнале](troubleshooting-using-logs.md) ошибок (где устанавливается [!INCLUDE [Product short](includes/product-short.md)] в папку "Logs").
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] Планирование ресурсов](capacity-planning.md)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Планирование ресурсов [!INCLUDE [Product short](includes/product-short.md)]](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
 - [Устранение неполадок](troubleshooting-known-issues.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

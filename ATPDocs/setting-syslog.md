@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 55487b6638fc8278ae94b3444f74f2abe2b2dc56
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 833b836c28455a231fa4a30afe2e604ce7646a16
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275262"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848981"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
@@ -56,7 +54,7 @@ ms.locfileid: "93275262"
 
 Для просмотра или изменения ваших параметров Syslog сделайте следующее.
 
-1. Щелкните **Уведомления** , а затем на вкладке **Уведомления системного журнала** нажмите **Настроить** и введите следующие сведения:
+1. Щелкните **Уведомления**, а затем на вкладке **Уведомления системного журнала** нажмите **Настроить** и введите следующие сведения:
 
     ![[!INCLUDE [Product short](includes/product-short.md)]: параметры сервера Syslog](media/syslog.png)
 

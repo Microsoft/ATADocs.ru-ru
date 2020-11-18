@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d69fef506f2f1e787039a3b2af1b35b81a3504fc
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: f8d7237d3202ed4b0645b92d61f37cc7c89085da
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274854"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847230"
 ---
 # <a name="product-long-monitored-activities"></a>Отслеживаемые действия в [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
@@ -79,7 +77,7 @@ ms.locfileid: "93274854"
 |Отслеживаемое действие|Описание:|
 |---------------------|------------------|
 |Репликация службы каталогов|Пользователь пытался реплицировать службу каталогов.|
-|DNS-запрос|Тип запроса, который пользователь выполнил на контроллере домена ( **AXFR** , **TXT** , **MX** , **NS** , **SRV** , **ANY** , **DNSKEY** ).|
+|DNS-запрос|Тип запроса, который пользователь выполнил на контроллере домена (**AXFR**,**TXT**, **MX**, **NS**, **SRV**, **ANY**, **DNSKEY**).|
 |Получение закрытых данных|Пользователь запросил или попытался запросить закрытые данные по протоколу LSARPC.|
 |Создание службы|Пользователь попытался создать определенную службу на удаленном компьютере.|
 |перечисление сеансов SMB;|Пользователь попытался перечислить всех пользователей с открытыми сеансами SMB на контроллерах домена.|

@@ -12,16 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c54fdf3c0bb5497ff482c961214718771263e732
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 68c129e0c92c369bb666483dc17013c54a84e282
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275475"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849049"
 ---
 # <a name="product-long-reports"></a>Отчеты [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В разделе отчетов [!INCLUDE [Product long](includes/product-long.md)] на портале [!INCLUDE [Product short](includes/product-short.md)] вы можете запланировать или сразу же создать и скачать отчеты со сведениями о состоянии системы и сущности. С помощью функции отчетов можно создавать отчеты о работоспособности системы, оповещениях безопасности и подозрительных действиях, обнаруженных в среде.
 

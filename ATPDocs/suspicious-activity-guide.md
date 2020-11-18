@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6c4206029aa35029097e074934e23d57b02fcfd3
-ms.sourcegitcommit: 00142fc07a81b10922ae26418a4104a0ef4b366d
+ms.openlocfilehash: b343d5a708791de4658389985423f104e3f57762
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371507"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846703"
 ---
 # <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).

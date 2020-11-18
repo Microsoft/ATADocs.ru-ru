@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 68ed20a243a307992b2d11c633728bf34abf6302
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: fb4aa3b26c9026a62aac81bd1a88b50b95141ecd
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277052"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848488"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>Настройка учетных записей Honeytoken и исключений из обнаружения
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] разрешает исключение конкретных IP-адресов или пользователей из нескольких обнаружений.
 
@@ -30,7 +28,7 @@ ms.locfileid: "93277052"
 
 Для настройки выполните следующее:
 
-1. На [!INCLUDE [Product short](includes/product-short.md)] портале щелкните значок параметров и выберите **Конфигурация**.
+1. На портале [!INCLUDE [Product short](includes/product-short.md)] щелкните значок параметров и выберите пункт **Конфигурация**.
 
     ![[! ВКЛЮЧИТЬ [продукт Short] (включая/Product-Short. md)] параметры конфигурации](media/config-menu.png)
 
@@ -53,9 +51,9 @@ ms.locfileid: "93277052"
 
 [!INCLUDE [Product short](includes/product-short.md)] сканирование начинается немедленно. Некоторые обнаружения, например [подозрительные дополнения к конфиденциальным группам](domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024), нуждаются в обучающем периоде и недоступны сразу после [!INCLUDE [Product short](includes/product-short.md)] развертывания. Период обучения для каждого оповещения содержится в подробном [пошаговом руководству по безопасности](suspicious-activity-guide.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

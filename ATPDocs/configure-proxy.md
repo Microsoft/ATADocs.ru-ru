@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b3aa953324e855cfe4aafb77ea6b1b1959b7f8c
-ms.sourcegitcommit: 90a332d67f62636b2d3a935f6bbdcbf24d74e6f0
+ms.openlocfilehash: 6b2b620895d0a59886a140ff340b6772744c6bac
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94551669"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848658"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>Настройка прокси-сервера конечной точки и подключения к Интернету для датчика [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Для успешной работы и передачи данных датчика [!INCLUDE [Product long](includes/product-long.md)] каждый датчик должен быть подключен к облачному экземпляру [!INCLUDE [Product short](includes/product-short.md)] через Интернет. В некоторых организациях контроллеры домена подключаются к Интернету не напрямую, а через веб-прокси.
 
@@ -55,7 +53,7 @@ ms.locfileid: "94551669"
 
 Если компьютер не подключен к Интернету, вы можете настроить прокси-сервер с использованием конфигурации прокси-сервера Microsoft Windows Internet (WinINet), чтобы датчик [!INCLUDE [Product short](includes/product-short.md)] мог передавать диагностические данные и взаимодействовать с облачным экземпляром [!INCLUDE [Product short](includes/product-short.md)]. Даже если вы используете для настройки прокси-сервера WinHTTP, необходимо отдельно настроить параметры прокси-сервера в браузере Windows Internet (WinINet) для передачи данных между датчиком и облачным экземпляром [!INCLUDE [Product short](includes/product-short.md)].
 
-При настройке прокси-сервера следует помнить, что встроенная служба датчика [!INCLUDE [Product short](includes/product-short.md)] выполняется в системном контексте от имени учетной записи **LocalService** , а служба обновления датчика [!INCLUDE [Product short](includes/product-short.md)] выполняется в системном контексте от имени учетной записи **LocalSystem**.
+При настройке прокси-сервера следует помнить, что встроенная служба датчика [!INCLUDE [Product short](includes/product-short.md)] выполняется в системном контексте от имени учетной записи **LocalService**, а служба обновления датчика [!INCLUDE [Product short](includes/product-short.md)] выполняется в системном контексте от имени учетной записи **LocalSystem**.
 
 > [!NOTE]
 > Если в топологии сети используется прозрачный прокси или WPAD, настраивать WinINET для прокси-сервера не нужно.
@@ -94,7 +92,7 @@ ms.locfileid: "94551669"
 
 - `<your-instance-name>sensorapi.atp.azure.com` — для подключения датчиков. Например, `contoso-corpsensorapi.atp.azure.com`
 
-Также можно использовать диапазоны IP-адресов в нашем теге службы Azure ( **AzureAdvancedThreatProtection** ) для предоставления доступа к [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
+Также можно использовать диапазоны IP-адресов в нашем теге службы Azure (**AzureAdvancedThreatProtection**) для предоставления доступа к [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
 
 Если же требуется более детальный контроль, попробуйте разрешить трафик к нужным конечным точкам из следующей таблицы:
 

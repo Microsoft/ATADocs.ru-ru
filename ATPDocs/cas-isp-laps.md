@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 44731f9d987eda3d87339b1502de609de9d222ed
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 170385cfb1bd3fc82a77d67cd6f82d2197c458bf
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277559"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848777"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>Оценка безопасности: Использование Microsoft LAPS
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-microsoft-laps"></a>Что такое Microsoft LAPS?
 
@@ -45,4 +43,4 @@ LAPS упрощает управление паролями, в то же вре
 
 ## <a name="see-also"></a>См. также
 
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

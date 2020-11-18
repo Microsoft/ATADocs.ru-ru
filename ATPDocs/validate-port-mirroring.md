@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7a665a20da3940b3146a007eea6ee75bd35d7930
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: a6b3a3ef5d16a3e92a4bcf6a8d52d96c9c4036ce
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846737"
 ---
 # <a name="validate-port-mirroring"></a>Проверка зеркального отображения портов
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Сведения в этой статье относятся только к развертыванию автономного датчика [!INCLUDE [Product long](includes/product-long.md)], а не датчика [!INCLUDE [Product short](includes/product-short.md)].
 
@@ -38,7 +36,7 @@ ms.locfileid: "93274091"
 
 1. Откройте сетевой монитор и создайте новую вкладку записи.
 
-    1. Выберите только сетевой адаптер для записи ( **Capture** ) или сетевой адаптер, подключенный к порту коммутатора, который настроен как конечный порт.
+    1. Выберите только сетевой адаптер для записи (**Capture**) или сетевой адаптер, подключенный к порту коммутатора, который настроен как конечный порт.
 
     1. Активируйте неизбирательный режим.
 

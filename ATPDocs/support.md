@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b2b317bf7ca27a4158e741509f7b159457cd1698
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 2c35f69c3696e069cb48a6d1e04ba88b5d595ac0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274187"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848964"
 ---
 # <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] Информация и поддержка
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Используйте следующие ресурсы для изучения, развертывания и поддержки [!INCLUDE [Product long](includes/product-long.md)] вашей организации.
 
@@ -46,9 +44,9 @@ ms.locfileid: "93274187"
 
 Другие клиенты могут использовать следующие каналы поддержки.
 
-| Каналы|Instructions|
+| Каналы|Инструкции|
 |------|-----|
-|Использование портала Azure|1. Выберите **новый запрос в службу поддержки** из **раздела Справка и поддержка** в портал Azure. <br>2. при появлении запроса в колонке " **основные** " в качестве **типа проблемы** выберите " **Техническая** ", в качестве **службы** в разделе "безопасность & удостоверение" выберите **Azure Advanced Threat protection**. <br>3. Убедитесь, что выбран один из следующих параметров:<br>— Подписка с включенной технической поддержкой. Вы увидите этот вариант, если у вас платная или пробная подписка Azure.<br>— Техническая поддержка включена. Вы увидите этот вариант, если у вас нет подписки Azure.|
+|Использование портала Azure|1. Выберите **новый запрос в службу поддержки** из **раздела Справка и поддержка** в портал Azure. <br>2. при появлении запроса в колонке " **основные** " в качестве **типа проблемы** выберите " **Техническая**", в качестве **службы** в разделе "безопасность & удостоверение" выберите **Azure Advanced Threat protection**. <br>3. Убедитесь, что выбран один из следующих параметров:<br>— Подписка с включенной технической поддержкой. Вы увидите этот вариант, если у вас платная или пробная подписка Azure.<br>— Техническая поддержка включена. Вы увидите этот вариант, если у вас нет подписки Azure.|
 |Использование [!INCLUDE [Product short](includes/product-short.md)] портала| 1. Щелкните значок "?" на верхней панели навигации на [!INCLUDE [Product short](includes/product-short.md)] портале.<br>2. выполните поиск по запросу [!INCLUDE [Product short](includes/product-short.md)] .<br>3. Откройте билет инцидента.<br>— Выберите пункт "поддержка".<br>4. Откройте билет инцидента. Если вы завершили работу с [!INCLUDE [Product short](includes/product-short.md)] порталом, можно ввести [портал интерактивной поддержки (OAS)](https://support.microsoft.com/assistedsupportproducts). |
 
 Чтобы узнать о других вариантах поддержки, обратитесь к представителю корпорации Майкрософт.

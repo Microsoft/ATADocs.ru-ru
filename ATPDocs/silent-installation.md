@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edb9f414055a7d106913d1d394af44ef84ef4223
-ms.sourcegitcommit: 2b57f438c2902d5258aff8999b374c2f1808ceb4
+ms.openlocfilehash: d87aa443bad2731ee3e5ff226930980ac52c79d7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94430691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846720"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] параметры и автоматическая установка
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья содержит инструкции и инструкции по [!INCLUDE [Product long](includes/product-long.md)] параметрам и автоматической установке.
 
@@ -44,13 +42,13 @@ ms.locfileid: "94430691"
 
 Чтобы выполнить полностью автоматическую установку датчика, используйте следующую команду [!INCLUDE [Product short](includes/product-short.md)] :
 
-**Синтаксис cmd.exe** :
+**Синтаксис cmd.exe**:
 
 ```dos
 "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-**Синтаксис PowerShell** :
+**Синтаксис PowerShell**:
 
 ```powershell
 .\"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
@@ -81,7 +79,7 @@ ms.locfileid: "94430691"
 > |InstallationPath|InstallationPath=""|Нет|Задает путь для установки [!INCLUDE [Product short](includes/product-short.md)] двоичных файлов датчика. Путь по умолчанию: %programfiles%\Azure Advanced Threat Protection sensor
 > |AccessKey|AccessKey="\*\*"|Да|Задает ключ доступа, используемый для регистрации [!INCLUDE [Product short](includes/product-short.md)] датчика в [!INCLUDE [Product short](includes/product-short.md)] экземпляре.|
 
-**Примеры** :
+**Примеры**:
 
 Используйте следующую команду, чтобы автоматически установить [!INCLUDE [Product short](includes/product-short.md)] датчик:
 

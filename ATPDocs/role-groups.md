@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 269343e6cdc5ceba875d5b6de1c740415a862eca
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 9a3927c565f3b2e7173519c31cb3bfcde9eed2a7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275301"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848998"
 ---
 # <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] группы ролей
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] обеспечивает безопасность на основе ролей для защиты данных в соответствии с потребностями Организации в обеспечении безопасности и соответствия требованиям. [!INCLUDE [Product short](includes/product-short.md)] Поддержка трех отдельных ролей: Администраторы, пользователи и средства просмотра.
 
@@ -48,7 +46,7 @@ ms.locfileid: "93275301"
 |Изменение состояния оповещений системы безопасности (открыть повторно, закрыть, исключить, игнорировать)|Доступно|Доступно|Недоступно|
 |Удалить экземпляр|Доступно|Недоступно|Недоступно|
 |Загрузка отчета|Доступно|Доступно|Доступно|
-|Имя входа|Доступно|Доступно|Доступно|
+|Вход|Доступно|Доступно|Доступно|
 |Передача или экспорт оповещений системы безопасности (по электронной почте, посредством ссылки или путем предоставления сведений для скачивания)|Доступно|Доступно|Доступно|
 |Обновление [!INCLUDE [Product short](includes/product-short.md)] конфигурации — обновления|Доступно|Недоступно|Недоступно|
 |[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — Теги сущностей (конфиденциальные и honeytoken)|Доступно|Доступно|Недоступно|
@@ -67,9 +65,9 @@ ms.locfileid: "93275301"
 
 [!INCLUDE [Product short](includes/product-short.md)] использует группы безопасности Azure AD в качестве базиса для групп ролей. Управлять группами ролей можно на [странице Управление группами](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups). Добавлять в группы безопасности или удалять из этих групп можно только пользователей Azure Active Directory.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
-- [[!INCLUDE [Product short](includes/product-short.md)] AHA](architecture.md)
-- [Взнос [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
+- [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
+- [Установка [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

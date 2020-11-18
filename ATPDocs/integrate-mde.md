@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0e059516346d5b2c832e5bd5ea73008b1f51082
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 50bb601a00396aefee99d5115b1eb8825e74e39c
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278135"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848556"
 ---
 # <a name="integrate-product-long-with-microsoft-defender-for-endpoint"></a>Интеграция [!INCLUDE [Product long](includes/product-long.md)] с защитником Майкрософт для конечной точки
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] позволяет интегрироваться [!INCLUDE [Product long](includes/product-long.md)] с защитником для конечной точки, чтобы получить еще более полное решение для защиты от угроз. [!INCLUDE [Product short](includes/product-short.md)]Отслеживая трафик на контроллерах домена, защитник для конечной точки отслеживает конечные точки, а также предоставляет единый интерфейс, из которого можно защитить среду.
 
@@ -59,14 +57,14 @@ ms.locfileid: "93278135"
 
 ## <a name="how-to-integrate-product-short-with-defender-for-endpoint"></a>Интеграция [!INCLUDE [Product short](includes/product-short.md)] с защитником для конечной точки
 
-1. На [!INCLUDE [Product short](includes/product-short.md)] портале выберите **Конфигурация**.
+1. На портале [!INCLUDE [Product short](includes/product-short.md)] выберите пункт **Конфигурация**.
 
     ![[! ВКЛЮЧИТЬ меню конфигурации [продукт Short] (включая/Product-Short. md)]](media/msde-configuration.png)
 1. В списке конфигурации выберите **защитник Майкрософт для конечной точки** и установите переключатель интеграция в положение **вкл**.
 
     ![Включение интеграции с Защитником Windows](media/msde-enable-integration.png)
 
-1. На [портале "защитник для конечной точки](https://securitycenter.windows.com/preferences/advanced)" перейдите в раздел **Параметры** , **Дополнительные компоненты** и задайте для параметра **[!INCLUDE [Product long](includes/product-long.md)] Интеграция** значение **вкл**.
+1. На [портале "защитник для конечной точки](https://securitycenter.windows.com/preferences/advanced)" перейдите в раздел **Параметры**, **Дополнительные компоненты** и задайте для параметра **[!INCLUDE [Product long](includes/product-long.md)] Интеграция** значение **вкл**.
 
     ![Защитник для обеспечения интеграции конечной точки](media/msde-enable.png)
 
@@ -96,7 +94,7 @@ ms.locfileid: "93278135"
 ## <a name="see-also"></a>См. также:
 
 - [Исследование путей перемещения бокового смещения с помощью [!INCLUDE [Product short](includes/product-short.md)]](use-case-lateral-movement-path.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
-- [[!INCLUDE [Product short](includes/product-short.md)] AHA](architecture.md)
-- [Взнос [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
+- [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
+- [Установка [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

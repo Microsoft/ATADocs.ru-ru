@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 034948a5a355012aad387aa4d46e6e3c8d342dee
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 50f102c445c31969aede302fb37955cae85d626b
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277300"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848726"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>Оценка безопасности: небезопасные атрибуты учетной записи
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-unsecure-account-attributes"></a>Что такое небезопасные атрибуты учетной записи?
 
@@ -32,7 +30,7 @@ ms.locfileid: "93277300"
 
 Вредоносные субъекты, как и другие мошенники, часто ищут самый простой и тихий способ действовать в любой среде. Учетные записи, настроенные с небезопасными атрибутами, открывают окна возможностей для злоумышленников и способны создавать риски.
 
-Например, если включен атрибут *PasswordNotRequired* , злоумышленник может легко получить доступ к учетной записи. Это особенно опасно, если учетная запись имеет привилегированный доступ к другим ресурсам.
+Например, если включен атрибут *PasswordNotRequired*, злоумышленник может легко получить доступ к учетной записи. Это особенно опасно, если учетная запись имеет привилегированный доступ к другим ресурсам.
 
 ## <a name="how-do-i-use-this-security-assessment"></a>Как использовать эту оценку безопасности?
 
@@ -59,4 +57,4 @@ ms.locfileid: "93277300"
 ## <a name="see-also"></a>См. также
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

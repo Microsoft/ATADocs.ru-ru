@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bc6080ac87cd0709fd127daaf70e24a6ee03955e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: a27d972e95c2c6b4ed4d87ebad747ef14ac0f24d
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277251"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848709"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>Оценка безопасности: использование ненадежного шифра
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-weak-ciphers"></a>Что такое слабые шифры?
 
@@ -53,4 +51,4 @@ ms.locfileid: "93277251"
 ## <a name="next-steps"></a>Дальнейшие шаги
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Фильтрация действий в Cloud App Security](activities-filtering-mcas.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0c4bcc61c2b15ded71063f3b8c4058ce6dfcce7
-ms.sourcegitcommit: ac582a240e848ca12c80ac6104125a0f733b469e
+ms.openlocfilehash: fffb94b42e49280949dbdb67926841ebaea8ba2a
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93375562"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848930"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="sensor-failure-communication-error"></a>Ошибка связи из-за сбоя датчика
 
@@ -129,7 +127,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 1. Удалите библиотеку WinPcap, если она установлена.
 1. Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
-    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя** , а затем выберите режим **WinPcap**.
+    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя**, а затем выберите режим **WinPcap**.
 1. Установите пакет датчика.
 
 Если вы уже установили датчик, сделайте следующее:
@@ -137,12 +135,12 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 1. Удалите датчик.
 1. Удалите WinPcap.
 1. Установите Npcap со следующими параметрами: loopback_support=no, winpcap_mode=yes.
-    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя** , а затем выберите режим **WinPcap**.
+    - При использовании установщика графического пользовательского интерфейса снимите флажок **поддержка замыкания на себя**, а затем выберите режим **WinPcap**.
 1. Переустановите пакет датчика.
 
 ## <a name="multi-processor-group-mode"></a>Многопроцессорный групповой режим
 
-Для операционных систем Windows 2008R2 и 2012 [!INCLUDE [Product short](includes/product-short.md)] датчик не поддерживается в многопроцессорном режиме группы.
+В операционных системах Windows 2008 R2 и 2012 датчик [!INCLUDE [Product short](includes/product-short.md)] не поддерживается в многопроцессорном групповом режиме.
 
 Возможные обходные пути:
 
@@ -210,8 +208,8 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] Планирование ресурсов](capacity-planning.md)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Планирование ресурсов [!INCLUDE [Product short](includes/product-short.md)]](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

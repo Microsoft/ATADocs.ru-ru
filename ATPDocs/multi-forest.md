@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9f3a6771591fb3e3d63a45887b1f7a89bddc57d7
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 7d2097a4d65cd3b153bc111d87092dcbf8ff9d74
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275726"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847264"
 ---
 # <a name="product-long-multi-forest-support"></a>[!INCLUDE [Product long](includes/product-long.md)] Поддержка нескольких лесов
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="multi-forest-support-set-up"></a>Настройка поддержки нескольких лесов
 
@@ -44,7 +42,7 @@ ms.locfileid: "93275726"
   - Дополнительные учетные данные требуются только для каждого леса с доверием без доверия Kerberos или без доверия.
   - Ограничение по умолчанию — 10 недоверенных лесов на [!INCLUDE [Product short](includes/product-short.md)] экземпляр. Если в вашей организации больше 10 лесов, обратитесь в службу поддержки.
 
-![[! ВКЛЮЧИТЬ [продукт Short] (включает/Product-Short. md)] Добро пожаловать на этап 1](media/directory-services-add-no-trust-forests.png)
+![[!INCLUDE [Product short](includes/product-short.md)]: этап 1 приветствия](media/directory-services-add-no-trust-forests.png)
 
 ### <a name="requirements"></a>Требования
 
@@ -56,7 +54,7 @@ ms.locfileid: "93275726"
   |Протокол|Транспорт|Port|В/Из|Direction|
   |----|----|----|----|----|
   |**Интернет-порты**||||
-  |SSL (*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] Облачная служба|Исходящее|
+  |SSL (*.atp.azure.com)|TCP|443|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|Исходящее|
   |**Внутренние порты**||||
   |LDAP|TCP и UDP|389|Контроллеры домена|Исходящее|
   |Защищенный LDAP (LDAPS)|TCP|636|Контроллеры домена|Исходящее|
@@ -76,9 +74,9 @@ ms.locfileid: "93275726"
 
 - Интерактивные входы, выполняемые пользователями в одном лесу для доступа к ресурсам в другом лесу, не отображаются на [!INCLUDE [Product short](includes/product-short.md)] панели мониторинга.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool)
-- [[!INCLUDE [Product short](includes/product-short.md)] AHA](architecture.md)
-- [Взнос [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Средство определения размера [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/aatpsizingtool)
+- [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
+- [Установка [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

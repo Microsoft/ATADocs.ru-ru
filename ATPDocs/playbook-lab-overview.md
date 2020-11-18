@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cfb7474a01fe90b75939f80dbcc7f93dad485682
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 992ea4672c427a1bf29b7303cfc412793ff8ba4d
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275510"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849066"
 ---
 # <a name="tutorial-overview-product-long-security-alert-lab"></a>Обзорное руководство. Лаборатория оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Лаборатория оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)] позволяет ознакомиться с возможностями **[!INCLUDE [Product short](includes/product-short.md)]** по обнаружению и определению подозрительных действий и потенциальных атак в сети. В этой серии из четырех руководств показано, как установить и настроить рабочую среду для тестирования некоторых [!INCLUDE [Product short](includes/product-short.md)]дискретных *обнаружений в*. В лаборатории основное внимание уделяется использованию возможностей [!INCLUDE [Product short](includes/product-short.md)] на основе *сигнатур*. Эта лаборатория не предусматривает обнаружения на основе поведения пользователей или сущностей с использованием расширенных возможностей машинного обучения, так как для их применения изучаемый период с реальным сетевым трафиком должен составлять до 30 дней.
 

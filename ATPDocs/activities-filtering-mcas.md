@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e20bbb73e916c9ea7139ac17a59cd7de2f1a08a4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 0f6a359745ae03ce0b982e00b7f4c06d556eb702
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276927"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848828"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>Использование фильтров действий и создание политик действий с помощью [!INCLUDE [Product long](includes/product-long.md)] в Microsoft Cloud App Security
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья поможет вам понять, как фильтровать и создавать политики действий [!INCLUDE [Product short](includes/product-short.md)] с помощью Microsoft Cloud App Security.
 
@@ -46,7 +44,7 @@ ms.locfileid: "93276927"
 
 1. Отфильтруйте очередь **Оповещения** с использованием поля "Имя пользователя".
     ![Фильтрация оповещений по имени пользователя](media/mcas-alerts-queue.png)
-1. Щелкните имя пользователя для какого-либо оповещения в полученном списке, чтобы открыть **страницу пользователя** , поведение которого нужно изучить.
+1. Щелкните имя пользователя для какого-либо оповещения в полученном списке, чтобы открыть **страницу пользователя**, поведение которого нужно изучить.
 
 1. Отфильтруйте действия пользователя, используя доступные поля, или добавьте новое правило фильтра с помощью кнопки +.
     ![Фильтрация действий пользователя](media/mcas-activity-filter.png)
@@ -76,4 +74,4 @@ ms.locfileid: "93276927"
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) уже сегодня!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection).

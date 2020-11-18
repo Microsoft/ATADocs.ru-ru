@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: ea19abd7497d0d925e764a80666dc595862566f9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 27e048b337ecd25b534f0c10096999a7173292c1
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275007"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846635"
 ---
 # <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>Устранение неполадок [!INCLUDE [Product long](includes/product-long.md)] датчика с помощью [!INCLUDE [Product short](includes/product-short.md)] журналов
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В [!INCLUDE [Product short](includes/product-short.md)] журналах представлены сведения о том, что делает каждый компонент [!INCLUDE [Product long](includes/product-long.md)] датчика в любой определенный момент времени.
 
@@ -43,7 +41,7 @@ ms.locfileid: "93275007"
 
 [!INCLUDE [Product short](includes/product-short.md)] журналы развертывания датчика:
 
-- **Azure Advanced Threat Protection Microsoft.Tri.Sensor.Deployment.Deployer_YYYYMMDDHHMMSS.log**  — этот файл журнала регистрирует весь процесс развертывания датчика. Он доступен в упомянутой выше папке temp или в папке C:\Windows\Temp.
+- **Azure Advanced Threat Protection Microsoft.Tri.Sensor.Deployment.Deployer_YYYYMMDDHHMMSS.log** — этот файл журнала регистрирует весь процесс развертывания датчика. Он доступен в упомянутой выше папке temp или в папке C:\Windows\Temp.
 
 - **Azure Advanced Threat Protection Sensor_YYYYMMDDHHMMSS. log** — в этом журнале перечислены этапы процесса развертывания [!INCLUDE [Product short](includes/product-short.md)] датчика. Его основное использование — отслеживание [!INCLUDE [Product short](includes/product-short.md)] процесса развертывания датчика.
 
@@ -52,10 +50,10 @@ ms.locfileid: "93275007"
 > [!NOTE]
 > Помимо упомянутых здесь журналов развертывания, есть и другие журналы, имя которых начинается с "Azure Advanced Threat Protection", которые могут содержать дополнительные сведения о процессе развертывания.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [[!INCLUDE [Product short](includes/product-short.md)] требований](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] Планирование ресурсов](capacity-planning.md)
+- [Предварительные требования для работы с [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md)
+- [Планирование ресурсов [!INCLUDE [Product short](includes/product-short.md)]](capacity-planning.md)
 - [Настройка сбора данных о событиях](configure-event-collection.md)
 - [Настройка пересылки событий Windows](configure-event-forwarding.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

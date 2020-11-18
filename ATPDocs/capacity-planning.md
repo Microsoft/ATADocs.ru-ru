@@ -9,24 +9,22 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f9cac463b5a99075901a9c0f68db37affcb50cf9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 2fa0a70299b897a2c8b29e01ebb97e9740b0eb66
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276774"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848624"
 ---
 # <a name="plan-capacity-for-product-long"></a>Планирование емкости для [!INCLUDE [Product long](includes/product-long.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 В этом руководство вы определите, сколько [!INCLUDE [Product long](includes/product-long.md)] датчиков вам нужно.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Загрузите [ [!INCLUDE [Product short](includes/product-short.md)] средство изменения размера](https://aka.ms/aatpsizingtool).
-- Ознакомьтесь со статьей об [ [!INCLUDE [Product short](includes/product-short.md)] архитектуре](architecture.md) .
-- Ознакомьтесь со статьей [ [!INCLUDE [Product short](includes/product-short.md)] Предварительные требования](prerequisites.md) .
+- Знакомство со статьей [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md).
+- Знакомство со статьей [Предварительные требования [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md).
 
 ## <a name="use-the-sizing-tool"></a>Использование средства изменения размера
 
@@ -44,7 +42,7 @@ ms.locfileid: "93276774"
 
 [!INCLUDE [Product short](includes/product-short.md)]Датчик может поддерживать мониторинг контроллера домена в зависимости от объема сетевого трафика, создаваемого контроллером домена. В следующей таблице приводятся приблизительные данные. Окончательный объем, анализируемый датчиком, зависит от объема и распределения трафика.
 
-Следующие значения емкости для ЦП и ОЗУ имеют отношение к **потреблению самого датчика** , а не к емкости контроллеров доменов.
+Следующие значения емкости для ЦП и ОЗУ имеют отношение к **потреблению самого датчика**, а не к емкости контроллеров доменов.
 
 |Пакетов в секунду|ЦП (ядра)\*|Память\*\* (ГБ)|
 |----|----|-----|
@@ -109,7 +107,7 @@ ms.locfileid: "93276774"
 
 1. В разделе **Какие счетчики производительности следует записывать в журнал?** нажмите кнопку **Добавить**.
 
-1. Разверните узел **Сетевой адаптер** , выберите пункт **Пакетов/с** и выберите подходящий экземпляр. Если вы не уверены, выберите значение **&lt;Все экземпляры&gt;** и нажмите кнопку **Добавить** , а затем — **ОК**.
+1. Разверните узел **Сетевой адаптер**, выберите пункт **Пакетов/с** и выберите подходящий экземпляр. Если вы не уверены, выберите значение **&lt;Все экземпляры&gt;** и нажмите кнопку **Добавить**, а затем — **ОК**.
 
     > [!NOTE]
     > Чтобы увидеть имя адаптера и сведения о конфигурации, выполните в командной строке команду `ipconfig /all`.
@@ -143,4 +141,4 @@ ms.locfileid: "93276774"
 
 ## <a name="join-the-community"></a>Присоединяйтесь к сообществу!
 
-У вас есть больше вопросов, или вы хотите обсудить [!INCLUDE [Product short](includes/product-short.md)] и другие вопросы, связанные с безопасностью? Присоединяйтесь к [ [!INCLUDE [Product short](includes/product-short.md)] сообществу](https://aka.ms/MDIcommunity) уже сегодня!
+У вас есть дополнительные вопросы или вы хотите обсудить с другими пользователями особенности использования [!INCLUDE [Product short](includes/product-short.md)] или вопросы, связанные с безопасностью? Присоединяйтесь к [сообществу [!INCLUDE [Product short](includes/product-short.md)]](https://aka.ms/MDIcommunity).

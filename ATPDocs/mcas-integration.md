@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eff9b785cb23db649615f11be6e713eed49f3b5d
-ms.sourcegitcommit: 931d463e793cd5710e7bc2bca13cd4ef669eb190
+ms.openlocfilehash: 70a316deaafec0c251c91defbc47ec5281eba617
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94580896"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848879"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>Использование [!INCLUDE [Product long](includes/product-long.md)] с Microsoft Cloud App Security
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Эта статья поможет вам понять и проанализировать улучшенное исследование при использовании Microsoft Cloud App Security портала с [!INCLUDE [Product long](includes/product-long.md)] .
 

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: af05ee5bbd064e31b231ad36374b4c069d8f7cfc
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 20e02b3281480024b67a1ef5908d82586c11f955
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275417"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849032"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>Мониторинг покрытия контроллеров домена
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 После [!INCLUDE [Product long](includes/product-long.md)] установки и настройки первого датчика на любом контроллере домена в сети [!INCLUDE [Product short](includes/product-short.md)] начнется мониторинг среды для контроллеров домена.
 
@@ -63,7 +61,7 @@ ms.locfileid: "93275417"
 
 ## <a name="see-also"></a>См. также:
 
-- [[!INCLUDE [Product short](includes/product-short.md)] AHA](architecture.md)
+- [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
 - [Настройка [!INCLUDE [Product short](includes/product-short.md)] датчиков](install-step5.md)
 - [Поддержка нескольких лесов](multi-forest.md)
-- [Посетите [!INCLUDE [Product short](includes/product-short.md)] форум!](https://aka.ms/MDIcommunity)
+- [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
