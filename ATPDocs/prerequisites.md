@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e3b5b67ad5330fd7be41ed63e6db105e2f1d4a9e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: df877f342b0bf7a31bf4cdf171a7bc2104c89e1f
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275664"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847026"
 ---
 # <a name="product-long-prerequisites"></a>Предварительные требования для работы с [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этой статье описываются требования для успешного развертывания [!INCLUDE [Product long](includes/product-long.md)] в среде.
 
@@ -69,14 +67,14 @@ ms.locfileid: "93275664"
     > [!NOTE]
     >
     > - Для компьютеров с датчиками под управлением Windows Server 2012 и более поздних версий рекомендуется использовать учетную запись **gMSA** для повышения уровня безопасности и включения автоматического управления паролями.
-    > - Если у вас есть датчики под управлением Windows Server 2008 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA** , но и по крайней мере одну **стандартную** учетную запись пользователя AD.
+    > - Если у вас есть датчики под управлением Windows Server 2008 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA**, но и по крайней мере одну **стандартную** учетную запись пользователя AD.
     > - Если для различных подразделений в домене были установлены настраиваемые списки управления доступом, убедитесь, что у выбранного пользователя есть разрешение на чтение данных подразделений.
 
 - При выполнении Wireshark в автономном датчике [!INCLUDE [Product short](includes/product-short.md)] необходимо перезапустить службу датчика [!INCLUDE [Product short](includes/product-short.md)] после остановки записи Wireshark. Если не перезапустить службу датчика, датчик перестанет записывать трафик.
 
 - При попытке установить датчик [!INCLUDE [Product short](includes/product-short.md)] на компьютере, настроенном с функцией объединения сетевых карт, возникнет ошибка установки. Чтобы установить датчик [!INCLUDE [Product short](includes/product-short.md)] на компьютере с функцией объединения сетевых карт, ознакомьтесь с разделом [Проблема [!INCLUDE [Product short](includes/product-short.md)] при работе с функцией объединения сетевых карт](troubleshooting-known-issues.md#nic-teaming).
 
-- Рекомендация по контейнеру **Удаленные объекты** : в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Разрешения только для чтения в этом контейнере позволяют [!INCLUDE [Product short](includes/product-short.md)] обнаруживать удаление пользователей из вашего каталога Active Directory. Дополнительные сведения о настройке разрешений только для чтения в контейнере удаленных объектов см. в разделе **Changing permissions on a deleted object container** (Изменение разрешений для контейнера удаленных объектов) статьи [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (Просмотр или установка разрешений для объекта каталога).
+- Рекомендация по контейнеру **Удаленные объекты**: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Разрешения только для чтения в этом контейнере позволяют [!INCLUDE [Product short](includes/product-short.md)] обнаруживать удаление пользователей из вашего каталога Active Directory. Дополнительные сведения о настройке разрешений только для чтения в контейнере удаленных объектов см. в разделе **Changing permissions on a deleted object container** (Изменение разрешений для контейнера удаленных объектов) статьи [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (Просмотр или установка разрешений для объекта каталога).
 
 - **Токен-приманка** (необязательно): Учетная запись пользователя, не совершавшего операции в сети. Эта учетная запись будет настроена как пользователь Honeytoken [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения об использовании токенов-приманок: [Настройка учетных записей Honeytoken и исключений из обнаружения](install-step7.md).
 
@@ -96,7 +94,7 @@ ms.locfileid: "93275664"
 - Открытый порт брандмауэра или прокси-сервера — чтобы контроллеры домена могли обмениваться данными с облачной службой [!INCLUDE [Product short](includes/product-short.md)], откройте порт 443 для *.atp.azure.com в брандмауэре или на прокси-сервере.
 
     > [!NOTE]
-    > Также можно использовать тег службы Azure ( **AzureAdvancedThreatProtection** ) для включения доступа к [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
+    > Также можно использовать тег службы Azure (**AzureAdvancedThreatProtection**) для включения доступа к [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о тегах службы: статья [Теги службы виртуальной сети](/azure/virtual-network/service-tags-overview) или [загружаемый файл тегов службы](https://www.microsoft.com/download/details.aspx?id=56519).
 
  ![[!INCLUDE [Product short](includes/product-short.md)]: схема архитектуры](media/architecture-topology.png)
 
@@ -238,7 +236,7 @@ ms.locfileid: "93275664"
 
 Для автономного датчика [!INCLUDE [Product short](includes/product-short.md)] требуется по крайней мере один адаптер управления и по крайней мере один адаптер записи.
 
-- **Адаптер управления**  — будет использоваться для связи в корпоративной сети. Датчик будет использовать этот адаптер для отправки запроса к контроллеру домена для защиты и разрешения учетных записей компьютера.
+- **Адаптер управления** — будет использоваться для связи в корпоративной сети. Датчик будет использовать этот адаптер для отправки запроса к контроллеру домена для защиты и разрешения учетных записей компьютера.
 
     При настройке этого адаптера следует настроить следующие параметры:
 

@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50307054535447326b8b48641afaeec7cfc70551
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: fcb99edccdd8ce98be4b9335d7703503307fd0ac
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277133"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848590"
 ---
 # <a name="quickstart-create-your-product-long-instance"></a>Краткое руководство. Создание экземпляра [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом кратком руководстве вы создадите экземпляр [!INCLUDE [Product long](includes/product-long.md)] на портале [!INCLUDE [Product short](includes/product-short.md)]. В [!INCLUDE [Product short](includes/product-short.md)] в вашем распоряжении будет один экземпляр, который раньше назывался рабочей областью. Он позволяет управлять несколькими лесами на одной панели.
 
@@ -56,7 +54,7 @@ ms.locfileid: "93277133"
     > [!NOTE]
     > Для входа в [!INCLUDE [Product short](includes/product-short.md)] необходимо использовать учетную запись пользователя, которому была назначена роль [!INCLUDE [Product short](includes/product-short.md)] с правами доступа к порталу [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения об управлении доступом на основе ролей (RBAC) в [!INCLUDE [Product short](includes/product-short.md)] см. в статье [Использование групп ролей [!INCLUDE [Product short](includes/product-short.md)]](role-groups.md).
 
-1. Выберите пункт **Конфигурация** , **Управление группами ролей** и перейдите по ссылке [Центр администрирования Azure AD](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), чтобы приступить к управлению группами ролей.
+1. Выберите пункт **Конфигурация**, **Управление группами ролей** и перейдите по ссылке [Центр администрирования Azure AD](/azure/active-directory/active-directory-assign-admin-roles-azure-portal), чтобы приступить к управлению группами ролей.
 
     ![Управление группами ролей](media/creation-manage-role-groups.png)
 

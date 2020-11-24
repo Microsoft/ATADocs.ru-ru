@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ca74b6ed2e0f76892149ec27d56bdf02cd490278
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8e193a6bc61ab7b0fbbdf0528438f585bc33fcae
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93273941"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846533"
 ---
 # <a name="product-long-for-us-government-gcc-high"></a>[!INCLUDE [Product long](includes/product-long.md)] для US Government GCC High
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Предложение [!INCLUDE [Product long](includes/product-long.md)] для GCC High основывается на тех же технологиях и возможностях, что и коммерческий экземпляр [!INCLUDE [Product short](includes/product-short.md)]. Перечень различий в функциональных возможностях приводится в [описании службы](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description).
 

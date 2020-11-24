@@ -9,16 +9,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9c612167b4d87958c6a27235443a0dd5ab464613
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: f03f2722f86cec0ca019828b21e4851d0b1305f8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276235"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847893"
 ---
 # <a name="quickstart-install-the-product-long-sensor"></a>Краткое руководство. Установка датчика [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Из этого краткого руководства вы узнаете, как установить датчик [!INCLUDE [Product long](includes/product-long.md)] на контроллере домена. Если вы предпочитаете автоматическую установку, прочтите статью [Автоматическая установка](silent-installation.md).
 
@@ -57,7 +55,7 @@ ms.locfileid: "93276235"
     - Путь установки: это расположение для установки датчика [!INCLUDE [Product short](includes/product-short.md)]. По умолчанию используется %programfiles%\Azure Advanced Threat Protection sensor. Оставьте значение по умолчанию.
     - Ключ доступа — это ключ, полученный на портале [!INCLUDE [Product short](includes/product-short.md)] на предыдущем шаге.
 
-1. Щелкните **Install** (Установить). Во время установки датчика [!INCLUDE [Product short](includes/product-short.md)] устанавливаются и настраиваются следующие компоненты:
+1. Щелкните **Install**(Установить). Во время установки датчика [!INCLUDE [Product short](includes/product-short.md)] устанавливаются и настраиваются следующие компоненты:
 
     - KB 3047154 (только для Windows Server 2012 R2)
 

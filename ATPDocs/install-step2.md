@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0c4cc8342c9f45b8cc08166d14be1c512ca1065
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 58a5f6c37a5b5bc4e224393aac5ad9771d6a1f6b
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276221"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847876"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>Краткое руководство. Подключение к лесу Active Directory
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 В этом кратком руководстве вы подключите [!INCLUDE [Product long](includes/product-long.md)] к Active Directory (AD), чтобы получить данные о пользователях и компьютерах. Если вы подключаете несколько лесов, см. статью [Поддержка нескольких лесов](multi-forest.md).
 
@@ -35,7 +33,7 @@ ms.locfileid: "93276221"
     > [!NOTE]
     >
     > - Для компьютеров с датчиками под управлением Windows Server 2012 и более поздних версий рекомендуется использовать учетную запись **gMSA** для повышения уровня безопасности и включения автоматического управления паролями.
-    > - Если у вас есть датчики под управлением Windows Server 2008 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA** , но и по крайней мере одну **стандартную** учетную запись пользователя AD.
+    > - Если у вас есть датчики под управлением Windows Server 2008 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA**, но и по крайней мере одну **стандартную** учетную запись пользователя AD.
 
 ### <a name="how-to-set-up-a-gmsa-account"></a>Настройка учетной записи gMSA
 
@@ -57,7 +55,7 @@ ms.locfileid: "93276221"
     |**Групповая управляемая учетная запись службы** (требуется для учетной записи gMSA).|Только для учетной записи gMSA: выберите **групповую управляемую учетную запись службы**.|
     |**Домен** (указывается обязательно)|Введите домен для пользователя с правами только на чтение. Например, **contoso.com**. Для домена, в котором находится пользователь, необходимо указать полное доменное имя. Например, если учетная запись пользователя находится в домене corp.contoso.com, необходимо ввести `corp.contoso.com`, а не contoso.com|
 
-1. На портале [!INCLUDE [Product short](includes/product-short.md)] щелкните **Скачать пакет установки датчиков и установить первый датчик** , чтобы продолжить.
+1. На портале [!INCLUDE [Product short](includes/product-short.md)] щелкните **Скачать пакет установки датчиков и установить первый датчик**, чтобы продолжить.
 
 ## <a name="next-steps"></a>Следующие шаги
 

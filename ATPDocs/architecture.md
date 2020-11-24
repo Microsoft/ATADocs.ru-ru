@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e6baa54d7e8738d6132bf33d9ce8f4e829e6243f
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: cb67a36402c0b6b193fbd5ee11b63113714cd885
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276746"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848811"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>Архитектура Microsoft Defender для удостоверений
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] отслеживает контроллеры домена, регистрируя и анализируя сетевой трафик, а также используя события Windows (которые пересылаются непосредственно из контроллеров домена) и анализируя данные, связанные с атаками и угрозами. С помощью профилирования, детерминированного обнаружения и алгоритмов машинного обучения и анализа поведения [!INCLUDE [Product short](includes/product-short.md)] получает сведения о сети, выявляет аномалии и сообщает о подозрительных действиях.
 
@@ -53,7 +51,7 @@ ms.locfileid: "93276746"
 - управление параметрами конфигурации датчика [!INCLUDE [Product short](includes/product-short.md)];
 - просмотр данных, полученных от датчиков [!INCLUDE [Product short](includes/product-short.md)];
 - отслеживание обнаруженных подозрительных действий и предположительных атак на основе модели цепочки атаки.
-- **Необязательно** : портал можно также настроить для отправки сообщений электронной почты и событий при обнаружении проблем, связанных с безопасностью или работоспособностью.
+- **Необязательно**: портал можно также настроить для отправки сообщений электронной почты и событий при обнаружении проблем, связанных с безопасностью или работоспособностью.
 
 > [!NOTE]
 > Если в вашем экземпляре [!INCLUDE [Product short](includes/product-short.md)] в течение 60 дней не будет установлен датчик, экземпляр может быть удален и вам потребуется создать его заново.
