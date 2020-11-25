@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fffb94b42e49280949dbdb67926841ebaea8ba2a
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e37e413a355db72e04e1b6f72a71c570148c9f04
+ms.sourcegitcommit: 4563d22ad0fc63022a57c5d2d4fbc425e900bf84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848930"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "96028705"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
 
@@ -158,7 +158,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 Чтобы решить эту проблему, выполните указанные ниже действия.
 
-Установите для следующего параметра значение **Disabled** (Отключено) в конфигурации сетевого адаптера виртуальной машины: **IPv4 TSO Offload**.
+В гостевой ОС в конфигурации сетевого адаптера виртуальной машины **Отключите** следующие параметры: **разгрузка TSO Offload IPv4**.
 
  ![Проблема с датчиком VMware](media/vm-sensor-issue.png)
 
