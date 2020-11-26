@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1f0b06f81986eedaac03f58c9c040a0b3348c304
-ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
+ms.openlocfilehash: 18d3f9461eba901f875863a5e7ccc7cab7ebc4c8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93343558"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848675"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>Руководство. Предупреждения о компрометации учетных данных
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Как правило, кибератаки изначально направлены на доступные объекты, например пользователей с низким уровнем прав, а затем быстро распространяются по горизонтали, пока злоумышленник не получит доступ к ценным ресурсам, например важным учетным записям, в том числе с правами администратора домена, или конфиденциальным данным. [!INCLUDE [Product long](includes/product-long.md)] позволяет устанавливать источники таких современных угроз, прослеживая всю цепочку атаки, и классифицировать их по следующим этапам:
 
@@ -32,7 +30,7 @@ ms.locfileid: "93343558"
 
 Дополнительные сведения о структуре и общих компонентах всех оповещений системы безопасности [!INCLUDE [Product short](includes/product-short.md)] см. в разделе [Основные сведения об оповещениях безопасности](understanding-security-alerts.md). Сведения об **истинноположительном результате (TP)** **некритическом истинноположительном результате (B-TP)** и **ложноположительном результате (FP)** см. в [классификации предупреждений системы безопасности](understanding-security-alerts.md#security-alert-classifications).
 
-Описанные ниже оповещения помогают выявлять и устранять последствия подозрительных действий этапа **Компрометация учетных данных** , обнаруженных [!INCLUDE [Product short](includes/product-short.md)] в вашей сети. В этом руководстве вы узнаете, как распознавать, классифицировать, предотвращать и устранять последствия следующих атак:
+Описанные ниже оповещения помогают выявлять и устранять последствия подозрительных действий этапа **Компрометация учетных данных**, обнаруженных [!INCLUDE [Product short](includes/product-short.md)] в вашей сети. В этом руководстве вы узнаете, как распознавать, классифицировать, предотвращать и устранять последствия следующих атак:
 
 > [!div class="checklist"]
 >
@@ -40,14 +38,11 @@ ms.locfileid: "93343558"
 > - [Предполагаемая атака методом подбора (Kerberos, NTLM) (внешний код 2023)](#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)
 > - [Предполагаемая атака методом подбора (LDAP) (внешний код 2004)](#suspected-brute-force-attack-ldap-external-id-2004)
 > - [Предполагаемая атака методом подбора (SMB) (внешний код 2033)](#suspected-brute-force-attack-smb-external-id-2033)
+> - [Подозрение на раскрытие имени субъекта-службы Kerberos (внешний идентификатор 2410)](#suspected-kerberos-spn-exposure-external-id-2410)
 > - [Предполагаемая попытка повышения прав доступа к службе Netlogon (использование уязвимости CVE-2020-1472) (внешний идентификатор: 2411)](#suspected-netlogon-priv-elev-2411)
 > - [Предполагаемая атака программы-шантажиста WannaCry (внешний код 2035)](#suspected-wannacry-ransomware-attack-external-id-2035)
 > - [Предполагаемое использование платформы взлома Metasploit (внешний код 2034)](#suspected-use-of-metasploit-hacking-framework-external-id-2034)
 > - [Подозрительное VPN-подключение (внешний код 2025)](#suspicious-vpn-connection-external-id-2025)
-
-<!--
-> - [Suspected Kerberos SPN exposure (external ID 2410)](#suspected-kerberos-spn-exposure-external-id-2410)
--->
 
 ## <a name="honeytoken-activity-external-id-2014"></a>Действие Honeytoken (внешний код 2014)
 
@@ -83,7 +78,7 @@ ms.locfileid: "93343558"
 
 ## <a name="suspected-brute-force-attack-kerberos-ntlm-external-id-2023"></a>Предполагаемая атака методом подбора (Kerberos, NTLM) (внешний код 2023)
 
-*Предыдущее имя* : подозрительные неудачные попытки проверки подлинности
+*Предыдущее имя*: подозрительные неудачные попытки проверки подлинности
 
 **Описание**
 
@@ -105,11 +100,11 @@ ms.locfileid: "93343558"
     - Существует ли вероятность, что попытки этих учетных записей были неудачными из-за использования неверного пароля?
     - Уточните у пользователей, выполняли ли они такие действия (несколько неудачных попыток, а затем удачная).
 
-      Если ответ на вопросы выше — **да** , **закройте** оповещение как действие B-TP.
+      Если ответ на вопросы выше — **да**, **закройте** оповещение как действие B-TP.
 
 1. При отсутствии **угаданных учетных записей** проверьте, использовались ли какие-либо из **атакованных учетных записей** на компьютере-источнике в обычном режиме.
     - Проверьте, не выполняется ли на компьютере-источнике сценарий с неверными или устаревшими учетными данными.
-    - Если ответ на предыдущий вопрос — **да** , остановите и измените или удалите сценарий. **Закройте** оповещение системы безопасности как действие B-TP.
+    - Если ответ на предыдущий вопрос — **да**, остановите и измените или удалите сценарий. **Закройте** оповещение системы безопасности как действие B-TP.
 
 **Определение области бреши в системе безопасности**
 
@@ -136,7 +131,7 @@ ms.locfileid: "93343558"
 
 ## <a name="suspected-brute-force-attack-ldap-external-id-2004"></a>Предполагаемая атака методом подбора (LDAP) (внешний код 2004)
 
-*Предыдущее имя* : атака методом подбора с помощью простой привязки LDAP
+*Предыдущее имя*: атака методом подбора с помощью простой привязки LDAP
 
 **Описание**
 
@@ -152,12 +147,12 @@ ms.locfileid: "93343558"
     - Существует ли вероятность, что попытки этих учетных записей были неудачными из-за использования неверного пароля?
     - Уточните у пользователей, выполняли ли они такие действия (несколько неудачных попыток, а затем удачная).
 
-        Если ответ на приведенные выше вопросы — **да** , **закройте** оповещение как действие B-TP.
+        Если ответ на приведенные выше вопросы — **да**, **закройте** оповещение как действие B-TP.
 
 1. При отсутствии **угаданных учетных записей** проверьте, использовались ли какие-либо из **атакованных учетных записей** на компьютере-источнике в обычном режиме.
     - Проверьте, не выполняется ли на компьютере-источнике сценарий с неверными или устаревшими учетными данными.
 
-        Если ответ на предыдущий вопрос — **да** , остановите и измените или удалите сценарий. **Закройте** оповещение системы безопасности как действие B-TP.
+        Если ответ на предыдущий вопрос — **да**, остановите и измените или удалите сценарий. **Закройте** оповещение системы безопасности как действие B-TP.
 
 **Определение области бреши в системе безопасности**
 
@@ -208,35 +203,33 @@ ms.locfileid: "93343558"
 1. Настройте принудительное применение [длинных и сложных паролей](/windows/security/threat-protection/security-policy-settings/password-policy) в организации. Длинные и сложные пароли обеспечивают необходимый первый уровень защиты от атак методом подбора.
 1. [Удалите SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/).
 
-<!--
-## Suspected Kerberos SPN exposure (external ID 2410)
+## <a name="suspected-kerberos-spn-exposure-external-id-2410"></a>Подозрение на раскрытие имени субъекта-службы Kerberos (внешний идентификатор 2410)
 
-**Description**
+**Описание**
 
-Attackers use tools to enumerate service accounts and their respective SPNs (Service principal names), request a Kerberos service ticket for the services, capture the Ticket Granting Service (TGS) tickets from memory and extract their hashes, and save them for later use in an offline brute force attack.
+Злоумышленники используют специальные средства для перечисления учетных записей служб и соответствующих имен субъектов-служб (SPN), запрашивают для служб билет службы Kerberos, перехватывают билеты службы предоставления билетов (TGS) в памяти, извлекают их хэши и сохраняют их для последующего использования в атаке методом подбора со своего компьютера.
 
-**Learning period**
+**Период обучения**
 
-None
+Нет
 
-**TP, B-TP, or FP**
+**TP, B-TP или FP**
 
-1. Check if the source computer is running an attack tool, such as PowerSploit or Rubeus.
-    1. If yes, it is a true positive. Follow the instructions in **Understand the scope of the breach**.
-    1. If the source computer is found running that type of application, and it should continue doing so, Close the security alert as a T-BP activity, and exclude that computer.
+1. Проверьте, запущено ли на исходном компьютере средство атаки, например PowerSploit или Rubeus.
+    1. Если запущено, это предупреждение является положительным. Следуйте инструкциям из раздела  **Определение области бреши в системе безопасности**.
+    1. Если на исходном компьютере работает приложение такого типа и так и должно быть, закройте оповещение системы безопасности как действие T-BP и исключите этот компьютер.
 
-**Understand the scope of the breach**
+**Определение области бреши в системе безопасности**
 
-1. Investigate the [exposed accounts](investigate-a-user.md). Check for malicious activity or suspicious behavior for these accounts.
-1. Investigate the [source computer](investigate-a-computer.md).
+1. Проанализируйте [уязвимые учетные записи](investigate-a-user.md). Проверьте наличие вредоносных или подозрительных действий для этих учетных записей.
+1. Исследуйте [компьютер-источник](investigate-a-computer.md).
 
-**Remediation:**
+**Исправление:**
 
-1. Contain the source computer.
-    - Find the tool that performed the attack and remove it.
-    - Look for users who were logged on around the same time as the activity occurred, as these users may also be compromised. Reset their passwords and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
-1. Reset the passwords of the exposed users and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
--->
+1. Уменьшите влияние исходного компьютера.
+    - Найдите средство, инициировавшее атаку, и удалите его.
+    - Найдите пользователей, выполнивших вход в систему во время вредоносной активности, так как эти пользователи также могут быть скомпрометированы. Сбросьте их пароли и включите MFA, или, если вы настроили соответствующие политики пользователей с высоким риском в Защите идентификации Azure Active Directory, вы можете использовать действие [**Подтвердить компрометацию пользователя**](/cloud-app-security/accounts#governance-actions) на портале Cloud App Security.
+1. Сбросьте пароли затронутых пользователей и включите MFA либо используйте действие [**Подтвердить компрометацию пользователя**](/cloud-app-security/accounts#governance-actions) на портале Cloud App Security, если вы настроили в Защите идентификации Azure Active Directory соответствующие политики для пользователей с высоким риском.
 
 <a name="suspected-netlogon-priv-elev-2411"></a>
 
@@ -244,7 +237,7 @@ None
 
 Корпорация Майкрософт опубликовала уведомление о том, что существует новая уязвимость [CVE-2020-1472](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1472), которая позволяет повысить привилегии для доступа к контроллеру домена.
 
-Такая уязвимость (также известна как *повышение прав доступа к службе Netlogon* ) возникает, когда злоумышленник устанавливает уязвимое подключение по безопасному каналу Netlogon к контроллеру домена по протоколу Netlogon Remote Protocol ( [MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f)).
+Такая уязвимость (также известна как *повышение прав доступа к службе Netlogon*) возникает, когда злоумышленник устанавливает уязвимое подключение по безопасному каналу Netlogon к контроллеру домена по протоколу Netlogon Remote Protocol ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f)).
 
 **Период обучения**
 
@@ -343,7 +336,7 @@ None
 
 ## <a name="suspicious-vpn-connection-external-id-2025"></a>Подозрительное VPN-подключение (внешний код 2025)
 
-*Предыдущее имя* : подозрительные VPN-подключения
+*Предыдущее имя*: подозрительные VPN-подключения
 
 **Описание**
 
