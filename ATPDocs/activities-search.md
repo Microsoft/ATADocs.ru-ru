@@ -1,22 +1,14 @@
 ---
 title: Фильтрация и поиск действий, отслеживаемых защитником Майкрософт для операций идентификации
 description: В этой статье содержатся общие сведения о фильтрации и поиске отслеживаемых действий с помощью защитника Майкрософт для идентификации.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: a35906a4d21dc5c3f9087956f7c7d4a3ad6dafdf
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 9e1758475c9b364e1726e5f145676110b98389d9
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848845"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543813"
 ---
 # <a name="product-long-monitored-activities-search-and-filter"></a>[!INCLUDE [Product long](includes/product-long.md)] Поиск и фильтрация отслеживаемых действий
 
@@ -33,7 +25,7 @@ ms.locfileid: "94848845"
 
  1. Выберите сущность для изучения с [!INCLUDE [Product short](includes/product-short.md)] временной шкалы.
  2. Щелкните **Фильтровать по** и выберите оповещения и действия для фильтрации.
- 3. Щелкните **Применить**. Временная шкала сущности изменится в соответствии с выбранными фильтрами.
+ 3. Нажмите кнопку **Применить**. Временная шкала сущности изменится в соответствии с выбранными фильтрами.
  4. Чтобы скачать отфильтрованные действия, щелкните **Скачать действия** и выберите диапазон дат для скачиваемого отчета.
  5. Чтобы на временной шкале сущности отобразились все оповещения и действия, щелкните **Сброс** или закройте фильтр.
 

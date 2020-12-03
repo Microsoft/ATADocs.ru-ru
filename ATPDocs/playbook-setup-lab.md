@@ -1,21 +1,14 @@
 ---
 title: Руководство. Настройка лаборатории оповещений системы безопасности в Microsoft Defender для удостоверений
 description: Узнайте, как настроить лабораторию тестирования для Microsoft Defender для удостоверений для моделирования угроз для обнаружения с помощью Defender для удостоверений.
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: e175744d29cac82c29dc1f072a145ee68770dcf7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 51505b97acde09eecce25e0bafaea8fa0af60419
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847060"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542572"
 ---
 # <a name="tutorial-setup-a-product-long-security-alert-lab"></a>Руководство. Настройка лаборатории оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 

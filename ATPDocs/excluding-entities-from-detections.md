@@ -1,22 +1,14 @@
 ---
 title: Исключение сущностей из обнаружения в Microsoft Defender для удостоверений
 description: Сведения о том, как настроить Microsoft Defender для удостоверений не отмечать определенные действия сущностей как подозрительные.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: e0f7f1d21132aadba7fc6b3719baf3d290e8d2fb
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: b7dd28fcb2759889f0e2f7fa710af3c200161f27
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848607"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543286"
 ---
 # <a name="excluding-entities-from-detections"></a>Исключение сущностей из результатов обнаружения
 

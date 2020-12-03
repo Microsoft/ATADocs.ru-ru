@@ -1,22 +1,14 @@
 ---
 title: Настройка прокси-сервера или брандмауэра для обмена данными между Microsoft Defender для удостоверений и датчиком
 description: Узнайте, как настроить брандмауэр или прокси-сервер для обмена данными между облачным экземпляром Microsoft Defender для удостоверений и датчиками Microsoft Defender для удостоверений
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 6b2b620895d0a59886a140ff340b6772744c6bac
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 4606ab39457cbf1210974cb9f150d7410051c361
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848658"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543439"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>Настройка прокси-сервера конечной точки и подключения к Интернету для датчика [!INCLUDE [Product long](includes/product-long.md)]
 

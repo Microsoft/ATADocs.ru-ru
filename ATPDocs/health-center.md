@@ -1,22 +1,14 @@
 ---
 title: Мониторинг работоспособности и событий системы идентификации в защитнике Майкрософт
 description: Используйте центр работоспособности для проверки работы защитника Майкрософт для службы идентификации и оповещения о потенциальных проблемах и просмотра системных событий в средстве просмотра событий.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 5bf828278e0223aaaf52b41932b2612c7225dd7f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e2a4c757682194013d34bddd6581402b5fe60920
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847944"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544017"
 ---
 # <a name="work-with-product-long-health-and-events"></a>Работа с [!INCLUDE [Product long](includes/product-long.md)] работоспособностью и событиями
 

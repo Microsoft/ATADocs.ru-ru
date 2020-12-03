@@ -1,22 +1,14 @@
 ---
 title: Оценка небезопасных атрибутов учетной записи в защитнике Майкрософт
 description: В этой статье представлен обзор защитника Майкрософт для сущностей Identity с небезопасными атрибутами отчет об оценке уровня безопасности.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 50f102c445c31969aede302fb37955cae85d626b
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: befa5e059a93e6f2e15fd84450948285a94173a6
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848726"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543558"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>Оценка безопасности: небезопасные атрибуты учетной записи
 

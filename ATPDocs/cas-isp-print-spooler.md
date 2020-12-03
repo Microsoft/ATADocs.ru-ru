@@ -1,22 +1,14 @@
 ---
 title: Защитник Майкрософт для проверки подлинности Диспетчер очереди печати — оценка уровня безопасности
 description: В этой статье приводятся общие сведения о защитнике Майкрософт для отчетов об оценке уровня безопасности для идентификации диспетчера очереди печати.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 90333e1588ebb110c940467177aa5aef762fb428
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 56b5ae3a235227f4c1f444b50d30730e71d0f8d5
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848760"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543660"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>Оценка безопасности: служба очереди печати принтера на контроллерах домена
 

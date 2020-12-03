@@ -1,20 +1,14 @@
 ---
 title: Общие сведения о настройке параметров датчика удостоверений в защитнике Майкрософт
 description: Шаг 5. Установка защитника Майкрософт для идентификации помогает настроить параметры защитника для автономного датчика удостоверений.
-author: shsagir
-ms.author: shsagir
 ms.date: 09/15/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 27431aca85e794ecd31029b6286e3146f01fa7ec
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 329bfd4f6de2e15865c81d22651e833a63d07b6d
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848505"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543116"
 ---
 # <a name="configure-product-long-sensor-settings"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] параметров датчика
 
@@ -69,7 +63,7 @@ ms.locfileid: "94848505"
 1. Проверьте [!INCLUDE [Product short](includes/product-short.md)] подключение на любом устройстве домена, выполнив следующие действия.
     1. Откройте командную строку.
     1. Введите `nslookup`.
-    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. Например, `server contosodc.contoso.azure`
+    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. например `server contosodc.contoso.azure`
         - Обязательно замените ContosoDC. contoso. Azure и contoso. Azure полным доменным [!INCLUDE [Product short](includes/product-short.md)] именем датчика и имени домена соответственно.
     1. Введите `ls -d contoso.azure`.
     1. Повторите шаги 3 и 4 для каждого датчика, который нужно протестировать.

@@ -1,22 +1,14 @@
 ---
 title: Настройка параметров системного журнала в Microsoft Defender для удостоверений
 description: В этой статье описано, как настроить получение уведомлений службы "Microsoft Defender для удостоверений" о подозрительной активности (по электронной почте или с помощью пересылки событий службой).
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 833b836c28455a231fa4a30afe2e604ce7646a16
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 587fd2cab00b982ace580ef2b8b587157c960891
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848981"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544357"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
 

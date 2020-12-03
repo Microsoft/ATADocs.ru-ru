@@ -1,22 +1,14 @@
 ---
 title: Установка защитника Майкрософт для интеграции удостоверений VPN
 description: Собирать сведения об учетных данных для защитника Майкрософт для идентификации путем интеграции VPN.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 5bdaec29f2b8eb6d9d62105d48a59fde7c578f05
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e7c406a198eb78c98c795ba43d9b4076610540c7
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847791"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543966"
 ---
 # <a name="integrate-vpn"></a>Интеграция VPN
 

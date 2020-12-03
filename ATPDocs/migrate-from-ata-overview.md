@@ -1,22 +1,14 @@
 ---
 title: Advanced Threat Analytics в защитнике Майкрософт для перемещения удостоверений
 description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 368b328cb6863074bd47f0785aafccf7f491fa54
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: be1edf7981bbf72daeb285a9d0d0896892839f59
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847349"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542691"
 ---
 # <a name="advanced-threat-analytics-ata-to-product-long"></a>Advanced Threat Analytics (ATA) для [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -41,7 +33,7 @@ ms.locfileid: "94847349"
 > [!NOTE]
 > Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый экземпляр [!INCLUDE [Product short](includes/product-short.md)] поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
@@ -139,7 +131,7 @@ ms.locfileid: "94847349"
 
 Поздравляем! Переход с ATA на [!INCLUDE [Product short](includes/product-short.md)] завершен.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Дополнительные сведения о [[!INCLUDE [Product short](includes/product-short.md)]](what-is.md) функциях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md).
 

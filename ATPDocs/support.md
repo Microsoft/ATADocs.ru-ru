@@ -1,22 +1,14 @@
 ---
 title: Защитник Майкрософт для поддержки идентификации
 description: Описание процесса получения справки о поддержке для защитника Майкрософт по удостоверениям.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 2c35f69c3696e069cb48a6d1e04ba88b5d595ac0
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: bd5c340633a5f52d7ac25bd075acc9381bb9fd19
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848964"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544340"
 ---
 # <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] Информация и поддержка
 

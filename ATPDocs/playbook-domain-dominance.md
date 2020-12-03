@@ -1,22 +1,14 @@
 ---
 title: Сборник схем захвата управления доменом для Microsoft Defender для удостоверений
 description: В сборнике схем захвата управления доменом для Microsoft Defender для удостоверений показано, как смоделировать атаку захвата управления доменом для ее обнаружения с помощью Defender для удостоверений.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: bf1a3207fe44bee729d1120f71e1038e11e3e853
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: fc79528c5adb2b487b3b68f2919facadfd7ebe2e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847316"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542793"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>Руководство. Сборник схем захвата управления доменом
 

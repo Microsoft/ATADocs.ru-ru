@@ -1,22 +1,14 @@
 ---
 title: Руководство. Оповещения системы безопасности в Microsoft Defender для удостоверений
 description: В этой статье приводится список оповещений системы безопасности, отправляемых Microsoft Defender для удостоверений.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 11184c7bea435ae1168deb810ec54ec163d990f5
-ms.sourcegitcommit: 38266d01b28ea6b084687b9bc3c4aa18e2dbb3b7
+ms.openlocfilehash: b6870f7c02dcd9497c08f8ebba33fde967092a4c
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94851232"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542198"
 ---
 # <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 

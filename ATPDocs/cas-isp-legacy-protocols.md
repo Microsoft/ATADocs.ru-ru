@@ -1,22 +1,14 @@
 ---
 title: Microsoft Defender для удостоверения устаревших протоколов Identity Оценка безопасности
 description: В этой статье приводятся общие сведения о защитнике Майкрософт для устаревшего отчета об оценке уровня безопасности для идентификации устаревших протоколов.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: ec015caaf138b436238a79a257189882929e22a8
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 54bc0aeca86acf30101cb3200c1c5c8a3d5041bd
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848420"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544187"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>Оценка безопасности: использование устаревших протоколов
 

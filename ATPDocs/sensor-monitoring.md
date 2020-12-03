@@ -1,22 +1,14 @@
 ---
 title: Наблюдение за контроллерами домена и установленными датчиками, установленными на контроллерах домена, с помощью защитника Майкрософт для идентификации
 description: Описывается мониторинг защитника Майкрософт для датчиков удостоверений и покрытия датчика с помощью защитника для идентификации.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 20e02b3281480024b67a1ef5908d82586c11f955
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 370e35388356de148b8756464633120bf5d74e5d
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849032"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544374"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>Мониторинг покрытия контроллеров домена
 
@@ -36,7 +28,7 @@ ms.locfileid: "94849032"
 
 В загруженном Excel-файле покрытия контроллеров домена содержатся следующие сведения обо всех контроллерах домена в вашей организации:
 
-|Заголовок|Описание|
+|Заголовок|Описание:|
 |----|----|
 |Hostname (Имя узла)|Имя компьютера|
 |Доменное имя|Доменное имя|

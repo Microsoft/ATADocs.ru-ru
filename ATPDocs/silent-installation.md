@@ -1,28 +1,20 @@
 ---
 title: Автоматическая установка защитника Майкрософт для идентификации
 description: В этом разделе описано, как автоматически установить защитник Майкрософт для идентификации.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: d87aa443bad2731ee3e5ff226930980ac52c79d7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: a27b358b27b61118f1d73804b8612f170bc830e7
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846720"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542334"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] параметры и автоматическая установка
 
 Эта статья содержит инструкции и инструкции по [!INCLUDE [Product long](includes/product-long.md)] параметрам и автоматической установке.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [Product short](includes/product-short.md)] требуется установка платформы Microsoft .NET Framework 4,7 или более поздней версии.
 
