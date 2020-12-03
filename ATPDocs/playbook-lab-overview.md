@@ -1,21 +1,14 @@
 ---
 title: Руководство. Лаборатория оповещений системы безопасности в Microsoft Defender для удостоверений
 description: Это обзорное руководство состоит из четырех частей, в которых показано, как использовать лабораторию оповещений системы безопасности Microsoft Defender для удостоверений для моделирования и обнаружения угроз с помощью Defender для удостоверений.
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 992ea4672c427a1bf29b7303cfc412793ff8ba4d
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 5d4de0173019b318fda8a5c2ee80db72c832ab7b
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849066"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544442"
 ---
 # <a name="tutorial-overview-product-long-security-alert-lab"></a>Обзорное руководство. Лаборатория оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
 

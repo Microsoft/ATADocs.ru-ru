@@ -1,22 +1,14 @@
 ---
 title: Защитник Майкрософт для групп ролей удостоверений для управления доступом
 description: Руководство по работе с защитником Майкрософт для групп ролей удостоверений.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 02/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 9a3927c565f3b2e7173519c31cb3bfcde9eed2a7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: cbfb13ace446ba980af649f07951eed3aabbe4fd
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848998"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544391"
 ---
 # <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] группы ролей
 

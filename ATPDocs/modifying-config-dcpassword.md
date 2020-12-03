@@ -1,22 +1,14 @@
 ---
 title: Изменение защитника Майкрософт для настройки удостоверения — пароль для подключения к домену
 description: Описывает, как изменить пароль для подключения к домену в защитнике Майкрософт для изолированного датчика идентификации.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: ef931c90558ffaea1a24d8682cc8091a845aeea8
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 294786515c45136be77447b9ad1e9ddf5e2e5e95
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847417"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544510"
 ---
 # <a name="change-product-long-portal-configuration---domain-connectivity-password"></a>Изменение [!INCLUDE [Product long](includes/product-long.md)] конфигурации портала — пароль для подключения к домену
 
@@ -46,7 +38,7 @@ ms.locfileid: "94847417"
     > [!NOTE]
     > Введите имя пользователя и пароль для Active Directory, а не для Azure Active Directory.
 
-1. Щелкните **Сохранить**.
+1. Выберите команду **Сохранить**.
 
 1. На портале [!INCLUDE [Product short](includes/product-short.md)] выберите пункт **Конфигурация**.
 1. В разделе **система** выберите страницу **датчиков** и проверьте состояние датчиков.

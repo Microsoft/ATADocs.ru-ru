@@ -1,22 +1,14 @@
 ---
 title: Настройка уведомлений Microsoft Defender для удостоверений
 description: В этой статье описано, как настроить оповещения системы безопасности Microsoft Defender для удостоверений, чтобы получать уведомления при обнаружении подозрительных действий.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 3eb687b716ce69bb4be0aabc2b128b1cf46242ff
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 49d78935b9246797b1d83f24a06a7ffe16f57699
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94847145"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544476"
 ---
 # <a name="set-product-long-notifications"></a>Настройка уведомлений [!INCLUDE [Product long](includes/product-long.md)]
 
