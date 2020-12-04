@@ -63,6 +63,10 @@
       href: role-groups.md
     - name: Поддержка множества лесов в Defender для удостоверений
       href: multi-forest.md
+    - name: Безопасность
+      items:
+        - name: Базовые средства безопасности
+          href: security-baseline.md
 - name: Практические руководства
   items:
     - name: "Defender для удостоверений и Microsoft\_Cloud App\_Security"
