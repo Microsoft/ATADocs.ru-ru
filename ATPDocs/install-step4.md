@@ -1,20 +1,14 @@
 ---
 title: Краткое руководство по установке датчика Microsoft Defender для удостоверений
 description: На четвертом шаге установки Microsoft Defender для удостоверений происходит установка датчика Defender для удостоверений.
-author: shsagir
-ms.author: shsagir
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: f03f2722f86cec0ca019828b21e4851d0b1305f8
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 3688ace52e4581f8b94186c58c3e355e855e16d0
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847893"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544000"
 ---
 # <a name="quickstart-install-the-product-long-sensor"></a>Краткое руководство. Установка датчика [!INCLUDE [Product long](includes/product-long.md)]
 

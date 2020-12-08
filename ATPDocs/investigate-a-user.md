@@ -1,21 +1,14 @@
 ---
 title: Руководство по анализу пользователей в Microsoft Defender для удостоверений
 description: В этой статье объясняется, как использовать оповещения системы безопасности Microsoft Defender для удостоверений для анализа подозрительных пользователей.
-keywords: ''
-author: shsagir
-ms.author: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: f92e8ffc2ed30e858c5bb0e7728f8f4c76309a2a
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: c9d3cb67ff4eeae0e1f4a0808751d96c67cf326e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848471"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542844"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
 
