@@ -1,14 +1,14 @@
 ---
 title: Установка защитника Майкрософт для интеграции удостоверений VPN
 description: Собирать сведения об учетных данных для защитника Майкрософт для идентификации путем интеграции VPN.
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: how-to
-ms.openlocfilehash: e7c406a198eb78c98c795ba43d9b4076610540c7
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 80b4bdf29db05d0c2f42887dacff223b3067ba49
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543966"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753411"
 ---
 # <a name="integrate-vpn"></a>Интеграция VPN
 
@@ -28,7 +28,9 @@ ms.locfileid: "96543966"
 - Откройте порт UDP 1813 на [!INCLUDE [Product short](includes/product-short.md)] датчиках и (или) [!INCLUDE [Product short](includes/product-short.md)] автономных датчиках.
 
 > [!NOTE]
-> При включении **учета RADIUS** [!INCLUDE [Product short](includes/product-short.md)] датчик включит предварительно подготовленную политику брандмауэра Windows, называемую **[!INCLUDE [Product long](includes/product-long.md)] датчиком** , чтобы разрешить входящий учет RADIUS через порт UDP 1813.
+>
+> - При включении **учета RADIUS** [!INCLUDE [Product short](includes/product-short.md)] датчик включит предварительно подготовленную политику брандмауэра Windows, называемую **[!INCLUDE [Product long](includes/product-long.md)] датчиком** , чтобы разрешить входящий учет RADIUS через порт UDP 1813.
+> - Интеграция VPN не поддерживается в средах, соответствующих федеральным стандартам обработки информации (FIPS)
 
 В примере ниже описан процесс настройки VPN с использованием сервера маршрутизации и удаленного доступа Майкрософт (RRAS).
 
