@@ -1,20 +1,20 @@
 ---
 title: Автоматическая установка защитника Майкрософт для идентификации
 description: В этом разделе описано, как автоматически установить защитник Майкрософт для идентификации.
-ms.date: 10/27/2020
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 056451d5f0881360643bfc453366a8ccdb0ddccc
-ms.sourcegitcommit: 3a478353118670b8124bc62d33751d8ba6af109d
+ms.openlocfilehash: a9cddac4ca0306faddaa93b701b88745b180828c
+ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97746882"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062541"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] параметры и автоматическая установка
 
 Эта статья содержит инструкции и инструкции по [!INCLUDE [Product long](includes/product-long.md)] параметрам и автоматической установке.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 [!INCLUDE [Product short](includes/product-short.md)] требуется установка платформы Microsoft .NET Framework 4,7 или более поздней версии.
 
@@ -92,6 +92,8 @@ ms.locfileid: "97746882"
 > |ProxyUrl|ProxyUrl="http\://proxy.contoso.com:8080"|Нет|Определяет URL-адрес и номер порта прокси-сервера для датчика [!INCLUDE [Product short](includes/product-short.md)].|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|Нет|Если служба прокси-сервера требует проверки подлинности, укажите имя пользователя в формате "ДОМЕН\пользователь".|
 > |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|Нет|Указывает пароль для имени пользователя прокси-сервера. * Датчик [!INCLUDE [Product short](includes/product-short.md)] шифрует учетные данные и сохраняет их локально.|
+
+Дополнительные сведения о конфигурации прокси-сервера см. [в статье Настройка прокси-сервера конечной точки и параметров подключения к Интернету для [!INCLUDE [Product long](includes/product-long.md)] датчика](configure-proxy.md).
 
 ## <a name="update-the-product-short-sensor"></a>Обновление [!INCLUDE [Product short](includes/product-short.md)] датчика
 
