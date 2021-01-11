@@ -1,14 +1,14 @@
 ---
 title: Что такое Microsoft Defender для удостоверений?
 description: Здесь описывается решение Microsoft Defender для удостоверений и подозрительные действия, которые оно может обнаружить
-ms.date: 10/27/2020
+ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: f7713d470c367f66db4a480380ca0e2515ebdeb2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 1aceb1889ea3f85305d64b5bde6a252b804d56f0
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542045"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753366"
 ---
 # <a name="what-is-product-long"></a>Что такое [!INCLUDE [Product long](includes/product-long.md)]?
 
@@ -28,6 +28,10 @@ ms.locfileid: "96542045"
 ## <a name="protect-user-identities-and-reduce-the-attack-surface"></a>Защита удостоверений пользователей и сокращение уязвимой зоны
 
 [!INCLUDE [Product short](includes/product-short.md)] предоставляет бесценную информацию о конфигурациях удостоверений и рекомендации по обеспечению безопасности. Благодаря отчетам о безопасности и аналитике пользовательских профилей [!INCLUDE [Product short](includes/product-short.md)] помогает существенно сократить число направлений атак, угрожающих вашей организации, усложняя взлом учетных данных пользователей и затрудняя проведение атак. С помощью визуальных путей бокового смещения в [!INCLUDE [Product short](includes/product-short.md)] можно быстро узнать, как злоумышленник может перемещаться по сети вашей организации с целью взлома важных учетных записей, и заранее предотвратить эти риски. Отчеты о безопасности [!INCLUDE [Product short](includes/product-short.md)] помогают выявлять пользователей и устройства, которые проходят проверку подлинности с помощью открытых паролей. Они также предоставляют дополнительную информацию для оптимизации корпоративной защиты и ваших политик.
+
+## <a name="protecting-the-ad-fs-in-hybrid-environments"></a>Защита AD FS в гибридных средах
+
+Службы федерации Active Directory (AD FS) играют важную роль в современной инфраструктуре в том, что касается проверке подлинности в гибридных средах. [!INCLUDE [Product short](includes/product-short.md)] защищает AD FS в среде, выявляя локальные атаки на AD FS и обеспечивая возможность отслеживать события проверки подлинности, которую выполняет AD FS.
 
 ## <a name="identify-suspicious-activities-and-advanced-attacks-across-the-cyber-attack-kill-chain"></a>Выявление подозрительных действий и современных кибератак на основе модели цепочки атаки
 

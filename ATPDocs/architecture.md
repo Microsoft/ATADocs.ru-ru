@@ -1,14 +1,14 @@
 ---
 title: Архитектура Microsoft Defender для удостоверений
 description: Описание архитектуры Microsoft Defender для удостоверений
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 11be2df6437f6b67968d395a24756d4b0514ea69
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 418fbe3f4a24f3af69336eda4954f5817b478e20
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544221"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753288"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>Архитектура Microsoft Defender для удостоверений
 
@@ -20,7 +20,7 @@ ms.locfileid: "96544221"
 
 В этом разделе рассматривается поток операций отслеживания сетевого трафика и событий, а также подробно описаны функции основных компонентов [!INCLUDE [Product short](includes/product-short.md)]: портала [!INCLUDE [Product short](includes/product-short.md)], датчика [!INCLUDE [Product short](includes/product-short.md)] и облачной службы [!INCLUDE [Product short](includes/product-short.md)].
 
-При установке непосредственно на контроллерах домена датчик [!INCLUDE [Product short](includes/product-short.md)] обращается к требуемым журналам событий напрямую из контроллера домена. После того как датчик проанализирует журналы и сетевой трафик, [!INCLUDE [Product short](includes/product-short.md)] отправит в облачную службу [!INCLUDE [Product short](includes/product-short.md)] только проанализированные данные (некоторую часть всех журналов).
+При установке непосредственно на контроллерах домена или серверах AD FS датчик [!INCLUDE [Product short](includes/product-short.md)] обращается к требуемым журналам событий напрямую с серверов. После того как датчик проанализирует журналы и сетевой трафик, [!INCLUDE [Product short](includes/product-short.md)] отправит в облачную службу [!INCLUDE [Product short](includes/product-short.md)] только проанализированные данные (некоторую часть всех журналов).
 
 ## <a name="product-short-components"></a>составные части компонента [!INCLUDE [Product short](includes/product-short.md)].
 
@@ -30,7 +30,9 @@ ms.locfileid: "96544221"
 На портале [!INCLUDE [Product short](includes/product-short.md)] можно создать экземпляр [!INCLUDE [Product short](includes/product-short.md)], просматривать данные, полученные от датчиков [!INCLUDE [Product short](includes/product-short.md)], а также отслеживать, контролировать и изучать угрозы в сетевой среде.
 
 - **Датчик [!INCLUDE [Product short](includes/product-short.md)]**  
-Датчики [!INCLUDE [Product short](includes/product-short.md)] устанавливаются непосредственно на контроллерах домена. Датчик напрямую отслеживает трафик контроллера домена. Для этого не нужен выделенный сервер и не требуется настраивать зеркальное отображение портов.
+Датчики [!INCLUDE [Product short](includes/product-short.md)] можно установить непосредственно на следующих серверах:
+  - **Контроллеры домена.** Датчик напрямую отслеживает трафик контроллера домена. Для этого не нужен выделенный сервер и не требуется настраивать зеркальное отображение портов.
+  - **AD FS.** Датчик напрямую отслеживает сетевой трафик и события проверки подлинности.
 - **Облачная служба [!INCLUDE [Product short](includes/product-short.md)]**  
 Облачная служба [!INCLUDE [Product short](includes/product-short.md)] работает на основе инфраструктуры Azure. В настоящее время она развернута в США, Европе и Азии. Облачная служба [!INCLUDE [Product short](includes/product-short.md)] подключена к Microsoft Intelligent Security Graph.
 

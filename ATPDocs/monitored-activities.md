@@ -1,14 +1,14 @@
 ---
 title: Отслеживаемые действия домена в Microsoft Defender для удостоверений
 description: Описание всех типов действий, отслеживаемых Microsoft Defender для удостоверений
-ms.date: 10/26/2020
+ms.date: 12/24/2020
 ms.topic: conceptual
-ms.openlocfilehash: 8ef0972efec4fc5d39d42cd72e43ca7f95e94ef5
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 5ca3a3681eb15b1b2a8935942daaf7a39f9c15c3
+ms.sourcegitcommit: 78fb0cead845c7098c780f4daa624a741e350ec2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542623"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97763631"
 ---
 # <a name="product-long-monitored-activities"></a>Отслеживаемые действия в [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -25,6 +25,7 @@ ms.locfileid: "96542623"
 >
 > - Эта статья актуальна для всех типов датчиков [!INCLUDE [Product short](includes/product-short.md)].
 > - Действия, отслеживаемые [!INCLUDE [Product short](includes/product-short.md)], отображаются на страницах профилей пользователей и компьютеров.
+> - Сведения о действиях, отслеживаемых [!INCLUDE [Product short](includes/product-short.md)], также доступны в [Cloud App Security](https://portal.cloudappsecurity.com/) и на странице [расширенной охоты на угрозы](https://security.microsoft.com/advanced-hunting) Microsoft 365 Defender.
 
 ## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>Отслеживаемые действия пользователя: изменения атрибута AD в учетной записи пользователя
 
