@@ -1,14 +1,14 @@
 ---
 title: Устранение известных проблем в защитнике Майкрософт
 description: В этой статье описывается, как устранять неполадки в защитнике Майкрософт для идентификации.
-ms.date: 09/07/2020
+ms.date: 01/12/2021
 ms.topic: how-to
-ms.openlocfilehash: bd7abdca7fade3b00161513b74d6507c5660c3bb
-ms.sourcegitcommit: bfb14c4c0b0f528edaa8167833b13c476240e514
+ms.openlocfilehash: 6f0a055a48dc906dd7a44814b19ed85fb64401ee
+ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762509"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114247"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
 
@@ -152,7 +152,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 В гостевой ОС в конфигурации сетевого адаптера виртуальной машины **Отключите** следующие параметры: **разгрузка TSO Offload IPv4**.
 
- ![Проблема с датчиком VMware](media/vm-sensor-issue.png)
+![Проблема с датчиком VMware](media/vm-sensor-issue.png)
 
 Используйте следующую команду, чтобы проверить, включена или отключена ли Разгрузка большой отправки (LSO).
 
@@ -165,6 +165,11 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 `Disable-NetAdapterLso -Name {name of adapter}`
 
 ![Состояние отключения LSO](media/disable-lso-vmware.png)
+
+> [!NOTE]
+>
+> - Чтобы изменения вступили в силу, может потребоваться перезагрузить компьютер.
+> - Эти действия могут различаться в зависимости от версии VMWare. Ознакомьтесь с документацией по VMWare, чтобы узнать, как отключить LSO/TSO OFFLOAD для вашей версии VMWare.
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>Датчику не удалось получить учетные данные групповой управляемой учетной записи службы (gMSA)
 

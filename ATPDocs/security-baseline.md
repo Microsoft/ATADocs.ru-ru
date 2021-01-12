@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.date: 12/03/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 37d46cd2a7810193990cc3143e69c9ea83c6afe2
-ms.sourcegitcommit: 69339ed7712657427ee40af8cc3ac41e11ed2dd2
+ms.openlocfilehash: 595a532bb02aeda6f82005a28833f71a3d074a18
+ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96597958"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114264"
 ---
 # <a name="azure-security-baseline-for-microsoft-defender-for-identity"></a>Базовый план безопасности Azure для защитника Майкрософт для идентификации
 
-Этот базовый план безопасности применяет руководства из [теста безопасности Azure с версией 2,0](https://docs.microsoft.com/azure/security/benchmarks/overview) в защитник Майкрософт для идентификации. Azure Security Benchmark содержит рекомендации по обеспечению безопасности облачных решений в Azure. Содержимое группируются по **элементам управления безопасностью** , определенным в средстве оценки безопасности Azure, и связанным рекомендациям, применимым к защитнику Майкрософт для идентификации. **Элементы управления** , неприменимые к защитнику Майкрософт для удостоверения, были исключены.
+Этот базовый план безопасности применяет руководства из [теста безопасности Azure с версией 2,0](/azure/security/benchmarks/overview) в защитник Майкрософт для идентификации. Azure Security Benchmark содержит рекомендации по обеспечению безопасности облачных решений в Azure. Содержимое группируются по **элементам управления безопасностью** , определенным в средстве оценки безопасности Azure, и связанным рекомендациям, применимым к защитнику Майкрософт для идентификации. **Элементы управления** , неприменимые к защитнику Майкрософт для удостоверения, были исключены.
 
 Сведения о том, как защитник Майкрософт для идентификации полностью сопоставлен с тестовым уровнем безопасности Azure, см. в [полном защитнике Майкрософт файла сопоставления базовых показателей безопасности для идентификации](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines).
 
@@ -28,9 +28,9 @@ ms.locfileid: "96597958"
 
 **Руководство**. Использование тегов службы виртуальной сети Azure для определения управления доступом к сети для групп безопасности сети или брандмауэра Azure, настроенного для вашего защитника, для ресурсов удостоверений. Теги служб можно использовать вместо определенных IP-адресов при создании правил безопасности. Указав имя тега службы (например, "Азуреадванцедсреатпротектион") в соответствующем поле источника или назначения правила, можно разрешить или запретить трафик для соответствующей службы. Корпорация Майкрософт управляет префиксами адресов, входящих в тег службы, и автоматически обновляет этот тег при изменении адресов.
 
-- [Разрешить доступ к защитнику для URL-адресов службы удостоверений на прокси-сервере](https://docs.microsoft.com/defender-for-identity/configure-proxy#enable-access-to--service-urls-in-the-proxy-server)
+- [Разрешить доступ к защитнику для URL-адресов службы удостоверений на прокси-сервере](configure-proxy.md#enable-access-to--service-urls-in-the-proxy-server)
 
-- [Общие сведения и использование тегов служб](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)
+- [Общие сведения и использование тегов служб](/azure/virtual-network/service-tags-overview)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -51,13 +51,13 @@ ms.locfileid: "96597958"
 
 Примечание. Azure AD поддерживает внешние удостоверения, которые позволяют пользователям без учетная запись Майкрософт входить в свои приложения и ресурсы с их внешним удостоверением.
 
-- [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps) (Аренда в Azure Active Directory) 
+- [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps) (Аренда в Azure Active Directory) 
 
-- [Создание и настройка экземпляра Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
+- [Создание и настройка экземпляра Azure AD](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
 
-- [Использование внешних поставщиков удостоверений для приложения](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers) 
+- [Использование внешних поставщиков удостоверений для приложения](/azure/active-directory/b2b/identity-providers) 
 
-- [Оценка безопасности удостоверений в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)
+- [Оценка безопасности удостоверений в Azure Active Directory](/azure/active-directory/fundamentals/identity-secure-score)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -72,13 +72,13 @@ ms.locfileid: "96597958"
 
 Для администраторов и привилегированных пользователей убедитесь, что используется самый высокий уровень надежной проверки подлинности, а затем выполнив соответствующую политику строгой проверки подлинности другим пользователям.
 
-- [Как включить многофакторную проверку подлинности в Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 
+- [Как включить многофакторную проверку подлинности в Azure](/azure/active-directory/authentication/howto-mfa-getstarted) 
 
-- [Общие сведения о способах выполнения беспарольной проверки подлинности в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) 
+- [Общие сведения о способах выполнения беспарольной проверки подлинности в Azure Active Directory](/azure/active-directory/authentication/concept-authentication-passwordless) 
 
-- [Политика паролей по умолчанию в Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
+- [Политика паролей по умолчанию в Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
 
-- [Исключение неправильных паролей с помощью защиты паролем Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)
+- [Исключение неправильных паролей с помощью защиты паролем Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -97,13 +97,13 @@ ms.locfileid: "96597958"
 Ограничьте число учетных записей или ролей с высоким уровнем привилегий и защитите эти учетные записи на уровне повышенного уровня, так как пользователи с этой привилегией могут напрямую или косвенно читать и изменять каждый ресурс в среде Azure.
 
 Вы можете включить привилегированный доступ (JIT) для ресурсов Azure и Azure Active Directory (Azure AD) с помощью Azure AD Privileged Identity Management (PIM). JIT-доступ предоставляет временные разрешения на выполнение привилегированных задач только в том случае, если это необходимо пользователям. PIM также может создавать оповещения безопасности при обнаружении подозрительных или небезопасных действий в организации Azure AD.
-- [Защитник Майкрософт для групп ролей удостоверений](https://docs.microsoft.com/defender-for-identity/role-groups)
+- [Защитник Майкрософт для групп ролей удостоверений](role-groups.md)
 
-- [Разрешения роли администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+- [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
 
-- [Использование оповещений системы безопасности в рамках управления привилегированными пользователями Azure](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts) 
+- [Использование оповещений системы безопасности в рамках управления привилегированными пользователями Azure](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts) 
 
-- [Защита привилегированного доступа для гибридных и облачных развертываний в Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure)
+- [Защита привилегированного доступа для гибридных и облачных развертываний в Azure AD](/azure/active-directory/users-groups-roles/directory-admin-roles-secure)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -117,13 +117,13 @@ ms.locfileid: "96597958"
 
 Все типы элементов управления доступом должны быть согласованы с стратегией сегментации предприятия, чтобы обеспечить постоянный контроль доступа.
 
-- [Защитник Майкрософт для групп ролей удостоверений](https://docs.microsoft.com/defender-for-identity/role-groups)
+- [Защитник Майкрософт для групп ролей удостоверений](role-groups.md)
 
-- [Компоненты и эталонная модель Azure](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 
+- [Компоненты и эталонная модель Azure](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 
 
-- [Доступ к группе управления](https://docs.microsoft.com/azure/governance/management-groups/overview#management-group-access) 
+- [Доступ к группе управления](/azure/governance/management-groups/overview#management-group-access) 
 
-- [Администраторы подписки Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)
+- [Администраторы подписки Azure](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -137,9 +137,9 @@ ms.locfileid: "96597958"
 
 Примечание. Некоторые службы Azure поддерживают локальных пользователей и роли, которые не управляются с помощью Azure AD. Вам потребуется управлять этими пользователями отдельно.
 
-- [Создание проверки доступа для ролей ресурсов Azure в управление привилегированными пользователями (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
+- [Создание проверки доступа для ролей ресурсов Azure в управление привилегированными пользователями (PIM)](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
 
-- [Использование проверок доступа для идентификации Azure AD](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overvie)
+- [Использование проверок доступа для идентификации Azure AD](/azure/active-directory/governance/access-reviews-overvie)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -149,8 +149,8 @@ ms.locfileid: "96597958"
 
 **Инструкции**: защищенные изолированные рабочие станции критически важны для защиты привилегированных ролей, таких как администраторы, разработчики и критические операторы обслуживания. Используйте высокозащищенные рабочие станции пользователей и (или) Azure бастиона для административных задач. Используйте Azure Active Directory, защитник Майкрософт для конечной точки и (или) Microsoft Intune для развертывания защищенной и управляемой рабочей станции пользователя для административных задач. Защищенными рабочими станциями можно централизованно управлять, чтобы обеспечить безопасную настройку, включая строгую проверку подлинности, базовые параметры программного обеспечения и оборудования, ограниченный логический и сетевой доступ.
 
-- [Общие сведения о рабочих станциях с привилегированным доступом](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation) 
-- [Развертывание рабочей станции с привилегированным доступом](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation)
+- [Общие сведения о рабочих станциях с привилегированным доступом](/azure/active-directory/devices/concept-azure-managed-workstation) 
+- [Развертывание рабочей станции с привилегированным доступом](/azure/active-directory/devices/howto-azure-managed-workstation)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -167,11 +167,11 @@ ms.locfileid: "96597958"
 Чтобы гарантировать постоянное управление доступом, все его типы должны быть согласованы с вашей корпоративной стратегией сегментации. Стратегия сегментации предприятия также должна быть уведомлена о расположении конфиденциальных или критически важных данных и систем.
 
 Для базовой платформы, управляемой корпорацией Майкрософт, корпорация Майкрософт считает все содержимое клиента конфиденциальным и защищает клиентов от потери данных и раскрытия информации. Чтобы обеспечить безопасность данных клиентов в Azure, корпорация Майкрософт реализует элементы управления и возможности защиты данных по умолчанию.
-- [Роли Azure AD с доступом к Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Роли Azure AD с доступом к Cloud App Security](/cloud-app-security/manage-admins)
 
-- [Управление доступом на основе ролей в Azure (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) 
+- [Управление доступом на основе ролей в Azure (RBAC)](/azure/role-based-access-control/overview) 
 
-- [Общие сведения о защите данных клиентов в Azure](https://docs.microsoft.com/azure/security/fundamentals/protection-customer-data)
+- [Общие сведения о защите данных клиентов в Azure](/azure/security/fundamentals/protection-customer-data)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -191,9 +191,9 @@ ms.locfileid: "96597958"
 
 Примечание. Для наблюдения за рабочими нагрузками и службами могут потребоваться дополнительные разрешения. 
 
-- [Общие сведения о роли читателя сведений о безопасности](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader)
+- [Общие сведения о роли читателя сведений о безопасности](/azure/role-based-access-control/built-in-roles#security-reader)
 
-- [Общие сведения о группах управления Azure](https://docs.microsoft.com/azure/governance/management-groups/overview)
+- [Общие сведения о группах управления Azure](/azure/governance/management-groups/overview)
 
 **Мониторинг Центра безопасности Azure**: в настоящее время недоступен.
 
@@ -208,10 +208,10 @@ ms.locfileid: "96597958"
 **Руководство**. защитник для идентификации может уведомлять вас при обнаружении подозрительных действий, отправляя оповещения о безопасности и работоспособности на сервер syslog с помощью назначенного датчика.
 Перешлите журналы из защитника для удостоверения SIEM, которые можно использовать для настройки обнаружения угроз. Убедитесь, что вы отслеживаете различные типы ресурсов Azure для потенциальных угроз и аномалий. Сосредоточьтесь на получении высококачественных оповещений, чтобы сократить число ложных срабатываний аналитиков для сортировки. Источником предупреждений могут быть данные журнала, агенты или другие данные.
 
-- [Интеграция с syslog](https://docs.microsoft.com/defender-for-identity/setting-syslog)
-- [Создание настраиваемых правил аналитики для обнаружения угроз](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom) 
+- [Интеграция с syslog](setting-syslog.md)
+- [Создание настраиваемых правил аналитики для обнаружения угроз](/azure/sentinel/tutorial-detect-threats-custom) 
 
-- [Кибератакная аналитика угроз с помощью Sentinel Azure](https://docs.microsoft.com/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
+- [Кибератакная аналитика угроз с помощью Sentinel Azure](/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -231,10 +231,10 @@ ms.locfileid: "96597958"
 
 Центр безопасности Azure также может оповещать о некоторых подозрительных действиях, например о чрезмерном числе неудачных попыток проверки подлинности, нерекомендуемых учетных записей в подписке. Помимо базового мониторинга гигиены безопасности, модуль защиты от угроз Центра безопасности Azure также может собирать более подробные оповещения системы безопасности из отдельных вычислительных ресурсов Azure (виртуальные машины, контейнеры, служба приложений), ресурсов данных (база данных SQL и хранилище) и уровней служб Azure. Эта возможность позволяет просматривать аномалии учетной записи внутри отдельных ресурсов.
 
-- [Отчеты о действиях аудита в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) 
+- [Отчеты о действиях аудита в Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs) 
 
-- [Включение Защиты идентификации Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) 
-- [Защита от угроз с помощью Центра безопасности Azure](https://docs.microsoft.com/azure/security-center/threat-protection)
+- [Включение Защиты идентификации Azure](/azure/active-directory/identity-protection/overview-identity-protection) 
+- [Защита от угроз с помощью Центра безопасности Azure](/azure/security-center/threat-protection)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -250,10 +250,10 @@ ms.locfileid: "96597958"
 
 Защитник для предложений по идентификации позволяет пересылать все журналы, связанные с безопасностью, в SIEM для централизованного управления.
 
-- [Как получить журналы и метрики платформы с помощью Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) 
-- [Подключение к Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-onboard) 
+- [Как получить журналы и метрики платформы с помощью Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings) 
+- [Подключение к Azure Sentinel](/azure/sentinel/quickstart-onboard) 
 
-- [Интеграция защитника для идентификации с syslog](https://docs.microsoft.com/defender-for-identity/setting-syslog)
+- [Интеграция защитника для идентификации с syslog](setting-syslog.md)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -267,9 +267,9 @@ ms.locfileid: "96597958"
 
 **Инструкции**: убедитесь, что в организации имеются процессы для реагирования на инциденты безопасности, эти процессы обновлены для Azure и они регулярно применяются для обеспечения готовности.
 
-- [Реализация безопасности в среде предприятия](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Реализация безопасности в среде предприятия](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Справочное руководство по реагированию на инциденты](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf)
+- [Справочное руководство по реагированию на инциденты](/microsoft-365/downloads/IR-Reference-Guide.pdf)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -279,7 +279,7 @@ ms.locfileid: "96597958"
 
 **Инструкции**: укажите контактные данные для информирования об инцидентах безопасности в Центре безопасности Azure. Эта контактная информация используется корпорацией Майкрософт для связи с вами, если центр Microsoft Security Response Center (MSRC) обнаруживает, что доступ к данным был осуществлен незаконно или неавторизованным лицом. Вы также можете настроить оповещения и уведомления об инцидентах в разных службах Azure в зависимости от потребностей реагирования на инциденты. 
 
-- [Как задать контакт безопасности Центра безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [Как задать контакт безопасности Центра безопасности Azure](/azure/security-center/security-center-provide-security-contact-details)
 
 **Мониторинг Центра безопасности Azure**: Да
 
@@ -295,9 +295,9 @@ ms.locfileid: "96597958"
 
 Экспортируйте оповещения и рекомендации Центра безопасности Azure с помощью функции экспорта с целью выявления рисков для ресурсов Azure. Экспортируйте оповещения и рекомендации как вручную, так и в постоянном, непрерывном режиме.
 
-- [Настройка экспорта](https://docs.microsoft.com/azure/security-center/continuous-export)
+- [Настройка экспорта](/azure/security-center/continuous-export)
 
-- [Как выполнить потоковую передачу оповещений в Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-azure-security-center)
+- [Как выполнить потоковую передачу оповещений в Azure Sentinel](/azure/sentinel/connect-azure-security-center)
 
 **Мониторинг Центра безопасности Azure**: в настоящее время недоступен.
 
@@ -321,13 +321,13 @@ ms.locfileid: "96597958"
 
 Azure Sentinel предоставляет широкие возможности аналитики данных на любом виртуальном источнике журнала и на портале управления обращениями, чтобы контролировать полный жизненный цикл инцидентов. Сведения об анализе во время исследования можно связать с инцидентом с целью отслеживания и ведения отчетности. 
 
-- [Моментальный снимок диска компьютера с Windows](https://docs.microsoft.com/azure/virtual-machines/windows/snapshot-copy-managed-disk)
+- [Моментальный снимок диска компьютера с Windows](/azure/virtual-machines/windows/snapshot-copy-managed-disk)
 
-- [Моментальный снимок диска компьютера с Linux](https://docs.microsoft.com/azure/virtual-machines/linux/snapshot-copy-managed-disk)
+- [Моментальный снимок диска компьютера с Linux](/azure/virtual-machines/linux/snapshot-copy-managed-disk)
 
 - [Служба поддержки Microsoft Azure: сбор диагностических сведений и дампов памяти](https://azure.microsoft.com/support/legal/support-diagnostic-information-collection/) 
 
-- [Исследование инцидентов с помощью Azure Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-investigate-cases)
+- [Исследование инцидентов с помощью Azure Sentinel](/azure/sentinel/tutorial-investigate-cases)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -341,9 +341,9 @@ Azure Sentinel предоставляет широкие возможности 
 
 Кроме того, пометьте ресурсы и создайте систему именования, чтобы определить и классифицировать ресурсы Azure, особенно обрабатывающие конфиденциальные данные.  Вы несете ответственность за назначение приоритета оповещениям, требующим действий по исправлению, в зависимости от важности ресурсов Azure и среды, в которой произошел инцидент.
 
-- [Оповещения безопасности в Центре безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-overview)
+- [Оповещения безопасности в Центре безопасности Azure](/azure/security-center/security-center-alerts-overview)
 
-- [использование тегов для упорядочения ресурсов в Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
+- [использование тегов для упорядочения ресурсов в Azure](/azure/azure-resource-manager/resource-group-using-tags)
 
 **Мониторинг Центра безопасности Azure**: в настоящее время недоступен.
 
@@ -353,11 +353,11 @@ Azure Sentinel предоставляет широкие возможности 
 
 **Инструкции**: автоматизируйте выполнение повторяющихся задач, чтобы сократить время отклика и снизить нагрузку на аналитиков. Ручные задачи выполняются дольше, замедляют каждый инцидент и сокращают количество инцидентов, которые может обработать аналитик. Задачи, выполняемые вручную, также увеличивают усталость аналитика, что повышает риск возникновения ошибки, вызванной человеческим фактором, и снижает способность аналитиков эффективно сосредоточиться на сложных задачах. Используйте функции автоматизации рабочих процессов в Центре безопасности Azure и Azure Sentinel, чтобы автоматически активировать действия или запустить сборник схем для реагирования на входящие оповещения системы безопасности. Сборник схем отправляет уведомления, отключает учетные записи и изолирует проблемные сети. 
 
-- [Настройка автоматизации рабочих процессов в Центре безопасности](https://docs.microsoft.com/azure/security-center/workflow-automation)
+- [Настройка автоматизации рабочих процессов в Центре безопасности](/azure/security-center/workflow-automation)
 
-- [Настройка автоматического реагирования на угрозы в Центре безопасности Azure](https://docs.microsoft.com/azure/security-center/tutorial-security-incident#triage-security-alerts)
+- [Настройка автоматического реагирования на угрозы в Центре безопасности Azure](/azure/security-center/tutorial-security-incident#triage-security-alerts)
 
-- [настройке автоматического реагирования на угрозы в Azure Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook)
+- [настройке автоматического реагирования на угрозы в Azure Sentinel](/azure/sentinel/tutorial-respond-threats-playbook)
 
 **Мониторинг Центра безопасности Azure**: в настоящее время недоступен.
 
@@ -372,7 +372,7 @@ Azure Sentinel предоставляет широкие возможности 
 **Инструкции**: при необходимости выполните тестирование на проникновение в ресурсы Azure или привлеките для участия "красные команды" и обеспечьте исправление всех обнаруженных проблем с безопасностью.
 Следуйте правилам тестирования Microsoft Cloud на проникновение, чтобы убедиться, что тесты на проникновение не нарушают политики Майкрософт. Используйте стратегию Майкрософт и рекомендации "красных команд", а затем выполните тест на проникновение в режиме реального времени для управляемых корпорацией Майкрософт облачной инфраструктуры, служб и приложений.
 
-- [Тестирование на проникновение в Azure](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
+- [Тестирование на проникновение в Azure](/azure/security/fundamentals/pen-testing)
 
 - [Правила взаимодействия при выполнении тестирования на проникновение](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1) 
 
@@ -409,15 +409,15 @@ Azure Sentinel предоставляет широкие возможности 
 -   Соответствующие криптографические стандарты
 
 Дополнительные сведения см. в следующих ресурсах.
-- [Рекомендации по архитектуре безопасности Azure — хранилище, данные и шифрование](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json)
+- [Рекомендации по архитектуре безопасности Azure — хранилище, данные и шифрование](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json)
 
-- [Основы безопасности Azure — безопасность, шифрование и хранение данных в Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
+- [Основы безопасности Azure — безопасность, шифрование и хранение данных в Azure](/azure/security/fundamentals/encryption-overview)
 
-- [Cloud Adoption Framework — рекомендации по защите и шифрованию данных в Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json)
+- [Cloud Adoption Framework — рекомендации по защите и шифрованию данных в Azure](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
-- [Azure Security Benchmark — управление ресурсами](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-asset-management)
+- [Azure Security Benchmark — управление ресурсами](/azure/security/benchmarks/security-benchmark-v2-asset-management)
 
-- [Azure Security Benchmark — защита данных](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-data-protection)
+- [Azure Security Benchmark — защита данных](/azure/security/benchmarks/security-benchmark-v2-data-protection)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -431,11 +431,11 @@ Azure Sentinel предоставляет широкие возможности 
 
 Убедитесь, что стратегия сегментации реализована единообразно в типах элементов управления, включая безопасность сети, удостоверение и модели доступа, а также модели разрешения и доступа приложений, а также управление персоналом.
 
-- [Руководство по стратегии сегментации в Azure (видео)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
+- [Руководство по стратегии сегментации в Azure (видео)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)
 
-- [Руководство по стратегии сегментации в Azure (документ)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy)
+- [Руководство по стратегии сегментации в Azure (документ)](/security/compass/governance#enterprise-segmentation-strategy)
 
-- [Согласование сегментации сети с помощью стратегии сегментации на уровне предприятия](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+- [Согласование сегментации сети с помощью стратегии сегментации на уровне предприятия](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -445,7 +445,7 @@ Azure Sentinel предоставляет широкие возможности 
 
 **Инструкции**: непрерывно измеряйте и снижайте риски для отдельных ресурсов и сред, в которых они размещены. Определение приоритетных активов и высокодоступных областей атак, таких как опубликованные приложения, входные и исходящие точки входа, конечные точки пользователей и администраторов и т. д.
 
-- [Azure Security Benchmark — управление состоянием защиты и уязвимостью](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
+- [Azure Security Benchmark — управление состоянием защиты и уязвимостью](/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -455,11 +455,11 @@ Azure Sentinel предоставляет широкие возможности 
 
 **Инструкции**: убедитесь, что вы задокументировали и распространили четкие стратегии для ролей и обязанностей в организации в отношении безопасности. Определение приоритетов для обеспечения четкой отчетности за принятие решений в области безопасности, обучение всех пользователей по общей модели ответственности и обучение технических команд по технологиям защиты облака.
 
-- [Рекомендации по обеспечению безопасности в Azure 1 — люди: обучение команд обеспечению безопасности облака](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
+- [Рекомендации по обеспечению безопасности в Azure 1 — люди: обучение команд обеспечению безопасности облака](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey)
 
-- [Рекомендации по обеспечению безопасности в Azure 2 — люди: обучение команд технологиям обеспечения безопасности облака](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
+- [Рекомендации по обеспечению безопасности в Azure 2 — люди: обучение команд технологиям обеспечения безопасности облака](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology)
 
-- [Рекомендации по обеспечению безопасности в Azure 3 — процесс: назначение ответственных за принятие решений по обеспечению безопасности облака](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Рекомендации по обеспечению безопасности в Azure 3 — процесс: назначение ответственных за принятие решений по обеспечению безопасности облака](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -484,13 +484,13 @@ Azure Sentinel предоставляет широкие возможности 
 -   Актуальные артефакты безопасности сети (например, схемы сети, эталонная архитектура сети)
 
 Дополнительные сведения см. в следующих ресурсах.
-- [Рекомендации по обеспечению безопасности в Azure 11 — архитектура: единая стратегия обеспечения безопасности](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Рекомендации по обеспечению безопасности в Azure 11 — архитектура: единая стратегия обеспечения безопасности](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Azure Security Benchmark — безопасность сети](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-network-security)
+- [Azure Security Benchmark — безопасность сети](/azure/security/benchmarks/security-benchmark-v2-network-security)
 
-- [Обзор сетевой безопасности Azure](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Обзор сетевой безопасности Azure](/azure/security/fundamentals/network-overview)
 
-- [Стратегия архитектуры корпоративной сети](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
+- [Стратегия архитектуры корпоративной сети](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -514,13 +514,13 @@ Azure Sentinel предоставляет широкие возможности 
 
 Дополнительные сведения см. в следующих ресурсах.
 
-- [Azure Security Benchmark — управление удостоверениями](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-identity-management)
+- [Azure Security Benchmark — управление удостоверениями](/azure/security/benchmarks/security-benchmark-v2-identity-management)
 
-- [Azure Security Benchmark — привилегированный доступ](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-privileged-access)
+- [Azure Security Benchmark — привилегированный доступ](/azure/security/benchmarks/security-benchmark-v2-privileged-access)
 
-- [Рекомендации по обеспечению безопасности в Azure 11 — архитектура: единая стратегия обеспечения безопасности](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
+- [Рекомендации по обеспечению безопасности в Azure 11 — архитектура: единая стратегия обеспечения безопасности](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy)
 
-- [Общие сведения о безопасности при управлении удостоверениями в Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Общие сведения о безопасности при управлении удостоверениями в Azure](/azure/security/fundamentals/identity-management-overview)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
@@ -548,15 +548,15 @@ Azure Sentinel предоставляет широкие возможности 
 
 Дополнительные сведения см. в следующих ресурсах.
 
-- [Azure Security Benchmark — ведение журнала и обнаружение угроз](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
+- [Azure Security Benchmark — ведение журнала и обнаружение угроз](/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
 
-- [Azure Security Benchmark — реагирование на инциденты](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-incident-response)
+- [Azure Security Benchmark — реагирование на инциденты](/azure/security/benchmarks/security-benchmark-v2-incident-response)
 
-- [Рекомендации по обеспечению безопасности в Azure 4 — процесс: обновление процессов реагирования на инциденты для облака](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
+- [Рекомендации по обеспечению безопасности в Azure 4 — процесс: обновление процессов реагирования на инциденты для облака](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud)
 
-- [Руководство по выбору Azure Adoption Framework, решения для ведения журналов и создания отчетов](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Руководство по выбору Azure Adoption Framework, решения для ведения журналов и создания отчетов](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Масштабирование Azure Enterprise, управление и мониторинг](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Масштабирование Azure Enterprise, управление и мониторинг](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
 
 **Мониторинг Центра безопасности Azure**: Неприменимо
 
