@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/22/2020
+ms.date: 01/12/2021
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 024ca22c366e98c0c09a0c13152c453ce33363c0
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: b49e2b10713f23c4256a7236bfa7162189c6e43b
+ms.sourcegitcommit: 373151a0e86e4933c5cb7c8f17c4d386356c98dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690046"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114975"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>Устранение известных неполадок ATA
 
@@ -62,9 +62,10 @@ ms.locfileid: "94690046"
 > |Происходит сбой установки .NET Framework 4.6.1 с ошибкой 0x800713ec|На сервере не установлены необходимые компоненты для платформы .NET Framework 4.6.1. |Перед установкой ATA убедитесь, что на сервере установлены обновления Windows [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) и [KB2919355](https://support.microsoft.com/kb/2919355).|
 > |System.Threading.Tasks.TaskCanceledException: отменена задача|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA.|1. Проверьте сетевое подключение к центру ATA, перейдя по его IP-адресу. <br></br>2. Проверьте конфигурацию прокси-сервера или брандмауэра.|
 > |System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: удаленный сервер возвратил ошибку: (407) Требуется проверка подлинности прокси.|Истекло время ожидания процесса развертывания, так как ему не удалось связаться с центром ATA из-за неправильной настройки прокси-сервера.|Отключите конфигурацию прокси-сервера перед развертыванием, а затем включите ее повторно. Вы также можете настроить исключение на прокси-сервере.|
-> |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Включите TLS 1,2 для .NET, установив для разделов реестра параметры по умолчанию для SSL и TLS, как описано ниже.<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-> |Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>Проблемы с сетью</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
+> |System.Net.Sockets.SocketException: существующее подключение было принудительно закрыто удаленным узлом||Включите TLS 1,2 для .NET, установив для разделов реестра параметры по умолчанию для SSL и TLS, как описано ниже.<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001`|
+> |Ошибка [ \\ [] DeploymentModel [ \\ ]] ошибка проверки подлинности управления [ \\ [] куррентлилогжедонусер = <domain> \\ <username> Status = фаиледаусентикатион Exception = [ \\ ]]|При развертывании шлюза ATA и упрощенного шлюза ATA не удалось выполнить аутентификацию в центре ATA.|Откройте браузер на компьютере, где произошел сбой развертывания, и попробуйте получить доступ к консоли ATA. </br>Если это нельзя сделать, запустите процесс устранения неполадок, чтобы узнать, почему браузер не может выполнить аутентификацию в центре ATA. </br>Проверьте следующее: </br>настройки прокси-сервера;</br>Проблемы с сетью</br>параметры групповой политики для аутентификации на этом компьютере, которые отличаются от параметров в центре ATA.|
 > | Ошибка [\\[]DeploymentModel[\\]]. Сбой проверки подлинности управления.|Сбой проверки сертификата центра.|Для проверки сертификата центра может потребоваться подключение к Интернету. Убедитесь, что конфигурация прокси-сервера в службе шлюза позволяет обеспечить подключение и проверку.|
+> | При развертывании центра и выборе сертификата отображается сообщение об ошибке "не поддерживается"|Это может произойти, если выбранный сертификат не соответствует требованиям, или закрытый ключ сертификата недоступен.|Убедитесь, что вы используете развертывание с повышенными привилегиями (**Запуск от имени администратора**) и выбранный сертификат соответствует [требованиям](ata-prerequisites.md#certificates).|
 
 ## <a name="ata-center-errors"></a>Ошибки центра ATA
 

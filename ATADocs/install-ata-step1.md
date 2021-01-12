@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/07/2019
+ms.date: 01/12/2021
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d5c61390abddf29b92afc0bb6cb2336b0bc9d7ea
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 0578f8698ffe768563d68325b5a5096af1cb2e49
+ms.sourcegitcommit: 373151a0e86e4933c5cb7c8f17c4d386356c98dd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690743"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114992"
 ---
 # <a name="install-ata---step-1"></a>Установка ATA. Шаг 1
 
@@ -49,7 +49,7 @@ ms.locfileid: "94690743"
 
 1. Войдите на компьютер, на котором вы устанавливаете центр ATA, как участник локальной группы администраторов.
 
-1. Запустите файл **Setup.exe центра Microsoft ATA** и следуйте указаниям мастера установки.
+1. Запустите **центр Microsoft ATA Setup.EXE** с повышенными привилегиями (**Запуск от имени администратора**) и следуйте указаниям мастера установки.
 
     > [!NOTE]
     > Запустите файл установки на локальном диске, а не из подключенного ISO-файла, чтобы избежать проблем в том случае, если при установке потребуется перезагрузка.
