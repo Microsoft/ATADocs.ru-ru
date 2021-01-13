@@ -3,12 +3,12 @@ title: Предварительные требования для работы �
 description: Описание требований для успешного развертывания Microsoft Defender для удостоверений в среде
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: f0807061c5ea57f063a1f5a4035b7059e1671a7d
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: cb925a0b2bc2767367b6d3adabd5cb7dabcffa00
+ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753394"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062558"
 ---
 # <a name="product-long-prerequisites"></a>Предварительные требования для работы с [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -166,18 +166,18 @@ ms.locfileid: "97753394"
 В следующей таблице перечислены порты, необходимые для работы датчика [!INCLUDE [Product short](includes/product-short.md)].
 
 |Протокол|Транспорт|Port|От|Кому|
-|------------|-------------|--------|-----------|
+|------------|-------------|--------|-----------|---|
 |**Интернет-порты**|||||
-|SSL (*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
+|SSL (\*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
 |SSL (localhost)|TCP|444|Датчик [!INCLUDE [Product short](includes/product-short.md)]|localhost|
 |**Внутренние порты**|||||
 |DNS|TCP и UDP|53|Датчик [!INCLUDE [Product short](includes/product-short.md)]|DNS-серверы|
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |RADIUS|UDP|1813|RADIUS|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
 |**Порты NNR**\*|||||
-|HTML через RPC|TCP|Порт 135|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
-|NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
-|RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
+|HTML через RPC|TCP|Порт 135|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
+|NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
+|RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 
 \* Один из этих портов является обязательным, но рекомендуем открыть их все.
 
@@ -258,9 +258,9 @@ ms.locfileid: "97753394"
 В следующей таблице перечислены порты, которые необходимо настроить на адаптере управления для работы автономного датчика [!INCLUDE [Product short](includes/product-short.md)].
 
 |Протокол|Транспорт|Port|От|Кому|
-|------------|-------------|--------|-----------|
+|------------|-------------|--------|-----------|---|
 |**Интернет-порты**||||
-|SSL (*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
+|SSL (\*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
 |SSL (localhost)|TCP|444|Датчик [!INCLUDE [Product short](includes/product-short.md)]|localhost|
 |**Внутренние порты**||||
 |LDAP|TCP и UDP|389|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Контроллеры домена|
@@ -274,9 +274,9 @@ ms.locfileid: "97753394"
 |Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
 |RADIUS|UDP|1813|RADIUS|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
 |**Порты NNR** \*|||||
-|HTML через RPC|TCP|135|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
-|NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
-|RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]s|Все устройства в сети|
+|HTML через RPC|TCP|135|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
+|NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
+|RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 
 \* Один из этих портов является обязательным, но рекомендуем открыть их все.
 
