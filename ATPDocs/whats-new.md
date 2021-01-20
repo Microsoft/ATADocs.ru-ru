@@ -1,16 +1,16 @@
 ---
 title: Новые возможности Microsoft Defender для удостоверений
 description: Эта статья регулярно обновляется сведениями о новых возможностях в последнем выпуске Microsoft Defender для удостоверений.
-ms.date: 01/06/2021
+ms.date: 01/17/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 4fec3e83fafb061eedb04018215b2e11c2fbb228
-ms.sourcegitcommit: 382d56413793419a8a82e531b0a0ec0a360bac14
+ms.openlocfilehash: 71a276e5849293b60d8dc59949bc1b903bef03f9
+ms.sourcegitcommit: 1cd2fd6d6f3aca149fae1b0399d6eb406f379447
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97937422"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98537516"
 ---
 # <a name="whats-new-in-product-long"></a>Новые возможности [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -23,6 +23,12 @@ RSS-канал: Получите уведомление об обновлени�
 > [!IMPORTANT]
 >
 > Изменяются названия продуктов Майкрософт для защиты от угроз. Дополнительные сведения об этом и других обновлениях см. [здесь](https://www.microsoft.com/security/blog/?p=91813). Начиная с выпуска 2.129 мы будем использовать новые названия.
+
+## <a name="product-short-release-2137"></a>[!INCLUDE [Product short](includes/product-short.md)], выпуск 2.137
+
+Дата выпуска: 17 января 2021 г.
+
+- Версия включает улучшения и исправления ошибок для внутренней инфраструктуры датчиков.
 
 ## <a name="product-short-release-2136"></a>[!INCLUDE [Product short](includes/product-short.md)], выпуск 2.136
 

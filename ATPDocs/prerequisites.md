@@ -1,14 +1,14 @@
 ---
 title: Предварительные требования для работы с Microsoft Defender для удостоверений
 description: Описание требований для успешного развертывания Microsoft Defender для удостоверений в среде
-ms.date: 12/23/2020
+ms.date: 01/12/2021
 ms.topic: overview
-ms.openlocfilehash: cb925a0b2bc2767367b6d3adabd5cb7dabcffa00
-ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
+ms.openlocfilehash: cfafd75acae0d075da1efdd0ad9c0f9542a2f3d4
+ms.sourcegitcommit: 858eca08605886fcbfa35e9132c9c653c173e462
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062558"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98203479"
 ---
 # <a name="product-long-prerequisites"></a>Предварительные требования для работы с [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -115,7 +115,7 @@ ms.locfileid: "98062558"
 
 ### <a name="general"></a>Общие сведения
 
-Датчик [!INCLUDE [Product short](includes/product-short.md)] поддерживает установку на контроллере домена и сервере служб федерации Active Directory (AD FS) под управлением Windows Server 2008 R2 с пакетом обновления 1 (SP1) (за исключением Server Core), Windows Server 2012, Windows Server 2012 R2, Windows Server 2016 (в том числе Server Core, но не Nano Server), Windows Server 2019\* (в том числе Server Core, но не Nano Server), как показано в следующей таблице.
+Датчик [!INCLUDE [Product short](includes/product-short.md)] поддерживает установку на контроллерах домена или серверах службы федерации Active Directory (AD FS), как показано в следующей таблице.
 
 | Версия операционной системы   | Сервер с возможностями рабочего стола | Основные серверные компоненты | Nano Server    | Поддерживаемые установки  |
 | -------------------------- | ------------------------------ | ----------- | -------------- | ------------------------ |
@@ -169,17 +169,19 @@ ms.locfileid: "98062558"
 |------------|-------------|--------|-----------|---|
 |**Интернет-порты**|||||
 |SSL (\*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
-|SSL (localhost)|TCP|444|Датчик [!INCLUDE [Product short](includes/product-short.md)]|localhost|
 |**Внутренние порты**|||||
 |DNS|TCP и UDP|53|Датчик [!INCLUDE [Product short](includes/product-short.md)]|DNS-серверы|
 |Netlogon (SMB, CIFS, SAM-R)|TCP/UDP|445|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |RADIUS|UDP|1813|RADIUS|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
-|**Порты NNR**\*|||||
+|**Порты localhost**\*|Требуется для средства обновления службы датчика||||
+|SSL (localhost)|TCP|444|Служба датчиков|Служба средства обновления датчика|
+|**Порты NNR**\*\*|||||
 |HTML через RPC|TCP|Порт 135|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 
-\* Один из этих портов является обязательным, но рекомендуем открыть их все.
+\* По умолчанию трафик между портами localhost разрешен, только если пользовательская политика брандмауэра не блокирует его.  
+\*\* Один из этих портов является обязательным, но рекомендуется открыть их все.
 
 ### <a name="windows-event-logs"></a>Журналы событий Windows
 
@@ -261,7 +263,6 @@ ms.locfileid: "98062558"
 |------------|-------------|--------|-----------|---|
 |**Интернет-порты**||||
 |SSL (\*.atp.azure.com)|TCP|443|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Облачная служба [!INCLUDE [Product short](includes/product-short.md)]|
-|SSL (localhost)|TCP|444|Датчик [!INCLUDE [Product short](includes/product-short.md)]|localhost|
 |**Внутренние порты**||||
 |LDAP|TCP и UDP|389|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Контроллеры домена|
 |Защищенный LDAP (LDAPS)|TCP|636|Датчик [!INCLUDE [Product short](includes/product-short.md)]|Контроллеры домена|
@@ -273,12 +274,15 @@ ms.locfileid: "98062558"
 |DNS|TCP и UDP|53|Датчик [!INCLUDE [Product short](includes/product-short.md)]|DNS-серверы|
 |Syslog (необязательно)|TCP/UDP|514, в зависимости от конфигурации|Сервер SIEM|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
 |RADIUS|UDP|1813|RADIUS|Датчик [!INCLUDE [Product short](includes/product-short.md)]|
-|**Порты NNR** \*|||||
+|**Порты localhost**\*|Требуется для средства обновления службы датчика||||
+|SSL (localhost)|TCP|444|Служба датчиков|Служба средства обновления датчика|
+|**Порты NNR**\*\*|||||
 |HTML через RPC|TCP|135|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 |RDP|TCP|3389 (только первый пакет приветствия клиента)|[!INCLUDE [Product short](includes/product-short.md)]|Все устройства в сети|
 
-\* Один из этих портов является обязательным, но рекомендуем открыть их все.
+\* По умолчанию трафик между портами localhost разрешен, только если пользовательская политика брандмауэра не блокирует его.  
+\*\* Один из этих портов является обязательным, но рекомендуется открыть их все.
 
 > [!NOTE]
 >
