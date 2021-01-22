@@ -3,12 +3,12 @@ title: Настройка сбора данных о событиях Windows в
 description: На этом этапе установки Microsoft Defender для удостоверений настраивается сбор данных о событиях Windows.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 2a8c4f64a5d4bbd42f4bfea9fe2675d792a013f9
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 4a81eceeb940e15139acb083e266eab1caf5456b
+ms.sourcegitcommit: 0b3877f2bf74735b7ba33408d237231a73242165
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544102"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615020"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
@@ -16,6 +16,10 @@ ms.locfileid: "96544102"
 
 Чтобы расширить возможности обнаружения угроз, необходимо [настроить](#configure-audit-policies) следующие события Windows и обеспечить их [сбор](#configure-event-collection) в [!INCLUDE [Product short](includes/product-short.md)]:
 
+- 1202 — служба федерации проверила новые учетные данные.
+- 1203 — службе федерации не удалось проверить новые учетные данные.
+- 4624 — учетная запись успешно использована для входа в систему.
+- 4625 — учетную запись не удалось использовать для входа в систему.
 - 4726 — удаление учетной записи пользователя
 - 4728 — добавление участника в глобальную группу безопасности
 - 4729 — удаление участника из глобальной группы безопасности
@@ -106,7 +110,7 @@ Advanced Security Audit Policy is enabled via **Default Domain Controllers Polic
 В датчике [!INCLUDE [Product short](includes/product-short.md)] сбор этих данных может происходить автоматически. Если датчик [!INCLUDE [Product short](includes/product-short.md)] не развернут, события могут перенаправляться автономному датчику [!INCLUDE [Product short](includes/product-short.md)] одним из следующих способов:
 
 - [настройка автономного датчика [!INCLUDE [Product short](includes/product-short.md)]](configure-event-forwarding.md) на прослушивание событий SIEM;
-- [Настройка пересылки событий Windows](configure-event-forwarding.md)
+- [настройка пересылки событий Windows.](configure-event-forwarding.md)
 
 > [!NOTE]
 >
