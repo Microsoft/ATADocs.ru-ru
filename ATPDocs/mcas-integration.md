@@ -1,14 +1,14 @@
 ---
 title: Защитник Майкрософт для идентификации в Microsoft Cloud App Security
 description: Обзор защитника Майкрософт для функций идентификации в Microsoft Cloud App Security.
-ms.date: 01/05/2020
+ms.date: 01/24/2021
 ms.topic: how-to
-ms.openlocfilehash: ef4cbe9f0c49311a3d10b79e03fc725ea5131105
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 6040ef27e1657dbe017a31168932536f1cb594cb
+ms.sourcegitcommit: 7002c960e1489b7ce2deadd8ce20f70a48a6766a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543864"
+ms.lasthandoff: 01/24/2021
+ms.locfileid: "98746941"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>Использование [!INCLUDE [Product long](includes/product-long.md)] с Microsoft Cloud App Security
 
@@ -57,13 +57,13 @@ ms.locfileid: "96543864"
 
 Получите доступ к [!INCLUDE [Product short](includes/product-short.md)] данным и новым гибридным функциям в Cloud App Security оповещениях, действиях и страницах пользователей.
 
-## <a name="alerts"></a>Предупреждения
+## <a name="alerts"></a>видны узлы
 
 [!INCLUDE [Product short](includes/product-short.md)] оповещения отображаются в очереди Cloud App Security **предупреждения** . Дополнительные параметры фильтрации оповещений доступны только при просмотре оповещений в Cloud App Security. [!INCLUDE [Product short](includes/product-short.md)] оповещения фильтруются с помощью фильтра приложений для **Active Directory**.
 
 ## <a name="alert-management"></a>Управление оповещениями
 
-При использовании [!INCLUDE [Product short](includes/product-short.md)] с Cloud App Security Закрытие оповещений в одной службе не будет автоматически закрыто в другой службе. Определите, где вы будете обрабатывать оповещения, чтобы не повторять одни и те же действия.
+При использовании [!INCLUDE [Product short](includes/product-short.md)] с Cloud App Security Закрытие оповещений в одной службе не будет автоматически закрыто в другой службе. В частности, закрытие оповещений в Cloud App Security не закроет их в защитнике для удостоверения, но при закрытии оповещений в защитнике для удостоверения будет выполнена синхронизация замыкания в Cloud App Security. Определите, где вы будете обрабатывать оповещения, чтобы не повторять одни и те же действия.
 
 ## <a name="siem-notification"></a>Уведомление SIEM
 
@@ -89,7 +89,7 @@ ms.locfileid: "96543864"
 
     ![Журнал действий](media/mcas-activity-filter.png)
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Следующие шаги
 
 Сведения о том, как фильтровать и создавать новые политики действий, см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] действия, использующие Microsoft Cloud App Security](activities-filtering-mcas.md) .
 
