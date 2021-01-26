@@ -3,12 +3,12 @@ title: Настройка сбора данных о событиях Windows в
 description: На этом этапе установки Microsoft Defender для удостоверений настраивается сбор данных о событиях Windows.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 4a81eceeb940e15139acb083e266eab1caf5456b
-ms.sourcegitcommit: 0b3877f2bf74735b7ba33408d237231a73242165
+ms.openlocfilehash: 71e0dd15b820c87df3bb50252160a6e92bacf310
+ms.sourcegitcommit: 30203dd6e74eec3ce4bba98056b664cad455a49e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615020"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758193"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
@@ -16,10 +16,15 @@ ms.locfileid: "98615020"
 
 Чтобы расширить возможности обнаружения угроз, необходимо [настроить](#configure-audit-policies) следующие события Windows и обеспечить их [сбор](#configure-event-collection) в [!INCLUDE [Product short](includes/product-short.md)]:
 
+**Для событий служб федерации Active Directory (AD FS)**
+
 - 1202 — служба федерации проверила новые учетные данные.
 - 1203 — службе федерации не удалось проверить новые учетные данные.
 - 4624 — учетная запись успешно использована для входа в систему.
 - 4625 — учетную запись не удалось использовать для входа в систему.
+
+**Для прочих событий**
+
 - 4726 — удаление учетной записи пользователя
 - 4728 — добавление участника в глобальную группу безопасности
 - 4729 — удаление участника из глобальной группы безопасности
