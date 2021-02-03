@@ -1,14 +1,14 @@
 ---
 title: Предварительные требования для работы с Microsoft Defender для удостоверений
 description: Описание требований для успешного развертывания Microsoft Defender для удостоверений в среде
-ms.date: 01/12/2021
+ms.date: 01/27/2021
 ms.topic: overview
-ms.openlocfilehash: cfafd75acae0d075da1efdd0ad9c0f9542a2f3d4
-ms.sourcegitcommit: 858eca08605886fcbfa35e9132c9c653c173e462
+ms.openlocfilehash: feb52ea096dd7e324e46649a746f41a293cc66e1
+ms.sourcegitcommit: b29aa522dcefce7d016fc0e03c75168a14deb423
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98203479"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912477"
 ---
 # <a name="product-long-prerequisites"></a>Предварительные требования для работы с [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -60,7 +60,7 @@ ms.locfileid: "98203479"
     > [!NOTE]
     >
     > - Для компьютеров с датчиками под управлением Windows Server 2012 и более поздних версий рекомендуется использовать учетную запись **gMSA** для повышения уровня безопасности и включения автоматического управления паролями.
-    > - Если у вас есть датчики под управлением Windows Server 2008 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA**, но и по крайней мере одну **стандартную** учетную запись пользователя AD.
+    > - Если у вас есть датчики под управлением Windows Server 2008 R2 и Windows Server 2012 или более поздней версии, рекомендуется использовать не только учетную запись **gMSA**, но и по крайней мере одну **стандартную** учетную запись пользователя AD.
     > - Если для различных подразделений в домене были установлены настраиваемые списки управления доступом, убедитесь, что у выбранного пользователя есть разрешение на чтение данных подразделений.
 
 - При выполнении Wireshark в автономном датчике [!INCLUDE [Product short](includes/product-short.md)] необходимо перезапустить службу датчика [!INCLUDE [Product short](includes/product-short.md)] после остановки записи Wireshark. Если не перезапустить службу датчика, датчик перестанет записывать трафик.
