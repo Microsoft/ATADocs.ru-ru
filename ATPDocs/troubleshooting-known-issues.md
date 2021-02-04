@@ -1,14 +1,14 @@
 ---
 title: Устранение известных проблем в защитнике Майкрософт
 description: В этой статье описывается, как устранять неполадки в защитнике Майкрософт для идентификации.
-ms.date: 01/12/2021
+ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 6f0a055a48dc906dd7a44814b19ed85fb64401ee
-ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
+ms.openlocfilehash: 933d4442d88f2d03ddcd2fa4c90d59d98e229340
+ms.sourcegitcommit: 50e6f5511329e56545fa5ab4c9f5ab69046d1e10
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98114247"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551601"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
 
@@ -202,6 +202,24 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 **Решение:**
 
 Известного решения не существует.
+
+## <a name="sensor-fails-to-enumerate-event-logs"></a>Датчик не может перечислить журналы событий
+
+Если вы видите ограниченное число или не хватает, оповещений о событиях безопасности или логических действий в [!INCLUDE [Product short](includes/product-short.md)] консоли, но оповещение о работоспособности не запускается. 
+
+**Записи журнала датчика:**
+
+Ошибка Евентложексцептион System. Diagnostics. Eventing. Reader. Евентложексцептион. недопустимый маркер в void System. Diagnostics. Eventing. читатель. Евентложексцептион. Throw (int errorCode) в объекте System. Diagnostics. Eventing. Reader. Нативевраппер. Евтжетевентинфо (EventLogHandle Handle, EvtEventPropertyId enumType) в строке System.Diagnostics.Eventing.Reader.EventLogRecord.get_ContainerLog ()
+
+**Причина**.
+
+Список управления доступом на уровне пользователей ограничивает доступ к необходимым журналам событий учетной записью локальной службы.
+
+**Решение:**
+
+Убедитесь, что список управления доступом на уровне пользователей включает следующую запись:
+
+`(A;;0x1;;;S-1-5-80-818380073-2995186456-1411405591-3990468014-3617507088)`
 
 ## <a name="see-also"></a>См. также
 
