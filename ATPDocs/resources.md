@@ -3,12 +3,12 @@ title: Список полезных ресурсов для защитника 
 description: В этой статье содержится список полезных ресурсов для защитника Майкрософт по удостоверениям.
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: e534baf48d472b9bada6366e9b0e2ccec5ef6c4c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 1878f8b9cbc8047083c927de612e88e50b1947ca
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542232"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515518"
 ---
 # <a name="product-long-readiness-guide"></a>[!INCLUDE [Product long](includes/product-long.md)] рекомендации по готовности
 
@@ -55,9 +55,9 @@ ms.locfileid: "96542232"
 - [[!INCLUDE [Product short](includes/product-short.md)] пути перемещения бокового смещения](use-case-lateral-movement-path.md)
 - [Работа с конфиденциальными учетными записями](sensitive-accounts.md). Отслеживайте риски раскрытия учетных данных в привилегированных группах безопасности.
 
-## <a name="security-best-practices"></a>Лучшие методики обеспечения безопасности
+## <a name="security-best-practices"></a>Рекомендации по безопасности
 
-- [ [!INCLUDE [Product short](includes/product-short.md)] Часто задаваемые вопросы](technical-faq.md) . в этой статье содержится список часто задаваемых вопросов о [!INCLUDE [Product short](includes/product-short.md)] и предоставлены подробные сведения и ответы на них.
+- [ [!INCLUDE [Product short](includes/product-short.md)] Часто задаваемые вопросы](technical-faq.yml) . в этой статье содержится список часто задаваемых вопросов о [!INCLUDE [Product short](includes/product-short.md)] и предоставлены подробные сведения и ответы на них.
 
 ## <a name="community-resources"></a>Ресурсы сообщества
 

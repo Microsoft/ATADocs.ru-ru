@@ -3,12 +3,12 @@ title: Advanced Threat Analytics в защитнике Майкрософт дл
 description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: be1edf7981bbf72daeb285a9d0d0896892839f59
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 5e20ed1580ad314f85845161fbb850395709d580
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542691"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515348"
 ---
 # <a name="advanced-threat-analytics-ata-to-product-long"></a>Advanced Threat Analytics (ATA) для [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -17,7 +17,7 @@ ms.locfileid: "96542691"
 
 Воспользуйтесь этим руководством, чтобы перейти с существующей установки ATA на службу ( [!INCLUDE [Product long](includes/product-long.md)] ). В этом руководство описаны [!INCLUDE [Product short](includes/product-short.md)] необходимые условия и требования, а также сведения о планировании и завершении перемещения. Также включены этапы проверки и советы по использованию новейших решений для защиты от угроз и безопасности [!INCLUDE [Product short](includes/product-short.md)] после установки.
 
-Дополнительные сведения о различиях между ATA и [!INCLUDE [Product short](includes/product-short.md)] см. в [ [!INCLUDE [Product short](includes/product-short.md)] часто задаваемых вопросах](technical-faq.md#what-is-azure-atp).
+Дополнительные сведения о различиях между ATA и [!INCLUDE [Product short](includes/product-short.md)] см. в [ [!INCLUDE [Product short](includes/product-short.md)] часто задаваемых вопросах](technical-faq.yml).
 
 В руководстве описаны следующие действия:
 
@@ -33,7 +33,7 @@ ms.locfileid: "96542691"
 > [!NOTE]
 > Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый экземпляр [!INCLUDE [Product short](includes/product-short.md)] поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
