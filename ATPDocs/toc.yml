@@ -1,199 +1,200 @@
-- name: "Документация по Microsoft\_Defender для удостоверений"
-  href: index.yml
-- name: Обзор
-  items:
-    - name: "Что такое Microsoft\_Defender для удостоверений?"
-      href: what-is.md
-    - name: Архитектура Defender для удостоверений
-      href: architecture.md
-    - name: Предварительные требования для Defender для удостоверений
-      href: prerequisites.md
-    - name: "Defender для удостоверений в государственных организациях\_США"
-      href: us-govt-gcc-high.md
-    - name: Новые возможности Defender для удостоверений
-      href: whats-new.md
-- name: Краткие руководства
-  expanded: true
-  items:
-    - name: Создание экземпляра Defender для удостоверений
-      href: install-step1.md
-    - name: Подключение к Active Directory
-      href: install-step2.md
-    - name: Скачивание пакета датчика Defender для удостоверений
-      href: install-step3.md
-    - name: Установка датчика Defender для удостоверений
-      href: install-step4.md
-- name: Руководства
-  items:
-    - name: Предупреждения о разведывательных атаках
-      href: reconnaissance-alerts.md
-    - name: Предупреждения о компрометации учетных данных
-      href: compromised-credentials-alerts.md
-    - name: Предупреждения об атаках бокового смещения
-      href: lateral-movement-alerts.md
-    - name: Предупреждения о захвате управления доменом
-      href: domain-dominance-alerts.md
-    - name: Предупреждения о краже данных
-      href: exfiltration-alerts.md
-    - name: Анализ пользователя
-      href: investigate-a-user.md
-    - name: Анализ компьютера
-      href: investigate-a-computer.md
-    - name: Анализ путей бокового смещения
-      href: investigate-lateral-movement-path.md
-    - name: Анализ сущностей
-      href: investigate-entity.md
-- name: Основные понятия
-  items:
-    - name: Портал Defender для удостоверений
-      href: workspace-portal.md
-    - name: Оповещения безопасности Defender для удостоверений
-      href: suspicious-activity-guide.md
-    - name: Отслеживаемые действия
-      href: monitored-activities.md
-    - name: Общие сведения о профилях сущностей
-      href: entity-profiles.md
-    - name: Пути бокового смещения
-      href: use-case-lateral-movement-path.md
-    - name: Разрешение сетевых имен (NNR)
-      href: nnr-policy.md
-    - name: Отчеты
-      href: reports.md
-    - name: Пользовательские роли
-      href: role-groups.md
-    - name: Поддержка множества лесов в Defender для удостоверений
-      href: multi-forest.md
-    - name: Безопасность
-      items:
-        - name: Базовые средства безопасности
-          href: security-baseline.md
-- name: Практические руководства
-  items:
-    - name: "Defender для удостоверений и Microsoft\_Cloud App\_Security"
-      items:
-        - name: "Использование Defender для удостоверений с Cloud\_App\_Security"
-          href: mcas-integration.md
-        - name: Фильтрация действий и задание политик
-          href: activities-filtering-mcas.md
-        - name: Оценки состояния безопасности удостоверений
-          items:
-            - name: Основные сведения о состоянии безопасности удостоверений
-              href: isp-overview.md
-            - name: Оценка доступности службы очереди печати принтера на контроллерах домена
-              href: cas-isp-print-spooler.md
-            - name: Оценка наличия неактивных сущностей в конфиденциальных группах
-              href: cas-isp-dormant-entities.md
-            - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
-              href: cas-isp-clear-text.md
-            - name: Оценка использования LAPS
-              href: cas-isp-laps.md
-            - name: Оценка использования устаревших протоколов
-              href: cas-isp-legacy-protocols.md
-            - name: Пути бокового движения с максимальным риском
-              href: cas-isp-riskiest-lmp.md
-            - name: Неотслеживаемые контроллеры домена
-              href: cas-isp-unmonitored-domain-controller.md
-            - name: Небезопасные атрибуты учетной записи
-              href: cas-isp-unsecure-account-attributes.md
-            - name: Оценка риска небезопасного делегирования Kerberos
-              href: cas-isp-unconstrained-kerberos.md
-            - name: Небезопасные атрибуты журнала ИД безопасности
-              href: cas-isp-unsecure-sid-history-attribute.md
-            - name: Оценка использования ненадежного шифра
-              href: cas-isp-weak-cipher.md
-    - name: Занятие по оповещениям системы безопасности
-      items:
-        - name: Обзор лаборатории
-          href: playbook-lab-overview.md
-        - name: 1. Настройка лаборатории
-          href: playbook-setup-lab.md
-        - name: 2. Сборник схем рекогносцировки
-          href: playbook-reconnaissance.md
-        - name: 3. Сборник схем бокового смещения
-          href: playbook-lateral-movement.md
-        - name: 4. Сборник схем захвата управления доменом
-          href: playbook-domain-dominance.md
-    - name: Основные сведения об оповещениях безопасности
-      href: understanding-security-alerts.md
-    - name: Планирование емкости Defender для удостоверений
-      href: capacity-planning.md
-    - name: Работа с оповещениями безопасности
-      href: working-with-suspicious-activities.md
-    - name: Исключение сущностей из обнаружения
-      href: excluding-entities-from-detections.md
-    - name: Работа с конфиденциальными учетными записями
-      href: sensitive-accounts.md
-    - name: Поиск и фильтрация отслеживаемых действий
-      href: activities-search.md
-    - name: "Исключения и учетные записи\_Honeytoken"
-      href: install-step7.md
-    - name: Мониторинг контроллеров домена
-      href: sensor-monitoring.md
-    - name: Изменение пароля для подключения к домену
-      href: modifying-config-dcpassword.md
-    - name: Настройка уведомлений Defender для удостоверений
-      href: notifications.md
-    - name: Оповещения о работоспособности
-      items:
-        - name: Центр работоспособности Defender для удостоверений
-          href: health-center.md
-        - name: Оповещения о работоспособности Defender для удостоверений
-          href: health-alerts.md
-    - name: Отложенное обновление датчика Defender для удостоверений
-      href: sensor-update.md
-    - name: Устранение известных неполадок
-      href: troubleshooting-known-issues.md
-    - name: Устранение неполадок с помощью журналов
-      href: troubleshooting-using-logs.md
-    - name: "Интеграция с Microsoft\_Defender для конечной точки"
-      href: integrate-mde.md
-    - name: "Интеграция\_VPN"
-      href: install-step6-vpn.md
-    - name: "Интеграция с\_Syslog"
-      href: setting-syslog.md
-    - name: Автоматическая установка
-      href: silent-installation.md
-    - name: Настройка датчика Defender для удостоверений
-      items:
-        - name: Настройка датчика Defender для удостоверений
-          href: install-step5.md
-        - name: "Настройка сбора данных о событиях\_Windows"
-          href: configure-windows-event-collection.md
-        - name: настройки прокси-сервера;
-          href: configure-proxy.md
-        - name: "Настройка Defender для удостоверений на удаленные вызовы\_SAM"
-          href: install-step8-samr.md
-    - name: Настройка автономного датчика Defender для удостоверений
-      items:
-        - name: Настройка зеркального отображения портов
-          href: configure-port-mirroring.md
-        - name: Проверка зеркального отображения портов
-          href: validate-port-mirroring.md
-        - name: Настройка сбора данных о событиях
-          href: configure-event-collection.md
-        - name: Настройка пересылки событий Windows
-          href: configure-event-forwarding.md
-    - name: Удаление датчика
-      href: uninstall-sensor.md
-    - name: "Переход на Defender для удостоверений с\_ATA"
-      items:
-        - name: "Переход с Advanced\_Threat Analytics\_(ATA) на Defender для удостоверений"
-          href: migrate-from-ata-overview.md
-- name: Справочные сведения
-  items:
-    - name: "Справочник по журналу\_SIEM"
-      href: cef-format-sa.md
-    - name: Известные проблемы с Defender для удостоверений
-      href: ./troubleshooting-known-issues.md
-    - name: Справочник по выпускам Defender для удостоверений
-      href: release-reference.md
-- name: Ресурсы
-  items:
-    - name: Поддержка и информация
-      href: support.md
-    - name: Часто задаваемые вопросы
-      href: technical-faq.md
-    - name: Схема подготовки Defender для удостоверений
-      href: resources.md
-    - name: Безопасность и конфиденциальность данных Defender для удостоверений
-      href: privacy-compliance.md
+items:
+  - name: "Документация по Microsoft\_Defender для удостоверений"
+    href: index.yml
+  - name: Обзор
+    items:
+      - name: "Что такое Microsoft\_Defender для удостоверений?"
+        href: what-is.md
+      - name: Архитектура Defender для удостоверений
+        href: architecture.md
+      - name: Предварительные требования для Defender для удостоверений
+        href: prerequisites.md
+      - name: "Defender для удостоверений в государственных организациях\_США"
+        href: us-govt-gcc-high.md
+      - name: Новые возможности Defender для удостоверений
+        href: whats-new.md
+  - name: Краткие руководства
+    expanded: true
+    items:
+      - name: Создание экземпляра Defender для удостоверений
+        href: install-step1.md
+      - name: Подключение к Active Directory
+        href: install-step2.md
+      - name: Скачивание пакета датчика Defender для удостоверений
+        href: install-step3.md
+      - name: Установка датчика Defender для удостоверений
+        href: install-step4.md
+  - name: Руководства
+    items:
+      - name: Предупреждения о разведывательных атаках
+        href: reconnaissance-alerts.md
+      - name: Предупреждения о компрометации учетных данных
+        href: compromised-credentials-alerts.md
+      - name: Предупреждения об атаках бокового смещения
+        href: lateral-movement-alerts.md
+      - name: Предупреждения о захвате управления доменом
+        href: domain-dominance-alerts.md
+      - name: Предупреждения о краже данных
+        href: exfiltration-alerts.md
+      - name: Анализ пользователя
+        href: investigate-a-user.md
+      - name: Анализ компьютера
+        href: investigate-a-computer.md
+      - name: Анализ путей бокового смещения
+        href: investigate-lateral-movement-path.md
+      - name: Анализ сущностей
+        href: investigate-entity.md
+  - name: Основные понятия
+    items:
+      - name: Портал Defender для удостоверений
+        href: workspace-portal.md
+      - name: Оповещения безопасности Defender для удостоверений
+        href: suspicious-activity-guide.md
+      - name: Отслеживаемые действия
+        href: monitored-activities.md
+      - name: Общие сведения о профилях сущностей
+        href: entity-profiles.md
+      - name: Пути бокового смещения
+        href: use-case-lateral-movement-path.md
+      - name: Разрешение сетевых имен (NNR)
+        href: nnr-policy.md
+      - name: Отчеты
+        href: reports.md
+      - name: Пользовательские роли
+        href: role-groups.md
+      - name: Поддержка множества лесов в Defender для удостоверений
+        href: multi-forest.md
+      - name: Безопасность
+        items:
+          - name: Базовые средства безопасности
+            href: security-baseline.md
+  - name: Практические руководства
+    items:
+      - name: "Defender для удостоверений и Microsoft\_Cloud App\_Security"
+        items:
+          - name: "Использование Defender для удостоверений с Cloud\_App\_Security"
+            href: mcas-integration.md
+          - name: Фильтрация действий и задание политик
+            href: activities-filtering-mcas.md
+          - name: Оценки состояния безопасности удостоверений
+            items:
+              - name: Основные сведения о состоянии безопасности удостоверений
+                href: isp-overview.md
+              - name: Оценка доступности службы очереди печати принтера на контроллерах домена
+                href: cas-isp-print-spooler.md
+              - name: Оценка наличия неактивных сущностей в конфиденциальных группах
+                href: cas-isp-dormant-entities.md
+              - name: Оценка раскрытия сущностями учетных данных в виде открытого текста
+                href: cas-isp-clear-text.md
+              - name: Оценка использования LAPS
+                href: cas-isp-laps.md
+              - name: Оценка использования устаревших протоколов
+                href: cas-isp-legacy-protocols.md
+              - name: Пути бокового движения с максимальным риском
+                href: cas-isp-riskiest-lmp.md
+              - name: Неотслеживаемые контроллеры домена
+                href: cas-isp-unmonitored-domain-controller.md
+              - name: Небезопасные атрибуты учетной записи
+                href: cas-isp-unsecure-account-attributes.md
+              - name: Оценка риска небезопасного делегирования Kerberos
+                href: cas-isp-unconstrained-kerberos.md
+              - name: Небезопасные атрибуты журнала ИД безопасности
+                href: cas-isp-unsecure-sid-history-attribute.md
+              - name: Оценка использования ненадежного шифра
+                href: cas-isp-weak-cipher.md
+      - name: Занятие по оповещениям системы безопасности
+        items:
+          - name: Обзор лаборатории
+            href: playbook-lab-overview.md
+          - name: 1. Настройка лаборатории
+            href: playbook-setup-lab.md
+          - name: 2. Сборник схем рекогносцировки
+            href: playbook-reconnaissance.md
+          - name: 3. Сборник схем бокового смещения
+            href: playbook-lateral-movement.md
+          - name: 4. Сборник схем захвата управления доменом
+            href: playbook-domain-dominance.md
+      - name: Основные сведения об оповещениях безопасности
+        href: understanding-security-alerts.md
+      - name: Планирование емкости Defender для удостоверений
+        href: capacity-planning.md
+      - name: Работа с оповещениями безопасности
+        href: working-with-suspicious-activities.md
+      - name: Исключение сущностей из обнаружения
+        href: excluding-entities-from-detections.md
+      - name: Работа с конфиденциальными учетными записями
+        href: sensitive-accounts.md
+      - name: Поиск и фильтрация отслеживаемых действий
+        href: activities-search.md
+      - name: "Исключения и учетные записи\_Honeytoken"
+        href: install-step7.md
+      - name: Мониторинг контроллеров домена
+        href: sensor-monitoring.md
+      - name: Изменение пароля для подключения к домену
+        href: modifying-config-dcpassword.md
+      - name: Настройка уведомлений Defender для удостоверений
+        href: notifications.md
+      - name: Оповещения о работоспособности
+        items:
+          - name: Центр работоспособности Defender для удостоверений
+            href: health-center.md
+          - name: Оповещения о работоспособности Defender для удостоверений
+            href: health-alerts.md
+      - name: Отложенное обновление датчика Defender для удостоверений
+        href: sensor-update.md
+      - name: Устранение известных неполадок
+        href: troubleshooting-known-issues.md
+      - name: Устранение неполадок с помощью журналов
+        href: troubleshooting-using-logs.md
+      - name: "Интеграция с Microsoft\_Defender для конечной точки"
+        href: integrate-mde.md
+      - name: "Интеграция\_VPN"
+        href: install-step6-vpn.md
+      - name: "Интеграция с\_Syslog"
+        href: setting-syslog.md
+      - name: Автоматическая установка
+        href: silent-installation.md
+      - name: Настройка датчика Defender для удостоверений
+        items:
+          - name: Настройка датчика Defender для удостоверений
+            href: install-step5.md
+          - name: "Настройка сбора данных о событиях\_Windows"
+            href: configure-windows-event-collection.md
+          - name: настройки прокси-сервера;
+            href: configure-proxy.md
+          - name: "Настройка Defender для удостоверений на удаленные вызовы\_SAM"
+            href: install-step8-samr.md
+      - name: Настройка автономного датчика Defender для удостоверений
+        items:
+          - name: Настройка зеркального отображения портов
+            href: configure-port-mirroring.md
+          - name: Проверка зеркального отображения портов
+            href: validate-port-mirroring.md
+          - name: Настройка сбора данных о событиях
+            href: configure-event-collection.md
+          - name: Настройка пересылки событий Windows
+            href: configure-event-forwarding.md
+      - name: Удаление датчика
+        href: uninstall-sensor.md
+      - name: "Переход на Defender для удостоверений с\_ATA"
+        items:
+          - name: "Переход с Advanced\_Threat Analytics\_(ATA) на Defender для удостоверений"
+            href: migrate-from-ata-overview.md
+  - name: Справочные сведения
+    items:
+      - name: "Справочник по журналу\_SIEM"
+        href: cef-format-sa.md
+      - name: Известные проблемы с Defender для удостоверений
+        href: troubleshooting-known-issues.md
+      - name: Справочник по выпускам Defender для удостоверений
+        href: release-reference.md
+  - name: Ресурсы
+    items:
+      - name: Поддержка и информация
+        href: support.md
+      - name: Часто задаваемые вопросы
+        href: technical-faq.yml
+      - name: Схема подготовки Defender для удостоверений
+        href: resources.md
+      - name: Безопасность и конфиденциальность данных Defender для удостоверений
+        href: privacy-compliance.md
