@@ -3,14 +3,14 @@ title: Защитник Майкрософт для интеграции удо�
 description: Как интегрировать защитник Майкрософт для идентификации с защитником Майкрософт для конечной точки для полного покрытия угроз
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 73cf4809e20d92534786d1df1ad580fffd5706b8
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 356f97509fe3af81a4d1c896e7b64b2779e6028a
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542963"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533874"
 ---
-# <a name="integrate-product-long-with-microsoft-defender-for-endpoint"></a>Интеграция [!INCLUDE [Product long](includes/product-long.md)] с защитником Майкрософт для конечной точки
+# <a name="integrate-microsoft-defender-for-identity-with-microsoft-defender-for-endpoint"></a>Интеграция защитника Майкрософт для идентификации с помощью защитника Майкрософт для конечной точки
 
 [!INCLUDE [Product long](includes/product-long.md)] позволяет интегрироваться [!INCLUDE [Product long](includes/product-long.md)] с защитником для конечной точки, чтобы получить еще более полное решение для защиты от угроз. [!INCLUDE [Product short](includes/product-short.md)]Отслеживая трафик на контроллерах домена, защитник для конечной точки отслеживает конечные точки, а также предоставляет единый интерфейс, из которого можно защитить среду.
 
@@ -47,7 +47,7 @@ ms.locfileid: "96542963"
 
 <a name="how-to-integrate-azure-atp-with-microsoft-defender-atp"></a>
 
-## <a name="how-to-integrate-product-short-with-defender-for-endpoint"></a>Интеграция [!INCLUDE [Product short](includes/product-short.md)] с защитником для конечной точки
+## <a name="how-to-integrate-defender-for-identity-with-defender-for-endpoint"></a>Как интегрировать защитник для идентификации с защитником для конечной точки
 
 1. На портале [!INCLUDE [Product short](includes/product-short.md)] выберите пункт **Конфигурация**.
 

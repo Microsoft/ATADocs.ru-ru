@@ -3,14 +3,14 @@ title: Настройка SAM-R для включения определения
 description: В этой статье объясняется, как настроить защитник Майкрософт для удостоверений, чтобы выполнять удаленные вызовы к SAM.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 24c1d6baf99e3d65a96897d2d0b90ffe94ad42eb
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: f1870161b60b975eef818d0a6d6cae63a4fb12c3
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543949"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534282"
 ---
-# <a name="configure-product-long-to-make-remote-calls-to-sam"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] для выполнения удаленных вызовов SAM
+# <a name="configure-microsoft-defender-for-identity-to-make-remote-calls-to-sam"></a>Настройка защитника Майкрософт для идентификации удаленных вызовов SAM
 
 [!INCLUDE [Product long](includes/product-long.md)]Обнаружение [пути перемещения бокового смещения](use-case-lateral-movement-path.md) зависит от запросов, которые указывают локальных администраторов на конкретных компьютерах. Эти запросы выполняются с помощью протокола SAM-R с использованием [!INCLUDE [Product short](includes/product-short.md)] учетной записи службы, созданной во время [!INCLUDE [Product short](includes/product-short.md)] установки на  [шаге 2. Подключитесь к AD](install-step2.md).
 

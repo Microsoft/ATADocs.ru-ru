@@ -3,14 +3,14 @@ title: Защитник Майкрософт для групп ролей удо
 description: Руководство по работе с защитником Майкрософт для групп ролей удостоверений.
 ms.date: 02/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: cbfb13ace446ba980af649f07951eed3aabbe4fd
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 9ff271c8f417d3f2c15e3e6809b62986a7825db4
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544391"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533364"
 ---
-# <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] группы ролей
+# <a name="microsoft-defender-for-identity-role-groups"></a>Защитник Майкрософт для групп ролей удостоверений
 
 [!INCLUDE [Product long](includes/product-long.md)] обеспечивает безопасность на основе ролей для защиты данных в соответствии с потребностями Организации в обеспечении безопасности и соответствия требованиям. [!INCLUDE [Product short](includes/product-short.md)] Поддержка трех отдельных ролей: Администраторы, пользователи и средства просмотра.
 
@@ -21,14 +21,14 @@ ms.locfileid: "96544391"
 > [!NOTE]
 > Любой глобальный администратор или администратор безопасности на Azure Active Directory клиента автоматически является [!INCLUDE [Product short](includes/product-short.md)] администратором.
 
-## <a name="accessing-the-product-short-portal"></a>Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу
+## <a name="accessing-the-defender-for-identity-portal"></a>Доступ к защитнику для портала удостоверений
 
 Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу (Portal.ATP.Azure.com) может осуществлять только пользователь Azure AD, имеющий роль каталога глобального администратора или администратора безопасности. После ввода на портале требуемой роли можно создать [!INCLUDE [Product short](includes/product-short.md)] экземпляр. [!INCLUDE [Product short](includes/product-short.md)] служба создает три группы безопасности в клиенте Azure Active Directory: Администраторы, пользователи и зрители.
 
 > [!NOTE]
 > Доступ к [!INCLUDE [Product short](includes/product-short.md)] порталу предоставляется только пользователям в пределах [!INCLUDE [Product short](includes/product-short.md)] группы безопасности в пределах Azure Active Directory, а также глобальным администраторам и администраторов безопасности пользователи клиента.
 
-## <a name="types-of-product-short-security-groups"></a>Типы [!INCLUDE [Product short](includes/product-short.md)] групп безопасности
+## <a name="types-of-defender-for-identity-security-groups"></a>Типы защитника для групп безопасности удостоверений
 
 [!INCLUDE [Product short](includes/product-short.md)] предоставляет три типа групп безопасности: "Администраторы Azure ATP *(имя экземпляра)* ", "Пользователи Azure ATP *(имя экземпляра)"* и "средства просмотра Azure ATP *(имя экземпляра)* ". В следующей таблице описывается тип доступа на [!INCLUDE [Product short](includes/product-short.md)] портале, доступный для каждой роли. В зависимости от назначенной роли различные экраны и параметры меню на [!INCLUDE [Product short](includes/product-short.md)] портале недоступны для этих пользователей следующим образом.
 
@@ -38,7 +38,7 @@ ms.locfileid: "96544391"
 |Изменение состояния оповещений системы безопасности (открыть повторно, закрыть, исключить, игнорировать)|Доступно|Доступно|Недоступно|
 |Удалить экземпляр|Доступно|Недоступно|Недоступно|
 |Загрузка отчета|Доступно|Доступно|Доступно|
-|Вход|Доступно|Доступно|Доступно|
+|Имя для входа|Доступно|Доступно|Доступно|
 |Передача или экспорт оповещений системы безопасности (по электронной почте, посредством ссылки или путем предоставления сведений для скачивания)|Доступно|Доступно|Доступно|
 |Обновление [!INCLUDE [Product short](includes/product-short.md)] конфигурации — обновления|Доступно|Недоступно|Недоступно|
 |[!INCLUDE [Product short](includes/product-short.md)]Конфигурация обновления — Теги сущностей (конфиденциальные и honeytoken)|Доступно|Доступно|Недоступно|

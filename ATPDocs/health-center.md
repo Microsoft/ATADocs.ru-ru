@@ -3,26 +3,26 @@ title: Мониторинг работоспособности и событий
 description: Используйте центр работоспособности для проверки работы защитника Майкрософт для службы идентификации и оповещения о потенциальных проблемах и просмотра системных событий в средстве просмотра событий.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: e2a4c757682194013d34bddd6581402b5fe60920
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: ac03020c559a860fded89a496bc927da06fce3d9
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544017"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534299"
 ---
-# <a name="work-with-product-long-health-and-events"></a>Работа с [!INCLUDE [Product long](includes/product-long.md)] работоспособностью и событиями
+# <a name="work-with-microsoft-defender-for-identity-health-and-events"></a>Работа с защитником Майкрософт для определения работоспособности и событий удостоверений
 
-## <a name="product-long-health-center"></a>[!INCLUDE [Product long](includes/product-long.md)] центр работоспособности
+## <a name="microsoft-defender-for-identity-health-center"></a>Защитник Майкрософт для центра работоспособности удостоверений
 
 [!INCLUDE [Product long](includes/product-long.md)]Центр работоспособности позволяет вам понять, как выполняется [!INCLUDE [Product short](includes/product-short.md)] экземпляр, и оповещать вас при возникновении проблем.
 
-## <a name="working-with-the-product-short-health-center"></a>Работа с [!INCLUDE [Product short](includes/product-short.md)] центром работоспособности
+## <a name="working-with-the-defender-for-identity-health-center"></a>Работа с защитником для центра работоспособности удостоверений
 
 [!INCLUDE [Product short](includes/product-short.md)]Центр работоспособности позволяет выяснить, что возникла проблема, вызывая предупреждение (красную точку) над значком центра работоспособности на панели навигации.
 
 ![[! ВКЛЮЧИТЬ [продукт Short] (включая/Product-Short. md)] панель инструментов Red Dot центра работоспособности](media/health-bar.png)
 
-### <a name="managing-product-short-health"></a>Управление [!INCLUDE [Product short](includes/product-short.md)] работоспособностью
+### <a name="managing-defender-for-identity-health"></a>Управление защитником для работоспособности удостоверений
 
 Чтобы проверить общую работоспособность вашего [!INCLUDE [Product short](includes/product-short.md)] экземпляра, выберите **работоспособность** ![ [! ВКЛЮЧИТЬ [продукт Short] (включая/Product-Short. md)] значок центра работоспособности](media/red-dot.png)
 

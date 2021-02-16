@@ -3,14 +3,14 @@ title: Защитник Майкрософт для идентификации �
 description: Обзор защитника Майкрософт для функций идентификации в Microsoft Cloud App Security.
 ms.date: 01/24/2021
 ms.topic: how-to
-ms.openlocfilehash: 6040ef27e1657dbe017a31168932536f1cb594cb
-ms.sourcegitcommit: 7002c960e1489b7ce2deadd8ce20f70a48a6766a
+ms.openlocfilehash: 93ece5c8345929984473b057fdad2d4eec6fb9c0
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2021
-ms.locfileid: "98746941"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533840"
 ---
-# <a name="using-product-long-with-microsoft-cloud-app-security"></a>Использование [!INCLUDE [Product long](includes/product-long.md)] с Microsoft Cloud App Security
+# <a name="using-microsoft-defender-for-identity-with-microsoft-cloud-app-security"></a>Использование защитника Майкрософт для идентификации с Microsoft Cloud App Security
 
 Эта статья поможет вам понять и проанализировать улучшенное исследование при использовании Microsoft Cloud App Security портала с [!INCLUDE [Product long](includes/product-long.md)] .
 
@@ -33,7 +33,7 @@ ms.locfileid: "98746941"
 - [!INCLUDE [Product long](includes/product-long.md)], которая использует машинное обучение и аналитику поведения для обнаружения атак по локальной сети.
 - Защита идентификации Azure Active Directory позволяет выявить и предотвратить риски идентификации, связанные с пользователями и их учетными данными, при работе в облачных приложениях.
 
-## <a name="access-product-short"></a>Имеет [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="access-defender-for-identity"></a>Доступ к защитнику для удостоверения
 
 Нажмите, чтобы продолжить использование на [!INCLUDE [Product short](includes/product-short.md)] [!INCLUDE [Product short](includes/product-short.md)] портале, или можно получить доступ к [!INCLUDE [Product short](includes/product-short.md)] оповещениям и оценкам удостоверений с помощью портала Microsoft Cloud App Security. В любом рабочем процессе [!INCLUDE [Product short](includes/product-short.md)] задачи настройки и настройки продолжают обрабатываться на [!INCLUDE [Product short](includes/product-short.md)] портале.
 
@@ -51,7 +51,7 @@ ms.locfileid: "98746941"
 
 Дополнительные [ [!INCLUDE [Product short](includes/product-short.md)] ](/cloud-app-security/mdi-integration) сведения о том, как быстро включить [!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security, см. в разделе Интеграция.
 
-## <a name="product-short-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)] в Cloud App Security
+## <a name="defender-for-identity-in-cloud-app-security"></a>Защитник для идентификации в Cloud App Security
 
 Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
 
@@ -82,14 +82,14 @@ ms.locfileid: "98746941"
 1. Откройте **Оповещения** в главном меню.
 1. Выберите и отфильтруйте очередь оповещений для конкретного пользователя с помощью поля **Имя пользователя**.
 
- или
+ or
 
 1. Из меню **Исследовать** выберите **Журнал действий**.
 1. Отфильтруйте очередь журнала действий по пользователям.
 
     ![Журнал действий](media/mcas-activity-filter.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие шаги
 
 Сведения о том, как фильтровать и создавать новые политики действий, см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] действия, использующие Microsoft Cloud App Security](activities-filtering-mcas.md) .
 

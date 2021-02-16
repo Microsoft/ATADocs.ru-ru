@@ -3,12 +3,12 @@ title: Краткое руководство по созданию экземп�
 description: Краткое руководство по созданию экземпляра для развертывания Microsoft Defender для удостоверений, что является первым шагом установки Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 299edc14a51f92efa94969a3f442b2e1ca5d8e2b
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 9860a8893ac16448b92961df9cf25801f68786b6
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543218"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515365"
 ---
 # <a name="quickstart-create-your-product-long-instance"></a>Краткое руководство. Создание экземпляра [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -19,7 +19,7 @@ ms.locfileid: "96543218"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Лицензия [!INCLUDE [Product long](includes/product-long.md)]](technical-faq.md#licensing-and-privacy).
+- [Лицензия [!INCLUDE [Product long](includes/product-long.md)]](technical-faq.yml#licensing-and-privacy).
 - Для доступа к порталу [!INCLUDE [Product short](includes/product-short.md)] требуются права [глобального администратора или администратора безопасности в клиенте](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 - Знакомство со статьей [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md).
 - Знакомство со статьей [Предварительные требования [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md).

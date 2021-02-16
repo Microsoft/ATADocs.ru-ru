@@ -3,12 +3,12 @@ title: Установка защитника Майкрософт для инт�
 description: Собирать сведения об учетных данных для защитника Майкрософт для идентификации путем интеграции VPN.
 ms.date: 12/23/2020
 ms.topic: how-to
-ms.openlocfilehash: 80b4bdf29db05d0c2f42887dacff223b3067ba49
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: 3b86ee864e08998fd532b39a30d566b83e928edf
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753411"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534019"
 ---
 # <a name="integrate-vpn"></a>Интеграция VPN
 
@@ -50,7 +50,7 @@ ms.locfileid: "97753411"
 
     ![Настройка VPN](media/vpn-set-accounting.png)
 
-### <a name="configure-vpn-in-product-short"></a>Настройка VPN в [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="configure-vpn-in-defender-for-identity"></a>Настройка VPN в защитнике для идентификации
 
 [!INCLUDE [Product short](includes/product-short.md)] собирает данные VPN, которые помогают профилировать местоположения, с которых компьютеры подключаются к сети и могут обнаруживать подозрительные VPN-подключения.
 

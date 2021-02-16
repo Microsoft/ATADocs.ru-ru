@@ -3,14 +3,14 @@ title: Справочные сведения о старых выпусках в
 description: Эта статья содержит ссылки на предыдущие версии обновлений защитника Майкрософт для идентификации.
 ms.date: 10/27/2020
 ms.topic: reference
-ms.openlocfilehash: 493315ab2e0571c13b2076bb389e2d1c4a9a56f1
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 44da038cc03bb24cbc70d524e24b259c81d9fa00
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515552"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533381"
 ---
-# <a name="release-reference-of-product-long"></a>Ссылка на выпуск [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="release-reference-of-microsoft-defender-for-identity"></a>Ссылка на выпуск защитника Майкрософт для идентификации
 
 Эта статья представляет собой справочник по всем [!INCLUDE [Product short](includes/product-short.md)] (ранее выпущенным в Azure Advanced Threat Protection, также известным как Azure ATP) до выпуска версии 2,55 (и включая). Последние [!INCLUDE [Product short](includes/product-short.md)] обновления выпуска (2,56 и более поздние) см. в разделе [ [!INCLUDE [Product short](includes/product-short.md)] новые](whats-new.md)возможности.
 

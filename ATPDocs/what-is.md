@@ -3,12 +3,12 @@ title: Что такое Microsoft Defender для удостоверений?
 description: Здесь описывается решение Microsoft Defender для удостоверений и подозрительные действия, которые оно может обнаружить
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 1aceb1889ea3f85305d64b5bde6a252b804d56f0
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: 1329c93e18941ca42e9d446abdb0576480543992
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753366"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515569"
 ---
 # <a name="what-is-product-long"></a>Что такое [!INCLUDE [Product long](includes/product-long.md)]?
 
@@ -107,6 +107,6 @@ Azure ATP позволяет обнаруживать перехват конт
 
 ## <a name="see-also"></a>См. также:
 
-- [Часто задаваемые вопросы по [!INCLUDE [Product short](includes/product-short.md)]](technical-faq.md)
+- [Часто задаваемые вопросы по [!INCLUDE [Product short](includes/product-short.md)]](technical-faq.yml)
 - [Работа с оповещениями системы безопасности](working-with-suspicious-activities.md)
 - [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

@@ -3,20 +3,20 @@ title: Оценка уровня безопасности удостоверен
 description: В этой статье приводятся общие сведения о защитнике Майкрософт для отчетов об оценке уровня безопасности удостоверений.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: a51eb3f824cba143a61d227e4df375f798bd01dd
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 3b3f20ac50e3b5b687dd6ece8b421c84288a3126
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543921"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533857"
 ---
-# <a name="product-longs-identity-security-posture-assessments"></a>[!INCLUDE [Product long](includes/product-long.md)]Оценка уровня безопасности удостоверений
+# <a name="microsoft-defender-for-identitys-identity-security-posture-assessments"></a>Оценка уровня безопасности удостоверений в защитнике Майкрософт
 
 Как правило, организации всех размеров имеют ограниченную видимость относительно того, могут ли их локальные приложения и службы представлять уязвимость для организации. Проблема ограниченной видимости особенно актуальна для неподдерживаемых или устаревших компонентов.
 
 Хотя компания может постоянно вкладывать значительное время и усилия в усиление безопасности удостоверений и инфраструктуры идентификации (например, Active Directory, Active Directory Connect), легко можно остаться в неведении о простейших неверных настройках и использовании устаревших версий компонентов, что представляет одну из самых крупных угроз для организации. Исследование безопасности Майкрософт показывает, что большинство атак с удостоверениями используют распространенные неправильные настройки в Active Directory, и указывает на то, что устаревшие компоненты (например, протокол NTLMv1) продолжают использоваться для взлома удостоверений и успешного проникновения в организации. Чтобы бороться с этой эффективностью, [!INCLUDE [Product long](includes/product-long.md)] теперь предлагает возможность профилактической оценки безопасности идентификации, которая позволяет обнаруживать и предлагать действия по улучшению в локальных конфигурациях Active Directory.
 
-## <a name="what-do-product-short-identity-security-posture-assessments-provide"></a>Что [!INCLUDE [Product short](includes/product-short.md)] представляют собой оценки, обеспечивающие безопасность идентификации?
+## <a name="what-do-defender-for-identity-identity-security-posture-assessments-provide"></a>Что обеспечивает защитник для оценки уровня безопасности удостоверений идентификации?
 
 - Используются обнаружения и контекстные данные по известным уязвимым компонентам и неправильным настройкам, а также предлагаются соответствующие пути исправления.
 - [!INCLUDE [Product short](includes/product-short.md)] обнаруживает не только подозрительные действия, но и активно отслеживает локальные удостоверения и инфраструктуру идентификации для слабых участков, используя имеющийся [!INCLUDE [Product short](includes/product-short.md)] датчик.
@@ -32,7 +32,7 @@ ms.locfileid: "96543921"
 
 Для доступа к [!INCLUDE [Product short](includes/product-short.md)] отчетам оценки безопасности в Cloud App Security не требуется лицензия Cloud App Security, [!INCLUDE [Product short](includes/product-short.md)] требуется только лицензия.
 
-## <a name="access-product-short-using-cloud-app-security"></a>Доступ [!INCLUDE [Product short](includes/product-short.md)] с помощью Cloud App Security
+## <a name="access-defender-for-identity-using-cloud-app-security"></a>Доступ к защитнику для удостоверения с помощью Cloud App Security
 
 Основы использования портала Cloud App Security см. в [кратком руководстве по Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
 

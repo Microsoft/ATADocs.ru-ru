@@ -3,12 +3,12 @@ title: Настройка сбора данных о событиях Windows в
 description: На этом этапе установки Microsoft Defender для удостоверений настраивается сбор данных о событиях Windows.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 71e0dd15b820c87df3bb50252160a6e92bacf310
-ms.sourcegitcommit: 30203dd6e74eec3ce4bba98056b664cad455a49e
+ms.openlocfilehash: a387b1fa1437093a21515c5f27e77dd7f1d2da0c
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758193"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534129"
 ---
 # <a name="configure-windows-event-collection"></a>Настройка сбора данных о событиях Windows
 
@@ -101,7 +101,7 @@ ms.locfileid: "98758193"
 1. Новые события, примененные с помощью объекта групповой политики, отображаются в **журналах событий Windows**.
 
 <!--
-## [!INCLUDE [Product short](includes/product-short.md)] Advanced Audit Policy check
+## Defender for Identity Advanced Audit Policy check
 
 To make it easier to verify the current status of each of your domain controller's Advanced Audit Policies, [!INCLUDE [Product short](includes/product-short.md)] automatically checks your existing Advanced Audit Policies and issues health alerts for policy settings that require modification. Each health alert provides specific details of the domain controller, the problematic policy as well as remediation suggestions.
 

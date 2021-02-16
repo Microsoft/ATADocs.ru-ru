@@ -3,14 +3,14 @@ title: Общие сведения о настройке параметров д
 description: Шаг 5. Установка защитника Майкрософт для идентификации помогает настроить параметры защитника для автономного датчика удостоверений.
 ms.date: 09/15/2019
 ms.topic: how-to
-ms.openlocfilehash: 329bfd4f6de2e15865c81d22651e833a63d07b6d
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 42dc42caad1b76cf706cf85d34fd60f5c7a52756
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543116"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534027"
 ---
-# <a name="configure-product-long-sensor-settings"></a>Настройка [!INCLUDE [Product long](includes/product-long.md)] параметров датчика
+# <a name="configure-microsoft-defender-for-identity-sensor-settings"></a>Настройка параметров датчика удостоверений в защитнике Майкрософт
 
 В этой статье вы узнаете, как правильно настроить [!INCLUDE [Product long](includes/product-long.md)] параметры датчика для начала просмотра данных. Вам потребуется дополнительная настройка и интеграция, чтобы воспользоваться всеми [!INCLUDE [Product short](includes/product-short.md)] возможностями.
 
@@ -63,7 +63,7 @@ ms.locfileid: "96543116"
 1. Проверьте [!INCLUDE [Product short](includes/product-short.md)] подключение на любом устройстве домена, выполнив следующие действия.
     1. Откройте командную строку.
     1. Введите `nslookup`.
-    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. например `server contosodc.contoso.azure`
+    1. Введите на **сервере** полное доменное имя или IP-адрес контроллера домена, на котором [!INCLUDE [Product short](includes/product-short.md)] установлен датчик. Например, `server contosodc.contoso.azure`
         - Обязательно замените ContosoDC. contoso. Azure и contoso. Azure полным доменным [!INCLUDE [Product short](includes/product-short.md)] именем датчика и имени домена соответственно.
     1. Введите `ls -d contoso.azure`.
     1. Повторите шаги 3 и 4 для каждого датчика, который нужно протестировать.

@@ -3,14 +3,14 @@ title: Поддержка нескольких лесов удостоверен
 description: Поддержка нескольких лесов Active Directory в защитнике Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.openlocfilehash: 05cf574aa56f379cb636036c382cc87fb289990e
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: c0a5c135d73ecbcdd23b6ed2ea8a12a212a0f23d
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544561"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533670"
 ---
-# <a name="product-long-multi-forest-support"></a>[!INCLUDE [Product long](includes/product-long.md)] Поддержка нескольких лесов
+# <a name="microsoft-defender-for-identity-multi-forest-support"></a>Поддержка нескольких лесов удостоверений в защитнике Майкрософт
 
 ## <a name="multi-forest-support-set-up"></a>Настройка поддержки нескольких лесов
 
@@ -24,7 +24,7 @@ ms.locfileid: "96544561"
 - более эффективное обнаружение ложных срабатываний и сокращение их числа благодаря расширенной интеграции Active Directory и сопоставлению учетных записей;
 - расширенный контроль и упрощенное развертывание; Улучшены оповещения о работоспособности и отчеты о покрытии, когда все контроллеры домена отслеживаются из одной [!INCLUDE [Product short](includes/product-short.md)] консоли.
 
-## <a name="product-short-detection-activity-across-multiple-forests"></a>[!INCLUDE [Product short](includes/product-short.md)] действия обнаружения в нескольких лесах
+## <a name="defender-for-identity-detection-activity-across-multiple-forests"></a>Защитник для действия обнаружения удостоверений в нескольких лесах
 
 Для обнаружения действий между лесами [!INCLUDE [Product short](includes/product-short.md)] датчики запрашивают контроллеры домена в удаленных лесах, чтобы создать профили для всех участвующих сущностей (включая пользователей и компьютеры из удаленных лесов).
 

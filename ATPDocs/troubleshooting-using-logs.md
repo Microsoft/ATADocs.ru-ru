@@ -3,14 +3,14 @@ title: Устранение неполадок защитника Майкрос
 description: В этой статье описывается, как можно использовать защитник Майкрософт для журналов удостоверений для устранения неполадок.
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: beea555d45f1e06ea3eddeffbf057c392003a8d2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 2c902576b4cf7b0acf58371bafe4bb60404890ba
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542113"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534520"
 ---
-# <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>Устранение неполадок [!INCLUDE [Product long](includes/product-long.md)] датчика с помощью [!INCLUDE [Product short](includes/product-short.md)] журналов
+# <a name="troubleshooting-microsoft-defender-for-identity-sensor-using-the-defender-for-identity-logs"></a>Устранение неполадок защитника Майкрософт для датчика удостоверений с помощью защитника для журналов удостоверений
 
 В [!INCLUDE [Product short](includes/product-short.md)] журналах представлены сведения о том, что делает каждый компонент [!INCLUDE [Product long](includes/product-long.md)] датчика в любой определенный момент времени.
 
@@ -27,7 +27,7 @@ ms.locfileid: "96542113"
 > [!NOTE]
 > Максимальный размер каждого файла первых трех журналов — 50 МБ. При достижении этого размера открывается новый файл журнала, а предыдущий переименовывается на &lt;имя исходного файла&gt;-Archived-00000. С каждым переименованием число в названии увеличивается. По умолчанию, если накопилось более 10 файлов одного типа, самые старые из них удаляются.
 
-## <a name="product-short-deployment-logs"></a>[!INCLUDE [Product short](includes/product-short.md)] Журналы развертывания
+## <a name="defender-for-identity-deployment-logs"></a>Защитник для журналов развертывания удостоверений
 
 [!INCLUDE [Product short](includes/product-short.md)]Журналы развертывания находятся во временном каталоге для пользователя, установившего продукт. В папке установки по умолчанию ее можно найти по адресу: **C:\Users\Administrator\AppData\Local\Temp** (или по одному каталогу выше% TEMP%).
 

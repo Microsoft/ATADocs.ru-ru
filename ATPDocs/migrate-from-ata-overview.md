@@ -3,14 +3,14 @@ title: Advanced Threat Analytics в защитнике Майкрософт дл
 description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 5e20ed1580ad314f85845161fbb850395709d580
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 45b9004bc439a28e144686e3147b94b6019a7a0f
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515348"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533806"
 ---
-# <a name="advanced-threat-analytics-ata-to-product-long"></a>Advanced Threat Analytics (ATA) для [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>Advanced Threat Analytics (ATA) в защитнике Майкрософт для идентификации
 
 > [!NOTE]
 > Окончательная версия ATA доступна в [целом](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9). Поддержка ATA будет завершаться 12 января 2021. Расширенная поддержка будет продолжена до 2026 января. Дополнительные сведения см. в [нашем блоге](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181).
@@ -33,7 +33,7 @@ ms.locfileid: "100515348"
 > [!NOTE]
 > Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 - Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый экземпляр [!INCLUDE [Product short](includes/product-short.md)] поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
@@ -70,7 +70,7 @@ ms.locfileid: "100515348"
 
 Выполните переход на [!INCLUDE [Product short](includes/product-short.md)] два простых шага.
 
-### <a name="step-1-create-and-install-product-short-instance-and-sensors"></a>Шаг 1. Создание и установка [!INCLUDE [Product short](includes/product-short.md)] экземпляров и датчиков
+### <a name="step-1-create-and-install-defender-for-identity-instance-and-sensors"></a>Шаг 1. Создание и Установка защитника для экземпляра удостоверения и датчиков
 
 1. [Создание нового [!INCLUDE [Product short](includes/product-short.md)] экземпляра](install-step1.md)
 
@@ -81,7 +81,7 @@ ms.locfileid: "100515348"
     - [Получите [!INCLUDE [Product short](includes/product-short.md)] Ключ доступа](install-step3.md#download-the-setup-package).
     - [Установите [!INCLUDE [Product short](includes/product-short.md)] датчики на контроллерах домена](install-step4.md).
 
-### <a name="step-2-configure-and-validate-product-short-instance"></a>Шаг 2. Настройка и проверка [!INCLUDE [Product short](includes/product-short.md)] экземпляра
+### <a name="step-2-configure-and-validate-defender-for-identity-instance"></a>Шаг 2. Настройка и проверка защитника для экземпляра Identity
 
 - [Настройте датчик](install-step5.md)
 

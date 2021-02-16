@@ -3,14 +3,14 @@ title: Фильтрация и политики в защитнике Майкр
 description: Обзор защитника Майкрософт для фильтрации и политик действий идентификации с помощью Microsoft Cloud App Security.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 5956ebfb9904465e876a21b918255f44ec651ae9
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 589b7bc0ae95d6ff9dcc82fba930bc579d5b19b7
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544255"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533977"
 ---
-# <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>Использование фильтров действий и создание политик действий с помощью [!INCLUDE [Product long](includes/product-long.md)] в Microsoft Cloud App Security
+# <a name="use-activity-filters-and-create-action-policies-with-microsoft-defender-for-identity-in-microsoft-cloud-app-security"></a>Использование фильтров действий и создание политик действий с защитником Майкрософт для идентификации в Microsoft Cloud App Security
 
 Эта статья поможет вам понять, как фильтровать и создавать политики действий [!INCLUDE [Product short](includes/product-short.md)] с помощью Microsoft Cloud App Security.
 
@@ -28,7 +28,7 @@ ms.locfileid: "96544255"
 >[!NOTE]
 >Если у вас нет подписки на Cloud App Security, вы можете использовать портал Cloud App Security для изучения [!INCLUDE [Product short](includes/product-short.md)] оповещений и глубокого исследования пользователей и их локальных управляемых действий, однако аналитические данные, связанные с облачными приложениями, останутся недоступными.
 
-## <a name="filter-product-short-activities-in-cloud-app-security"></a>Фильтрация [!INCLUDE [Product short](includes/product-short.md)] действий в Cloud App Security
+## <a name="filter-defender-for-identity-activities-in-cloud-app-security"></a>Фильтрация защитника для действий с удостоверениями в Cloud App Security
 
 [!INCLUDE [Product short](includes/product-short.md)] доступ к действиям можно получить из главного меню Cloud App Security **исследовать** , выбрав подменю **журнала действий** или меню **оповещения** , указав состояние, категорию, серьезность, приложение, имя пользователя или политика.
 

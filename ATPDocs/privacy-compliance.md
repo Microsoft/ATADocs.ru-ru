@@ -3,14 +3,14 @@ title: Политика Microsoft Defender для личных данных уд
 description: Ссылки на сведения об удалении частной информации и персональных данных из защитника Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.openlocfilehash: c5af419c2be751a8b9f92855f57f13669860de1a
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: b8336d4b6508fc9de462dcdbb6bc6389dd2fa0f2
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542368"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533418"
 ---
-# <a name="product-long-data-security-and-privacy"></a>[!INCLUDE [Product long](includes/product-long.md)] безопасность и конфиденциальность данных
+# <a name="microsoft-defender-for-identity-data-security-and-privacy"></a>Защитник Майкрософт для обеспечения безопасности и конфиденциальности данных удостоверений
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -44,6 +44,6 @@ ms.locfileid: "96542368"
 
 - Сведения о [!INCLUDE [Product short](includes/product-short.md)] доверии и соответствии требованиям см. на [портале доверия службы](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) и на [сайте соответствия Microsoft 365 корпоративный GDPR](/microsoft-365/compliance/gdpr?view=o365-worldwide&preserve-view=true).
 
-## <a name="security-and-privacy-for-product-short-us-government-gcc-high-customers"></a>Безопасность и конфиденциальность для [!INCLUDE [Product short](includes/product-short.md)] государственных организаций США — GCC High
+## <a name="security-and-privacy-for-defender-for-identity-us-government-gcc-high-customers"></a>Безопасность и конфиденциальность защитника для удостоверений правительства США GCC High Customers
 
 Дополнительные сведения о [!INCLUDE [Product short](includes/product-short.md)] стандартах соответствия и расположении данных о клиентах для государственных организаций США от версии GCC High см. в [описании Enterprise Mobility + Security для службы США для государственных организаций](/enterprise-mobility-security/solutions/ems-govt-service-description).

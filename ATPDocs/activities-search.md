@@ -3,14 +3,14 @@ title: Фильтрация и поиск действий, отслеживае
 description: В этой статье содержатся общие сведения о фильтрации и поиске отслеживаемых действий с помощью защитника Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 9e1758475c9b364e1726e5f145676110b98389d9
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: e338e0294ad407c17df2476e7a7a5395f27756f2
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543813"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533925"
 ---
-# <a name="product-long-monitored-activities-search-and-filter"></a>[!INCLUDE [Product long](includes/product-long.md)] Поиск и фильтрация отслеживаемых действий
+# <a name="microsoft-defender-for-identity-monitored-activities-search-and-filter"></a>Поиск и Фильтрация действий защитника Майкрософт для отслеживания удостоверений
 
 > [!NOTE]
 > Функции [!INCLUDE [Product short](includes/product-short.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).

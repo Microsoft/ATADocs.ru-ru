@@ -3,14 +3,14 @@ title: Автоматическая установка защитника Май
 description: В этом разделе описано, как автоматически установить защитник Майкрософт для идентификации.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a9cddac4ca0306faddaa93b701b88745b180828c
-ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
+ms.openlocfilehash: 0c22f5bcbffd415a81b84c94570cfcd7387aab56
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062541"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534401"
 ---
-# <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] параметры и автоматическая установка
+# <a name="microsoft-defender-for-identity-switches-and-silent-installation"></a>Защитник Майкрософт для коммутаторов идентификации и автоматической установки
 
 Эта статья содержит инструкции и инструкции по [!INCLUDE [Product long](includes/product-long.md)] параметрам и автоматической установке.
 
@@ -27,7 +27,7 @@ ms.locfileid: "98062541"
 
 Чтобы отслеживать ход развертывания, отслеживайте [!INCLUDE [Product short](includes/product-short.md)] журналы установщика, которые находятся в папке `%AppData%\Local\Temp` .
 
-## <a name="product-short-sensor-silent-installation"></a>[!INCLUDE [Product short](includes/product-short.md)] Автоматическая установка датчика
+## <a name="defender-for-identity-sensor-silent-installation"></a>Защитник для автоматической установки датчика удостоверений
 
 > [!NOTE]
 > При автоматическом развертывании [!INCLUDE [Product short](includes/product-short.md)] датчика с помощью System Center Configuration Manager или другой системы развертывания программного обеспечения рекомендуется создать два пакета развертывания:</br>– .NET Framework 4.7 или более поздняя версия (может включать перезагрузку контроллера домена);</br>- [!INCLUDE [Product short](includes/product-short.md)] датчика. </br>Сделайте [!INCLUDE [Product short](includes/product-short.md)] пакет датчика зависимым от развертывания пакета .NET Framework. </br>Получите [пакет автономного развертывания .NET Framework 4.7](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows).
@@ -95,7 +95,7 @@ ms.locfileid: "98062541"
 
 Дополнительные сведения о конфигурации прокси-сервера см. [в статье Настройка прокси-сервера конечной точки и параметров подключения к Интернету для [!INCLUDE [Product long](includes/product-long.md)] датчика](configure-proxy.md).
 
-## <a name="update-the-product-short-sensor"></a>Обновление [!INCLUDE [Product short](includes/product-short.md)] датчика
+## <a name="update-the-defender-for-identity-sensor"></a>Обновите защитник для датчика удостоверений.
 
 Используйте следующую команду для автоматического обновления [!INCLUDE [Product short](includes/product-short.md)] датчика:
 
@@ -125,7 +125,7 @@ ms.locfileid: "98062541"
 
 <a name="silently-uninstall-sensor"></a>
 
-## <a name="uninstall-the-product-short-sensor-silently"></a>Автоматическое удаление [!INCLUDE [Product short](includes/product-short.md)] датчика
+## <a name="uninstall-the-defender-for-identity-sensor-silently"></a>Автоматическое удаление защитника для датчика удостоверений
 
 Чтобы выполнить автоматическое удаление датчика, используйте следующую команду [!INCLUDE [Product short](includes/product-short.md)] :
 

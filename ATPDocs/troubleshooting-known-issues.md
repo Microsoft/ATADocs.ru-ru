@@ -3,14 +3,14 @@ title: Устранение известных проблем в защитни�
 description: В этой статье описывается, как устранять неполадки в защитнике Майкрософт для идентификации.
 ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 933d4442d88f2d03ddcd2fa4c90d59d98e229340
-ms.sourcegitcommit: 50e6f5511329e56545fa5ab4c9f5ab69046d1e10
+ms.openlocfilehash: f11d840aa46ec86c88c04ea2892443fd2dc20db3
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551601"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534503"
 ---
-# <a name="troubleshooting-product-long-known-issues"></a>Устранение [!INCLUDE [Product long](includes/product-long.md)] известных проблем
+# <a name="troubleshooting-microsoft-defender-for-identity-known-issues"></a>Устранение известных проблем в защитнике Майкрософт
 
 ## <a name="sensor-failure-communication-error"></a>Ошибка связи из-за сбоя датчика
 
@@ -107,7 +107,9 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## <a name="product-short-sensor-nic-teaming-issue"></a>[!INCLUDE [Product short](includes/product-short.md)] проблемы с объединением сетевых адаптеров датчика <a name="nic-teaming"></a>
+<a name="nic-teaming"></a>
+
+## <a name="defender-for-identity-sensor-nic-teaming-issue"></a>Защитник для проблемы объединения сетевых адаптеров датчика удостоверений
 
 При попытке установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, настроенном с помощью адаптера объединения сетевых карт, возникает ошибка установки. Если вы хотите установить [!INCLUDE [Product short](includes/product-short.md)] датчик на компьютере, где настроено объединение сетевых карт, выполните следующие действия:
 
