@@ -3,12 +3,12 @@ title: Устранение известных проблем в защитни�
 description: В этой статье описывается, как устранять неполадки в защитнике Майкрософт для идентификации.
 ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: f11d840aa46ec86c88c04ea2892443fd2dc20db3
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: be4aebf4ccbccece1348949cbe0acd19d803e163
+ms.sourcegitcommit: 412420dd904690d855539a2589f9d5485e1f832e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100534503"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100569848"
 ---
 # <a name="troubleshooting-microsoft-defender-for-identity-known-issues"></a>Устранение известных проблем в защитнике Майкрософт
 
@@ -52,12 +52,22 @@ System.Net.Http.HttpRequestException: An error occurred while sending the reques
 
 **Решение:**
 
-Выполните следующий командлет PowerShell, чтобы убедиться, что [!INCLUDE [Product short](includes/product-short.md)] доверенный корневой сертификат службы существует на сервере Core. В следующем примере используется сертификат DigiCert Baltimore Root и DigiCert Global Root.
+Выполните следующий командлет PowerShell, чтобы убедиться, что [!INCLUDE [Product short](includes/product-short.md)] доверенный корневой сертификат службы существует на сервере Core.
+
+В следующем примере используйте сертификат DigiCert Baltimore root для всех клиентов. Кроме того, используйте сертификат "DigiCert Global Root G2" для коммерческих клиентов или используйте сертификат "Глобальный корневой ЦС DigiCert" для государственных организаций США от GCC High, как указано.
 
 ```powershell
+# Certificate for all customers
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"} | fl
+
+# Certificate for commercial customers
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "df3c24f9bfd666761b268073fe06d1cc8d4f82a4"} | fl
+
+# Certificate for US Government GCC High customers
+Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436"} | fl
 ```
+
+Выходные данные для сертификата для всех клиентов:
 
 ```Output
 Subject      : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
@@ -67,7 +77,11 @@ FriendlyName : DigiCert Baltimore Root
 NotBefore    : 5/12/2000 11:46:00 AM
 NotAfter     : 5/12/2025 4:59:00 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
 
+Выходные данные для сертификата коммерческого клиента:
+
+```Output
 Subject      : CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
 Issuer       : CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
 Thumbprint   : DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
@@ -77,14 +91,38 @@ NotAfter     : 15/01/2038 14:00:00
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
 ```
 
+Выходные данные для сертификата для государственных организаций США:
+
+```Output
+Subject      : CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer       : CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Thumbprint   : A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436
+FriendlyName : DigiCert
+NotBefore    : 11/9/2006 4:00:00 PM
+NotAfter     : 11/9/2031 4:00:00 PM
+Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
+
 Если ожидаемые выходные данные не отобразятся, выполните следующие действия:
 
-1. Скачайте корневой сертификат [Baltimore CyberTrust](https://cacert.omniroot.com/bc2025.crt) и [DigiCert Global Root G2](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt) на компьютер с Server Core.
+1. Скачайте следующие сертификаты на компьютер Server Core. Для всех клиентов Скачайте [корневой сертификат Baltimore CyberTrust](https://cacert.omniroot.com/bc2025.crt) .
+
+    Кроме того:
+
+    - Для коммерческих клиентов Скачайте [DigiCert глобальный корневой сертификат G2](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt) .
+    - Скачайте сертификат [глобального корневого ЦС DigiCert](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt) для государственных организаций США GCC High.
+
 1. Запустите следующий командлет PowerShell, чтобы установить сертификат.
 
     ```powershell
+    # For all customers, install certificate
     Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\bc2025.crt" -CertStoreLocation Cert:\LocalMachine\Root
+
+    # For commercial customers, install certificate
     Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\DigiCertGlobalRootG2.crt" -CertStoreLocation Cert:\LocalMachine\Root
+
+    # For US Government GCC High customers, install certificate
+    Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\DigiCertGlobalRootCA.crt" -CertStoreLocation Cert:\LocalMachine\Root
     ```
 
 ## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>Ошибка автоматической установки при попытке использовать PowerShell
