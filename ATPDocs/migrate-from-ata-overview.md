@@ -3,12 +3,12 @@ title: Advanced Threat Analytics в защитнике Майкрософт дл
 description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 45b9004bc439a28e144686e3147b94b6019a7a0f
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: f363543cca20e0dba853c58db1e1c1cc0c60ce22
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533806"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630549"
 ---
 # <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>Advanced Threat Analytics (ATA) в защитнике Майкрософт для идентификации
 
@@ -33,7 +33,7 @@ ms.locfileid: "100533806"
 > [!NOTE]
 > Переход с [!INCLUDE [Product short](includes/product-short.md)] ATA возможен с любой версии ATA. Однако, поскольку данные не могут быть перемещены из ATA в [!INCLUDE [Product short](includes/product-short.md)] , рекомендуется хранить данные центра ATA и предупреждения, необходимые для текущего исследования, пока все оповещения ATA не будут закрыты или исправлены.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Для создания экземпляра требуется клиент Azure Active Directory по крайней мере с одним администратором глобального/безопасности [!INCLUDE [Product short](includes/product-short.md)] . Каждый экземпляр [!INCLUDE [Product short](includes/product-short.md)] поддерживает границу леса Active Directory и режим работы леса (FFL) для Windows 2003 и более поздних версий.
 
@@ -58,9 +58,9 @@ ms.locfileid: "100533806"
 1. Исключения оповещений
     - Исключения передаются из ATA в [!INCLUDE [Product short](includes/product-short.md)] , поэтому сведения о каждом исключении необходимы для [репликации исключений в [!INCLUDE [Product short](includes/product-short.md)] ](excluding-entities-from-detections.md).
 1. Данные учетных записей HoneyToken.
-    - Если у вас еще нет выделенных учетных записей HoneyToken, Узнайте больше о [хонэйтокенс в [!INCLUDE [Product short](includes/product-short.md)] ](install-step7.md) и создайте новые учетные записи, которые будут использоваться для этой цели.
+    - Если у вас еще нет выделенных учетных записей HoneyToken, Узнайте больше о [хонэйтокенс в [!INCLUDE [Product short](includes/product-short.md)] ](configure-detection-exclusions.md) и создайте новые учетные записи, которые будут использоваться для этой цели.
 1. Полный список всех объектов (компьютеров, групп, пользователей), которые вы хотите вручную пометить как конфиденциальные.
-    - Дополнительные сведения о важности [конфиденциальных сущностей](sensitive-accounts.md) см. в статье [!INCLUDE [Product short](includes/product-short.md)] .
+    - Дополнительные сведения о важности [конфиденциальных сущностей](manage-sensitive-honeytoken-accounts.md) см. в статье [!INCLUDE [Product short](includes/product-short.md)] .
 1. [Сведения](reports.md) о планировании отчетов (список отчетов и запланированное время).
 
 > [!NOTE]
@@ -99,8 +99,8 @@ ms.locfileid: "100533806"
 | 3  | Настройка [уведомлений системного журнала](setting-syslog.md) | - [ ] |
 | 4  | Сведения об [интеграции VPN](install-step6-vpn.md)| - [ ] |
 | 5  | Настройка [интеграции WDATP](integrate-mde.md)| - [ ] |
-| 6  | Настройка учетных записей [HoneyTokens](install-step7.md)| - [ ] |
-| 7  | Указание [конфиденциальных объектов](sensitive-accounts.md)| - [ ] |
+| 6  | Настройка учетных записей [HoneyTokens](configure-detection-exclusions.md)| - [ ] |
+| 7  | Указание [конфиденциальных объектов](manage-sensitive-honeytoken-accounts.md)| - [ ] |
 | 8  | Создание [исключений для оповещений безопасности](excluding-entities-from-detections.md)| - [ ] |
 | 9 | [Включение уведомлений по электронной почте](notifications.md) | - [ ] |
 | 10  | [Настройка расписания отчетов](reports.md) (список отчетов и запланированное время)| - [ ] |

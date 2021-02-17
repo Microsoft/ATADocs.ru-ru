@@ -3,12 +3,12 @@ title: Настройка параметров системного журнал
 description: В этой статье описано, как настроить получение уведомлений службы "Microsoft Defender для удостоверений" о подозрительной активности (по электронной почте или с помощью пересылки событий службой).
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 587fd2cab00b982ace580ef2b8b587157c960891
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 06064b549db61a65b068f78a66d886f29805444f
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544357"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630515"
 ---
 # <a name="integrate-with-syslog"></a>Интеграция с Syslog
 
@@ -57,5 +57,5 @@ ms.locfileid: "96544357"
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с конфиденциальными учетными записями](sensitive-accounts.md)
+- [Работа с конфиденциальными учетными записями](manage-sensitive-honeytoken-accounts.md)
 - [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)

@@ -3,12 +3,12 @@ title: Список полезных ресурсов для защитника 
 description: В этой статье содержится список полезных ресурсов для защитника Майкрософт по удостоверениям.
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 8a814a51fdc63f59b36288922017280e0d7f3968
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 218422d15ac797998b0eb0ecfb87c5b641823246
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533313"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630464"
 ---
 # <a name="microsoft-defender-for-identity-readiness-guide"></a>Рекомендации по обеспечению готовности к использованию защитника Майкрософт
 
@@ -53,9 +53,9 @@ ms.locfileid: "100533313"
 
 - [ [!INCLUDE [Product short](includes/product-short.md)] руководство по оповещениям системы безопасности](suspicious-activity-guide.md) Узнайте о рассмотрении и выполните следующие действия с помощью [!INCLUDE [Product short](includes/product-short.md)] обнаруженных.
 - [[!INCLUDE [Product short](includes/product-short.md)] пути перемещения бокового смещения](use-case-lateral-movement-path.md)
-- [Работа с конфиденциальными учетными записями](sensitive-accounts.md). Отслеживайте риски раскрытия учетных данных в привилегированных группах безопасности.
+- [Работа с конфиденциальными учетными записями](manage-sensitive-honeytoken-accounts.md). Отслеживайте риски раскрытия учетных данных в привилегированных группах безопасности.
 
-## <a name="security-best-practices"></a>Рекомендации по безопасности
+## <a name="security-best-practices"></a>Лучшие методики обеспечения безопасности
 
 - [ [!INCLUDE [Product short](includes/product-short.md)] Часто задаваемые вопросы](technical-faq.yml) . в этой статье содержится список часто задаваемых вопросов о [!INCLUDE [Product short](includes/product-short.md)] и предоставлены подробные сведения и ответы на них.
 
@@ -71,5 +71,5 @@ Channel 9: [страница по безопасности Майкрософт
 
 ## <a name="see-also"></a>См. также
 
-- [Работа с конфиденциальными учетными записями](sensitive-accounts.md)
+- [Работа с конфиденциальными учетными записями](manage-sensitive-honeytoken-accounts.md)
 - [Посетите форум по [!INCLUDE [Product short](includes/product-short.md)].](https://aka.ms/MDIcommunity)
