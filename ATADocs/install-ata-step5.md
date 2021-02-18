@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8906b570c96ad68033d0bfffc00b46e81b63df51
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 6bcb99a86cfab977ec6a1ab590313a7878e9e4e2
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690641"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097493"
 ---
 # <a name="install-ata---step-5"></a>Установка ATA. Шаг 5
 
@@ -101,9 +101,9 @@ Microsoft.Tri.Gateway.Updater.exe
 - [Обзор развертывания ATA](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [Выбор правильного типа шлюза ATA](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Руководство по развертыванию среды для подтверждения концепции ATA](https://aka.ms/atapoc)
+- [Руководство по развертыванию среды для подтверждения концепции ATA](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [Средство изменения размера ATA](https://aka.ms/atasizingtool)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Настройка сбора данных о событиях](configure-event-collection.md)

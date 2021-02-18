@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3436f675a6e1dfb9afec9bb40098e7fa51a65500
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 73c8157b582f4f3eed0550a0d59ca76eae45ce92
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913295"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097289"
 ---
 # <a name="whats-new-in-ata-version-16"></a>Новые возможности ATA версии 1.6
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 В этих заметках о выпуске содержатся сведения об известных проблемах в текущей версии решения Advanced Threat Analytics.
 
 ## <a name="whats-new-in-the-ata-16-update"></a>Новые возможности в обновлении ATA 1.6
@@ -104,7 +103,7 @@ API защиты данных (DPAPI) — это служба защиты да�
 
 ![Ошибка при обновлении ATA до версии 1.6](http://i.imgur.com/QrLSApr.png)
 
-Если вы видите эту ошибку, просмотрите журнал развертывания в разделе: **C:\Users \<User> \AppData\Local\Temp**и найдите следующее исключение:
+Если вы видите эту ошибку, просмотрите журнал развертывания в разделе: **C:\Users \<User> \AppData\Local\Temp** и найдите следующее исключение:
 
 ```
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MongoDB.Driver.MongoWriteException: A write operation resulted in an error. E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : "<guid>" } ---> MongoDB.Driver.MongoBulkWriteException`1: A bulk write operation resulted in one or more errors.  E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : " <guid> " }
@@ -132,9 +131,9 @@ System.ArgumentNullException: Value cannot be null.
     1. MongoDB
     2. центр Microsoft Advanced Threat Analytics;
 1. Просмотрите журналы, чтобы убедиться, что продукт работает без ошибок.
-1. [Скачайте](https://aka.ms/ataremoveduplicateprofiles "Скачать") средство "RemoveDuplicateProfiles.exe" и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat analytics\center.).
+1. [Скачайте](/samples/browse/?redirectedfrom=TechNet-Gallery "Скачать") средство "RemoveDuplicateProfiles.exe" и скопируйте его в основной путь установки (%ProgramFiles%\Microsoft Advanced Threat analytics\center.).
 1. Из командной строки с повышенными привилегиями запустите файл `RemoveDuplicateProfiles.exe` и дождитесь его успешного выполнения.
-1. Отсюда: `…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin` Каталог: **Mongo ATA**введите следующую команду:
+1. Отсюда: `…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin` Каталог: **Mongo ATA** введите следующую команду:
 
 ```dos
 db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
@@ -154,7 +153,7 @@ db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "De
 Новый усовершенствованный механизм обнаружения использует внутреннюю технологию обнаружения, благодаря чему можно выявлять проблемы без обращения к сетевым операциям в журнале. Таким образом производительность центра ATA существенно повышается. Это также означает, что при обновлении не нужно переносить сетевые операции в журнале.
 При обновлении ATA данные экспортируются в `<Center Installation Path>\Migration` в качестве JSON-файла (если они понадобятся для изучения в будущем).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 Посетите [форум ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata) 
  [Обновление ATA до версии 1,6 — руководством по миграции](ata-update-1.6-migration-guide.md)

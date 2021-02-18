@@ -122,12 +122,12 @@ items:
         href: working-with-suspicious-activities.md
       - name: Исключение сущностей из обнаружения
         href: excluding-entities-from-detections.md
-      - name: Работа с конфиденциальными учетными записями
-        href: sensitive-accounts.md
       - name: Поиск и фильтрация отслеживаемых действий
         href: activities-search.md
-      - name: "Исключения и учетные записи\_Honeytoken"
-        href: install-step7.md
+      - name: Управление учетными записями с конфиденциальностью или приманками
+        href: manage-sensitive-honeytoken-accounts.md
+      - name: Настройка исключений из обнаружения
+        href: configure-detection-exclusions.md
       - name: Мониторинг контроллеров домена
         href: sensor-monitoring.md
       - name: Изменение пароля для подключения к домену

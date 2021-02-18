@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4cce018aac4528b62db8c143591c3380fc38c1a4
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: c402169f6e838e6869395d39eb7df650638af5f2
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94689536"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097323"
 ---
 # <a name="working-with-suspicious-activities"></a>Обработка подозрительных действий
 
@@ -99,7 +99,7 @@ ms.locfileid: "94689536"
 - [Join the Security Community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Участие в сообществе безопасности)
 
 
-## <a name="see-also"></a>См. также:
-- [Сборник тренировочных заданий по реагированию на подозрительные действия ATA](https://aka.ms/ataplaybook)
+## <a name="see-also"></a>См. также
+- [Сборник тренировочных заданий по реагированию на подозрительные действия ATA](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [Обязательно ознакомьтесь с форумом ATA.](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [Изменение конфигурации ATA](modifying-ata-center-configuration.md)

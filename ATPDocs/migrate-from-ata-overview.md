@@ -3,12 +3,12 @@ title: Advanced Threat Analytics в защитнике Майкрософт дл
 description: Узнайте, как переместить существующую установку Advanced Threat Analytics в защитник Майкрософт для идентификации.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: f363543cca20e0dba853c58db1e1c1cc0c60ce22
-ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.openlocfilehash: 6a7a5391e908964c7bc570ef478fdc037e9b1051
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100630549"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097306"
 ---
 # <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>Advanced Threat Analytics (ATA) в защитнике Майкрософт для идентификации
 
@@ -101,7 +101,7 @@ ms.locfileid: "100630549"
 | 5  | Настройка [интеграции WDATP](integrate-mde.md)| - [ ] |
 | 6  | Настройка учетных записей [HoneyTokens](configure-detection-exclusions.md)| - [ ] |
 | 7  | Указание [конфиденциальных объектов](manage-sensitive-honeytoken-accounts.md)| - [ ] |
-| 8  | Создание [исключений для оповещений безопасности](excluding-entities-from-detections.md)| - [ ] |
+| 8  | Создание [исключений для оповещений безопасности](configure-detection-exclusions.md)| - [ ] |
 | 9 | [Включение уведомлений по электронной почте](notifications.md) | - [ ] |
 | 10  | [Настройка расписания отчетов](reports.md) (список отчетов и запланированное время)| - [ ] |
 | 11  | Настройка [разрешений на основе ролей](role-groups.md) | - [ ] |
@@ -131,7 +131,7 @@ ms.locfileid: "100630549"
 
 Поздравляем! Переход с ATA на [!INCLUDE [Product short](includes/product-short.md)] завершен.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о [[!INCLUDE [Product short](includes/product-short.md)]](what-is.md) функциях, функциях и [оповещениях системы безопасности](understanding-security-alerts.md).
 
