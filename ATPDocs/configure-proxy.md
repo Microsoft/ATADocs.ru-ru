@@ -3,14 +3,14 @@ title: Настройка прокси-сервера или брандмауэ�
 description: Узнайте, как настроить брандмауэр или прокси-сервер для обмена данными между облачным экземпляром Microsoft Defender для удостоверений и датчиками Microsoft Defender для удостоверений
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 4606ab39457cbf1210974cb9f150d7410051c361
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: ea3a16db97a4ac039509d2fe295ba803cb67de35
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543439"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534163"
 ---
-# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>Настройка прокси-сервера конечной точки и подключения к Интернету для датчика [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-microsoft-defender-for-identity-sensor"></a>Настройка прокси-сервера конечной точки и параметров подключения к Интернету для датчика Microsoft Defender для удостоверений
 
 Для успешной работы и передачи данных датчика [!INCLUDE [Product long](includes/product-long.md)] каждый датчик должен быть подключен к облачному экземпляру [!INCLUDE [Product short](includes/product-short.md)] через Интернет. В некоторых организациях контроллеры домена подключаются к Интернету не напрямую, а через веб-прокси.
 
@@ -76,7 +76,7 @@ ms.locfileid: "96543439"
 
 <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>
 
-## <a name="enable-access-to-product-short-service-urls-in-the-proxy-server"></a>Разрешение доступа прокси-сервера к URL-адресам служб [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="enable-access-to-defender-for-identity-service-urls-in-the-proxy-server"></a>Разрешение доступа к URL-адресам службы Defender для удостоверений на прокси-сервере
 
 Чтобы разрешить доступ к [!INCLUDE [Product short](includes/product-short.md)], рекомендуется разрешить трафик для приведенных ниже URL-адресов. URL-адреса автоматически сопоставляются с корректным расположением служб для вашего экземпляра [!INCLUDE [Product short](includes/product-short.md)].
 

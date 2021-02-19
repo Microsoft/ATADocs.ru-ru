@@ -3,14 +3,14 @@ title: Работа с отчетами Microsoft Defender для удосто�
 description: Сведения о создания отчетов для мониторинга сети в Microsoft Defender для удостоверений.
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: ca2724526aa7fd1dcf31d2e8242930e215ed6a05
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 1d09bd832167d960323ed0422a7858e9e512c4e1
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544459"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533466"
 ---
-# <a name="product-long-reports"></a>Отчеты [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-reports"></a>Отчеты Microsoft Defender для удостоверений
 
 В разделе отчетов [!INCLUDE [Product long](includes/product-long.md)] на портале [!INCLUDE [Product short](includes/product-short.md)] вы можете запланировать или сразу же создать и скачать отчеты со сведениями о состоянии системы и сущности. С помощью функции отчетов можно создавать отчеты о работоспособности системы, оповещениях безопасности и подозрительных действиях, обнаруженных в среде.
 

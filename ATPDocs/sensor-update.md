@@ -3,20 +3,20 @@ title: Обновление датчиков Microsoft Defender для удос�
 description: В этой статье показано, как выполнить и отложить обновления датчиков в Microsoft Defender для удостоверений.
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 6db4db087f64431812a3998f2c79f066dfb09ea2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 3d77e5ebd6fdec2647f08aa32c1e2076a1487293
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542413"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534418"
 ---
-# <a name="update-product-long-sensors"></a>Обновление датчиков [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="update-microsoft-defender-for-identity-sensors"></a>Обновление датчиков Microsoft Defender для удостоверений
 
 Чтобы обеспечить наилучшую защиту для вашей организации, своевременно обновляйте датчики [!INCLUDE [Product long](includes/product-long.md)].
 
 Как правило, [!INCLUDE [Product long](includes/product-long.md)] обновляется несколько раз в месяц, предоставляя новые типы обнаружения, новые функции и улучшения производительности. Обычно эти обновления включают соответствующие незначительные обновления датчиков. Датчики [!INCLUDE [Product short](includes/product-short.md)] и соответствующие обновления никогда не имеют разрешений на запись в контроллеры домена. Пакеты обновления датчиков влияют только на датчики [!INCLUDE [Product short](includes/product-short.md)] и их функции обнаружения.
 
-## <a name="product-short-sensor-update-types"></a>Типы обновлений датчиков [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-sensor-update-types"></a>Типы обновления датчиков Defender для удостоверений
 
 Датчики [!INCLUDE [Product short](includes/product-short.md)] поддерживают два типа обновлений.
 

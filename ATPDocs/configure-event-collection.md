@@ -3,12 +3,12 @@ title: Установка Microsoft Defender для удостоверений
 description: На этом этапе установки Microsoft Defender для удостоверений настраиваются источники данных.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 6de6b52af73c22387ad16c28e4a0b0e84c888847
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 71c762ed8791f01f3cf2c89a3b612f937a618b84
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544068"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534248"
 ---
 # <a name="configure-event-collection"></a>Настройка сбора данных о событиях
 
@@ -50,7 +50,7 @@ ms.locfileid: "96544068"
 > [!NOTE]
 > Если сервер SIEM или сервер системного журнала отсутствует, настройку контроллеров домена Windows можно выполнить так, чтобы включить сбор и анализ всех необходимых событий с помощью [!INCLUDE [Product short](includes/product-short.md)].
 
-## <a name="configuring-the-product-short-sensor-to-listen-for-siem-events"></a>Настройка прослушивания событий SIEM в датчике [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="configuring-the-defender-for-identity-sensor-to-listen-for-siem-events"></a>Настройка отслеживания событий SIEM в датчике Defender для удостоверений
 
 - Выполните настройку сервера SIEM или сервера системного журнала так, чтобы все необходимые события направлялись на IP-адрес одного из автономных датчиков [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения о настройке SIEM см. в справке в Интернете. Сведения об особых требованиях к форматированию каждого сервера SIEM см. в вариантах технической поддержки.
 

@@ -3,12 +3,12 @@ title: Настройка пересылки событий Windows в Microsoft
 description: Сведения о вариантах настройки пересылки событий Windows в Microsoft Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: f3a11a3d39972b3bdb3df38669ef2fa4b10cc5fb
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: eb9ae24f1e51acda9ca91c459963677a5b5c300e
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543541"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534231"
 ---
 # <a name="configuring-windows-event-forwarding"></a>Настройка пересылки событий Windows
 
@@ -22,7 +22,7 @@ ms.locfileid: "96543541"
 > - Автономные датчики [!INCLUDE [Product short](includes/product-short.md)] не поддерживают сбор записей журнала трассировки событий Windows (ETW), которые предоставляют данные для нескольких обнаружений. Для полного охвата среды рекомендуется развернуть датчик [!INCLUDE [Product short](includes/product-short.md)].
 > - Убедитесь, что контроллер домена правильно настроен для записи требуемых событий.
 
-## <a name="wef-configuration-for-product-short-standalone-sensors-with-port-mirroring"></a>Конфигурация WEF для автономного датчика [!INCLUDE [Product short](includes/product-short.md)] с зеркальным отображением портов
+## <a name="wef-configuration-for-defender-for-identity-standalone-sensors-with-port-mirroring"></a>Конфигурация перенаправления событий Windows для автономного датчика Defender для удостоверений с зеркалированием портов
 
 Когда настроите зеркальное отображение портов с контроллеров домена на автономный датчик [!INCLUDE [Product short](includes/product-short.md)], выполните следующие инструкции, чтобы реализовать пересылку событий Windows с помощью конфигурации "инициировано источником". Это один из возможных способов пересылки событий Windows.
 

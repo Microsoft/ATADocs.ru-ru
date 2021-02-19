@@ -3,18 +3,18 @@ title: Справочник по журналу SIEM Microsoft Defender для 
 description: Примеры журналов подозрительных действий, отправляемых из Microsoft Defender для удостоверений в систему SIEM.
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.openlocfilehash: f5be050f11fc41e19c37410060acb825642369e3
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: fd2c2547e00f1bf2542ab0fd42a14854d3d25287
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544119"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534197"
 ---
-# <a name="product-long-siem-log-reference"></a>Справочник по журналу SIEM [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-siem-log-reference"></a>Справочник по журналу SIEM Microsoft Defender для удостоверений
 
 [!INCLUDE [Product short](includes/product-short.md)] может пересылать события оповещений системы безопасности и оповещений о работоспособности в систему SIEM. Оповещения и события передаются в формате CEF. В этой справочной статье приводятся примеры журналов, пересылаемых в систему SIEM.
 
-## <a name="sample-product-short-security-alerts-in-cef-format"></a>Пример оповещений системы безопасности [!INCLUDE [Product short](includes/product-short.md)] в формате CEF
+## <a name="sample-defender-for-identity-security-alerts-in-cef-format"></a>Примеры оповещений системы безопасности Defender для удостоверений в формате CEF
 
 В систему SIEM пересылаются следующие поля и их значения:
 

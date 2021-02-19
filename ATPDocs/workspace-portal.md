@@ -3,14 +3,14 @@ title: Основные сведения о портале Microsoft Defender д
 description: Узнайте, как войти на портал Microsoft Defender для удостоверений и ознакомьтесь с компонентами портала
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 00e29d828a58a76bfdbec1e28582135466d756ea
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: be8c3449b1debeb2cc0aa0da2ad560e394996344
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544578"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534554"
 ---
-# <a name="working-with-the-product-long-portal"></a>Работа с порталом [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="working-with-the-microsoft-defender-for-identity-portal"></a>Работа с порталом Microsoft Defender для удостоверений
 
 > [!NOTE]
 > Все функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале Cloud App Security](https://portal.cloudappsecurity.com).
@@ -23,12 +23,12 @@ C помощью портала [!INCLUDE [Product long](includes/product-long.m
 
 В этой статье показано, как начать работу с основными элементами портала [!INCLUDE [Product short](includes/product-short.md)].
 
-## <a name="enabling-access-to-the-product-short-portal"></a>Доступ к порталу [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="enabling-access-to-the-defender-for-identity-portal"></a>Обеспечение доступа к порталу Defender для удостоверений
 
 Для входа на портал [!INCLUDE [Product short](includes/product-short.md)] необходимо использовать учетную запись пользователя, которому было назначено членство в соответствующей группе безопасности Azure Active Directory с правами доступа к порталу [!INCLUDE [Product short](includes/product-short.md)].
 Дополнительные сведения об управлении доступом на основе ролей (RBAC) в [!INCLUDE [Product short](includes/product-short.md)] см. в статье [Использование групп ролей [!INCLUDE [Product short](includes/product-short.md)]](role-groups.md).
 
-## <a name="logging-into-the-product-short-portal"></a>Выполнение входа на портал [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="logging-into-the-defender-for-identity-portal"></a>Вход на портал Defender для удостоверений
 
 1. Для входа на портал [!INCLUDE [Product short](includes/product-short.md)] вы можете войти на портал [https://portal.atp.azure.com](https://portal.atp.azure.com) и выбрать свой экземпляр либо перейти по URL-адресу экземпляра: `https://*instancename*.atp.azure.com`.
 

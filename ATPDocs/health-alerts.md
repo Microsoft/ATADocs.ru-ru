@@ -3,14 +3,14 @@ title: Анализ оповещений о работоспособности M
 description: В этой статье описаны все оповещения о работоспособности для каждого компонента с указанием причины и действий, необходимых для устранения проблемы
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 30f88e239ac7c9fb2853688d3977e03401e8a353
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 23c5ec5d87c38338dee43fb6665d7ed23830c1ff
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543099"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534333"
 ---
-# <a name="understanding-product-long-sensor-health-alerts"></a>Анализ оповещений о работоспособности датчика [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="understanding-microsoft-defender-for-identity-sensor-health-alerts"></a>Анализ оповещений о работоспособности от датчика Microsoft Defender для удостоверений
 
 Центр обеспечения работоспособности [!INCLUDE [Product long](includes/product-long.md)] сообщает о возникновении проблем с экземплярами [!INCLUDE [Product short](includes/product-short.md)], создавая оповещения о работоспособности. В этой статье описаны все оповещения о работоспособности для каждого компонента с указанием причины и действий, необходимых для устранения проблемы.
 

@@ -3,14 +3,14 @@ title: Анализ и использование путей бокового с
 description: Узнайте о потенциальных путях бокового смещения (LMP) в Microsoft Defender для удостоверений
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 21d672a6c2220229060189120f1daefacd47416b
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 60fac487690d5ff71eb2df5d6ee52c15c336941e
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544544"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533449"
 ---
-# <a name="product-long-lateral-movement-paths-lmps"></a>Пути бокового смещения (LMP) в [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-lateral-movement-paths-lmps"></a>Пути горизонтального движения в Microsoft Defender для удостоверений
 
 > [!NOTE]
 > Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).
@@ -23,7 +23,7 @@ ms.locfileid: "96544544"
 
 Атаки путем бокового смещения обычно реализуются с помощью нескольких различных методов. Некоторые из наиболее популярных методов, используемых злоумышленниками, включают кражу учетных данных и атаку Pass-the-Ticket. В обоих методах с помощью неконфиденциальных учетных записей злоумышленники осуществляют боковые смещения, используя уязвимости неконфиденциальных компьютеров, которые используют сохраненные учетные данные для входа в учетных записях, группах и компьютерах совместно с конфиденциальными учетными записями.
 
-## <a name="where-can-i-find-product-short-lmps"></a>Где можно найти LMP [!INCLUDE [Product short](includes/product-short.md)]?
+## <a name="where-can-i-find-defender-for-identity-lmps"></a>Где можно найти пути горизонтального движения в Defender для удостоверений?
 
 Для каждого профиля компьютера или пользователя, обнаруживаемого [!INCLUDE [Product short](includes/product-short.md)] в пути бокового смещения, создается вкладка **Пути бокового смещения**. Если у компьютера и профиля нет такой вкладки, он никогда не был обнаружен в потенциальных путях бокового смещения.
 

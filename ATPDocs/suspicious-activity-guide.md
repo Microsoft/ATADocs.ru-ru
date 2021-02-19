@@ -3,14 +3,14 @@ title: Руководство. Оповещения системы безопа�
 description: В этой статье приводится список оповещений системы безопасности, отправляемых Microsoft Defender для удостоверений.
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: b6870f7c02dcd9497c08f8ebba33fde967092a4c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: eb74cc45084b9973da9f141794a2684942aaed0a
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542198"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533432"
 ---
-# <a name="product-long-security-alerts"></a>Оповещения системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-security-alerts"></a>Оповещения системы безопасности в Microsoft Defender для удостоверений
 
 > [!NOTE]
 > Функции [!INCLUDE [Product long](includes/product-long.md)], описанные на этой странице, также доступны на новом [портале](https://portal.cloudappsecurity.com).

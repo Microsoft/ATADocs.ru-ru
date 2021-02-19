@@ -3,14 +3,14 @@ title: Руководство. Настройка лаборатории опо�
 description: Узнайте, как настроить лабораторию тестирования для Microsoft Defender для удостоверений для моделирования угроз для обнаружения с помощью Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 51505b97acde09eecce25e0bafaea8fa0af60419
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 3fa1a3322a76f61f924da521654d3d722c994916
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542572"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533602"
 ---
-# <a name="tutorial-setup-a-product-long-security-alert-lab"></a>Руководство. Настройка лаборатории оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="tutorial-setup-a-microsoft-defender-for-identity-security-alert-lab"></a>Руководство. Настройка лаборатории для оповещений системы безопасности в Microsoft Defender для удостоверений
 
 Лаборатория оповещений системы безопасности [!INCLUDE [Product long](includes/product-long.md)] позволяет ознакомиться с возможностями **[!INCLUDE [Product short](includes/product-short.md)]** по обнаружению и определению подозрительных действий и потенциальных атак в сети. В этом первом руководстве из четырех показано, как создать лабораторную среду для тестирования *дискретных обнаружений* в [!INCLUDE [Product short](includes/product-short.md)]. В лаборатории оповещений системы безопасности основное внимание уделяется использованию возможностей [!INCLUDE [Product short](includes/product-short.md)] на основе *сигнатур*. Эта лаборатория не охватывает обнаружения на основе поведения пользователей или сущностей с использованием расширенных возможностей машинного обучения, так как для их применения изучаемый период с реальным сетевым трафиком должен составлять до 30 дней. Дополнительные сведения о каждом руководстве из этой серии см. в статье [Руководство. Лаборатория оповещений системы безопасности [!INCLUDE [Product short](includes/product-short.md)]](playbook-lab-overview.md).
 
@@ -66,11 +66,13 @@ ms.locfileid: "96542572"
 | Samira Abbasi | SamiraA | В Contoso этот пользователь является администратором домена. |
 | Служба[!INCLUDE [Product short](includes/product-short.md)] | AATPService | Учетная запись [!INCLUDE [Product short](includes/product-short.md)] | account |
 
-## <a name="product-short-base-lab-environment"></a>Базовая лабораторная среда [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-base-lab-environment"></a>Базовая среда лаборатории Defender для удостоверений
 
 Чтобы настроить базовую лабораторию, мы добавим пользователей и группы в Active Directory, изменим политику SAM и добавим привилегированную группу в [!INCLUDE [Product short](includes/product-short.md)].
 
-### <a name="hydrate-active-directory-users-on-contosodc"></a><a name="bkmk_hydrate"></a> Расконсервация службы Active Directory для добавления в нее пользователей ContosoDC
+<a name="bkmk_hydrate"></a>
+
+### <a name="hydrate-active-directory-users-on-contosodc"></a> Расконсервация службы Active Directory для добавления в нее пользователей ContosoDC
 
 Чтобы упростить лабораторию, мы автоматизировали процесс создания фиктивных пользователей и групп в Active Directory. Этот сценарий будет выполнен как предварительное условие для этого руководства. Вы можете использовать готовый сценарий или изменить его для расконсервации среды Active Directory в вашей лаборатории. Если вы не хотите использовать сценарий, выполните эту операцию вручную.
 
@@ -95,8 +97,8 @@ Add-ADGroupMember -Identity "Helpdesk" -Members "RonHD"
 # Create new AD user JeffL
 New-ADUser -Name JeffL -DisplayName "Jeff Leatherman" -PasswordNeverExpires $true -AccountPassword $jefflSecurePass -Enabled $true
 
-# Take note of the "AATPService" user below which will be our service account for [!INCLUDE [Product short](includes/product-short.md)].
-# Create new AD user [!INCLUDE [Product short](includes/product-short.md)] Service
+# Take note of the "AATPService" user below which will be our service account for Defender for Identity.
+# Create new AD user Defender for Identity Service
 
 New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNeverExpires $true -AccountPassword $AATPService -Enabled $true
 ```
@@ -113,7 +115,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![Добавление службы](media/samr-add-service.png)
 
-### <a name="add-sensitive-group-to-product-short"></a>Добавление привилегированной группы в [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="add-sensitive-group-to-defender-for-identity"></a>Добавление привилегированной группы в Defender для удостоверений
 
 Добавление группы безопасности Helpdesk в качестве **привилегированной группы** позволит вам использовать функцию графика бокового смещения в службе "[!INCLUDE [Product short](includes/product-short.md)]". Рекомендуем помечать тегами привилегированных пользователей и группы, которые не обязательно являются администраторами домена, но имеют привилегии на использование многочисленных ресурсов.
 
@@ -126,7 +128,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
     ![Отметьте Helpdesk в качестве привилегированной группы [!INCLUDE [Product short](includes/product-short.md)], чтобы включить графики бокового смещения и отчеты для этой группы](media/playbook-labsetup-helpdesksensitivegroup.png)
 1. Выберите команду **Сохранить**.
 
-### <a name="product-short-lab-base-setup-checklist"></a>Контрольный список для настройки базовой лаборатории [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="defender-for-identity-lab-base-setup-checklist"></a>Контрольный список базовой настройки лаборатории Defender для удостоверений
 
 На этом этапе у вас должна быть настроена базовая лаборатория [!INCLUDE [Product short](includes/product-short.md)]. Кроме того, подготовьте [!INCLUDE [Product short](includes/product-short.md)] и добавьте пользователей. Просмотрите контрольный список, чтобы убедиться, что настройка базовой лаборатории завершена.
 
@@ -158,7 +160,9 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 ![Helpdesk и JeffV в качестве членов в группе локальных администраторов для VictimPC](media/playbook-labsetup-localgrouppolicies2.png)
 
-### <a name="simulate-helpdesk-support-on-victimpc"></a><a name="helpdesk-simulation"></a> Имитация работы службы технической поддержки на компьютере VictimPC
+<a name="helpdesk-simulation"></a>
+
+### <a name="simulate-helpdesk-support-on-victimpc"></a> Имитация работы службы технической поддержки на компьютере VictimPC
 
 Для имитации рабочей управляемой сети создайте запланированную задачу на компьютере **VictimPC**, чтобы запустить процесс cmd.exe от имени пользователя **RonHD**.
 

@@ -3,12 +3,12 @@ title: Сборник схем бокового смещения для отпр
 description: В сборнике схем Microsoft Defender для удостоверений показано, как смоделировать угрозы бокового смещения для их обнаружения с помощью Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 50880150bb8937875677985f3a61119495d566eb
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: b0305dfbcfba45a796d2c50e21ab31fba8705520
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542713"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533721"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>Руководство. Сборник схем бокового смещения
 
@@ -131,7 +131,7 @@ net user ronhd /domain
 
 Как видите, для этого конкретного процесса у нас в памяти находится TGT пользователя RonHD. Мы успешно выполнили атаку Overpass-the-Hash в нашей лаборатории. Мы преобразовали NTLM-хэш, который был скомпрометирован ранее, и использовали его для получения Kerberos TGT. Затем этот Kerberos TGT использовался, чтобы получить доступ к другому сетевому ресурсу (в данном случае AdminPC).
 
-### <a name="overpass-the-hash-detected-in-product-short"></a>Обнаружение атаки Overpass-the-Hash в [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="overpass-the-hash-detected-in-defender-for-identity"></a>Обнаружение атаки Overpass-the-Hash в Defender для удостоверений
 
 В консоли [!INCLUDE [Product short](includes/product-short.md)] мы увидим следующее:
 
@@ -233,7 +233,7 @@ xcopy mimikatz.exe \\adminpc\c$\temp
 
 Готово! Благодаря нашим имитациям атак мы получили доступ с правами администратора к контроллеру домена и смогли скомпрометировать лес домена Active Directory в нашей лаборатории.
 
-### <a name="pass-the-ticket-detection-in-product-short"></a>Обнаружение атаки Pass-the-Ticket в [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="pass-the-ticket-detection-in-defender-for-identity"></a>Обнаружение атаки Pass-the-Ticket в Defender для удостоверений
 
 Большинство инструментов безопасности не имеют возможности определить, когда для доступа к допустимому ресурсу использовались правомерные учетные данные. Что же обнаруживает и о чем оповещает [!INCLUDE [Product short](includes/product-short.md)] в этой цепочке событий?
 
