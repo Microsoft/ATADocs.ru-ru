@@ -3,12 +3,12 @@ title: Руководство по анализу пользователей в 
 description: В этой статье объясняется, как использовать оповещения системы безопасности Microsoft Defender для удостоверений для анализа подозрительных пользователей.
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: c9d3cb67ff4eeae0e1f4a0808751d96c67cf326e
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 783b2b4cc12bfa84812810f754deedb70c1718bb
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542844"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630532"
 ---
 # <a name="tutorial-investigate-a-user"></a>Руководство. Анализ пользователя
 
@@ -29,7 +29,7 @@ ms.locfileid: "96542844"
 Проверьте и исследуйте профиль пользователя на предмет следующих сведений и действий:
 
 1. Кем является [пользователь](entity-profiles.md)?
-    1. Является ли пользователь [привилегированным пользователем](sensitive-accounts.md) (например, является администратором, указан в списке отслеживания и т. д.)?
+    1. Является ли пользователь [привилегированным пользователем](manage-sensitive-honeytoken-accounts.md) (например, является администратором, указан в списке отслеживания и т. д.)?
     1. Какова его роль в организации?
     1. Занимает ли он важное место в организационном дереве?
 
