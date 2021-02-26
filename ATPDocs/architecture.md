@@ -3,12 +3,12 @@ title: Архитектура Microsoft Defender для удостоверени
 description: Описание архитектуры Microsoft Defender для удостоверений
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 418fbe3f4a24f3af69336eda4954f5817b478e20
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: 920c4fa99ebe2dad211fd7edae9ed928c1426510
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753288"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533901"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>Архитектура Microsoft Defender для удостоверений
 
@@ -22,7 +22,7 @@ ms.locfileid: "97753288"
 
 При установке непосредственно на контроллерах домена или серверах AD FS датчик [!INCLUDE [Product short](includes/product-short.md)] обращается к требуемым журналам событий напрямую с серверов. После того как датчик проанализирует журналы и сетевой трафик, [!INCLUDE [Product short](includes/product-short.md)] отправит в облачную службу [!INCLUDE [Product short](includes/product-short.md)] только проанализированные данные (некоторую часть всех журналов).
 
-## <a name="product-short-components"></a>составные части компонента [!INCLUDE [Product short](includes/product-short.md)].
+## <a name="defender-for-identity-components"></a>Компоненты Defender для удостоверений
 
 [!INCLUDE [Product short](includes/product-short.md)] включает в себя следующие компоненты.
 
@@ -36,7 +36,7 @@ ms.locfileid: "97753288"
 - **Облачная служба [!INCLUDE [Product short](includes/product-short.md)]**  
 Облачная служба [!INCLUDE [Product short](includes/product-short.md)] работает на основе инфраструктуры Azure. В настоящее время она развернута в США, Европе и Азии. Облачная служба [!INCLUDE [Product short](includes/product-short.md)] подключена к Microsoft Intelligent Security Graph.
 
-## <a name="product-short-portal"></a>Портал [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-portal"></a>Портал Defender для удостоверений
 
 Портал [!INCLUDE [Product short](includes/product-short.md)] позволяет выполнять следующие действия:
 
@@ -50,7 +50,7 @@ ms.locfileid: "97753288"
 > [!NOTE]
 > Если в вашем экземпляре [!INCLUDE [Product short](includes/product-short.md)] в течение 60 дней не будет установлен датчик, экземпляр может быть удален и вам потребуется создать его заново.
 
-## <a name="product-short-sensor"></a>Датчик [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-sensor"></a>Датчик Defender для удостоверений
 
 Датчик [!INCLUDE [Product short](includes/product-short.md)] обеспечивает следующие основные возможности:
 
@@ -61,7 +61,7 @@ ms.locfileid: "97753288"
 - разрешение сетевых сущностей (пользователей, групп и компьютеров);
 - передача соответствующих данных в облачную службу [!INCLUDE [Product short](includes/product-short.md)].
 
-## <a name="product-short-sensor-features"></a>Функции датчика [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-sensor-features"></a>Функции датчика Defender для удостоверений
 
 Датчик [!INCLUDE [Product short](includes/product-short.md)] считывает события локально. Для этого не нужно приобретать и обслуживать дополнительное оборудование или производить настройку. Датчик [!INCLUDE [Product short](includes/product-short.md)] также поддерживает трассировку событий Windows (ETW), которая позволяет получить сведения журнала для нескольких обнаружений. Обнаружения на основе трассировки событий Windows включают предполагаемую атаку DCShadow путем запроса на репликацию контроллера домена и повышения роли контроллера домена.
 

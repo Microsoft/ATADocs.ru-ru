@@ -3,14 +3,14 @@ title: Краткое руководство по созданию экземп�
 description: Краткое руководство по созданию экземпляра для развертывания Microsoft Defender для удостоверений, что является первым шагом установки Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 9860a8893ac16448b92961df9cf25801f68786b6
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 19fb02269da5b4529941ffa89c07d914b0633754
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515365"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534265"
 ---
-# <a name="quickstart-create-your-product-long-instance"></a>Краткое руководство. Создание экземпляра [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="quickstart-create-your-microsoft-defender-for-identity-instance"></a>Краткое руководство. Создание экземпляра Microsoft Defender для удостоверений
 
 В этом кратком руководстве вы создадите экземпляр [!INCLUDE [Product long](includes/product-long.md)] на портале [!INCLUDE [Product short](includes/product-short.md)]. В [!INCLUDE [Product short](includes/product-short.md)] в вашем распоряжении будет один экземпляр, который раньше назывался рабочей областью. Он позволяет управлять несколькими лесами на одной панели.
 
@@ -24,7 +24,7 @@ ms.locfileid: "100515365"
 - Знакомство со статьей [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md).
 - Знакомство со статьей [Предварительные требования [!INCLUDE [Product short](includes/product-short.md)]](prerequisites.md).
 
-## <a name="sign-in-to-the-product-short-portal"></a>Вход на портал [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="sign-in-to-the-defender-for-identity-portal"></a>Вход на портал Defender для удостоверений
 
 После проверки сети на соответствие требованиям датчика можно приступить к созданию экземпляра [!INCLUDE [Product short](includes/product-short.md)].
 

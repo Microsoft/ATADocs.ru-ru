@@ -1,16 +1,16 @@
 ---
 title: Краткое руководство по установке датчика Microsoft Defender для удостоверений
 description: На четвертом шаге установки Microsoft Defender для удостоверений происходит установка датчика Defender для удостоверений.
-ms.date: 10/26/2020
+ms.date: 02/17/2021
 ms.topic: quickstart
-ms.openlocfilehash: 4d68820bd6da88bca64bb8917f069d04adbc29b0
-ms.sourcegitcommit: 4f3da69b8e30cbc3e3fb43d38c3518001a10f7a1
+ms.openlocfilehash: a9837c36dcdb90dba124eda5f8d6b9f082787d74
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98163541"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097421"
 ---
-# <a name="quickstart-install-the-product-long-sensor"></a>Краткое руководство. Установка датчика [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="quickstart-install-the-microsoft-defender-for-identity-sensor"></a>Краткое руководство. Установка датчика Microsoft Defender для удостоверений
 
 Из этого краткого руководства вы узнаете, как установить датчик [!INCLUDE [Product long](includes/product-long.md)] на контроллере домена. Если вы предпочитаете автоматическую установку, прочтите статью [Автоматическая установка](silent-installation.md).
 
@@ -19,12 +19,13 @@ ms.locfileid: "98163541"
 - [Экземпляр [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md), [подключенный к Active Directory](install-step2.md).
 - Скачанная копия [пакета установки датчика [!INCLUDE [Product short](includes/product-short.md)]](install-step3.md) и ключ доступа.
 - На компьютере должна быть установлена платформа Microsoft .NET Framework 4.7 или более поздняя версия. Если она не установлена, пакет установки датчика [!INCLUDE [Product short](includes/product-short.md)] установит ее, что может потребовать перезагрузки сервера.
+- Если при установке датчиков на серверах AD FS используется внешний сервер SQL, настройте его так, чтобы предоставить учетной записи *службы каталогов* (**Конфигурация** > **Службы каталогов** > **Имя пользователя**) разрешения на *подключение*, *вход*, *чтение* и *выбор* для базы данных **AdfsConfiguration**.
 
 ## <a name="install-the-sensor"></a>Установка датчика
 
 Выполните следующие действия на контроллере домена.
 
-1. Проверьте подключение компьютера к необходимым конечным точкам [облачной службы [!INCLUDE [Product short](includes/product-short.md)]](configure-proxy.md#enable-access-to-azure-atp-service-urls-in-the-proxy-server):
+1. Проверьте подключение компьютера к необходимым конечным точкам [облачной службы [!INCLUDE [Product short](includes/product-short.md)]](configure-proxy.md#enable-access-to-azure-atp-service-urls-in-the-proxy-server).
 1. Извлеките файлы установки из ZIP-файла. При установке непосредственно из ZIP-файла произойдет сбой.
 1. Запустите **программу установки датчика Azure ATP (файл setup.exe)** с повышенными привилегиями (**Запуск от имени администратора**) и следуйте указаниям мастера установки.
 1. На странице **приветствия** выберите язык и нажмите кнопку **Далее**.
@@ -60,6 +61,23 @@ ms.locfileid: "98163541"
 
     - Служба датчика [!INCLUDE [Product short](includes/product-short.md)] и служба обновления датчика [!INCLUDE [Product short](includes/product-short.md)]
     - Распространяемый пакет Microsoft Visual C++ 2013.
+
+## <a name="post-installation-steps-for-ad-fs-servers"></a>Действия после установки на серверах AD FS
+
+Выполните следующие действия, чтобы настроить Defender для удостоверений после завершения установки датчика на сервере AD FS.
+
+1. На портале [!INCLUDE [Product short](includes/product-short.md)] выберите **Конфигурация**.
+
+1. В разделе **Система** выберите **Датчики**.
+
+    ![Страница конфигурации датчика [!INCLUDE [Product short](includes/product-short.md)]](media/sensor-config.png)
+
+1. Выберите датчик, установленный на сервере AD FS.
+1. Во всплывающем окне в поле **Контроллер домена сопоставителя** введите полное доменное имя контроллеров домена сопоставителя, затем щелкните значок "плюс" **(+)** , после чего нажмите кнопку **Сохранить**.  
+
+    ![Настройка сопоставителя датчика AD FS в [!INCLUDE [Product short](includes/product-short.md)]](media/sensor-config-adfs-resolver.png)
+
+    Инициализация датчика может занять несколько минут. В это время состояние службы датчика AD FS должно измениться с **Остановлено** на **Работает**.
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 

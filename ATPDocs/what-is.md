@@ -3,14 +3,14 @@ title: Что такое Microsoft Defender для удостоверений?
 description: Здесь описывается решение Microsoft Defender для удостоверений и подозрительные действия, которые оно может обнаружить
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 1329c93e18941ca42e9d446abdb0576480543992
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 812d26e8def619719f7239b41521c87513e807f8
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515569"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630566"
 ---
-# <a name="what-is-product-long"></a>Что такое [!INCLUDE [Product long](includes/product-long.md)]?
+# <a name="what-is-microsoft-defender-for-identity"></a>Что такое Microsoft Defender для удостоверений?
 
 [!INCLUDE [Product long](includes/product-long.md)] (ранее Расширенная защита от угроз Azure или Azure ATP) — это облачное решение безопасности, которое использует сигналы локальной службы Active Directory для обнаружения и анализа сложных угроз, скомпрометированных удостоверений и вредоносных действий внутренних пользователей, направленных на вашу организацию.
 
@@ -57,25 +57,25 @@ Azure ATP позволяет обнаруживать перехват конт
 
 [!INCLUDE [Product short](includes/product-short.md)] предоставляет только важные оповещения системы безопасности в режиме реального времени, что позволяет не отвлекаться на ненужную информацию. Представление временной шкалы атак [!INCLUDE [Product short](includes/product-short.md)] позволяет сосредоточиться на том, что действительно имеет значение, и использовать интеллектуальные аналитические функции. [!INCLUDE [Product short](includes/product-short.md)] позволяет быстро анализировать угрозы и получать информацию о пользователях, устройствах и сетевых ресурсах в масштабе всей организации. Тесная интеграция с Microsoft Defender для конечных точек обеспечивает дополнительный уровень безопасности благодаря обнаружению современных постоянных угроз в операционной системе и защите от них.
 
-## <a name="additional-resources-for-product-short"></a>Дополнительные ресурсы о [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="additional-resources-for-defender-for-identity"></a>Дополнительные ресурсы для Defender для удостоверений
 
 ### <a name="start-a-free-trial"></a>Запустите бесплатную пробную версию
 
 [https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
 
-### <a name="follow-product-short-on-microsoft-tech-community"></a>Подпишитесь на [!INCLUDE [Product short](includes/product-short.md)] в Microsoft Tech Community
+### <a name="follow-defender-for-identity-on-microsoft-tech-community"></a>Следите за новостями Defender для удостоверений в Microsoft Tech Community
 
 [https://aka.ms/MDIcommunity](https://aka.ms/MDIcommunity "[!INCLUDE [Product short](includes/product-short.md)] on Microsoft Tech Community")
 
-### <a name="join-the-product-short-yammer-community"></a>Вступите в сообщество Yammer по [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="join-the-defender-for-identity-yammer-community"></a>Присоединяйтесь к сообществу Defender для удостоверений в Yammer
 
 [https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "[!INCLUDE [Product short](includes/product-short.md)] Yammer community")
 
-### <a name="visit-the-product-short-product-page"></a>Посетите страницу продукта [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="visit-the-defender-for-identity-product-page"></a>Посетите страницу продукта Defender для удостоверений
 
 [https://www.microsoft.com/microsoft-365/security/identity-defender](https://www.microsoft.com/microsoft-365/security/identity-defender "[!INCLUDE [Product short](includes/product-short.md)] product page")
 
-### <a name="learn-more-about-product-short-architecture"></a>Изучите архитектуру [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="learn-more-about-defender-for-identity-architecture"></a>Дополнительные сведения об архитектуре Defender для удостоверений
 
 [Архитектура [!INCLUDE [Product short](includes/product-short.md)]](architecture.md)
 
@@ -92,7 +92,7 @@ Azure ATP позволяет обнаруживать перехват конт
 ### <a name="phase-1"></a>Этап 1
 
 1. Настройте в [!INCLUDE [Product short](includes/product-short.md)] защиту основных сред. Модель быстрого развертывания [!INCLUDE [Product short](includes/product-short.md)] позволяет немедленно защитить организацию. [Установка [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-1. Настройте [конфиденциальные учетные записи](sensitive-accounts.md) и [учетные записи honeytoken](install-step7.md).
+1. Настройте [конфиденциальные учетные записи](manage-sensitive-honeytoken-accounts.md) и [учетные записи honeytoken](configure-detection-exclusions.md).
 1. Просматривайте отчеты и [пути бокового смещения](use-case-lateral-movement-path.md).
 
 ### <a name="phase-2"></a>Этап 2

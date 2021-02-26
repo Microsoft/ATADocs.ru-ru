@@ -1,16 +1,16 @@
 ---
 title: Предварительные требования для работы с Microsoft Defender для удостоверений
 description: Описание требований для успешного развертывания Microsoft Defender для удостоверений в среде
-ms.date: 01/27/2021
+ms.date: 02/17/2021
 ms.topic: overview
-ms.openlocfilehash: feb52ea096dd7e324e46649a746f41a293cc66e1
-ms.sourcegitcommit: b29aa522dcefce7d016fc0e03c75168a14deb423
+ms.openlocfilehash: 5b5f3c44a750896c6662bc22ac3e26bd63b47559
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912477"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097357"
 ---
-# <a name="product-long-prerequisites"></a>Предварительные требования для работы с [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-prerequisites"></a>Предварительные требования для работы с Microsoft Defender для удостоверений
 
 В этой статье описываются требования для успешного развертывания [!INCLUDE [Product long](includes/product-long.md)] в среде.
 
@@ -69,13 +69,13 @@ ms.locfileid: "98912477"
 
 - Рекомендация по контейнеру **Удаленные объекты**: в контейнере удаленных объектов у пользователя должно быть разрешение только на чтение. Разрешения только для чтения в этом контейнере позволяют [!INCLUDE [Product short](includes/product-short.md)] обнаруживать удаление пользователей из вашего каталога Active Directory. Дополнительные сведения о настройке разрешений только для чтения в контейнере удаленных объектов см. в разделе **Changing permissions on a deleted object container** (Изменение разрешений для контейнера удаленных объектов) статьи [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (Просмотр или установка разрешений для объекта каталога).
 
-- **Токен-приманка** (необязательно): Учетная запись пользователя, не совершавшего операции в сети. Эта учетная запись будет настроена как пользователь Honeytoken [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения об использовании токенов-приманок: [Настройка учетных записей Honeytoken и исключений из обнаружения](install-step7.md).
+- **Токен-приманка** (необязательно): Учетная запись пользователя, не совершавшего операции в сети. Эта учетная запись будет настроена как пользователь Honeytoken [!INCLUDE [Product short](includes/product-short.md)]. Дополнительные сведения об использовании токенов-приманок: [Настройка учетных записей Honeytoken и исключений из обнаружения](configure-detection-exclusions.md).
 
 - Необязательно: При развертывании автономного датчика следует пересылать [события Windows](configure-windows-event-collection.md#configure-event-collection) в [!INCLUDE [Product short](includes/product-short.md)], чтобы [!INCLUDE [Product short](includes/product-short.md)] мог дополнительно улучшить обнаружение угроз, связанных с проверкой подлинности, добавлением к конфиденциальным группам и подозрительным созданием служб.  Датчик [!INCLUDE [Product short](includes/product-short.md)] получает эти события автоматически. В автономном датчике [!INCLUDE [Product short](includes/product-short.md)] эти события можно получать из системы SIEM или настроив пересылку событий Windows с контроллера домена. Собранные события предоставляют [!INCLUDE [Product short](includes/product-short.md)] дополнительные данные, которые невозможно получить через сетевой трафик контроллера домена.
 
 <a name="azure-atp-portal-requirements"></a>
 
-## <a name="product-short-portal-requirements"></a>Требования для работы с порталом [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-portal-requirements"></a>Требования к порталу Defender для удостоверений
 
 Доступ к порталу [!INCLUDE [Product short](includes/product-short.md)] осуществляется через браузер. Поддерживаются следующие браузеры и параметры:
 
@@ -94,7 +94,7 @@ ms.locfileid: "98912477"
 > [!NOTE]
 > По умолчанию [!INCLUDE [Product short](includes/product-short.md)] поддерживает до 200 датчиков. Чтобы установить дополнительные датчики, обратитесь в службу поддержки [!INCLUDE [Product short](includes/product-short.md)].
 
-## <a name="product-short-network-name-resolution-nnr-requirements"></a>Требования к разрешению сетевых имен (NNR) [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-network-name-resolution-nnr-requirements"></a>Требования к разрешению сетевых имен (NNR) в Defender для удостоверений
 
 Разрешение сетевых имен (NNR) — главный компонент [!INCLUDE [Product short](includes/product-short.md)]. Чтобы разрешить IP-адреса для имен компьютеров, датчики [!INCLUDE [Product short](includes/product-short.md)] запрашивают IP-адрес, используя один из следующих методов:
 
@@ -109,7 +109,7 @@ ms.locfileid: "98912477"
 
 <a name="azure-atp-sensor-requirements"></a>
 
-## <a name="product-short-sensor-requirements"></a>Требования к датчику [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-sensor-requirements"></a>Требования к датчику Defender для удостоверений
 
 В этом разделе перечислены требования для датчика [!INCLUDE [Product short](includes/product-short.md)].
 
@@ -129,7 +129,7 @@ ms.locfileid: "98912477"
 
 Контроллер домена можно использовать в качестве контроллера домена только для чтения.
 
-Чтобы датчики, работающие на контроллерах домена и серверах AD FS, могли обмениваться данными с облачной службой, откройте порт 443 для \*.atp.azure.com в брандмауэре или на прокси-сервере.
+Чтобы датчики, работающие на контроллерах домена и в AD FS, могли связываться с облачной службой, откройте порт 443 для `*.atp.azure.com` на своих брандмауэрах и прокси-серверах. При установке на ферме AD FS рекомендуем установить датчик на каждом сервере AD FS или хотя бы на первичном узле.
 
 Во время установки будет установлена платформа .NET Framework 4.7, если эта платформа или ее более поздняя версия отсутствует. При этом может потребоваться перезагрузка сервера. Перезагрузка может также потребоваться в том случае, если ожидается перезапуск.
 
@@ -194,7 +194,7 @@ ms.locfileid: "98912477"
 
 <a name="azure-atp-standalone-sensor-requirements"></a>
 
-## <a name="product-short-standalone-sensor-requirements"></a>Требования к автономному датчику [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="defender-for-identity-standalone-sensor-requirements"></a>Требования к автономному датчику Defender для удостоверений
 
 В этом разделе перечислены требования к автономному датчику [!INCLUDE [Product short](includes/product-short.md)].
 

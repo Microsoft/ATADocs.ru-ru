@@ -3,14 +3,14 @@ title: Microsoft Defender для удостоверений для US Government
 description: В этой статье приводится обзор предложения Microsoft Defender для удостоверений для US Government GCC High.
 ms.date: 10/27/2020
 ms.topic: overview
-ms.openlocfilehash: 5e2c10186c929eb4a6f3ea2fc1f25691df6fd9f4
-ms.sourcegitcommit: 2cbfcab156fbd90d932eea47142d560d2b038062
+ms.openlocfilehash: d6b0ac4d60d096710abd1b3ac5569eb7dad221f9
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96740833"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533330"
 ---
-# <a name="product-long-for-us-government-gcc-high"></a>[!INCLUDE [Product long](includes/product-long.md)] для US Government GCC High
+# <a name="microsoft-defender-for-identity-for-us-government-gcc-high"></a>Microsoft Defender для удостоверений для US Government GCC High
 
 Предложение [!INCLUDE [Product long](includes/product-long.md)] для GCC High основывается на тех же технологиях и возможностях, что и коммерческий экземпляр [!INCLUDE [Product short](includes/product-short.md)]. Перечень различий в функциональных возможностях приводится в [описании службы](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description).
 

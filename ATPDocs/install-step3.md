@@ -3,14 +3,14 @@ title: Краткое руководство по скачиванию паке�
 description: На третьем шаге установки Microsoft Defender для удостоверений происходит скачивание пакета установки датчика Defender для удостоверений.
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: f0eb884a7367ae50e076e0298f720a94def7da8c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 66e335931f830fac4f20a910396614669c14b465
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543133"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534061"
 ---
-# <a name="quickstart-download-the-product-long-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="quickstart-download-the-microsoft-defender-for-identity-sensor-setup-package"></a>Краткое руководство. Скачивание пакета установки датчика Microsoft Defender для удостоверений
 
 В этом кратком руководстве вы скачаете пакет установки датчика [!INCLUDE [Product long](includes/product-long.md)] с портала.
 
