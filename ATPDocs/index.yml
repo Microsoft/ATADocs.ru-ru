@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/23/2019
-  ms.openlocfilehash: e4efdf028bc75d7719a8f2a389eef1d58991a403
-  ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
+  ms.openlocfilehash: 832e5b1c9985d2e2d5e3334ffe062418f2ae1227
+  ms.sourcegitcommit: 439e9ad383f54ef31ff8ef6dd1ae4e177c3c31f4
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/18/2021
-  ms.locfileid: "101097255"
+  ms.lasthandoff: 03/14/2021
+  ms.locfileid: "103465307"
 landingContent:
 - title: Сведения о Microsoft Defender для удостоверений
   linkLists:
@@ -37,6 +37,10 @@ landingContent:
       url: https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE
     - text: Основы Defender для удостоверений
       url: https://www.youtube.com/watch?v=QXZIfH0wP3Q
+  - linkListType: whats-new
+    links:
+    - text: Выпуски
+      url: whats-new.md
 - title: Оповещения Defender для удостоверений
   linkLists:
   - linkListType: get-started
